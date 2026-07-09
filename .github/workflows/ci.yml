@@ -1,0 +1,48 @@
+name: Design System CI
+
+on:
+  push:
+    branches: [main, trunk]
+  pull_request:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build tokens (all themes)
+        run: npm run build
+      - name: WCAG AA contrast gate
+        run: npm run check:contrast
+      - name: Build Storybook
+        run: npm run build-storybook
+      - name: Upload Storybook artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: storybook-static
+
+  deploy-pages:
+    # Publishes the design library to GitHub Pages on the default branch only
+    if: github.event_name == 'push'
+    needs: build-and-check
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

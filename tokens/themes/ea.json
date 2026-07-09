@@ -1,0 +1,196 @@
+{
+  "$description": "EA \u2014 unbranded Enroll App (default)",
+  "color": {
+    "brand": {
+      "primary": {
+        "005": {
+          "$value": "{color.ea.primary.005}",
+          "$type": "color"
+        },
+        "015": {
+          "$value": "{color.ea.primary.015}",
+          "$type": "color"
+        },
+        "025": {
+          "$value": "{color.ea.primary.025}",
+          "$type": "color"
+        },
+        "050": {
+          "$value": "{color.ea.primary.050}",
+          "$type": "color"
+        },
+        "060": {
+          "$value": "{color.ea.primary.060}",
+          "$type": "color"
+        },
+        "070": {
+          "$value": "{color.ea.primary.070}",
+          "$type": "color"
+        },
+        "080": {
+          "$value": "{color.ea.primary.080}",
+          "$type": "color"
+        },
+        "090": {
+          "$value": "{color.ea.primary.090}",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "{color.ea.primary.100}",
+          "$type": "color"
+        },
+        "110": {
+          "$value": "{color.ea.primary.110}",
+          "$type": "color"
+        },
+        "120": {
+          "$value": "{color.ea.primary.120}",
+          "$type": "color"
+        },
+        "130": {
+          "$value": "{color.ea.primary.130}",
+          "$type": "color"
+        },
+        "140": {
+          "$value": "{color.ea.primary.140}",
+          "$type": "color"
+        },
+        "150": {
+          "$value": "{color.ea.primary.150}",
+          "$type": "color"
+        }
+      },
+      "secondary": {
+        "005": {
+          "$value": "{color.ea.secondary.005}",
+          "$type": "color"
+        },
+        "015": {
+          "$value": "{color.ea.secondary.015}",
+          "$type": "color"
+        },
+        "025": {
+          "$value": "{color.ea.secondary.025}",
+          "$type": "color"
+        },
+        "050": {
+          "$value": "{color.ea.secondary.050}",
+          "$type": "color"
+        },
+        "060": {
+          "$value": "{color.ea.secondary.060}",
+          "$type": "color"
+        },
+        "070": {
+          "$value": "{color.ea.secondary.070}",
+          "$type": "color"
+        },
+        "080": {
+          "$value": "{color.ea.secondary.080}",
+          "$type": "color"
+        },
+        "090": {
+          "$value": "{color.ea.secondary.090}",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "{color.ea.secondary.100}",
+          "$type": "color"
+        },
+        "110": {
+          "$value": "{color.ea.secondary.110}",
+          "$type": "color"
+        },
+        "120": {
+          "$value": "{color.ea.secondary.120}",
+          "$type": "color"
+        },
+        "130": {
+          "$value": "{color.ea.secondary.130}",
+          "$type": "color"
+        },
+        "140": {
+          "$value": "{color.ea.secondary.140}",
+          "$type": "color"
+        },
+        "150": {
+          "$value": "{color.ea.secondary.150}",
+          "$type": "color"
+        }
+      },
+      "tertiary": {
+        "005": {
+          "$value": "{color.ea.tertiary.005}",
+          "$type": "color"
+        },
+        "015": {
+          "$value": "{color.ea.tertiary.015}",
+          "$type": "color"
+        },
+        "025": {
+          "$value": "{color.ea.tertiary.025}",
+          "$type": "color"
+        },
+        "050": {
+          "$value": "{color.ea.tertiary.050}",
+          "$type": "color"
+        },
+        "060": {
+          "$value": "{color.ea.tertiary.060}",
+          "$type": "color"
+        },
+        "070": {
+          "$value": "{color.ea.tertiary.070}",
+          "$type": "color"
+        },
+        "080": {
+          "$value": "{color.ea.tertiary.080}",
+          "$type": "color"
+        },
+        "090": {
+          "$value": "{color.ea.tertiary.090}",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "{color.ea.tertiary.100}",
+          "$type": "color"
+        },
+        "110": {
+          "$value": "{color.ea.tertiary.110}",
+          "$type": "color"
+        },
+        "120": {
+          "$value": "{color.ea.tertiary.120}",
+          "$type": "color"
+        },
+        "130": {
+          "$value": "{color.ea.tertiary.130}",
+          "$type": "color"
+        },
+        "140": {
+          "$value": "{color.ea.tertiary.140}",
+          "$type": "color"
+        },
+        "150": {
+          "$value": "{color.ea.tertiary.150}",
+          "$type": "color"
+        }
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "brand": {
+        "$value": "{font.family.base}",
+        "$type": "fontFamily"
+      }
+    }
+  },
+  "radius": {
+    "button": {
+      "$value": "{radius.08}",
+      "$type": "dimension",
+      "$description": "Vitae .base-button-XX"
+    }
+  }
+}

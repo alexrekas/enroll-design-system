@@ -1,0 +1,237 @@
+{
+  "button": {
+    "primary": {
+      "bg": {
+        "$value": "{color.action.primary.rest}",
+        "$type": "color"
+      },
+      "bg-hover": {
+        "$value": "{color.action.primary.hover}",
+        "$type": "color"
+      },
+      "bg-active": {
+        "$value": "{color.action.primary.active}",
+        "$type": "color"
+      },
+      "bg-disabled": {
+        "$value": "{color.action.primary.disabled}",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "{color.text.on-action}",
+        "$type": "color"
+      }
+    },
+    "secondary": {
+      "bg": {
+        "$value": "transparent",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "{color.action.primary.rest}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.action.primary.rest}",
+        "$type": "color"
+      },
+      "border-width": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "2021 DS outlined buttons"
+      }
+    },
+    "destructive": {
+      "bg": {
+        "$value": "{color.action.destructive.rest}",
+        "$type": "color"
+      },
+      "bg-hover": {
+        "$value": "{color.action.destructive.hover}",
+        "$type": "color"
+      },
+      "bg-active": {
+        "$value": "{color.action.destructive.active}",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "{color.text.on-action}",
+        "$type": "color"
+      }
+    },
+    "radius": {
+      "$value": "{radius.button}",
+      "$type": "dimension"
+    },
+    "padding-x": {
+      "$value": "{space.200}",
+      "$type": "dimension"
+    },
+    "padding-y": {
+      "$value": "{space.125}",
+      "$type": "dimension",
+      "$description": "Vitae: 10px"
+    },
+    "min-height": {
+      "$value": "44px",
+      "$type": "dimension",
+      "$description": "Vitae base button"
+    },
+    "font-weight": {
+      "$value": "{font.weight.semibold}",
+      "$type": "fontWeight",
+      "$description": "Vitae Button-Text/*: SemiBold 16/20 all brands"
+    },
+    "text-transform": {
+      "$value": "capitalize",
+      "$type": "string",
+      "$description": "Vitae base button"
+    }
+  },
+  "input": {
+    "bg": {
+      "$value": "{color.surface.raised}",
+      "$type": "color"
+    },
+    "bg-disabled": {
+      "$value": "{color.gray.020}",
+      "$type": "color",
+      "$description": "Vitae disabled fill"
+    },
+    "border": {
+      "$value": "{color.gray.045}",
+      "$type": "color",
+      "$description": "Vitae input-rest"
+    },
+    "border-hover": {
+      "$value": "{color.gray.065}",
+      "$type": "color",
+      "$description": "Vitae input-hover"
+    },
+    "border-active": {
+      "$value": "{color.gray.090}",
+      "$type": "color",
+      "$description": "Vitae input-active #333"
+    },
+    "border-focus": {
+      "$value": "{color.brand.primary.100}",
+      "$type": "color",
+      "$description": "Vitae input-focus = brand primary"
+    },
+    "border-error": {
+      "$value": "{color.status.error}",
+      "$type": "color"
+    },
+    "border-error-hover": {
+      "$value": "{color.feedback.error.120}",
+      "$type": "color"
+    },
+    "border-error-active": {
+      "$value": "{color.feedback.error.140}",
+      "$type": "color"
+    },
+    "border-width": {
+      "$value": "2px",
+      "$type": "dimension",
+      "$description": "Vitae input spec"
+    },
+    "radius": {
+      "$value": "{radius.04}",
+      "$type": "dimension",
+      "$description": "Vitae input spec: 4px"
+    },
+    "padding-x": {
+      "$value": "{space.100}",
+      "$type": "dimension"
+    },
+    "padding-y": {
+      "$value": "{space.150}",
+      "$type": "dimension"
+    },
+    "text": {
+      "$value": "{color.text.primary}",
+      "$type": "color"
+    },
+    "placeholder": {
+      "$value": "{color.coolgray.070}",
+      "$type": "color",
+      "$description": "Vitae text/placeholder"
+    },
+    "label": {
+      "color": {
+        "$value": "{color.text.secondary}",
+        "$type": "color"
+      },
+      "weight": {
+        "$value": "{font.weight.semibold}",
+        "$type": "fontWeight"
+      }
+    },
+    "error-info": {
+      "bg": {
+        "$value": "{color.feedback.error.015}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.status.error}",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "{color.status.error}",
+        "$type": "color"
+      }
+    }
+  },
+  "alert": {
+    "radius": {
+      "$value": "12px",
+      "$type": "dimension",
+      "$description": "2021 DS alert spec"
+    },
+    "padding": {
+      "$value": "{space.150}",
+      "$type": "dimension"
+    },
+    "border-width": {
+      "$value": "1px",
+      "$type": "dimension"
+    },
+    "icon-size": {
+      "$value": "24px",
+      "$type": "dimension"
+    },
+    "text": {
+      "$value": "{color.text.primary}",
+      "$type": "color",
+      "$description": "2021 spec: alert text is Text/primary, not status color"
+    },
+    "success": {
+      "bg": {
+        "$value": "{color.status.success-surface}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.status.success}",
+        "$type": "color"
+      },
+      "icon": {
+        "$value": "{color.status.success}",
+        "$type": "color"
+      }
+    },
+    "error": {
+      "bg": {
+        "$value": "{color.status.error-surface}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.status.error}",
+        "$type": "color"
+      },
+      "icon": {
+        "$value": "{color.status.error}",
+        "$type": "color"
+      }
+    }
+  }
+}

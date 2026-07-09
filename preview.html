@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Enroll Design System — Theme Preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Barlow:wght@400;600;700&family=Roboto+Flex:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dist/css/tokens.ea.css">
+<link rel="stylesheet" href="dist/css/tokens.dc.css">
+<link rel="stylesheet" href="dist/css/tokens.ma.css">
+<link rel="stylesheet" href="dist/css/tokens.me.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 24px; font-family: 'Roboto Flex', 'Open Sans', Arial, sans-serif; background: #eee;
+         display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; }
+  .theme { background: var(--ea-color-surface-page); border-radius: 8px; padding: var(--ea-space-300);
+           font-family: var(--ea-font-family-brand); color: var(--ea-color-text-primary); }
+  .theme h2 { margin: 0 0 4px; font-weight: var(--ea-font-weight-semibold); }
+  .theme .sub { color: var(--ea-color-text-secondary); font-size: 14px; margin-bottom: var(--ea-space-200); }
+  .card { background: var(--ea-color-surface-raised); border: 1px solid var(--ea-color-border-default);
+          border-radius: var(--ea-radius-04); padding: var(--ea-space-200); margin-bottom: var(--ea-space-150); }
+  .btn { border: none; border-radius: var(--ea-button-radius); padding: var(--ea-button-padding-y) var(--ea-button-padding-x);
+         min-height: var(--ea-button-min-height); text-transform: var(--ea-button-text-transform);
+         font: inherit; font-size: 16px; line-height: 20px; font-weight: var(--ea-button-font-weight); cursor: pointer; margin: 0 8px 8px 0; }
+  .btn-primary { background: var(--ea-button-primary-bg); color: var(--ea-button-primary-text); }
+  .btn-primary:hover { background: var(--ea-button-primary-bg-hover); }
+  .btn-primary:active { background: var(--ea-button-primary-bg-active); }
+  .btn-secondary { background: transparent; color: var(--ea-button-secondary-text); border: none;
+                   box-shadow: inset 0 0 0 var(--ea-button-secondary-border-width) var(--ea-button-secondary-border); }
+  .btn-danger { background: var(--ea-button-destructive-bg); color: var(--ea-button-destructive-text); }
+  .btn-danger:hover { background: var(--ea-button-destructive-bg-hover); }
+  a { color: var(--ea-color-text-link); }
+  .swatches { display: flex; gap: 4px; margin: var(--ea-space-150) 0; }
+  .sw { flex: 1; height: 28px; border-radius: 2px; }
+  label.field { display: block; margin-bottom: 10px; }
+  label.field .lbl { display: block; color: var(--ea-input-label-color); font-weight: var(--ea-input-label-weight); margin-bottom: 4px; font-size: 15px; }
+  input { width: 100%; padding: var(--ea-input-padding-y) var(--ea-input-padding-x); border-radius: var(--ea-input-radius);
+          border: var(--ea-input-border-width) solid var(--ea-input-border); background: var(--ea-input-bg); color: var(--ea-input-text); font: inherit; }
+  input::placeholder { color: var(--ea-input-placeholder); }
+  input:hover { border-color: var(--ea-input-border-hover); }
+  input:focus { outline: none; border-color: var(--ea-input-border-focus); }
+  .btn:focus-visible, a:focus-visible, .close:focus-visible {
+    outline: var(--ea-focus-ring-width) solid var(--ea-focus-ring-color);
+    outline-offset: var(--ea-focus-ring-offset); }
+  .alert { display: flex; align-items: flex-start; gap: 10px;
+           border-radius: var(--ea-alert-radius); padding: var(--ea-alert-padding);
+           color: var(--ea-alert-text); font-size: 16px; line-height: 24px; margin-top: var(--ea-space-100);
+           border-style: solid; border-width: var(--ea-alert-border-width); }
+  .alert.success { background: var(--ea-alert-success-bg); border-color: var(--ea-alert-success-border); }
+  .alert.error   { background: var(--ea-alert-error-bg);   border-color: var(--ea-alert-error-border); }
+  .alert svg.icon { width: var(--ea-alert-icon-size); height: var(--ea-alert-icon-size); flex: none; }
+  .alert.success svg.icon { color: var(--ea-alert-success-icon); }
+  .alert.error   svg.icon { color: var(--ea-alert-error-icon); }
+  .alert .msg { flex: 1; }
+  .alert .close { flex: none; width: 24px; height: 24px; border: none; border-radius: 50%; cursor: pointer;
+                  background: transparent; color: var(--ea-color-text-secondary); font-size: 16px; line-height: 1; }
+</style>
+</head>
+<body>
+  <section class="theme" data-theme="ea">
+    <h2>EA — Enroll App (default)</h2>
+    <div class="sub">data-theme="ea"</div>
+    <div class="swatches"><div class="sw" style="background:var(--ea-color-brand-primary-005)"></div><div class="sw" style="background:var(--ea-color-brand-primary-025)"></div><div class="sw" style="background:var(--ea-color-brand-primary-050)"></div><div class="sw" style="background:var(--ea-color-brand-primary-100)"></div><div class="sw" style="background:var(--ea-color-brand-primary-120)"></div><div class="sw" style="background:var(--ea-color-brand-primary-140)"></div></div>
+    <div class="card">
+      <p style="margin:0 0 10px">Plan documents are ready. <a href="#">Review your enrollment</a>.</p>
+      <label class="field"><span class="lbl">Search</span><input placeholder="Search plans…"></label>
+      <button class="btn btn-primary">Continue</button>
+      <button class="btn btn-secondary">Back</button>
+      <button class="btn btn-danger">Cancel plan</button>
+    </div>
+    <div class="alert success">
+      <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor"/><path d="M6 10.2 L8.8 13 L14 7.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="msg">Your enrollment was submitted.</span><button class="close">&#10005;</button>
+    </div>
+    <div class="alert error">
+      <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor"/><path d="M6.5 6.5 L13.5 13.5 M13.5 6.5 L6.5 13.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="msg">SSN doesn&#8217;t match our records.</span><button class="close">&#10005;</button>
+    </div>
+  </section>
+  <section class="theme" data-theme="dc">
+    <h2>DC HealthLink</h2>
+    <div class="sub">data-theme="dc"</div>
+    <div class="swatches"><div class="sw" style="background:var(--ea-color-brand-primary-005)"></div><div class="sw" style="background:var(--ea-color-brand-primary-025)"></div><div class="sw" style="background:var(--ea-color-brand-primary-050)"></div><div class="sw" style="background:var(--ea-color-brand-primary-100)"></div><div class="sw" style="background:var(--ea-color-brand-primary-120)"></div><div class="sw" style="background:var(--ea-color-brand-primary-140)"></div></div>
+    <div class="card">
+      <p style="margin:0 0 10px">Plan documents are ready. <a href="#">Review your enrollment</a>.</p>
+      <label class="field"><span class="lbl">Search</span><input placeholder="Search plans…"></label>
+      <button class="btn btn-primary">Continue</button>
+      <button class="btn btn-secondary">Back</button>
+      <button class="btn btn-danger">Cancel plan</button>
+    </div>
+    <div class="alert success">
+      <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor"/><path d="M6 10.2 L8.8 13 L14 7.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="msg">Your enrollment was submitted.</span><button class="close">&#10005;</button>
+    </div>
+    <div class="alert error">
+      <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor"/><path d="M6.5 6.5 L13.5 13.5 M13.5 6.5 L6.5 13.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="msg">SSN doesn&#8217;t match our records.</span><button class="close">&#10005;</button>
+    </div>
+  </section>
+  <section class="theme" data-theme="ma">
+    <h2>MA Health Connector</h2>
+    <div class="sub">data-theme="ma"</div>
+    <div class="swatches"><div class="sw" style="background:var(--ea-color-brand-primary-005)"></div><div class="sw" style="background:var(--ea-color-brand-primary-025)"></div><div class="sw" style="background:var(--ea-color-brand-primary-050)"></div><div class="sw" style="background:var(--ea-color-brand-primary-100)"></div><div class="sw" style="background:var(--ea-color-brand-primary-120)"></div><div class="sw" style="background:var(--ea-color-brand-primary-140)"></div></div>
+    <div class="card">
+      <p style="margin:0 0 10px">Plan documents are ready. <a href="#">Review your enrollment</a>.</p>
+      <label class="field"><span class="lbl">Search</span><input placeholder="Search plans…"></label>
+      <button class="btn btn-primary">Continue</button>
+      <button class="btn btn-secondary">Back</button>
+      <button class="btn btn-danger">Cancel plan</button>
+    </div>
+    <div class="alert success">
+      <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor"/><path d="M6 10.2 L8.8 13 L14 7.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="msg">Your enrollment was submitted.</span><button class="close">&#10005;</button>
+    </div>
+    <div class="alert error">
+      <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor"/><path d="M6.5 6.5 L13.5 13.5 M13.5 6.5 L6.5 13.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="msg">SSN doesn&#8217;t match our records.</span><button class="close">&#10005;</button>
+    </div>
+  </section>
+  <section class="theme" data-theme="me">
+    <h2>CoverME.gov</h2>
+    <div class="sub">data-theme="me"</div>
+    <div class="swatches"><div class="sw" style="background:var(--ea-color-brand-primary-005)"></div><div class="sw" style="background:var(--ea-color-brand-primary-025)"></div><div class="sw" style="background:var(--ea-color-brand-primary-050)"></div><div class="sw" style="background:var(--ea-color-brand-primary-100)"></div><div class="sw" style="background:var(--ea-color-brand-primary-120)"></div><div class="sw" style="background:var(--ea-color-brand-primary-140)"></div></div>
+    <div class="card">
+      <p style="margin:0 0 10px">Plan documents are ready. <a href="#">Review your enrollment</a>.</p>
+      <label class="field"><span class="lbl">Search</span><input placeholder="Search plans…"></label>
+      <button class="btn btn-primary">Continue</button>
+      <button class="btn btn-secondary">Back</button>
+      <button class="btn btn-danger">Cancel plan</button>
+    </div>
+    <div class="alert success">
+      <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor"/><path d="M6 10.2 L8.8 13 L14 7.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="msg">Your enrollment was submitted.</span><button class="close">&#10005;</button>
+    </div>
+    <div class="alert error">
+      <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor"/><path d="M6.5 6.5 L13.5 13.5 M13.5 6.5 L6.5 13.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="msg">SSN doesn&#8217;t match our records.</span><button class="close">&#10005;</button>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,197 @@
+{
+  "$description": "MA Health Connector \u2014 ramps from 2021 DS MAHC frames",
+  "color": {
+    "brand": {
+      "primary": {
+        "005": {
+          "$value": "{color.ma.primary.005}",
+          "$type": "color"
+        },
+        "015": {
+          "$value": "{color.ma.primary.015}",
+          "$type": "color"
+        },
+        "025": {
+          "$value": "{color.ma.primary.025}",
+          "$type": "color"
+        },
+        "050": {
+          "$value": "{color.ma.primary.050}",
+          "$type": "color"
+        },
+        "060": {
+          "$value": "{color.ma.primary.060}",
+          "$type": "color"
+        },
+        "070": {
+          "$value": "{color.ma.primary.070}",
+          "$type": "color"
+        },
+        "080": {
+          "$value": "{color.ma.primary.080}",
+          "$type": "color"
+        },
+        "090": {
+          "$value": "{color.ma.primary.090}",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "{color.ma.primary.100}",
+          "$type": "color"
+        },
+        "110": {
+          "$value": "{color.ma.primary.110}",
+          "$type": "color"
+        },
+        "120": {
+          "$value": "{color.ma.primary.120}",
+          "$type": "color"
+        },
+        "130": {
+          "$value": "{color.ma.primary.130}",
+          "$type": "color"
+        },
+        "140": {
+          "$value": "{color.ma.primary.140}",
+          "$type": "color"
+        },
+        "150": {
+          "$value": "{color.ma.primary.150}",
+          "$type": "color"
+        }
+      },
+      "secondary": {
+        "005": {
+          "$value": "{color.ma.secondary.005}",
+          "$type": "color"
+        },
+        "015": {
+          "$value": "{color.ma.secondary.015}",
+          "$type": "color"
+        },
+        "025": {
+          "$value": "{color.ma.secondary.025}",
+          "$type": "color"
+        },
+        "050": {
+          "$value": "{color.ma.secondary.050}",
+          "$type": "color"
+        },
+        "060": {
+          "$value": "{color.ma.secondary.060}",
+          "$type": "color"
+        },
+        "070": {
+          "$value": "{color.ma.secondary.070}",
+          "$type": "color"
+        },
+        "080": {
+          "$value": "{color.ma.secondary.080}",
+          "$type": "color"
+        },
+        "090": {
+          "$value": "{color.ma.secondary.090}",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "{color.ma.secondary.100}",
+          "$type": "color"
+        },
+        "110": {
+          "$value": "{color.ma.secondary.110}",
+          "$type": "color"
+        },
+        "120": {
+          "$value": "{color.ma.secondary.120}",
+          "$type": "color"
+        },
+        "130": {
+          "$value": "{color.ma.secondary.130}",
+          "$type": "color"
+        },
+        "140": {
+          "$value": "{color.ma.secondary.140}",
+          "$type": "color"
+        },
+        "150": {
+          "$value": "{color.ma.secondary.150}",
+          "$type": "color"
+        }
+      },
+      "tertiary": {
+        "005": {
+          "$value": "{color.ma.tertiary.005}",
+          "$type": "color"
+        },
+        "015": {
+          "$value": "{color.ma.tertiary.015}",
+          "$type": "color"
+        },
+        "025": {
+          "$value": "{color.ma.tertiary.025}",
+          "$type": "color"
+        },
+        "050": {
+          "$value": "{color.ma.tertiary.050}",
+          "$type": "color"
+        },
+        "060": {
+          "$value": "{color.ma.tertiary.060}",
+          "$type": "color"
+        },
+        "070": {
+          "$value": "{color.ma.tertiary.070}",
+          "$type": "color"
+        },
+        "080": {
+          "$value": "{color.ma.tertiary.080}",
+          "$type": "color"
+        },
+        "090": {
+          "$value": "{color.ma.tertiary.090}",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "{color.ma.tertiary.100}",
+          "$type": "color"
+        },
+        "110": {
+          "$value": "{color.ma.tertiary.110}",
+          "$type": "color"
+        },
+        "120": {
+          "$value": "{color.ma.tertiary.120}",
+          "$type": "color"
+        },
+        "130": {
+          "$value": "{color.ma.tertiary.130}",
+          "$type": "color"
+        },
+        "140": {
+          "$value": "{color.ma.tertiary.140}",
+          "$type": "color"
+        },
+        "150": {
+          "$value": "{color.ma.tertiary.150}",
+          "$type": "color"
+        }
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "brand": {
+        "$value": "{font.family.open-sans}",
+        "$type": "fontFamily",
+        "$description": "decided 7/9/26: DC and MA use Open Sans"
+      }
+    }
+  },
+  "radius": {
+    "button": {
+      "$value": "{radius.12}",
+      "$type": "dimension",
+      "$description": "decided 7/9/26: matches DC; Vitae's 48px was an error"
+    }
+  }
+}

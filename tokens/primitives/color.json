@@ -1,0 +1,1072 @@
+{
+  "color": {
+    "ea": {
+      "primary": {
+        "005": {
+          "$value": "#f2f6fc",
+          "$type": "color",
+          "$description": "Vitae EA mode; captured"
+        },
+        "015": {
+          "$value": "#d9e6f5",
+          "$type": "color",
+          "$description": "Vitae EA mode; captured"
+        },
+        "025": {
+          "$value": "#c0d4ee",
+          "$type": "color",
+          "$description": "Vitae EA mode; captured"
+        },
+        "050": {
+          "$value": "#81a9dd",
+          "$type": "color",
+          "$description": "Vitae EA mode; interpolated"
+        },
+        "060": {
+          "$value": "#6798d7",
+          "$type": "color",
+          "$description": "Vitae EA mode; interpolated"
+        },
+        "070": {
+          "$value": "#4e87d0",
+          "$type": "color",
+          "$description": "Vitae EA mode; interpolated"
+        },
+        "080": {
+          "$value": "#3576c9",
+          "$type": "color",
+          "$description": "Vitae EA mode; interpolated"
+        },
+        "090": {
+          "$value": "#1b65c3",
+          "$type": "color",
+          "$description": "Vitae EA mode; interpolated"
+        },
+        "100": {
+          "$value": "#0254bc",
+          "$type": "color",
+          "$description": "Vitae EA mode; captured"
+        },
+        "110": {
+          "$value": "#024ca9",
+          "$type": "color",
+          "$description": "Vitae EA mode; interpolated"
+        },
+        "120": {
+          "$value": "#024396",
+          "$type": "color",
+          "$description": "Vitae EA mode; captured"
+        },
+        "130": {
+          "$value": "#023a84",
+          "$type": "color",
+          "$description": "Vitae EA mode; interpolated"
+        },
+        "140": {
+          "$value": "#013271",
+          "$type": "color",
+          "$description": "Vitae EA mode; captured"
+        },
+        "150": {
+          "$value": "#012a5e",
+          "$type": "color",
+          "$description": "Vitae EA mode; captured"
+        }
+      },
+      "secondary": {
+        "005": {
+          "$value": "#f5f7f9",
+          "$type": "color",
+          "$description": "Vitae default/EA context; captured"
+        },
+        "015": {
+          "$value": "#e2e7ec",
+          "$type": "color",
+          "$description": "Vitae default/EA context; captured"
+        },
+        "025": {
+          "$value": "#ced6df",
+          "$type": "color",
+          "$description": "Vitae default/EA context; captured"
+        },
+        "050": {
+          "$value": "#9dadc0",
+          "$type": "color",
+          "$description": "Vitae default/EA context; interpolated"
+        },
+        "060": {
+          "$value": "#899db3",
+          "$type": "color",
+          "$description": "Vitae default/EA context; interpolated"
+        },
+        "070": {
+          "$value": "#768ca7",
+          "$type": "color",
+          "$description": "Vitae default/EA context; interpolated"
+        },
+        "080": {
+          "$value": "#627c9a",
+          "$type": "color",
+          "$description": "Vitae default/EA context; interpolated"
+        },
+        "090": {
+          "$value": "#4f6b8e",
+          "$type": "color",
+          "$description": "Vitae default/EA context; interpolated"
+        },
+        "100": {
+          "$value": "#3b5b81",
+          "$type": "color",
+          "$description": "Vitae default/EA context; captured"
+        },
+        "110": {
+          "$value": "#355274",
+          "$type": "color",
+          "$description": "Vitae default/EA context; interpolated"
+        },
+        "120": {
+          "$value": "#2f4967",
+          "$type": "color",
+          "$description": "Vitae default/EA context; captured"
+        },
+        "130": {
+          "$value": "#29405a",
+          "$type": "color",
+          "$description": "Vitae default/EA context; interpolated"
+        },
+        "140": {
+          "$value": "#23374d",
+          "$type": "color",
+          "$description": "Vitae default/EA context; captured"
+        },
+        "150": {
+          "$value": "#1b2b3c",
+          "$type": "color",
+          "$description": "extrapolated from 140"
+        }
+      },
+      "tertiary": {
+        "005": {
+          "$value": "#f6f2f5",
+          "$type": "color",
+          "$description": "Vitae default/EA context; captured"
+        },
+        "015": {
+          "$value": "#e3dde1",
+          "$type": "color",
+          "$description": "Vitae default/EA context; captured"
+        },
+        "025": {
+          "$value": "#d0c6cd",
+          "$type": "color",
+          "$description": "Vitae default/EA context; captured"
+        },
+        "050": {
+          "$value": "#a18d9b",
+          "$type": "color",
+          "$description": "Vitae default/EA context; interpolated"
+        },
+        "060": {
+          "$value": "#8f7787",
+          "$type": "color",
+          "$description": "Vitae default/EA context; interpolated"
+        },
+        "070": {
+          "$value": "#7c6072",
+          "$type": "color",
+          "$description": "Vitae default/EA context; interpolated"
+        },
+        "080": {
+          "$value": "#69495e",
+          "$type": "color",
+          "$description": "Vitae default/EA context; interpolated"
+        },
+        "090": {
+          "$value": "#57334a",
+          "$type": "color",
+          "$description": "Vitae default/EA context; interpolated"
+        },
+        "100": {
+          "$value": "#441c36",
+          "$type": "color",
+          "$description": "Vitae default/EA context; captured"
+        },
+        "110": {
+          "$value": "#3d1930",
+          "$type": "color",
+          "$description": "Vitae default/EA context; interpolated"
+        },
+        "120": {
+          "$value": "#36162b",
+          "$type": "color",
+          "$description": "Vitae default/EA context; captured"
+        },
+        "130": {
+          "$value": "#301426",
+          "$type": "color",
+          "$description": "Vitae default/EA context; interpolated"
+        },
+        "140": {
+          "$value": "#291120",
+          "$type": "color",
+          "$description": "Vitae default/EA context; captured"
+        },
+        "150": {
+          "$value": "#200d19",
+          "$type": "color",
+          "$description": "extrapolated from 140"
+        }
+      }
+    },
+    "dc": {
+      "primary": {
+        "005": {
+          "$value": "#f2f5f7",
+          "$type": "color",
+          "$description": "Vitae DC mode / decided #003260; captured"
+        },
+        "015": {
+          "$value": "#d9e0e7",
+          "$type": "color",
+          "$description": "Vitae DC mode / decided #003260; captured"
+        },
+        "025": {
+          "$value": "#bfccd7",
+          "$type": "color",
+          "$description": "Vitae DC mode / decided #003260; interpolated"
+        },
+        "050": {
+          "$value": "#8098af",
+          "$type": "color",
+          "$description": "Vitae DC mode / decided #003260; interpolated"
+        },
+        "060": {
+          "$value": "#6684a0",
+          "$type": "color",
+          "$description": "Vitae DC mode / decided #003260; interpolated"
+        },
+        "070": {
+          "$value": "#4d6f90",
+          "$type": "color",
+          "$description": "Vitae DC mode / decided #003260; interpolated"
+        },
+        "080": {
+          "$value": "#335b80",
+          "$type": "color",
+          "$description": "Vitae DC mode / decided #003260; interpolated"
+        },
+        "090": {
+          "$value": "#1a4670",
+          "$type": "color",
+          "$description": "Vitae DC mode / decided #003260; interpolated"
+        },
+        "100": {
+          "$value": "#003260",
+          "$type": "color",
+          "$description": "Vitae DC mode / decided #003260; captured"
+        },
+        "110": {
+          "$value": "#002d56",
+          "$type": "color",
+          "$description": "Vitae DC mode / decided #003260; interpolated"
+        },
+        "120": {
+          "$value": "#00284d",
+          "$type": "color",
+          "$description": "Vitae DC mode / decided #003260; captured"
+        },
+        "130": {
+          "$value": "#002343",
+          "$type": "color",
+          "$description": "Vitae DC mode / decided #003260; captured"
+        },
+        "140": {
+          "$value": "#001e3a",
+          "$type": "color",
+          "$description": "Vitae DC mode / decided #003260; captured"
+        },
+        "150": {
+          "$value": "#001930",
+          "$type": "color",
+          "$description": "Vitae DC mode / decided #003260; captured"
+        }
+      },
+      "secondary": {
+        "005": {
+          "$value": "#f2f8fc",
+          "$type": "color",
+          "$description": "Vitae DC mode; captured"
+        },
+        "015": {
+          "$value": "#d9ecf7",
+          "$type": "color",
+          "$description": "Vitae DC mode; captured"
+        },
+        "025": {
+          "$value": "#bfdef2",
+          "$type": "color",
+          "$description": "Vitae DC mode; interpolated"
+        },
+        "050": {
+          "$value": "#7fbae5",
+          "$type": "color",
+          "$description": "Vitae DC mode; captured"
+        },
+        "060": {
+          "$value": "#66ade0",
+          "$type": "color",
+          "$description": "Vitae DC mode; captured"
+        },
+        "070": {
+          "$value": "#4c9fdb",
+          "$type": "color",
+          "$description": "Vitae DC mode; captured"
+        },
+        "080": {
+          "$value": "#3391d6",
+          "$type": "color",
+          "$description": "Vitae DC mode; captured"
+        },
+        "090": {
+          "$value": "#1983d1",
+          "$type": "color",
+          "$description": "Vitae DC mode; captured"
+        },
+        "100": {
+          "$value": "#0076cc",
+          "$type": "color",
+          "$description": "Vitae DC mode; captured"
+        },
+        "110": {
+          "$value": "#006ab8",
+          "$type": "color",
+          "$description": "Vitae DC mode; captured"
+        },
+        "120": {
+          "$value": "#005ea3",
+          "$type": "color",
+          "$description": "Vitae DC mode; captured"
+        },
+        "130": {
+          "$value": "#00538f",
+          "$type": "color",
+          "$description": "Vitae DC mode; captured"
+        },
+        "140": {
+          "$value": "#00477a",
+          "$type": "color",
+          "$description": "Vitae DC mode; captured"
+        },
+        "150": {
+          "$value": "#003b66",
+          "$type": "color",
+          "$description": "Vitae DC mode; captured"
+        }
+      },
+      "tertiary": {
+        "005": {
+          "$value": "#fcf2f2",
+          "$type": "color",
+          "$description": "Vitae DC mode; decided: red; captured"
+        },
+        "015": {
+          "$value": "#f8dcdc",
+          "$type": "color",
+          "$description": "Vitae DC mode; decided: red; captured"
+        },
+        "025": {
+          "$value": "#f5c7c7",
+          "$type": "color",
+          "$description": "Vitae DC mode; decided: red; interpolated"
+        },
+        "050": {
+          "$value": "#ec9192",
+          "$type": "color",
+          "$description": "Vitae DC mode; decided: red; captured"
+        },
+        "060": {
+          "$value": "#e97b7c",
+          "$type": "color",
+          "$description": "Vitae DC mode; decided: red; captured"
+        },
+        "070": {
+          "$value": "#e56566",
+          "$type": "color",
+          "$description": "Vitae DC mode; decided: red; captured"
+        },
+        "080": {
+          "$value": "#e14f51",
+          "$type": "color",
+          "$description": "Vitae DC mode; decided: red; captured"
+        },
+        "090": {
+          "$value": "#de393a",
+          "$type": "color",
+          "$description": "Vitae DC mode; decided: red; captured"
+        },
+        "100": {
+          "$value": "#da2325",
+          "$type": "color",
+          "$description": "Vitae DC mode; decided: red; captured"
+        },
+        "110": {
+          "$value": "#c52021",
+          "$type": "color",
+          "$description": "Vitae DC mode; decided: red; captured"
+        },
+        "120": {
+          "$value": "#ae1c1e",
+          "$type": "color",
+          "$description": "Vitae DC mode; decided: red; captured"
+        },
+        "130": {
+          "$value": "#99191a",
+          "$type": "color",
+          "$description": "Vitae DC mode; decided: red; captured"
+        },
+        "140": {
+          "$value": "#831516",
+          "$type": "color",
+          "$description": "Vitae DC mode; decided: red; captured"
+        },
+        "150": {
+          "$value": "#6d1213",
+          "$type": "color",
+          "$description": "Vitae DC mode; decided: red; captured"
+        }
+      }
+    },
+    "me": {
+      "primary": {
+        "005": {
+          "$value": "#f4f6f7",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "015": {
+          "$value": "#dfe5e8",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "025": {
+          "$value": "#ccd5da",
+          "$type": "color",
+          "$description": "2021 DS CME; interpolated"
+        },
+        "050": {
+          "$value": "#9EAEB7",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "060": {
+          "$value": "#8B9EA9",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "070": {
+          "$value": "#778D9A",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "080": {
+          "$value": "#647D8C",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "090": {
+          "$value": "#506D7D",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "100": {
+          "$value": "#3D5D6F",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "110": {
+          "$value": "#375464",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "120": {
+          "$value": "#314A59",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "130": {
+          "$value": "#2B414E",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "140": {
+          "$value": "#253843",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "150": {
+          "$value": "#1F2F38",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        }
+      },
+      "secondary": {
+        "005": {
+          "$value": "#f4f7fa",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "015": {
+          "$value": "#dfe9f0",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "025": {
+          "$value": "#c8d8e4",
+          "$type": "color",
+          "$description": "2021 DS CME; interpolated"
+        },
+        "050": {
+          "$value": "#8DADC6",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "060": {
+          "$value": "#7AA0BC",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "070": {
+          "$value": "#6792B3",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "080": {
+          "$value": "#5484A9",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "090": {
+          "$value": "#4A7EA6",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "100": {
+          "$value": "#3B6B90",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "110": {
+          "$value": "#345F80",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "120": {
+          "$value": "#2E5470",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "130": {
+          "$value": "#274760",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "140": {
+          "$value": "#213C50",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "150": {
+          "$value": "#1a3040",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        }
+      },
+      "tertiary": {
+        "005": {
+          "$value": "#f6f8f2",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "015": {
+          "$value": "#e6ecdb",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "025": {
+          "$value": "#d3dbc4",
+          "$type": "color",
+          "$description": "2021 DS CME; interpolated"
+        },
+        "050": {
+          "$value": "#A2B289",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "060": {
+          "$value": "#92A575",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "070": {
+          "$value": "#839961",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "080": {
+          "$value": "#738C4D",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "090": {
+          "$value": "#647F3A",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "100": {
+          "$value": "#5A7334",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "110": {
+          "$value": "#50662E",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "120": {
+          "$value": "#465929",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "130": {
+          "$value": "#3C4C23",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "140": {
+          "$value": "#32401D",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        },
+        "150": {
+          "$value": "#283317",
+          "$type": "color",
+          "$description": "2021 DS CME; captured"
+        }
+      }
+    },
+    "ma": {
+      "primary": {
+        "005": {
+          "$value": "#f2f7f9",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "015": {
+          "$value": "#d9e7ed",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "025": {
+          "$value": "#bfd7e0",
+          "$type": "color",
+          "$description": "2021 DS MAHC; interpolated"
+        },
+        "050": {
+          "$value": "#7FAEC0",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "060": {
+          "$value": "#669EB3",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "070": {
+          "$value": "#4C8EA7",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "080": {
+          "$value": "#337E9A",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "090": {
+          "$value": "#196E8D",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "100": {
+          "$value": "#005E81",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "110": {
+          "$value": "#005574",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "120": {
+          "$value": "#004B67",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "130": {
+          "$value": "#00425B",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "140": {
+          "$value": "#00384D",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "150": {
+          "$value": "#002F41",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        }
+      },
+      "secondary": {
+        "005": {
+          "$value": "#fcf7f2",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "015": {
+          "$value": "#f6e6d9",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "025": {
+          "$value": "#f0d5bf",
+          "$type": "color",
+          "$description": "2021 DS MAHC; interpolated"
+        },
+        "050": {
+          "$value": "#E0AB7F",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "060": {
+          "$value": "#DA9B66",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "070": {
+          "$value": "#D38A4C",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "080": {
+          "$value": "#CD7933",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "090": {
+          "$value": "#C76819",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "100": {
+          "$value": "#C15800",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "110": {
+          "$value": "#AE4F00",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "120": {
+          "$value": "#9A4600",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "130": {
+          "$value": "#873E00",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "140": {
+          "$value": "#743500",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        },
+        "150": {
+          "$value": "#612C00",
+          "$type": "color",
+          "$description": "2021 DS MAHC; captured"
+        }
+      },
+      "tertiary": {
+        "005": {
+          "$value": "#f2f4f6",
+          "$type": "color",
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
+        },
+        "015": {
+          "$value": "#d9dee4",
+          "$type": "color",
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
+        },
+        "025": {
+          "$value": "#bfc8d2",
+          "$type": "color",
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
+        },
+        "050": {
+          "$value": "#8091a5",
+          "$type": "color",
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
+        },
+        "060": {
+          "$value": "#667a94",
+          "$type": "color",
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
+        },
+        "070": {
+          "$value": "#4d6482",
+          "$type": "color",
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
+        },
+        "080": {
+          "$value": "#334e70",
+          "$type": "color",
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
+        },
+        "090": {
+          "$value": "#1a385e",
+          "$type": "color",
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
+        },
+        "100": {
+          "$value": "#00224C",
+          "$type": "color",
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
+        },
+        "110": {
+          "$value": "#001e44",
+          "$type": "color",
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
+        },
+        "120": {
+          "$value": "#001B3D",
+          "$type": "color",
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
+        },
+        "130": {
+          "$value": "#001836",
+          "$type": "color",
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
+        },
+        "140": {
+          "$value": "#00142E",
+          "$type": "color",
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
+        },
+        "150": {
+          "$value": "#001024",
+          "$type": "color",
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
+        }
+      }
+    },
+    "gray": {
+      "000": {
+        "$value": "#ffffff",
+        "$type": "color",
+        "$description": "Vitae gray-000"
+      },
+      "005": {
+        "$value": "#fafafa",
+        "$type": "color",
+        "$description": "Vitae level-0"
+      },
+      "010": {
+        "$value": "#f2f2f2",
+        "$type": "color",
+        "$description": "code primary_light_gray"
+      },
+      "020": {
+        "$value": "#e2e2e2",
+        "$type": "color",
+        "$description": "Vitae button-disabled"
+      },
+      "030": {
+        "$value": "#d7d7d7",
+        "$type": "color",
+        "$description": "code separator"
+      },
+      "040": {
+        "$value": "#b7b7b7",
+        "$type": "color",
+        "$description": "code gray"
+      },
+      "045": {
+        "$value": "#8d8d8d",
+        "$type": "color",
+        "$description": "Vitae input border rest"
+      },
+      "050": {
+        "$value": "#9b9b9b",
+        "$type": "color",
+        "$description": "code table heading"
+      },
+      "060": {
+        "$value": "#7b7b7b",
+        "$type": "color",
+        "$description": "code primary_dark_gray"
+      },
+      "065": {
+        "$value": "#606060",
+        "$type": "color",
+        "$description": "Vitae input border hover"
+      },
+      "070": {
+        "$value": "#5c5c5c",
+        "$type": "color",
+        "$description": "code primary_black"
+      },
+      "080": {
+        "$value": "#454545",
+        "$type": "color",
+        "$description": "code application_text_color"
+      },
+      "090": {
+        "$value": "#333333",
+        "$type": "color",
+        "$description": "code alt header"
+      },
+      "100": {
+        "$value": "#201f1e",
+        "$type": "color",
+        "$description": "2021 grey-190"
+      },
+      "110": {
+        "$value": "#0d0d0d",
+        "$type": "color",
+        "$description": "Vitae gray-190 \u2014 focus ring"
+      }
+    },
+    "white": {
+      "$value": "#ffffff",
+      "$type": "color"
+    },
+    "feedback": {
+      "error": {
+        "100": {
+          "$value": "#a21e1f",
+          "$type": "color",
+          "$description": "Vitae destructive rest"
+        },
+        "120": {
+          "$value": "#85191a",
+          "$type": "color",
+          "$description": "Vitae destructive hover"
+        },
+        "140": {
+          "$value": "#671314",
+          "$type": "color",
+          "$description": "Vitae destructive active"
+        },
+        "010": {
+          "$value": "#ffcfcf",
+          "$type": "color",
+          "$description": "2021 DS error alert bg"
+        },
+        "015": {
+          "$value": "#f8c0c0",
+          "$type": "color",
+          "$description": "Vitae input error-info bg"
+        }
+      },
+      "success": {
+        "100": {
+          "$value": "#027314",
+          "$type": "color",
+          "$description": "2021 DS Alert/success-icon"
+        },
+        "120": {
+          "$value": "#025c10",
+          "$type": "color",
+          "$description": "shade"
+        },
+        "010": {
+          "$value": "#e0f8e4",
+          "$type": "color",
+          "$description": "2021 DS success alert bg"
+        }
+      },
+      "warning": {
+        "100": {
+          "$value": "#9a6700",
+          "$type": "color",
+          "$description": "fresh, AA-checked"
+        },
+        "120": {
+          "$value": "#7a5200",
+          "$type": "color"
+        },
+        "010": {
+          "$value": "#fff5e0",
+          "$type": "color"
+        }
+      },
+      "info": {
+        "100": {
+          "$value": "#005ea2",
+          "$type": "color",
+          "$description": "fresh, AA-checked"
+        },
+        "120": {
+          "$value": "#004b82",
+          "$type": "color"
+        },
+        "010": {
+          "$value": "#e7f1f8",
+          "$type": "color"
+        }
+      }
+    },
+    "metal": {
+      "gold": {
+        "$value": "#F7B319",
+        "$type": "color",
+        "$description": "Metal level: Gold \u2014 plan indicator ONLY, never UI accent (decided 7/9/26)"
+      },
+      "bronze": {
+        "$value": "#cd7f32",
+        "$type": "color",
+        "$description": "PLACEHOLDER \u2014 extract from DS"
+      },
+      "silver": {
+        "$value": "#c0c0c0",
+        "$type": "color",
+        "$description": "PLACEHOLDER \u2014 extract from DS"
+      },
+      "platinum": {
+        "$value": "#e5e4e2",
+        "$type": "color",
+        "$description": "PLACEHOLDER \u2014 extract from DS"
+      },
+      "catastrophic": {
+        "$value": "#9b9b9b",
+        "$type": "color",
+        "$description": "PLACEHOLDER \u2014 extract from DS"
+      }
+    },
+    "coolgray": {
+      "070": {
+        "$value": "#57595b",
+        "$type": "color",
+        "$description": "Vitae text/placeholder"
+      },
+      "080": {
+        "$value": "#4b5159",
+        "$type": "color",
+        "$description": "Vitae text/secondary"
+      }
+    }
+  }
+}

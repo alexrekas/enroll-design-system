@@ -1,0 +1,195 @@
+{
+  "color": {
+    "text": {
+      "primary": {
+        "$value": "{color.gray.090}",
+        "$type": "color"
+      },
+      "secondary": {
+        "$value": "{color.coolgray.080}",
+        "$type": "color",
+        "$description": "Vitae text/secondary"
+      },
+      "disabled": {
+        "$value": "{color.gray.050}",
+        "$type": "color"
+      },
+      "link": {
+        "$value": "{color.brand.primary.100}",
+        "$type": "color",
+        "$description": "decided 7/9/26: links use client primary"
+      },
+      "link-visited": {
+        "$value": "{color.brand.tertiary.100}",
+        "$type": "color",
+        "$description": "Vitae: hyperlink-visited = tertiary"
+      },
+      "on-action": {
+        "$value": "{color.white}",
+        "$type": "color"
+      },
+      "error": {
+        "$value": "{color.feedback.error.100}",
+        "$type": "color"
+      }
+    },
+    "surface": {
+      "page": {
+        "$value": "{color.gray.005}",
+        "$type": "color",
+        "$description": "Vitae Background/level-0"
+      },
+      "raised": {
+        "$value": "{color.white}",
+        "$type": "color"
+      },
+      "sunken": {
+        "$value": "{color.gray.010}",
+        "$type": "color"
+      },
+      "brand": {
+        "$value": "{color.brand.primary.100}",
+        "$type": "color"
+      },
+      "brand-subtle": {
+        "$value": "{color.brand.primary.005}",
+        "$type": "color"
+      }
+    },
+    "border": {
+      "default": {
+        "$value": "{color.gray.030}",
+        "$type": "color"
+      },
+      "strong": {
+        "$value": "{color.gray.050}",
+        "$type": "color"
+      },
+      "focus": {
+        "$value": "{color.brand.primary.100}",
+        "$type": "color",
+        "$description": "Vitae input focus uses brand primary"
+      }
+    },
+    "action": {
+      "primary": {
+        "rest": {
+          "$value": "{color.brand.primary.100}",
+          "$type": "color"
+        },
+        "hover": {
+          "$value": "{color.brand.primary.120}",
+          "$type": "color"
+        },
+        "active": {
+          "$value": "{color.brand.primary.140}",
+          "$type": "color"
+        },
+        "disabled": {
+          "$value": "{color.gray.020}",
+          "$type": "color"
+        }
+      },
+      "destructive": {
+        "rest": {
+          "$value": "{color.feedback.error.100}",
+          "$type": "color"
+        },
+        "hover": {
+          "$value": "{color.feedback.error.120}",
+          "$type": "color"
+        },
+        "active": {
+          "$value": "{color.feedback.error.140}",
+          "$type": "color"
+        }
+      }
+    },
+    "status": {
+      "error": {
+        "$value": "{color.feedback.error.100}",
+        "$type": "color"
+      },
+      "error-surface": {
+        "$value": "{color.feedback.error.010}",
+        "$type": "color"
+      },
+      "success": {
+        "$value": "{color.feedback.success.100}",
+        "$type": "color"
+      },
+      "success-surface": {
+        "$value": "{color.feedback.success.010}",
+        "$type": "color"
+      },
+      "warning": {
+        "$value": "{color.feedback.warning.100}",
+        "$type": "color"
+      },
+      "warning-surface": {
+        "$value": "{color.feedback.warning.010}",
+        "$type": "color"
+      },
+      "info": {
+        "$value": "{color.feedback.info.100}",
+        "$type": "color"
+      },
+      "info-surface": {
+        "$value": "{color.feedback.info.010}",
+        "$type": "color"
+      }
+    }
+  },
+  "text": {
+    "body": {
+      "font": {
+        "$value": "{font.family.brand}",
+        "$type": "fontFamily"
+      },
+      "size": {
+        "$value": "{font.size.300}",
+        "$type": "dimension"
+      },
+      "weight": {
+        "$value": "{font.weight.regular}",
+        "$type": "fontWeight"
+      },
+      "line-height": {
+        "$value": "{font.line-height.base}",
+        "$type": "number"
+      }
+    },
+    "heading": {
+      "font": {
+        "$value": "{font.family.brand}",
+        "$type": "fontFamily"
+      },
+      "weight": {
+        "$value": "{font.weight.semibold}",
+        "$type": "fontWeight"
+      },
+      "line-height": {
+        "$value": "{font.line-height.heading}",
+        "$type": "number"
+      }
+    }
+  },
+  "focus": {
+    "ring": {
+      "color": {
+        "$value": "{color.gray.110}",
+        "$type": "color",
+        "$description": "Vitae: 2px gray-190 ring on focus"
+      },
+      "width": {
+        "$value": "2px",
+        "$type": "dimension"
+      },
+      "offset": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "light gap between component and ring"
+      }
+    }
+  }
+}

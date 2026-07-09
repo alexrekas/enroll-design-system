@@ -1,0 +1,19 @@
+{
+  "name": "@ideacrew/enroll-design-system",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Tokens-first design system for Enroll App (EA/DC/MA/ME themes)",
+  "scripts": {
+    "build": "node build.mjs",
+    "check:contrast": "node contrast-check.mjs",
+    "prepare:all": "npm run build && npm run check:contrast",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@storybook/html-vite": "^10.4.6",
+    "storybook": "^10.4.6",
+    "style-dictionary": "^4.3.0",
+    "vite": "^6.4.3"
+  }
+}

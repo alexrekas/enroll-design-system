@@ -1,0 +1,111 @@
+{
+  "space": {
+    "000": {
+      "$value": "0px",
+      "$type": "dimension",
+      "$description": "Vitae"
+    },
+    "050": {
+      "$value": "4px",
+      "$type": "dimension",
+      "$description": "Vitae"
+    },
+    "075": {
+      "$value": "6px",
+      "$type": "dimension",
+      "$description": "Vitae"
+    },
+    "100": {
+      "$value": "8px",
+      "$type": "dimension",
+      "$description": "Vitae"
+    },
+    "150": {
+      "$value": "12px",
+      "$type": "dimension",
+      "$description": "Vitae"
+    },
+    "200": {
+      "$value": "16px",
+      "$type": "dimension",
+      "$description": "extension"
+    },
+    "250": {
+      "$value": "20px",
+      "$type": "dimension",
+      "$description": "extension"
+    },
+    "300": {
+      "$value": "24px",
+      "$type": "dimension",
+      "$description": "extension"
+    },
+    "400": {
+      "$value": "32px",
+      "$type": "dimension",
+      "$description": "extension"
+    },
+    "500": {
+      "$value": "40px",
+      "$type": "dimension",
+      "$description": "extension"
+    },
+    "600": {
+      "$value": "48px",
+      "$type": "dimension",
+      "$description": "extension"
+    },
+    "800": {
+      "$value": "64px",
+      "$type": "dimension",
+      "$description": "extension"
+    },
+    "125": {
+      "$value": "10px",
+      "$type": "dimension",
+      "$description": "Vitae button padding-y"
+    }
+  },
+  "radius": {
+    "02": {
+      "$value": "2px",
+      "$type": "dimension",
+      "$description": "Vitae"
+    },
+    "04": {
+      "$value": "4px",
+      "$type": "dimension",
+      "$description": "Vitae"
+    },
+    "08": {
+      "$value": "8px",
+      "$type": "dimension",
+      "$description": "extension"
+    },
+    "16": {
+      "$value": "16px",
+      "$type": "dimension",
+      "$description": "Vitae"
+    },
+    "pill": {
+      "$value": "999px",
+      "$type": "dimension",
+      "$description": "extension"
+    },
+    "12": {
+      "$value": "12px",
+      "$type": "dimension",
+      "$description": "Vitae"
+    },
+    "48": {
+      "$value": "48px",
+      "$type": "dimension",
+      "$description": "Vitae (pill)"
+    },
+    "button": {
+      "$value": "{radius.08}",
+      "$type": "dimension",
+      "$description": "Vitae .base-button-XX: 8px; per-client override in themes"
+    }
+  }
+}

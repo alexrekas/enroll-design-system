@@ -1,0 +1,197 @@
+{
+  "$description": "CoverME.gov \u2014 buttons use primary slate per 2021 DS Buttons matrix; gold is decorative accent only",
+  "font": {
+    "family": {
+      "brand": {
+        "$value": "{font.family.alt}",
+        "$type": "fontFamily",
+        "$description": "CoverME uses Barlow"
+      }
+    }
+  },
+  "color": {
+    "brand": {
+      "primary": {
+        "005": {
+          "$value": "{color.me.primary.005}",
+          "$type": "color"
+        },
+        "015": {
+          "$value": "{color.me.primary.015}",
+          "$type": "color"
+        },
+        "025": {
+          "$value": "{color.me.primary.025}",
+          "$type": "color"
+        },
+        "050": {
+          "$value": "{color.me.primary.050}",
+          "$type": "color"
+        },
+        "060": {
+          "$value": "{color.me.primary.060}",
+          "$type": "color"
+        },
+        "070": {
+          "$value": "{color.me.primary.070}",
+          "$type": "color"
+        },
+        "080": {
+          "$value": "{color.me.primary.080}",
+          "$type": "color"
+        },
+        "090": {
+          "$value": "{color.me.primary.090}",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "{color.me.primary.100}",
+          "$type": "color"
+        },
+        "110": {
+          "$value": "{color.me.primary.110}",
+          "$type": "color"
+        },
+        "120": {
+          "$value": "{color.me.primary.120}",
+          "$type": "color"
+        },
+        "130": {
+          "$value": "{color.me.primary.130}",
+          "$type": "color"
+        },
+        "140": {
+          "$value": "{color.me.primary.140}",
+          "$type": "color"
+        },
+        "150": {
+          "$value": "{color.me.primary.150}",
+          "$type": "color"
+        }
+      },
+      "secondary": {
+        "005": {
+          "$value": "{color.me.secondary.005}",
+          "$type": "color"
+        },
+        "015": {
+          "$value": "{color.me.secondary.015}",
+          "$type": "color"
+        },
+        "025": {
+          "$value": "{color.me.secondary.025}",
+          "$type": "color"
+        },
+        "050": {
+          "$value": "{color.me.secondary.050}",
+          "$type": "color"
+        },
+        "060": {
+          "$value": "{color.me.secondary.060}",
+          "$type": "color"
+        },
+        "070": {
+          "$value": "{color.me.secondary.070}",
+          "$type": "color"
+        },
+        "080": {
+          "$value": "{color.me.secondary.080}",
+          "$type": "color"
+        },
+        "090": {
+          "$value": "{color.me.secondary.090}",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "{color.me.secondary.100}",
+          "$type": "color"
+        },
+        "110": {
+          "$value": "{color.me.secondary.110}",
+          "$type": "color"
+        },
+        "120": {
+          "$value": "{color.me.secondary.120}",
+          "$type": "color"
+        },
+        "130": {
+          "$value": "{color.me.secondary.130}",
+          "$type": "color"
+        },
+        "140": {
+          "$value": "{color.me.secondary.140}",
+          "$type": "color"
+        },
+        "150": {
+          "$value": "{color.me.secondary.150}",
+          "$type": "color"
+        }
+      },
+      "tertiary": {
+        "005": {
+          "$value": "{color.me.tertiary.005}",
+          "$type": "color"
+        },
+        "015": {
+          "$value": "{color.me.tertiary.015}",
+          "$type": "color"
+        },
+        "025": {
+          "$value": "{color.me.tertiary.025}",
+          "$type": "color"
+        },
+        "050": {
+          "$value": "{color.me.tertiary.050}",
+          "$type": "color"
+        },
+        "060": {
+          "$value": "{color.me.tertiary.060}",
+          "$type": "color"
+        },
+        "070": {
+          "$value": "{color.me.tertiary.070}",
+          "$type": "color"
+        },
+        "080": {
+          "$value": "{color.me.tertiary.080}",
+          "$type": "color"
+        },
+        "090": {
+          "$value": "{color.me.tertiary.090}",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "{color.me.tertiary.100}",
+          "$type": "color"
+        },
+        "110": {
+          "$value": "{color.me.tertiary.110}",
+          "$type": "color"
+        },
+        "120": {
+          "$value": "{color.me.tertiary.120}",
+          "$type": "color"
+        },
+        "130": {
+          "$value": "{color.me.tertiary.130}",
+          "$type": "color"
+        },
+        "140": {
+          "$value": "{color.me.tertiary.140}",
+          "$type": "color"
+        },
+        "150": {
+          "$value": "{color.me.tertiary.150}",
+          "$type": "color"
+        }
+      }
+    }
+  },
+  "radius": {
+    "button": {
+      "$value": "{radius.08}",
+      "$type": "dimension",
+      "$description": "Vitae .base-button-ME"
+    }
+  }
+}

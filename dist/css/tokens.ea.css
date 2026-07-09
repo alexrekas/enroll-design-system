@@ -1,0 +1,385 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root, [data-theme="ea"] {
+  --ea-color-ea-primary-100: #0254bc; /** Vitae EA mode; captured */
+  --ea-color-ea-primary-110: #024ca9; /** Vitae EA mode; interpolated */
+  --ea-color-ea-primary-120: #024396; /** Vitae EA mode; captured */
+  --ea-color-ea-primary-130: #023a84; /** Vitae EA mode; interpolated */
+  --ea-color-ea-primary-140: #013271; /** Vitae EA mode; captured */
+  --ea-color-ea-primary-150: #012a5e; /** Vitae EA mode; captured */
+  --ea-color-ea-primary-005: #f2f6fc; /** Vitae EA mode; captured */
+  --ea-color-ea-primary-015: #d9e6f5; /** Vitae EA mode; captured */
+  --ea-color-ea-primary-025: #c0d4ee; /** Vitae EA mode; captured */
+  --ea-color-ea-primary-050: #81a9dd; /** Vitae EA mode; interpolated */
+  --ea-color-ea-primary-060: #6798d7; /** Vitae EA mode; interpolated */
+  --ea-color-ea-primary-070: #4e87d0; /** Vitae EA mode; interpolated */
+  --ea-color-ea-primary-080: #3576c9; /** Vitae EA mode; interpolated */
+  --ea-color-ea-primary-090: #1b65c3; /** Vitae EA mode; interpolated */
+  --ea-color-ea-secondary-100: #3b5b81; /** Vitae default/EA context; captured */
+  --ea-color-ea-secondary-110: #355274; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-secondary-120: #2f4967; /** Vitae default/EA context; captured */
+  --ea-color-ea-secondary-130: #29405a; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-secondary-140: #23374d; /** Vitae default/EA context; captured */
+  --ea-color-ea-secondary-150: #1b2b3c; /** extrapolated from 140 */
+  --ea-color-ea-secondary-005: #f5f7f9; /** Vitae default/EA context; captured */
+  --ea-color-ea-secondary-015: #e2e7ec; /** Vitae default/EA context; captured */
+  --ea-color-ea-secondary-025: #ced6df; /** Vitae default/EA context; captured */
+  --ea-color-ea-secondary-050: #9dadc0; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-secondary-060: #899db3; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-secondary-070: #768ca7; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-secondary-080: #627c9a; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-secondary-090: #4f6b8e; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-tertiary-100: #441c36; /** Vitae default/EA context; captured */
+  --ea-color-ea-tertiary-110: #3d1930; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-tertiary-120: #36162b; /** Vitae default/EA context; captured */
+  --ea-color-ea-tertiary-130: #301426; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-tertiary-140: #291120; /** Vitae default/EA context; captured */
+  --ea-color-ea-tertiary-150: #200d19; /** extrapolated from 140 */
+  --ea-color-ea-tertiary-005: #f6f2f5; /** Vitae default/EA context; captured */
+  --ea-color-ea-tertiary-015: #e3dde1; /** Vitae default/EA context; captured */
+  --ea-color-ea-tertiary-025: #d0c6cd; /** Vitae default/EA context; captured */
+  --ea-color-ea-tertiary-050: #a18d9b; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-tertiary-060: #8f7787; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-tertiary-070: #7c6072; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-tertiary-080: #69495e; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-tertiary-090: #57334a; /** Vitae default/EA context; interpolated */
+  --ea-color-dc-primary-100: #003260; /** Vitae DC mode / decided #003260; captured */
+  --ea-color-dc-primary-110: #002d56; /** Vitae DC mode / decided #003260; interpolated */
+  --ea-color-dc-primary-120: #00284d; /** Vitae DC mode / decided #003260; captured */
+  --ea-color-dc-primary-130: #002343; /** Vitae DC mode / decided #003260; captured */
+  --ea-color-dc-primary-140: #001e3a; /** Vitae DC mode / decided #003260; captured */
+  --ea-color-dc-primary-150: #001930; /** Vitae DC mode / decided #003260; captured */
+  --ea-color-dc-primary-005: #f2f5f7; /** Vitae DC mode / decided #003260; captured */
+  --ea-color-dc-primary-015: #d9e0e7; /** Vitae DC mode / decided #003260; captured */
+  --ea-color-dc-primary-025: #bfccd7; /** Vitae DC mode / decided #003260; interpolated */
+  --ea-color-dc-primary-050: #8098af; /** Vitae DC mode / decided #003260; interpolated */
+  --ea-color-dc-primary-060: #6684a0; /** Vitae DC mode / decided #003260; interpolated */
+  --ea-color-dc-primary-070: #4d6f90; /** Vitae DC mode / decided #003260; interpolated */
+  --ea-color-dc-primary-080: #335b80; /** Vitae DC mode / decided #003260; interpolated */
+  --ea-color-dc-primary-090: #1a4670; /** Vitae DC mode / decided #003260; interpolated */
+  --ea-color-dc-secondary-100: #0076cc; /** Vitae DC mode; captured */
+  --ea-color-dc-secondary-110: #006ab8; /** Vitae DC mode; captured */
+  --ea-color-dc-secondary-120: #005ea3; /** Vitae DC mode; captured */
+  --ea-color-dc-secondary-130: #00538f; /** Vitae DC mode; captured */
+  --ea-color-dc-secondary-140: #00477a; /** Vitae DC mode; captured */
+  --ea-color-dc-secondary-150: #003b66; /** Vitae DC mode; captured */
+  --ea-color-dc-secondary-005: #f2f8fc; /** Vitae DC mode; captured */
+  --ea-color-dc-secondary-015: #d9ecf7; /** Vitae DC mode; captured */
+  --ea-color-dc-secondary-025: #bfdef2; /** Vitae DC mode; interpolated */
+  --ea-color-dc-secondary-050: #7fbae5; /** Vitae DC mode; captured */
+  --ea-color-dc-secondary-060: #66ade0; /** Vitae DC mode; captured */
+  --ea-color-dc-secondary-070: #4c9fdb; /** Vitae DC mode; captured */
+  --ea-color-dc-secondary-080: #3391d6; /** Vitae DC mode; captured */
+  --ea-color-dc-secondary-090: #1983d1; /** Vitae DC mode; captured */
+  --ea-color-dc-tertiary-100: #da2325; /** Vitae DC mode; decided: red; captured */
+  --ea-color-dc-tertiary-110: #c52021; /** Vitae DC mode; decided: red; captured */
+  --ea-color-dc-tertiary-120: #ae1c1e; /** Vitae DC mode; decided: red; captured */
+  --ea-color-dc-tertiary-130: #99191a; /** Vitae DC mode; decided: red; captured */
+  --ea-color-dc-tertiary-140: #831516; /** Vitae DC mode; decided: red; captured */
+  --ea-color-dc-tertiary-150: #6d1213; /** Vitae DC mode; decided: red; captured */
+  --ea-color-dc-tertiary-005: #fcf2f2; /** Vitae DC mode; decided: red; captured */
+  --ea-color-dc-tertiary-015: #f8dcdc; /** Vitae DC mode; decided: red; captured */
+  --ea-color-dc-tertiary-025: #f5c7c7; /** Vitae DC mode; decided: red; interpolated */
+  --ea-color-dc-tertiary-050: #ec9192; /** Vitae DC mode; decided: red; captured */
+  --ea-color-dc-tertiary-060: #e97b7c; /** Vitae DC mode; decided: red; captured */
+  --ea-color-dc-tertiary-070: #e56566; /** Vitae DC mode; decided: red; captured */
+  --ea-color-dc-tertiary-080: #e14f51; /** Vitae DC mode; decided: red; captured */
+  --ea-color-dc-tertiary-090: #de393a; /** Vitae DC mode; decided: red; captured */
+  --ea-color-me-primary-100: #3d5d6f; /** 2021 DS CME; captured */
+  --ea-color-me-primary-110: #375464; /** 2021 DS CME; captured */
+  --ea-color-me-primary-120: #314a59; /** 2021 DS CME; captured */
+  --ea-color-me-primary-130: #2b414e; /** 2021 DS CME; captured */
+  --ea-color-me-primary-140: #253843; /** 2021 DS CME; captured */
+  --ea-color-me-primary-150: #1f2f38; /** 2021 DS CME; captured */
+  --ea-color-me-primary-005: #f4f6f7; /** 2021 DS CME; captured */
+  --ea-color-me-primary-015: #dfe5e8; /** 2021 DS CME; captured */
+  --ea-color-me-primary-025: #ccd5da; /** 2021 DS CME; interpolated */
+  --ea-color-me-primary-050: #9eaeb7; /** 2021 DS CME; captured */
+  --ea-color-me-primary-060: #8b9ea9; /** 2021 DS CME; captured */
+  --ea-color-me-primary-070: #778d9a; /** 2021 DS CME; captured */
+  --ea-color-me-primary-080: #647d8c; /** 2021 DS CME; captured */
+  --ea-color-me-primary-090: #506d7d; /** 2021 DS CME; captured */
+  --ea-color-me-secondary-100: #3b6b90; /** 2021 DS CME; captured */
+  --ea-color-me-secondary-110: #345f80; /** 2021 DS CME; captured */
+  --ea-color-me-secondary-120: #2e5470; /** 2021 DS CME; captured */
+  --ea-color-me-secondary-130: #274760; /** 2021 DS CME; captured */
+  --ea-color-me-secondary-140: #213c50; /** 2021 DS CME; captured */
+  --ea-color-me-secondary-150: #1a3040; /** 2021 DS CME; captured */
+  --ea-color-me-secondary-005: #f4f7fa; /** 2021 DS CME; captured */
+  --ea-color-me-secondary-015: #dfe9f0; /** 2021 DS CME; captured */
+  --ea-color-me-secondary-025: #c8d8e4; /** 2021 DS CME; interpolated */
+  --ea-color-me-secondary-050: #8dadc6; /** 2021 DS CME; captured */
+  --ea-color-me-secondary-060: #7aa0bc; /** 2021 DS CME; captured */
+  --ea-color-me-secondary-070: #6792b3; /** 2021 DS CME; captured */
+  --ea-color-me-secondary-080: #5484a9; /** 2021 DS CME; captured */
+  --ea-color-me-secondary-090: #4a7ea6; /** 2021 DS CME; captured */
+  --ea-color-me-tertiary-100: #5a7334; /** 2021 DS CME; captured */
+  --ea-color-me-tertiary-110: #50662e; /** 2021 DS CME; captured */
+  --ea-color-me-tertiary-120: #465929; /** 2021 DS CME; captured */
+  --ea-color-me-tertiary-130: #3c4c23; /** 2021 DS CME; captured */
+  --ea-color-me-tertiary-140: #32401d; /** 2021 DS CME; captured */
+  --ea-color-me-tertiary-150: #283317; /** 2021 DS CME; captured */
+  --ea-color-me-tertiary-005: #f6f8f2; /** 2021 DS CME; captured */
+  --ea-color-me-tertiary-015: #e6ecdb; /** 2021 DS CME; captured */
+  --ea-color-me-tertiary-025: #d3dbc4; /** 2021 DS CME; interpolated */
+  --ea-color-me-tertiary-050: #a2b289; /** 2021 DS CME; captured */
+  --ea-color-me-tertiary-060: #92a575; /** 2021 DS CME; captured */
+  --ea-color-me-tertiary-070: #839961; /** 2021 DS CME; captured */
+  --ea-color-me-tertiary-080: #738c4d; /** 2021 DS CME; captured */
+  --ea-color-me-tertiary-090: #647f3a; /** 2021 DS CME; captured */
+  --ea-color-ma-primary-100: #005e81; /** 2021 DS MAHC; captured */
+  --ea-color-ma-primary-110: #005574; /** 2021 DS MAHC; captured */
+  --ea-color-ma-primary-120: #004b67; /** 2021 DS MAHC; captured */
+  --ea-color-ma-primary-130: #00425b; /** 2021 DS MAHC; captured */
+  --ea-color-ma-primary-140: #00384d; /** 2021 DS MAHC; captured */
+  --ea-color-ma-primary-150: #002f41; /** 2021 DS MAHC; captured */
+  --ea-color-ma-primary-005: #f2f7f9; /** 2021 DS MAHC; captured */
+  --ea-color-ma-primary-015: #d9e7ed; /** 2021 DS MAHC; captured */
+  --ea-color-ma-primary-025: #bfd7e0; /** 2021 DS MAHC; interpolated */
+  --ea-color-ma-primary-050: #7faec0; /** 2021 DS MAHC; captured */
+  --ea-color-ma-primary-060: #669eb3; /** 2021 DS MAHC; captured */
+  --ea-color-ma-primary-070: #4c8ea7; /** 2021 DS MAHC; captured */
+  --ea-color-ma-primary-080: #337e9a; /** 2021 DS MAHC; captured */
+  --ea-color-ma-primary-090: #196e8d; /** 2021 DS MAHC; captured */
+  --ea-color-ma-secondary-100: #c15800; /** 2021 DS MAHC; captured */
+  --ea-color-ma-secondary-110: #ae4f00; /** 2021 DS MAHC; captured */
+  --ea-color-ma-secondary-120: #9a4600; /** 2021 DS MAHC; captured */
+  --ea-color-ma-secondary-130: #873e00; /** 2021 DS MAHC; captured */
+  --ea-color-ma-secondary-140: #743500; /** 2021 DS MAHC; captured */
+  --ea-color-ma-secondary-150: #612c00; /** 2021 DS MAHC; captured */
+  --ea-color-ma-secondary-005: #fcf7f2; /** 2021 DS MAHC; captured */
+  --ea-color-ma-secondary-015: #f6e6d9; /** 2021 DS MAHC; captured */
+  --ea-color-ma-secondary-025: #f0d5bf; /** 2021 DS MAHC; interpolated */
+  --ea-color-ma-secondary-050: #e0ab7f; /** 2021 DS MAHC; captured */
+  --ea-color-ma-secondary-060: #da9b66; /** 2021 DS MAHC; captured */
+  --ea-color-ma-secondary-070: #d38a4c; /** 2021 DS MAHC; captured */
+  --ea-color-ma-secondary-080: #cd7933; /** 2021 DS MAHC; captured */
+  --ea-color-ma-secondary-090: #c76819; /** 2021 DS MAHC; captured */
+  --ea-color-ma-tertiary-100: #00224c; /** 2021 DS Buttons matrix (Tertiary/ME→MA); captured */
+  --ea-color-ma-tertiary-110: #001e44; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
+  --ea-color-ma-tertiary-120: #001b3d; /** 2021 DS Buttons matrix (Tertiary/ME→MA); captured */
+  --ea-color-ma-tertiary-130: #001836; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
+  --ea-color-ma-tertiary-140: #00142e; /** 2021 DS Buttons matrix (Tertiary/ME→MA); captured */
+  --ea-color-ma-tertiary-150: #001024; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
+  --ea-color-ma-tertiary-005: #f2f4f6; /** 2021 DS Buttons matrix (Tertiary/ME→MA); captured */
+  --ea-color-ma-tertiary-015: #d9dee4; /** 2021 DS Buttons matrix (Tertiary/ME→MA); captured */
+  --ea-color-ma-tertiary-025: #bfc8d2; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
+  --ea-color-ma-tertiary-050: #8091a5; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
+  --ea-color-ma-tertiary-060: #667a94; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
+  --ea-color-ma-tertiary-070: #4d6482; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
+  --ea-color-ma-tertiary-080: #334e70; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
+  --ea-color-ma-tertiary-090: #1a385e; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
+  --ea-color-gray-100: #201f1e; /** 2021 grey-190 */
+  --ea-color-gray-110: #0d0d0d; /** Vitae gray-190 — focus ring */
+  --ea-color-gray-000: #ffffff; /** Vitae gray-000 */
+  --ea-color-gray-005: #fafafa; /** Vitae level-0 */
+  --ea-color-gray-010: #f2f2f2; /** code primary_light_gray */
+  --ea-color-gray-020: #e2e2e2; /** Vitae button-disabled */
+  --ea-color-gray-030: #d7d7d7; /** code separator */
+  --ea-color-gray-040: #b7b7b7; /** code gray */
+  --ea-color-gray-045: #8d8d8d; /** Vitae input border rest */
+  --ea-color-gray-050: #9b9b9b; /** code table heading */
+  --ea-color-gray-060: #7b7b7b; /** code primary_dark_gray */
+  --ea-color-gray-065: #606060; /** Vitae input border hover */
+  --ea-color-gray-070: #5c5c5c; /** code primary_black */
+  --ea-color-gray-080: #454545; /** code application_text_color */
+  --ea-color-gray-090: #333333; /** code alt header */
+  --ea-color-white: #ffffff;
+  --ea-color-feedback-error-100: #a21e1f; /** Vitae destructive rest */
+  --ea-color-feedback-error-120: #85191a; /** Vitae destructive hover */
+  --ea-color-feedback-error-140: #671314; /** Vitae destructive active */
+  --ea-color-feedback-error-010: #ffcfcf; /** 2021 DS error alert bg */
+  --ea-color-feedback-error-015: #f8c0c0; /** Vitae input error-info bg */
+  --ea-color-feedback-success-100: #027314; /** 2021 DS Alert/success-icon */
+  --ea-color-feedback-success-120: #025c10; /** shade */
+  --ea-color-feedback-success-010: #e0f8e4; /** 2021 DS success alert bg */
+  --ea-color-feedback-warning-100: #9a6700; /** fresh, AA-checked */
+  --ea-color-feedback-warning-120: #7a5200;
+  --ea-color-feedback-warning-010: #fff5e0;
+  --ea-color-feedback-info-100: #005ea2; /** fresh, AA-checked */
+  --ea-color-feedback-info-120: #004b82;
+  --ea-color-feedback-info-010: #e7f1f8;
+  --ea-color-metal-gold: #f7b319; /** Metal level: Gold — plan indicator ONLY, never UI accent (decided 7/9/26) */
+  --ea-color-metal-bronze: #cd7f32; /** PLACEHOLDER — extract from DS */
+  --ea-color-metal-silver: #c0c0c0; /** PLACEHOLDER — extract from DS */
+  --ea-color-metal-platinum: #e5e4e2; /** PLACEHOLDER — extract from DS */
+  --ea-color-metal-catastrophic: #9b9b9b; /** PLACEHOLDER — extract from DS */
+  --ea-color-coolgray-070: #57595b; /** Vitae text/placeholder */
+  --ea-color-coolgray-080: #4b5159; /** Vitae text/secondary */
+  --ea-space-100: 8px; /** Vitae */
+  --ea-space-125: 10px; /** Vitae button padding-y */
+  --ea-space-150: 12px; /** Vitae */
+  --ea-space-200: 16px; /** extension */
+  --ea-space-250: 20px; /** extension */
+  --ea-space-300: 24px; /** extension */
+  --ea-space-400: 32px; /** extension */
+  --ea-space-500: 40px; /** extension */
+  --ea-space-600: 48px; /** extension */
+  --ea-space-800: 64px; /** extension */
+  --ea-space-000: 0px; /** Vitae */
+  --ea-space-050: 4px; /** Vitae */
+  --ea-space-075: 6px; /** Vitae */
+  --ea-radius-12: 12px; /** Vitae */
+  --ea-radius-16: 16px; /** Vitae */
+  --ea-radius-48: 48px; /** Vitae (pill) */
+  --ea-radius-02: 2px; /** Vitae */
+  --ea-radius-04: 4px; /** Vitae */
+  --ea-radius-08: 8px; /** extension */
+  --ea-radius-pill: 999px; /** extension */
+  --ea-font-family-base: 'Roboto Flex', 'Open Sans', Arial, sans-serif; /** Vitae typography/font-family; code's Open Sans kept as fallback */
+  --ea-font-family-alt: 'Barlow', 'Open Sans', sans-serif; /** code: Barlow available */
+  --ea-font-family-open-sans: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  --ea-font-weight-light: 300;
+  --ea-font-weight-regular: 400;
+  --ea-font-weight-semibold: 600;
+  --ea-font-weight-bold: 700;
+  --ea-font-weight-extrabold: 800;
+  --ea-font-size-100: 12px;
+  --ea-font-size-200: 14px;
+  --ea-font-size-300: 16px;
+  --ea-font-size-400: 18px;
+  --ea-font-size-500: 20px;
+  --ea-font-size-600: 24px;
+  --ea-font-size-700: 30px;
+  --ea-font-size-800: 38px;
+  --ea-font-line-height-tight: 1.2;
+  --ea-font-line-height-base: 1.5;
+  --ea-font-line-height-heading: 1.3;
+  --ea-font-line-height-paragraph: 1.25; /** Vitae: 20px at 16px */
+  --ea-focus-ring-width: 2px;
+  --ea-focus-ring-offset: 2px; /** light gap between component and ring */
+  --ea-button-secondary-bg: rgba(0, 0, 0, 0);
+  --ea-button-secondary-border-width: 2px; /** 2021 DS outlined buttons */
+  --ea-button-min-height: 44px; /** Vitae base button */
+  --ea-button-text-transform: capitalize; /** Vitae base button */
+  --ea-input-border-width: 2px; /** Vitae input spec */
+  --ea-alert-radius: 12px; /** 2021 DS alert spec */
+  --ea-alert-border-width: 1px;
+  --ea-alert-icon-size: 24px;
+  --ea-color-text-primary: var(--ea-color-gray-090);
+  --ea-color-text-secondary: var(--ea-color-coolgray-080); /** Vitae text/secondary */
+  --ea-color-text-disabled: var(--ea-color-gray-050);
+  --ea-color-text-on-action: var(--ea-color-white);
+  --ea-color-text-error: var(--ea-color-feedback-error-100);
+  --ea-color-surface-page: var(--ea-color-gray-005); /** Vitae Background/level-0 */
+  --ea-color-surface-raised: var(--ea-color-white);
+  --ea-color-surface-sunken: var(--ea-color-gray-010);
+  --ea-color-border-default: var(--ea-color-gray-030);
+  --ea-color-border-strong: var(--ea-color-gray-050);
+  --ea-color-action-primary-disabled: var(--ea-color-gray-020);
+  --ea-color-action-destructive-rest: var(--ea-color-feedback-error-100);
+  --ea-color-action-destructive-hover: var(--ea-color-feedback-error-120);
+  --ea-color-action-destructive-active: var(--ea-color-feedback-error-140);
+  --ea-color-status-error: var(--ea-color-feedback-error-100);
+  --ea-color-status-error-surface: var(--ea-color-feedback-error-010);
+  --ea-color-status-success: var(--ea-color-feedback-success-100);
+  --ea-color-status-success-surface: var(--ea-color-feedback-success-010);
+  --ea-color-status-warning: var(--ea-color-feedback-warning-100);
+  --ea-color-status-warning-surface: var(--ea-color-feedback-warning-010);
+  --ea-color-status-info: var(--ea-color-feedback-info-100);
+  --ea-color-status-info-surface: var(--ea-color-feedback-info-010);
+  --ea-color-brand-primary-100: var(--ea-color-ea-primary-100);
+  --ea-color-brand-primary-110: var(--ea-color-ea-primary-110);
+  --ea-color-brand-primary-120: var(--ea-color-ea-primary-120);
+  --ea-color-brand-primary-130: var(--ea-color-ea-primary-130);
+  --ea-color-brand-primary-140: var(--ea-color-ea-primary-140);
+  --ea-color-brand-primary-150: var(--ea-color-ea-primary-150);
+  --ea-color-brand-primary-005: var(--ea-color-ea-primary-005);
+  --ea-color-brand-primary-015: var(--ea-color-ea-primary-015);
+  --ea-color-brand-primary-025: var(--ea-color-ea-primary-025);
+  --ea-color-brand-primary-050: var(--ea-color-ea-primary-050);
+  --ea-color-brand-primary-060: var(--ea-color-ea-primary-060);
+  --ea-color-brand-primary-070: var(--ea-color-ea-primary-070);
+  --ea-color-brand-primary-080: var(--ea-color-ea-primary-080);
+  --ea-color-brand-primary-090: var(--ea-color-ea-primary-090);
+  --ea-color-brand-secondary-100: var(--ea-color-ea-secondary-100);
+  --ea-color-brand-secondary-110: var(--ea-color-ea-secondary-110);
+  --ea-color-brand-secondary-120: var(--ea-color-ea-secondary-120);
+  --ea-color-brand-secondary-130: var(--ea-color-ea-secondary-130);
+  --ea-color-brand-secondary-140: var(--ea-color-ea-secondary-140);
+  --ea-color-brand-secondary-150: var(--ea-color-ea-secondary-150);
+  --ea-color-brand-secondary-005: var(--ea-color-ea-secondary-005);
+  --ea-color-brand-secondary-015: var(--ea-color-ea-secondary-015);
+  --ea-color-brand-secondary-025: var(--ea-color-ea-secondary-025);
+  --ea-color-brand-secondary-050: var(--ea-color-ea-secondary-050);
+  --ea-color-brand-secondary-060: var(--ea-color-ea-secondary-060);
+  --ea-color-brand-secondary-070: var(--ea-color-ea-secondary-070);
+  --ea-color-brand-secondary-080: var(--ea-color-ea-secondary-080);
+  --ea-color-brand-secondary-090: var(--ea-color-ea-secondary-090);
+  --ea-color-brand-tertiary-100: var(--ea-color-ea-tertiary-100);
+  --ea-color-brand-tertiary-110: var(--ea-color-ea-tertiary-110);
+  --ea-color-brand-tertiary-120: var(--ea-color-ea-tertiary-120);
+  --ea-color-brand-tertiary-130: var(--ea-color-ea-tertiary-130);
+  --ea-color-brand-tertiary-140: var(--ea-color-ea-tertiary-140);
+  --ea-color-brand-tertiary-150: var(--ea-color-ea-tertiary-150);
+  --ea-color-brand-tertiary-005: var(--ea-color-ea-tertiary-005);
+  --ea-color-brand-tertiary-015: var(--ea-color-ea-tertiary-015);
+  --ea-color-brand-tertiary-025: var(--ea-color-ea-tertiary-025);
+  --ea-color-brand-tertiary-050: var(--ea-color-ea-tertiary-050);
+  --ea-color-brand-tertiary-060: var(--ea-color-ea-tertiary-060);
+  --ea-color-brand-tertiary-070: var(--ea-color-ea-tertiary-070);
+  --ea-color-brand-tertiary-080: var(--ea-color-ea-tertiary-080);
+  --ea-color-brand-tertiary-090: var(--ea-color-ea-tertiary-090);
+  --ea-radius-button: var(--ea-radius-08); /** Vitae .base-button-XX */
+  --ea-font-family-brand: var(--ea-font-family-base);
+  --ea-text-body-size: var(--ea-font-size-300);
+  --ea-text-body-weight: var(--ea-font-weight-regular);
+  --ea-text-body-line-height: var(--ea-font-line-height-base);
+  --ea-text-heading-weight: var(--ea-font-weight-semibold);
+  --ea-text-heading-line-height: var(--ea-font-line-height-heading);
+  --ea-focus-ring-color: var(--ea-color-gray-110); /** Vitae: 2px gray-190 ring on focus */
+  --ea-button-padding-x: var(--ea-space-200);
+  --ea-button-padding-y: var(--ea-space-125); /** Vitae: 10px */
+  --ea-button-font-weight: var(--ea-font-weight-semibold); /** Vitae Button-Text/*: SemiBold 16/20 all brands */
+  --ea-input-bg-disabled: var(--ea-color-gray-020); /** Vitae disabled fill */
+  --ea-input-border: var(--ea-color-gray-045); /** Vitae input-rest */
+  --ea-input-border-hover: var(--ea-color-gray-065); /** Vitae input-hover */
+  --ea-input-border-active: var(--ea-color-gray-090); /** Vitae input-active #333 */
+  --ea-input-border-error-hover: var(--ea-color-feedback-error-120);
+  --ea-input-border-error-active: var(--ea-color-feedback-error-140);
+  --ea-input-radius: var(--ea-radius-04); /** Vitae input spec: 4px */
+  --ea-input-padding-x: var(--ea-space-100);
+  --ea-input-padding-y: var(--ea-space-150);
+  --ea-input-placeholder: var(--ea-color-coolgray-070); /** Vitae text/placeholder */
+  --ea-input-label-weight: var(--ea-font-weight-semibold);
+  --ea-input-error-info-bg: var(--ea-color-feedback-error-015);
+  --ea-alert-padding: var(--ea-space-150);
+  --ea-color-text-link: var(--ea-color-brand-primary-100); /** decided 7/9/26: links use client primary */
+  --ea-color-text-link-visited: var(--ea-color-brand-tertiary-100); /** Vitae: hyperlink-visited = tertiary */
+  --ea-color-surface-brand: var(--ea-color-brand-primary-100);
+  --ea-color-surface-brand-subtle: var(--ea-color-brand-primary-005);
+  --ea-color-border-focus: var(--ea-color-brand-primary-100); /** Vitae input focus uses brand primary */
+  --ea-color-action-primary-rest: var(--ea-color-brand-primary-100);
+  --ea-color-action-primary-hover: var(--ea-color-brand-primary-120);
+  --ea-color-action-primary-active: var(--ea-color-brand-primary-140);
+  --ea-text-body-font: var(--ea-font-family-brand);
+  --ea-text-heading-font: var(--ea-font-family-brand);
+  --ea-button-primary-bg-disabled: var(--ea-color-action-primary-disabled);
+  --ea-button-primary-text: var(--ea-color-text-on-action);
+  --ea-button-destructive-bg: var(--ea-color-action-destructive-rest);
+  --ea-button-destructive-bg-hover: var(--ea-color-action-destructive-hover);
+  --ea-button-destructive-bg-active: var(--ea-color-action-destructive-active);
+  --ea-button-destructive-text: var(--ea-color-text-on-action);
+  --ea-button-radius: var(--ea-radius-button);
+  --ea-input-bg: var(--ea-color-surface-raised);
+  --ea-input-border-focus: var(--ea-color-brand-primary-100); /** Vitae input-focus = brand primary */
+  --ea-input-border-error: var(--ea-color-status-error);
+  --ea-input-text: var(--ea-color-text-primary);
+  --ea-input-label-color: var(--ea-color-text-secondary);
+  --ea-input-error-info-border: var(--ea-color-status-error);
+  --ea-input-error-info-text: var(--ea-color-status-error);
+  --ea-alert-text: var(--ea-color-text-primary); /** 2021 spec: alert text is Text/primary, not status color */
+  --ea-alert-success-bg: var(--ea-color-status-success-surface);
+  --ea-alert-success-border: var(--ea-color-status-success);
+  --ea-alert-success-icon: var(--ea-color-status-success);
+  --ea-alert-error-bg: var(--ea-color-status-error-surface);
+  --ea-alert-error-border: var(--ea-color-status-error);
+  --ea-alert-error-icon: var(--ea-color-status-error);
+  --ea-button-primary-bg: var(--ea-color-action-primary-rest);
+  --ea-button-primary-bg-hover: var(--ea-color-action-primary-hover);
+  --ea-button-primary-bg-active: var(--ea-color-action-primary-active);
+  --ea-button-secondary-text: var(--ea-color-action-primary-rest);
+  --ea-button-secondary-border: var(--ea-color-action-primary-rest);
+}

@@ -1,0 +1,197 @@
+{
+  "$description": "DC HealthLink",
+  "color": {
+    "brand": {
+      "primary": {
+        "005": {
+          "$value": "{color.dc.primary.005}",
+          "$type": "color"
+        },
+        "015": {
+          "$value": "{color.dc.primary.015}",
+          "$type": "color"
+        },
+        "025": {
+          "$value": "{color.dc.primary.025}",
+          "$type": "color"
+        },
+        "050": {
+          "$value": "{color.dc.primary.050}",
+          "$type": "color"
+        },
+        "060": {
+          "$value": "{color.dc.primary.060}",
+          "$type": "color"
+        },
+        "070": {
+          "$value": "{color.dc.primary.070}",
+          "$type": "color"
+        },
+        "080": {
+          "$value": "{color.dc.primary.080}",
+          "$type": "color"
+        },
+        "090": {
+          "$value": "{color.dc.primary.090}",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "{color.dc.primary.100}",
+          "$type": "color"
+        },
+        "110": {
+          "$value": "{color.dc.primary.110}",
+          "$type": "color"
+        },
+        "120": {
+          "$value": "{color.dc.primary.120}",
+          "$type": "color"
+        },
+        "130": {
+          "$value": "{color.dc.primary.130}",
+          "$type": "color"
+        },
+        "140": {
+          "$value": "{color.dc.primary.140}",
+          "$type": "color"
+        },
+        "150": {
+          "$value": "{color.dc.primary.150}",
+          "$type": "color"
+        }
+      },
+      "secondary": {
+        "005": {
+          "$value": "{color.dc.secondary.005}",
+          "$type": "color"
+        },
+        "015": {
+          "$value": "{color.dc.secondary.015}",
+          "$type": "color"
+        },
+        "025": {
+          "$value": "{color.dc.secondary.025}",
+          "$type": "color"
+        },
+        "050": {
+          "$value": "{color.dc.secondary.050}",
+          "$type": "color"
+        },
+        "060": {
+          "$value": "{color.dc.secondary.060}",
+          "$type": "color"
+        },
+        "070": {
+          "$value": "{color.dc.secondary.070}",
+          "$type": "color"
+        },
+        "080": {
+          "$value": "{color.dc.secondary.080}",
+          "$type": "color"
+        },
+        "090": {
+          "$value": "{color.dc.secondary.090}",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "{color.dc.secondary.100}",
+          "$type": "color"
+        },
+        "110": {
+          "$value": "{color.dc.secondary.110}",
+          "$type": "color"
+        },
+        "120": {
+          "$value": "{color.dc.secondary.120}",
+          "$type": "color"
+        },
+        "130": {
+          "$value": "{color.dc.secondary.130}",
+          "$type": "color"
+        },
+        "140": {
+          "$value": "{color.dc.secondary.140}",
+          "$type": "color"
+        },
+        "150": {
+          "$value": "{color.dc.secondary.150}",
+          "$type": "color"
+        }
+      },
+      "tertiary": {
+        "005": {
+          "$value": "{color.dc.tertiary.005}",
+          "$type": "color"
+        },
+        "015": {
+          "$value": "{color.dc.tertiary.015}",
+          "$type": "color"
+        },
+        "025": {
+          "$value": "{color.dc.tertiary.025}",
+          "$type": "color"
+        },
+        "050": {
+          "$value": "{color.dc.tertiary.050}",
+          "$type": "color"
+        },
+        "060": {
+          "$value": "{color.dc.tertiary.060}",
+          "$type": "color"
+        },
+        "070": {
+          "$value": "{color.dc.tertiary.070}",
+          "$type": "color"
+        },
+        "080": {
+          "$value": "{color.dc.tertiary.080}",
+          "$type": "color"
+        },
+        "090": {
+          "$value": "{color.dc.tertiary.090}",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "{color.dc.tertiary.100}",
+          "$type": "color"
+        },
+        "110": {
+          "$value": "{color.dc.tertiary.110}",
+          "$type": "color"
+        },
+        "120": {
+          "$value": "{color.dc.tertiary.120}",
+          "$type": "color"
+        },
+        "130": {
+          "$value": "{color.dc.tertiary.130}",
+          "$type": "color"
+        },
+        "140": {
+          "$value": "{color.dc.tertiary.140}",
+          "$type": "color"
+        },
+        "150": {
+          "$value": "{color.dc.tertiary.150}",
+          "$type": "color"
+        }
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "brand": {
+        "$value": "{font.family.open-sans}",
+        "$type": "fontFamily",
+        "$description": "decided 7/9/26: DC and MA use Open Sans"
+      }
+    }
+  },
+  "radius": {
+    "button": {
+      "$value": "{radius.12}",
+      "$type": "dimension",
+      "$description": "Vitae .base-button-DC"
+    }
+  }
+}
