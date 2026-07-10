@@ -20,11 +20,14 @@ const PAIRS = [
   ['AlertText', 'AlertErrorBg', 4.5, 'alert text on error bg'],
   ['ColorStatusError', 'ColorSurfaceRaised', 4.5, 'error text'],
   ['ColorStatusSuccess', 'ColorSurfaceRaised', 4.5, 'success text'],
-  ['ColorStatusWarning', 'ColorSurfaceRaised', 4.5, 'warning text'],
   ['ColorStatusInfo', 'ColorSurfaceRaised', 4.5, 'info text'],
   ['ColorBorderFocus', 'ColorSurfaceRaised', 3.0, 'focus ring (non-text)'],
   ['InputBorder', 'InputBg', 3.0, 'input border (non-text)'],
   ['InputPlaceholder', 'InputBg', 4.5, 'placeholder text'],
+  ['AlertWarningBorder', 'AlertWarningBg', 3.0, 'warning icon/border on warning surface (non-text)'],
+  ['AlertInfoBorder', 'AlertInfoBg', 3.0, 'info icon/border on info surface (non-text)'],
+  ['AlertSuccessBorder', 'AlertSuccessBg', 3.0, 'success icon/border on success surface (non-text)'],
+  ['AlertErrorBorder', 'AlertErrorBg', 3.0, 'error icon/border on error surface (non-text)'],
 ];
 
 let failures = 0;
