@@ -28,6 +28,15 @@ const PAIRS = [
   ['AlertInfoBorder', 'AlertInfoBg', 3.0, 'info icon/border on info surface (non-text)'],
   ['AlertSuccessBorder', 'AlertSuccessBg', 3.0, 'success icon/border on success surface (non-text)'],
   ['AlertErrorBorder', 'AlertErrorBg', 3.0, 'error icon/border on error surface (non-text)'],
+  ['TagDefaultText', 'TagDefaultBg', 4.5, 'default tag label'],
+  ['TagStatusText', 'TagInfoBg', 4.5, 'info tag label'],
+  ['TagStatusText', 'TagSuccessBg', 4.5, 'success tag label'],
+  ['TagStatusText', 'TagErrorBg', 4.5, 'error tag label'],
+  ['TagWarningText', 'TagWarningBg', 4.5, 'warning tag label'],
+  ['TableRowText', 'ColorSurfaceRaised', 4.5, 'table cell text'],
+  ['TableHeaderText', 'ColorSurfaceRaised', 4.5, 'table header text'],
+  ['CardTitleColor', 'CardBg', 4.5, 'card title'],
+  ['CardBodyColor', 'CardBg', 4.5, 'card body text'],
 ];
 
 let failures = 0;
