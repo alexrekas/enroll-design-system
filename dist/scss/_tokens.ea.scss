@@ -193,12 +193,12 @@ $ea-color-feedback-error-015: #f8c0c0; // Vitae input error-info bg
 $ea-color-feedback-success-100: #027314; // 2021 DS Alert/success-icon
 $ea-color-feedback-success-120: #025c10; // shade
 $ea-color-feedback-success-010: #e0f8e4; // 2021 DS success alert bg
-$ea-color-feedback-warning-100: #9a6700; // fresh, AA-checked
-$ea-color-feedback-warning-120: #7a5200;
-$ea-color-feedback-warning-010: #fff5e0;
-$ea-color-feedback-info-100: #005ea2; // fresh, AA-checked
-$ea-color-feedback-info-120: #004b82;
-$ea-color-feedback-info-010: #e7f1f8;
+$ea-color-feedback-warning-100: #a37a00; // 2021 DS Alert/warning border is #FFD600, but that fails WCAG non-text contrast (1.34:1) against the warning surface #FFFADF. Darkened to #A37A00 (3.74:1, passes 3:1) -- an intentional deviation from the legacy file for AA compliance, flagged 7/10/26.
+$ea-color-feedback-warning-120: #8a6800; // shade
+$ea-color-feedback-warning-010: #fffadf; // 2021 DS Alert/warning-background (Warning2 bordered variant)
+$ea-color-feedback-info-100: #005689; // 2021 DS Alert/info-icon
+$ea-color-feedback-info-120: #003f66; // shade
+$ea-color-feedback-info-010: #e0f1fa; // 2021 DS Alert/info-background (Info2 bordered variant)
 $ea-color-metal-gold: #f7b319; // Metal level: Gold — plan indicator ONLY, never UI accent (decided 7/9/26)
 $ea-color-metal-bronze: #cd7f32; // PLACEHOLDER — extract from DS
 $ea-color-metal-silver: #c0c0c0; // PLACEHOLDER — extract from DS
@@ -232,10 +232,10 @@ $ea-color-status-error: #a21e1f;
 $ea-color-status-error-surface: #ffcfcf;
 $ea-color-status-success: #027314;
 $ea-color-status-success-surface: #e0f8e4;
-$ea-color-status-warning: #9a6700;
-$ea-color-status-warning-surface: #fff5e0;
-$ea-color-status-info: #005ea2;
-$ea-color-status-info-surface: #e7f1f8;
+$ea-color-status-warning: #a37a00;
+$ea-color-status-warning-surface: #fffadf;
+$ea-color-status-info: #005689;
+$ea-color-status-info-surface: #e0f1fa;
 $ea-color-brand-primary-100: #0254bc;
 $ea-color-brand-primary-110: #024ca9;
 $ea-color-brand-primary-120: #024396;
@@ -333,16 +333,29 @@ $ea-focus-ring-offset: 2px; // light gap between component and ring
 $ea-button-primary-bg: #0254bc;
 $ea-button-primary-bg-hover: #024396;
 $ea-button-primary-bg-active: #013271;
-$ea-button-primary-bg-disabled: #e2e2e2;
+$ea-button-primary-bg-disabled: #e1dfdd; // corrected 7/10/26 to the shared 2021 DS disabled look
 $ea-button-primary-text: #ffffff;
-$ea-button-secondary-bg: rgba(0, 0, 0, 0);
-$ea-button-secondary-text: #0254bc;
-$ea-button-secondary-border: #0254bc;
-$ea-button-secondary-border-width: 2px; // 2021 DS outlined buttons
+$ea-button-primary-text-disabled: #878584;
+$ea-button-secondary-bg: #3b5b81; // 2021 DS Level=Secondary is a SOLID button using the brand secondary ramp (not an outline) -- corrected 7/10/26
+$ea-button-secondary-bg-hover: #2f4967;
+$ea-button-secondary-bg-active: #23374d;
+$ea-button-secondary-text: #ffffff;
+$ea-button-tertiary-bg: #441c36; // 2021 DS Level=Alternate -- solid button using the brand tertiary ramp
+$ea-button-tertiary-bg-hover: #36162b;
+$ea-button-tertiary-bg-active: #291120;
+$ea-button-tertiary-text: #ffffff;
 $ea-button-destructive-bg: #a21e1f;
 $ea-button-destructive-bg-hover: #85191a;
 $ea-button-destructive-bg-active: #671314;
 $ea-button-destructive-text: #ffffff;
+$ea-button-disabled-bg: #e1dfdd; // 2021 DS Input/button-disabled -- ONE shared disabled look for every button level (Primary/Secondary/Tertiary/Destructive)
+$ea-button-disabled-text: #878584; // 2021 DS Text/disabled
+$ea-button-outline-bg: rgba(0, 0, 0, 0); // 2021 DS Type=Outline modifier (available for any level, not yet wired into a Figma variant -- follow-up)
+$ea-button-outline-text: #0254bc;
+$ea-button-outline-border: #0254bc;
+$ea-button-outline-border-width: 2px;
+$ea-button-icon-gap: 8px; // 2021 DS icon-text-chevron gap
+$ea-button-icon-size: 20px; // 2021 DS button icon slot size
 $ea-button-radius: 8px;
 $ea-button-padding-x: 16px;
 $ea-button-padding-y: 10px; // Vitae: 10px
@@ -374,9 +387,119 @@ $ea-alert-padding: 12px;
 $ea-alert-border-width: 1px;
 $ea-alert-icon-size: 24px;
 $ea-alert-text: #333333; // 2021 spec: alert text is Text/primary, not status color
+$ea-alert-link: #333333; // 2021 DS: alert hyperlink row uses the same Text/primary color, underlined -- not a separate link color
+$ea-alert-close-icon: #4b5159; // 2021 DS Greys/grey-130 close (X) icon
 $ea-alert-success-bg: #e0f8e4;
 $ea-alert-success-border: #027314;
 $ea-alert-success-icon: #027314;
 $ea-alert-error-bg: #ffcfcf;
 $ea-alert-error-border: #a21e1f;
 $ea-alert-error-icon: #a21e1f;
+$ea-alert-warning-bg: #fffadf;
+$ea-alert-warning-border: #a37a00;
+$ea-alert-warning-icon: #a37a00;
+$ea-alert-info-bg: #e0f1fa;
+$ea-alert-info-border: #005689;
+$ea-alert-info-icon: #005689;
+$ea-form-border: #8d8d8d; // 2021 DS Input/atrest -- shared rest border for Toggle, Checkbox, Radio-Button
+$ea-form-border-hover: #606060; // 2021 DS Input/hover
+$ea-form-border-focus: #333333; // 2021 DS focus ring border (#323130) -- drawn as a 2px outline around the whole control+label row
+$ea-form-selected-bg: #0254bc; // 2021 DS Primary/100 -- Toggle on-fill, Checkbox checked-fill, Radio selected-fill
+$ea-form-selected-bg-hover: #024396; // 2021 DS Primary/120
+$ea-form-label-color: #333333;
+$ea-form-label-gap: 8px;
+$ea-form-padding: 4px; // 2021 DS row padding (4px)
+$ea-form-min-height: 44px; // 2021 DS min tap target
+$ea-form-disabled-border: #bab8b5; // 2021 DS Input/disabled -- shared disabled border/fill for Toggle, Checkbox, Radio-Button
+$ea-form-disabled-bg: #f2f2f2; // 2021 DS Greys/grey-020 disabled track/box background
+$ea-form-disabled-text: #878584;
+$ea-toggle-width: 48px;
+$ea-toggle-height: 24px;
+$ea-toggle-radius: 999px;
+$ea-checkbox-size: 24px;
+$ea-checkbox-radius: 4px;
+$ea-checkbox-border-width: 2px;
+$ea-radio-size: 24px;
+$ea-radio-radius: 999px;
+$ea-radio-border-width: 2px;
+$ea-nav-breadcrumb-text: #4b5159; // 2021 DS Greys/grey-130 -- prior breadcrumb levels
+$ea-nav-breadcrumb-text-current: #333333; // 2021 DS Greys/grey-190 -- current location, bold
+$ea-nav-breadcrumb-font-size: 14px;
+$ea-nav-breadcrumb-gap: 4px;
+$ea-nav-pagination-text: #4b5159; // 2021 DS Text/secondary -- Page / of labels
+$ea-nav-pagination-text-current: #333333; // 2021 DS Text/primary -- current page number in box
+$ea-nav-pagination-box-bg: #ffffff;
+$ea-nav-pagination-box-border: #8d8d8d; // 2021 DS Input/atrest
+$ea-nav-pagination-box-radius: 3px;
+$ea-nav-pagination-arrow-color: #4b5159;
+$ea-nav-pagination-arrow-color-disabled: #878584;
+$ea-nav-pagination-gap: 8px;
+$ea-nav-header-bg: #ffffff;
+$ea-nav-header-border: #d7d7d7;
+$ea-nav-header-height: 72px;
+$ea-nav-header-padding-x: 24px;
+$ea-nav-header-logo-height: 32px;
+$ea-nav-header-link-color: #333333;
+$ea-nav-header-link-color-active: #0254bc;
+$ea-nav-footer-bg: #f2f2f2;
+$ea-nav-footer-border: #d7d7d7;
+$ea-nav-footer-padding-x: 24px;
+$ea-nav-footer-padding-y: 24px;
+$ea-nav-footer-text: #4b5159;
+$ea-nav-footer-link-color: #0254bc;
+$ea-nav-left-nav-bg: #ffffff;
+$ea-nav-left-nav-width: 280px;
+$ea-nav-left-nav-item-padding-x: 16px;
+$ea-nav-left-nav-item-padding-y: 12px;
+$ea-nav-left-nav-item-text: #333333;
+$ea-nav-left-nav-item-text-active: #ffffff;
+$ea-nav-left-nav-item-bg-active: #0254bc;
+$ea-nav-left-nav-item-bg-hover: #f2f2f2;
+$ea-nav-left-nav-divider: #d7d7d7;
+$ea-card-bg: #ffffff;
+$ea-card-radius: 4px; // 2021 DS Card radius (approx 5px -> using 4px scale step)
+$ea-card-padding-x: 20px;
+$ea-card-padding-y: 15px;
+$ea-card-gap: 12px;
+$ea-card-title-color: #333333;
+$ea-card-divider: #d7d7d7;
+$ea-card-body-color: #333333;
+$ea-tag-default-bg: #e2e2e2; // 2021 DS Greys/grey-030 (approx)
+$ea-tag-default-text: #333333;
+$ea-tag-status-text: #ffffff;
+$ea-tag-info-bg: #005689;
+$ea-tag-success-bg: #027314;
+$ea-tag-error-bg: #a21e1f;
+$ea-tag-warning-bg: #f7b319; // 2021 DS Metal-Level/Gold -- warning tag uses the gold swatch, not the feedback-warning color
+$ea-tag-warning-text: #333333;
+$ea-tag-radius-pill: 999px;
+$ea-tag-radius-status: 4px;
+$ea-tag-gap: 4px;
+$ea-tag-padding-x: 8px;
+$ea-table-header-text: #4b5159;
+$ea-table-header-border: #7b7b7b; // 2021 DS Greys/grey-060
+$ea-table-row-text: #333333;
+$ea-table-row-border: #e2e2e2; // 2021 DS Greys/grey-030 (approx)
+$ea-table-row-bg-selected: #e0f1fa; // approx selected-row tint
+$ea-table-row-height: 44px;
+$ea-table-cell-padding: 12px;
+$ea-table-cell-gap: 4px;
+$ea-progress-complete: #013271; // 2021 DS Primary/140 -- completed segment
+$ea-progress-unfinished: #6798d7; // 2021 DS Primary/060 -- remaining segment
+$ea-progress-height: 4px;
+$ea-login-card-bg: #ffffff;
+$ea-login-card-border: #d7d7d7;
+$ea-login-card-radius: 10px;
+$ea-login-card-padding: 32px; // 2021 DS 40px card padding
+$ea-login-card-width: 400px;
+$ea-login-title-color: #333333;
+$ea-login-gap: 24px;
+$ea-plan-card-bg: #ffffff;
+$ea-plan-card-border: #d7d7d7;
+$ea-plan-card-radius: 4px;
+$ea-plan-label-color: #4b5159;
+$ea-plan-value-color: #333333;
+$ea-plan-title-color: #333333;
+$ea-plan-footer-bg: #e2e2e2; // 2021 DS Greys/grey-030 (approx)
+$ea-plan-footer-text: #0254bc;
+$ea-plan-footer-border: #d7d7d7;
