@@ -177,8 +177,10 @@ $ea-color-gray-010: #f2f2f2; // code primary_light_gray
 $ea-color-gray-020: #e2e2e2; // Vitae button-disabled
 $ea-color-gray-030: #d7d7d7; // code separator
 $ea-color-gray-040: #b7b7b7; // code gray
+$ea-color-gray-042: #bab8b5; // 2021 DS Input/disabled -- extracted for form.disabled.border alias (Toggle/Checkbox/Radio-Button), 7/10/26
 $ea-color-gray-045: #8d8d8d; // Vitae input border rest
 $ea-color-gray-050: #9b9b9b; // code table heading
+$ea-color-gray-055: #878584; // 2021 DS Text/disabled -- extracted for button.disabled.text alias, 7/10/26
 $ea-color-gray-060: #7b7b7b; // code primary_dark_gray
 $ea-color-gray-065: #606060; // Vitae input border hover
 $ea-color-gray-070: #5c5c5c; // code primary_black
@@ -333,7 +335,7 @@ $ea-focus-ring-offset: 2px; // light gap between component and ring
 $ea-button-primary-bg: #3d5d6f;
 $ea-button-primary-bg-hover: #314a59;
 $ea-button-primary-bg-active: #253843;
-$ea-button-primary-bg-disabled: #e1dfdd; // corrected 7/10/26 to the shared 2021 DS disabled look
+$ea-button-primary-bg-disabled: #e2e2e2; // corrected 7/10/26 to the shared 2021 DS disabled look
 $ea-button-primary-text: #ffffff;
 $ea-button-primary-text-disabled: #878584;
 $ea-button-secondary-bg: #3b6b90; // 2021 DS Level=Secondary is a SOLID button using the brand secondary ramp (not an outline) -- corrected 7/10/26
@@ -348,8 +350,8 @@ $ea-button-destructive-bg: #a21e1f;
 $ea-button-destructive-bg-hover: #85191a;
 $ea-button-destructive-bg-active: #671314;
 $ea-button-destructive-text: #ffffff;
-$ea-button-disabled-bg: #e1dfdd; // 2021 DS Input/button-disabled -- ONE shared disabled look for every button level (Primary/Secondary/Tertiary/Destructive)
-$ea-button-disabled-text: #878584; // 2021 DS Text/disabled
+$ea-button-disabled-bg: #e2e2e2; // 2021 DS Input/button-disabled -- ONE shared disabled look for every button level (Primary/Secondary/Tertiary/Destructive). Aliased to gray.020 (Vitae's own 'button-disabled' primitive, #e2e2e2) rather than the near-identical literal #E1DFDD previously here -- same legacy color within extraction tolerance, now token-chained.
+$ea-button-disabled-text: #878584; // 2021 DS Text/disabled, now aliased to color.gray.055
 $ea-button-outline-bg: rgba(0, 0, 0, 0); // 2021 DS Type=Outline modifier (available for any level, not yet wired into a Figma variant -- follow-up)
 $ea-button-outline-text: #3d5d6f;
 $ea-button-outline-border: #3d5d6f;
@@ -410,7 +412,7 @@ $ea-form-label-color: #333333;
 $ea-form-label-gap: 8px;
 $ea-form-padding: 4px; // 2021 DS row padding (4px)
 $ea-form-min-height: 44px; // 2021 DS min tap target
-$ea-form-disabled-border: #bab8b5; // 2021 DS Input/disabled -- shared disabled border/fill for Toggle, Checkbox, Radio-Button
+$ea-form-disabled-border: #bab8b5; // 2021 DS Input/disabled -- shared disabled border/fill for Toggle, Checkbox, Radio-Button. Now aliased to color.gray.042 instead of a literal hex.
 $ea-form-disabled-bg: #f2f2f2; // 2021 DS Greys/grey-020 disabled track/box background
 $ea-form-disabled-text: #878584;
 $ea-toggle-width: 48px;

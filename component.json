@@ -1,0 +1,340 @@
+{
+  "button": {
+    "primary": {
+      "bg": {
+        "$value": "{color.action.primary.rest}",
+        "$type": "color"
+      },
+      "bg-hover": {
+        "$value": "{color.action.primary.hover}",
+        "$type": "color"
+      },
+      "bg-active": {
+        "$value": "{color.action.primary.active}",
+        "$type": "color"
+      },
+      "bg-disabled": {
+        "$value": "{button.disabled.bg}",
+        "$type": "color",
+        "$description": "corrected 7/10/26 to the shared 2021 DS disabled look"
+      },
+      "text": {
+        "$value": "{color.text.on-action}",
+        "$type": "color"
+      },
+      "text-disabled": {
+        "$value": "{button.disabled.text}",
+        "$type": "color"
+      }
+    },
+    "secondary": {
+      "bg": {
+        "$value": "{color.brand.secondary.100}",
+        "$type": "color",
+        "$description": "2021 DS Level=Secondary is a SOLID button using the brand secondary ramp (not an outline) -- corrected 7/10/26"
+      },
+      "bg-hover": {
+        "$value": "{color.brand.secondary.120}",
+        "$type": "color"
+      },
+      "bg-active": {
+        "$value": "{color.brand.secondary.140}",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "{color.text.on-action}",
+        "$type": "color"
+      }
+    },
+    "tertiary": {
+      "bg": {
+        "$value": "{color.brand.tertiary.100}",
+        "$type": "color",
+        "$description": "2021 DS Level=Alternate -- solid button using the brand tertiary ramp"
+      },
+      "bg-hover": {
+        "$value": "{color.brand.tertiary.120}",
+        "$type": "color"
+      },
+      "bg-active": {
+        "$value": "{color.brand.tertiary.140}",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "{color.text.on-action}",
+        "$type": "color"
+      }
+    },
+    "destructive": {
+      "bg": {
+        "$value": "{color.action.destructive.rest}",
+        "$type": "color"
+      },
+      "bg-hover": {
+        "$value": "{color.action.destructive.hover}",
+        "$type": "color"
+      },
+      "bg-active": {
+        "$value": "{color.action.destructive.active}",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "{color.text.on-action}",
+        "$type": "color"
+      }
+    },
+    "disabled": {
+      "bg": {
+        "$value": "#E1DFDD",
+        "$type": "color",
+        "$description": "2021 DS Input/button-disabled -- ONE shared disabled look for every button level (Primary/Secondary/Tertiary/Destructive)"
+      },
+      "text": {
+        "$value": "#878584",
+        "$type": "color",
+        "$description": "2021 DS Text/disabled"
+      }
+    },
+    "outline": {
+      "bg": {
+        "$value": "transparent",
+        "$type": "color",
+        "$description": "2021 DS Type=Outline modifier (available for any level, not yet wired into a Figma variant -- follow-up)"
+      },
+      "text": {
+        "$value": "{color.action.primary.rest}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.action.primary.rest}",
+        "$type": "color"
+      },
+      "border-width": {
+        "$value": "2px",
+        "$type": "dimension"
+      }
+    },
+    "icon-gap": {
+      "$value": "{space.100}",
+      "$type": "dimension",
+      "$description": "2021 DS icon-text-chevron gap"
+    },
+    "icon-size": {
+      "$value": "20px",
+      "$type": "dimension",
+      "$description": "2021 DS button icon slot size"
+    },
+    "radius": {
+      "$value": "{radius.button}",
+      "$type": "dimension"
+    },
+    "padding-x": {
+      "$value": "{space.200}",
+      "$type": "dimension"
+    },
+    "padding-y": {
+      "$value": "{space.125}",
+      "$type": "dimension",
+      "$description": "Vitae: 10px"
+    },
+    "min-height": {
+      "$value": "44px",
+      "$type": "dimension",
+      "$description": "Vitae base button"
+    },
+    "font-weight": {
+      "$value": "{font.weight.semibold}",
+      "$type": "fontWeight",
+      "$description": "Vitae Button-Text/*: SemiBold 16/20 all brands"
+    },
+    "text-transform": {
+      "$value": "capitalize",
+      "$type": "string",
+      "$description": "Vitae base button"
+    }
+  },
+  "input": {
+    "bg": {
+      "$value": "{color.surface.raised}",
+      "$type": "color"
+    },
+    "bg-disabled": {
+      "$value": "{color.gray.020}",
+      "$type": "color",
+      "$description": "Vitae disabled fill"
+    },
+    "border": {
+      "$value": "{color.gray.045}",
+      "$type": "color",
+      "$description": "Vitae input-rest"
+    },
+    "border-hover": {
+      "$value": "{color.gray.065}",
+      "$type": "color",
+      "$description": "Vitae input-hover"
+    },
+    "border-active": {
+      "$value": "{color.gray.090}",
+      "$type": "color",
+      "$description": "Vitae input-active #333"
+    },
+    "border-focus": {
+      "$value": "{color.brand.primary.100}",
+      "$type": "color",
+      "$description": "Vitae input-focus = brand primary"
+    },
+    "border-error": {
+      "$value": "{color.status.error}",
+      "$type": "color"
+    },
+    "border-error-hover": {
+      "$value": "{color.feedback.error.120}",
+      "$type": "color"
+    },
+    "border-error-active": {
+      "$value": "{color.feedback.error.140}",
+      "$type": "color"
+    },
+    "border-width": {
+      "$value": "2px",
+      "$type": "dimension",
+      "$description": "Vitae input spec"
+    },
+    "radius": {
+      "$value": "{radius.04}",
+      "$type": "dimension",
+      "$description": "Vitae input spec: 4px"
+    },
+    "padding-x": {
+      "$value": "{space.100}",
+      "$type": "dimension"
+    },
+    "padding-y": {
+      "$value": "{space.150}",
+      "$type": "dimension"
+    },
+    "text": {
+      "$value": "{color.text.primary}",
+      "$type": "color"
+    },
+    "placeholder": {
+      "$value": "{color.coolgray.070}",
+      "$type": "color",
+      "$description": "Vitae text/placeholder"
+    },
+    "label": {
+      "color": {
+        "$value": "{color.text.secondary}",
+        "$type": "color"
+      },
+      "weight": {
+        "$value": "{font.weight.semibold}",
+        "$type": "fontWeight"
+      }
+    },
+    "error-info": {
+      "bg": {
+        "$value": "{color.feedback.error.015}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.status.error}",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "{color.status.error}",
+        "$type": "color"
+      }
+    }
+  },
+  "alert": {
+    "radius": {
+      "$value": "12px",
+      "$type": "dimension",
+      "$description": "2021 DS alert spec"
+    },
+    "padding": {
+      "$value": "{space.150}",
+      "$type": "dimension"
+    },
+    "border-width": {
+      "$value": "1px",
+      "$type": "dimension"
+    },
+    "icon-size": {
+      "$value": "24px",
+      "$type": "dimension"
+    },
+    "text": {
+      "$value": "{color.text.primary}",
+      "$type": "color",
+      "$description": "2021 spec: alert text is Text/primary, not status color"
+    },
+    "link": {
+      "$value": "{color.text.primary}",
+      "$type": "color",
+      "$description": "2021 DS: alert hyperlink row uses the same Text/primary color, underlined -- not a separate link color"
+    },
+    "close-icon": {
+      "$value": "{color.text.secondary}",
+      "$type": "color",
+      "$description": "2021 DS Greys/grey-130 close (X) icon"
+    },
+    "success": {
+      "bg": {
+        "$value": "{color.status.success-surface}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.status.success}",
+        "$type": "color"
+      },
+      "icon": {
+        "$value": "{color.status.success}",
+        "$type": "color"
+      }
+    },
+    "error": {
+      "bg": {
+        "$value": "{color.status.error-surface}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.status.error}",
+        "$type": "color"
+      },
+      "icon": {
+        "$value": "{color.status.error}",
+        "$type": "color"
+      }
+    },
+    "warning": {
+      "bg": {
+        "$value": "{color.status.warning-surface}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.status.warning}",
+        "$type": "color"
+      },
+      "icon": {
+        "$value": "{color.status.warning}",
+        "$type": "color"
+      }
+    },
+    "info": {
+      "bg": {
+        "$value": "{color.status.info-surface}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.status.info}",
+        "$type": "color"
+      },
+      "icon": {
+        "$value": "{color.status.info}",
+        "$type": "color"
+      }
+    }
+  }
+}

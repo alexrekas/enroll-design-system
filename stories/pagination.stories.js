@@ -1,11 +1,25 @@
+import { icon } from './icons.js';
+
 const arrow = (dir, disabled) => `
   <button class="ea-pagination__arrow" ${disabled ? 'disabled' : ''} aria-label="${dir === 'left' ? 'Previous page' : 'Next page'}">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10.5"/>
-      <path d="${dir === 'left' ? 'M15 4L7 12L15 20' : 'M9 4L17 12L9 20'}" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ${dir === 'left' ? icon.chevronLeftCircle() : icon.chevronRightCircle()}
   </button>`;
 
 export default {
   title: 'Components/Navigation/Pagination',
+  tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: `Page-through control for tables and lists, showing current position and total.
+
+**Accessibility:** arrow controls are native \`<button>\` elements with \`aria-label="Previous page"\` / \`aria-label="Next page"\`. Disabled arrows use the native \`disabled\` attribute, correctly removing them from the tab order.
+
+**Do:** disable (don't hide) the arrow at either end.
+**Don't:** hide the arrow entirely — that shifts layout and removes a predictable landmark.`,
+      },
+    },
+  },
   argTypes: {
     page: { control: 'number' },
     total: { control: 'number' },

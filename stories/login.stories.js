@@ -1,5 +1,15 @@
 export default {
   title: 'Components/Flow/Log-In',
+  tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: `Sign-in card: logo, title, email/password fields, Remember Me, Forgot Password link, and action buttons. **Scope note:** only the Sign-In screen is built. The legacy 2021 file's multi-step Register flow is explicitly deferred (tracked in \`DESIGN-SYSTEM-AUDIT.md\`, not silently missing).
+
+**Accessibility:** inherits Text Input's label association and Checkbox's ARIA pattern for "Remember Me." **Recommend:** wrap the whole card in a \`<form>\` with a submit handler on the "Sign In" button (\`type="submit"\`) rather than a bare \`<button>\`, so Enter-to-submit works from either field.`,
+      },
+    },
+  },
   render: () => `
     <div class="ea-login-card">
       <div class="ea-login-card__logo-row">

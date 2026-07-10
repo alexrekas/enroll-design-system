@@ -5,7 +5,17 @@ import me from '../dist/docs/tokens.me.json';
 
 const themes = { ea, dc, ma, me };
 
-export default { title: 'Foundations' };
+export default {
+  title: 'Foundations',
+  tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: `Raw token values for the active theme (switch with the toolbar's Theme control) plus a cross-theme hex reference table. See the **Introduction** page for the full primitives → semantic → component token architecture explanation.`,
+      },
+    },
+  },
+};
 
 /** Brand ramps for the ACTIVE theme, driven by CSS vars so the toolbar re-themes it. */
 export const Color = {

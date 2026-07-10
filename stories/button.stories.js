@@ -1,7 +1,24 @@
-const icon = `<svg class="ea-btn__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 10h12M11 5l5 5-5 5"/></svg>`;
+import { icon as sharedIcon } from './icons.js';
+
+const icon = sharedIcon.chevronRight('ea-btn__icon');
 
 export default {
   title: 'Components/Button',
+  tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: `Primary call-to-action control. Use for the main action on a screen or form step (Continue, Submit, Sign In).
+
+**States:** Default, Hover, Active, Disabled (flat gray, shared across every level), Focus-visible (2px outline ring).
+
+**Accessibility:** native \`<button>\` — no ARIA role needed. Native Tab/Enter/Space behavior comes for free. If an icon-only button is ever introduced, it will need an \`aria-label\`.
+
+**Do:** use one Primary button per screen/step; reserve Destructive for irreversible/removal actions.
+**Don't:** put two Primary buttons side by side — pair Primary with Secondary or Tertiary instead; don't use Destructive styling for a neutral "Cancel."`,
+      },
+    },
+  },
   argTypes: {
     variant: { control: 'select', options: ['primary', 'secondary', 'tertiary', 'destructive'] },
     label: { control: 'text' },

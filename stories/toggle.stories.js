@@ -1,5 +1,18 @@
 export default {
   title: 'Components/Toggle',
+  tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: `Binary on/off control for settings that take effect immediately (no separate "submit" step).
+
+**Accessibility:** \`role="switch"\` on the native \`<button>\` — the correct ARIA pattern for a toggle (not \`checkbox\`). \`aria-checked\` reflects state.
+
+**Do:** use Toggle for settings that apply instantly.
+**Don't:** use Toggle inside a form that needs an explicit Submit — use Checkbox instead.`,
+      },
+    },
+  },
   argTypes: {
     on: { control: 'boolean' },
     disabled: { control: 'boolean' },

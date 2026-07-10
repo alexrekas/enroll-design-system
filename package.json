@@ -11,6 +11,7 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
+    "@storybook/addon-docs": "^10.4.6",
     "@storybook/html-vite": "^10.4.6",
     "storybook": "^10.4.6",
     "style-dictionary": "^4.3.0",

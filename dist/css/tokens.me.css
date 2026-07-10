@@ -179,8 +179,10 @@
   --ea-color-gray-020: #e2e2e2; /** Vitae button-disabled */
   --ea-color-gray-030: #d7d7d7; /** code separator */
   --ea-color-gray-040: #b7b7b7; /** code gray */
+  --ea-color-gray-042: #bab8b5; /** 2021 DS Input/disabled -- extracted for form.disabled.border alias (Toggle/Checkbox/Radio-Button), 7/10/26 */
   --ea-color-gray-045: #8d8d8d; /** Vitae input border rest */
   --ea-color-gray-050: #9b9b9b; /** code table heading */
+  --ea-color-gray-055: #878584; /** 2021 DS Text/disabled -- extracted for button.disabled.text alias, 7/10/26 */
   --ea-color-gray-060: #7b7b7b; /** code primary_dark_gray */
   --ea-color-gray-065: #606060; /** Vitae input border hover */
   --ea-color-gray-070: #5c5c5c; /** code primary_black */
@@ -250,8 +252,6 @@
   --ea-font-line-height-paragraph: 1.25; /** Vitae: 20px at 16px */
   --ea-focus-ring-width: 2px;
   --ea-focus-ring-offset: 2px; /** light gap between component and ring */
-  --ea-button-disabled-bg: #e1dfdd; /** 2021 DS Input/button-disabled -- ONE shared disabled look for every button level (Primary/Secondary/Tertiary/Destructive) */
-  --ea-button-disabled-text: #878584; /** 2021 DS Text/disabled */
   --ea-button-outline-bg: rgba(0, 0, 0, 0); /** 2021 DS Type=Outline modifier (available for any level, not yet wired into a Figma variant -- follow-up) */
   --ea-button-outline-border-width: 2px;
   --ea-button-icon-size: 20px; /** 2021 DS button icon slot size */
@@ -262,7 +262,6 @@
   --ea-alert-border-width: 1px;
   --ea-alert-icon-size: 24px;
   --ea-form-min-height: 44px; /** 2021 DS min tap target */
-  --ea-form-disabled-border: #bab8b5; /** 2021 DS Input/disabled -- shared disabled border/fill for Toggle, Checkbox, Radio-Button */
   --ea-toggle-width: 48px;
   --ea-toggle-height: 24px;
   --ea-checkbox-size: 24px;
@@ -352,8 +351,8 @@
   --ea-text-heading-weight: var(--ea-font-weight-semibold);
   --ea-text-heading-line-height: var(--ea-font-line-height-heading);
   --ea-focus-ring-color: var(--ea-color-gray-110); /** Vitae: 2px gray-190 ring on focus */
-  --ea-button-primary-bg-disabled: var(--ea-button-disabled-bg); /** corrected 7/10/26 to the shared 2021 DS disabled look */
-  --ea-button-primary-text-disabled: var(--ea-button-disabled-text);
+  --ea-button-disabled-bg: var(--ea-color-gray-020); /** 2021 DS Input/button-disabled -- ONE shared disabled look for every button level (Primary/Secondary/Tertiary/Destructive). Aliased to gray.020 (Vitae's own 'button-disabled' primitive, #e2e2e2) rather than the near-identical literal #E1DFDD previously here -- same legacy color within extraction tolerance, now token-chained. */
+  --ea-button-disabled-text: var(--ea-color-gray-055); /** 2021 DS Text/disabled, now aliased to color.gray.055 */
   --ea-button-icon-gap: var(--ea-space-100); /** 2021 DS icon-text-chevron gap */
   --ea-button-padding-x: var(--ea-space-200);
   --ea-button-padding-y: var(--ea-space-125); /** Vitae: 10px */
@@ -375,13 +374,12 @@
   --ea-form-border-hover: var(--ea-color-gray-065); /** 2021 DS Input/hover */
   --ea-form-label-gap: var(--ea-space-100);
   --ea-form-padding: var(--ea-space-050); /** 2021 DS row padding (4px) */
+  --ea-form-disabled-border: var(--ea-color-gray-042); /** 2021 DS Input/disabled -- shared disabled border/fill for Toggle, Checkbox, Radio-Button. Now aliased to color.gray.042 instead of a literal hex. */
   --ea-form-disabled-bg: var(--ea-color-gray-010); /** 2021 DS Greys/grey-020 disabled track/box background */
-  --ea-form-disabled-text: var(--ea-button-disabled-text);
   --ea-toggle-radius: var(--ea-radius-pill);
   --ea-checkbox-radius: var(--ea-radius-04);
   --ea-radio-radius: var(--ea-radius-pill);
   --ea-nav-breadcrumb-gap: var(--ea-space-050);
-  --ea-nav-pagination-arrow-color-disabled: var(--ea-button-disabled-text);
   --ea-nav-pagination-gap: var(--ea-space-100);
   --ea-nav-header-padding-x: var(--ea-space-300);
   --ea-nav-footer-padding-x: var(--ea-space-300);
@@ -414,7 +412,9 @@
   --ea-color-action-primary-active: var(--ea-color-brand-primary-140);
   --ea-text-body-font: var(--ea-font-family-brand);
   --ea-text-heading-font: var(--ea-font-family-brand);
+  --ea-button-primary-bg-disabled: var(--ea-button-disabled-bg); /** corrected 7/10/26 to the shared 2021 DS disabled look */
   --ea-button-primary-text: var(--ea-color-text-on-action);
+  --ea-button-primary-text-disabled: var(--ea-button-disabled-text);
   --ea-button-secondary-bg: var(--ea-color-brand-secondary-100); /** 2021 DS Level=Secondary is a SOLID button using the brand secondary ramp (not an outline) -- corrected 7/10/26 */
   --ea-button-secondary-bg-hover: var(--ea-color-brand-secondary-120);
   --ea-button-secondary-bg-active: var(--ea-color-brand-secondary-140);
@@ -452,6 +452,7 @@
   --ea-alert-info-icon: var(--ea-color-status-info);
   --ea-form-border-focus: var(--ea-color-text-primary); /** 2021 DS focus ring border (#323130) -- drawn as a 2px outline around the whole control+label row */
   --ea-form-label-color: var(--ea-color-text-primary);
+  --ea-form-disabled-text: var(--ea-button-disabled-text);
   --ea-nav-breadcrumb-text: var(--ea-color-text-secondary); /** 2021 DS Greys/grey-130 -- prior breadcrumb levels */
   --ea-nav-breadcrumb-text-current: var(--ea-color-text-primary); /** 2021 DS Greys/grey-190 -- current location, bold */
   --ea-nav-pagination-text: var(--ea-color-text-secondary); /** 2021 DS Text/secondary -- Page / of labels */
@@ -459,6 +460,7 @@
   --ea-nav-pagination-box-bg: var(--ea-color-surface-raised);
   --ea-nav-pagination-box-border: var(--ea-form-border); /** 2021 DS Input/atrest */
   --ea-nav-pagination-arrow-color: var(--ea-color-text-secondary);
+  --ea-nav-pagination-arrow-color-disabled: var(--ea-button-disabled-text);
   --ea-nav-header-bg: var(--ea-color-surface-raised);
   --ea-nav-header-border: var(--ea-color-border-default);
   --ea-nav-header-link-color: var(--ea-color-text-primary);

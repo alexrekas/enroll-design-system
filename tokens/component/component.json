@@ -14,7 +14,31 @@
         "$type": "color"
       },
       "bg-disabled": {
-        "$value": "{color.action.primary.disabled}",
+        "$value": "{button.disabled.bg}",
+        "$type": "color",
+        "$description": "corrected 7/10/26 to the shared 2021 DS disabled look"
+      },
+      "text": {
+        "$value": "{color.text.on-action}",
+        "$type": "color"
+      },
+      "text-disabled": {
+        "$value": "{button.disabled.text}",
+        "$type": "color"
+      }
+    },
+    "secondary": {
+      "bg": {
+        "$value": "{color.brand.secondary.100}",
+        "$type": "color",
+        "$description": "2021 DS Level=Secondary is a SOLID button using the brand secondary ramp (not an outline) -- corrected 7/10/26"
+      },
+      "bg-hover": {
+        "$value": "{color.brand.secondary.120}",
+        "$type": "color"
+      },
+      "bg-active": {
+        "$value": "{color.brand.secondary.140}",
         "$type": "color"
       },
       "text": {
@@ -22,23 +46,23 @@
         "$type": "color"
       }
     },
-    "secondary": {
+    "tertiary": {
       "bg": {
-        "$value": "transparent",
+        "$value": "{color.brand.tertiary.100}",
+        "$type": "color",
+        "$description": "2021 DS Level=Alternate -- solid button using the brand tertiary ramp"
+      },
+      "bg-hover": {
+        "$value": "{color.brand.tertiary.120}",
+        "$type": "color"
+      },
+      "bg-active": {
+        "$value": "{color.brand.tertiary.140}",
         "$type": "color"
       },
       "text": {
-        "$value": "{color.action.primary.rest}",
+        "$value": "{color.text.on-action}",
         "$type": "color"
-      },
-      "border": {
-        "$value": "{color.action.primary.rest}",
-        "$type": "color"
-      },
-      "border-width": {
-        "$value": "2px",
-        "$type": "dimension",
-        "$description": "2021 DS outlined buttons"
       }
     },
     "destructive": {
@@ -58,6 +82,47 @@
         "$value": "{color.text.on-action}",
         "$type": "color"
       }
+    },
+    "disabled": {
+      "bg": {
+        "$value": "{color.gray.020}",
+        "$type": "color",
+        "$description": "2021 DS Input/button-disabled -- ONE shared disabled look for every button level (Primary/Secondary/Tertiary/Destructive). Aliased to gray.020 (Vitae's own 'button-disabled' primitive, #e2e2e2) rather than the near-identical literal #E1DFDD previously here -- same legacy color within extraction tolerance, now token-chained."
+      },
+      "text": {
+        "$value": "{color.gray.055}",
+        "$type": "color",
+        "$description": "2021 DS Text/disabled, now aliased to color.gray.055"
+      }
+    },
+    "outline": {
+      "bg": {
+        "$value": "transparent",
+        "$type": "color",
+        "$description": "2021 DS Type=Outline modifier (available for any level, not yet wired into a Figma variant -- follow-up)"
+      },
+      "text": {
+        "$value": "{color.action.primary.rest}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.action.primary.rest}",
+        "$type": "color"
+      },
+      "border-width": {
+        "$value": "2px",
+        "$type": "dimension"
+      }
+    },
+    "icon-gap": {
+      "$value": "{space.100}",
+      "$type": "dimension",
+      "$description": "2021 DS icon-text-chevron gap"
+    },
+    "icon-size": {
+      "$value": "20px",
+      "$type": "dimension",
+      "$description": "2021 DS button icon slot size"
     },
     "radius": {
       "$value": "{radius.button}",
@@ -205,6 +270,16 @@
       "$type": "color",
       "$description": "2021 spec: alert text is Text/primary, not status color"
     },
+    "link": {
+      "$value": "{color.text.primary}",
+      "$type": "color",
+      "$description": "2021 DS: alert hyperlink row uses the same Text/primary color, underlined -- not a separate link color"
+    },
+    "close-icon": {
+      "$value": "{color.text.secondary}",
+      "$type": "color",
+      "$description": "2021 DS Greys/grey-130 close (X) icon"
+    },
     "success": {
       "bg": {
         "$value": "{color.status.success-surface}",
@@ -232,6 +307,500 @@
         "$value": "{color.status.error}",
         "$type": "color"
       }
+    },
+    "warning": {
+      "bg": {
+        "$value": "{color.status.warning-surface}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.status.warning}",
+        "$type": "color"
+      },
+      "icon": {
+        "$value": "{color.status.warning}",
+        "$type": "color"
+      }
+    },
+    "info": {
+      "bg": {
+        "$value": "{color.status.info-surface}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.status.info}",
+        "$type": "color"
+      },
+      "icon": {
+        "$value": "{color.status.info}",
+        "$type": "color"
+      }
+    }
+  },
+  "form": {
+    "border": {
+      "$value": "{color.gray.045}",
+      "$type": "color",
+      "$description": "2021 DS Input/atrest -- shared rest border for Toggle, Checkbox, Radio-Button"
+    },
+    "border-hover": {
+      "$value": "{color.gray.065}",
+      "$type": "color",
+      "$description": "2021 DS Input/hover"
+    },
+    "border-focus": {
+      "$value": "{color.text.primary}",
+      "$type": "color",
+      "$description": "2021 DS focus ring border (#323130) -- drawn as a 2px outline around the whole control+label row"
+    },
+    "selected-bg": {
+      "$value": "{color.action.primary.rest}",
+      "$type": "color",
+      "$description": "2021 DS Primary/100 -- Toggle on-fill, Checkbox checked-fill, Radio selected-fill"
+    },
+    "selected-bg-hover": {
+      "$value": "{color.action.primary.hover}",
+      "$type": "color",
+      "$description": "2021 DS Primary/120"
+    },
+    "label-color": {
+      "$value": "{color.text.primary}",
+      "$type": "color"
+    },
+    "label-gap": {
+      "$value": "{space.100}",
+      "$type": "dimension"
+    },
+    "padding": {
+      "$value": "{space.050}",
+      "$type": "dimension",
+      "$description": "2021 DS row padding (4px)"
+    },
+    "min-height": {
+      "$value": "44px",
+      "$type": "dimension",
+      "$description": "2021 DS min tap target"
+    },
+    "disabled": {
+      "border": {
+        "$value": "{color.gray.042}",
+        "$type": "color",
+        "$description": "2021 DS Input/disabled -- shared disabled border/fill for Toggle, Checkbox, Radio-Button. Now aliased to color.gray.042 instead of a literal hex."
+      },
+      "bg": {
+        "$value": "{color.gray.010}",
+        "$type": "color",
+        "$description": "2021 DS Greys/grey-020 disabled track/box background"
+      },
+      "text": {
+        "$value": "{button.disabled.text}",
+        "$type": "color"
+      }
+    }
+  },
+  "toggle": {
+    "width": {
+      "$value": "48px",
+      "$type": "dimension"
+    },
+    "height": {
+      "$value": "24px",
+      "$type": "dimension"
+    },
+    "radius": {
+      "$value": "{radius.pill}",
+      "$type": "dimension"
+    }
+  },
+  "checkbox": {
+    "size": {
+      "$value": "24px",
+      "$type": "dimension"
+    },
+    "radius": {
+      "$value": "{radius.04}",
+      "$type": "dimension"
+    },
+    "border-width": {
+      "$value": "2px",
+      "$type": "dimension"
+    }
+  },
+  "radio": {
+    "size": {
+      "$value": "24px",
+      "$type": "dimension"
+    },
+    "radius": {
+      "$value": "{radius.pill}",
+      "$type": "dimension"
+    },
+    "border-width": {
+      "$value": "2px",
+      "$type": "dimension"
+    }
+  },
+  "nav": {
+    "breadcrumb": {
+      "text": {
+        "$value": "{color.text.secondary}",
+        "$type": "color",
+        "$description": "2021 DS Greys/grey-130 -- prior breadcrumb levels"
+      },
+      "text-current": {
+        "$value": "{color.text.primary}",
+        "$type": "color",
+        "$description": "2021 DS Greys/grey-190 -- current location, bold"
+      },
+      "font-size": {
+        "$value": "14px",
+        "$type": "dimension"
+      },
+      "gap": {
+        "$value": "{space.050}",
+        "$type": "dimension"
+      }
+    },
+    "pagination": {
+      "text": {
+        "$value": "{color.text.secondary}",
+        "$type": "color",
+        "$description": "2021 DS Text/secondary -- Page / of labels"
+      },
+      "text-current": {
+        "$value": "{color.text.primary}",
+        "$type": "color",
+        "$description": "2021 DS Text/primary -- current page number in box"
+      },
+      "box-bg": {
+        "$value": "{color.surface.raised}",
+        "$type": "color"
+      },
+      "box-border": {
+        "$value": "{form.border}",
+        "$type": "color",
+        "$description": "2021 DS Input/atrest"
+      },
+      "box-radius": {
+        "$value": "3px",
+        "$type": "dimension"
+      },
+      "arrow-color": {
+        "$value": "{color.text.secondary}",
+        "$type": "color"
+      },
+      "arrow-color-disabled": {
+        "$value": "{button.disabled.text}",
+        "$type": "color"
+      },
+      "gap": {
+        "$value": "{space.100}",
+        "$type": "dimension"
+      }
+    },
+    "header": {
+      "bg": {
+        "$value": "{color.surface.raised}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.border.default}",
+        "$type": "color"
+      },
+      "height": {
+        "$value": "72px",
+        "$type": "dimension"
+      },
+      "padding-x": {
+        "$value": "{space.300}",
+        "$type": "dimension"
+      },
+      "logo-height": {
+        "$value": "32px",
+        "$type": "dimension"
+      },
+      "link-color": {
+        "$value": "{color.text.primary}",
+        "$type": "color"
+      },
+      "link-color-active": {
+        "$value": "{color.action.primary.rest}",
+        "$type": "color"
+      }
+    },
+    "footer": {
+      "bg": {
+        "$value": "{color.surface.sunken}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.border.default}",
+        "$type": "color"
+      },
+      "padding-x": {
+        "$value": "{space.300}",
+        "$type": "dimension"
+      },
+      "padding-y": {
+        "$value": "{space.300}",
+        "$type": "dimension"
+      },
+      "text": {
+        "$value": "{color.text.secondary}",
+        "$type": "color"
+      },
+      "link-color": {
+        "$value": "{color.text.link}",
+        "$type": "color"
+      }
+    },
+    "left-nav": {
+      "bg": {
+        "$value": "{color.surface.raised}",
+        "$type": "color"
+      },
+      "width": {
+        "$value": "280px",
+        "$type": "dimension"
+      },
+      "item-padding-x": {
+        "$value": "{space.200}",
+        "$type": "dimension"
+      },
+      "item-padding-y": {
+        "$value": "{space.150}",
+        "$type": "dimension"
+      },
+      "item-text": {
+        "$value": "{color.text.primary}",
+        "$type": "color"
+      },
+      "item-text-active": {
+        "$value": "{color.text.on-action}",
+        "$type": "color"
+      },
+      "item-bg-active": {
+        "$value": "{color.action.primary.rest}",
+        "$type": "color"
+      },
+      "item-bg-hover": {
+        "$value": "{color.surface.sunken}",
+        "$type": "color"
+      },
+      "divider": {
+        "$value": "{color.border.default}",
+        "$type": "color"
+      }
+    }
+  },
+  "card": {
+    "bg": {
+      "$value": "{color.surface.raised}",
+      "$type": "color"
+    },
+    "radius": {
+      "$value": "{radius.04}",
+      "$type": "dimension",
+      "$description": "2021 DS Card radius (approx 5px -> using 4px scale step)"
+    },
+    "padding-x": {
+      "$value": "20px",
+      "$type": "dimension"
+    },
+    "padding-y": {
+      "$value": "15px",
+      "$type": "dimension"
+    },
+    "gap": {
+      "$value": "{space.150}",
+      "$type": "dimension"
+    },
+    "title-color": {
+      "$value": "{color.text.primary}",
+      "$type": "color"
+    },
+    "divider": {
+      "$value": "{color.border.default}",
+      "$type": "color"
+    },
+    "body-color": {
+      "$value": "{color.text.primary}",
+      "$type": "color"
+    }
+  },
+  "tag": {
+    "default-bg": {
+      "$value": "{color.gray.020}",
+      "$type": "color",
+      "$description": "2021 DS Greys/grey-030 (approx)"
+    },
+    "default-text": {
+      "$value": "{color.text.primary}",
+      "$type": "color"
+    },
+    "status-text": {
+      "$value": "{color.text.on-action}",
+      "$type": "color"
+    },
+    "info-bg": {
+      "$value": "{color.status.info}",
+      "$type": "color"
+    },
+    "success-bg": {
+      "$value": "{color.status.success}",
+      "$type": "color"
+    },
+    "error-bg": {
+      "$value": "{color.status.error}",
+      "$type": "color"
+    },
+    "warning-bg": {
+      "$value": "{color.metal.gold}",
+      "$type": "color",
+      "$description": "2021 DS Metal-Level/Gold -- warning tag uses the gold swatch, not the feedback-warning color"
+    },
+    "warning-text": {
+      "$value": "{color.text.primary}",
+      "$type": "color"
+    },
+    "radius-pill": {
+      "$value": "{radius.pill}",
+      "$type": "dimension"
+    },
+    "radius-status": {
+      "$value": "{radius.04}",
+      "$type": "dimension"
+    },
+    "gap": {
+      "$value": "{space.050}",
+      "$type": "dimension"
+    },
+    "padding-x": {
+      "$value": "{space.100}",
+      "$type": "dimension"
+    }
+  },
+  "table": {
+    "header-text": {
+      "$value": "{color.text.secondary}",
+      "$type": "color"
+    },
+    "header-border": {
+      "$value": "{color.gray.060}",
+      "$type": "color",
+      "$description": "2021 DS Greys/grey-060"
+    },
+    "row-text": {
+      "$value": "{color.text.primary}",
+      "$type": "color"
+    },
+    "row-border": {
+      "$value": "{color.gray.020}",
+      "$type": "color",
+      "$description": "2021 DS Greys/grey-030 (approx)"
+    },
+    "row-bg-selected": {
+      "$value": "{color.status.info-surface}",
+      "$type": "color",
+      "$description": "approx selected-row tint"
+    },
+    "row-height": {
+      "$value": "44px",
+      "$type": "dimension"
+    },
+    "cell-padding": {
+      "$value": "{space.150}",
+      "$type": "dimension"
+    },
+    "cell-gap": {
+      "$value": "{space.050}",
+      "$type": "dimension"
+    }
+  },
+  "progress": {
+    "complete": {
+      "$value": "{color.action.primary.active}",
+      "$type": "color",
+      "$description": "2021 DS Primary/140 -- completed segment"
+    },
+    "unfinished": {
+      "$value": "{color.brand.primary.060}",
+      "$type": "color",
+      "$description": "2021 DS Primary/060 -- remaining segment"
+    },
+    "height": {
+      "$value": "4px",
+      "$type": "dimension"
+    }
+  },
+  "login": {
+    "card-bg": {
+      "$value": "{color.surface.raised}",
+      "$type": "color"
+    },
+    "card-border": {
+      "$value": "{color.border.default}",
+      "$type": "color"
+    },
+    "card-radius": {
+      "$value": "10px",
+      "$type": "dimension"
+    },
+    "card-padding": {
+      "$value": "{space.400}",
+      "$type": "dimension",
+      "$description": "2021 DS 40px card padding"
+    },
+    "card-width": {
+      "$value": "400px",
+      "$type": "dimension"
+    },
+    "title-color": {
+      "$value": "{color.text.primary}",
+      "$type": "color"
+    },
+    "gap": {
+      "$value": "{space.300}",
+      "$type": "dimension"
+    }
+  },
+  "plan": {
+    "card-bg": {
+      "$value": "{color.surface.raised}",
+      "$type": "color"
+    },
+    "card-border": {
+      "$value": "{color.border.default}",
+      "$type": "color"
+    },
+    "card-radius": {
+      "$value": "{radius.04}",
+      "$type": "dimension"
+    },
+    "label-color": {
+      "$value": "{color.text.secondary}",
+      "$type": "color"
+    },
+    "value-color": {
+      "$value": "{color.text.primary}",
+      "$type": "color"
+    },
+    "title-color": {
+      "$value": "{color.text.primary}",
+      "$type": "color"
+    },
+    "footer-bg": {
+      "$value": "{color.gray.020}",
+      "$type": "color",
+      "$description": "2021 DS Greys/grey-030 (approx)"
+    },
+    "footer-text": {
+      "$value": "{color.action.primary.rest}",
+      "$type": "color"
+    },
+    "footer-border": {
+      "$value": "{color.border.default}",
+      "$type": "color"
     }
   }
 }

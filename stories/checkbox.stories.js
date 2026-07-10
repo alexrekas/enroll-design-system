@@ -1,7 +1,22 @@
-const checkIcon = `<svg class="ea-checkbox__check" viewBox="0 0 14 11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 5.5L5 9.5L13 1.5"/></svg>`;
+import { icon } from './icons.js';
+
+const checkIcon = icon.check('ea-checkbox__check');
 
 export default {
   title: 'Components/Checkbox',
+  tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: `Standard checkbox for form selections, including an indeterminate ("partial") state for parent/group checkboxes.
+
+**Accessibility:** \`role="checkbox"\` on the native \`<button>\`; \`aria-checked\` takes \`"true"\`, \`"false"\`, or \`"mixed"\` for the partial state — correct ARIA usage.
+
+**Do:** use the partial state only for a parent checkbox representing a mixed-selection group.
+**Don't:** use partial as a generic "disabled but on" visual — that's a different state.`,
+      },
+    },
+  },
   argTypes: {
     checked: { control: 'select', options: ['unchecked', 'partial', 'checked'] },
     disabled: { control: 'boolean' },

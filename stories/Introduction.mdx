@@ -1,0 +1,32 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Introduction" />
+
+# Enroll App Design System
+
+A tokens-first design system for Enroll App, covering four client themes (**EA** default, **DC** HealthLink, **MA** Health Connector, **CoverME.gov**) from one shared component set. Switch themes anytime with the **Theme** control in the toolbar above — every story re-renders live.
+
+## How this is organized
+
+- **Foundations** — color ramps, spacing scale, type scale, and radius tokens for the active theme, plus a raw hex reference table across all four themes.
+- **Components** — one entry per component. Each has a **Docs** tab (this kind of page — states, variants, accessibility notes, do's/don'ts) and individual **story** variants you can interact with via the Controls panel.
+
+## Token architecture
+
+Colors, spacing, radius, and typography all flow through three tiers:
+
+1. **Primitives** (`tokens/primitives/*.json`) — raw values (`color.gray.055`, `space.100`), theme-agnostic.
+2. **Semantic** (`tokens/semantic/*.json`) — meaning-based aliases (`color.text.secondary`, `color.status.error`) that point at primitives.
+3. **Component** (`tokens/component/component.json`) — component-specific aliases (`button.primary.bg`, `plan.label-color`) that point at semantic tokens.
+
+Everything is authored once in DTCG JSON and compiled via Style Dictionary into per-theme CSS custom properties (`--ea-button-primary-bg`, etc.) — that's what `.storybook/tokens.css` and every story's markup reference. The same variable names exist in the Figma file (`EA Design System 2.0`) as a matching `EA Component` variable collection, using the same slash-path naming (`button/primary/bg` ↔ `--ea-button-primary-bg`), so a color change made in one place has a clear counterpart in the other.
+
+## Icons
+
+Every component that needs a glyph (Button, Input, Alert, Tag, Field-Set, Table, Plan) pulls from one shared source: `stories/icons.js` in code, and the Figma file's `Icons` page. Never hand-roll a new inline SVG inside a story — import `icon.xyz()` from `icons.js` instead, so a new component gets the same glyph as everything else automatically. See the **Icon** docs page for the full glyph list and known limitations.
+
+## Contributing
+
+- `COMPONENTS.md` at the repo root has the full written reference for all 18 components (states, props, accessibility, do's/don'ts, code examples) — the same content surfaced in each component's Docs tab here.
+- `DESIGN-SYSTEM-AUDIT.md` tracks open gaps and priority follow-ups (naming consistency, token coverage, accessibility). Check it before assuming something is "done."
+- Run `npm run build` after editing any token JSON to regenerate the per-theme CSS, and `npm run check:contrast` to verify WCAG AA contrast still holds across all four themes before committing.

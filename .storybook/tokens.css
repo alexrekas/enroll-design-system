@@ -201,6 +201,15 @@
 .ea-table td { color: var(--ea-table-row-text); border-bottom: 1px solid var(--ea-table-row-border); }
 .ea-table tr.ea-table__row--selected td { background: var(--ea-table-row-bg-selected); }
 .ea-table__checkbox-cell { width: 44px; }
+.ea-table__sort-btn { display: inline-flex; align-items: center; gap: 4px; border: none; background: none; padding: 0; margin: 0; font: inherit; color: inherit; cursor: pointer; }
+.ea-table__sort-btn:focus-visible { outline: var(--ea-focus-ring-width) solid var(--ea-focus-ring-color); outline-offset: var(--ea-focus-ring-offset); }
+.ea-table__sort-icon { width: 12px; height: 12px; }
+/* Mirrors the Figma Table/Cell variant set: Position (first/middle/last) x Type (data/numerical) */
+.ea-table__cell--numerical { text-align: right; }
+.ea-table__expand-cell { width: 44px; }
+.ea-table__expand-btn { border: none; background: none; padding: 0; margin: 0; cursor: pointer; color: var(--ea-table-row-text); display: inline-flex; }
+.ea-table__expand-btn[aria-expanded="true"] svg { transform: rotate(90deg); }
+.ea-table__expand-icon { width: 16px; height: 16px; }
 
 /* ---------- Field-Set ---------- */
 .ea-field-set { display: flex; flex-direction: column; gap: 6px; padding: 0 15px; max-width: 390px; }
@@ -220,13 +229,39 @@
 .ea-login-card__buttons { display: flex; gap: 8px; }
 
 /* ---------- Plan ---------- */
+/* Rebuilt 7/10/26 to match EA-DesignSystem-2021's Plan tile: Compare checkbox + benefit-type
+   badge header, carrier/plan-name + cost row (single Premium or Employee/Employer split),
+   Carrier/Level/Deductible detail row, View Plan Summary + Add-or-Remove-from-Cart actions,
+   and an optional expanded Summary of Benefits panel. Plan Compare is no longer a separate
+   composition -- see the Compare checkbox in the header instead. */
 .ea-plan { border: 1px solid var(--ea-plan-card-border); border-radius: var(--ea-plan-card-radius); background: var(--ea-plan-card-bg);
-  font-family: var(--ea-font-family-brand); width: 420px; }
-.ea-plan__body { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
-.ea-plan__title { font-size: 18px; font-weight: var(--ea-font-weight-bold); color: var(--ea-plan-title-color); margin: 0; }
-.ea-plan__details { display: flex; gap: 36px; }
-.ea-plan__col { display: flex; gap: 12px; font-size: 16px; }
+  font-family: var(--ea-font-family-brand); width: 752px; max-width: 100%; padding: 20px; display: flex; flex-direction: column; gap: 12px;
+  box-sizing: border-box; }
+.ea-plan__header { display: flex; align-items: center; justify-content: space-between; }
+.ea-plan__badge { display: flex; align-items: center; gap: 8px; color: var(--ea-plan-value-color); font-size: 16px; }
+.ea-plan__badge-icon { width: 24px; height: 24px; flex-shrink: 0; }
+.ea-plan__summary { display: flex; align-items: center; justify-content: space-between; gap: 36px; flex-wrap: wrap; }
+.ea-plan__identity { display: flex; align-items: center; gap: 20px; }
+.ea-plan__logo { font-weight: var(--ea-font-weight-bold); font-size: 16px; width: 100px; text-align: center; }
+.ea-plan__title { font-size: 18px; font-weight: var(--ea-font-weight-bold); color: var(--ea-plan-title-color); margin: 0; max-width: 340px; }
+.ea-plan__cost-col { display: flex; flex-direction: column; text-align: left; }
+.ea-plan__cost-split { display: flex; align-items: center; gap: 24px; }
+.ea-plan__cost-split .ea-plan__cost-col { text-align: center; width: 90px; }
+.ea-plan__cost-divider { width: 1px; height: 60px; background: var(--ea-plan-footer-border); }
+.ea-plan__cost-label { color: var(--ea-plan-label-color); font-size: 16px; }
+.ea-plan__cost-value { color: var(--ea-plan-value-color); font-size: 24px; font-weight: var(--ea-font-weight-bold); }
+.ea-plan__cost-sub { color: var(--ea-plan-value-color); font-size: 16px; }
+.ea-plan__details { display: flex; gap: 36px; flex-wrap: wrap; }
+.ea-plan__detail-group { display: flex; gap: 12px; font-size: 16px; }
 .ea-plan__labels { color: var(--ea-plan-label-color); font-weight: var(--ea-font-weight-semibold); display: flex; flex-direction: column; }
 .ea-plan__values { color: var(--ea-plan-value-color); display: flex; flex-direction: column; }
-.ea-plan__footer { display: flex; justify-content: space-between; padding: 12px; background: var(--ea-plan-footer-bg); border-top: 1px solid var(--ea-plan-footer-border); color: var(--ea-plan-footer-text); font-weight: var(--ea-font-weight-semibold); font-size: 16px; }
-.ea-plan-compare { display: flex; gap: 20px; flex-wrap: wrap; }
+.ea-plan__actions { display: flex; align-items: center; justify-content: space-between; }
+.ea-plan__actions .ea-btn--tertiary svg { width: 20px; height: 20px; margin-left: 4px; vertical-align: -4px; }
+.ea-btn--in-cart { background: transparent; border: 2px solid var(--ea-button-destructive-bg); color: var(--ea-button-destructive-bg); }
+.ea-plan__divider { border: none; border-top: 1px solid var(--ea-plan-footer-border); margin: 0; }
+.ea-plan__benefit { font-size: 16px; }
+.ea-plan__benefit-title { font-weight: var(--ea-font-weight-bold); color: var(--ea-plan-value-color); margin: 0 0 2px; }
+.ea-plan__benefit ul { margin: 0; padding-left: 20px; color: var(--ea-plan-value-color); }
+.ea-plan__pdf-link { display: flex; align-items: center; gap: 8px; }
+.ea-plan__pdf-link a { color: var(--ea-color-text-link); }
+.ea-plan__pdf-link svg { width: 24px; height: 24px; }

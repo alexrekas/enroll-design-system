@@ -803,72 +803,72 @@
         "005": {
           "$value": "#f2f4f6",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); captured"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
         },
         "015": {
           "$value": "#d9dee4",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); captured"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
         },
         "025": {
           "$value": "#bfc8d2",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
         },
         "050": {
           "$value": "#8091a5",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
         },
         "060": {
           "$value": "#667a94",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
         },
         "070": {
           "$value": "#4d6482",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
         },
         "080": {
           "$value": "#334e70",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
         },
         "090": {
           "$value": "#1a385e",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
         },
         "100": {
           "$value": "#00224C",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); captured"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
         },
         "110": {
           "$value": "#001e44",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
         },
         "120": {
           "$value": "#001B3D",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); captured"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
         },
         "130": {
           "$value": "#001836",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
         },
         "140": {
           "$value": "#00142E",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); captured"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
         },
         "150": {
           "$value": "#001024",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated"
         }
       }
     },
@@ -903,11 +903,6 @@
         "$type": "color",
         "$description": "code gray"
       },
-      "042": {
-        "$value": "#BAB8B5",
-        "$type": "color",
-        "$description": "2021 DS Input/disabled -- extracted for form.disabled.border alias (Toggle/Checkbox/Radio-Button), 7/10/26"
-      },
       "045": {
         "$value": "#8d8d8d",
         "$type": "color",
@@ -917,11 +912,6 @@
         "$value": "#9b9b9b",
         "$type": "color",
         "$description": "code table heading"
-      },
-      "055": {
-        "$value": "#878584",
-        "$type": "color",
-        "$description": "2021 DS Text/disabled -- extracted for button.disabled.text alias, 7/10/26"
       },
       "060": {
         "$value": "#7b7b7b",
@@ -956,7 +946,7 @@
       "110": {
         "$value": "#0d0d0d",
         "$type": "color",
-        "$description": "Vitae gray-190 — focus ring"
+        "$description": "Vitae gray-190 \u2014 focus ring"
       }
     },
     "white": {
@@ -1047,27 +1037,27 @@
       "gold": {
         "$value": "#F7B319",
         "$type": "color",
-        "$description": "Metal level: Gold — plan indicator ONLY, never UI accent (decided 7/9/26)"
+        "$description": "Metal level: Gold \u2014 plan indicator ONLY, never UI accent (decided 7/9/26)"
       },
       "bronze": {
         "$value": "#cd7f32",
         "$type": "color",
-        "$description": "PLACEHOLDER — extract from DS"
+        "$description": "PLACEHOLDER \u2014 extract from DS"
       },
       "silver": {
         "$value": "#c0c0c0",
         "$type": "color",
-        "$description": "PLACEHOLDER — extract from DS"
+        "$description": "PLACEHOLDER \u2014 extract from DS"
       },
       "platinum": {
         "$value": "#e5e4e2",
         "$type": "color",
-        "$description": "PLACEHOLDER — extract from DS"
+        "$description": "PLACEHOLDER \u2014 extract from DS"
       },
       "catastrophic": {
         "$value": "#9b9b9b",
         "$type": "color",
-        "$description": "PLACEHOLDER — extract from DS"
+        "$description": "PLACEHOLDER \u2014 extract from DS"
       }
     },
     "coolgray": {
