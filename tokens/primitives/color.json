@@ -167,7 +167,7 @@
         "100": {
           "$value": "#3b5b81",
           "$type": "color",
-          "$description": "Vitae Color/Brand/secondary-100 [EA-Light]"
+          "$description": "Vitae Color/Brand/secondary-100 [EA-Light]; EA secondary confirmed by Alex 10/14/26 (Vitae slate, not the 2021 navy #00224D)"
         },
         "110": {
           "$value": "#355274",
@@ -1367,7 +1367,7 @@
       "catastrophic": {
         "$value": "#4A6274",
         "$type": "color",
-        "$description": "Recommended 10/14/26 (not in Vitae or 2021 DS): cool desaturated steel. Sits outside the warm metal hues and avoids red/orange alarm colors. 4.96:1 on its tint. Pending Alex sign-off."
+        "$description": "Catastrophic metal level: cool desaturated steel, outside the warm metal hues and away from red/orange alarm colors. 4.96:1 on its tint. Approved by Alex 10/14/26 (not in Vitae or 2021 DS)."
       },
       "gold-surface": {
         "$value": "#fdeec5",
@@ -1392,7 +1392,7 @@
       "catastrophic-surface": {
         "$value": "#DCE4EA",
         "$type": "color",
-        "$description": "Tint for catastrophic tag (recommended)"
+        "$description": "Tint for catastrophic tag. Approved by Alex 10/14/26."
       }
     },
     "coolgray": {

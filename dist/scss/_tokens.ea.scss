@@ -20,7 +20,7 @@ $ea-color-ea-primary-060: #6798d7; // Vitae Color/Brand/primary-060 [EA-Light]
 $ea-color-ea-primary-070: #4d87d0; // Vitae Color/Brand/primary-070 [EA-Light]
 $ea-color-ea-primary-080: #3576c9; // Vitae Color/Brand/primary-080 [EA-Light]
 $ea-color-ea-primary-090: #1b65c3; // Vitae Color/Brand/primary-090 [EA-Light]
-$ea-color-ea-secondary-100: #3b5b81; // Vitae Color/Brand/secondary-100 [EA-Light]
+$ea-color-ea-secondary-100: #3b5b81; // Vitae Color/Brand/secondary-100 [EA-Light]; EA secondary confirmed by Alex 10/14/26 (Vitae slate, not the 2021 navy #00224D)
 $ea-color-ea-secondary-110: #355274; // Vitae Color/Brand/secondary-110 [EA-Light]
 $ea-color-ea-secondary-120: #2f4967; // Vitae Color/Brand/secondary-120 [EA-Light]
 $ea-color-ea-secondary-130: #29405b; // Vitae Color/Brand/secondary-130 [EA-Light]
@@ -265,12 +265,12 @@ $ea-color-metal-gold: #fabb18; // 2021 DS Metal-Level/Gold = Vitae semantic Colo
 $ea-color-metal-bronze: #cd7f32; // 2021 DS Metal-Level/Bronze = Vitae semantic Color/Border/Tag/bronze; confirmed by Alex 10/14/26 (#F7B319 was legacy Enroll code, not Vitae). Vitae's primitive layer still holds older values (gold #D4AF37, platinum #E5E4E2) -- superseded. Plan indicator ONLY.
 $ea-color-metal-silver: #c0c0c0; // 2021 DS Metal-Level/Silver = Vitae semantic Color/Border/Tag/silver; confirmed by Alex 10/14/26 (#F7B319 was legacy Enroll code, not Vitae). Vitae's primitive layer still holds older values (gold #D4AF37, platinum #E5E4E2) -- superseded. Plan indicator ONLY.
 $ea-color-metal-platinum: #5d5d60; // 2021 DS Metal-Level/Platinum = Vitae semantic Color/Border/Tag/platinum; confirmed by Alex 10/14/26 (#F7B319 was legacy Enroll code, not Vitae). Vitae's primitive layer still holds older values (gold #D4AF37, platinum #E5E4E2) -- superseded. Plan indicator ONLY.
-$ea-color-metal-catastrophic: #4a6274; // Recommended 10/14/26 (not in Vitae or 2021 DS): cool desaturated steel. Sits outside the warm metal hues and avoids red/orange alarm colors. 4.96:1 on its tint. Pending Alex sign-off.
+$ea-color-metal-catastrophic: #4a6274; // Catastrophic metal level: cool desaturated steel, outside the warm metal hues and away from red/orange alarm colors. 4.96:1 on its tint. Approved by Alex 10/14/26 (not in Vitae or 2021 DS).
 $ea-color-metal-gold-surface: #fdeec5; // Vitae Color/Background/Tag/gold
 $ea-color-metal-silver-surface: #efefef; // Vitae Color/Background/Tag/silver
 $ea-color-metal-bronze-surface: #f2dfcb; // Vitae Color/Background/Tag/bronze
 $ea-color-metal-platinum-surface: #d6d6d7; // Vitae Color/Background/Tag/platinum
-$ea-color-metal-catastrophic-surface: #dce4ea; // Tint for catastrophic tag (recommended)
+$ea-color-metal-catastrophic-surface: #dce4ea; // Tint for catastrophic tag. Approved by Alex 10/14/26.
 $ea-color-coolgray-070: #57595b; // Vitae text/placeholder
 $ea-color-coolgray-080: #4b5159; // Vitae text/secondary
 $ea-color-program-dc-healthy-bg: #f8f3f9; // Vitae tag/dc-healthy-dc-plan bg
