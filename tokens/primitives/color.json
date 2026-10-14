@@ -5,216 +5,286 @@
         "005": {
           "$value": "#f2f6fc",
           "$type": "color",
-          "$description": "Vitae EA mode; captured"
+          "$description": "Vitae Color/Brand/primary-005 [EA-Light]"
+        },
+        "010": {
+          "$value": "#e5eef8",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-010 [EA-Light]"
         },
         "015": {
           "$value": "#d9e6f5",
           "$type": "color",
-          "$description": "Vitae EA mode; captured"
+          "$description": "Vitae Color/Brand/primary-015 [EA-Light]"
+        },
+        "020": {
+          "$value": "#ccddf2",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-020 [EA-Light]"
         },
         "025": {
           "$value": "#c0d4ee",
           "$type": "color",
-          "$description": "Vitae EA mode; captured"
+          "$description": "Vitae Color/Brand/primary-025 [EA-Light]"
+        },
+        "030": {
+          "$value": "#b3cbeb",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-030 [EA-Light]"
+        },
+        "035": {
+          "$value": "#a7c3e8",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-035 [EA-Light]"
+        },
+        "040": {
+          "$value": "#9abbe4",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-040 [EA-Light]"
         },
         "050": {
-          "$value": "#7fa7d8",
+          "$value": "#80a9dd",
           "$type": "color",
-          "$description": "2021 DS Primary/050/EA (replaces interpolated value, 10/14/26)"
+          "$description": "Vitae Color/Brand/primary-050 [EA-Light]"
         },
         "060": {
-          "$value": "#6696d1",
+          "$value": "#6798d7",
           "$type": "color",
-          "$description": "2021 DS Primary/060/EA (replaces interpolated value, 10/14/26)"
+          "$description": "Vitae Color/Brand/primary-060 [EA-Light]"
         },
         "070": {
-          "$value": "#4c84c9",
+          "$value": "#4d87d0",
           "$type": "color",
-          "$description": "2021 DS Primary/070/EA (replaces interpolated value, 10/14/26)"
+          "$description": "Vitae Color/Brand/primary-070 [EA-Light]"
         },
         "080": {
-          "$value": "#3373c1",
+          "$value": "#3576c9",
           "$type": "color",
-          "$description": "2021 DS Primary/080/EA (replaces interpolated value, 10/14/26)"
+          "$description": "Vitae Color/Brand/primary-080 [EA-Light]"
         },
         "090": {
-          "$value": "#1961ba",
+          "$value": "#1b65c3",
           "$type": "color",
-          "$description": "2021 DS Primary/090/EA (replaces interpolated value, 10/14/26)"
+          "$description": "Vitae Color/Brand/primary-090 [EA-Light]"
         },
         "100": {
           "$value": "#0254bc",
           "$type": "color",
-          "$description": "Vitae EA mode; captured"
+          "$description": "Vitae Color/Brand/primary-100 [EA-Light]"
         },
         "110": {
-          "$value": "#0048a1",
+          "$value": "#024caa",
           "$type": "color",
-          "$description": "2021 DS Primary/110/EA (replaces interpolated value, 10/14/26)"
+          "$description": "Vitae Color/Brand/primary-110 [EA-Light]"
         },
         "120": {
           "$value": "#024396",
           "$type": "color",
-          "$description": "Vitae EA mode; captured"
+          "$description": "Vitae Color/Brand/primary-120 [EA-Light]"
         },
         "130": {
-          "$value": "#00387d",
+          "$value": "#013b84",
           "$type": "color",
-          "$description": "2021 DS Primary/130/EA (replaces interpolated value, 10/14/26)"
+          "$description": "Vitae Color/Brand/primary-130 [EA-Light]"
         },
         "140": {
           "$value": "#013271",
           "$type": "color",
-          "$description": "Vitae EA mode; captured"
+          "$description": "Vitae Color/Brand/primary-140 [EA-Light]"
         },
         "150": {
           "$value": "#012a5e",
           "$type": "color",
-          "$description": "Vitae EA mode; captured"
+          "$description": "Vitae Color/Brand/primary-150 [EA-Light]"
         }
       },
       "secondary": {
         "005": {
           "$value": "#f5f7f9",
           "$type": "color",
-          "$description": "Vitae default/EA context; captured"
+          "$description": "Vitae Color/Brand/secondary-005 [EA-Light]"
+        },
+        "010": {
+          "$value": "#ebeef2",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-010 [EA-Light]"
         },
         "015": {
           "$value": "#e2e7ec",
           "$type": "color",
-          "$description": "Vitae default/EA context; captured"
+          "$description": "Vitae Color/Brand/secondary-015 [EA-Light]"
+        },
+        "020": {
+          "$value": "#d8dee6",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-020 [EA-Light]"
         },
         "025": {
           "$value": "#ced6df",
           "$type": "color",
-          "$description": "Vitae default/EA context; captured"
+          "$description": "Vitae Color/Brand/secondary-025 [EA-Light]"
+        },
+        "030": {
+          "$value": "#c4cdd9",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-030 [EA-Light]"
+        },
+        "035": {
+          "$value": "#bbc6d3",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-035 [EA-Light]"
+        },
+        "040": {
+          "$value": "#b1bdcd",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-040 [EA-Light]"
         },
         "050": {
           "$value": "#9dadc0",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/secondary-050 [EA-Light]"
         },
         "060": {
           "$value": "#899db3",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/secondary-060 [EA-Light]"
         },
         "070": {
-          "$value": "#768ca7",
+          "$value": "#758ca7",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/secondary-070 [EA-Light]"
         },
         "080": {
           "$value": "#627c9a",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/secondary-080 [EA-Light]"
         },
         "090": {
-          "$value": "#4f6b8e",
+          "$value": "#4e6b8d",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/secondary-090 [EA-Light]"
         },
         "100": {
           "$value": "#3b5b81",
           "$type": "color",
-          "$description": "Vitae default/EA context; captured"
+          "$description": "Vitae Color/Brand/secondary-100 [EA-Light]"
         },
         "110": {
           "$value": "#355274",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/secondary-110 [EA-Light]"
         },
         "120": {
           "$value": "#2f4967",
           "$type": "color",
-          "$description": "Vitae default/EA context; captured"
+          "$description": "Vitae Color/Brand/secondary-120 [EA-Light]"
         },
         "130": {
-          "$value": "#29405a",
+          "$value": "#29405b",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/secondary-130 [EA-Light]"
         },
         "140": {
           "$value": "#23374d",
           "$type": "color",
-          "$description": "Vitae default/EA context; captured"
+          "$description": "Vitae Color/Brand/secondary-140 [EA-Light]"
         },
         "150": {
-          "$value": "#1b2b3c",
+          "$value": "#1e2e41",
           "$type": "color",
-          "$description": "extrapolated from 140; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/secondary-150 [EA-Light]"
         }
       },
       "tertiary": {
         "005": {
-          "$value": "#f6f2f5",
+          "$value": "#f5f3f5",
           "$type": "color",
-          "$description": "Vitae default/EA context; captured"
+          "$description": "Vitae Color/Brand/tertiary-005 [EA-Light]"
+        },
+        "010": {
+          "$value": "#ece8eb",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-010 [EA-Light]"
         },
         "015": {
           "$value": "#e3dde1",
           "$type": "color",
-          "$description": "Vitae default/EA context; captured"
+          "$description": "Vitae Color/Brand/tertiary-015 [EA-Light]"
+        },
+        "020": {
+          "$value": "#dad2d7",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-020 [EA-Light]"
         },
         "025": {
           "$value": "#d0c6cd",
           "$type": "color",
-          "$description": "Vitae default/EA context; captured"
+          "$description": "Vitae Color/Brand/tertiary-025 [EA-Light]"
+        },
+        "030": {
+          "$value": "#c7bac2",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-030 [EA-Light]"
+        },
+        "040": {
+          "$value": "#b4a4af",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-040 [EA-Light]"
         },
         "050": {
-          "$value": "#a18d9b",
+          "$value": "#a18d9a",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/tertiary-050 [EA-Light]"
         },
         "060": {
-          "$value": "#8f7787",
+          "$value": "#8f7786",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/tertiary-060 [EA-Light]"
         },
         "070": {
           "$value": "#7c6072",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/tertiary-070 [EA-Light]"
         },
         "080": {
           "$value": "#69495e",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/tertiary-080 [EA-Light]"
         },
         "090": {
-          "$value": "#57334a",
+          "$value": "#56324a",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/tertiary-090 [EA-Light]"
         },
         "100": {
           "$value": "#441c36",
           "$type": "color",
-          "$description": "Vitae default/EA context; captured"
+          "$description": "Vitae Color/Brand/tertiary-100 [EA-Light]"
         },
         "110": {
-          "$value": "#3d1930",
+          "$value": "#3d1931",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/tertiary-110 [EA-Light]"
         },
         "120": {
           "$value": "#36162b",
           "$type": "color",
-          "$description": "Vitae default/EA context; captured"
+          "$description": "Vitae Color/Brand/tertiary-120 [EA-Light]"
         },
         "130": {
           "$value": "#301426",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/tertiary-130 [EA-Light]"
         },
         "140": {
           "$value": "#291120",
           "$type": "color",
-          "$description": "Vitae default/EA context; captured"
+          "$description": "Vitae Color/Brand/tertiary-140 [EA-Light]"
         },
         "150": {
-          "$value": "#200d19",
+          "$value": "#220e1b",
           "$type": "color",
-          "$description": "extrapolated from 140; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
+          "$description": "Vitae Color/Brand/tertiary-150 [EA-Light]"
         }
       }
     },
@@ -223,434 +293,574 @@
         "005": {
           "$value": "#f2f5f7",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; captured"
+          "$description": "Vitae Color/Brand/primary-005 [DC]"
+        },
+        "010": {
+          "$value": "#e5eaef",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-010 [DC]"
         },
         "015": {
           "$value": "#d9e0e7",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; captured"
+          "$description": "Vitae Color/Brand/primary-015 [DC]"
+        },
+        "020": {
+          "$value": "#ccd6df",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-020 [DC]"
         },
         "025": {
           "$value": "#bfccd7",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260; 2021 DS has no 025 step"
+          "$description": "Vitae Color/Brand/primary-025 [DC]"
+        },
+        "030": {
+          "$value": "#b2c1cf",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-030 [DC]"
+        },
+        "035": {
+          "$value": "#a6b7c8",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-035 [DC]"
+        },
+        "040": {
+          "$value": "#99adbf",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-040 [DC]"
         },
         "050": {
-          "$value": "#8098af",
+          "$value": "#7f98af",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260"
+          "$description": "Vitae Color/Brand/primary-050 [DC]"
         },
         "060": {
           "$value": "#6684a0",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260"
+          "$description": "Vitae Color/Brand/primary-060 [DC]"
         },
         "070": {
-          "$value": "#4d6f90",
+          "$value": "#4c6f8f",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260"
+          "$description": "Vitae Color/Brand/primary-070 [DC]"
         },
         "080": {
           "$value": "#335b80",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260"
+          "$description": "Vitae Color/Brand/primary-080 [DC]"
         },
         "090": {
-          "$value": "#1a4670",
+          "$value": "#194670",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260"
+          "$description": "Vitae Color/Brand/primary-090 [DC]"
         },
         "100": {
           "$value": "#003260",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; captured"
+          "$description": "Vitae Color/Brand/primary-100 [DC]"
         },
         "110": {
-          "$value": "#002d56",
+          "$value": "#002d57",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260"
+          "$description": "Vitae Color/Brand/primary-110 [DC]"
         },
         "120": {
           "$value": "#00284d",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; captured"
+          "$description": "Vitae Color/Brand/primary-120 [DC]"
         },
         "130": {
           "$value": "#002343",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; captured"
+          "$description": "Vitae Color/Brand/primary-130 [DC]"
         },
         "140": {
           "$value": "#001e3a",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; captured"
+          "$description": "Vitae Color/Brand/primary-140 [DC]"
         },
         "150": {
           "$value": "#001930",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; captured"
+          "$description": "Vitae Color/Brand/primary-150 [DC]"
         }
       },
       "secondary": {
         "005": {
           "$value": "#f2f8fc",
           "$type": "color",
-          "$description": "Vitae DC mode; captured"
+          "$description": "Vitae Color/Brand/secondary-005 [DC]"
+        },
+        "010": {
+          "$value": "#e5f1fa",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-010 [DC]"
         },
         "015": {
-          "$value": "#d9ecf7",
+          "$value": "#d9ebf7",
           "$type": "color",
-          "$description": "Vitae DC mode; captured"
+          "$description": "Vitae Color/Brand/secondary-015 [DC]"
+        },
+        "020": {
+          "$value": "#cce4f5",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-020 [DC]"
         },
         "025": {
-          "$value": "#bfdef2",
+          "$value": "#bfddf2",
           "$type": "color",
-          "$description": "Vitae DC mode; interpolated; 2021 DS has no 025 step"
+          "$description": "Vitae Color/Brand/secondary-025 [DC]"
+        },
+        "030": {
+          "$value": "#b2d6f0",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-030 [DC]"
+        },
+        "035": {
+          "$value": "#a6cfed",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-035 [DC]"
+        },
+        "040": {
+          "$value": "#99c8eb",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-040 [DC]"
         },
         "050": {
           "$value": "#7fbae5",
           "$type": "color",
-          "$description": "Vitae DC mode; captured"
+          "$description": "Vitae Color/Brand/secondary-050 [DC]"
         },
         "060": {
           "$value": "#66ade0",
           "$type": "color",
-          "$description": "Vitae DC mode; captured"
+          "$description": "Vitae Color/Brand/secondary-060 [DC]"
         },
         "070": {
           "$value": "#4c9fdb",
           "$type": "color",
-          "$description": "Vitae DC mode; captured"
+          "$description": "Vitae Color/Brand/secondary-070 [DC]"
         },
         "080": {
           "$value": "#3391d6",
           "$type": "color",
-          "$description": "Vitae DC mode; captured"
+          "$description": "Vitae Color/Brand/secondary-080 [DC]"
         },
         "090": {
           "$value": "#1983d1",
           "$type": "color",
-          "$description": "Vitae DC mode; captured"
+          "$description": "Vitae Color/Brand/secondary-090 [DC]"
         },
         "100": {
           "$value": "#0076cc",
           "$type": "color",
-          "$description": "Vitae DC mode; captured"
+          "$description": "Vitae Color/Brand/secondary-100 [DC]"
         },
         "110": {
           "$value": "#006ab8",
           "$type": "color",
-          "$description": "Vitae DC mode; captured"
+          "$description": "Vitae Color/Brand/secondary-110 [DC]"
         },
         "120": {
           "$value": "#005ea3",
           "$type": "color",
-          "$description": "Vitae DC mode; captured"
+          "$description": "Vitae Color/Brand/secondary-120 [DC]"
         },
         "130": {
           "$value": "#00538f",
           "$type": "color",
-          "$description": "Vitae DC mode; captured"
+          "$description": "Vitae Color/Brand/secondary-130 [DC]"
         },
         "140": {
           "$value": "#00477a",
           "$type": "color",
-          "$description": "Vitae DC mode; captured"
+          "$description": "Vitae Color/Brand/secondary-140 [DC]"
         },
         "150": {
           "$value": "#003b66",
           "$type": "color",
-          "$description": "Vitae DC mode; captured"
+          "$description": "Vitae Color/Brand/secondary-150 [DC]"
         }
       },
       "tertiary": {
         "005": {
-          "$value": "#fcf2f2",
+          "$value": "#fdf4f4",
           "$type": "color",
-          "$description": "Vitae DC mode; decided: red; captured"
+          "$description": "Vitae Color/Brand/tertiary-005 [DC]"
+        },
+        "010": {
+          "$value": "#fbe9e9",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-010 [DC]"
         },
         "015": {
-          "$value": "#f8dcdc",
+          "$value": "#f9dedf",
           "$type": "color",
-          "$description": "Vitae DC mode; decided: red; captured"
+          "$description": "Vitae Color/Brand/tertiary-015 [DC]"
+        },
+        "020": {
+          "$value": "#f8d3d3",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-020 [DC]"
         },
         "025": {
-          "$value": "#f5c7c7",
+          "$value": "#f6c8c8",
           "$type": "color",
-          "$description": "Vitae DC mode; decided: red; interpolated; 2021 DS has no 025 step"
+          "$description": "Vitae Color/Brand/tertiary-025 [DC]"
+        },
+        "030": {
+          "$value": "#f4bdbd",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-030 [DC]"
+        },
+        "040": {
+          "$value": "#f0a7a8",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-040 [DC]"
         },
         "050": {
           "$value": "#ec9192",
           "$type": "color",
-          "$description": "Vitae DC mode; decided: red; captured"
+          "$description": "Vitae Color/Brand/tertiary-050 [DC]"
         },
         "060": {
           "$value": "#e97b7c",
           "$type": "color",
-          "$description": "Vitae DC mode; decided: red; captured"
+          "$description": "Vitae Color/Brand/tertiary-060 [DC]"
         },
         "070": {
           "$value": "#e56566",
           "$type": "color",
-          "$description": "Vitae DC mode; decided: red; captured"
+          "$description": "Vitae Color/Brand/tertiary-070 [DC]"
         },
         "080": {
           "$value": "#e14f51",
           "$type": "color",
-          "$description": "Vitae DC mode; decided: red; captured"
+          "$description": "Vitae Color/Brand/tertiary-080 [DC]"
         },
         "090": {
           "$value": "#de393a",
           "$type": "color",
-          "$description": "Vitae DC mode; decided: red; captured"
+          "$description": "Vitae Color/Brand/tertiary-090 [DC]"
         },
         "100": {
           "$value": "#da2325",
           "$type": "color",
-          "$description": "Vitae DC mode; decided: red; captured"
+          "$description": "Vitae Color/Brand/tertiary-100 [DC]"
         },
         "110": {
           "$value": "#c52021",
           "$type": "color",
-          "$description": "Vitae DC mode; decided: red; captured"
+          "$description": "Vitae Color/Brand/tertiary-110 [DC]"
         },
         "120": {
           "$value": "#ae1c1e",
           "$type": "color",
-          "$description": "Vitae DC mode; decided: red; captured"
+          "$description": "Vitae Color/Brand/tertiary-120 [DC]"
         },
         "130": {
           "$value": "#99191a",
           "$type": "color",
-          "$description": "Vitae DC mode; decided: red; captured"
+          "$description": "Vitae Color/Brand/tertiary-130 [DC]"
         },
         "140": {
           "$value": "#831516",
           "$type": "color",
-          "$description": "Vitae DC mode; decided: red; captured"
+          "$description": "Vitae Color/Brand/tertiary-140 [DC]"
         },
         "150": {
           "$value": "#6d1213",
           "$type": "color",
-          "$description": "Vitae DC mode; decided: red; captured"
+          "$description": "Vitae Color/Brand/tertiary-150 [DC]"
         }
       }
     },
     "me": {
       "primary": {
         "005": {
-          "$value": "#f4f6f7",
+          "$value": "#f5f7f8",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/primary-005 [ME]"
+        },
+        "010": {
+          "$value": "#ebeef0",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-010 [ME]"
         },
         "015": {
-          "$value": "#dfe5e8",
+          "$value": "#e2e7ea",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/primary-015 [ME]"
+        },
+        "020": {
+          "$value": "#d8dfe2",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-020 [ME]"
         },
         "025": {
-          "$value": "#ccd5da",
+          "$value": "#ced6db",
           "$type": "color",
-          "$description": "2021 DS CME; interpolated; 2021 DS has no 025 step"
+          "$description": "Vitae Color/Brand/primary-025 [ME]"
+        },
+        "030": {
+          "$value": "#c4ced4",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-030 [ME]"
+        },
+        "035": {
+          "$value": "#bbc6cd",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-035 [ME]"
+        },
+        "040": {
+          "$value": "#b1bec5",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-040 [ME]"
         },
         "050": {
-          "$value": "#9EAEB7",
+          "$value": "#9eaeb7",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/primary-050 [ME]"
         },
         "060": {
-          "$value": "#8B9EA9",
+          "$value": "#8b9ea9",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/primary-060 [ME]"
         },
         "070": {
-          "$value": "#778D9A",
+          "$value": "#778d9a",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/primary-070 [ME]"
         },
         "080": {
-          "$value": "#647D8C",
+          "$value": "#647d8c",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/primary-080 [ME]"
         },
         "090": {
-          "$value": "#506D7D",
+          "$value": "#506d7d",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/primary-090 [ME]"
         },
         "100": {
-          "$value": "#3D5D6F",
+          "$value": "#3d5d6f",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/primary-100 [ME]"
         },
         "110": {
           "$value": "#375464",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/primary-110 [ME]"
         },
         "120": {
-          "$value": "#314A59",
+          "$value": "#314a59",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/primary-120 [ME]"
         },
         "130": {
-          "$value": "#2B414E",
+          "$value": "#2b414e",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/primary-130 [ME]"
         },
         "140": {
           "$value": "#253843",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/primary-140 [ME]"
         },
         "150": {
-          "$value": "#1F2F38",
+          "$value": "#1f2f38",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/primary-150 [ME]"
         }
       },
       "secondary": {
         "005": {
-          "$value": "#f4f7fa",
+          "$value": "#f5f7f9",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/secondary-005 [ME]"
+        },
+        "010": {
+          "$value": "#ebf0f4",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-010 [ME]"
         },
         "015": {
-          "$value": "#dfe9f0",
+          "$value": "#e2e9ee",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/secondary-015 [ME]"
+        },
+        "020": {
+          "$value": "#d8e1e9",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-020 [ME]"
         },
         "025": {
-          "$value": "#c8d8e4",
+          "$value": "#cedae3",
           "$type": "color",
-          "$description": "2021 DS CME; interpolated; 2021 DS has no 025 step"
+          "$description": "Vitae Color/Brand/secondary-025 [ME]"
+        },
+        "030": {
+          "$value": "#c4d2dd",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-030 [ME]"
+        },
+        "035": {
+          "$value": "#bbcbd8",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-035 [ME]"
+        },
+        "040": {
+          "$value": "#b1c4d3",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-040 [ME]"
         },
         "050": {
-          "$value": "#8DADC6",
+          "$value": "#9db5c7",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/secondary-050 [ME]"
         },
         "060": {
-          "$value": "#7AA0BC",
+          "$value": "#89a6bc",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/secondary-060 [ME]"
         },
         "070": {
-          "$value": "#6792B3",
+          "$value": "#7597b1",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/secondary-070 [ME]"
         },
         "080": {
-          "$value": "#5484A9",
+          "$value": "#6289a6",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/secondary-080 [ME]"
         },
         "090": {
-          "$value": "#4A7EA6",
+          "$value": "#4e7a9b",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/secondary-090 [ME]"
         },
         "100": {
-          "$value": "#3B6B90",
+          "$value": "#3b6b90",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/secondary-100 [ME]"
         },
         "110": {
-          "$value": "#345F80",
+          "$value": "#356182",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/secondary-110 [ME]"
         },
         "120": {
-          "$value": "#2E5470",
+          "$value": "#2f5673",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/secondary-120 [ME]"
         },
         "130": {
-          "$value": "#274760",
+          "$value": "#294b65",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/secondary-130 [ME]"
         },
         "140": {
-          "$value": "#213C50",
+          "$value": "#234056",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/secondary-140 [ME]"
         },
         "150": {
-          "$value": "#1a3040",
+          "$value": "#1e3648",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/secondary-150 [ME]"
         }
       },
       "tertiary": {
         "005": {
-          "$value": "#f6f8f2",
+          "$value": "#f7f8f5",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/tertiary-005 [ME]"
+        },
+        "010": {
+          "$value": "#eef1ea",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-010 [ME]"
         },
         "015": {
-          "$value": "#e6ecdb",
+          "$value": "#e6eae1",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/tertiary-015 [ME]"
+        },
+        "020": {
+          "$value": "#dee3d6",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-020 [ME]"
         },
         "025": {
-          "$value": "#d3dbc4",
+          "$value": "#d6dccc",
           "$type": "color",
-          "$description": "2021 DS CME; interpolated; 2021 DS has no 025 step"
+          "$description": "Vitae Color/Brand/tertiary-025 [ME]"
+        },
+        "030": {
+          "$value": "#cdd5c2",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-030 [ME]"
+        },
+        "040": {
+          "$value": "#bdc7ae",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-040 [ME]"
         },
         "050": {
-          "$value": "#A2B289",
+          "$value": "#acb999",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/tertiary-050 [ME]"
         },
         "060": {
-          "$value": "#92A575",
+          "$value": "#9cab85",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/tertiary-060 [ME]"
         },
         "070": {
-          "$value": "#839961",
+          "$value": "#8b9d71",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/tertiary-070 [ME]"
         },
         "080": {
-          "$value": "#738C4D",
+          "$value": "#7b8f5d",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/tertiary-080 [ME]"
         },
         "090": {
-          "$value": "#647F3A",
+          "$value": "#6a8148",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/tertiary-090 [ME]"
         },
         "100": {
-          "$value": "#5A7334",
+          "$value": "#5a7334",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/tertiary-100 [ME]"
         },
         "110": {
-          "$value": "#50662E",
+          "$value": "#51682f",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/tertiary-110 [ME]"
         },
         "120": {
-          "$value": "#465929",
+          "$value": "#485c2a",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/tertiary-120 [ME]"
         },
         "130": {
-          "$value": "#3C4C23",
+          "$value": "#3f5125",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/tertiary-130 [ME]"
         },
         "140": {
-          "$value": "#32401D",
+          "$value": "#36451f",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/tertiary-140 [ME]"
         },
         "150": {
-          "$value": "#283317",
+          "$value": "#2d3a1a",
           "$type": "color",
-          "$description": "2021 DS CME; captured"
+          "$description": "Vitae Color/Brand/tertiary-150 [ME]"
         }
       }
     },
@@ -659,216 +869,286 @@
         "005": {
           "$value": "#f2f7f9",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/primary-005 [MA]"
+        },
+        "010": {
+          "$value": "#e5eff2",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-010 [MA]"
         },
         "015": {
-          "$value": "#d9e7ed",
+          "$value": "#d9e7ec",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/primary-015 [MA]"
+        },
+        "020": {
+          "$value": "#ccdfe6",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-020 [MA]"
         },
         "025": {
-          "$value": "#bfd7e0",
+          "$value": "#bfd7df",
           "$type": "color",
-          "$description": "2021 DS MAHC; interpolated; 2021 DS has no 025 step"
+          "$description": "Vitae Color/Brand/primary-025 [MA]"
+        },
+        "030": {
+          "$value": "#b2ced9",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-030 [MA]"
+        },
+        "035": {
+          "$value": "#a6c7d3",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-035 [MA]"
+        },
+        "040": {
+          "$value": "#99bfcd",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/primary-040 [MA]"
         },
         "050": {
-          "$value": "#7FAEC0",
+          "$value": "#7faec0",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/primary-050 [MA]"
         },
         "060": {
-          "$value": "#669EB3",
+          "$value": "#669eb3",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/primary-060 [MA]"
         },
         "070": {
-          "$value": "#4C8EA7",
+          "$value": "#4c8ea7",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/primary-070 [MA]"
         },
         "080": {
-          "$value": "#337E9A",
+          "$value": "#337e9a",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/primary-080 [MA]"
         },
         "090": {
-          "$value": "#196E8D",
+          "$value": "#196e8d",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/primary-090 [MA]"
         },
         "100": {
-          "$value": "#005E81",
+          "$value": "#005e81",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/primary-100 [MA]"
         },
         "110": {
           "$value": "#005574",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/primary-110 [MA]"
         },
         "120": {
-          "$value": "#004B67",
+          "$value": "#004b67",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/primary-120 [MA]"
         },
         "130": {
-          "$value": "#00425B",
+          "$value": "#00425b",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/primary-130 [MA]"
         },
         "140": {
-          "$value": "#00384D",
+          "$value": "#00384d",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/primary-140 [MA]"
         },
         "150": {
-          "$value": "#002F41",
+          "$value": "#002f41",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/primary-150 [MA]"
         }
       },
       "secondary": {
         "005": {
-          "$value": "#fcf7f2",
+          "$value": "#fcf6f2",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/secondary-005 [MA]"
+        },
+        "010": {
+          "$value": "#f9eee5",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-010 [MA]"
         },
         "015": {
           "$value": "#f6e6d9",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/secondary-015 [MA]"
+        },
+        "020": {
+          "$value": "#f3decc",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-020 [MA]"
         },
         "025": {
-          "$value": "#f0d5bf",
+          "$value": "#efd5bf",
           "$type": "color",
-          "$description": "2021 DS MAHC; interpolated; 2021 DS has no 025 step"
+          "$description": "Vitae Color/Brand/secondary-025 [MA]"
+        },
+        "030": {
+          "$value": "#eccdb2",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-030 [MA]"
+        },
+        "035": {
+          "$value": "#e9c5a6",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-035 [MA]"
+        },
+        "040": {
+          "$value": "#e6bc99",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/secondary-040 [MA]"
         },
         "050": {
-          "$value": "#E0AB7F",
+          "$value": "#e0ab7f",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/secondary-050 [MA]"
         },
         "060": {
-          "$value": "#DA9B66",
+          "$value": "#da9b66",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/secondary-060 [MA]"
         },
         "070": {
-          "$value": "#D38A4C",
+          "$value": "#d38a4c",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/secondary-070 [MA]"
         },
         "080": {
-          "$value": "#CD7933",
+          "$value": "#cd7933",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/secondary-080 [MA]"
         },
         "090": {
-          "$value": "#C76819",
+          "$value": "#c76819",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/secondary-090 [MA]"
         },
         "100": {
-          "$value": "#C15800",
+          "$value": "#c15800",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/secondary-100 [MA]"
         },
         "110": {
-          "$value": "#AE4F00",
+          "$value": "#ae4f00",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/secondary-110 [MA]"
         },
         "120": {
-          "$value": "#9A4600",
+          "$value": "#9a4600",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/secondary-120 [MA]"
         },
         "130": {
-          "$value": "#873E00",
+          "$value": "#873e00",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/secondary-130 [MA]"
         },
         "140": {
           "$value": "#743500",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/secondary-140 [MA]"
         },
         "150": {
-          "$value": "#612C00",
+          "$value": "#612c00",
           "$type": "color",
-          "$description": "2021 DS MAHC; captured"
+          "$description": "Vitae Color/Brand/secondary-150 [MA]"
         }
       },
       "tertiary": {
         "005": {
           "$value": "#f2f4f6",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
+          "$description": "Vitae Color/Brand/tertiary-005 [MA]"
+        },
+        "010": {
+          "$value": "#e5e8ed",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-010 [MA]"
         },
         "015": {
           "$value": "#d9dee4",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
+          "$description": "Vitae Color/Brand/tertiary-015 [MA]"
+        },
+        "020": {
+          "$value": "#ccd3db",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-020 [MA]"
         },
         "025": {
           "$value": "#bfc8d2",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated; 2021 DS has no 025 step"
+          "$description": "Vitae Color/Brand/tertiary-025 [MA]"
+        },
+        "030": {
+          "$value": "#b2bcc9",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-030 [MA]"
+        },
+        "040": {
+          "$value": "#99a7b7",
+          "$type": "color",
+          "$description": "Vitae Color/Brand/tertiary-040 [MA]"
         },
         "050": {
           "$value": "#7f90a5",
           "$type": "color",
-          "$description": "2021 DS Tertiary/050/MA (replaces interpolated value, 10/14/26)"
+          "$description": "Vitae Color/Brand/tertiary-050 [MA]"
         },
         "060": {
           "$value": "#667a94",
           "$type": "color",
-          "$description": "2021 DS Tertiary/060/MA (replaces interpolated value, 10/14/26)"
+          "$description": "Vitae Color/Brand/tertiary-060 [MA]"
         },
         "070": {
           "$value": "#4c6481",
           "$type": "color",
-          "$description": "2021 DS Tertiary/070/MA (replaces interpolated value, 10/14/26)"
+          "$description": "Vitae Color/Brand/tertiary-070 [MA]"
         },
         "080": {
           "$value": "#334e70",
           "$type": "color",
-          "$description": "2021 DS Tertiary/080/MA (replaces interpolated value, 10/14/26)"
+          "$description": "Vitae Color/Brand/tertiary-080 [MA]"
         },
         "090": {
           "$value": "#19385e",
           "$type": "color",
-          "$description": "2021 DS Tertiary/090/MA (replaces interpolated value, 10/14/26)"
+          "$description": "Vitae Color/Brand/tertiary-090 [MA]"
         },
         "100": {
-          "$value": "#00224C",
+          "$value": "#00224c",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
+          "$description": "Vitae Color/Brand/tertiary-100 [MA]"
         },
         "110": {
           "$value": "#001f45",
           "$type": "color",
-          "$description": "2021 DS Tertiary/110/MA (replaces interpolated value, 10/14/26)"
+          "$description": "Vitae Color/Brand/tertiary-110 [MA]"
         },
         "120": {
-          "$value": "#001B3D",
+          "$value": "#001b3d",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
+          "$description": "Vitae Color/Brand/tertiary-120 [MA]"
         },
         "130": {
           "$value": "#001835",
           "$type": "color",
-          "$description": "2021 DS Tertiary/130/MA (replaces interpolated value, 10/14/26)"
+          "$description": "Vitae Color/Brand/tertiary-130 [MA]"
         },
         "140": {
-          "$value": "#00142E",
+          "$value": "#00142e",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
+          "$description": "Vitae Color/Brand/tertiary-140 [MA]"
         },
         "150": {
           "$value": "#001126",
           "$type": "color",
-          "$description": "2021 DS Tertiary/150/MA (replaces interpolated value, 10/14/26)"
+          "$description": "Vitae Color/Brand/tertiary-150 [MA]"
         }
       }
     },
@@ -1085,9 +1365,9 @@
         "$description": "2021 DS Metal-Level/Platinum = Vitae semantic Color/Border/Tag/platinum; confirmed by Alex 10/14/26 (#F7B319 was legacy Enroll code, not Vitae). Vitae's primitive layer still holds older values (gold #D4AF37, platinum #E5E4E2) -- superseded. Plan indicator ONLY."
       },
       "catastrophic": {
-        "$value": "#9b9b9b",
+        "$value": "#4A6274",
         "$type": "color",
-        "$description": "PLACEHOLDER -- not defined in EA-DesignSystem-2021 or Vitae; needs a value"
+        "$description": "Recommended 10/14/26 (not in Vitae or 2021 DS): cool desaturated steel. Sits outside the warm metal hues and avoids red/orange alarm colors. 4.96:1 on its tint. Pending Alex sign-off."
       },
       "gold-surface": {
         "$value": "#fdeec5",
@@ -1108,6 +1388,11 @@
         "$value": "#d6d6d7",
         "$type": "color",
         "$description": "Vitae Color/Background/Tag/platinum"
+      },
+      "catastrophic-surface": {
+        "$value": "#DCE4EA",
+        "$type": "color",
+        "$description": "Tint for catastrophic tag (recommended)"
       }
     },
     "coolgray": {

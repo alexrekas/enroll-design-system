@@ -16,12 +16,32 @@
           "$value": "{color.me.primary.005}",
           "$type": "color"
         },
+        "010": {
+          "$value": "{color.me.primary.010}",
+          "$type": "color"
+        },
         "015": {
           "$value": "{color.me.primary.015}",
           "$type": "color"
         },
+        "020": {
+          "$value": "{color.me.primary.020}",
+          "$type": "color"
+        },
         "025": {
           "$value": "{color.me.primary.025}",
+          "$type": "color"
+        },
+        "030": {
+          "$value": "{color.me.primary.030}",
+          "$type": "color"
+        },
+        "035": {
+          "$value": "{color.me.primary.035}",
+          "$type": "color"
+        },
+        "040": {
+          "$value": "{color.me.primary.040}",
           "$type": "color"
         },
         "050": {
@@ -74,12 +94,32 @@
           "$value": "{color.me.secondary.005}",
           "$type": "color"
         },
+        "010": {
+          "$value": "{color.me.secondary.010}",
+          "$type": "color"
+        },
         "015": {
           "$value": "{color.me.secondary.015}",
           "$type": "color"
         },
+        "020": {
+          "$value": "{color.me.secondary.020}",
+          "$type": "color"
+        },
         "025": {
           "$value": "{color.me.secondary.025}",
+          "$type": "color"
+        },
+        "030": {
+          "$value": "{color.me.secondary.030}",
+          "$type": "color"
+        },
+        "035": {
+          "$value": "{color.me.secondary.035}",
+          "$type": "color"
+        },
+        "040": {
+          "$value": "{color.me.secondary.040}",
           "$type": "color"
         },
         "050": {
@@ -132,12 +172,28 @@
           "$value": "{color.me.tertiary.005}",
           "$type": "color"
         },
+        "010": {
+          "$value": "{color.me.tertiary.010}",
+          "$type": "color"
+        },
         "015": {
           "$value": "{color.me.tertiary.015}",
           "$type": "color"
         },
+        "020": {
+          "$value": "{color.me.tertiary.020}",
+          "$type": "color"
+        },
         "025": {
           "$value": "{color.me.tertiary.025}",
+          "$type": "color"
+        },
+        "030": {
+          "$value": "{color.me.tertiary.030}",
+          "$type": "color"
+        },
+        "040": {
+          "$value": "{color.me.tertiary.040}",
           "$type": "color"
         },
         "050": {

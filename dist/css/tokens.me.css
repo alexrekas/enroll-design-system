@@ -3,174 +3,230 @@
  */
 
 [data-theme="me"] {
-  --ea-color-ea-primary-100: #0254bc; /** Vitae EA mode; captured */
-  --ea-color-ea-primary-110: #0048a1; /** 2021 DS Primary/110/EA (replaces interpolated value, 10/14/26) */
-  --ea-color-ea-primary-120: #024396; /** Vitae EA mode; captured */
-  --ea-color-ea-primary-130: #00387d; /** 2021 DS Primary/130/EA (replaces interpolated value, 10/14/26) */
-  --ea-color-ea-primary-140: #013271; /** Vitae EA mode; captured */
-  --ea-color-ea-primary-150: #012a5e; /** Vitae EA mode; captured */
-  --ea-color-ea-primary-005: #f2f6fc; /** Vitae EA mode; captured */
-  --ea-color-ea-primary-015: #d9e6f5; /** Vitae EA mode; captured */
-  --ea-color-ea-primary-025: #c0d4ee; /** Vitae EA mode; captured */
-  --ea-color-ea-primary-050: #7fa7d8; /** 2021 DS Primary/050/EA (replaces interpolated value, 10/14/26) */
-  --ea-color-ea-primary-060: #6696d1; /** 2021 DS Primary/060/EA (replaces interpolated value, 10/14/26) */
-  --ea-color-ea-primary-070: #4c84c9; /** 2021 DS Primary/070/EA (replaces interpolated value, 10/14/26) */
-  --ea-color-ea-primary-080: #3373c1; /** 2021 DS Primary/080/EA (replaces interpolated value, 10/14/26) */
-  --ea-color-ea-primary-090: #1961ba; /** 2021 DS Primary/090/EA (replaces interpolated value, 10/14/26) */
-  --ea-color-ea-secondary-100: #3b5b81; /** Vitae default/EA context; captured */
-  --ea-color-ea-secondary-110: #355274; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
-  --ea-color-ea-secondary-120: #2f4967; /** Vitae default/EA context; captured */
-  --ea-color-ea-secondary-130: #29405a; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
-  --ea-color-ea-secondary-140: #23374d; /** Vitae default/EA context; captured */
-  --ea-color-ea-secondary-150: #1b2b3c; /** extrapolated from 140; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
-  --ea-color-ea-secondary-005: #f5f7f9; /** Vitae default/EA context; captured */
-  --ea-color-ea-secondary-015: #e2e7ec; /** Vitae default/EA context; captured */
-  --ea-color-ea-secondary-025: #ced6df; /** Vitae default/EA context; captured */
-  --ea-color-ea-secondary-050: #9dadc0; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
-  --ea-color-ea-secondary-060: #899db3; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
-  --ea-color-ea-secondary-070: #768ca7; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
-  --ea-color-ea-secondary-080: #627c9a; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
-  --ea-color-ea-secondary-090: #4f6b8e; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
-  --ea-color-ea-tertiary-100: #441c36; /** Vitae default/EA context; captured */
-  --ea-color-ea-tertiary-110: #3d1930; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
-  --ea-color-ea-tertiary-120: #36162b; /** Vitae default/EA context; captured */
-  --ea-color-ea-tertiary-130: #301426; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
-  --ea-color-ea-tertiary-140: #291120; /** Vitae default/EA context; captured */
-  --ea-color-ea-tertiary-150: #200d19; /** extrapolated from 140; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
-  --ea-color-ea-tertiary-005: #f6f2f5; /** Vitae default/EA context; captured */
-  --ea-color-ea-tertiary-015: #e3dde1; /** Vitae default/EA context; captured */
-  --ea-color-ea-tertiary-025: #d0c6cd; /** Vitae default/EA context; captured */
-  --ea-color-ea-tertiary-050: #a18d9b; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
-  --ea-color-ea-tertiary-060: #8f7787; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
-  --ea-color-ea-tertiary-070: #7c6072; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
-  --ea-color-ea-tertiary-080: #69495e; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
-  --ea-color-ea-tertiary-090: #57334a; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
-  --ea-color-dc-primary-100: #003260; /** Vitae DC mode / decided #003260; captured */
-  --ea-color-dc-primary-110: #002d56; /** Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260 */
-  --ea-color-dc-primary-120: #00284d; /** Vitae DC mode / decided #003260; captured */
-  --ea-color-dc-primary-130: #002343; /** Vitae DC mode / decided #003260; captured */
-  --ea-color-dc-primary-140: #001e3a; /** Vitae DC mode / decided #003260; captured */
-  --ea-color-dc-primary-150: #001930; /** Vitae DC mode / decided #003260; captured */
-  --ea-color-dc-primary-005: #f2f5f7; /** Vitae DC mode / decided #003260; captured */
-  --ea-color-dc-primary-015: #d9e0e7; /** Vitae DC mode / decided #003260; captured */
-  --ea-color-dc-primary-025: #bfccd7; /** Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260; 2021 DS has no 025 step */
-  --ea-color-dc-primary-050: #8098af; /** Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260 */
-  --ea-color-dc-primary-060: #6684a0; /** Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260 */
-  --ea-color-dc-primary-070: #4d6f90; /** Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260 */
-  --ea-color-dc-primary-080: #335b80; /** Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260 */
-  --ea-color-dc-primary-090: #1a4670; /** Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260 */
-  --ea-color-dc-secondary-100: #0076cc; /** Vitae DC mode; captured */
-  --ea-color-dc-secondary-110: #006ab8; /** Vitae DC mode; captured */
-  --ea-color-dc-secondary-120: #005ea3; /** Vitae DC mode; captured */
-  --ea-color-dc-secondary-130: #00538f; /** Vitae DC mode; captured */
-  --ea-color-dc-secondary-140: #00477a; /** Vitae DC mode; captured */
-  --ea-color-dc-secondary-150: #003b66; /** Vitae DC mode; captured */
-  --ea-color-dc-secondary-005: #f2f8fc; /** Vitae DC mode; captured */
-  --ea-color-dc-secondary-015: #d9ecf7; /** Vitae DC mode; captured */
-  --ea-color-dc-secondary-025: #bfdef2; /** Vitae DC mode; interpolated; 2021 DS has no 025 step */
-  --ea-color-dc-secondary-050: #7fbae5; /** Vitae DC mode; captured */
-  --ea-color-dc-secondary-060: #66ade0; /** Vitae DC mode; captured */
-  --ea-color-dc-secondary-070: #4c9fdb; /** Vitae DC mode; captured */
-  --ea-color-dc-secondary-080: #3391d6; /** Vitae DC mode; captured */
-  --ea-color-dc-secondary-090: #1983d1; /** Vitae DC mode; captured */
-  --ea-color-dc-tertiary-100: #da2325; /** Vitae DC mode; decided: red; captured */
-  --ea-color-dc-tertiary-110: #c52021; /** Vitae DC mode; decided: red; captured */
-  --ea-color-dc-tertiary-120: #ae1c1e; /** Vitae DC mode; decided: red; captured */
-  --ea-color-dc-tertiary-130: #99191a; /** Vitae DC mode; decided: red; captured */
-  --ea-color-dc-tertiary-140: #831516; /** Vitae DC mode; decided: red; captured */
-  --ea-color-dc-tertiary-150: #6d1213; /** Vitae DC mode; decided: red; captured */
-  --ea-color-dc-tertiary-005: #fcf2f2; /** Vitae DC mode; decided: red; captured */
-  --ea-color-dc-tertiary-015: #f8dcdc; /** Vitae DC mode; decided: red; captured */
-  --ea-color-dc-tertiary-025: #f5c7c7; /** Vitae DC mode; decided: red; interpolated; 2021 DS has no 025 step */
-  --ea-color-dc-tertiary-050: #ec9192; /** Vitae DC mode; decided: red; captured */
-  --ea-color-dc-tertiary-060: #e97b7c; /** Vitae DC mode; decided: red; captured */
-  --ea-color-dc-tertiary-070: #e56566; /** Vitae DC mode; decided: red; captured */
-  --ea-color-dc-tertiary-080: #e14f51; /** Vitae DC mode; decided: red; captured */
-  --ea-color-dc-tertiary-090: #de393a; /** Vitae DC mode; decided: red; captured */
-  --ea-color-me-primary-100: #3d5d6f; /** 2021 DS CME; captured */
-  --ea-color-me-primary-110: #375464; /** 2021 DS CME; captured */
-  --ea-color-me-primary-120: #314a59; /** 2021 DS CME; captured */
-  --ea-color-me-primary-130: #2b414e; /** 2021 DS CME; captured */
-  --ea-color-me-primary-140: #253843; /** 2021 DS CME; captured */
-  --ea-color-me-primary-150: #1f2f38; /** 2021 DS CME; captured */
-  --ea-color-me-primary-005: #f4f6f7; /** 2021 DS CME; captured */
-  --ea-color-me-primary-015: #dfe5e8; /** 2021 DS CME; captured */
-  --ea-color-me-primary-025: #ccd5da; /** 2021 DS CME; interpolated; 2021 DS has no 025 step */
-  --ea-color-me-primary-050: #9eaeb7; /** 2021 DS CME; captured */
-  --ea-color-me-primary-060: #8b9ea9; /** 2021 DS CME; captured */
-  --ea-color-me-primary-070: #778d9a; /** 2021 DS CME; captured */
-  --ea-color-me-primary-080: #647d8c; /** 2021 DS CME; captured */
-  --ea-color-me-primary-090: #506d7d; /** 2021 DS CME; captured */
-  --ea-color-me-secondary-100: #3b6b90; /** 2021 DS CME; captured */
-  --ea-color-me-secondary-110: #345f80; /** 2021 DS CME; captured */
-  --ea-color-me-secondary-120: #2e5470; /** 2021 DS CME; captured */
-  --ea-color-me-secondary-130: #274760; /** 2021 DS CME; captured */
-  --ea-color-me-secondary-140: #213c50; /** 2021 DS CME; captured */
-  --ea-color-me-secondary-150: #1a3040; /** 2021 DS CME; captured */
-  --ea-color-me-secondary-005: #f4f7fa; /** 2021 DS CME; captured */
-  --ea-color-me-secondary-015: #dfe9f0; /** 2021 DS CME; captured */
-  --ea-color-me-secondary-025: #c8d8e4; /** 2021 DS CME; interpolated; 2021 DS has no 025 step */
-  --ea-color-me-secondary-050: #8dadc6; /** 2021 DS CME; captured */
-  --ea-color-me-secondary-060: #7aa0bc; /** 2021 DS CME; captured */
-  --ea-color-me-secondary-070: #6792b3; /** 2021 DS CME; captured */
-  --ea-color-me-secondary-080: #5484a9; /** 2021 DS CME; captured */
-  --ea-color-me-secondary-090: #4a7ea6; /** 2021 DS CME; captured */
-  --ea-color-me-tertiary-100: #5a7334; /** 2021 DS CME; captured */
-  --ea-color-me-tertiary-110: #50662e; /** 2021 DS CME; captured */
-  --ea-color-me-tertiary-120: #465929; /** 2021 DS CME; captured */
-  --ea-color-me-tertiary-130: #3c4c23; /** 2021 DS CME; captured */
-  --ea-color-me-tertiary-140: #32401d; /** 2021 DS CME; captured */
-  --ea-color-me-tertiary-150: #283317; /** 2021 DS CME; captured */
-  --ea-color-me-tertiary-005: #f6f8f2; /** 2021 DS CME; captured */
-  --ea-color-me-tertiary-015: #e6ecdb; /** 2021 DS CME; captured */
-  --ea-color-me-tertiary-025: #d3dbc4; /** 2021 DS CME; interpolated; 2021 DS has no 025 step */
-  --ea-color-me-tertiary-050: #a2b289; /** 2021 DS CME; captured */
-  --ea-color-me-tertiary-060: #92a575; /** 2021 DS CME; captured */
-  --ea-color-me-tertiary-070: #839961; /** 2021 DS CME; captured */
-  --ea-color-me-tertiary-080: #738c4d; /** 2021 DS CME; captured */
-  --ea-color-me-tertiary-090: #647f3a; /** 2021 DS CME; captured */
-  --ea-color-ma-primary-100: #005e81; /** 2021 DS MAHC; captured */
-  --ea-color-ma-primary-110: #005574; /** 2021 DS MAHC; captured */
-  --ea-color-ma-primary-120: #004b67; /** 2021 DS MAHC; captured */
-  --ea-color-ma-primary-130: #00425b; /** 2021 DS MAHC; captured */
-  --ea-color-ma-primary-140: #00384d; /** 2021 DS MAHC; captured */
-  --ea-color-ma-primary-150: #002f41; /** 2021 DS MAHC; captured */
-  --ea-color-ma-primary-005: #f2f7f9; /** 2021 DS MAHC; captured */
-  --ea-color-ma-primary-015: #d9e7ed; /** 2021 DS MAHC; captured */
-  --ea-color-ma-primary-025: #bfd7e0; /** 2021 DS MAHC; interpolated; 2021 DS has no 025 step */
-  --ea-color-ma-primary-050: #7faec0; /** 2021 DS MAHC; captured */
-  --ea-color-ma-primary-060: #669eb3; /** 2021 DS MAHC; captured */
-  --ea-color-ma-primary-070: #4c8ea7; /** 2021 DS MAHC; captured */
-  --ea-color-ma-primary-080: #337e9a; /** 2021 DS MAHC; captured */
-  --ea-color-ma-primary-090: #196e8d; /** 2021 DS MAHC; captured */
-  --ea-color-ma-secondary-100: #c15800; /** 2021 DS MAHC; captured */
-  --ea-color-ma-secondary-110: #ae4f00; /** 2021 DS MAHC; captured */
-  --ea-color-ma-secondary-120: #9a4600; /** 2021 DS MAHC; captured */
-  --ea-color-ma-secondary-130: #873e00; /** 2021 DS MAHC; captured */
-  --ea-color-ma-secondary-140: #743500; /** 2021 DS MAHC; captured */
-  --ea-color-ma-secondary-150: #612c00; /** 2021 DS MAHC; captured */
-  --ea-color-ma-secondary-005: #fcf7f2; /** 2021 DS MAHC; captured */
-  --ea-color-ma-secondary-015: #f6e6d9; /** 2021 DS MAHC; captured */
-  --ea-color-ma-secondary-025: #f0d5bf; /** 2021 DS MAHC; interpolated; 2021 DS has no 025 step */
-  --ea-color-ma-secondary-050: #e0ab7f; /** 2021 DS MAHC; captured */
-  --ea-color-ma-secondary-060: #da9b66; /** 2021 DS MAHC; captured */
-  --ea-color-ma-secondary-070: #d38a4c; /** 2021 DS MAHC; captured */
-  --ea-color-ma-secondary-080: #cd7933; /** 2021 DS MAHC; captured */
-  --ea-color-ma-secondary-090: #c76819; /** 2021 DS MAHC; captured */
-  --ea-color-ma-tertiary-100: #00224c; /** 2021 DS Buttons matrix (Tertiary/ME→MA); captured */
-  --ea-color-ma-tertiary-110: #001f45; /** 2021 DS Tertiary/110/MA (replaces interpolated value, 10/14/26) */
-  --ea-color-ma-tertiary-120: #001b3d; /** 2021 DS Buttons matrix (Tertiary/ME→MA); captured */
-  --ea-color-ma-tertiary-130: #001835; /** 2021 DS Tertiary/130/MA (replaces interpolated value, 10/14/26) */
-  --ea-color-ma-tertiary-140: #00142e; /** 2021 DS Buttons matrix (Tertiary/ME→MA); captured */
-  --ea-color-ma-tertiary-150: #001126; /** 2021 DS Tertiary/150/MA (replaces interpolated value, 10/14/26) */
-  --ea-color-ma-tertiary-005: #f2f4f6; /** 2021 DS Buttons matrix (Tertiary/ME→MA); captured */
-  --ea-color-ma-tertiary-015: #d9dee4; /** 2021 DS Buttons matrix (Tertiary/ME→MA); captured */
-  --ea-color-ma-tertiary-025: #bfc8d2; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated; 2021 DS has no 025 step */
-  --ea-color-ma-tertiary-050: #7f90a5; /** 2021 DS Tertiary/050/MA (replaces interpolated value, 10/14/26) */
-  --ea-color-ma-tertiary-060: #667a94; /** 2021 DS Tertiary/060/MA (replaces interpolated value, 10/14/26) */
-  --ea-color-ma-tertiary-070: #4c6481; /** 2021 DS Tertiary/070/MA (replaces interpolated value, 10/14/26) */
-  --ea-color-ma-tertiary-080: #334e70; /** 2021 DS Tertiary/080/MA (replaces interpolated value, 10/14/26) */
-  --ea-color-ma-tertiary-090: #19385e; /** 2021 DS Tertiary/090/MA (replaces interpolated value, 10/14/26) */
+  --ea-color-ea-primary-100: #0254bc; /** Vitae Color/Brand/primary-100 [EA-Light] */
+  --ea-color-ea-primary-110: #024caa; /** Vitae Color/Brand/primary-110 [EA-Light] */
+  --ea-color-ea-primary-120: #024396; /** Vitae Color/Brand/primary-120 [EA-Light] */
+  --ea-color-ea-primary-130: #013b84; /** Vitae Color/Brand/primary-130 [EA-Light] */
+  --ea-color-ea-primary-140: #013271; /** Vitae Color/Brand/primary-140 [EA-Light] */
+  --ea-color-ea-primary-150: #012a5e; /** Vitae Color/Brand/primary-150 [EA-Light] */
+  --ea-color-ea-primary-005: #f2f6fc; /** Vitae Color/Brand/primary-005 [EA-Light] */
+  --ea-color-ea-primary-010: #e5eef8; /** Vitae Color/Brand/primary-010 [EA-Light] */
+  --ea-color-ea-primary-015: #d9e6f5; /** Vitae Color/Brand/primary-015 [EA-Light] */
+  --ea-color-ea-primary-020: #ccddf2; /** Vitae Color/Brand/primary-020 [EA-Light] */
+  --ea-color-ea-primary-025: #c0d4ee; /** Vitae Color/Brand/primary-025 [EA-Light] */
+  --ea-color-ea-primary-030: #b3cbeb; /** Vitae Color/Brand/primary-030 [EA-Light] */
+  --ea-color-ea-primary-035: #a7c3e8; /** Vitae Color/Brand/primary-035 [EA-Light] */
+  --ea-color-ea-primary-040: #9abbe4; /** Vitae Color/Brand/primary-040 [EA-Light] */
+  --ea-color-ea-primary-050: #80a9dd; /** Vitae Color/Brand/primary-050 [EA-Light] */
+  --ea-color-ea-primary-060: #6798d7; /** Vitae Color/Brand/primary-060 [EA-Light] */
+  --ea-color-ea-primary-070: #4d87d0; /** Vitae Color/Brand/primary-070 [EA-Light] */
+  --ea-color-ea-primary-080: #3576c9; /** Vitae Color/Brand/primary-080 [EA-Light] */
+  --ea-color-ea-primary-090: #1b65c3; /** Vitae Color/Brand/primary-090 [EA-Light] */
+  --ea-color-ea-secondary-100: #3b5b81; /** Vitae Color/Brand/secondary-100 [EA-Light] */
+  --ea-color-ea-secondary-110: #355274; /** Vitae Color/Brand/secondary-110 [EA-Light] */
+  --ea-color-ea-secondary-120: #2f4967; /** Vitae Color/Brand/secondary-120 [EA-Light] */
+  --ea-color-ea-secondary-130: #29405b; /** Vitae Color/Brand/secondary-130 [EA-Light] */
+  --ea-color-ea-secondary-140: #23374d; /** Vitae Color/Brand/secondary-140 [EA-Light] */
+  --ea-color-ea-secondary-150: #1e2e41; /** Vitae Color/Brand/secondary-150 [EA-Light] */
+  --ea-color-ea-secondary-005: #f5f7f9; /** Vitae Color/Brand/secondary-005 [EA-Light] */
+  --ea-color-ea-secondary-010: #ebeef2; /** Vitae Color/Brand/secondary-010 [EA-Light] */
+  --ea-color-ea-secondary-015: #e2e7ec; /** Vitae Color/Brand/secondary-015 [EA-Light] */
+  --ea-color-ea-secondary-020: #d8dee6; /** Vitae Color/Brand/secondary-020 [EA-Light] */
+  --ea-color-ea-secondary-025: #ced6df; /** Vitae Color/Brand/secondary-025 [EA-Light] */
+  --ea-color-ea-secondary-030: #c4cdd9; /** Vitae Color/Brand/secondary-030 [EA-Light] */
+  --ea-color-ea-secondary-035: #bbc6d3; /** Vitae Color/Brand/secondary-035 [EA-Light] */
+  --ea-color-ea-secondary-040: #b1bdcd; /** Vitae Color/Brand/secondary-040 [EA-Light] */
+  --ea-color-ea-secondary-050: #9dadc0; /** Vitae Color/Brand/secondary-050 [EA-Light] */
+  --ea-color-ea-secondary-060: #899db3; /** Vitae Color/Brand/secondary-060 [EA-Light] */
+  --ea-color-ea-secondary-070: #758ca7; /** Vitae Color/Brand/secondary-070 [EA-Light] */
+  --ea-color-ea-secondary-080: #627c9a; /** Vitae Color/Brand/secondary-080 [EA-Light] */
+  --ea-color-ea-secondary-090: #4e6b8d; /** Vitae Color/Brand/secondary-090 [EA-Light] */
+  --ea-color-ea-tertiary-100: #441c36; /** Vitae Color/Brand/tertiary-100 [EA-Light] */
+  --ea-color-ea-tertiary-110: #3d1931; /** Vitae Color/Brand/tertiary-110 [EA-Light] */
+  --ea-color-ea-tertiary-120: #36162b; /** Vitae Color/Brand/tertiary-120 [EA-Light] */
+  --ea-color-ea-tertiary-130: #301426; /** Vitae Color/Brand/tertiary-130 [EA-Light] */
+  --ea-color-ea-tertiary-140: #291120; /** Vitae Color/Brand/tertiary-140 [EA-Light] */
+  --ea-color-ea-tertiary-150: #220e1b; /** Vitae Color/Brand/tertiary-150 [EA-Light] */
+  --ea-color-ea-tertiary-005: #f5f3f5; /** Vitae Color/Brand/tertiary-005 [EA-Light] */
+  --ea-color-ea-tertiary-010: #ece8eb; /** Vitae Color/Brand/tertiary-010 [EA-Light] */
+  --ea-color-ea-tertiary-015: #e3dde1; /** Vitae Color/Brand/tertiary-015 [EA-Light] */
+  --ea-color-ea-tertiary-020: #dad2d7; /** Vitae Color/Brand/tertiary-020 [EA-Light] */
+  --ea-color-ea-tertiary-025: #d0c6cd; /** Vitae Color/Brand/tertiary-025 [EA-Light] */
+  --ea-color-ea-tertiary-030: #c7bac2; /** Vitae Color/Brand/tertiary-030 [EA-Light] */
+  --ea-color-ea-tertiary-040: #b4a4af; /** Vitae Color/Brand/tertiary-040 [EA-Light] */
+  --ea-color-ea-tertiary-050: #a18d9a; /** Vitae Color/Brand/tertiary-050 [EA-Light] */
+  --ea-color-ea-tertiary-060: #8f7786; /** Vitae Color/Brand/tertiary-060 [EA-Light] */
+  --ea-color-ea-tertiary-070: #7c6072; /** Vitae Color/Brand/tertiary-070 [EA-Light] */
+  --ea-color-ea-tertiary-080: #69495e; /** Vitae Color/Brand/tertiary-080 [EA-Light] */
+  --ea-color-ea-tertiary-090: #56324a; /** Vitae Color/Brand/tertiary-090 [EA-Light] */
+  --ea-color-dc-primary-100: #003260; /** Vitae Color/Brand/primary-100 [DC] */
+  --ea-color-dc-primary-110: #002d57; /** Vitae Color/Brand/primary-110 [DC] */
+  --ea-color-dc-primary-120: #00284d; /** Vitae Color/Brand/primary-120 [DC] */
+  --ea-color-dc-primary-130: #002343; /** Vitae Color/Brand/primary-130 [DC] */
+  --ea-color-dc-primary-140: #001e3a; /** Vitae Color/Brand/primary-140 [DC] */
+  --ea-color-dc-primary-150: #001930; /** Vitae Color/Brand/primary-150 [DC] */
+  --ea-color-dc-primary-005: #f2f5f7; /** Vitae Color/Brand/primary-005 [DC] */
+  --ea-color-dc-primary-010: #e5eaef; /** Vitae Color/Brand/primary-010 [DC] */
+  --ea-color-dc-primary-015: #d9e0e7; /** Vitae Color/Brand/primary-015 [DC] */
+  --ea-color-dc-primary-020: #ccd6df; /** Vitae Color/Brand/primary-020 [DC] */
+  --ea-color-dc-primary-025: #bfccd7; /** Vitae Color/Brand/primary-025 [DC] */
+  --ea-color-dc-primary-030: #b2c1cf; /** Vitae Color/Brand/primary-030 [DC] */
+  --ea-color-dc-primary-035: #a6b7c8; /** Vitae Color/Brand/primary-035 [DC] */
+  --ea-color-dc-primary-040: #99adbf; /** Vitae Color/Brand/primary-040 [DC] */
+  --ea-color-dc-primary-050: #7f98af; /** Vitae Color/Brand/primary-050 [DC] */
+  --ea-color-dc-primary-060: #6684a0; /** Vitae Color/Brand/primary-060 [DC] */
+  --ea-color-dc-primary-070: #4c6f8f; /** Vitae Color/Brand/primary-070 [DC] */
+  --ea-color-dc-primary-080: #335b80; /** Vitae Color/Brand/primary-080 [DC] */
+  --ea-color-dc-primary-090: #194670; /** Vitae Color/Brand/primary-090 [DC] */
+  --ea-color-dc-secondary-100: #0076cc; /** Vitae Color/Brand/secondary-100 [DC] */
+  --ea-color-dc-secondary-110: #006ab8; /** Vitae Color/Brand/secondary-110 [DC] */
+  --ea-color-dc-secondary-120: #005ea3; /** Vitae Color/Brand/secondary-120 [DC] */
+  --ea-color-dc-secondary-130: #00538f; /** Vitae Color/Brand/secondary-130 [DC] */
+  --ea-color-dc-secondary-140: #00477a; /** Vitae Color/Brand/secondary-140 [DC] */
+  --ea-color-dc-secondary-150: #003b66; /** Vitae Color/Brand/secondary-150 [DC] */
+  --ea-color-dc-secondary-005: #f2f8fc; /** Vitae Color/Brand/secondary-005 [DC] */
+  --ea-color-dc-secondary-010: #e5f1fa; /** Vitae Color/Brand/secondary-010 [DC] */
+  --ea-color-dc-secondary-015: #d9ebf7; /** Vitae Color/Brand/secondary-015 [DC] */
+  --ea-color-dc-secondary-020: #cce4f5; /** Vitae Color/Brand/secondary-020 [DC] */
+  --ea-color-dc-secondary-025: #bfddf2; /** Vitae Color/Brand/secondary-025 [DC] */
+  --ea-color-dc-secondary-030: #b2d6f0; /** Vitae Color/Brand/secondary-030 [DC] */
+  --ea-color-dc-secondary-035: #a6cfed; /** Vitae Color/Brand/secondary-035 [DC] */
+  --ea-color-dc-secondary-040: #99c8eb; /** Vitae Color/Brand/secondary-040 [DC] */
+  --ea-color-dc-secondary-050: #7fbae5; /** Vitae Color/Brand/secondary-050 [DC] */
+  --ea-color-dc-secondary-060: #66ade0; /** Vitae Color/Brand/secondary-060 [DC] */
+  --ea-color-dc-secondary-070: #4c9fdb; /** Vitae Color/Brand/secondary-070 [DC] */
+  --ea-color-dc-secondary-080: #3391d6; /** Vitae Color/Brand/secondary-080 [DC] */
+  --ea-color-dc-secondary-090: #1983d1; /** Vitae Color/Brand/secondary-090 [DC] */
+  --ea-color-dc-tertiary-100: #da2325; /** Vitae Color/Brand/tertiary-100 [DC] */
+  --ea-color-dc-tertiary-110: #c52021; /** Vitae Color/Brand/tertiary-110 [DC] */
+  --ea-color-dc-tertiary-120: #ae1c1e; /** Vitae Color/Brand/tertiary-120 [DC] */
+  --ea-color-dc-tertiary-130: #99191a; /** Vitae Color/Brand/tertiary-130 [DC] */
+  --ea-color-dc-tertiary-140: #831516; /** Vitae Color/Brand/tertiary-140 [DC] */
+  --ea-color-dc-tertiary-150: #6d1213; /** Vitae Color/Brand/tertiary-150 [DC] */
+  --ea-color-dc-tertiary-005: #fdf4f4; /** Vitae Color/Brand/tertiary-005 [DC] */
+  --ea-color-dc-tertiary-010: #fbe9e9; /** Vitae Color/Brand/tertiary-010 [DC] */
+  --ea-color-dc-tertiary-015: #f9dedf; /** Vitae Color/Brand/tertiary-015 [DC] */
+  --ea-color-dc-tertiary-020: #f8d3d3; /** Vitae Color/Brand/tertiary-020 [DC] */
+  --ea-color-dc-tertiary-025: #f6c8c8; /** Vitae Color/Brand/tertiary-025 [DC] */
+  --ea-color-dc-tertiary-030: #f4bdbd; /** Vitae Color/Brand/tertiary-030 [DC] */
+  --ea-color-dc-tertiary-040: #f0a7a8; /** Vitae Color/Brand/tertiary-040 [DC] */
+  --ea-color-dc-tertiary-050: #ec9192; /** Vitae Color/Brand/tertiary-050 [DC] */
+  --ea-color-dc-tertiary-060: #e97b7c; /** Vitae Color/Brand/tertiary-060 [DC] */
+  --ea-color-dc-tertiary-070: #e56566; /** Vitae Color/Brand/tertiary-070 [DC] */
+  --ea-color-dc-tertiary-080: #e14f51; /** Vitae Color/Brand/tertiary-080 [DC] */
+  --ea-color-dc-tertiary-090: #de393a; /** Vitae Color/Brand/tertiary-090 [DC] */
+  --ea-color-me-primary-100: #3d5d6f; /** Vitae Color/Brand/primary-100 [ME] */
+  --ea-color-me-primary-110: #375464; /** Vitae Color/Brand/primary-110 [ME] */
+  --ea-color-me-primary-120: #314a59; /** Vitae Color/Brand/primary-120 [ME] */
+  --ea-color-me-primary-130: #2b414e; /** Vitae Color/Brand/primary-130 [ME] */
+  --ea-color-me-primary-140: #253843; /** Vitae Color/Brand/primary-140 [ME] */
+  --ea-color-me-primary-150: #1f2f38; /** Vitae Color/Brand/primary-150 [ME] */
+  --ea-color-me-primary-005: #f5f7f8; /** Vitae Color/Brand/primary-005 [ME] */
+  --ea-color-me-primary-010: #ebeef0; /** Vitae Color/Brand/primary-010 [ME] */
+  --ea-color-me-primary-015: #e2e7ea; /** Vitae Color/Brand/primary-015 [ME] */
+  --ea-color-me-primary-020: #d8dfe2; /** Vitae Color/Brand/primary-020 [ME] */
+  --ea-color-me-primary-025: #ced6db; /** Vitae Color/Brand/primary-025 [ME] */
+  --ea-color-me-primary-030: #c4ced4; /** Vitae Color/Brand/primary-030 [ME] */
+  --ea-color-me-primary-035: #bbc6cd; /** Vitae Color/Brand/primary-035 [ME] */
+  --ea-color-me-primary-040: #b1bec5; /** Vitae Color/Brand/primary-040 [ME] */
+  --ea-color-me-primary-050: #9eaeb7; /** Vitae Color/Brand/primary-050 [ME] */
+  --ea-color-me-primary-060: #8b9ea9; /** Vitae Color/Brand/primary-060 [ME] */
+  --ea-color-me-primary-070: #778d9a; /** Vitae Color/Brand/primary-070 [ME] */
+  --ea-color-me-primary-080: #647d8c; /** Vitae Color/Brand/primary-080 [ME] */
+  --ea-color-me-primary-090: #506d7d; /** Vitae Color/Brand/primary-090 [ME] */
+  --ea-color-me-secondary-100: #3b6b90; /** Vitae Color/Brand/secondary-100 [ME] */
+  --ea-color-me-secondary-110: #356182; /** Vitae Color/Brand/secondary-110 [ME] */
+  --ea-color-me-secondary-120: #2f5673; /** Vitae Color/Brand/secondary-120 [ME] */
+  --ea-color-me-secondary-130: #294b65; /** Vitae Color/Brand/secondary-130 [ME] */
+  --ea-color-me-secondary-140: #234056; /** Vitae Color/Brand/secondary-140 [ME] */
+  --ea-color-me-secondary-150: #1e3648; /** Vitae Color/Brand/secondary-150 [ME] */
+  --ea-color-me-secondary-005: #f5f7f9; /** Vitae Color/Brand/secondary-005 [ME] */
+  --ea-color-me-secondary-010: #ebf0f4; /** Vitae Color/Brand/secondary-010 [ME] */
+  --ea-color-me-secondary-015: #e2e9ee; /** Vitae Color/Brand/secondary-015 [ME] */
+  --ea-color-me-secondary-020: #d8e1e9; /** Vitae Color/Brand/secondary-020 [ME] */
+  --ea-color-me-secondary-025: #cedae3; /** Vitae Color/Brand/secondary-025 [ME] */
+  --ea-color-me-secondary-030: #c4d2dd; /** Vitae Color/Brand/secondary-030 [ME] */
+  --ea-color-me-secondary-035: #bbcbd8; /** Vitae Color/Brand/secondary-035 [ME] */
+  --ea-color-me-secondary-040: #b1c4d3; /** Vitae Color/Brand/secondary-040 [ME] */
+  --ea-color-me-secondary-050: #9db5c7; /** Vitae Color/Brand/secondary-050 [ME] */
+  --ea-color-me-secondary-060: #89a6bc; /** Vitae Color/Brand/secondary-060 [ME] */
+  --ea-color-me-secondary-070: #7597b1; /** Vitae Color/Brand/secondary-070 [ME] */
+  --ea-color-me-secondary-080: #6289a6; /** Vitae Color/Brand/secondary-080 [ME] */
+  --ea-color-me-secondary-090: #4e7a9b; /** Vitae Color/Brand/secondary-090 [ME] */
+  --ea-color-me-tertiary-100: #5a7334; /** Vitae Color/Brand/tertiary-100 [ME] */
+  --ea-color-me-tertiary-110: #51682f; /** Vitae Color/Brand/tertiary-110 [ME] */
+  --ea-color-me-tertiary-120: #485c2a; /** Vitae Color/Brand/tertiary-120 [ME] */
+  --ea-color-me-tertiary-130: #3f5125; /** Vitae Color/Brand/tertiary-130 [ME] */
+  --ea-color-me-tertiary-140: #36451f; /** Vitae Color/Brand/tertiary-140 [ME] */
+  --ea-color-me-tertiary-150: #2d3a1a; /** Vitae Color/Brand/tertiary-150 [ME] */
+  --ea-color-me-tertiary-005: #f7f8f5; /** Vitae Color/Brand/tertiary-005 [ME] */
+  --ea-color-me-tertiary-010: #eef1ea; /** Vitae Color/Brand/tertiary-010 [ME] */
+  --ea-color-me-tertiary-015: #e6eae1; /** Vitae Color/Brand/tertiary-015 [ME] */
+  --ea-color-me-tertiary-020: #dee3d6; /** Vitae Color/Brand/tertiary-020 [ME] */
+  --ea-color-me-tertiary-025: #d6dccc; /** Vitae Color/Brand/tertiary-025 [ME] */
+  --ea-color-me-tertiary-030: #cdd5c2; /** Vitae Color/Brand/tertiary-030 [ME] */
+  --ea-color-me-tertiary-040: #bdc7ae; /** Vitae Color/Brand/tertiary-040 [ME] */
+  --ea-color-me-tertiary-050: #acb999; /** Vitae Color/Brand/tertiary-050 [ME] */
+  --ea-color-me-tertiary-060: #9cab85; /** Vitae Color/Brand/tertiary-060 [ME] */
+  --ea-color-me-tertiary-070: #8b9d71; /** Vitae Color/Brand/tertiary-070 [ME] */
+  --ea-color-me-tertiary-080: #7b8f5d; /** Vitae Color/Brand/tertiary-080 [ME] */
+  --ea-color-me-tertiary-090: #6a8148; /** Vitae Color/Brand/tertiary-090 [ME] */
+  --ea-color-ma-primary-100: #005e81; /** Vitae Color/Brand/primary-100 [MA] */
+  --ea-color-ma-primary-110: #005574; /** Vitae Color/Brand/primary-110 [MA] */
+  --ea-color-ma-primary-120: #004b67; /** Vitae Color/Brand/primary-120 [MA] */
+  --ea-color-ma-primary-130: #00425b; /** Vitae Color/Brand/primary-130 [MA] */
+  --ea-color-ma-primary-140: #00384d; /** Vitae Color/Brand/primary-140 [MA] */
+  --ea-color-ma-primary-150: #002f41; /** Vitae Color/Brand/primary-150 [MA] */
+  --ea-color-ma-primary-005: #f2f7f9; /** Vitae Color/Brand/primary-005 [MA] */
+  --ea-color-ma-primary-010: #e5eff2; /** Vitae Color/Brand/primary-010 [MA] */
+  --ea-color-ma-primary-015: #d9e7ec; /** Vitae Color/Brand/primary-015 [MA] */
+  --ea-color-ma-primary-020: #ccdfe6; /** Vitae Color/Brand/primary-020 [MA] */
+  --ea-color-ma-primary-025: #bfd7df; /** Vitae Color/Brand/primary-025 [MA] */
+  --ea-color-ma-primary-030: #b2ced9; /** Vitae Color/Brand/primary-030 [MA] */
+  --ea-color-ma-primary-035: #a6c7d3; /** Vitae Color/Brand/primary-035 [MA] */
+  --ea-color-ma-primary-040: #99bfcd; /** Vitae Color/Brand/primary-040 [MA] */
+  --ea-color-ma-primary-050: #7faec0; /** Vitae Color/Brand/primary-050 [MA] */
+  --ea-color-ma-primary-060: #669eb3; /** Vitae Color/Brand/primary-060 [MA] */
+  --ea-color-ma-primary-070: #4c8ea7; /** Vitae Color/Brand/primary-070 [MA] */
+  --ea-color-ma-primary-080: #337e9a; /** Vitae Color/Brand/primary-080 [MA] */
+  --ea-color-ma-primary-090: #196e8d; /** Vitae Color/Brand/primary-090 [MA] */
+  --ea-color-ma-secondary-100: #c15800; /** Vitae Color/Brand/secondary-100 [MA] */
+  --ea-color-ma-secondary-110: #ae4f00; /** Vitae Color/Brand/secondary-110 [MA] */
+  --ea-color-ma-secondary-120: #9a4600; /** Vitae Color/Brand/secondary-120 [MA] */
+  --ea-color-ma-secondary-130: #873e00; /** Vitae Color/Brand/secondary-130 [MA] */
+  --ea-color-ma-secondary-140: #743500; /** Vitae Color/Brand/secondary-140 [MA] */
+  --ea-color-ma-secondary-150: #612c00; /** Vitae Color/Brand/secondary-150 [MA] */
+  --ea-color-ma-secondary-005: #fcf6f2; /** Vitae Color/Brand/secondary-005 [MA] */
+  --ea-color-ma-secondary-010: #f9eee5; /** Vitae Color/Brand/secondary-010 [MA] */
+  --ea-color-ma-secondary-015: #f6e6d9; /** Vitae Color/Brand/secondary-015 [MA] */
+  --ea-color-ma-secondary-020: #f3decc; /** Vitae Color/Brand/secondary-020 [MA] */
+  --ea-color-ma-secondary-025: #efd5bf; /** Vitae Color/Brand/secondary-025 [MA] */
+  --ea-color-ma-secondary-030: #eccdb2; /** Vitae Color/Brand/secondary-030 [MA] */
+  --ea-color-ma-secondary-035: #e9c5a6; /** Vitae Color/Brand/secondary-035 [MA] */
+  --ea-color-ma-secondary-040: #e6bc99; /** Vitae Color/Brand/secondary-040 [MA] */
+  --ea-color-ma-secondary-050: #e0ab7f; /** Vitae Color/Brand/secondary-050 [MA] */
+  --ea-color-ma-secondary-060: #da9b66; /** Vitae Color/Brand/secondary-060 [MA] */
+  --ea-color-ma-secondary-070: #d38a4c; /** Vitae Color/Brand/secondary-070 [MA] */
+  --ea-color-ma-secondary-080: #cd7933; /** Vitae Color/Brand/secondary-080 [MA] */
+  --ea-color-ma-secondary-090: #c76819; /** Vitae Color/Brand/secondary-090 [MA] */
+  --ea-color-ma-tertiary-100: #00224c; /** Vitae Color/Brand/tertiary-100 [MA] */
+  --ea-color-ma-tertiary-110: #001f45; /** Vitae Color/Brand/tertiary-110 [MA] */
+  --ea-color-ma-tertiary-120: #001b3d; /** Vitae Color/Brand/tertiary-120 [MA] */
+  --ea-color-ma-tertiary-130: #001835; /** Vitae Color/Brand/tertiary-130 [MA] */
+  --ea-color-ma-tertiary-140: #00142e; /** Vitae Color/Brand/tertiary-140 [MA] */
+  --ea-color-ma-tertiary-150: #001126; /** Vitae Color/Brand/tertiary-150 [MA] */
+  --ea-color-ma-tertiary-005: #f2f4f6; /** Vitae Color/Brand/tertiary-005 [MA] */
+  --ea-color-ma-tertiary-010: #e5e8ed; /** Vitae Color/Brand/tertiary-010 [MA] */
+  --ea-color-ma-tertiary-015: #d9dee4; /** Vitae Color/Brand/tertiary-015 [MA] */
+  --ea-color-ma-tertiary-020: #ccd3db; /** Vitae Color/Brand/tertiary-020 [MA] */
+  --ea-color-ma-tertiary-025: #bfc8d2; /** Vitae Color/Brand/tertiary-025 [MA] */
+  --ea-color-ma-tertiary-030: #b2bcc9; /** Vitae Color/Brand/tertiary-030 [MA] */
+  --ea-color-ma-tertiary-040: #99a7b7; /** Vitae Color/Brand/tertiary-040 [MA] */
+  --ea-color-ma-tertiary-050: #7f90a5; /** Vitae Color/Brand/tertiary-050 [MA] */
+  --ea-color-ma-tertiary-060: #667a94; /** Vitae Color/Brand/tertiary-060 [MA] */
+  --ea-color-ma-tertiary-070: #4c6481; /** Vitae Color/Brand/tertiary-070 [MA] */
+  --ea-color-ma-tertiary-080: #334e70; /** Vitae Color/Brand/tertiary-080 [MA] */
+  --ea-color-ma-tertiary-090: #19385e; /** Vitae Color/Brand/tertiary-090 [MA] */
   --ea-color-gray-100: #201f1e; /** 2021 grey-190 */
   --ea-color-gray-110: #0d0d0d; /** Vitae gray-190 — focus ring */
   --ea-color-gray-000: #ffffff; /** Vitae gray-000 */
@@ -211,11 +267,12 @@
   --ea-color-metal-bronze: #cd7f32; /** 2021 DS Metal-Level/Bronze = Vitae semantic Color/Border/Tag/bronze; confirmed by Alex 10/14/26 (#F7B319 was legacy Enroll code, not Vitae). Vitae's primitive layer still holds older values (gold #D4AF37, platinum #E5E4E2) -- superseded. Plan indicator ONLY. */
   --ea-color-metal-silver: #c0c0c0; /** 2021 DS Metal-Level/Silver = Vitae semantic Color/Border/Tag/silver; confirmed by Alex 10/14/26 (#F7B319 was legacy Enroll code, not Vitae). Vitae's primitive layer still holds older values (gold #D4AF37, platinum #E5E4E2) -- superseded. Plan indicator ONLY. */
   --ea-color-metal-platinum: #5d5d60; /** 2021 DS Metal-Level/Platinum = Vitae semantic Color/Border/Tag/platinum; confirmed by Alex 10/14/26 (#F7B319 was legacy Enroll code, not Vitae). Vitae's primitive layer still holds older values (gold #D4AF37, platinum #E5E4E2) -- superseded. Plan indicator ONLY. */
-  --ea-color-metal-catastrophic: #9b9b9b; /** PLACEHOLDER -- not defined in EA-DesignSystem-2021 or Vitae; needs a value */
+  --ea-color-metal-catastrophic: #4a6274; /** Recommended 10/14/26 (not in Vitae or 2021 DS): cool desaturated steel. Sits outside the warm metal hues and avoids red/orange alarm colors. 4.96:1 on its tint. Pending Alex sign-off. */
   --ea-color-metal-gold-surface: #fdeec5; /** Vitae Color/Background/Tag/gold */
   --ea-color-metal-silver-surface: #efefef; /** Vitae Color/Background/Tag/silver */
   --ea-color-metal-bronze-surface: #f2dfcb; /** Vitae Color/Background/Tag/bronze */
   --ea-color-metal-platinum-surface: #d6d6d7; /** Vitae Color/Background/Tag/platinum */
+  --ea-color-metal-catastrophic-surface: #dce4ea; /** Tint for catastrophic tag (recommended) */
   --ea-color-coolgray-070: #57595b; /** Vitae text/placeholder */
   --ea-color-coolgray-080: #4b5159; /** Vitae text/secondary */
   --ea-color-program-dc-healthy-bg: #f8f3f9; /** Vitae tag/dc-healthy-dc-plan bg */
@@ -278,7 +335,6 @@
   --ea-font-line-height-px-54px: 54px; /** 2021 h1 */
   --ea-focus-ring-width: 2px;
   --ea-focus-ring-offset: 2px; /** light gap between component and ring */
-  --ea-button-destructive-outline-bg: rgba(0, 0, 0, 0); /** Vitae outline fill */
   --ea-button-icon-size: 20px; /** 2021 DS button icon slot size */
   --ea-button-min-height: 44px; /** Vitae base button */
   --ea-button-text-transform: capitalize; /** Vitae base button */
@@ -347,8 +403,13 @@
   --ea-color-brand-primary-140: var(--ea-color-me-primary-140);
   --ea-color-brand-primary-150: var(--ea-color-me-primary-150);
   --ea-color-brand-primary-005: var(--ea-color-me-primary-005);
+  --ea-color-brand-primary-010: var(--ea-color-me-primary-010);
   --ea-color-brand-primary-015: var(--ea-color-me-primary-015);
+  --ea-color-brand-primary-020: var(--ea-color-me-primary-020);
   --ea-color-brand-primary-025: var(--ea-color-me-primary-025);
+  --ea-color-brand-primary-030: var(--ea-color-me-primary-030);
+  --ea-color-brand-primary-035: var(--ea-color-me-primary-035);
+  --ea-color-brand-primary-040: var(--ea-color-me-primary-040);
   --ea-color-brand-primary-050: var(--ea-color-me-primary-050);
   --ea-color-brand-primary-060: var(--ea-color-me-primary-060);
   --ea-color-brand-primary-070: var(--ea-color-me-primary-070);
@@ -361,8 +422,13 @@
   --ea-color-brand-secondary-140: var(--ea-color-me-secondary-140);
   --ea-color-brand-secondary-150: var(--ea-color-me-secondary-150);
   --ea-color-brand-secondary-005: var(--ea-color-me-secondary-005);
+  --ea-color-brand-secondary-010: var(--ea-color-me-secondary-010);
   --ea-color-brand-secondary-015: var(--ea-color-me-secondary-015);
+  --ea-color-brand-secondary-020: var(--ea-color-me-secondary-020);
   --ea-color-brand-secondary-025: var(--ea-color-me-secondary-025);
+  --ea-color-brand-secondary-030: var(--ea-color-me-secondary-030);
+  --ea-color-brand-secondary-035: var(--ea-color-me-secondary-035);
+  --ea-color-brand-secondary-040: var(--ea-color-me-secondary-040);
   --ea-color-brand-secondary-050: var(--ea-color-me-secondary-050);
   --ea-color-brand-secondary-060: var(--ea-color-me-secondary-060);
   --ea-color-brand-secondary-070: var(--ea-color-me-secondary-070);
@@ -375,8 +441,12 @@
   --ea-color-brand-tertiary-140: var(--ea-color-me-tertiary-140);
   --ea-color-brand-tertiary-150: var(--ea-color-me-tertiary-150);
   --ea-color-brand-tertiary-005: var(--ea-color-me-tertiary-005);
+  --ea-color-brand-tertiary-010: var(--ea-color-me-tertiary-010);
   --ea-color-brand-tertiary-015: var(--ea-color-me-tertiary-015);
+  --ea-color-brand-tertiary-020: var(--ea-color-me-tertiary-020);
   --ea-color-brand-tertiary-025: var(--ea-color-me-tertiary-025);
+  --ea-color-brand-tertiary-030: var(--ea-color-me-tertiary-030);
+  --ea-color-brand-tertiary-040: var(--ea-color-me-tertiary-040);
   --ea-color-brand-tertiary-050: var(--ea-color-me-tertiary-050);
   --ea-color-brand-tertiary-060: var(--ea-color-me-tertiary-060);
   --ea-color-brand-tertiary-070: var(--ea-color-me-tertiary-070);
@@ -426,13 +496,15 @@
   --ea-type-caption-size: var(--ea-font-size-100);
   --ea-type-caption-line-height: var(--ea-font-size-300);
   --ea-type-caption-weight: var(--ea-font-weight-regular);
-  --ea-button-destructive-border: var(--ea-color-feedback-error-140); /** Vitae solid button 2px border = ramp 140 */
+  --ea-button-destructive-border: var(--ea-color-feedback-error-140); /** error ramp ends at 140 */
   --ea-button-destructive-outline-bg-hover: var(--ea-color-feedback-error-010);
   --ea-button-destructive-outline-bg-active: var(--ea-color-feedback-error-015);
   --ea-button-destructive-outline-border: var(--ea-color-feedback-error-100);
-  --ea-button-destructive-outline-text: var(--ea-color-feedback-error-100);
-  --ea-button-destructive-outline-text-hover: var(--ea-color-feedback-error-120);
-  --ea-button-destructive-outline-text-active: var(--ea-color-feedback-error-140);
+  --ea-button-destructive-outline-text: var(--ea-color-feedback-error-100); /** Vitae outline text = ramp 100 */
+  --ea-button-destructive-outline-text-hover: var(--ea-color-feedback-error-120); /** Vitae outline hover = ramp 120 (border + text) */
+  --ea-button-destructive-outline-text-active: var(--ea-color-feedback-error-140); /** Vitae outline active = ramp 140 */
+  --ea-button-destructive-outline-border-hover: var(--ea-color-feedback-error-120);
+  --ea-button-destructive-outline-border-active: var(--ea-color-feedback-error-140);
   --ea-button-destructive-ghost-text: var(--ea-color-feedback-error-100);
   --ea-button-destructive-ghost-text-hover: var(--ea-color-feedback-error-120);
   --ea-button-destructive-ghost-text-active: var(--ea-color-feedback-error-140);
@@ -497,6 +569,8 @@
   --ea-tag-metal-bronze-border: var(--ea-color-metal-bronze); /** Vitae Tag/bronze border */
   --ea-tag-metal-platinum-bg: var(--ea-color-metal-platinum-surface);
   --ea-tag-metal-platinum-border: var(--ea-color-metal-platinum); /** Vitae Tag/platinum border */
+  --ea-tag-metal-catastrophic-bg: var(--ea-color-metal-catastrophic-surface);
+  --ea-tag-metal-catastrophic-border: var(--ea-color-metal-catastrophic);
   --ea-table-header-border: var(--ea-color-gray-060); /** 2021 DS Greys/grey-060 */
   --ea-table-row-border: var(--ea-color-gray-020); /** 2021 DS Greys/grey-030 (approx) */
   --ea-table-cell-padding: var(--ea-space-150);
@@ -529,14 +603,16 @@
   --ea-button-primary-bg-disabled: var(--ea-button-disabled-bg); /** corrected 7/10/26 to the shared 2021 DS disabled look */
   --ea-button-primary-text: var(--ea-color-text-on-action);
   --ea-button-primary-text-disabled: var(--ea-button-disabled-text);
-  --ea-button-primary-border: var(--ea-color-brand-primary-140); /** Vitae solid button 2px border = ramp 140 */
-  --ea-button-primary-outline-bg: var(--ea-color-brand-primary-005); /** Vitae outline fill */
+  --ea-button-primary-border: var(--ea-color-brand-primary-150); /** Vitae Color/Border/Button/button-<level>-solid = ramp 150 */
+  --ea-button-primary-outline-bg: var(--ea-color-surface-raised); /** Rest fill is white (Vitae shows ramp-005). With the tint, DC/MA secondary-100 text drops below 4.5:1; on white it passes, so the Vitae text color is kept */
   --ea-button-primary-outline-bg-hover: var(--ea-color-brand-primary-015);
   --ea-button-primary-outline-bg-active: var(--ea-color-brand-primary-025);
   --ea-button-primary-outline-border: var(--ea-color-brand-primary-100);
-  --ea-button-primary-outline-text: var(--ea-color-brand-primary-100);
-  --ea-button-primary-outline-text-hover: var(--ea-color-brand-primary-120);
-  --ea-button-primary-outline-text-active: var(--ea-color-brand-primary-140);
+  --ea-button-primary-outline-text: var(--ea-color-brand-primary-100); /** Vitae outline text = ramp 100 */
+  --ea-button-primary-outline-text-hover: var(--ea-color-brand-primary-120); /** Vitae outline hover = ramp 120 (border + text) */
+  --ea-button-primary-outline-text-active: var(--ea-color-brand-primary-140); /** Vitae outline active = ramp 140 */
+  --ea-button-primary-outline-border-hover: var(--ea-color-brand-primary-120);
+  --ea-button-primary-outline-border-active: var(--ea-color-brand-primary-140);
   --ea-button-primary-ghost-text: var(--ea-color-brand-primary-100);
   --ea-button-primary-ghost-text-hover: var(--ea-color-brand-primary-120);
   --ea-button-primary-ghost-text-active: var(--ea-color-brand-primary-140);
@@ -545,14 +621,16 @@
   --ea-button-secondary-bg-hover: var(--ea-color-brand-secondary-120);
   --ea-button-secondary-bg-active: var(--ea-color-brand-secondary-140);
   --ea-button-secondary-text: var(--ea-color-text-on-action);
-  --ea-button-secondary-border: var(--ea-color-brand-secondary-140); /** Vitae solid button 2px border = ramp 140 */
-  --ea-button-secondary-outline-bg: var(--ea-color-brand-secondary-005); /** Vitae outline fill */
+  --ea-button-secondary-border: var(--ea-color-brand-secondary-150); /** Vitae Color/Border/Button/button-<level>-solid = ramp 150 */
+  --ea-button-secondary-outline-bg: var(--ea-color-surface-raised); /** Rest fill is white (Vitae shows ramp-005). With the tint, DC/MA secondary-100 text drops below 4.5:1; on white it passes, so the Vitae text color is kept */
   --ea-button-secondary-outline-bg-hover: var(--ea-color-brand-secondary-015);
   --ea-button-secondary-outline-bg-active: var(--ea-color-brand-secondary-025);
   --ea-button-secondary-outline-border: var(--ea-color-brand-secondary-100);
-  --ea-button-secondary-outline-text: var(--ea-color-brand-secondary-110); /** ramp 110 (not Vitae 100): DC #0076cc and MA #c15800 at 100 fail 4.5:1 on the 005 outline fill */
-  --ea-button-secondary-outline-text-hover: var(--ea-color-brand-secondary-130);
-  --ea-button-secondary-outline-text-active: var(--ea-color-brand-secondary-150);
+  --ea-button-secondary-outline-text: var(--ea-color-brand-secondary-100); /** Vitae outline text = ramp 100 */
+  --ea-button-secondary-outline-text-hover: var(--ea-color-brand-secondary-120); /** Vitae outline hover = ramp 120 (border + text) */
+  --ea-button-secondary-outline-text-active: var(--ea-color-brand-secondary-140); /** Vitae outline active = ramp 140 */
+  --ea-button-secondary-outline-border-hover: var(--ea-color-brand-secondary-120);
+  --ea-button-secondary-outline-border-active: var(--ea-color-brand-secondary-140);
   --ea-button-secondary-ghost-text: var(--ea-color-brand-secondary-100);
   --ea-button-secondary-ghost-text-hover: var(--ea-color-brand-secondary-120);
   --ea-button-secondary-ghost-text-active: var(--ea-color-brand-secondary-140);
@@ -561,14 +639,16 @@
   --ea-button-tertiary-bg-hover: var(--ea-color-brand-tertiary-120);
   --ea-button-tertiary-bg-active: var(--ea-color-brand-tertiary-140);
   --ea-button-tertiary-text: var(--ea-color-text-on-action);
-  --ea-button-tertiary-border: var(--ea-color-brand-tertiary-140); /** Vitae solid button 2px border = ramp 140 */
-  --ea-button-tertiary-outline-bg: var(--ea-color-brand-tertiary-005); /** Vitae outline fill */
+  --ea-button-tertiary-border: var(--ea-color-brand-tertiary-150); /** Vitae Color/Border/Button/button-<level>-solid = ramp 150 */
+  --ea-button-tertiary-outline-bg: var(--ea-color-surface-raised); /** Rest fill is white (Vitae shows ramp-005). With the tint, DC/MA secondary-100 text drops below 4.5:1; on white it passes, so the Vitae text color is kept */
   --ea-button-tertiary-outline-bg-hover: var(--ea-color-brand-tertiary-015);
   --ea-button-tertiary-outline-bg-active: var(--ea-color-brand-tertiary-025);
   --ea-button-tertiary-outline-border: var(--ea-color-brand-tertiary-100);
-  --ea-button-tertiary-outline-text: var(--ea-color-brand-tertiary-100);
-  --ea-button-tertiary-outline-text-hover: var(--ea-color-brand-tertiary-120);
-  --ea-button-tertiary-outline-text-active: var(--ea-color-brand-tertiary-140);
+  --ea-button-tertiary-outline-text: var(--ea-color-brand-tertiary-100); /** Vitae outline text = ramp 100 */
+  --ea-button-tertiary-outline-text-hover: var(--ea-color-brand-tertiary-120); /** Vitae outline hover = ramp 120 (border + text) */
+  --ea-button-tertiary-outline-text-active: var(--ea-color-brand-tertiary-140); /** Vitae outline active = ramp 140 */
+  --ea-button-tertiary-outline-border-hover: var(--ea-color-brand-tertiary-120);
+  --ea-button-tertiary-outline-border-active: var(--ea-color-brand-tertiary-140);
   --ea-button-tertiary-ghost-text: var(--ea-color-brand-tertiary-100);
   --ea-button-tertiary-ghost-text-hover: var(--ea-color-brand-tertiary-120);
   --ea-button-tertiary-ghost-text-active: var(--ea-color-brand-tertiary-140);
@@ -577,6 +657,7 @@
   --ea-button-destructive-bg-hover: var(--ea-color-action-destructive-hover);
   --ea-button-destructive-bg-active: var(--ea-color-action-destructive-active);
   --ea-button-destructive-text: var(--ea-color-text-on-action);
+  --ea-button-destructive-outline-bg: var(--ea-color-surface-raised); /** Rest fill is white (Vitae shows ramp-005). With the tint, DC/MA secondary-100 text drops below 4.5:1; on white it passes, so the Vitae text color is kept */
   --ea-button-radius: var(--ea-radius-button);
   --ea-input-bg: var(--ea-color-surface-raised);
   --ea-input-border-focus: var(--ea-color-brand-primary-100); /** Vitae input-focus = brand primary */

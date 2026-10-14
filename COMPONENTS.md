@@ -643,14 +643,14 @@ Source precedence for this pass: **Vitae** (component anatomy) → **EA-DesignSy
 ### Button — Style axis added
 | Style | Look | Use when |
 |---|---|---|
-| Solid | Ramp-100 fill, 2px ramp-140 border, white text | The main action |
-| Outline | Ramp-005 tint, 2px ramp-100 border, ramp-100 text | The paired secondary action (e.g. modal "Cancel") |
+| Solid | Ramp-100 fill, 2px ramp-150 border, white text | The main action |
+| Outline | White fill, 2px ramp-100 border + text; hover ramp-120 on 015 tint; active ramp-140 on 025 | The paired secondary action (e.g. modal "Cancel") |
 | Ghost | Text only, light tint on hover | Low-emphasis actions in dense UI |
 
 Markup: `ea-btn ea-btn--{primary|secondary|tertiary|destructive}` + optional `ea-btn--outline` / `ea-btn--ghost`. The old standalone `ea-btn--outline` (primary-only) is replaced: use `ea-btn--primary ea-btn--outline`. Focus ring is now **dashed** (Vitae focus-outline). Radius per theme from 2021: EA/ME 6px, DC 4px, MA 3px.
 
 ### Tag — rebuilt
-24px pill, 1px status border, notification-tint fill, 16px Medium label, 16px leading icon. Types: success / info / warning / error / neutral, program tags (`--dc-healthy`, `--brand` for Current/Essential Plan, `--me-clear-choice`), metal tags (`--gold|silver|bronze|platinum`). Old dot-style and 12px tags are gone.
+24px pill, 1px status border, notification-tint fill, 16px Medium label, 16px leading icon. Types: success / info / warning / error / neutral, program tags (`--dc-healthy`, `--brand` for Current/Essential Plan, `--me-clear-choice`), metal tags (`--gold|silver|bronze|platinum|catastrophic`). Old dot-style and 12px tags are gone.
 
 ### Breadcrumbs — rebuilt
 `<nav aria-label="Breadcrumb"><ol>` with `<li class="ea-breadcrumb-item">`; CSS-generated "/" separators; links underline on hover; current item SemiBold with `aria-current="page"`; deep trails collapse to an "…" button. 14/20 type (2021).
@@ -754,7 +754,7 @@ Label row with red required `*` (`aria-hidden`; field gets `required`/`aria-requ
 
 ## Date Picker
 
-**Description:** Typed `MM/DD/YYYY` entry with an optional calendar assist. Vitae's page only explores input styles (Default / Alt 1 underline / Alt 2 floating label). **Default** is implemented. The calendar popover is **not designed in Vitae** and is built from existing tokens. It needs a design pass.
+**Description:** Typed `MM/DD/YYYY` entry with an optional calendar assist. Vitae's page only explores input styles (Default / Alt 1 underline / Alt 2 floating label). **Default** is implemented. The calendar popover follows the **stock Fluent 2 Calendar** (Month Year header + up/down arrows, single-letter weekdays, 28px cells, today = filled brand circle, selection = brand tint, "Go to today").
 
 **Accessibility:** `inputmode="numeric"`, visible format hint wired via `aria-describedby`; calendar button `aria-haspopup="dialog"`/`aria-expanded`; APG date-picker dialog keyboard model (arrows, PageUp/Down, Home/End, Enter, Esc), `aria-current="date"` for today, `aria-selected` for the selection. Verified in a headless browser: keyboard selection writes the value; Esc returns focus.
 

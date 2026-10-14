@@ -15,7 +15,7 @@ const PROGRAM = [
   { cls: 'me-clear-choice', label: 'Clear Choice Plan', glyph: icon.checkCircleOutline(ic), market: 'ME' },
   { cls: 'brand', label: 'Current Plan', glyph: icon.star(ic), market: 'ME' },
 ];
-const METALS = ['platinum', 'gold', 'silver', 'bronze'];
+const METALS = ['platinum', 'gold', 'silver', 'bronze', 'catastrophic'];
 
 const tag = (type, label, { showIcon = true, dismissible = false, glyph } = {}) => `
   <span class="ea-tag ea-tag--${type}">

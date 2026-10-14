@@ -27,15 +27,15 @@
         "$type": "color"
       },
       "border": {
-        "$value": "{color.brand.primary.140}",
+        "$value": "{color.brand.primary.150}",
         "$type": "color",
-        "$description": "Vitae solid button 2px border = ramp 140"
+        "$description": "Vitae Color/Border/Button/button-<level>-solid = ramp 150"
       },
       "outline": {
         "bg": {
-          "$value": "{color.brand.primary.005}",
+          "$value": "{color.surface.raised}",
           "$type": "color",
-          "$description": "Vitae outline fill"
+          "$description": "Rest fill is white (Vitae shows ramp-005). With the tint, DC/MA secondary-100 text drops below 4.5:1; on white it passes, so the Vitae text color is kept"
         },
         "bg-hover": {
           "$value": "{color.brand.primary.015}",
@@ -51,13 +51,24 @@
         },
         "text": {
           "$value": "{color.brand.primary.100}",
-          "$type": "color"
+          "$type": "color",
+          "$description": "Vitae outline text = ramp 100"
         },
         "text-hover": {
           "$value": "{color.brand.primary.120}",
-          "$type": "color"
+          "$type": "color",
+          "$description": "Vitae outline hover = ramp 120 (border + text)"
         },
         "text-active": {
+          "$value": "{color.brand.primary.140}",
+          "$type": "color",
+          "$description": "Vitae outline active = ramp 140"
+        },
+        "border-hover": {
+          "$value": "{color.brand.primary.120}",
+          "$type": "color"
+        },
+        "border-active": {
           "$value": "{color.brand.primary.140}",
           "$type": "color"
         }
@@ -101,15 +112,15 @@
         "$type": "color"
       },
       "border": {
-        "$value": "{color.brand.secondary.140}",
+        "$value": "{color.brand.secondary.150}",
         "$type": "color",
-        "$description": "Vitae solid button 2px border = ramp 140"
+        "$description": "Vitae Color/Border/Button/button-<level>-solid = ramp 150"
       },
       "outline": {
         "bg": {
-          "$value": "{color.brand.secondary.005}",
+          "$value": "{color.surface.raised}",
           "$type": "color",
-          "$description": "Vitae outline fill"
+          "$description": "Rest fill is white (Vitae shows ramp-005). With the tint, DC/MA secondary-100 text drops below 4.5:1; on white it passes, so the Vitae text color is kept"
         },
         "bg-hover": {
           "$value": "{color.brand.secondary.015}",
@@ -124,16 +135,26 @@
           "$type": "color"
         },
         "text": {
-          "$value": "{color.brand.secondary.110}",
+          "$value": "{color.brand.secondary.100}",
           "$type": "color",
-          "$description": "ramp 110 (not Vitae 100): DC #0076cc and MA #c15800 at 100 fail 4.5:1 on the 005 outline fill"
+          "$description": "Vitae outline text = ramp 100"
         },
         "text-hover": {
-          "$value": "{color.brand.secondary.130}",
-          "$type": "color"
+          "$value": "{color.brand.secondary.120}",
+          "$type": "color",
+          "$description": "Vitae outline hover = ramp 120 (border + text)"
         },
         "text-active": {
-          "$value": "{color.brand.secondary.150}",
+          "$value": "{color.brand.secondary.140}",
+          "$type": "color",
+          "$description": "Vitae outline active = ramp 140"
+        },
+        "border-hover": {
+          "$value": "{color.brand.secondary.120}",
+          "$type": "color"
+        },
+        "border-active": {
+          "$value": "{color.brand.secondary.140}",
           "$type": "color"
         }
       },
@@ -176,15 +197,15 @@
         "$type": "color"
       },
       "border": {
-        "$value": "{color.brand.tertiary.140}",
+        "$value": "{color.brand.tertiary.150}",
         "$type": "color",
-        "$description": "Vitae solid button 2px border = ramp 140"
+        "$description": "Vitae Color/Border/Button/button-<level>-solid = ramp 150"
       },
       "outline": {
         "bg": {
-          "$value": "{color.brand.tertiary.005}",
+          "$value": "{color.surface.raised}",
           "$type": "color",
-          "$description": "Vitae outline fill"
+          "$description": "Rest fill is white (Vitae shows ramp-005). With the tint, DC/MA secondary-100 text drops below 4.5:1; on white it passes, so the Vitae text color is kept"
         },
         "bg-hover": {
           "$value": "{color.brand.tertiary.015}",
@@ -200,13 +221,24 @@
         },
         "text": {
           "$value": "{color.brand.tertiary.100}",
-          "$type": "color"
+          "$type": "color",
+          "$description": "Vitae outline text = ramp 100"
         },
         "text-hover": {
           "$value": "{color.brand.tertiary.120}",
-          "$type": "color"
+          "$type": "color",
+          "$description": "Vitae outline hover = ramp 120 (border + text)"
         },
         "text-active": {
+          "$value": "{color.brand.tertiary.140}",
+          "$type": "color",
+          "$description": "Vitae outline active = ramp 140"
+        },
+        "border-hover": {
+          "$value": "{color.brand.tertiary.120}",
+          "$type": "color"
+        },
+        "border-active": {
           "$value": "{color.brand.tertiary.140}",
           "$type": "color"
         }
@@ -251,13 +283,13 @@
       "border": {
         "$value": "{color.feedback.error.140}",
         "$type": "color",
-        "$description": "Vitae solid button 2px border = ramp 140"
+        "$description": "error ramp ends at 140"
       },
       "outline": {
         "bg": {
-          "$value": "transparent",
+          "$value": "{color.surface.raised}",
           "$type": "color",
-          "$description": "Vitae outline fill"
+          "$description": "Rest fill is white (Vitae shows ramp-005). With the tint, DC/MA secondary-100 text drops below 4.5:1; on white it passes, so the Vitae text color is kept"
         },
         "bg-hover": {
           "$value": "{color.feedback.error.010}",
@@ -273,13 +305,24 @@
         },
         "text": {
           "$value": "{color.feedback.error.100}",
-          "$type": "color"
+          "$type": "color",
+          "$description": "Vitae outline text = ramp 100"
         },
         "text-hover": {
           "$value": "{color.feedback.error.120}",
-          "$type": "color"
+          "$type": "color",
+          "$description": "Vitae outline hover = ramp 120 (border + text)"
         },
         "text-active": {
+          "$value": "{color.feedback.error.140}",
+          "$type": "color",
+          "$description": "Vitae outline active = ramp 140"
+        },
+        "border-hover": {
+          "$value": "{color.feedback.error.120}",
+          "$type": "color"
+        },
+        "border-active": {
           "$value": "{color.feedback.error.140}",
           "$type": "color"
         }
@@ -1037,6 +1080,16 @@
         "$value": "{color.metal.platinum}",
         "$type": "color",
         "$description": "Vitae Tag/platinum border"
+      }
+    },
+    "metal-catastrophic": {
+      "bg": {
+        "$value": "{color.metal.catastrophic-surface}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.metal.catastrophic}",
+        "$type": "color"
       }
     }
   },

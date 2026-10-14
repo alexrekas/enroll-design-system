@@ -48,18 +48,15 @@ npm run build-storybook # static build (a prebuilt copy ships in storybook-stati
 - **Base font:** Open Sans (`font.family.base`). Roboto Flex removed. ME keeps Barlow.
 - **Button radius** comes from EA-DesignSystem-2021 per theme: EA 6px, DC 4px, MA 3px, ME 6px. (Vitae draws 24px pills; not adopted.)
 - **Metal levels** (2021 DS `Metal-Level/*` = Vitae semantic `Tag/*` borders): Platinum `#5D5D60`, Gold `#FABB18`, Silver `#C0C0C0`, Bronze `#CD7F32`, plus Vitae tag tints. `#F7B319` was legacy Enroll code, not Vitae. Vitae's *primitive* metal layer (`#D4AF37` gold, `#E5E4E2` platinum) is stale and superseded.
-- **Interpolated ramp steps:** the 2021 DS defines full 050–150 ramps. EA primary and MA tertiary interpolated steps are now the 2021 values (MA/ME ramps already matched 2021).
+- **Color ramps:** every brand ramp (EA/DC/MA/ME × primary/secondary/tertiary, steps 005–150 incl. 010/020/030/035/040) is now taken verbatim from Vitae's `Color/Brand/*` variables. Nothing is interpolated. The 2021 DS's *variables* disagree with its own swatch page in places (e.g. its DC page labels Primary-100 `#007BC4` under a navy swatch, and its EA Tertiary/100 variable is blue `#0067A1` under a plum swatch). Vitae is internally consistent, so it wins.
 - **Type scale:** semantic `type.*` tokens follow the 2021 DS (h1 36/54, h2 24/36, h3 18/27, dialog 20/28, paragraph 16/24, button 16/20, table 16/14/12, breadcrumb 14/20).
 
 ## Known gaps
 
-- **Ramp steps that 2021 can't fill** (still interpolated, flagged in `$description`):
-  - EA secondary/tertiary: 2021 uses different colors (navy `#00224D` / blue `#0067A1`) than Vitae (slate `#3B5B81` / plum `#441C36`). Decide which family EA uses.
-  - DC primary: 2021's DC primary ramp is non-monotonic (its 050–090 and 110–150 are light blues derived from `#0076CC`; looks swapped with secondary). DC tertiary's 2021 ramp is gold/brown while its 100 is red `#DA2325`. We keep monotonic ramps from the Vitae/decided 100s.
-  - The 025 step doesn't exist in 2021 for any brand.
-- **Catastrophic** metal color is defined in neither file (placeholder).
+- **Catastrophic** metal color: recommended `#4A6274` steel (tint `#DCE4EA`), pending sign-off. Not in either Figma file.
 - **Vitae divergences from the 2021 type scale** (not adopted): Vitae h2 32/40, h3 28/35, 1.25 line-height everywhere, table data +2px.
 - **Vitae EA-Dark mode** exists in the Vitae variable collection; no dark theme is built here yet.
-- **Not yet designed in Vitae:** date picker calendar popover (built from tokens), dropdown option panel (native `<select>` used), tooltip (still stock Fluent 2).
-- **Secondary Outline buttons** use ramp-110 text instead of Vitae's 100 (DC/MA fail AA at 100).
+- **Stock Fluent 2 (decided 10/14/26):** date-picker calendar popover and tooltip follow Fluent 2 anatomy on Enroll tokens. Dropdown option panel isn't designed (native `<select>` used).
+- **Outline buttons rest on white**, not Vitae's ramp-005 tint. DC secondary `#0076CC` and MA secondary `#C15800` sit right at the AA line (4.71:1 and 4.50:1 on white); the 005 tint pulls them to 4.39:1 and 4.20:1. Text/border colors follow Vitae (100 → 120 → 140 across rest/hover/active).
+- **Solid button border** = ramp 150 (Vitae `button-*-solid`). Vitae's MA secondary-solid border points at *primary*-150 (likely a typo); we use secondary-150.
 - Gold `#FABB18` lives at `color.metal.gold` and is a metal-level plan indicator ONLY. Never use it for buttons or accents.

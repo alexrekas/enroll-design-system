@@ -56,14 +56,17 @@ const mount = ({ label, value, state, required, errorText, hint, today = new Dat
     }
     pop.innerHTML = `
       <div class="ea-calendar__head">
-        <button type="button" class="ea-calendar__nav" data-nav="-1" aria-label="Previous month">${icon.chevronLeft()}</button>
-        <span aria-live="polite" id="${id}-month">${MONTHS[m]} ${y}</span>
-        <button type="button" class="ea-calendar__nav" data-nav="1" aria-label="Next month">${icon.chevronRight()}</button>
+        <span class="ea-calendar__title" aria-live="polite" id="${id}-month">${MONTHS[m]} ${y}</span>
+        <span class="ea-calendar__navs">
+          <button type="button" class="ea-calendar__nav ea-calendar__nav--up" data-nav="-1" aria-label="Go to previous month">${icon.chevronDown()}</button>
+          <button type="button" class="ea-calendar__nav" data-nav="1" aria-label="Go to next month">${icon.chevronDown()}</button>
+        </span>
       </div>
       <table role="grid" aria-labelledby="${id}-month">
-        <thead><tr>${['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'].map(d => `<th scope="col" abbr="${d}">${d}</th>`).join('')}</tr></thead>
+        <thead><tr>${['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'].map(d => `<th scope="col" abbr="${d}"><span aria-hidden="true">${d[0]}</span></th>`).join('')}</tr></thead>
         <tbody>${rows}</tbody>
-      </table>`;
+      </table>
+      <div class="ea-calendar__foot"><button type="button" class="ea-calendar__today" data-today>Go to today</button></div>`;
   };
   const focusDay = () => pop.querySelector(`[data-date="${fmt(focusDate)}"]`)?.focus();
   const close = (refocus = true) => { pop?.remove(); pop = null; trigger.setAttribute('aria-expanded', 'false'); if (refocus) trigger.focus(); };
@@ -81,6 +84,7 @@ const mount = ({ label, value, state, required, errorText, hint, today = new Dat
     pop.addEventListener('click', (e) => {
       const nav = e.target.closest('[data-nav]');
       if (nav) { view.setMonth(view.getMonth() + +nav.dataset.nav); focusDate = new Date(view); render(); return; }
+      if (e.target.closest('[data-today]')) { focusDate = new Date(today); view = new Date(today.getFullYear(), today.getMonth(), 1); render(); focusDay(); return; }
       const day = e.target.closest('[data-date]');
       if (day) { input.value = day.dataset.date; close(); }
     });
@@ -110,7 +114,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: `Date entry for DOB, coverage start, life-event dates. Source: **Vitae → Date Picker**, which shows the input styles only (Default / Alt 1 underline / Alt 2 floating label). This implements **Default** (it matches Text Input). The calendar popover is **not designed in Vitae yet** — it's built from existing tokens and should get a design pass.
+        component: `Date entry for DOB, coverage start, life-event dates. Source: **Vitae → Date Picker**, which shows the input styles only (Default / Alt 1 underline / Alt 2 floating label). This implements **Default** (it matches Text Input). The calendar popover uses the **stock Fluent 2 Calendar** anatomy (decided 10/14/26), mapped onto Enroll tokens: Month Year header with up/down arrows, single-letter weekdays, 28px day cells, today as a filled brand circle, selection as a brand tint, and a \"Go to today\" link.
 
 **Anatomy:** Text Input with required marker · \`MM/DD/YYYY\` placeholder · trailing calendar button · format hint below · error-info box.
 
