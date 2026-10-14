@@ -846,6 +846,11 @@
         "$value": "{color.warmgray.060}",
         "$type": "color",
         "$description": "ME-nuharbor-1 Navigation (5958:25693): 1px separators between ID / My Portal / Log Out"
+      },
+      "portal-decoration": {
+        "$value": "underline",
+        "$type": "other",
+        "$description": "ME-nuharbor-1 Navigation (5958:25693): portal link underlined"
       }
     },
     "footer": {
@@ -888,6 +893,11 @@
         "$value": "1140px",
         "$type": "dimension",
         "$description": "ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866)"
+      },
+      "icon": {
+        "$value": "{nav.footer.link}",
+        "$type": "color",
+        "$description": "Icon color in footer contact links"
       }
     },
     "left-nav": {

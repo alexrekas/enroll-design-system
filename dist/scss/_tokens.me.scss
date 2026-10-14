@@ -113,6 +113,7 @@ $ea-color-dc-tertiary-060: #e97b7c; // Vitae Color/Brand/tertiary-060 [DC]
 $ea-color-dc-tertiary-070: #e56566; // Vitae Color/Brand/tertiary-070 [DC]
 $ea-color-dc-tertiary-080: #e14f51; // Vitae Color/Brand/tertiary-080 [DC]
 $ea-color-dc-tertiary-090: #de393a; // Vitae Color/Brand/tertiary-090 [DC]
+$ea-color-dc-navbar: #00629d; // DC - Bootstrap Upgrade 'Primary/120/DC' #00629D: header rule + Broker/Admin nav bar. Not a step in the Vitae DC ramp (Vitae primary-120 is #00284d).
 $ea-color-me-primary-100: #3d5d6f; // Vitae Color/Brand/primary-100 [ME]
 $ea-color-me-primary-110: #375464; // Vitae Color/Brand/primary-110 [ME]
 $ea-color-me-primary-120: #314a59; // Vitae Color/Brand/primary-120 [ME]
@@ -280,6 +281,7 @@ $ea-color-program-me-clear-choice-border: #824270; // Vitae tag/me-clear-choice-
 $ea-color-warmgray-030: #edebe9; // 2021 DS Greys/grey-030 (footer language row, help pill)
 $ea-color-warmgray-040: #e1dfdd; // 2021 DS Greys/grey-040 (footer body)
 $ea-color-warmgray-060: #c8c6c4; // 2021 DS Greys/grey-060 (header dividers)
+$ea-color-warmgray-090: #a19f9d; // Greys/grey-090 (DC - Bootstrap Upgrade header divider + separators)
 $ea-color-text-primary: #333333;
 $ea-color-text-secondary: #4b5159; // Vitae text/secondary
 $ea-color-text-disabled: #9b9b9b;
@@ -648,6 +650,7 @@ $ea-nav-header-user-name: #333333; // ME-nuharbor-1 Navigation (5958:25693): Bol
 $ea-nav-header-user-meta: #333333; // ME-nuharbor-1 Navigation (5958:25693): ID Regular 16/20
 $ea-nav-header-link: #3d5d6f; // ME-nuharbor-1 Navigation (5958:25693): My Portal / Log Out, underlined
 $ea-nav-header-separator: #c8c6c4; // ME-nuharbor-1 Navigation (5958:25693): 1px separators between ID / My Portal / Log Out
+$ea-nav-header-portal-decoration: underline; // ME-nuharbor-1 Navigation (5958:25693): portal link underlined
 $ea-nav-footer-lang-bg: #edebe9; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): Top - Languages #EDEBE9
 $ea-nav-footer-bg: #e1dfdd; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): Bottom - Details and Help #E1DFDD
 $ea-nav-footer-text: #333333; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866)
@@ -656,6 +659,7 @@ $ea-nav-footer-help-bg: #edebe9; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (8
 $ea-nav-footer-help-radius: 30px; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866)
 $ea-nav-footer-padding-y: 12px; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866)
 $ea-nav-footer-content-width: 1140px; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866)
+$ea-nav-footer-icon: #3d5d6f; // Icon color in footer contact links
 $ea-nav-left-nav-bg: #ffffff;
 $ea-nav-left-nav-width: 280px;
 $ea-nav-left-nav-item-padding-x: 16px;

@@ -1,13 +1,14 @@
 import { icon } from './icons.js';
 import { logos, brand, navIcons, figmaSources } from './brand-assets.js';
 
-const { FIGMA_2021, FIGMA_ME } = figmaSources;
+const { FIGMA_2021, FIGMA_ME, FIGMA_DC } = figmaSources;
 const node = (file, id) => `${file}?node-id=${id.replace(':', '-')}`;
 
 const USERS = {
   loggedOut: { portal: 'Individual & Family', name: null },
   individual: { portal: 'Individual & Family', name: 'TestAccount User', id: '1004502', icon: navIcons.userConsumer },
   employer: { portal: 'Employer', name: 'ACME, Inc.', id: '2001953', icon: navIcons.building },
+  employee: { portal: 'Employee', name: 'TestAccount User', id: '2001953', icon: navIcons.userExpert },
   broker: { portal: 'Broker', name: 'Broker McCain', id: '2001953', icon: navIcons.userExpert },
   admin: { portal: 'Admin', name: 'TestAdmin User', id: '2001953', icon: navIcons.userSettings },
 };
@@ -20,16 +21,22 @@ const SUBNAV = {
 /* Per-story Figma provenance. `status`: figma = built from this frame; adapted = built from the frame
    but restyled onto Enroll tokens; projected = no frame exists for this client/variant yet. */
 const meSrc = { label: 'ME-nuharbor-1 · Navigation', url: node(FIGMA_ME, '5958:25693') };
+const dcSrc = { label: 'DC - Bootstrap Upgrade · Navigation', url: node(FIGMA_DC, '5958:25693') };
+const dcFooterSrc = { label: 'DC - Bootstrap Upgrade · Navigation/Footer/Desktop-0', url: node(FIGMA_DC, '15640:6530') };
+const shellOf = (theme) => brand[theme].shell || {};
 const ea2021 = { label: 'EA-DesignSystem-2021 · Navigation/HeaderFooter-Desktop', url: node(FIGMA_2021, '991:21766') };
 const headerDesign = (extra = []) => (globals) => {
   const t = globals.theme || 'ea';
   if (t === 'me') return [{ ...meSrc, status: 'figma' }, ...extra];
+  if (t === 'dc') return [{ ...dcSrc, status: 'figma' }, ...extra];
   return [{ ...meSrc, status: 'projected', note: `No latest-Bootstrap ${t.toUpperCase()} header in Figma yet — ME anatomy with ${t.toUpperCase()} logo + brand tokens` }, { ...ea2021, status: 'reference', note: `${t.toUpperCase()} variant here is the older style` }, ...extra];
 };
 
 const header = ({ user = 'individual', subnav = true, cartCount = 0 }, theme) => {
-  const u = USERS[user];
-  const nav = subnav && SUBNAV[user];
+  const sh = shellOf(theme);
+  const u = { ...USERS[user] };
+  if (user === 'employer' && sh.employerIcon) u.icon = navIcons[sh.employerIcon];
+  const nav = subnav && SUBNAV[user] && [...SUBNAV[user], ...(user === 'admin' && sh.adminExtra ? sh.adminExtra : [])];
   return `
   <header class="ea-header">
     <div class="ea-header__bar"><div class="ea-shell-inner">
@@ -45,7 +52,7 @@ const header = ({ user = 'individual', subnav = true, cartCount = 0 }, theme) =>
           <span class="ea-header__user-icon">${u.icon}</span>
           <div>
             <p class="ea-header__user-name">${u.name}</p>
-            <div class="ea-header__user-meta"><span>ID: ${u.id}</span><a href="#">My Portal</a><a href="#">Log Out</a></div>
+            <div class="ea-header__user-meta"><span>ID: ${u.id}</span>${sh.myPortal === false ? '' : '<a href="#">My Portal</a>'}<a href="#">Log Out</a></div>
           </div>
         </div>` : ''}
       </div>
@@ -64,6 +71,19 @@ const header = ({ user = 'individual', subnav = true, cartCount = 0 }, theme) =>
 // The language row is an opt-in for later; it is off by default.
 const footer = (theme, { showLanguages = false } = {}) => {
   const b = brand[theme];
+  const sh = shellOf(theme);
+  const tel = `tel:${b.phone.replace(/[^\d]/g, '').slice(0, 10)}`;
+  if (sh.footer === 'contact') return `
+  <footer class="ea-footer">
+    <div class="ea-footer__body"><div class="ea-shell-inner">
+      <p>${sh.copyrightLine(new Date().getFullYear())}</p>
+      <div class="ea-footer__contact">
+        <a class="ea-btn ea-btn--primary ea-btn--ghost" href="${tel}">${navIcons.phone}${b.phone}</a>
+        <a class="ea-btn ea-btn--primary ea-btn--ghost" href="mailto:${b.email}">${navIcons.mail}${b.email}</a>
+        <a class="ea-btn ea-btn--primary ea-btn--ghost" href="#">Get Help</a>
+      </div>
+    </div></div>
+  </footer>`;
   return `
   <footer class="ea-footer">
     ${showLanguages ? `<div class="ea-footer__lang"><div class="ea-shell-inner" role="group" aria-label="Language">
@@ -90,7 +110,7 @@ export default {
       description: {
         component: `Global page chrome — **latest Bootstrap style only** (DC and MA production still run an older version; that older style is intentionally not modeled here).
 
-**Source of truth:** ME-nuharbor-1 \`Navigation\` (User = Individual & Family / Broker / Admin, Logged In, Navigation), \`Navigation/Footer/Desktop-1\`, and the \`000 - Mobile\` frames. Employer (building icon) and the cart-count variant come from EA-DesignSystem-2021 \`HeaderFooter-Desktop\`. Logos and icons are exported from those files, not redrawn. **Switch the toolbar Theme** to see each client: ME is a direct build; EA/DC/MA reuse the same anatomy with their own logo and brand tokens until their latest-Bootstrap frames exist (the source badge under each story says which).
+**Source of truth:** ME-nuharbor-1 \`Navigation\` (User = Individual & Family / Broker / Admin, Logged In, Navigation), \`Navigation/Footer/Desktop-1\`, and the \`000 - Mobile\` frames. Employer (building icon) and the cart-count variant come from EA-DesignSystem-2021 \`HeaderFooter-Desktop\`. **DC** is built from **DC - Bootstrap Upgrade** \`Navigation\` and \`Navigation/Footer/Desktop-0\`: no My Portal link, an Employee user type, a retail-building Employer icon, Notices in the Admin bar, both nav bars in #00629D, and a single-row white footer with ghost contact links. Logos and icons are exported from those files, not redrawn. **Switch the toolbar Theme** to see each client: ME and DC are direct builds; EA/MA reuse the ME anatomy with their own logo and brand tokens until their latest-Bootstrap frames exist (the source badge under each story says which).
 
 **Anatomy:** 70px bar + 2px brand rule · logo | divider | portal link · user block (32px user-type icon, name, ID / My Portal / Log Out). Broker adds a brand-color nav bar; Admin adds a light nav bar with dropdowns. Mail count uses a 24px badge.
 
@@ -118,6 +138,10 @@ export const Employer = {
   args: { user: 'employer' },
   parameters: { design: () => [{ ...ea2021, status: 'adapted', note: 'UserType=Business (building icon) restyled onto the latest anatomy' }, { ...meSrc, status: 'figma' }] },
 };
+export const Employee = {
+  args: { user: 'employee' },
+  parameters: { design: (g) => (g.theme || 'ea') === 'dc' ? [{ ...dcSrc, status: 'figma' }] : [{ ...dcSrc, status: 'projected', note: 'Employee header exists only in the DC file so far' }] },
+};
 export const Broker = { args: { user: 'broker' }, parameters: { design: headerDesign() } };
 export const Admin = { args: { user: 'admin' }, parameters: { design: headerDesign() } };
 
@@ -125,13 +149,13 @@ export const AllUserTypes = {
   name: 'All user types',
   parameters: { design: headerDesign() },
   render: (_, ctx) => `<div style="display:flex; flex-direction:column; gap:24px; padding:16px 0; background:var(--ea-color-surface-sunken);">
-    ${['loggedOut', 'individual', 'employer', 'broker', 'admin'].map(u => header({ user: u, subnav: true }, themeOf(ctx))).join('')}
+    ${(shellOf(themeOf(ctx)).userTypes || ['loggedOut', 'individual', 'employer', 'broker', 'admin']).map(u => header({ user: u, subnav: true }, themeOf(ctx))).join('')}
   </div>`,
 };
 
 export const Footer = {
   parameters: {
-    design: (g) => (g.theme || 'ea') === 'me'
+    design: (g) => (g.theme || 'ea') === 'dc' ? [{ ...dcFooterSrc, status: 'figma' }] : (g.theme || 'ea') === 'me'
       ? [{ label: 'ME-nuharbor-1 · Navigation/Footer/Desktop-1', url: node(FIGMA_ME, '823:92866'), status: 'figma' }]
       : [{ label: 'ME-nuharbor-1 · Navigation/Footer/Desktop-1', url: node(FIGMA_ME, '823:92866'), status: 'projected', note: 'Client contact details from EA-DesignSystem-2021 footers' }, { ...ea2021, status: 'reference' }],
   },

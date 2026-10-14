@@ -249,5 +249,103 @@
       "$type": "dimension",
       "$description": "EA-DesignSystem-2021 Biome=DC Primary Solid: 4px (decided 10/14/26: button radius comes from 2021 DS; Vitae draws 24px)"
     }
+  },
+  "nav": {
+    "header": {
+      "rule": {
+        "$value": "{color.dc.navbar}",
+        "$type": "color",
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): 2px rule #00629D"
+      },
+      "logo-height": {
+        "$value": "35px",
+        "$type": "dimension",
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): Logo/Domain 142.6x35"
+      },
+      "gap": {
+        "$value": "{space.300}",
+        "$type": "dimension",
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): 24px between logo, divider and portal"
+      },
+      "divider": {
+        "$value": "{color.warmgray.090}",
+        "$type": "color",
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): Line 1 #A19F9D"
+      },
+      "separator": {
+        "$value": "{color.warmgray.090}",
+        "$type": "color",
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): ID | Log Out separator #A19F9D"
+      },
+      "portal-color": {
+        "$value": "{color.brand.secondary.100}",
+        "$type": "color",
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): portal label Secondary/100/DC #0076CC, SemiBold, not underlined"
+      },
+      "portal-decoration": {
+        "$value": "none",
+        "$type": "other",
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): portal label not underlined"
+      },
+      "user-icon": {
+        "$value": "{color.brand.secondary.100}",
+        "$type": "color",
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): user-type icon #0076CC"
+      },
+      "link": {
+        "$value": "{color.brand.secondary.100}",
+        "$type": "color",
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): Log Out #0076CC, underlined"
+      }
+    },
+    "subnav": {
+      "broker-bg": {
+        "$value": "{color.dc.navbar}",
+        "$type": "color",
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693) User=Broker, Navigation=True: #00629D bar"
+      },
+      "admin-bg": {
+        "$value": "{color.dc.navbar}",
+        "$type": "color",
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693) User=Admin, Navigation=True: same #00629D bar as Broker"
+      },
+      "admin-text": {
+        "$value": "{color.white}",
+        "$type": "color",
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): white nav text"
+      },
+      "gap-broker": {
+        "$value": "{space.300}",
+        "$type": "dimension",
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): 24px"
+      },
+      "gap-admin": {
+        "$value": "{space.300}",
+        "$type": "dimension",
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): 24px"
+      }
+    },
+    "footer": {
+      "bg": {
+        "$value": "{color.surface.raised}",
+        "$type": "color",
+        "$description": "DC - Bootstrap Upgrade Navigation/Footer/Desktop-0 (15640:6530): white"
+      },
+      "text": {
+        "$value": "{color.text.secondary}",
+        "$type": "color",
+        "$description": "DC - Bootstrap Upgrade Navigation/Footer/Desktop-0 (15640:6530): copyright Greys/grey-130 #605E5C"
+      },
+      "link": {
+        "$value": "{color.brand.primary.100}",
+        "$type": "color",
+        "$description": "DC - Bootstrap Upgrade Navigation/Footer/Desktop-0 (15640:6530): Ghost buttons Primary/100/DC #003260"
+      },
+      "icon": {
+        "$value": "{color.brand.secondary.100}",
+        "$type": "color",
+        "$description": "DC - Bootstrap Upgrade Navigation/Footer/Desktop-0 (15640:6530): phone + mail icons #0076CC"
+      }
+    }
   }
 }

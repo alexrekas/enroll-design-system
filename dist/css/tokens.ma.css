@@ -115,6 +115,7 @@
   --ea-color-dc-tertiary-070: #e56566; /** Vitae Color/Brand/tertiary-070 [DC] */
   --ea-color-dc-tertiary-080: #e14f51; /** Vitae Color/Brand/tertiary-080 [DC] */
   --ea-color-dc-tertiary-090: #de393a; /** Vitae Color/Brand/tertiary-090 [DC] */
+  --ea-color-dc-navbar: #00629d; /** DC - Bootstrap Upgrade 'Primary/120/DC' #00629D: header rule + Broker/Admin nav bar. Not a step in the Vitae DC ramp (Vitae primary-120 is #00284d). */
   --ea-color-me-primary-100: #3d5d6f; /** Vitae Color/Brand/primary-100 [ME] */
   --ea-color-me-primary-110: #375464; /** Vitae Color/Brand/primary-110 [ME] */
   --ea-color-me-primary-120: #314a59; /** Vitae Color/Brand/primary-120 [ME] */
@@ -282,6 +283,7 @@
   --ea-color-warmgray-030: #edebe9; /** 2021 DS Greys/grey-030 (footer language row, help pill) */
   --ea-color-warmgray-040: #e1dfdd; /** 2021 DS Greys/grey-040 (footer body) */
   --ea-color-warmgray-060: #c8c6c4; /** 2021 DS Greys/grey-060 (header dividers) */
+  --ea-color-warmgray-090: #a19f9d; /** Greys/grey-090 (DC - Bootstrap Upgrade header divider + separators) */
   --ea-color-surface-overlay: rgba(0, 0, 0, 0.4); /** modal scrim */
   --ea-color-border-focus-outline: #1e1e1e; /** Vitae color/border/focus-outline (dashed focus ring) */
   --ea-space-100: 8px; /** Vitae */
@@ -358,6 +360,7 @@
   --ea-nav-header-rule-width: 2px; /** ME-nuharbor-1 Navigation (5958:25693) */
   --ea-nav-header-content-width: 1140px; /** ME-nuharbor-1 Navigation (5958:25693): 150px gutters at 1440 */
   --ea-nav-header-logo-height: 32px; /** ME-nuharbor-1 Navigation (5958:25693): Logo/Domain 163x32 */
+  --ea-nav-header-portal-decoration: underline; /** ME-nuharbor-1 Navigation (5958:25693): portal link underlined */
   --ea-nav-footer-help-radius: 30px; /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866) */
   --ea-nav-footer-content-width: 1140px; /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866) */
   --ea-nav-left-nav-width: 280px;
@@ -783,6 +786,7 @@
   --ea-button-primary-bg-active: var(--ea-color-action-primary-active);
   --ea-form-selected-bg: var(--ea-color-action-primary-rest); /** 2021 DS Primary/100 -- Toggle on-fill, Checkbox checked-fill, Radio selected-fill */
   --ea-form-selected-bg-hover: var(--ea-color-action-primary-hover); /** 2021 DS Primary/120 */
+  --ea-nav-footer-icon: var(--ea-nav-footer-link); /** Icon color in footer contact links */
   --ea-nav-left-nav-item-bg-active: var(--ea-color-action-primary-rest);
   --ea-progress-complete: var(--ea-color-action-primary-active); /** 2021 DS Primary/140 -- completed segment */
   --ea-plan-footer-text: var(--ea-color-action-primary-rest);

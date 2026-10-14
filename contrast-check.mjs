@@ -74,6 +74,8 @@ const PAIRS = [
   ['NavSubnavBadgeText', 'NavSubnavBadgeBg', 4.5, 'mail count badge'],
   ['NavFooterLink', 'NavFooterLangBg', 4.5, 'footer language links'],
   ['NavFooterText', 'NavFooterBg', 4.5, 'footer text'],
+  ['NavFooterLink', 'NavFooterBg', 4.5, 'footer contact links'],
+  ['NavFooterIcon', 'NavFooterBg', 3.0, 'footer contact icons (non-text)'],
   ['TableRowText', 'ColorSurfaceRaised', 4.5, 'table cell text'],
   ['TableHeaderText', 'ColorSurfaceRaised', 4.5, 'table header text'],
   ['CardTitleColor', 'CardBg', 4.5, 'card title'],

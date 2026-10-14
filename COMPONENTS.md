@@ -389,9 +389,13 @@ Global page chrome, **latest Bootstrap style only**. Rebuilt 10/14/26 from Figma
 | Footer (desktop) | ME-nuharbor-1 · `Navigation/Footer/Desktop-1` (823:92866) |
 | Mobile header, drawer, footer | ME-nuharbor-1 · `000 - Mobile` (790:64426) |
 | Employer (building icon), cart count | EA-DesignSystem-2021 · `HeaderFooter-Desktop` (991:21766) |
+| DC header (all user types incl. Employee) + nav bars | DC - Bootstrap Upgrade · `Navigation` (5958:25693) |
+| DC footer (desktop) | DC - Bootstrap Upgrade · `Navigation/Footer/Desktop-0` (15640:6530) |
 | Logos (EA, DC, MA, ME) | EA-DesignSystem-2021 `Logo/Domain`, ME-nuharbor-1 `coverme-logo` |
 
-ME is built directly from its frames. EA/DC/MA use the same anatomy with their own logo, contact details and brand tokens, marked **Projected** in Storybook until their latest-Bootstrap frames exist.
+ME and DC are built directly from their frames. EA/MA use the ME anatomy with their own logo, contact details and brand tokens, marked **Projected** in Storybook until their latest-Bootstrap frames exist.
+
+**DC differences** (tokens in `tokens/themes/dc.json` + `brand.dc.shell` in `stories/brand-assets.js`): no My Portal link; Employee user type; retail-building Employer icon; Notices in the Admin bar; header rule and both nav bars #00629D (`color.dc.navbar` — the DC file's Primary/120, not a step in the Vitae DC ramp); portal label, user icon and Log Out in secondary-100, portal not underlined; 35px logo; 24px gaps; single-row white footer with copyright and ghost phone / email / Get Help links.
 
 ### Variants
 | User type | Header right side | Nav bar |
