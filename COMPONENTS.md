@@ -402,12 +402,12 @@ ME is built directly from its frames. EA/DC/MA use the same anatomy with their o
 | Broker | expert icon, name, ID / My Portal / Log Out | brand-color bar: Home, Families, Mail (count) |
 | Admin | settings icon, name, ID / My Portal / Log Out | light bar: Home, Families▾, User Accounts, Issuers, Brokers▾, Admin▾, Mail (count) |
 
-Mobile: logo + menu button, then a right-side drawer with the marketplace label, portal, user, Home / My Portal (expandable) / Help, Call Customer Service and Logout. Footer: language row and contact pill (desktop); Get Help and copyright (mobile).
+Mobile: logo + menu button, then a right-side drawer with the marketplace label, portal, user, Home / My Portal (expandable) / Help, Call Customer Service and Logout. Footer: copyright and contact pill (desktop); the language row is off by default (`showLanguages`, a future option); Get Help and copyright (mobile).
 
 ### Accessibility
 - `<header>`, `<nav aria-label>`, `<footer>` landmarks; current page uses `aria-current="page"`.
 - Admin dropdown triggers are `<button aria-expanded aria-haspopup>`; the mail badge carries an `aria-label` with the count.
-- Language list marks the active language with `aria-current` and each link with `lang`.
+- The optional language row marks the active language with `aria-current` and each link with `lang`.
 - Mobile menu button toggles `aria-expanded` / label, moves focus into the drawer, closes on Esc or scrim click and returns focus.
 
 ### Code Example

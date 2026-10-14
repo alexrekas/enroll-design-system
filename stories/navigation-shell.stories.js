@@ -61,13 +61,14 @@ const header = ({ user = 'individual', subnav = true, cartCount = 0 }, theme) =>
   </header>`;
 };
 
-const footer = (theme) => {
+// The language row is an opt-in for later; it is off by default.
+const footer = (theme, { showLanguages = false } = {}) => {
   const b = brand[theme];
   return `
   <footer class="ea-footer">
-    <div class="ea-footer__lang"><div class="ea-shell-inner" role="group" aria-label="Language">
+    ${showLanguages ? `<div class="ea-footer__lang"><div class="ea-shell-inner" role="group" aria-label="Language">
       ${navIcons.translate}<span aria-current="true">English</span><a href="#" lang="es">Español</a><a href="#" lang="am">Amharic</a>
-    </div></div>
+    </div></div>` : ''}
     <div class="ea-footer__body"><div class="ea-shell-inner">
       <div><p><strong>${b.copyright}</strong></p><p>All Rights Reserved.</p></div>
       <div class="ea-footer__help">
@@ -93,7 +94,7 @@ export default {
 
 **Anatomy:** 70px bar + 2px brand rule · logo | divider | portal link · user block (32px user-type icon, name, ID / My Portal / Log Out). Broker adds a brand-color nav bar; Admin adds a light nav bar with dropdowns. Mail count uses a 24px badge.
 
-**Accessibility:** \`<header>\` / \`<nav aria-label>\` / \`<footer>\` landmarks; current section uses \`aria-current="page"\`; admin dropdown triggers are \`<button aria-expanded aria-haspopup>\`; the mail badge has an \`aria-label\` with the count; the language list marks the active language with \`aria-current\` and each link with \`lang\`. The mobile menu button toggles \`aria-expanded\` and returns focus on Esc.`,
+**Accessibility:** \`<header>\` / \`<nav aria-label>\` / \`<footer>\` landmarks; current section uses \`aria-current="page"\`; admin dropdown triggers are \`<button aria-expanded aria-haspopup>\`; the mail badge has an \`aria-label\` with the count; the optional language row (off by default; a future option) marks the active language with \`aria-current\` and each link with \`lang\`. The mobile menu button toggles \`aria-expanded\` and returns focus on Esc.`,
       },
     },
   },
@@ -134,7 +135,14 @@ export const Footer = {
       ? [{ label: 'ME-nuharbor-1 · Navigation/Footer/Desktop-1', url: node(FIGMA_ME, '823:92866'), status: 'figma' }]
       : [{ label: 'ME-nuharbor-1 · Navigation/Footer/Desktop-1', url: node(FIGMA_ME, '823:92866'), status: 'projected', note: 'Client contact details from EA-DesignSystem-2021 footers' }, { ...ea2021, status: 'reference' }],
   },
-  render: (_, ctx) => footer(themeOf(ctx)),
+  argTypes: {
+    user: { table: { disable: true } },
+    subnav: { table: { disable: true } },
+    cartCount: { table: { disable: true } },
+    showLanguages: { control: 'boolean', description: 'Language selector row above the footer body. Off by default; a future option.' },
+  },
+  args: { showLanguages: false },
+  render: (args, ctx) => footer(themeOf(ctx), args),
 };
 
 /* ---------- Mobile ---------- */
