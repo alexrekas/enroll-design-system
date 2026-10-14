@@ -26,7 +26,7 @@ npm run storybook       # design library at localhost:6006
 npm run build-storybook # static build (a prebuilt copy ships in storybook-static/)
 ```
 
-**Storybook design library:** stories for Button, Text Input, and Alert (all variants/states), plus Foundations pages (color ramps, cross-theme hex reference, spacing, radius, typography) generated from the built token manifests. The toolbar's Theme menu re-renders any story in EA / DC / MA / ME instantly. Reference component classes live in `.storybook/tokens.css` (`ea-btn`, `ea-input`, `ea-alert`) — the same markup contract mockups and Enroll App adoption will use.
+**Storybook design library:** 23 components (Accordion, Alert, Breadcrumbs, Button, Card, Checkbox, Date Picker, Dropdown, Field-Set, Header/Footer/LeftNav, Icon, Log-In, Modal, Pagination, Plan, Progress, Radio, Table, Tag, Text Input, Toggle, Tooltip), plus Foundations pages (color ramps, cross-theme hex reference, spacing, radius, typography) generated from the built token manifests. The toolbar's Theme menu re-renders any story in EA / DC / MA / ME instantly. Reference component classes live in `.storybook/tokens.css` (`ea-btn`, `ea-input`, `ea-alert`) — the same markup contract mockups and Enroll App adoption will use.
 
 **Web:** load `dist/css/tokens.ea.css` (also binds `:root`) plus the client file; switch brand with `<html data-theme="dc">`.
 **Enroll App (Rails):** `@import 'dist/scss/tokens.me';` — replaces `.scss.erb` config interpolation over time.
@@ -43,11 +43,23 @@ npm run build-storybook # static build (a prebuilt copy ships in storybook-stati
 3. Adding client #5 = one new theme file + one primitive ramp set.
 4. Contrast gate must pass for every theme before merge.
 
-## Known gaps (Phase 1 open items)
+## Resolved 10/14/26
 
-- **Font finding:** Vitae's typography token is **Roboto Flex** (now `font.family.base`, Open Sans fallback), but code ships Open Sans and the 2021 DS uses it throughout. Confirm Roboto Flex is the intended future base font.
+- **Base font:** Open Sans (`font.family.base`). Roboto Flex removed. ME keeps Barlow.
+- **Button radius** comes from EA-DesignSystem-2021 per theme: EA 6px, DC 4px, MA 3px, ME 6px. (Vitae draws 24px pills; not adopted.)
+- **Metal levels** (2021 DS `Metal-Level/*` = Vitae semantic `Tag/*` borders): Platinum `#5D5D60`, Gold `#FABB18`, Silver `#C0C0C0`, Bronze `#CD7F32`, plus Vitae tag tints. `#F7B319` was legacy Enroll code, not Vitae. Vitae's *primitive* metal layer (`#D4AF37` gold, `#E5E4E2` platinum) is stale and superseded.
+- **Interpolated ramp steps:** the 2021 DS defines full 050–150 ramps. EA primary and MA tertiary interpolated steps are now the 2021 values (MA/ME ramps already matched 2021).
+- **Type scale:** semantic `type.*` tokens follow the 2021 DS (h1 36/54, h2 24/36, h3 18/27, dialog 20/28, paragraph 16/24, button 16/20, table 16/14/12, breadcrumb 14/20).
 
-- **Button radii per client are TODO-confirm** (`radius.button` in each theme; EA=24px from Vitae, others 4px approx).
-- Gold `#F7B319` lives at `color.metal.gold` — metal-level plan indicator ONLY, never buttons or accents (decided 7/9/26). Code's gold `primary_button` is a legacy divergence. Bronze/silver/platinum/catastrophic values are placeholders to extract.
-- Interpolated/extrapolated ramp steps (marked in `$description`) need designer eyes.
-- Typography scale/weights seeded from code + 2021 DS; reconcile with Vitae typography when
+## Known gaps
+
+- **Ramp steps that 2021 can't fill** (still interpolated, flagged in `$description`):
+  - EA secondary/tertiary: 2021 uses different colors (navy `#00224D` / blue `#0067A1`) than Vitae (slate `#3B5B81` / plum `#441C36`). Decide which family EA uses.
+  - DC primary: 2021's DC primary ramp is non-monotonic (its 050–090 and 110–150 are light blues derived from `#0076CC`; looks swapped with secondary). DC tertiary's 2021 ramp is gold/brown while its 100 is red `#DA2325`. We keep monotonic ramps from the Vitae/decided 100s.
+  - The 025 step doesn't exist in 2021 for any brand.
+- **Catastrophic** metal color is defined in neither file (placeholder).
+- **Vitae divergences from the 2021 type scale** (not adopted): Vitae h2 32/40, h3 28/35, 1.25 line-height everywhere, table data +2px.
+- **Vitae EA-Dark mode** exists in the Vitae variable collection; no dark theme is built here yet.
+- **Not yet designed in Vitae:** date picker calendar popover (built from tokens), dropdown option panel (native `<select>` used), tooltip (still stock Fluent 2).
+- **Secondary Outline buttons** use ramp-110 text instead of Vitae's 100 (DC/MA fail AA at 100).
+- Gold `#FABB18` lives at `color.metal.gold` and is a metal-level plan indicator ONLY. Never use it for buttons or accents.

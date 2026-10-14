@@ -87,18 +87,30 @@ export const Radius = {
   },
 };
 
+const SPEC = {"h1": "36/54 Bold", "h2": "24/36 Bold", "h3": "18/27 Bold", "dialog": "20/28 SemiBold", "paragraph": "16/24 Regular", "label": "16/24 SemiBold", "button": "16/20 SemiBold", "table-header": "16/24 SemiBold", "table-col1": "14/24 Regular", "table-data": "12/20 Regular", "breadcrumb": "14/20 Regular", "caption": "12/16 Regular"};
+
 export const Typography = {
   render: () => `
     <div style="font-family:var(--ea-font-family-brand);">
-      <p style="font-size:13px; color:var(--ea-color-text-secondary);">Brand font resolves per theme — EA: Roboto Flex · DC/MA: Open Sans · ME: Barlow</p>
-      ${['800', '700', '600', '500', '400', '300', '200', '100'].map(s => `
+      <p style="font-size:13px; color:var(--ea-color-text-secondary);">Brand font resolves per theme — EA/DC/MA: Open Sans (decided 10/14/26) · ME: Barlow</p>
+      <h3 style="margin:16px 0 8px;">Type scale (semantic <code>--ea-type-*</code>, from EA-DesignSystem-2021)</h3>
+      <table style="border-collapse:collapse;">
+        ${[['h1', 'Health coverage that works for you'], ['h2', 'Review your application'], ['h3', 'Household income'], ['dialog', 'Leave this application?'],
+           ['paragraph', 'Most applications are reviewed within 2 business days.'], ['label', 'Date of birth'], ['button', 'Continue'],
+           ['table-header', 'Plan name'], ['table-col1', 'Aetna Gold HN Only 6000'], ['table-data', '$412.18 / month'], ['breadcrumb', 'Household / Income'], ['caption', 'Tooltip text']]
+          .map(([k, txt]) => `<tr style="border-bottom:1px solid var(--ea-color-border-default);">
+            <td style="padding:8px 16px 8px 0; vertical-align:baseline;"><code style="font-size:12px;">type-${k}</code></td>
+            <td style="padding:8px 16px 8px 0; vertical-align:baseline; font-size:12px; color:var(--ea-color-text-secondary); white-space:nowrap;" >${SPEC[k]}</td>
+            <td style="padding:8px 0; font-size:var(--ea-type-${k}-size); line-height:var(--ea-type-${k}-line-height); font-weight:var(--ea-type-${k}-weight);">${txt}</td></tr>`).join('')}
+      </table>
+      <h3 style="margin:24px 0 8px;">Weights</h3>
+      ${['light', 'regular', 'medium', 'semibold', 'bold', 'extrabold'].map(w => `
+        <div style="font-weight:var(--ea-font-weight-${w}); font-size:18px; margin-bottom:4px;">${w} — Enroll App Design System</div>`).join('')}
+      <h3 style="margin:24px 0 8px;">Raw size ramp</h3>
+      ${['800', '750', '700', '600', '500', '400', '300', '200', '100'].map(s => `
         <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:8px;">
           <code style="width:90px; font-size:12px;">size-${s}</code>
           <span style="font-size:var(--ea-font-size-${s});">Health coverage that works for you</span>
         </div>`).join('')}
-      <div style="margin-top:12px;">
-        ${['light', 'regular', 'semibold', 'bold', 'extrabold'].map(w => `
-          <div style="font-weight:var(--ea-font-weight-${w}); font-size:18px; margin-bottom:4px;">${w} — Enroll App Design System</div>`).join('')}
-      </div>
     </div>`,
 };

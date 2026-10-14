@@ -47,4 +47,18 @@ export const icon = {
   documentPdf: (cls = '') => `<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M6 2h9l4 4v16H6z"/><path d="M15 2v4h4"/><path d="M8.5 14v5M8.5 14h1.2a1.4 1.4 0 010 2.8H8.5M12.5 19v-5h1a2.5 2.5 0 010 5h-1zM17 14v5M17 16.5h2"/></svg>`,
 
   documentPdfSmall: (cls = '') => `<svg class="${cls}" viewBox="0 0 24 24" fill="currentColor"><path d="M6 2h9l4 4v16H6z" opacity="0.15"/><path d="M6 2h9l4 4v16H6zm9 0v4h4" fill="none" stroke="currentColor" stroke-width="1.4"/><text x="7.5" y="17" font-size="7" font-weight="700">PDF</text></svg>`,
+  // ---- Added 10/14/26 for Vitae components (Accordion, Modal, Tag). Same conventions: monochrome, currentColor. ----
+  chevronExpand: (cls = '') => `<svg class="${cls}" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 8L10 4.5 13.5 8M6.5 12l3.5 3.5 3.5-3.5"/></svg>`,
+
+  chevronCollapse: (cls = '') => `<svg class="${cls}" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 4.5L10 8l3.5-3.5M6.5 15.5L10 12l3.5 3.5"/></svg>`,
+
+  // Filled status badges: solid shape in currentColor with a white glyph (Alert / Modal / Tag convention)
+  statusSuccess: (cls = '') => `<svg class="${cls}" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor"/><path d="M6 10.2 L8.8 13 L14 7.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  statusError: (cls = '') => `<svg class="${cls}" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor"/><path d="M6.5 6.5 L13.5 13.5 M13.5 6.5 L6.5 13.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>`,
+  statusWarning: (cls = '') => `<svg class="${cls}" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5 L19 17.5 L1 17.5 Z" fill="currentColor" stroke="currentColor" stroke-linejoin="round"/><rect x="9.1" y="7" width="1.8" height="5.5" rx=".9" fill="#fff"/><circle cx="10" cy="14.6" r="1" fill="#fff"/></svg>`,
+  statusInfo: (cls = '') => `<svg class="${cls}" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor"/><rect x="9.1" y="8.5" width="1.8" height="6" rx=".9" fill="#fff"/><circle cx="10" cy="5.9" r="1.1" fill="#fff"/></svg>`,
+  statusNeutral: (cls = '') => `<svg class="${cls}" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor"/><rect x="5" y="9" width="10" height="2" rx="1" fill="#fff"/></svg>`,
+  star: (cls = '') => `<svg class="${cls}" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8z"/></svg>`,
+  bookmark: (cls = '') => `<svg class="${cls}" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M5 2h10v16l-5-4-5 4z"/></svg>`,
+  checkCircleOutline: (cls = '') => `<svg class="${cls}" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="10" r="8.5"/><path d="M6.3 10.2l2.5 2.5 4.9-5" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
 };

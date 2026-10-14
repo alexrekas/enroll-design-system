@@ -4,61 +4,61 @@
 
 [data-theme="ma"] {
   --ea-color-ea-primary-100: #0254bc; /** Vitae EA mode; captured */
-  --ea-color-ea-primary-110: #024ca9; /** Vitae EA mode; interpolated */
+  --ea-color-ea-primary-110: #0048a1; /** 2021 DS Primary/110/EA (replaces interpolated value, 10/14/26) */
   --ea-color-ea-primary-120: #024396; /** Vitae EA mode; captured */
-  --ea-color-ea-primary-130: #023a84; /** Vitae EA mode; interpolated */
+  --ea-color-ea-primary-130: #00387d; /** 2021 DS Primary/130/EA (replaces interpolated value, 10/14/26) */
   --ea-color-ea-primary-140: #013271; /** Vitae EA mode; captured */
   --ea-color-ea-primary-150: #012a5e; /** Vitae EA mode; captured */
   --ea-color-ea-primary-005: #f2f6fc; /** Vitae EA mode; captured */
   --ea-color-ea-primary-015: #d9e6f5; /** Vitae EA mode; captured */
   --ea-color-ea-primary-025: #c0d4ee; /** Vitae EA mode; captured */
-  --ea-color-ea-primary-050: #81a9dd; /** Vitae EA mode; interpolated */
-  --ea-color-ea-primary-060: #6798d7; /** Vitae EA mode; interpolated */
-  --ea-color-ea-primary-070: #4e87d0; /** Vitae EA mode; interpolated */
-  --ea-color-ea-primary-080: #3576c9; /** Vitae EA mode; interpolated */
-  --ea-color-ea-primary-090: #1b65c3; /** Vitae EA mode; interpolated */
+  --ea-color-ea-primary-050: #7fa7d8; /** 2021 DS Primary/050/EA (replaces interpolated value, 10/14/26) */
+  --ea-color-ea-primary-060: #6696d1; /** 2021 DS Primary/060/EA (replaces interpolated value, 10/14/26) */
+  --ea-color-ea-primary-070: #4c84c9; /** 2021 DS Primary/070/EA (replaces interpolated value, 10/14/26) */
+  --ea-color-ea-primary-080: #3373c1; /** 2021 DS Primary/080/EA (replaces interpolated value, 10/14/26) */
+  --ea-color-ea-primary-090: #1961ba; /** 2021 DS Primary/090/EA (replaces interpolated value, 10/14/26) */
   --ea-color-ea-secondary-100: #3b5b81; /** Vitae default/EA context; captured */
-  --ea-color-ea-secondary-110: #355274; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-secondary-110: #355274; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
   --ea-color-ea-secondary-120: #2f4967; /** Vitae default/EA context; captured */
-  --ea-color-ea-secondary-130: #29405a; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-secondary-130: #29405a; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
   --ea-color-ea-secondary-140: #23374d; /** Vitae default/EA context; captured */
-  --ea-color-ea-secondary-150: #1b2b3c; /** extrapolated from 140 */
+  --ea-color-ea-secondary-150: #1b2b3c; /** extrapolated from 140; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
   --ea-color-ea-secondary-005: #f5f7f9; /** Vitae default/EA context; captured */
   --ea-color-ea-secondary-015: #e2e7ec; /** Vitae default/EA context; captured */
   --ea-color-ea-secondary-025: #ced6df; /** Vitae default/EA context; captured */
-  --ea-color-ea-secondary-050: #9dadc0; /** Vitae default/EA context; interpolated */
-  --ea-color-ea-secondary-060: #899db3; /** Vitae default/EA context; interpolated */
-  --ea-color-ea-secondary-070: #768ca7; /** Vitae default/EA context; interpolated */
-  --ea-color-ea-secondary-080: #627c9a; /** Vitae default/EA context; interpolated */
-  --ea-color-ea-secondary-090: #4f6b8e; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-secondary-050: #9dadc0; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
+  --ea-color-ea-secondary-060: #899db3; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
+  --ea-color-ea-secondary-070: #768ca7; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
+  --ea-color-ea-secondary-080: #627c9a; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
+  --ea-color-ea-secondary-090: #4f6b8e; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation */
   --ea-color-ea-tertiary-100: #441c36; /** Vitae default/EA context; captured */
-  --ea-color-ea-tertiary-110: #3d1930; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-tertiary-110: #3d1930; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
   --ea-color-ea-tertiary-120: #36162b; /** Vitae default/EA context; captured */
-  --ea-color-ea-tertiary-130: #301426; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-tertiary-130: #301426; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
   --ea-color-ea-tertiary-140: #291120; /** Vitae default/EA context; captured */
-  --ea-color-ea-tertiary-150: #200d19; /** extrapolated from 140 */
+  --ea-color-ea-tertiary-150: #200d19; /** extrapolated from 140; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
   --ea-color-ea-tertiary-005: #f6f2f5; /** Vitae default/EA context; captured */
   --ea-color-ea-tertiary-015: #e3dde1; /** Vitae default/EA context; captured */
   --ea-color-ea-tertiary-025: #d0c6cd; /** Vitae default/EA context; captured */
-  --ea-color-ea-tertiary-050: #a18d9b; /** Vitae default/EA context; interpolated */
-  --ea-color-ea-tertiary-060: #8f7787; /** Vitae default/EA context; interpolated */
-  --ea-color-ea-tertiary-070: #7c6072; /** Vitae default/EA context; interpolated */
-  --ea-color-ea-tertiary-080: #69495e; /** Vitae default/EA context; interpolated */
-  --ea-color-ea-tertiary-090: #57334a; /** Vitae default/EA context; interpolated */
+  --ea-color-ea-tertiary-050: #a18d9b; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
+  --ea-color-ea-tertiary-060: #8f7787; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
+  --ea-color-ea-tertiary-070: #7c6072; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
+  --ea-color-ea-tertiary-080: #69495e; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
+  --ea-color-ea-tertiary-090: #57334a; /** Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation */
   --ea-color-dc-primary-100: #003260; /** Vitae DC mode / decided #003260; captured */
-  --ea-color-dc-primary-110: #002d56; /** Vitae DC mode / decided #003260; interpolated */
+  --ea-color-dc-primary-110: #002d56; /** Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260 */
   --ea-color-dc-primary-120: #00284d; /** Vitae DC mode / decided #003260; captured */
   --ea-color-dc-primary-130: #002343; /** Vitae DC mode / decided #003260; captured */
   --ea-color-dc-primary-140: #001e3a; /** Vitae DC mode / decided #003260; captured */
   --ea-color-dc-primary-150: #001930; /** Vitae DC mode / decided #003260; captured */
   --ea-color-dc-primary-005: #f2f5f7; /** Vitae DC mode / decided #003260; captured */
   --ea-color-dc-primary-015: #d9e0e7; /** Vitae DC mode / decided #003260; captured */
-  --ea-color-dc-primary-025: #bfccd7; /** Vitae DC mode / decided #003260; interpolated */
-  --ea-color-dc-primary-050: #8098af; /** Vitae DC mode / decided #003260; interpolated */
-  --ea-color-dc-primary-060: #6684a0; /** Vitae DC mode / decided #003260; interpolated */
-  --ea-color-dc-primary-070: #4d6f90; /** Vitae DC mode / decided #003260; interpolated */
-  --ea-color-dc-primary-080: #335b80; /** Vitae DC mode / decided #003260; interpolated */
-  --ea-color-dc-primary-090: #1a4670; /** Vitae DC mode / decided #003260; interpolated */
+  --ea-color-dc-primary-025: #bfccd7; /** Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260; 2021 DS has no 025 step */
+  --ea-color-dc-primary-050: #8098af; /** Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260 */
+  --ea-color-dc-primary-060: #6684a0; /** Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260 */
+  --ea-color-dc-primary-070: #4d6f90; /** Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260 */
+  --ea-color-dc-primary-080: #335b80; /** Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260 */
+  --ea-color-dc-primary-090: #1a4670; /** Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260 */
   --ea-color-dc-secondary-100: #0076cc; /** Vitae DC mode; captured */
   --ea-color-dc-secondary-110: #006ab8; /** Vitae DC mode; captured */
   --ea-color-dc-secondary-120: #005ea3; /** Vitae DC mode; captured */
@@ -67,7 +67,7 @@
   --ea-color-dc-secondary-150: #003b66; /** Vitae DC mode; captured */
   --ea-color-dc-secondary-005: #f2f8fc; /** Vitae DC mode; captured */
   --ea-color-dc-secondary-015: #d9ecf7; /** Vitae DC mode; captured */
-  --ea-color-dc-secondary-025: #bfdef2; /** Vitae DC mode; interpolated */
+  --ea-color-dc-secondary-025: #bfdef2; /** Vitae DC mode; interpolated; 2021 DS has no 025 step */
   --ea-color-dc-secondary-050: #7fbae5; /** Vitae DC mode; captured */
   --ea-color-dc-secondary-060: #66ade0; /** Vitae DC mode; captured */
   --ea-color-dc-secondary-070: #4c9fdb; /** Vitae DC mode; captured */
@@ -81,7 +81,7 @@
   --ea-color-dc-tertiary-150: #6d1213; /** Vitae DC mode; decided: red; captured */
   --ea-color-dc-tertiary-005: #fcf2f2; /** Vitae DC mode; decided: red; captured */
   --ea-color-dc-tertiary-015: #f8dcdc; /** Vitae DC mode; decided: red; captured */
-  --ea-color-dc-tertiary-025: #f5c7c7; /** Vitae DC mode; decided: red; interpolated */
+  --ea-color-dc-tertiary-025: #f5c7c7; /** Vitae DC mode; decided: red; interpolated; 2021 DS has no 025 step */
   --ea-color-dc-tertiary-050: #ec9192; /** Vitae DC mode; decided: red; captured */
   --ea-color-dc-tertiary-060: #e97b7c; /** Vitae DC mode; decided: red; captured */
   --ea-color-dc-tertiary-070: #e56566; /** Vitae DC mode; decided: red; captured */
@@ -95,7 +95,7 @@
   --ea-color-me-primary-150: #1f2f38; /** 2021 DS CME; captured */
   --ea-color-me-primary-005: #f4f6f7; /** 2021 DS CME; captured */
   --ea-color-me-primary-015: #dfe5e8; /** 2021 DS CME; captured */
-  --ea-color-me-primary-025: #ccd5da; /** 2021 DS CME; interpolated */
+  --ea-color-me-primary-025: #ccd5da; /** 2021 DS CME; interpolated; 2021 DS has no 025 step */
   --ea-color-me-primary-050: #9eaeb7; /** 2021 DS CME; captured */
   --ea-color-me-primary-060: #8b9ea9; /** 2021 DS CME; captured */
   --ea-color-me-primary-070: #778d9a; /** 2021 DS CME; captured */
@@ -109,7 +109,7 @@
   --ea-color-me-secondary-150: #1a3040; /** 2021 DS CME; captured */
   --ea-color-me-secondary-005: #f4f7fa; /** 2021 DS CME; captured */
   --ea-color-me-secondary-015: #dfe9f0; /** 2021 DS CME; captured */
-  --ea-color-me-secondary-025: #c8d8e4; /** 2021 DS CME; interpolated */
+  --ea-color-me-secondary-025: #c8d8e4; /** 2021 DS CME; interpolated; 2021 DS has no 025 step */
   --ea-color-me-secondary-050: #8dadc6; /** 2021 DS CME; captured */
   --ea-color-me-secondary-060: #7aa0bc; /** 2021 DS CME; captured */
   --ea-color-me-secondary-070: #6792b3; /** 2021 DS CME; captured */
@@ -123,7 +123,7 @@
   --ea-color-me-tertiary-150: #283317; /** 2021 DS CME; captured */
   --ea-color-me-tertiary-005: #f6f8f2; /** 2021 DS CME; captured */
   --ea-color-me-tertiary-015: #e6ecdb; /** 2021 DS CME; captured */
-  --ea-color-me-tertiary-025: #d3dbc4; /** 2021 DS CME; interpolated */
+  --ea-color-me-tertiary-025: #d3dbc4; /** 2021 DS CME; interpolated; 2021 DS has no 025 step */
   --ea-color-me-tertiary-050: #a2b289; /** 2021 DS CME; captured */
   --ea-color-me-tertiary-060: #92a575; /** 2021 DS CME; captured */
   --ea-color-me-tertiary-070: #839961; /** 2021 DS CME; captured */
@@ -137,7 +137,7 @@
   --ea-color-ma-primary-150: #002f41; /** 2021 DS MAHC; captured */
   --ea-color-ma-primary-005: #f2f7f9; /** 2021 DS MAHC; captured */
   --ea-color-ma-primary-015: #d9e7ed; /** 2021 DS MAHC; captured */
-  --ea-color-ma-primary-025: #bfd7e0; /** 2021 DS MAHC; interpolated */
+  --ea-color-ma-primary-025: #bfd7e0; /** 2021 DS MAHC; interpolated; 2021 DS has no 025 step */
   --ea-color-ma-primary-050: #7faec0; /** 2021 DS MAHC; captured */
   --ea-color-ma-primary-060: #669eb3; /** 2021 DS MAHC; captured */
   --ea-color-ma-primary-070: #4c8ea7; /** 2021 DS MAHC; captured */
@@ -151,26 +151,26 @@
   --ea-color-ma-secondary-150: #612c00; /** 2021 DS MAHC; captured */
   --ea-color-ma-secondary-005: #fcf7f2; /** 2021 DS MAHC; captured */
   --ea-color-ma-secondary-015: #f6e6d9; /** 2021 DS MAHC; captured */
-  --ea-color-ma-secondary-025: #f0d5bf; /** 2021 DS MAHC; interpolated */
+  --ea-color-ma-secondary-025: #f0d5bf; /** 2021 DS MAHC; interpolated; 2021 DS has no 025 step */
   --ea-color-ma-secondary-050: #e0ab7f; /** 2021 DS MAHC; captured */
   --ea-color-ma-secondary-060: #da9b66; /** 2021 DS MAHC; captured */
   --ea-color-ma-secondary-070: #d38a4c; /** 2021 DS MAHC; captured */
   --ea-color-ma-secondary-080: #cd7933; /** 2021 DS MAHC; captured */
   --ea-color-ma-secondary-090: #c76819; /** 2021 DS MAHC; captured */
   --ea-color-ma-tertiary-100: #00224c; /** 2021 DS Buttons matrix (Tertiary/ME→MA); captured */
-  --ea-color-ma-tertiary-110: #001e44; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
+  --ea-color-ma-tertiary-110: #001f45; /** 2021 DS Tertiary/110/MA (replaces interpolated value, 10/14/26) */
   --ea-color-ma-tertiary-120: #001b3d; /** 2021 DS Buttons matrix (Tertiary/ME→MA); captured */
-  --ea-color-ma-tertiary-130: #001836; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
+  --ea-color-ma-tertiary-130: #001835; /** 2021 DS Tertiary/130/MA (replaces interpolated value, 10/14/26) */
   --ea-color-ma-tertiary-140: #00142e; /** 2021 DS Buttons matrix (Tertiary/ME→MA); captured */
-  --ea-color-ma-tertiary-150: #001024; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
+  --ea-color-ma-tertiary-150: #001126; /** 2021 DS Tertiary/150/MA (replaces interpolated value, 10/14/26) */
   --ea-color-ma-tertiary-005: #f2f4f6; /** 2021 DS Buttons matrix (Tertiary/ME→MA); captured */
   --ea-color-ma-tertiary-015: #d9dee4; /** 2021 DS Buttons matrix (Tertiary/ME→MA); captured */
-  --ea-color-ma-tertiary-025: #bfc8d2; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
-  --ea-color-ma-tertiary-050: #8091a5; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
-  --ea-color-ma-tertiary-060: #667a94; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
-  --ea-color-ma-tertiary-070: #4d6482; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
-  --ea-color-ma-tertiary-080: #334e70; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
-  --ea-color-ma-tertiary-090: #1a385e; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated */
+  --ea-color-ma-tertiary-025: #bfc8d2; /** 2021 DS Buttons matrix (Tertiary/ME→MA); interpolated; 2021 DS has no 025 step */
+  --ea-color-ma-tertiary-050: #7f90a5; /** 2021 DS Tertiary/050/MA (replaces interpolated value, 10/14/26) */
+  --ea-color-ma-tertiary-060: #667a94; /** 2021 DS Tertiary/060/MA (replaces interpolated value, 10/14/26) */
+  --ea-color-ma-tertiary-070: #4c6481; /** 2021 DS Tertiary/070/MA (replaces interpolated value, 10/14/26) */
+  --ea-color-ma-tertiary-080: #334e70; /** 2021 DS Tertiary/080/MA (replaces interpolated value, 10/14/26) */
+  --ea-color-ma-tertiary-090: #19385e; /** 2021 DS Tertiary/090/MA (replaces interpolated value, 10/14/26) */
   --ea-color-gray-100: #201f1e; /** 2021 grey-190 */
   --ea-color-gray-110: #0d0d0d; /** Vitae gray-190 — focus ring */
   --ea-color-gray-000: #ffffff; /** Vitae gray-000 */
@@ -197,19 +197,33 @@
   --ea-color-feedback-success-100: #027314; /** 2021 DS Alert/success-icon */
   --ea-color-feedback-success-120: #025c10; /** shade */
   --ea-color-feedback-success-010: #e0f8e4; /** 2021 DS success alert bg */
+  --ea-color-feedback-success-020: #c6f1cd; /** Vitae color/background/notification-success */
   --ea-color-feedback-warning-100: #a37a00; /** 2021 DS Alert/warning border is #FFD600, but that fails WCAG non-text contrast (1.34:1) against the warning surface #FFFADF. Darkened to #A37A00 (3.74:1, passes 3:1) -- an intentional deviation from the legacy file for AA compliance, flagged 7/10/26. */
   --ea-color-feedback-warning-120: #8a6800; /** shade */
   --ea-color-feedback-warning-010: #fffadf; /** 2021 DS Alert/warning-background (Warning2 bordered variant) */
+  --ea-color-feedback-warning-020: #ffecb4; /** Vitae color/background/notification-warning */
+  --ea-color-feedback-warning-vitae: #e5a900; /** Vitae color/other/status-warning -- decorative icon fill only; fails 3:1 as a border on #ffecb4, so borders use warning.100 */
   --ea-color-feedback-info-100: #005689; /** 2021 DS Alert/info-icon */
   --ea-color-feedback-info-120: #003f66; /** shade */
   --ea-color-feedback-info-010: #e0f1fa; /** 2021 DS Alert/info-background (Info2 bordered variant) */
-  --ea-color-metal-gold: #f7b319; /** Metal level: Gold — plan indicator ONLY, never UI accent (decided 7/9/26) */
-  --ea-color-metal-bronze: #cd7f32; /** PLACEHOLDER — extract from DS */
-  --ea-color-metal-silver: #c0c0c0; /** PLACEHOLDER — extract from DS */
-  --ea-color-metal-platinum: #e5e4e2; /** PLACEHOLDER — extract from DS */
-  --ea-color-metal-catastrophic: #9b9b9b; /** PLACEHOLDER — extract from DS */
+  --ea-color-feedback-info-020: #cce5f3; /** Vitae color/background/notification-info */
+  --ea-color-metal-gold: #fabb18; /** 2021 DS Metal-Level/Gold = Vitae semantic Color/Border/Tag/gold; confirmed by Alex 10/14/26 (#F7B319 was legacy Enroll code, not Vitae). Vitae's primitive layer still holds older values (gold #D4AF37, platinum #E5E4E2) -- superseded. Plan indicator ONLY. */
+  --ea-color-metal-bronze: #cd7f32; /** 2021 DS Metal-Level/Bronze = Vitae semantic Color/Border/Tag/bronze; confirmed by Alex 10/14/26 (#F7B319 was legacy Enroll code, not Vitae). Vitae's primitive layer still holds older values (gold #D4AF37, platinum #E5E4E2) -- superseded. Plan indicator ONLY. */
+  --ea-color-metal-silver: #c0c0c0; /** 2021 DS Metal-Level/Silver = Vitae semantic Color/Border/Tag/silver; confirmed by Alex 10/14/26 (#F7B319 was legacy Enroll code, not Vitae). Vitae's primitive layer still holds older values (gold #D4AF37, platinum #E5E4E2) -- superseded. Plan indicator ONLY. */
+  --ea-color-metal-platinum: #5d5d60; /** 2021 DS Metal-Level/Platinum = Vitae semantic Color/Border/Tag/platinum; confirmed by Alex 10/14/26 (#F7B319 was legacy Enroll code, not Vitae). Vitae's primitive layer still holds older values (gold #D4AF37, platinum #E5E4E2) -- superseded. Plan indicator ONLY. */
+  --ea-color-metal-catastrophic: #9b9b9b; /** PLACEHOLDER -- not defined in EA-DesignSystem-2021 or Vitae; needs a value */
+  --ea-color-metal-gold-surface: #fdeec5; /** Vitae Color/Background/Tag/gold */
+  --ea-color-metal-silver-surface: #efefef; /** Vitae Color/Background/Tag/silver */
+  --ea-color-metal-bronze-surface: #f2dfcb; /** Vitae Color/Background/Tag/bronze */
+  --ea-color-metal-platinum-surface: #d6d6d7; /** Vitae Color/Background/Tag/platinum */
   --ea-color-coolgray-070: #57595b; /** Vitae text/placeholder */
   --ea-color-coolgray-080: #4b5159; /** Vitae text/secondary */
+  --ea-color-program-dc-healthy-bg: #f8f3f9; /** Vitae tag/dc-healthy-dc-plan bg */
+  --ea-color-program-dc-healthy-border: #711f8b; /** Vitae tag/dc-healthy-dc-plan border */
+  --ea-color-program-me-clear-choice-bg: #d5c1ce; /** Vitae tag/me-clear-choice-plan bg */
+  --ea-color-program-me-clear-choice-border: #824270; /** Vitae tag/me-clear-choice-plan border */
+  --ea-color-surface-overlay: rgba(0, 0, 0, 0.4); /** modal scrim */
+  --ea-color-border-focus-outline: #1e1e1e; /** Vitae color/border/focus-outline (dashed focus ring) */
   --ea-space-100: 8px; /** Vitae */
   --ea-space-125: 10px; /** Vitae button padding-y */
   --ea-space-150: 12px; /** Vitae */
@@ -225,12 +239,15 @@
   --ea-space-075: 6px; /** Vitae */
   --ea-radius-12: 12px; /** Vitae */
   --ea-radius-16: 16px; /** Vitae */
+  --ea-radius-24: 24px; /** Vitae tag pill / Vitae button */
   --ea-radius-48: 48px; /** Vitae (pill) */
   --ea-radius-02: 2px; /** Vitae */
   --ea-radius-04: 4px; /** Vitae */
   --ea-radius-08: 8px; /** extension */
   --ea-radius-pill: 999px; /** extension */
-  --ea-font-family-base: 'Roboto Flex', 'Open Sans', Arial, sans-serif; /** Vitae typography/font-family; code's Open Sans kept as fallback */
+  --ea-radius-03: 3px; /** 2021 DS MA button */
+  --ea-radius-06: 6px; /** 2021 DS EA/ME button */
+  --ea-font-family-base: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; /** decided 10/14/26: Open Sans is the base font (replaces Vitae's Roboto Flex) */
   --ea-font-family-alt: 'Barlow', 'Open Sans', sans-serif; /** code: Barlow available */
   --ea-font-family-open-sans: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   --ea-font-weight-light: 300;
@@ -238,6 +255,7 @@
   --ea-font-weight-semibold: 600;
   --ea-font-weight-bold: 700;
   --ea-font-weight-extrabold: 800;
+  --ea-font-weight-medium: 500; /** Vitae tag text weight */
   --ea-font-size-100: 12px;
   --ea-font-size-200: 14px;
   --ea-font-size-300: 16px;
@@ -245,20 +263,27 @@
   --ea-font-size-500: 20px;
   --ea-font-size-600: 24px;
   --ea-font-size-700: 30px;
+  --ea-font-size-750: 36px; /** 2021 DS h1 / Vitae h1 */
   --ea-font-size-800: 38px;
   --ea-font-line-height-tight: 1.2;
   --ea-font-line-height-base: 1.5;
   --ea-font-line-height-heading: 1.3;
   --ea-font-line-height-paragraph: 1.25; /** Vitae: 20px at 16px */
+  --ea-font-line-height-px-20px: 20px; /** 2021 button-text / breadcrumb / table col1+n */
+  --ea-font-line-height-px-21px: 21px; /** 2021 Filter-Heading */
+  --ea-font-line-height-px-24px: 24px; /** 2021 paragraph/label/table 1.5 */
+  --ea-font-line-height-px-27px: 27px; /** 2021 h3 */
+  --ea-font-line-height-px-28px: 28px; /** 2021 dialog-box-header */
+  --ea-font-line-height-px-36px: 36px; /** 2021 h2 */
+  --ea-font-line-height-px-54px: 54px; /** 2021 h1 */
   --ea-focus-ring-width: 2px;
   --ea-focus-ring-offset: 2px; /** light gap between component and ring */
-  --ea-button-outline-bg: rgba(0, 0, 0, 0); /** 2021 DS Type=Outline modifier (available for any level, not yet wired into a Figma variant -- follow-up) */
-  --ea-button-outline-border-width: 2px;
+  --ea-button-destructive-outline-bg: rgba(0, 0, 0, 0); /** Vitae outline fill */
   --ea-button-icon-size: 20px; /** 2021 DS button icon slot size */
   --ea-button-min-height: 44px; /** Vitae base button */
   --ea-button-text-transform: capitalize; /** Vitae base button */
+  --ea-button-border-width: 2px; /** Vitae */
   --ea-input-border-width: 2px; /** Vitae input spec */
-  --ea-alert-radius: 12px; /** 2021 DS alert spec */
   --ea-alert-border-width: 1px;
   --ea-alert-icon-size: 24px;
   --ea-form-min-height: 44px; /** 2021 DS min tap target */
@@ -275,10 +300,20 @@
   --ea-nav-left-nav-width: 280px;
   --ea-card-padding-x: 20px;
   --ea-card-padding-y: 15px;
+  --ea-tag-border-width: 1px;
+  --ea-tag-icon-size: 16px;
   --ea-table-row-height: 44px;
   --ea-progress-height: 4px;
   --ea-login-card-radius: 10px;
   --ea-login-card-width: 400px;
+  --ea-accordion-icon-size: 20px;
+  --ea-modal-width: 560px; /** Vitae */
+  --ea-modal-shadow: 0 4.8px 14.4px rgba(0,0,0,0.18), 0 25.6px 57.6px rgba(0,0,0,0.22); /** Vitae Elevation64 */
+  --ea-tooltip-max-width: 240px;
+  --ea-tooltip-padding-top: 5px;
+  --ea-tooltip-padding-bottom: 7px;
+  --ea-tooltip-shadow: 0 0 2px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.14); /** Fluent Shadow 08 */
+  --ea-tooltip-beak-size: 6px;
   --ea-color-text-primary: var(--ea-color-gray-090);
   --ea-color-text-secondary: var(--ea-color-coolgray-080); /** Vitae text/secondary */
   --ea-color-text-disabled: var(--ea-color-gray-050);
@@ -301,6 +336,10 @@
   --ea-color-status-warning-surface: var(--ea-color-feedback-warning-010);
   --ea-color-status-info: var(--ea-color-feedback-info-100);
   --ea-color-status-info-surface: var(--ea-color-feedback-info-010);
+  --ea-color-status-info-notification: var(--ea-color-feedback-info-020); /** Vitae notification-info surface (alerts, tags, modal accents) */
+  --ea-color-status-success-notification: var(--ea-color-feedback-success-020); /** Vitae notification-success surface (alerts, tags, modal accents) */
+  --ea-color-status-warning-notification: var(--ea-color-feedback-warning-020); /** Vitae notification-warning surface (alerts, tags, modal accents) */
+  --ea-color-status-error-notification: var(--ea-color-feedback-error-015); /** Vitae notification-error surface (alerts, tags, modal accents) */
   --ea-color-brand-primary-100: var(--ea-color-ma-primary-100);
   --ea-color-brand-primary-110: var(--ea-color-ma-primary-110);
   --ea-color-brand-primary-120: var(--ea-color-ma-primary-120);
@@ -343,7 +382,7 @@
   --ea-color-brand-tertiary-070: var(--ea-color-ma-tertiary-070);
   --ea-color-brand-tertiary-080: var(--ea-color-ma-tertiary-080);
   --ea-color-brand-tertiary-090: var(--ea-color-ma-tertiary-090);
-  --ea-radius-button: var(--ea-radius-12); /** decided 7/9/26: matches DC; Vitae's 48px was an error */
+  --ea-radius-button: var(--ea-radius-03); /** EA-DesignSystem-2021 Biome=MA Primary Solid: 3px (decided 10/14/26: button radius comes from 2021 DS; Vitae draws 24px) */
   --ea-font-family-brand: var(--ea-font-family-open-sans); /** decided 7/9/26: DC and MA use Open Sans */
   --ea-text-body-size: var(--ea-font-size-300);
   --ea-text-body-weight: var(--ea-font-weight-regular);
@@ -351,12 +390,60 @@
   --ea-text-heading-weight: var(--ea-font-weight-semibold);
   --ea-text-heading-line-height: var(--ea-font-line-height-heading);
   --ea-focus-ring-color: var(--ea-color-gray-110); /** Vitae: 2px gray-190 ring on focus */
+  --ea-type-h1-size: var(--ea-font-size-750);
+  --ea-type-h1-line-height: var(--ea-font-line-height-px-54px);
+  --ea-type-h1-weight: var(--ea-font-weight-bold);
+  --ea-type-h2-size: var(--ea-font-size-600);
+  --ea-type-h2-line-height: var(--ea-font-line-height-px-36px);
+  --ea-type-h2-weight: var(--ea-font-weight-bold);
+  --ea-type-h3-size: var(--ea-font-size-400);
+  --ea-type-h3-line-height: var(--ea-font-line-height-px-27px);
+  --ea-type-h3-weight: var(--ea-font-weight-bold);
+  --ea-type-dialog-size: var(--ea-font-size-500);
+  --ea-type-dialog-line-height: var(--ea-font-line-height-px-28px);
+  --ea-type-dialog-weight: var(--ea-font-weight-semibold);
+  --ea-type-paragraph-size: var(--ea-font-size-300);
+  --ea-type-paragraph-line-height: var(--ea-font-line-height-px-24px);
+  --ea-type-paragraph-weight: var(--ea-font-weight-regular);
+  --ea-type-label-size: var(--ea-font-size-300);
+  --ea-type-label-line-height: var(--ea-font-line-height-px-24px);
+  --ea-type-label-weight: var(--ea-font-weight-semibold);
+  --ea-type-button-size: var(--ea-font-size-300);
+  --ea-type-button-line-height: var(--ea-font-line-height-px-20px);
+  --ea-type-button-weight: var(--ea-font-weight-semibold);
+  --ea-type-table-header-size: var(--ea-font-size-300);
+  --ea-type-table-header-line-height: var(--ea-font-line-height-px-24px);
+  --ea-type-table-header-weight: var(--ea-font-weight-semibold);
+  --ea-type-table-col1-size: var(--ea-font-size-200);
+  --ea-type-table-col1-line-height: var(--ea-font-line-height-px-24px);
+  --ea-type-table-col1-weight: var(--ea-font-weight-regular);
+  --ea-type-table-data-size: var(--ea-font-size-100);
+  --ea-type-table-data-line-height: var(--ea-font-line-height-px-20px);
+  --ea-type-table-data-weight: var(--ea-font-weight-regular);
+  --ea-type-breadcrumb-size: var(--ea-font-size-200);
+  --ea-type-breadcrumb-line-height: var(--ea-font-line-height-px-20px);
+  --ea-type-breadcrumb-weight: var(--ea-font-weight-regular);
+  --ea-type-caption-size: var(--ea-font-size-100);
+  --ea-type-caption-line-height: var(--ea-font-size-300);
+  --ea-type-caption-weight: var(--ea-font-weight-regular);
+  --ea-button-destructive-border: var(--ea-color-feedback-error-140); /** Vitae solid button 2px border = ramp 140 */
+  --ea-button-destructive-outline-bg-hover: var(--ea-color-feedback-error-010);
+  --ea-button-destructive-outline-bg-active: var(--ea-color-feedback-error-015);
+  --ea-button-destructive-outline-border: var(--ea-color-feedback-error-100);
+  --ea-button-destructive-outline-text: var(--ea-color-feedback-error-100);
+  --ea-button-destructive-outline-text-hover: var(--ea-color-feedback-error-120);
+  --ea-button-destructive-outline-text-active: var(--ea-color-feedback-error-140);
+  --ea-button-destructive-ghost-text: var(--ea-color-feedback-error-100);
+  --ea-button-destructive-ghost-text-hover: var(--ea-color-feedback-error-120);
+  --ea-button-destructive-ghost-text-active: var(--ea-color-feedback-error-140);
+  --ea-button-destructive-ghost-bg-hover: var(--ea-color-feedback-error-010); /** light tint on hover (Vitae shows text-only; tint added for affordance) */
   --ea-button-disabled-bg: var(--ea-color-gray-020); /** 2021 DS Input/button-disabled -- ONE shared disabled look for every button level (Primary/Secondary/Tertiary/Destructive). Aliased to gray.020 (Vitae's own 'button-disabled' primitive, #e2e2e2) rather than the near-identical literal #E1DFDD previously here -- same legacy color within extraction tolerance, now token-chained. */
   --ea-button-disabled-text: var(--ea-color-gray-055); /** 2021 DS Text/disabled, now aliased to color.gray.055 */
   --ea-button-icon-gap: var(--ea-space-100); /** 2021 DS icon-text-chevron gap */
   --ea-button-padding-x: var(--ea-space-200);
   --ea-button-padding-y: var(--ea-space-125); /** Vitae: 10px */
   --ea-button-font-weight: var(--ea-font-weight-semibold); /** Vitae Button-Text/*: SemiBold 16/20 all brands */
+  --ea-button-focus-ring: var(--ea-color-border-focus-outline); /** Vitae dashed focus outline */
   --ea-input-bg-disabled: var(--ea-color-gray-020); /** Vitae disabled fill */
   --ea-input-border: var(--ea-color-gray-045); /** Vitae input-rest */
   --ea-input-border-hover: var(--ea-color-gray-065); /** Vitae input-hover */
@@ -369,6 +456,7 @@
   --ea-input-placeholder: var(--ea-color-coolgray-070); /** Vitae text/placeholder */
   --ea-input-label-weight: var(--ea-font-weight-semibold);
   --ea-input-error-info-bg: var(--ea-color-feedback-error-015);
+  --ea-alert-radius: var(--ea-radius-12); /** Vitae + 2021 alert: 12px */
   --ea-alert-padding: var(--ea-space-150);
   --ea-form-border: var(--ea-color-gray-045); /** 2021 DS Input/atrest -- shared rest border for Toggle, Checkbox, Radio-Button */
   --ea-form-border-hover: var(--ea-color-gray-065); /** 2021 DS Input/hover */
@@ -378,6 +466,7 @@
   --ea-form-disabled-bg: var(--ea-color-gray-010); /** 2021 DS Greys/grey-020 disabled track/box background */
   --ea-toggle-radius: var(--ea-radius-pill);
   --ea-checkbox-radius: var(--ea-radius-04);
+  --ea-checkbox-row-radius: var(--ea-radius-12); /** Vitae .base-Checkbox 12px */
   --ea-radio-radius: var(--ea-radius-pill);
   --ea-nav-breadcrumb-gap: var(--ea-space-050);
   --ea-nav-pagination-gap: var(--ea-space-100);
@@ -388,12 +477,26 @@
   --ea-nav-left-nav-item-padding-y: var(--ea-space-150);
   --ea-card-radius: var(--ea-radius-04); /** 2021 DS Card radius (approx 5px -> using 4px scale step) */
   --ea-card-gap: var(--ea-space-150);
-  --ea-tag-default-bg: var(--ea-color-gray-020); /** 2021 DS Greys/grey-030 (approx) */
-  --ea-tag-warning-bg: var(--ea-color-metal-gold); /** 2021 DS Metal-Level/Gold -- warning tag uses the gold swatch, not the feedback-warning color */
-  --ea-tag-radius-pill: var(--ea-radius-pill);
-  --ea-tag-radius-status: var(--ea-radius-04);
-  --ea-tag-gap: var(--ea-space-050);
-  --ea-tag-padding-x: var(--ea-space-100);
+  --ea-tag-radius: var(--ea-radius-24); /** Vitae tag pill 24px */
+  --ea-tag-padding-x: var(--ea-space-150);
+  --ea-tag-padding-y: var(--ea-space-075);
+  --ea-tag-gap: var(--ea-space-075);
+  --ea-tag-font-size: var(--ea-font-size-300);
+  --ea-tag-font-weight: var(--ea-font-weight-medium); /** Vitae Medium */
+  --ea-tag-neutral-bg: var(--ea-color-gray-020); /** Vitae Type=Null */
+  --ea-tag-neutral-border: var(--ea-color-gray-080); /** Vitae gray-150 #404040 (nearest) */
+  --ea-tag-dc-healthy-bg: var(--ea-color-program-dc-healthy-bg);
+  --ea-tag-dc-healthy-border: var(--ea-color-program-dc-healthy-border);
+  --ea-tag-me-clear-choice-bg: var(--ea-color-program-me-clear-choice-bg);
+  --ea-tag-me-clear-choice-border: var(--ea-color-program-me-clear-choice-border);
+  --ea-tag-metal-gold-bg: var(--ea-color-metal-gold-surface);
+  --ea-tag-metal-gold-border: var(--ea-color-metal-gold); /** Vitae Tag/gold border */
+  --ea-tag-metal-silver-bg: var(--ea-color-metal-silver-surface);
+  --ea-tag-metal-silver-border: var(--ea-color-metal-silver); /** Vitae Tag/silver border */
+  --ea-tag-metal-bronze-bg: var(--ea-color-metal-bronze-surface);
+  --ea-tag-metal-bronze-border: var(--ea-color-metal-bronze); /** Vitae Tag/bronze border */
+  --ea-tag-metal-platinum-bg: var(--ea-color-metal-platinum-surface);
+  --ea-tag-metal-platinum-border: var(--ea-color-metal-platinum); /** Vitae Tag/platinum border */
   --ea-table-header-border: var(--ea-color-gray-060); /** 2021 DS Greys/grey-060 */
   --ea-table-row-border: var(--ea-color-gray-020); /** 2021 DS Greys/grey-030 (approx) */
   --ea-table-cell-padding: var(--ea-space-150);
@@ -402,6 +505,17 @@
   --ea-login-gap: var(--ea-space-300);
   --ea-plan-card-radius: var(--ea-radius-04);
   --ea-plan-footer-bg: var(--ea-color-gray-020); /** 2021 DS Greys/grey-030 (approx) */
+  --ea-accordion-radius: var(--ea-radius-08);
+  --ea-accordion-padding: var(--ea-space-150);
+  --ea-accordion-gap: var(--ea-space-150);
+  --ea-accordion-title-weight: var(--ea-font-weight-bold);
+  --ea-modal-radius: var(--ea-radius-04); /** Vitae 4px */
+  --ea-modal-padding: var(--ea-space-200);
+  --ea-modal-gap: var(--ea-space-200);
+  --ea-modal-button-gap: var(--ea-space-075);
+  --ea-modal-scrim: var(--ea-color-surface-overlay);
+  --ea-tooltip-radius: var(--ea-radius-04);
+  --ea-tooltip-padding-x: var(--ea-space-150);
   --ea-color-text-link: var(--ea-color-brand-primary-100); /** decided 7/9/26: links use client primary */
   --ea-color-text-link-visited: var(--ea-color-brand-tertiary-100); /** Vitae: hyperlink-visited = tertiary */
   --ea-color-surface-brand: var(--ea-color-brand-primary-100);
@@ -415,14 +529,50 @@
   --ea-button-primary-bg-disabled: var(--ea-button-disabled-bg); /** corrected 7/10/26 to the shared 2021 DS disabled look */
   --ea-button-primary-text: var(--ea-color-text-on-action);
   --ea-button-primary-text-disabled: var(--ea-button-disabled-text);
+  --ea-button-primary-border: var(--ea-color-brand-primary-140); /** Vitae solid button 2px border = ramp 140 */
+  --ea-button-primary-outline-bg: var(--ea-color-brand-primary-005); /** Vitae outline fill */
+  --ea-button-primary-outline-bg-hover: var(--ea-color-brand-primary-015);
+  --ea-button-primary-outline-bg-active: var(--ea-color-brand-primary-025);
+  --ea-button-primary-outline-border: var(--ea-color-brand-primary-100);
+  --ea-button-primary-outline-text: var(--ea-color-brand-primary-100);
+  --ea-button-primary-outline-text-hover: var(--ea-color-brand-primary-120);
+  --ea-button-primary-outline-text-active: var(--ea-color-brand-primary-140);
+  --ea-button-primary-ghost-text: var(--ea-color-brand-primary-100);
+  --ea-button-primary-ghost-text-hover: var(--ea-color-brand-primary-120);
+  --ea-button-primary-ghost-text-active: var(--ea-color-brand-primary-140);
+  --ea-button-primary-ghost-bg-hover: var(--ea-color-brand-primary-005); /** light tint on hover (Vitae shows text-only; tint added for affordance) */
   --ea-button-secondary-bg: var(--ea-color-brand-secondary-100); /** 2021 DS Level=Secondary is a SOLID button using the brand secondary ramp (not an outline) -- corrected 7/10/26 */
   --ea-button-secondary-bg-hover: var(--ea-color-brand-secondary-120);
   --ea-button-secondary-bg-active: var(--ea-color-brand-secondary-140);
   --ea-button-secondary-text: var(--ea-color-text-on-action);
+  --ea-button-secondary-border: var(--ea-color-brand-secondary-140); /** Vitae solid button 2px border = ramp 140 */
+  --ea-button-secondary-outline-bg: var(--ea-color-brand-secondary-005); /** Vitae outline fill */
+  --ea-button-secondary-outline-bg-hover: var(--ea-color-brand-secondary-015);
+  --ea-button-secondary-outline-bg-active: var(--ea-color-brand-secondary-025);
+  --ea-button-secondary-outline-border: var(--ea-color-brand-secondary-100);
+  --ea-button-secondary-outline-text: var(--ea-color-brand-secondary-110); /** ramp 110 (not Vitae 100): DC #0076cc and MA #c15800 at 100 fail 4.5:1 on the 005 outline fill */
+  --ea-button-secondary-outline-text-hover: var(--ea-color-brand-secondary-130);
+  --ea-button-secondary-outline-text-active: var(--ea-color-brand-secondary-150);
+  --ea-button-secondary-ghost-text: var(--ea-color-brand-secondary-100);
+  --ea-button-secondary-ghost-text-hover: var(--ea-color-brand-secondary-120);
+  --ea-button-secondary-ghost-text-active: var(--ea-color-brand-secondary-140);
+  --ea-button-secondary-ghost-bg-hover: var(--ea-color-brand-secondary-005); /** light tint on hover (Vitae shows text-only; tint added for affordance) */
   --ea-button-tertiary-bg: var(--ea-color-brand-tertiary-100); /** 2021 DS Level=Alternate -- solid button using the brand tertiary ramp */
   --ea-button-tertiary-bg-hover: var(--ea-color-brand-tertiary-120);
   --ea-button-tertiary-bg-active: var(--ea-color-brand-tertiary-140);
   --ea-button-tertiary-text: var(--ea-color-text-on-action);
+  --ea-button-tertiary-border: var(--ea-color-brand-tertiary-140); /** Vitae solid button 2px border = ramp 140 */
+  --ea-button-tertiary-outline-bg: var(--ea-color-brand-tertiary-005); /** Vitae outline fill */
+  --ea-button-tertiary-outline-bg-hover: var(--ea-color-brand-tertiary-015);
+  --ea-button-tertiary-outline-bg-active: var(--ea-color-brand-tertiary-025);
+  --ea-button-tertiary-outline-border: var(--ea-color-brand-tertiary-100);
+  --ea-button-tertiary-outline-text: var(--ea-color-brand-tertiary-100);
+  --ea-button-tertiary-outline-text-hover: var(--ea-color-brand-tertiary-120);
+  --ea-button-tertiary-outline-text-active: var(--ea-color-brand-tertiary-140);
+  --ea-button-tertiary-ghost-text: var(--ea-color-brand-tertiary-100);
+  --ea-button-tertiary-ghost-text-hover: var(--ea-color-brand-tertiary-120);
+  --ea-button-tertiary-ghost-text-active: var(--ea-color-brand-tertiary-140);
+  --ea-button-tertiary-ghost-bg-hover: var(--ea-color-brand-tertiary-005); /** light tint on hover (Vitae shows text-only; tint added for affordance) */
   --ea-button-destructive-bg: var(--ea-color-action-destructive-rest);
   --ea-button-destructive-bg-hover: var(--ea-color-action-destructive-hover);
   --ea-button-destructive-bg-active: var(--ea-color-action-destructive-active);
@@ -435,24 +585,27 @@
   --ea-input-label-color: var(--ea-color-text-secondary);
   --ea-input-error-info-border: var(--ea-color-status-error);
   --ea-input-error-info-text: var(--ea-color-status-error);
+  --ea-input-required: var(--ea-color-status-error); /** Vitae required asterisk */
   --ea-alert-text: var(--ea-color-text-primary); /** 2021 spec: alert text is Text/primary, not status color */
   --ea-alert-link: var(--ea-color-text-primary); /** 2021 DS: alert hyperlink row uses the same Text/primary color, underlined -- not a separate link color */
   --ea-alert-close-icon: var(--ea-color-text-secondary); /** 2021 DS Greys/grey-130 close (X) icon */
-  --ea-alert-success-bg: var(--ea-color-status-success-surface);
+  --ea-alert-success-bg: var(--ea-color-status-success-notification); /** Vitae notification-success (10/14/26) */
   --ea-alert-success-border: var(--ea-color-status-success);
   --ea-alert-success-icon: var(--ea-color-status-success);
-  --ea-alert-error-bg: var(--ea-color-status-error-surface);
+  --ea-alert-error-bg: var(--ea-color-status-error-notification); /** Vitae notification-error (10/14/26) */
   --ea-alert-error-border: var(--ea-color-status-error);
   --ea-alert-error-icon: var(--ea-color-status-error);
-  --ea-alert-warning-bg: var(--ea-color-status-warning-surface);
+  --ea-alert-warning-bg: var(--ea-color-status-warning-notification); /** Vitae notification-warning (10/14/26) */
   --ea-alert-warning-border: var(--ea-color-status-warning);
   --ea-alert-warning-icon: var(--ea-color-status-warning);
-  --ea-alert-info-bg: var(--ea-color-status-info-surface);
+  --ea-alert-info-bg: var(--ea-color-status-info-notification); /** Vitae notification-info (10/14/26) */
   --ea-alert-info-border: var(--ea-color-status-info);
   --ea-alert-info-icon: var(--ea-color-status-info);
   --ea-form-border-focus: var(--ea-color-text-primary); /** 2021 DS focus ring border (#323130) -- drawn as a 2px outline around the whole control+label row */
   --ea-form-label-color: var(--ea-color-text-primary);
   --ea-form-disabled-text: var(--ea-button-disabled-text);
+  --ea-checkbox-error-bg: var(--ea-color-status-error-notification); /** Vitae checkbox Error=True row fill */
+  --ea-checkbox-error-text: var(--ea-color-status-error);
   --ea-nav-breadcrumb-text: var(--ea-color-text-secondary); /** 2021 DS Greys/grey-130 -- prior breadcrumb levels */
   --ea-nav-breadcrumb-text-current: var(--ea-color-text-primary); /** 2021 DS Greys/grey-190 -- current location, bold */
   --ea-nav-pagination-text: var(--ea-color-text-secondary); /** 2021 DS Text/secondary -- Page / of labels */
@@ -476,12 +629,19 @@
   --ea-card-title-color: var(--ea-color-text-primary);
   --ea-card-divider: var(--ea-color-border-default);
   --ea-card-body-color: var(--ea-color-text-primary);
-  --ea-tag-default-text: var(--ea-color-text-primary);
-  --ea-tag-status-text: var(--ea-color-text-on-action);
-  --ea-tag-info-bg: var(--ea-color-status-info);
-  --ea-tag-success-bg: var(--ea-color-status-success);
-  --ea-tag-error-bg: var(--ea-color-status-error);
-  --ea-tag-warning-text: var(--ea-color-text-primary);
+  --ea-tag-text: var(--ea-color-text-primary); /** Vitae text/on-*-bg #3b3b3b */
+  --ea-tag-info-bg: var(--ea-color-status-info-notification);
+  --ea-tag-info-border: var(--ea-color-status-info);
+  --ea-tag-success-bg: var(--ea-color-status-success-notification);
+  --ea-tag-success-border: var(--ea-color-status-success);
+  --ea-tag-warning-bg: var(--ea-color-status-warning-notification);
+  --ea-tag-warning-border: var(--ea-color-status-warning);
+  --ea-tag-error-bg: var(--ea-color-status-error-notification);
+  --ea-tag-error-border: var(--ea-color-status-error);
+  --ea-tag-brand-bg: var(--ea-color-brand-secondary-015); /** Vitae DC Current/Essential Plan */
+  --ea-tag-brand-border: var(--ea-color-brand-primary-100);
+  --ea-tag-brand-icon: var(--ea-color-brand-primary-100);
+  --ea-tag-dc-healthy-text: var(--ea-color-brand-secondary-110); /** Vitae: brand secondary-110 */
   --ea-table-header-text: var(--ea-color-text-secondary);
   --ea-table-row-text: var(--ea-color-text-primary);
   --ea-table-row-bg-selected: var(--ea-color-status-info-surface); /** approx selected-row tint */
@@ -495,11 +655,22 @@
   --ea-plan-value-color: var(--ea-color-text-primary);
   --ea-plan-title-color: var(--ea-color-text-primary);
   --ea-plan-footer-border: var(--ea-color-border-default);
+  --ea-accordion-bg: var(--ea-color-surface-raised); /** Vitae bg-level-1 */
+  --ea-accordion-border: var(--ea-input-border); /** Vitae input-rest */
+  --ea-accordion-title-color: var(--ea-color-text-primary);
+  --ea-accordion-divider: var(--ea-color-border-strong);
+  --ea-modal-bg: var(--ea-color-surface-raised);
+  --ea-modal-title-color: var(--ea-color-text-primary);
+  --ea-modal-body-color: var(--ea-color-text-primary);
+  --ea-modal-icon-info: var(--ea-color-status-info);
+  --ea-modal-icon-success: var(--ea-color-status-success);
+  --ea-modal-icon-warning: var(--ea-color-status-warning);
+  --ea-modal-icon-error: var(--ea-color-status-error);
+  --ea-tooltip-bg: var(--ea-color-surface-raised); /** Vitae (Fluent) neutral/background/1 */
+  --ea-tooltip-text: var(--ea-color-text-primary);
   --ea-button-primary-bg: var(--ea-color-action-primary-rest);
   --ea-button-primary-bg-hover: var(--ea-color-action-primary-hover);
   --ea-button-primary-bg-active: var(--ea-color-action-primary-active);
-  --ea-button-outline-text: var(--ea-color-action-primary-rest);
-  --ea-button-outline-border: var(--ea-color-action-primary-rest);
   --ea-form-selected-bg: var(--ea-color-action-primary-rest); /** 2021 DS Primary/100 -- Toggle on-fill, Checkbox checked-fill, Radio selected-fill */
   --ea-form-selected-bg-hover: var(--ea-color-action-primary-hover); /** 2021 DS Primary/120 */
   --ea-nav-header-link-color-active: var(--ea-color-action-primary-rest);

@@ -33,7 +33,7 @@ export default {
         <a href="#" style="color:var(--ea-color-text-link);">Forgot Password</a>
       </div>
       <div class="ea-login-card__buttons">
-        <button class="ea-btn ea-btn--outline">Create Account</button>
+        <button class="ea-btn ea-btn--primary ea-btn--outline">Create Account</button>
         <button class="ea-btn ea-btn--primary">Sign In</button>
       </div>
     </div>`,

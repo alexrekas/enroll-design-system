@@ -25,6 +25,61 @@
       "text-disabled": {
         "$value": "{button.disabled.text}",
         "$type": "color"
+      },
+      "border": {
+        "$value": "{color.brand.primary.140}",
+        "$type": "color",
+        "$description": "Vitae solid button 2px border = ramp 140"
+      },
+      "outline": {
+        "bg": {
+          "$value": "{color.brand.primary.005}",
+          "$type": "color",
+          "$description": "Vitae outline fill"
+        },
+        "bg-hover": {
+          "$value": "{color.brand.primary.015}",
+          "$type": "color"
+        },
+        "bg-active": {
+          "$value": "{color.brand.primary.025}",
+          "$type": "color"
+        },
+        "border": {
+          "$value": "{color.brand.primary.100}",
+          "$type": "color"
+        },
+        "text": {
+          "$value": "{color.brand.primary.100}",
+          "$type": "color"
+        },
+        "text-hover": {
+          "$value": "{color.brand.primary.120}",
+          "$type": "color"
+        },
+        "text-active": {
+          "$value": "{color.brand.primary.140}",
+          "$type": "color"
+        }
+      },
+      "ghost": {
+        "text": {
+          "$value": "{color.brand.primary.100}",
+          "$type": "color"
+        },
+        "text-hover": {
+          "$value": "{color.brand.primary.120}",
+          "$type": "color"
+        },
+        "text-active": {
+          "$value": "{color.brand.primary.140}",
+          "$type": "color"
+        },
+        "bg-hover": {
+          "$value": "{color.brand.primary.005}",
+          "$type": "color",
+          "$description": "light tint on hover (Vitae shows text-only; tint added for affordance)"
+        }
       }
     },
     "secondary": {
@@ -44,6 +99,62 @@
       "text": {
         "$value": "{color.text.on-action}",
         "$type": "color"
+      },
+      "border": {
+        "$value": "{color.brand.secondary.140}",
+        "$type": "color",
+        "$description": "Vitae solid button 2px border = ramp 140"
+      },
+      "outline": {
+        "bg": {
+          "$value": "{color.brand.secondary.005}",
+          "$type": "color",
+          "$description": "Vitae outline fill"
+        },
+        "bg-hover": {
+          "$value": "{color.brand.secondary.015}",
+          "$type": "color"
+        },
+        "bg-active": {
+          "$value": "{color.brand.secondary.025}",
+          "$type": "color"
+        },
+        "border": {
+          "$value": "{color.brand.secondary.100}",
+          "$type": "color"
+        },
+        "text": {
+          "$value": "{color.brand.secondary.110}",
+          "$type": "color",
+          "$description": "ramp 110 (not Vitae 100): DC #0076cc and MA #c15800 at 100 fail 4.5:1 on the 005 outline fill"
+        },
+        "text-hover": {
+          "$value": "{color.brand.secondary.130}",
+          "$type": "color"
+        },
+        "text-active": {
+          "$value": "{color.brand.secondary.150}",
+          "$type": "color"
+        }
+      },
+      "ghost": {
+        "text": {
+          "$value": "{color.brand.secondary.100}",
+          "$type": "color"
+        },
+        "text-hover": {
+          "$value": "{color.brand.secondary.120}",
+          "$type": "color"
+        },
+        "text-active": {
+          "$value": "{color.brand.secondary.140}",
+          "$type": "color"
+        },
+        "bg-hover": {
+          "$value": "{color.brand.secondary.005}",
+          "$type": "color",
+          "$description": "light tint on hover (Vitae shows text-only; tint added for affordance)"
+        }
       }
     },
     "tertiary": {
@@ -63,6 +174,61 @@
       "text": {
         "$value": "{color.text.on-action}",
         "$type": "color"
+      },
+      "border": {
+        "$value": "{color.brand.tertiary.140}",
+        "$type": "color",
+        "$description": "Vitae solid button 2px border = ramp 140"
+      },
+      "outline": {
+        "bg": {
+          "$value": "{color.brand.tertiary.005}",
+          "$type": "color",
+          "$description": "Vitae outline fill"
+        },
+        "bg-hover": {
+          "$value": "{color.brand.tertiary.015}",
+          "$type": "color"
+        },
+        "bg-active": {
+          "$value": "{color.brand.tertiary.025}",
+          "$type": "color"
+        },
+        "border": {
+          "$value": "{color.brand.tertiary.100}",
+          "$type": "color"
+        },
+        "text": {
+          "$value": "{color.brand.tertiary.100}",
+          "$type": "color"
+        },
+        "text-hover": {
+          "$value": "{color.brand.tertiary.120}",
+          "$type": "color"
+        },
+        "text-active": {
+          "$value": "{color.brand.tertiary.140}",
+          "$type": "color"
+        }
+      },
+      "ghost": {
+        "text": {
+          "$value": "{color.brand.tertiary.100}",
+          "$type": "color"
+        },
+        "text-hover": {
+          "$value": "{color.brand.tertiary.120}",
+          "$type": "color"
+        },
+        "text-active": {
+          "$value": "{color.brand.tertiary.140}",
+          "$type": "color"
+        },
+        "bg-hover": {
+          "$value": "{color.brand.tertiary.005}",
+          "$type": "color",
+          "$description": "light tint on hover (Vitae shows text-only; tint added for affordance)"
+        }
       }
     },
     "destructive": {
@@ -81,6 +247,61 @@
       "text": {
         "$value": "{color.text.on-action}",
         "$type": "color"
+      },
+      "border": {
+        "$value": "{color.feedback.error.140}",
+        "$type": "color",
+        "$description": "Vitae solid button 2px border = ramp 140"
+      },
+      "outline": {
+        "bg": {
+          "$value": "transparent",
+          "$type": "color",
+          "$description": "Vitae outline fill"
+        },
+        "bg-hover": {
+          "$value": "{color.feedback.error.010}",
+          "$type": "color"
+        },
+        "bg-active": {
+          "$value": "{color.feedback.error.015}",
+          "$type": "color"
+        },
+        "border": {
+          "$value": "{color.feedback.error.100}",
+          "$type": "color"
+        },
+        "text": {
+          "$value": "{color.feedback.error.100}",
+          "$type": "color"
+        },
+        "text-hover": {
+          "$value": "{color.feedback.error.120}",
+          "$type": "color"
+        },
+        "text-active": {
+          "$value": "{color.feedback.error.140}",
+          "$type": "color"
+        }
+      },
+      "ghost": {
+        "text": {
+          "$value": "{color.feedback.error.100}",
+          "$type": "color"
+        },
+        "text-hover": {
+          "$value": "{color.feedback.error.120}",
+          "$type": "color"
+        },
+        "text-active": {
+          "$value": "{color.feedback.error.140}",
+          "$type": "color"
+        },
+        "bg-hover": {
+          "$value": "{color.feedback.error.010}",
+          "$type": "color",
+          "$description": "light tint on hover (Vitae shows text-only; tint added for affordance)"
+        }
       }
     },
     "disabled": {
@@ -93,25 +314,6 @@
         "$value": "{color.gray.055}",
         "$type": "color",
         "$description": "2021 DS Text/disabled, now aliased to color.gray.055"
-      }
-    },
-    "outline": {
-      "bg": {
-        "$value": "transparent",
-        "$type": "color",
-        "$description": "2021 DS Type=Outline modifier (available for any level, not yet wired into a Figma variant -- follow-up)"
-      },
-      "text": {
-        "$value": "{color.action.primary.rest}",
-        "$type": "color"
-      },
-      "border": {
-        "$value": "{color.action.primary.rest}",
-        "$type": "color"
-      },
-      "border-width": {
-        "$value": "2px",
-        "$type": "dimension"
       }
     },
     "icon-gap": {
@@ -151,6 +353,16 @@
       "$value": "capitalize",
       "$type": "string",
       "$description": "Vitae base button"
+    },
+    "border-width": {
+      "$value": "2px",
+      "$type": "dimension",
+      "$description": "Vitae"
+    },
+    "focus-ring": {
+      "$value": "{color.border.focus-outline}",
+      "$type": "color",
+      "$description": "Vitae dashed focus outline"
     }
   },
   "input": {
@@ -245,13 +457,18 @@
         "$value": "{color.status.error}",
         "$type": "color"
       }
+    },
+    "required": {
+      "$value": "{color.status.error}",
+      "$type": "color",
+      "$description": "Vitae required asterisk"
     }
   },
   "alert": {
     "radius": {
-      "$value": "12px",
+      "$value": "{radius.12}",
       "$type": "dimension",
-      "$description": "2021 DS alert spec"
+      "$description": "Vitae + 2021 alert: 12px"
     },
     "padding": {
       "$value": "{space.150}",
@@ -282,8 +499,9 @@
     },
     "success": {
       "bg": {
-        "$value": "{color.status.success-surface}",
-        "$type": "color"
+        "$value": "{color.status.success-notification}",
+        "$type": "color",
+        "$description": "Vitae notification-success (10/14/26)"
       },
       "border": {
         "$value": "{color.status.success}",
@@ -296,8 +514,9 @@
     },
     "error": {
       "bg": {
-        "$value": "{color.status.error-surface}",
-        "$type": "color"
+        "$value": "{color.status.error-notification}",
+        "$type": "color",
+        "$description": "Vitae notification-error (10/14/26)"
       },
       "border": {
         "$value": "{color.status.error}",
@@ -310,8 +529,9 @@
     },
     "warning": {
       "bg": {
-        "$value": "{color.status.warning-surface}",
-        "$type": "color"
+        "$value": "{color.status.warning-notification}",
+        "$type": "color",
+        "$description": "Vitae notification-warning (10/14/26)"
       },
       "border": {
         "$value": "{color.status.warning}",
@@ -324,8 +544,9 @@
     },
     "info": {
       "bg": {
-        "$value": "{color.status.info-surface}",
-        "$type": "color"
+        "$value": "{color.status.info-notification}",
+        "$type": "color",
+        "$description": "Vitae notification-info (10/14/26)"
       },
       "border": {
         "$value": "{color.status.info}",
@@ -424,6 +645,20 @@
     "border-width": {
       "$value": "2px",
       "$type": "dimension"
+    },
+    "error-bg": {
+      "$value": "{color.status.error-notification}",
+      "$type": "color",
+      "$description": "Vitae checkbox Error=True row fill"
+    },
+    "error-text": {
+      "$value": "{color.status.error}",
+      "$type": "color"
+    },
+    "row-radius": {
+      "$value": "{radius.12}",
+      "$type": "dimension",
+      "$description": "Vitae .base-Checkbox 12px"
     }
   },
   "radio": {
@@ -629,55 +864,180 @@
     }
   },
   "tag": {
-    "default-bg": {
-      "$value": "{color.gray.020}",
-      "$type": "color",
-      "$description": "2021 DS Greys/grey-030 (approx)"
+    "radius": {
+      "$value": "{radius.24}",
+      "$type": "dimension",
+      "$description": "Vitae tag pill 24px"
     },
-    "default-text": {
-      "$value": "{color.text.primary}",
-      "$type": "color"
-    },
-    "status-text": {
-      "$value": "{color.text.on-action}",
-      "$type": "color"
-    },
-    "info-bg": {
-      "$value": "{color.status.info}",
-      "$type": "color"
-    },
-    "success-bg": {
-      "$value": "{color.status.success}",
-      "$type": "color"
-    },
-    "error-bg": {
-      "$value": "{color.status.error}",
-      "$type": "color"
-    },
-    "warning-bg": {
-      "$value": "{color.metal.gold}",
-      "$type": "color",
-      "$description": "2021 DS Metal-Level/Gold -- warning tag uses the gold swatch, not the feedback-warning color"
-    },
-    "warning-text": {
-      "$value": "{color.text.primary}",
-      "$type": "color"
-    },
-    "radius-pill": {
-      "$value": "{radius.pill}",
+    "padding-x": {
+      "$value": "{space.150}",
       "$type": "dimension"
     },
-    "radius-status": {
-      "$value": "{radius.04}",
+    "padding-y": {
+      "$value": "{space.075}",
       "$type": "dimension"
     },
     "gap": {
-      "$value": "{space.050}",
+      "$value": "{space.075}",
       "$type": "dimension"
     },
-    "padding-x": {
-      "$value": "{space.100}",
+    "border-width": {
+      "$value": "1px",
       "$type": "dimension"
+    },
+    "icon-size": {
+      "$value": "16px",
+      "$type": "dimension"
+    },
+    "font-size": {
+      "$value": "{font.size.300}",
+      "$type": "dimension"
+    },
+    "font-weight": {
+      "$value": "{font.weight.medium}",
+      "$type": "fontWeight",
+      "$description": "Vitae Medium"
+    },
+    "text": {
+      "$value": "{color.text.primary}",
+      "$type": "color",
+      "$description": "Vitae text/on-*-bg #3b3b3b"
+    },
+    "info": {
+      "bg": {
+        "$value": "{color.status.info-notification}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.status.info}",
+        "$type": "color"
+      }
+    },
+    "success": {
+      "bg": {
+        "$value": "{color.status.success-notification}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.status.success}",
+        "$type": "color"
+      }
+    },
+    "warning": {
+      "bg": {
+        "$value": "{color.status.warning-notification}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.status.warning}",
+        "$type": "color"
+      }
+    },
+    "error": {
+      "bg": {
+        "$value": "{color.status.error-notification}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.status.error}",
+        "$type": "color"
+      }
+    },
+    "neutral": {
+      "bg": {
+        "$value": "{color.gray.020}",
+        "$type": "color",
+        "$description": "Vitae Type=Null"
+      },
+      "border": {
+        "$value": "{color.gray.080}",
+        "$type": "color",
+        "$description": "Vitae gray-150 #404040 (nearest)"
+      }
+    },
+    "brand": {
+      "bg": {
+        "$value": "{color.brand.secondary.015}",
+        "$type": "color",
+        "$description": "Vitae DC Current/Essential Plan"
+      },
+      "border": {
+        "$value": "{color.brand.primary.100}",
+        "$type": "color"
+      },
+      "icon": {
+        "$value": "{color.brand.primary.100}",
+        "$type": "color"
+      }
+    },
+    "dc-healthy": {
+      "bg": {
+        "$value": "{color.program.dc-healthy.bg}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.program.dc-healthy.border}",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "{color.brand.secondary.110}",
+        "$type": "color",
+        "$description": "Vitae: brand secondary-110"
+      }
+    },
+    "me-clear-choice": {
+      "bg": {
+        "$value": "{color.program.me-clear-choice.bg}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.program.me-clear-choice.border}",
+        "$type": "color"
+      }
+    },
+    "metal-gold": {
+      "bg": {
+        "$value": "{color.metal.gold-surface}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.metal.gold}",
+        "$type": "color",
+        "$description": "Vitae Tag/gold border"
+      }
+    },
+    "metal-silver": {
+      "bg": {
+        "$value": "{color.metal.silver-surface}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.metal.silver}",
+        "$type": "color",
+        "$description": "Vitae Tag/silver border"
+      }
+    },
+    "metal-bronze": {
+      "bg": {
+        "$value": "{color.metal.bronze-surface}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.metal.bronze}",
+        "$type": "color",
+        "$description": "Vitae Tag/bronze border"
+      }
+    },
+    "metal-platinum": {
+      "bg": {
+        "$value": "{color.metal.platinum-surface}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.metal.platinum}",
+        "$type": "color",
+        "$description": "Vitae Tag/platinum border"
+      }
     }
   },
   "table": {
@@ -801,6 +1161,149 @@
     "footer-border": {
       "$value": "{color.border.default}",
       "$type": "color"
+    }
+  },
+  "accordion": {
+    "bg": {
+      "$value": "{color.surface.raised}",
+      "$type": "color",
+      "$description": "Vitae bg-level-1"
+    },
+    "border": {
+      "$value": "{input.border}",
+      "$type": "color",
+      "$description": "Vitae input-rest"
+    },
+    "radius": {
+      "$value": "{radius.08}",
+      "$type": "dimension"
+    },
+    "padding": {
+      "$value": "{space.150}",
+      "$type": "dimension"
+    },
+    "gap": {
+      "$value": "{space.150}",
+      "$type": "dimension"
+    },
+    "title-color": {
+      "$value": "{color.text.primary}",
+      "$type": "color"
+    },
+    "title-weight": {
+      "$value": "{font.weight.bold}",
+      "$type": "fontWeight"
+    },
+    "divider": {
+      "$value": "{color.border.strong}",
+      "$type": "color"
+    },
+    "icon-size": {
+      "$value": "20px",
+      "$type": "dimension"
+    }
+  },
+  "modal": {
+    "bg": {
+      "$value": "{color.surface.raised}",
+      "$type": "color"
+    },
+    "radius": {
+      "$value": "{radius.04}",
+      "$type": "dimension",
+      "$description": "Vitae 4px"
+    },
+    "width": {
+      "$value": "560px",
+      "$type": "dimension",
+      "$description": "Vitae"
+    },
+    "padding": {
+      "$value": "{space.200}",
+      "$type": "dimension"
+    },
+    "gap": {
+      "$value": "{space.200}",
+      "$type": "dimension"
+    },
+    "button-gap": {
+      "$value": "{space.075}",
+      "$type": "dimension"
+    },
+    "title-color": {
+      "$value": "{color.text.primary}",
+      "$type": "color"
+    },
+    "body-color": {
+      "$value": "{color.text.primary}",
+      "$type": "color"
+    },
+    "shadow": {
+      "$value": "0 4.8px 14.4px rgba(0,0,0,0.18), 0 25.6px 57.6px rgba(0,0,0,0.22)",
+      "$type": "shadow",
+      "$description": "Vitae Elevation64"
+    },
+    "scrim": {
+      "$value": "{color.surface.overlay}",
+      "$type": "color"
+    },
+    "icon": {
+      "info": {
+        "$value": "{color.status.info}",
+        "$type": "color"
+      },
+      "success": {
+        "$value": "{color.status.success}",
+        "$type": "color"
+      },
+      "warning": {
+        "$value": "{color.status.warning}",
+        "$type": "color"
+      },
+      "error": {
+        "$value": "{color.status.error}",
+        "$type": "color"
+      }
+    }
+  },
+  "tooltip": {
+    "bg": {
+      "$value": "{color.surface.raised}",
+      "$type": "color",
+      "$description": "Vitae (Fluent) neutral/background/1"
+    },
+    "text": {
+      "$value": "{color.text.primary}",
+      "$type": "color"
+    },
+    "radius": {
+      "$value": "{radius.04}",
+      "$type": "dimension"
+    },
+    "max-width": {
+      "$value": "240px",
+      "$type": "dimension"
+    },
+    "padding-x": {
+      "$value": "{space.150}",
+      "$type": "dimension"
+    },
+    "padding-top": {
+      "$value": "5px",
+      "$type": "dimension"
+    },
+    "padding-bottom": {
+      "$value": "7px",
+      "$type": "dimension"
+    },
+    "shadow": {
+      "$value": "0 0 2px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.14)",
+      "$type": "shadow",
+      "$description": "Fluent Shadow 08"
+    },
+    "beak-size": {
+      "$value": "6px",
+      "$type": "dimension"
     }
   }
 }

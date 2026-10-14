@@ -106,6 +106,21 @@
       "$value": "{radius.08}",
       "$type": "dimension",
       "$description": "Vitae .base-button-XX: 8px; per-client override in themes"
+    },
+    "03": {
+      "$value": "3px",
+      "$type": "dimension",
+      "$description": "2021 DS MA button"
+    },
+    "06": {
+      "$value": "6px",
+      "$type": "dimension",
+      "$description": "2021 DS EA/ME button"
+    },
+    "24": {
+      "$value": "24px",
+      "$type": "dimension",
+      "$description": "Vitae tag pill / Vitae button"
     }
   }
 }

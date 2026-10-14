@@ -18,29 +18,29 @@
           "$description": "Vitae EA mode; captured"
         },
         "050": {
-          "$value": "#81a9dd",
+          "$value": "#7fa7d8",
           "$type": "color",
-          "$description": "Vitae EA mode; interpolated"
+          "$description": "2021 DS Primary/050/EA (replaces interpolated value, 10/14/26)"
         },
         "060": {
-          "$value": "#6798d7",
+          "$value": "#6696d1",
           "$type": "color",
-          "$description": "Vitae EA mode; interpolated"
+          "$description": "2021 DS Primary/060/EA (replaces interpolated value, 10/14/26)"
         },
         "070": {
-          "$value": "#4e87d0",
+          "$value": "#4c84c9",
           "$type": "color",
-          "$description": "Vitae EA mode; interpolated"
+          "$description": "2021 DS Primary/070/EA (replaces interpolated value, 10/14/26)"
         },
         "080": {
-          "$value": "#3576c9",
+          "$value": "#3373c1",
           "$type": "color",
-          "$description": "Vitae EA mode; interpolated"
+          "$description": "2021 DS Primary/080/EA (replaces interpolated value, 10/14/26)"
         },
         "090": {
-          "$value": "#1b65c3",
+          "$value": "#1961ba",
           "$type": "color",
-          "$description": "Vitae EA mode; interpolated"
+          "$description": "2021 DS Primary/090/EA (replaces interpolated value, 10/14/26)"
         },
         "100": {
           "$value": "#0254bc",
@@ -48,9 +48,9 @@
           "$description": "Vitae EA mode; captured"
         },
         "110": {
-          "$value": "#024ca9",
+          "$value": "#0048a1",
           "$type": "color",
-          "$description": "Vitae EA mode; interpolated"
+          "$description": "2021 DS Primary/110/EA (replaces interpolated value, 10/14/26)"
         },
         "120": {
           "$value": "#024396",
@@ -58,9 +58,9 @@
           "$description": "Vitae EA mode; captured"
         },
         "130": {
-          "$value": "#023a84",
+          "$value": "#00387d",
           "$type": "color",
-          "$description": "Vitae EA mode; interpolated"
+          "$description": "2021 DS Primary/130/EA (replaces interpolated value, 10/14/26)"
         },
         "140": {
           "$value": "#013271",
@@ -92,27 +92,27 @@
         "050": {
           "$value": "#9dadc0",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated"
+          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
         },
         "060": {
           "$value": "#899db3",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated"
+          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
         },
         "070": {
           "$value": "#768ca7",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated"
+          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
         },
         "080": {
           "$value": "#627c9a",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated"
+          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
         },
         "090": {
           "$value": "#4f6b8e",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated"
+          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
         },
         "100": {
           "$value": "#3b5b81",
@@ -122,7 +122,7 @@
         "110": {
           "$value": "#355274",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated"
+          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
         },
         "120": {
           "$value": "#2f4967",
@@ -132,7 +132,7 @@
         "130": {
           "$value": "#29405a",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated"
+          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
         },
         "140": {
           "$value": "#23374d",
@@ -142,7 +142,7 @@
         "150": {
           "$value": "#1b2b3c",
           "$type": "color",
-          "$description": "extrapolated from 140"
+          "$description": "extrapolated from 140; NOT IN 2021 -- 2021 DS EA secondary is a different color family (navy #00224D vs Vitae slate #3B5B81); kept Vitae-derived interpolation"
         }
       },
       "tertiary": {
@@ -164,27 +164,27 @@
         "050": {
           "$value": "#a18d9b",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated"
+          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
         },
         "060": {
           "$value": "#8f7787",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated"
+          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
         },
         "070": {
           "$value": "#7c6072",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated"
+          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
         },
         "080": {
           "$value": "#69495e",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated"
+          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
         },
         "090": {
           "$value": "#57334a",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated"
+          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
         },
         "100": {
           "$value": "#441c36",
@@ -194,7 +194,7 @@
         "110": {
           "$value": "#3d1930",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated"
+          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
         },
         "120": {
           "$value": "#36162b",
@@ -204,7 +204,7 @@
         "130": {
           "$value": "#301426",
           "$type": "color",
-          "$description": "Vitae default/EA context; interpolated"
+          "$description": "Vitae default/EA context; interpolated; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
         },
         "140": {
           "$value": "#291120",
@@ -214,7 +214,7 @@
         "150": {
           "$value": "#200d19",
           "$type": "color",
-          "$description": "extrapolated from 140"
+          "$description": "extrapolated from 140; NOT IN 2021 -- 2021 DS EA tertiary is a different color family (blue #0067A1 vs Vitae plum #441C36); kept Vitae-derived interpolation"
         }
       }
     },
@@ -233,32 +233,32 @@
         "025": {
           "$value": "#bfccd7",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; interpolated"
+          "$description": "Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260; 2021 DS has no 025 step"
         },
         "050": {
           "$value": "#8098af",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; interpolated"
+          "$description": "Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260"
         },
         "060": {
           "$value": "#6684a0",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; interpolated"
+          "$description": "Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260"
         },
         "070": {
           "$value": "#4d6f90",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; interpolated"
+          "$description": "Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260"
         },
         "080": {
           "$value": "#335b80",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; interpolated"
+          "$description": "Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260"
         },
         "090": {
           "$value": "#1a4670",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; interpolated"
+          "$description": "Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260"
         },
         "100": {
           "$value": "#003260",
@@ -268,7 +268,7 @@
         "110": {
           "$value": "#002d56",
           "$type": "color",
-          "$description": "Vitae DC mode / decided #003260; interpolated"
+          "$description": "Vitae DC mode / decided #003260; interpolated; NOT IN 2021 -- 2021 DS DC primary ramp is non-monotonic (050-090 and 110-150 are lighter blues derived from #0076CC); kept monotonic interpolation from #003260"
         },
         "120": {
           "$value": "#00284d",
@@ -305,7 +305,7 @@
         "025": {
           "$value": "#bfdef2",
           "$type": "color",
-          "$description": "Vitae DC mode; interpolated"
+          "$description": "Vitae DC mode; interpolated; 2021 DS has no 025 step"
         },
         "050": {
           "$value": "#7fbae5",
@@ -377,7 +377,7 @@
         "025": {
           "$value": "#f5c7c7",
           "$type": "color",
-          "$description": "Vitae DC mode; decided: red; interpolated"
+          "$description": "Vitae DC mode; decided: red; interpolated; 2021 DS has no 025 step"
         },
         "050": {
           "$value": "#ec9192",
@@ -451,7 +451,7 @@
         "025": {
           "$value": "#ccd5da",
           "$type": "color",
-          "$description": "2021 DS CME; interpolated"
+          "$description": "2021 DS CME; interpolated; 2021 DS has no 025 step"
         },
         "050": {
           "$value": "#9EAEB7",
@@ -523,7 +523,7 @@
         "025": {
           "$value": "#c8d8e4",
           "$type": "color",
-          "$description": "2021 DS CME; interpolated"
+          "$description": "2021 DS CME; interpolated; 2021 DS has no 025 step"
         },
         "050": {
           "$value": "#8DADC6",
@@ -595,7 +595,7 @@
         "025": {
           "$value": "#d3dbc4",
           "$type": "color",
-          "$description": "2021 DS CME; interpolated"
+          "$description": "2021 DS CME; interpolated; 2021 DS has no 025 step"
         },
         "050": {
           "$value": "#A2B289",
@@ -669,7 +669,7 @@
         "025": {
           "$value": "#bfd7e0",
           "$type": "color",
-          "$description": "2021 DS MAHC; interpolated"
+          "$description": "2021 DS MAHC; interpolated; 2021 DS has no 025 step"
         },
         "050": {
           "$value": "#7FAEC0",
@@ -741,7 +741,7 @@
         "025": {
           "$value": "#f0d5bf",
           "$type": "color",
-          "$description": "2021 DS MAHC; interpolated"
+          "$description": "2021 DS MAHC; interpolated; 2021 DS has no 025 step"
         },
         "050": {
           "$value": "#E0AB7F",
@@ -803,72 +803,72 @@
         "005": {
           "$value": "#f2f4f6",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); captured"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
         },
         "015": {
           "$value": "#d9dee4",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); captured"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
         },
         "025": {
           "$value": "#bfc8d2",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); interpolated; 2021 DS has no 025 step"
         },
         "050": {
-          "$value": "#8091a5",
+          "$value": "#7f90a5",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Tertiary/050/MA (replaces interpolated value, 10/14/26)"
         },
         "060": {
           "$value": "#667a94",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Tertiary/060/MA (replaces interpolated value, 10/14/26)"
         },
         "070": {
-          "$value": "#4d6482",
+          "$value": "#4c6481",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Tertiary/070/MA (replaces interpolated value, 10/14/26)"
         },
         "080": {
           "$value": "#334e70",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Tertiary/080/MA (replaces interpolated value, 10/14/26)"
         },
         "090": {
-          "$value": "#1a385e",
+          "$value": "#19385e",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Tertiary/090/MA (replaces interpolated value, 10/14/26)"
         },
         "100": {
           "$value": "#00224C",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); captured"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
         },
         "110": {
-          "$value": "#001e44",
+          "$value": "#001f45",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Tertiary/110/MA (replaces interpolated value, 10/14/26)"
         },
         "120": {
           "$value": "#001B3D",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); captured"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
         },
         "130": {
-          "$value": "#001836",
+          "$value": "#001835",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Tertiary/130/MA (replaces interpolated value, 10/14/26)"
         },
         "140": {
           "$value": "#00142E",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); captured"
+          "$description": "2021 DS Buttons matrix (Tertiary/ME\u2192MA); captured"
         },
         "150": {
-          "$value": "#001024",
+          "$value": "#001126",
           "$type": "color",
-          "$description": "2021 DS Buttons matrix (Tertiary/ME→MA); interpolated"
+          "$description": "2021 DS Tertiary/150/MA (replaces interpolated value, 10/14/26)"
         }
       }
     },
@@ -956,7 +956,7 @@
       "110": {
         "$value": "#0d0d0d",
         "$type": "color",
-        "$description": "Vitae gray-190 — focus ring"
+        "$description": "Vitae gray-190 \u2014 focus ring"
       }
     },
     "white": {
@@ -1006,6 +1006,11 @@
           "$value": "#e0f8e4",
           "$type": "color",
           "$description": "2021 DS success alert bg"
+        },
+        "020": {
+          "$value": "#c6f1cd",
+          "$type": "color",
+          "$description": "Vitae color/background/notification-success"
         }
       },
       "warning": {
@@ -1023,6 +1028,16 @@
           "$value": "#FFFADF",
           "$type": "color",
           "$description": "2021 DS Alert/warning-background (Warning2 bordered variant)"
+        },
+        "020": {
+          "$value": "#ffecb4",
+          "$type": "color",
+          "$description": "Vitae color/background/notification-warning"
+        },
+        "vitae": {
+          "$value": "#e5a900",
+          "$type": "color",
+          "$description": "Vitae color/other/status-warning -- decorative icon fill only; fails 3:1 as a border on #ffecb4, so borders use warning.100"
         }
       },
       "info": {
@@ -1040,34 +1055,59 @@
           "$value": "#E0F1FA",
           "$type": "color",
           "$description": "2021 DS Alert/info-background (Info2 bordered variant)"
+        },
+        "020": {
+          "$value": "#cce5f3",
+          "$type": "color",
+          "$description": "Vitae color/background/notification-info"
         }
       }
     },
     "metal": {
       "gold": {
-        "$value": "#F7B319",
+        "$value": "#FABB18",
         "$type": "color",
-        "$description": "Metal level: Gold — plan indicator ONLY, never UI accent (decided 7/9/26)"
+        "$description": "2021 DS Metal-Level/Gold = Vitae semantic Color/Border/Tag/gold; confirmed by Alex 10/14/26 (#F7B319 was legacy Enroll code, not Vitae). Vitae's primitive layer still holds older values (gold #D4AF37, platinum #E5E4E2) -- superseded. Plan indicator ONLY."
       },
       "bronze": {
-        "$value": "#cd7f32",
+        "$value": "#CD7F32",
         "$type": "color",
-        "$description": "PLACEHOLDER — extract from DS"
+        "$description": "2021 DS Metal-Level/Bronze = Vitae semantic Color/Border/Tag/bronze; confirmed by Alex 10/14/26 (#F7B319 was legacy Enroll code, not Vitae). Vitae's primitive layer still holds older values (gold #D4AF37, platinum #E5E4E2) -- superseded. Plan indicator ONLY."
       },
       "silver": {
-        "$value": "#c0c0c0",
+        "$value": "#C0C0C0",
         "$type": "color",
-        "$description": "PLACEHOLDER — extract from DS"
+        "$description": "2021 DS Metal-Level/Silver = Vitae semantic Color/Border/Tag/silver; confirmed by Alex 10/14/26 (#F7B319 was legacy Enroll code, not Vitae). Vitae's primitive layer still holds older values (gold #D4AF37, platinum #E5E4E2) -- superseded. Plan indicator ONLY."
       },
       "platinum": {
-        "$value": "#e5e4e2",
+        "$value": "#5D5D60",
         "$type": "color",
-        "$description": "PLACEHOLDER — extract from DS"
+        "$description": "2021 DS Metal-Level/Platinum = Vitae semantic Color/Border/Tag/platinum; confirmed by Alex 10/14/26 (#F7B319 was legacy Enroll code, not Vitae). Vitae's primitive layer still holds older values (gold #D4AF37, platinum #E5E4E2) -- superseded. Plan indicator ONLY."
       },
       "catastrophic": {
         "$value": "#9b9b9b",
         "$type": "color",
-        "$description": "PLACEHOLDER — extract from DS"
+        "$description": "PLACEHOLDER -- not defined in EA-DesignSystem-2021 or Vitae; needs a value"
+      },
+      "gold-surface": {
+        "$value": "#fdeec5",
+        "$type": "color",
+        "$description": "Vitae Color/Background/Tag/gold"
+      },
+      "silver-surface": {
+        "$value": "#efefef",
+        "$type": "color",
+        "$description": "Vitae Color/Background/Tag/silver"
+      },
+      "bronze-surface": {
+        "$value": "#f2dfcb",
+        "$type": "color",
+        "$description": "Vitae Color/Background/Tag/bronze"
+      },
+      "platinum-surface": {
+        "$value": "#d6d6d7",
+        "$type": "color",
+        "$description": "Vitae Color/Background/Tag/platinum"
       }
     },
     "coolgray": {
@@ -1080,6 +1120,32 @@
         "$value": "#4b5159",
         "$type": "color",
         "$description": "Vitae text/secondary"
+      }
+    },
+    "program": {
+      "dc-healthy": {
+        "bg": {
+          "$value": "#f8f3f9",
+          "$type": "color",
+          "$description": "Vitae tag/dc-healthy-dc-plan bg"
+        },
+        "border": {
+          "$value": "#711f8b",
+          "$type": "color",
+          "$description": "Vitae tag/dc-healthy-dc-plan border"
+        }
+      },
+      "me-clear-choice": {
+        "bg": {
+          "$value": "#d5c1ce",
+          "$type": "color",
+          "$description": "Vitae tag/me-clear-choice-plan bg"
+        },
+        "border": {
+          "$value": "#824270",
+          "$type": "color",
+          "$description": "Vitae tag/me-clear-choice-plan border"
+        }
       }
     }
   }

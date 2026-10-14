@@ -2,9 +2,9 @@
   "font": {
     "family": {
       "base": {
-        "$value": "'Roboto Flex', 'Open Sans', Arial, sans-serif",
+        "$value": "'Open Sans', 'Helvetica Neue', Arial, sans-serif",
         "$type": "fontFamily",
-        "$description": "Vitae typography/font-family; code's Open Sans kept as fallback"
+        "$description": "decided 10/14/26: Open Sans is the base font (replaces Vitae's Roboto Flex)"
       },
       "alt": {
         "$value": "'Barlow', 'Open Sans', sans-serif",
@@ -36,6 +36,11 @@
       "extrabold": {
         "$value": 800,
         "$type": "fontWeight"
+      },
+      "medium": {
+        "$value": 500,
+        "$type": "fontWeight",
+        "$description": "Vitae tag text weight"
       }
     },
     "size": {
@@ -70,6 +75,11 @@
       "800": {
         "$value": "38px",
         "$type": "dimension"
+      },
+      "750": {
+        "$value": "36px",
+        "$type": "dimension",
+        "$description": "2021 DS h1 / Vitae h1"
       }
     },
     "line-height": {
@@ -89,6 +99,43 @@
         "$value": 1.25,
         "$type": "number",
         "$description": "Vitae: 20px at 16px"
+      }
+    },
+    "line-height-px": {
+      "20px": {
+        "$value": "20px",
+        "$type": "dimension",
+        "$description": "2021 button-text / breadcrumb / table col1+n"
+      },
+      "21px": {
+        "$value": "21px",
+        "$type": "dimension",
+        "$description": "2021 Filter-Heading"
+      },
+      "24px": {
+        "$value": "24px",
+        "$type": "dimension",
+        "$description": "2021 paragraph/label/table 1.5"
+      },
+      "27px": {
+        "$value": "27px",
+        "$type": "dimension",
+        "$description": "2021 h3"
+      },
+      "28px": {
+        "$value": "28px",
+        "$type": "dimension",
+        "$description": "2021 dialog-box-header"
+      },
+      "36px": {
+        "$value": "36px",
+        "$type": "dimension",
+        "$description": "2021 h2"
+      },
+      "54px": {
+        "$value": "54px",
+        "$type": "dimension",
+        "$description": "2021 h1"
       }
     }
   }

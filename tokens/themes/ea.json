@@ -188,9 +188,9 @@
   },
   "radius": {
     "button": {
-      "$value": "{radius.08}",
+      "$value": "{radius.06}",
       "$type": "dimension",
-      "$description": "Vitae .base-button-XX"
+      "$description": "EA-DesignSystem-2021 Biome=EA Primary Solid: 6px (decided 10/14/26: button radius comes from 2021 DS; Vitae draws 24px)"
     }
   }
 }

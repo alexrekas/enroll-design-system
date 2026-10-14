@@ -1,6 +1,8 @@
 # Enroll App Design System — Component Reference
 
-Documentation for all 18 components built this cycle. Each entry covers variants, states, accessibility, and a code example matching the actual Storybook story markup (`stories/*.stories.js`) and reference CSS (`.storybook/tokens.css`).
+Documentation for all components. **Update (10/14/26):** Vitae pass. New: Accordion, Modal, Tooltip, Dropdown, Date Picker. Reworked to Vitae: Button (Solid/Outline/Ghost styles), Tag, Breadcrumbs, Alert surfaces, Text Input (required/info/trailing icons), Checkbox (error row + group). See the 10/14/26 sections at the end.
+
+Previously: documentation for the 18 components built in the 7/10 cycle. Each entry covers variants, states, accessibility, and a code example matching the actual Storybook story markup (`stories/*.stories.js`) and reference CSS (`.storybook/tokens.css`).
 
 **Update (7/10/26):** following a design review pass against the real EA-DesignSystem-2021 and EA-DesignSystem-Icons-2021 Figma files, Icons, Table, Field-Set, and Plan were substantially reworked — see each section below for what changed. Plan Compare is no longer a separate page/component; comparison is now a per-card `Compare` checkbox on Plan itself, matching the source file.
 
@@ -631,6 +633,134 @@ Displays a single enrolled/available plan's key details — benefit type, carrie
   </div>
 </div>
 ```
+
+---
+
+## Vitae pass (10/14/26)
+
+Source precedence for this pass: **Vitae** (component anatomy) → **EA-DesignSystem-2021** (button radius, metal colors, ramps, type scale) per Alex's decisions.
+
+### Button — Style axis added
+| Style | Look | Use when |
+|---|---|---|
+| Solid | Ramp-100 fill, 2px ramp-140 border, white text | The main action |
+| Outline | Ramp-005 tint, 2px ramp-100 border, ramp-100 text | The paired secondary action (e.g. modal "Cancel") |
+| Ghost | Text only, light tint on hover | Low-emphasis actions in dense UI |
+
+Markup: `ea-btn ea-btn--{primary|secondary|tertiary|destructive}` + optional `ea-btn--outline` / `ea-btn--ghost`. The old standalone `ea-btn--outline` (primary-only) is replaced: use `ea-btn--primary ea-btn--outline`. Focus ring is now **dashed** (Vitae focus-outline). Radius per theme from 2021: EA/ME 6px, DC 4px, MA 3px.
+
+### Tag — rebuilt
+24px pill, 1px status border, notification-tint fill, 16px Medium label, 16px leading icon. Types: success / info / warning / error / neutral, program tags (`--dc-healthy`, `--brand` for Current/Essential Plan, `--me-clear-choice`), metal tags (`--gold|silver|bronze|platinum`). Old dot-style and 12px tags are gone.
+
+### Breadcrumbs — rebuilt
+`<nav aria-label="Breadcrumb"><ol>` with `<li class="ea-breadcrumb-item">`; CSS-generated "/" separators; links underline on hover; current item SemiBold with `aria-current="page"`; deep trails collapse to an "…" button. 14/20 type (2021).
+
+### Alert — Vitae surfaces
+Same markup. Backgrounds now the Vitae notification tints (`#CCE5F3`, `#C6F1CD`, `#FFECB4`, `#F8C0C0`); optional hyperlink row. Warning border stays the AA-darkened `#A37A00` (Vitae's `#E5A900` fails 3:1 on the tint).
+
+### Text Input — additions
+Label row with red required `*` (`aria-hidden`; field gets `required`/`aria-required`), optional info button (pairs with Tooltip), trailing icon slot (calendar / search / chevron), Active state border `#333`.
+
+### Checkbox — error + group
+`ea-checkbox-row--error`: whole row tinted error with 12px radius, label + message in status-error, `aria-invalid` + `aria-describedby`. `ea-checkbox-group` is a `<fieldset>` + `<legend>`, vertical or `--horizontal`.
+
+---
+
+## Accordion
+
+**Description:** Expandable section for progressive disclosure (FAQs, plan details).
+
+| Property | Type | Default | Description |
+|---|---|---|---|
+| `title` | text | — | Button text in the heading |
+| `expanded` | boolean | `false` | Panel visible |
+
+**Anatomy:** 1px input-rest border, 8px radius, 12px padding; 20px chevron + Bold 16/20 title; divider + content when expanded.
+
+**Accessibility:** APG accordion: `<h3><button aria-expanded aria-controls>` → `<div role="region" aria-labelledby hidden>`. Enter/Space toggle natively. Stories include working toggle JS (multi-open and single-open).
+
+| ✅ Do | ❌ Don't |
+|---|---|
+| Allow multiple panels open | Hide required fields or errors in a collapsed panel |
+
+```html
+<div class="ea-accordion">
+  <div class="ea-accordion__item">
+    <h3 class="ea-accordion__heading">
+      <button class="ea-accordion__trigger" aria-expanded="false" aria-controls="p1" id="b1">…icon… What counts as income?</button>
+    </h3>
+    <div class="ea-accordion__panel" id="p1" role="region" aria-labelledby="b1" hidden>…</div>
+  </div>
+</div>
+```
+
+---
+
+## Modal
+
+**Description:** Blocking dialog for confirmations and important status.
+
+| Variant | Use When |
+|---|---|
+| Standard | Neutral confirmation |
+| Info / Success | Informational outcome |
+| Warning / Error | Risky action or failure; uses `role="alertdialog"` |
+
+**Anatomy:** 560px, 4px radius, Elevation64; header (20px status icon, 20/28 SemiBold title, X), body 16/24, right-aligned Outline + Solid buttons 6px apart.
+
+**Accessibility:** `role="dialog"|"alertdialog"`, `aria-modal`, `aria-labelledby` (title), `aria-describedby` (body). Focus moves in (least destructive action), Tab trapped, Esc closes, focus returns to trigger. The **Interactive** story implements this.
+
+| ✅ Do | ❌ Don't |
+|---|---|
+| Label buttons with verbs ("Discard changes") | Use "OK"/"Yes"; stack modals |
+
+```html
+<div class="ea-modal-scrim">
+  <div class="ea-modal ea-modal--warning" role="alertdialog" aria-modal="true" aria-labelledby="t" aria-describedby="d">
+    <div class="ea-modal__header">…icon…<h2 class="ea-modal__title" id="t">Unsaved changes</h2><button class="ea-modal__close" aria-label="Close">…</button></div>
+    <div class="ea-modal__body" id="d"><p>…</p></div>
+    <div class="ea-modal__footer"><button class="ea-btn ea-btn--destructive ea-btn--outline">Keep editing</button><button class="ea-btn ea-btn--destructive">Discard</button></div>
+  </div>
+</div>
+```
+
+---
+
+## Tooltip
+
+**Description:** One sentence of supplementary help on hover/focus, usually from an input label's info icon.
+
+**Note:** Vitae's Tooltip page is still stock Fluent 2 (Segoe UI); mapped to Enroll tokens (brand font 12/16, white, 4px, 240px max, Shadow 08). Placements: `--top|bottom|left|right|none`.
+
+**Accessibility:** trigger is a `<button>` with `aria-describedby` → `role="tooltip"`; show on hover **and** focus, dismiss on Esc (WCAG 1.4.13). No interactive content inside.
+
+| ✅ Do | ❌ Don't |
+|---|---|
+| Keep it supplementary | Put task-critical info only in a tooltip |
+
+---
+
+## Dropdown
+
+**Description:** Single choice from 5–15 options. Vitae's Dropdown = the input trunk + trailing chevron.
+
+**Implementation:** native `<select class="ea-input ea-select">` + chevron icon, inheriting all Text Input states. Hidden disabled first option = placeholder (so `required` works). Vitae doesn't design the open option panel yet; the OS menu is used.
+
+| ✅ Do | ❌ Don't |
+|---|---|
+| Use Radio for 2–4 options | Use for very long lists (use a searchable input) |
+
+---
+
+## Date Picker
+
+**Description:** Typed `MM/DD/YYYY` entry with an optional calendar assist. Vitae's page only explores input styles (Default / Alt 1 underline / Alt 2 floating label). **Default** is implemented. The calendar popover is **not designed in Vitae** and is built from existing tokens. It needs a design pass.
+
+**Accessibility:** `inputmode="numeric"`, visible format hint wired via `aria-describedby`; calendar button `aria-haspopup="dialog"`/`aria-expanded`; APG date-picker dialog keyboard model (arrows, PageUp/Down, Home/End, Enter, Esc), `aria-current="date"` for today, `aria-selected` for the selection. Verified in a headless browser: keyboard selection writes the value; Esc returns focus.
+
+| ✅ Do | ❌ Don't |
+|---|---|
+| Keep the format hint visible | Force calendar-only entry for date of birth |
 
 ---
 

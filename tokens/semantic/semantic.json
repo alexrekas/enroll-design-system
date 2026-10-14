@@ -54,6 +54,11 @@
       "brand-subtle": {
         "$value": "{color.brand.primary.005}",
         "$type": "color"
+      },
+      "overlay": {
+        "$value": "rgba(0,0,0,0.4)",
+        "$type": "color",
+        "$description": "modal scrim"
       }
     },
     "border": {
@@ -69,6 +74,11 @@
         "$value": "{color.brand.primary.100}",
         "$type": "color",
         "$description": "Vitae input focus uses brand primary"
+      },
+      "focus-outline": {
+        "$value": "#1e1e1e",
+        "$type": "color",
+        "$description": "Vitae color/border/focus-outline (dashed focus ring)"
       }
     },
     "action": {
@@ -137,6 +147,26 @@
       "info-surface": {
         "$value": "{color.feedback.info.010}",
         "$type": "color"
+      },
+      "info-notification": {
+        "$value": "{color.feedback.info.020}",
+        "$type": "color",
+        "$description": "Vitae notification-info surface (alerts, tags, modal accents)"
+      },
+      "success-notification": {
+        "$value": "{color.feedback.success.020}",
+        "$type": "color",
+        "$description": "Vitae notification-success surface (alerts, tags, modal accents)"
+      },
+      "warning-notification": {
+        "$value": "{color.feedback.warning.020}",
+        "$type": "color",
+        "$description": "Vitae notification-warning surface (alerts, tags, modal accents)"
+      },
+      "error-notification": {
+        "$value": "{color.feedback.error.015}",
+        "$type": "color",
+        "$description": "Vitae notification-error surface (alerts, tags, modal accents)"
       }
     }
   },
@@ -190,6 +220,188 @@
         "$type": "dimension",
         "$description": "light gap between component and ring"
       }
+    }
+  },
+  "type": {
+    "h1": {
+      "size": {
+        "$value": "{font.size.750}",
+        "$type": "dimension"
+      },
+      "line-height": {
+        "$value": "{font.line-height-px.54px}",
+        "$type": "dimension"
+      },
+      "weight": {
+        "$value": "{font.weight.bold}",
+        "$type": "fontWeight"
+      },
+      "$description": "2021 h1 36/54 Bold (Vitae 36/45)"
+    },
+    "h2": {
+      "size": {
+        "$value": "{font.size.600}",
+        "$type": "dimension"
+      },
+      "line-height": {
+        "$value": "{font.line-height-px.36px}",
+        "$type": "dimension"
+      },
+      "weight": {
+        "$value": "{font.weight.bold}",
+        "$type": "fontWeight"
+      },
+      "$description": "2021 h2 24/36 Bold (Vitae h2 is 32/40)"
+    },
+    "h3": {
+      "size": {
+        "$value": "{font.size.400}",
+        "$type": "dimension"
+      },
+      "line-height": {
+        "$value": "{font.line-height-px.27px}",
+        "$type": "dimension"
+      },
+      "weight": {
+        "$value": "{font.weight.bold}",
+        "$type": "fontWeight"
+      },
+      "$description": "2021 h3 18/27 Bold (Vitae h3 is 28/35)"
+    },
+    "dialog": {
+      "size": {
+        "$value": "{font.size.500}",
+        "$type": "dimension"
+      },
+      "line-height": {
+        "$value": "{font.line-height-px.28px}",
+        "$type": "dimension"
+      },
+      "weight": {
+        "$value": "{font.weight.semibold}",
+        "$type": "fontWeight"
+      },
+      "$description": "2021 dialog-box-header 20/28 SemiBold (Vitae modal uses h5 20/25)"
+    },
+    "paragraph": {
+      "size": {
+        "$value": "{font.size.300}",
+        "$type": "dimension"
+      },
+      "line-height": {
+        "$value": "{font.line-height-px.24px}",
+        "$type": "dimension"
+      },
+      "weight": {
+        "$value": "{font.weight.regular}",
+        "$type": "fontWeight"
+      },
+      "$description": "2021 paragraph 16/24 (Vitae 16/20)"
+    },
+    "label": {
+      "size": {
+        "$value": "{font.size.300}",
+        "$type": "dimension"
+      },
+      "line-height": {
+        "$value": "{font.line-height-px.24px}",
+        "$type": "dimension"
+      },
+      "weight": {
+        "$value": "{font.weight.semibold}",
+        "$type": "fontWeight"
+      },
+      "$description": "2021 input-label 16/24 SemiBold"
+    },
+    "button": {
+      "size": {
+        "$value": "{font.size.300}",
+        "$type": "dimension"
+      },
+      "line-height": {
+        "$value": "{font.line-height-px.20px}",
+        "$type": "dimension"
+      },
+      "weight": {
+        "$value": "{font.weight.semibold}",
+        "$type": "fontWeight"
+      },
+      "$description": "2021 + Vitae button-text 16/20 SemiBold"
+    },
+    "table-header": {
+      "size": {
+        "$value": "{font.size.300}",
+        "$type": "dimension"
+      },
+      "line-height": {
+        "$value": "{font.line-height-px.24px}",
+        "$type": "dimension"
+      },
+      "weight": {
+        "$value": "{font.weight.semibold}",
+        "$type": "fontWeight"
+      },
+      "$description": "2021 table-header 16/24"
+    },
+    "table-col1": {
+      "size": {
+        "$value": "{font.size.200}",
+        "$type": "dimension"
+      },
+      "line-height": {
+        "$value": "{font.line-height-px.24px}",
+        "$type": "dimension"
+      },
+      "weight": {
+        "$value": "{font.weight.regular}",
+        "$type": "fontWeight"
+      },
+      "$description": "2021 table-data(col1) 14/24 (Vitae 16)"
+    },
+    "table-data": {
+      "size": {
+        "$value": "{font.size.100}",
+        "$type": "dimension"
+      },
+      "line-height": {
+        "$value": "{font.line-height-px.20px}",
+        "$type": "dimension"
+      },
+      "weight": {
+        "$value": "{font.weight.regular}",
+        "$type": "fontWeight"
+      },
+      "$description": "2021 table-data(col1+n) 12/20 (Vitae 14)"
+    },
+    "breadcrumb": {
+      "size": {
+        "$value": "{font.size.200}",
+        "$type": "dimension"
+      },
+      "line-height": {
+        "$value": "{font.line-height-px.20px}",
+        "$type": "dimension"
+      },
+      "weight": {
+        "$value": "{font.weight.regular}",
+        "$type": "fontWeight"
+      },
+      "$description": "2021 breadcrumb 14/20 (Vitae 16)"
+    },
+    "caption": {
+      "size": {
+        "$value": "{font.size.100}",
+        "$type": "dimension"
+      },
+      "line-height": {
+        "$value": "{font.size.300}",
+        "$type": "dimension"
+      },
+      "weight": {
+        "$value": "{font.weight.regular}",
+        "$type": "fontWeight"
+      },
+      "$description": "tooltip text 12/16"
     }
   }
 }
