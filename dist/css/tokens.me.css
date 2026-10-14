@@ -363,6 +363,7 @@
   --ea-nav-header-portal-decoration: underline; /** ME-nuharbor-1 Navigation (5958:25693): portal link underlined */
   --ea-nav-footer-help-radius: 30px; /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866) */
   --ea-nav-footer-content-width: 1140px; /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866) */
+  --ea-nav-footer-rule-width: 0px; /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): no top rule */
   --ea-nav-left-nav-width: 280px;
   --ea-nav-subnav-padding-y: 11px; /** ME-nuharbor-1 Navigation (5958:25693) */
   --ea-nav-subnav-badge-radius: 6px; /** ME-nuharbor-1 Navigation (5958:25693) */
@@ -564,6 +565,7 @@
   --ea-nav-footer-bg: var(--ea-color-warmgray-040); /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): Bottom - Details and Help #E1DFDD */
   --ea-nav-footer-help-bg: var(--ea-color-warmgray-030); /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): help pill #EDEBE9 */
   --ea-nav-footer-padding-y: var(--ea-space-150); /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866) */
+  --ea-nav-footer-rule: var(--ea-color-warmgray-060); /** Top rule on the footer body (shown only where rule-width > 0) */
   --ea-nav-left-nav-item-padding-x: var(--ea-space-200);
   --ea-nav-left-nav-item-padding-y: var(--ea-space-150);
   --ea-nav-subnav-broker-text: var(--ea-color-white); /** ME-nuharbor-1 Navigation (5958:25693) */

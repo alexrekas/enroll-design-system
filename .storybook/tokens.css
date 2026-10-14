@@ -196,7 +196,8 @@
 /* ---------- Header / Footer (latest Bootstrap anatomy) ---------- */
 /* Source of truth: ME-nuharbor-1 "Navigation" set (5958:25693), Navigation/Footer/Desktop-1 (823:92866),
    000 - Mobile (790:64426); DC from "DC - Bootstrap Upgrade" Navigation (5958:25693) and
-   Navigation/Footer/Desktop-0 (15640:6530). EA/MA reuse the ME anatomy with their own logo + brand tokens
+   Navigation/Footer/Desktop-0 (15640:6530); MA from "MA - Bootstrap Upgrade" Navigation (5958:25693) and
+   Navigation/Footer/Desktop-1 (823:92866). EA reuses the ME anatomy with their own logo + brand tokens
    (see story source badges). Client differences are tokens (dist/css) plus the per-client shell
    options in stories/brand-assets.js. */
 .ea-shell-inner { width: min(var(--ea-nav-header-content-width), calc(100% - 32px)); margin: 0 auto; box-sizing: border-box; }
@@ -246,7 +247,7 @@
 .ea-footer__lang .ea-shell-inner { display: flex; align-items: center; gap: var(--ea-space-150); flex-wrap: wrap; }
 .ea-footer__lang svg { width: 24px; height: 24px; }
 .ea-footer__lang a { color: var(--ea-nav-footer-link); text-decoration: underline; }
-.ea-footer__body { background: var(--ea-nav-footer-bg); padding: var(--ea-nav-footer-padding-y) 0; }
+.ea-footer__body { background: var(--ea-nav-footer-bg); padding: var(--ea-nav-footer-padding-y) 0; border-top: var(--ea-nav-footer-rule-width) solid var(--ea-nav-footer-rule); }
 .ea-footer__body .ea-shell-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
 .ea-footer__body p { margin: 0; }
 .ea-footer__help { display: flex; align-items: center; gap: 4px; background: var(--ea-nav-footer-help-bg); border-radius: var(--ea-nav-footer-help-radius); padding: 6px 12px; }

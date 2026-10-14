@@ -658,6 +658,8 @@
   "NavFooterPaddingY": "12px",
   "NavFooterContentWidth": "1140px",
   "NavFooterIcon": "#3d5d6f",
+  "NavFooterRule": "#c8c6c4",
+  "NavFooterRuleWidth": "0px",
   "NavLeftNavBg": "#ffffff",
   "NavLeftNavWidth": "280px",
   "NavLeftNavItemPaddingX": "16px",

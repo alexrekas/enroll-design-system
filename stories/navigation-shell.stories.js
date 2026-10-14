@@ -1,7 +1,7 @@
 import { icon } from './icons.js';
 import { logos, brand, navIcons, figmaSources } from './brand-assets.js';
 
-const { FIGMA_2021, FIGMA_ME, FIGMA_DC } = figmaSources;
+const { FIGMA_2021, FIGMA_ME, FIGMA_DC, FIGMA_MA } = figmaSources;
 const node = (file, id) => `${file}?node-id=${id.replace(':', '-')}`;
 
 const USERS = {
@@ -23,12 +23,14 @@ const SUBNAV = {
 const meSrc = { label: 'ME-nuharbor-1 · Navigation', url: node(FIGMA_ME, '5958:25693') };
 const dcSrc = { label: 'DC - Bootstrap Upgrade · Navigation', url: node(FIGMA_DC, '5958:25693') };
 const dcFooterSrc = { label: 'DC - Bootstrap Upgrade · Navigation/Footer/Desktop-0', url: node(FIGMA_DC, '15640:6530') };
+const maSrc = { label: 'MA - Bootstrap Upgrade · Navigation', url: node(FIGMA_MA, '5958:25693') };
+const maFooterSrc = { label: 'MA - Bootstrap Upgrade · Navigation/Footer/Desktop-1', url: node(FIGMA_MA, '823:92866') };
+const CLIENT_SRC = { me: meSrc, dc: dcSrc, ma: maSrc };
 const shellOf = (theme) => brand[theme].shell || {};
 const ea2021 = { label: 'EA-DesignSystem-2021 · Navigation/HeaderFooter-Desktop', url: node(FIGMA_2021, '991:21766') };
 const headerDesign = (extra = []) => (globals) => {
   const t = globals.theme || 'ea';
-  if (t === 'me') return [{ ...meSrc, status: 'figma' }, ...extra];
-  if (t === 'dc') return [{ ...dcSrc, status: 'figma' }, ...extra];
+  if (CLIENT_SRC[t]) return [{ ...CLIENT_SRC[t], status: 'figma' }, ...extra];
   return [{ ...meSrc, status: 'projected', note: `No latest-Bootstrap ${t.toUpperCase()} header in Figma yet — ME anatomy with ${t.toUpperCase()} logo + brand tokens` }, { ...ea2021, status: 'reference', note: `${t.toUpperCase()} variant here is the older style` }, ...extra];
 };
 
@@ -36,6 +38,7 @@ const header = ({ user = 'individual', subnav = true, cartCount = 0 }, theme) =>
   const sh = shellOf(theme);
   const u = { ...USERS[user] };
   if (user === 'employer' && sh.employerIcon) u.icon = navIcons[sh.employerIcon];
+  if (user === 'employee' && sh.employeeIcon) u.icon = navIcons[sh.employeeIcon];
   const nav = subnav && SUBNAV[user] && [...SUBNAV[user], ...(user === 'admin' && sh.adminExtra ? sh.adminExtra : [])];
   return `
   <header class="ea-header">
@@ -52,7 +55,7 @@ const header = ({ user = 'individual', subnav = true, cartCount = 0 }, theme) =>
           <span class="ea-header__user-icon">${u.icon}</span>
           <div>
             <p class="ea-header__user-name">${u.name}</p>
-            <div class="ea-header__user-meta"><span>ID: ${u.id}</span>${sh.myPortal === false ? '' : '<a href="#">My Portal</a>'}<a href="#">Log Out</a></div>
+            <div class="ea-header__user-meta"><span>ID: ${u.id}</span>${sh.myPortal === false || user === 'employee' ? '' : '<a href="#">My Portal</a>'}<a href="#">Log Out</a></div>
           </div>
         </div>` : ''}
       </div>
@@ -92,8 +95,8 @@ const footer = (theme, { showLanguages = false } = {}) => {
     <div class="ea-footer__body"><div class="ea-shell-inner">
       <div><p><strong>${b.copyright}</strong></p><p>All Rights Reserved.</p></div>
       <div class="ea-footer__help">
-        <a class="ea-btn ea-btn--secondary" href="tel:${b.phone.replace(/[^\d]/g, '').slice(0, 10)}">${navIcons.phone}${b.phone}</a>
-        <a class="ea-btn ea-btn--primary" href="#">Get Help</a>
+        <a class="ea-btn ea-btn--${(sh.helpLevels || ['secondary'])[0]}" href="${tel}">${navIcons.phone}${b.phone}</a>
+        <a class="ea-btn ea-btn--${(sh.helpLevels || [, 'primary'])[1]}" href="#">Get Help</a>
       </div>
     </div></div>
   </footer>`;
@@ -110,7 +113,7 @@ export default {
       description: {
         component: `Global page chrome — **latest Bootstrap style only** (DC and MA production still run an older version; that older style is intentionally not modeled here).
 
-**Source of truth:** ME-nuharbor-1 \`Navigation\` (User = Individual & Family / Broker / Admin, Logged In, Navigation), \`Navigation/Footer/Desktop-1\`, and the \`000 - Mobile\` frames. Employer (building icon) and the cart-count variant come from EA-DesignSystem-2021 \`HeaderFooter-Desktop\`. **DC** is built from **DC - Bootstrap Upgrade** \`Navigation\` and \`Navigation/Footer/Desktop-0\`: no My Portal link, an Employee user type, a retail-building Employer icon, Notices in the Admin bar, both nav bars in #00629D, and a single-row white footer with ghost contact links. Logos and icons are exported from those files, not redrawn. **Switch the toolbar Theme** to see each client: ME and DC are direct builds; EA/MA reuse the ME anatomy with their own logo and brand tokens until their latest-Bootstrap frames exist (the source badge under each story says which).
+**Source of truth:** ME-nuharbor-1 \`Navigation\` (User = Individual & Family / Broker / Admin, Logged In, Navigation), \`Navigation/Footer/Desktop-1\`, and the \`000 - Mobile\` frames. Employer (building icon) and the cart-count variant come from EA-DesignSystem-2021 \`HeaderFooter-Desktop\`. **DC** is built from **DC - Bootstrap Upgrade** \`Navigation\` and \`Navigation/Footer/Desktop-0\`: no My Portal link, an Employee user type, a retail-building Employer icon, Notices in the Admin bar, both nav bars in #00629D, and a single-row white footer with ghost contact links. **MA** is built from **MA - Bootstrap Upgrade** \`Navigation\` and \`Navigation/Footer/Desktop-1\`: Employee user type (no My Portal), consumer icon for Employer, Notices in the Admin bar, both nav bars in MA primary-100, and a #EDEBE9 footer with a 2px top rule and Primary phone / Secondary Get Help buttons. Logos and icons are exported from those files, not redrawn. **Switch the toolbar Theme** to see each client: ME, DC and MA are direct builds; EA reuses the ME anatomy with their own logo and brand tokens until their latest-Bootstrap frames exist (the source badge under each story says which).
 
 **Anatomy:** 70px bar + 2px brand rule · logo | divider | portal link · user block (32px user-type icon, name, ID / My Portal / Log Out). Broker adds a brand-color nav bar; Admin adds a light nav bar with dropdowns. Mail count uses a 24px badge.
 
@@ -140,7 +143,7 @@ export const Employer = {
 };
 export const Employee = {
   args: { user: 'employee' },
-  parameters: { design: (g) => (g.theme || 'ea') === 'dc' ? [{ ...dcSrc, status: 'figma' }] : [{ ...dcSrc, status: 'projected', note: 'Employee header exists only in the DC file so far' }] },
+  parameters: { design: (g) => ['dc', 'ma'].includes(g.theme || 'ea') ? [{ ...CLIENT_SRC[g.theme], status: 'figma' }] : [{ ...dcSrc, status: 'projected', note: 'Employee header exists only in the DC and MA files so far' }] },
 };
 export const Broker = { args: { user: 'broker' }, parameters: { design: headerDesign() } };
 export const Admin = { args: { user: 'admin' }, parameters: { design: headerDesign() } };
@@ -155,7 +158,7 @@ export const AllUserTypes = {
 
 export const Footer = {
   parameters: {
-    design: (g) => (g.theme || 'ea') === 'dc' ? [{ ...dcFooterSrc, status: 'figma' }] : (g.theme || 'ea') === 'me'
+    design: (g) => (g.theme || 'ea') === 'dc' ? [{ ...dcFooterSrc, status: 'figma' }] : (g.theme || 'ea') === 'ma' ? [{ ...maFooterSrc, status: 'figma', note: 'Figma phone is a (000) 000-0000 placeholder; story uses the real number' }] : (g.theme || 'ea') === 'me'
       ? [{ label: 'ME-nuharbor-1 · Navigation/Footer/Desktop-1', url: node(FIGMA_ME, '823:92866'), status: 'figma' }]
       : [{ label: 'ME-nuharbor-1 · Navigation/Footer/Desktop-1', url: node(FIGMA_ME, '823:92866'), status: 'projected', note: 'Client contact details from EA-DesignSystem-2021 footers' }, { ...ea2021, status: 'reference' }],
   },

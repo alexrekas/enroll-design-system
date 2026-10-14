@@ -898,6 +898,16 @@
         "$value": "{nav.footer.link}",
         "$type": "color",
         "$description": "Icon color in footer contact links"
+      },
+      "rule": {
+        "$value": "{color.warmgray.060}",
+        "$type": "color",
+        "$description": "Top rule on the footer body (shown only where rule-width > 0)"
+      },
+      "rule-width": {
+        "$value": "0px",
+        "$type": "dimension",
+        "$description": "ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): no top rule"
       }
     },
     "left-nav": {

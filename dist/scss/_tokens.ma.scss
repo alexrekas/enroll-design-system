@@ -638,10 +638,10 @@ $ea-nav-pagination-arrow-color-disabled: #878584;
 $ea-nav-pagination-gap: 8px;
 $ea-nav-header-bg: #ffffff; // ME-nuharbor-1 Navigation (5958:25693)
 $ea-nav-header-height: 70px; // ME-nuharbor-1 Navigation (5958:25693): 70px bar + 2px rule
-$ea-nav-header-rule: #c15800; // ME-nuharbor-1 Navigation (5958:25693): 2px bottom rule = Secondary/100/ME. DC/MA/EA projected
+$ea-nav-header-rule: #005e81; // MA - Bootstrap Upgrade Navigation (5958:25693): 2px rule #005E81 (MA primary-100)
 $ea-nav-header-rule-width: 2px; // ME-nuharbor-1 Navigation (5958:25693)
 $ea-nav-header-content-width: 1140px; // ME-nuharbor-1 Navigation (5958:25693): 150px gutters at 1440
-$ea-nav-header-logo-height: 32px; // ME-nuharbor-1 Navigation (5958:25693): Logo/Domain 163x32
+$ea-nav-header-logo-height: 35px; // MA - Bootstrap Upgrade Navigation (5958:25693): Logo/Domain 110x35
 $ea-nav-header-gap: 12px; // ME-nuharbor-1 Navigation (5958:25693)
 $ea-nav-header-divider: #c8c6c4; // ME-nuharbor-1 Navigation (5958:25693): 1px x 60px divider (Greys/grey-060)
 $ea-nav-header-portal-color: #005e81; // ME-nuharbor-1 Navigation (5958:25693): portal link = Primary/100/ME, SemiBold, underlined
@@ -650,16 +650,18 @@ $ea-nav-header-user-name: #333333; // ME-nuharbor-1 Navigation (5958:25693): Bol
 $ea-nav-header-user-meta: #333333; // ME-nuharbor-1 Navigation (5958:25693): ID Regular 16/20
 $ea-nav-header-link: #005e81; // ME-nuharbor-1 Navigation (5958:25693): My Portal / Log Out, underlined
 $ea-nav-header-separator: #c8c6c4; // ME-nuharbor-1 Navigation (5958:25693): 1px separators between ID / My Portal / Log Out
-$ea-nav-header-portal-decoration: underline; // ME-nuharbor-1 Navigation (5958:25693): portal link underlined
+$ea-nav-header-portal-decoration: none; // MA - Bootstrap Upgrade Navigation (5958:25693): portal label SemiBold, not underlined
 $ea-nav-footer-lang-bg: #edebe9; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): Top - Languages #EDEBE9
-$ea-nav-footer-bg: #e1dfdd; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): Bottom - Details and Help #E1DFDD
+$ea-nav-footer-bg: #edebe9; // MA - Bootstrap Upgrade Navigation/Footer/Desktop-1 (823:92866): #EDEBE9
 $ea-nav-footer-text: #333333; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866)
 $ea-nav-footer-link: #005e81; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): language links Primary/100/ME, underlined
-$ea-nav-footer-help-bg: #edebe9; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): help pill #EDEBE9
+$ea-nav-footer-help-bg: #ffffff; // MA - Bootstrap Upgrade Navigation/Footer/Desktop-1 (823:92866): white help pill
 $ea-nav-footer-help-radius: 30px; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866)
 $ea-nav-footer-padding-y: 12px; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866)
 $ea-nav-footer-content-width: 1140px; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866)
 $ea-nav-footer-icon: #005e81; // Icon color in footer contact links
+$ea-nav-footer-rule: #c8c6c4; // MA - Bootstrap Upgrade Navigation/Footer/Desktop-1 (823:92866): 2px top stroke #C8C6C4
+$ea-nav-footer-rule-width: 2px; // MA - Bootstrap Upgrade Navigation/Footer/Desktop-1 (823:92866): 2px top stroke
 $ea-nav-left-nav-bg: #ffffff;
 $ea-nav-left-nav-width: 280px;
 $ea-nav-left-nav-item-padding-x: 16px;
@@ -669,13 +671,13 @@ $ea-nav-left-nav-item-text-active: #ffffff;
 $ea-nav-left-nav-item-bg-active: #005e81;
 $ea-nav-left-nav-item-bg-hover: #f2f2f2;
 $ea-nav-left-nav-divider: #d7d7d7;
-$ea-nav-subnav-broker-bg: #c15800; // ME-nuharbor-1 Navigation (5958:25693) User=Broker, Navigation=True: Secondary/100/ME bar
+$ea-nav-subnav-broker-bg: #005e81; // MA - Bootstrap Upgrade Navigation (5958:25693) User=Broker, Navigation=True: #005E81 bar
 $ea-nav-subnav-broker-text: #ffffff; // ME-nuharbor-1 Navigation (5958:25693)
-$ea-nav-subnav-admin-bg: #e5eff2; // ME-nuharbor-1 Navigation (5958:25693) User=Admin, Navigation=True: #EBEEF0 = ME primary-010
-$ea-nav-subnav-admin-text: #333333; // ME-nuharbor-1 Navigation (5958:25693)
+$ea-nav-subnav-admin-bg: #005e81; // MA - Bootstrap Upgrade Navigation (5958:25693) User=Admin, Navigation=True: same #005E81 bar as Broker
+$ea-nav-subnav-admin-text: #ffffff; // MA - Bootstrap Upgrade Navigation (5958:25693): white nav text
 $ea-nav-subnav-padding-y: 11px; // ME-nuharbor-1 Navigation (5958:25693)
-$ea-nav-subnav-gap-broker: 12px; // ME-nuharbor-1 Navigation (5958:25693)
-$ea-nav-subnav-gap-admin: 24px; // ME-nuharbor-1 Navigation (5958:25693)
+$ea-nav-subnav-gap-broker: 24px; // MA - Bootstrap Upgrade Navigation (5958:25693): 24px
+$ea-nav-subnav-gap-admin: 24px; // MA - Bootstrap Upgrade Navigation (5958:25693): 24px
 $ea-nav-subnav-badge-bg: #e5a900; // ME-nuharbor-1 Navigation (5958:25693): Mail count badge #E5A900
 $ea-nav-subnav-badge-text: #333333; // ME-nuharbor-1 Navigation (5958:25693)
 $ea-nav-subnav-badge-radius: 6px; // ME-nuharbor-1 Navigation (5958:25693)

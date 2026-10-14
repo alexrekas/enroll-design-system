@@ -1,5 +1,5 @@
 {
-  "$description": "MA Health Connector \u2014 ramps from 2021 DS MAHC frames",
+  "$description": "MA Health Connector — ramps from 2021 DS MAHC frames",
   "color": {
     "brand": {
       "primary": {
@@ -248,6 +248,74 @@
       "$value": "{radius.03}",
       "$type": "dimension",
       "$description": "EA-DesignSystem-2021 Biome=MA Primary Solid: 3px (decided 10/14/26: button radius comes from 2021 DS; Vitae draws 24px)"
+    }
+  },
+  "nav": {
+    "header": {
+      "rule": {
+        "$value": "{color.brand.primary.100}",
+        "$type": "color",
+        "$description": "MA - Bootstrap Upgrade Navigation (5958:25693): 2px rule #005E81 (MA primary-100)"
+      },
+      "logo-height": {
+        "$value": "35px",
+        "$type": "dimension",
+        "$description": "MA - Bootstrap Upgrade Navigation (5958:25693): Logo/Domain 110x35"
+      },
+      "portal-decoration": {
+        "$value": "none",
+        "$type": "other",
+        "$description": "MA - Bootstrap Upgrade Navigation (5958:25693): portal label SemiBold, not underlined"
+      }
+    },
+    "subnav": {
+      "broker-bg": {
+        "$value": "{color.brand.primary.100}",
+        "$type": "color",
+        "$description": "MA - Bootstrap Upgrade Navigation (5958:25693) User=Broker, Navigation=True: #005E81 bar"
+      },
+      "admin-bg": {
+        "$value": "{color.brand.primary.100}",
+        "$type": "color",
+        "$description": "MA - Bootstrap Upgrade Navigation (5958:25693) User=Admin, Navigation=True: same #005E81 bar as Broker"
+      },
+      "admin-text": {
+        "$value": "{color.white}",
+        "$type": "color",
+        "$description": "MA - Bootstrap Upgrade Navigation (5958:25693): white nav text"
+      },
+      "gap-broker": {
+        "$value": "{space.300}",
+        "$type": "dimension",
+        "$description": "MA - Bootstrap Upgrade Navigation (5958:25693): 24px"
+      },
+      "gap-admin": {
+        "$value": "{space.300}",
+        "$type": "dimension",
+        "$description": "MA - Bootstrap Upgrade Navigation (5958:25693): 24px"
+      }
+    },
+    "footer": {
+      "bg": {
+        "$value": "{color.warmgray.030}",
+        "$type": "color",
+        "$description": "MA - Bootstrap Upgrade Navigation/Footer/Desktop-1 (823:92866): #EDEBE9"
+      },
+      "help-bg": {
+        "$value": "{color.surface.raised}",
+        "$type": "color",
+        "$description": "MA - Bootstrap Upgrade Navigation/Footer/Desktop-1 (823:92866): white help pill"
+      },
+      "rule": {
+        "$value": "{color.warmgray.060}",
+        "$type": "color",
+        "$description": "MA - Bootstrap Upgrade Navigation/Footer/Desktop-1 (823:92866): 2px top stroke #C8C6C4"
+      },
+      "rule-width": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "MA - Bootstrap Upgrade Navigation/Footer/Desktop-1 (823:92866): 2px top stroke"
+      }
     }
   }
 }
