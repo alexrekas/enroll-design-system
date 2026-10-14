@@ -112,6 +112,18 @@ export default {
   title: 'Components/Date Picker',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "Vitae · Date Picker (input)",
+        "status": "figma",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=1251-7675"
+      },
+      {
+        "label": "Fluent 2 Calendar (stock)",
+        "status": "adapted",
+        "note": "Calendar popover follows stock Fluent 2 anatomy on Enroll tokens"
+      }
+    ],
     docs: {
       description: {
         component: `Date entry for DOB, coverage start, life-event dates. Source: **Vitae → Date Picker**, which shows the input styles only (Default / Alt 1 underline / Alt 2 floating label). This implements **Default** (it matches Text Input). The calendar popover uses the **stock Fluent 2 Calendar** anatomy (decided 10/14/26), mapped onto Enroll tokens: Month Year header with up/down arrows, single-letter weekdays, 28px day cells, today as a filled brand circle, selection as a brand tint, and a \"Go to today\" link.

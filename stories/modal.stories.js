@@ -39,6 +39,13 @@ export default {
   title: 'Components/Modal',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "Vitae · Modal",
+        "status": "figma",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=2615-18586"
+      }
+    ],
     docs: {
       description: {
         component: `Blocking dialog for confirmations, important status, and short decisions. Source: **Vitae → Modal** (Type = Standard / Info / Success / Warning / Error).

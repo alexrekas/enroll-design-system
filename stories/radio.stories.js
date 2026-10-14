@@ -2,6 +2,14 @@ export default {
   title: 'Components/Radio Button',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "Vitae · Radio Button",
+        "status": "reference",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=1223-50502",
+        "note": "Not yet updated to the Vitae frame"
+      }
+    ],
     docs: {
       description: {
         component: `Single-select control within a mutually exclusive group (e.g. Individual / Employee / Employer).

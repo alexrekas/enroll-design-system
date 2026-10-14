@@ -13,6 +13,13 @@ export default {
   title: 'Components/Alert',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "Vitae · Alert",
+        "status": "figma",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=2611-13948"
+      }
+    ],
     docs: {
       description: {
         component: `Source: **Vitae → Alert** (Type = Info/Success/Warning/Error, optional hyperlink row, optional X-close). Vitae notification-tint surfaces, 12px radius, 1px status border.\n\nInline banner communicating success, error, warning, or informational messages tied to page or form state.

@@ -6,6 +6,18 @@ export default {
   title: 'Components/Checkbox',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "Vitae · Checkbox",
+        "status": "figma",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=1309-558"
+      },
+      {
+        "label": "Vitae · Checkbox Group",
+        "status": "figma",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=1223-50433"
+      }
+    ],
     docs: {
       description: {
         component: `Standard checkbox for form selections, including an indeterminate ("partial") state for parent/group checkboxes.

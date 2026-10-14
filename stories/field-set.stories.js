@@ -67,6 +67,14 @@ export default {
   title: 'Components/Field-Set',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "EA-DesignSystem-2021 · Field-Set",
+        "status": "reference",
+        "url": "https://www.figma.com/design/pwv7np3TmLIWuBxO7Bz1go/EA-DesignSystem-2021?node-id=1083-14956",
+        "note": "Built 7/10; not re-verified"
+      }
+    ],
     docs: {
       description: {
         component: `A labeled group of related Text Input instances, matching the real field groupings from EA-DesignSystem-2021. **Rebuilt 7/10/26** — previously a single generic frame with placeholder fields (Legal Name / DBA / FEIN); now a real \`type\` × \`size\` variant matrix, each populated with the actual fields for that group.

@@ -6,9 +6,10 @@
   "scripts": {
     "build": "node build.mjs",
     "check:contrast": "node contrast-check.mjs",
-    "prepare:all": "npm run build && npm run check:contrast",
+    "prepare:all": "npm run build && npm run check:contrast && npm run check:sources",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "check:sources": "node check-sources.mjs"
   },
   "devDependencies": {
     "@storybook/addon-docs": "^10.4.6",

@@ -15,6 +15,13 @@ export default {
   title: 'Components/Navigation/Breadcrumbs',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "Vitae · Breadcrumb",
+        "status": "figma",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=1220-44720"
+      }
+    ],
     docs: {
       description: {
         component: `Shows where the user is in a multi-level flow. Source: **Vitae → Breadcrumb** (Location = First / Sub / Current / Elipses, each with a Hover state); type size from the 2021 breadcrumb style (14/20).

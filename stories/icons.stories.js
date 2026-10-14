@@ -23,6 +23,13 @@ export default {
   title: 'Foundations/Icon',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "EA-DesignSystem-Icons-2021 (library)",
+        "status": "reference",
+        "note": "Hand-recreated glyphs; header/brand icons in brand-assets.js are direct Figma exports"
+      }
+    ],
     docs: {
       description: {
         component: `Single shared icon set — one source of truth referenced by every other component (Button, Input, Alert, Tag, Field-Set, Table, Plan), instead of each component hand-drawing its own inline SVG.

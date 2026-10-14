@@ -279,6 +279,9 @@
   --ea-color-program-dc-healthy-border: #711f8b; /** Vitae tag/dc-healthy-dc-plan border */
   --ea-color-program-me-clear-choice-bg: #d5c1ce; /** Vitae tag/me-clear-choice-plan bg */
   --ea-color-program-me-clear-choice-border: #824270; /** Vitae tag/me-clear-choice-plan border */
+  --ea-color-warmgray-030: #edebe9; /** 2021 DS Greys/grey-030 (footer language row, help pill) */
+  --ea-color-warmgray-040: #e1dfdd; /** 2021 DS Greys/grey-040 (footer body) */
+  --ea-color-warmgray-060: #c8c6c4; /** 2021 DS Greys/grey-060 (header dividers) */
   --ea-color-surface-overlay: rgba(0, 0, 0, 0.4); /** modal scrim */
   --ea-color-border-focus-outline: #1e1e1e; /** Vitae color/border/focus-outline (dashed focus ring) */
   --ea-space-100: 8px; /** Vitae */
@@ -351,9 +354,18 @@
   --ea-radio-border-width: 2px;
   --ea-nav-breadcrumb-font-size: 14px;
   --ea-nav-pagination-box-radius: 3px;
-  --ea-nav-header-height: 72px;
-  --ea-nav-header-logo-height: 32px;
+  --ea-nav-header-height: 70px; /** ME-nuharbor-1 Navigation (5958:25693): 70px bar + 2px rule */
+  --ea-nav-header-rule-width: 2px; /** ME-nuharbor-1 Navigation (5958:25693) */
+  --ea-nav-header-content-width: 1140px; /** ME-nuharbor-1 Navigation (5958:25693): 150px gutters at 1440 */
+  --ea-nav-header-logo-height: 32px; /** ME-nuharbor-1 Navigation (5958:25693): Logo/Domain 163x32 */
+  --ea-nav-footer-help-radius: 30px; /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866) */
+  --ea-nav-footer-content-width: 1140px; /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866) */
   --ea-nav-left-nav-width: 280px;
+  --ea-nav-subnav-padding-y: 11px; /** ME-nuharbor-1 Navigation (5958:25693) */
+  --ea-nav-subnav-badge-radius: 6px; /** ME-nuharbor-1 Navigation (5958:25693) */
+  --ea-nav-mobile-header-height: 73px; /** ME-nuharbor-1 000 - Mobile (790:64426): 2px top rule + 69px row + 2px bottom rule */
+  --ea-nav-mobile-drawer-width: 260px; /** ME-nuharbor-1 000 - Mobile (790:64426) */
+  --ea-nav-mobile-scrim: rgba(0, 0, 0, 0.2); /** ME-nuharbor-1 000 - Mobile (790:64426): overlay over page while drawer is open */
   --ea-card-padding-x: 20px;
   --ea-card-padding-y: 15px;
   --ea-tag-border-width: 1px;
@@ -542,11 +554,20 @@
   --ea-radio-radius: var(--ea-radius-pill);
   --ea-nav-breadcrumb-gap: var(--ea-space-050);
   --ea-nav-pagination-gap: var(--ea-space-100);
-  --ea-nav-header-padding-x: var(--ea-space-300);
-  --ea-nav-footer-padding-x: var(--ea-space-300);
-  --ea-nav-footer-padding-y: var(--ea-space-300);
+  --ea-nav-header-gap: var(--ea-space-150); /** ME-nuharbor-1 Navigation (5958:25693) */
+  --ea-nav-header-divider: var(--ea-color-warmgray-060); /** ME-nuharbor-1 Navigation (5958:25693): 1px x 60px divider (Greys/grey-060) */
+  --ea-nav-header-separator: var(--ea-color-warmgray-060); /** ME-nuharbor-1 Navigation (5958:25693): 1px separators between ID / My Portal / Log Out */
+  --ea-nav-footer-lang-bg: var(--ea-color-warmgray-030); /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): Top - Languages #EDEBE9 */
+  --ea-nav-footer-bg: var(--ea-color-warmgray-040); /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): Bottom - Details and Help #E1DFDD */
+  --ea-nav-footer-help-bg: var(--ea-color-warmgray-030); /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): help pill #EDEBE9 */
+  --ea-nav-footer-padding-y: var(--ea-space-150); /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866) */
   --ea-nav-left-nav-item-padding-x: var(--ea-space-200);
   --ea-nav-left-nav-item-padding-y: var(--ea-space-150);
+  --ea-nav-subnav-broker-text: var(--ea-color-white); /** ME-nuharbor-1 Navigation (5958:25693) */
+  --ea-nav-subnav-gap-broker: var(--ea-space-150); /** ME-nuharbor-1 Navigation (5958:25693) */
+  --ea-nav-subnav-gap-admin: var(--ea-space-300); /** ME-nuharbor-1 Navigation (5958:25693) */
+  --ea-nav-subnav-badge-bg: var(--ea-color-feedback-warning-vitae); /** ME-nuharbor-1 Navigation (5958:25693): Mail count badge #E5A900 */
+  --ea-nav-mobile-footer-bg: var(--ea-color-warmgray-040); /** ME-nuharbor-1 000 - Mobile (790:64426): HeaderFooter-Mobile footer */
   --ea-card-radius: var(--ea-radius-04); /** 2021 DS Card radius (approx 5px -> using 4px scale step) */
   --ea-card-gap: var(--ea-space-150);
   --ea-tag-radius: var(--ea-radius-24); /** Vitae tag pill 24px */
@@ -695,17 +716,25 @@
   --ea-nav-pagination-box-border: var(--ea-form-border); /** 2021 DS Input/atrest */
   --ea-nav-pagination-arrow-color: var(--ea-color-text-secondary);
   --ea-nav-pagination-arrow-color-disabled: var(--ea-button-disabled-text);
-  --ea-nav-header-bg: var(--ea-color-surface-raised);
-  --ea-nav-header-border: var(--ea-color-border-default);
-  --ea-nav-header-link-color: var(--ea-color-text-primary);
-  --ea-nav-footer-bg: var(--ea-color-surface-sunken);
-  --ea-nav-footer-border: var(--ea-color-border-default);
-  --ea-nav-footer-text: var(--ea-color-text-secondary);
+  --ea-nav-header-bg: var(--ea-color-surface-raised); /** ME-nuharbor-1 Navigation (5958:25693) */
+  --ea-nav-header-rule: var(--ea-color-brand-secondary-100); /** ME-nuharbor-1 Navigation (5958:25693): 2px bottom rule = Secondary/100/ME. DC/MA/EA projected */
+  --ea-nav-header-portal-color: var(--ea-color-brand-primary-100); /** ME-nuharbor-1 Navigation (5958:25693): portal link = Primary/100/ME, SemiBold, underlined */
+  --ea-nav-header-user-icon: var(--ea-color-brand-primary-100); /** ME-nuharbor-1 Navigation (5958:25693): 32px user-type icon */
+  --ea-nav-header-user-name: var(--ea-color-text-primary); /** ME-nuharbor-1 Navigation (5958:25693): Bold 16/20 */
+  --ea-nav-header-user-meta: var(--ea-color-text-primary); /** ME-nuharbor-1 Navigation (5958:25693): ID Regular 16/20 */
+  --ea-nav-header-link: var(--ea-color-brand-primary-100); /** ME-nuharbor-1 Navigation (5958:25693): My Portal / Log Out, underlined */
+  --ea-nav-footer-text: var(--ea-color-text-primary); /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866) */
+  --ea-nav-footer-link: var(--ea-color-brand-primary-100); /** ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): language links Primary/100/ME, underlined */
   --ea-nav-left-nav-bg: var(--ea-color-surface-raised);
   --ea-nav-left-nav-item-text: var(--ea-color-text-primary);
   --ea-nav-left-nav-item-text-active: var(--ea-color-text-on-action);
   --ea-nav-left-nav-item-bg-hover: var(--ea-color-surface-sunken);
   --ea-nav-left-nav-divider: var(--ea-color-border-default);
+  --ea-nav-subnav-broker-bg: var(--ea-color-brand-secondary-100); /** ME-nuharbor-1 Navigation (5958:25693) User=Broker, Navigation=True: Secondary/100/ME bar */
+  --ea-nav-subnav-admin-bg: var(--ea-color-brand-primary-010); /** ME-nuharbor-1 Navigation (5958:25693) User=Admin, Navigation=True: #EBEEF0 = ME primary-010 */
+  --ea-nav-subnav-admin-text: var(--ea-color-text-primary); /** ME-nuharbor-1 Navigation (5958:25693) */
+  --ea-nav-subnav-badge-text: var(--ea-color-text-primary); /** ME-nuharbor-1 Navigation (5958:25693) */
+  --ea-nav-mobile-drawer-label: var(--ea-color-text-primary); /** ME-nuharbor-1 000 - Mobile (790:64426) */
   --ea-card-bg: var(--ea-color-surface-raised);
   --ea-card-title-color: var(--ea-color-text-primary);
   --ea-card-divider: var(--ea-color-border-default);
@@ -754,8 +783,6 @@
   --ea-button-primary-bg-active: var(--ea-color-action-primary-active);
   --ea-form-selected-bg: var(--ea-color-action-primary-rest); /** 2021 DS Primary/100 -- Toggle on-fill, Checkbox checked-fill, Radio selected-fill */
   --ea-form-selected-bg-hover: var(--ea-color-action-primary-hover); /** 2021 DS Primary/120 */
-  --ea-nav-header-link-color-active: var(--ea-color-action-primary-rest);
-  --ea-nav-footer-link-color: var(--ea-color-text-link);
   --ea-nav-left-nav-item-bg-active: var(--ea-color-action-primary-rest);
   --ea-progress-complete: var(--ea-color-action-primary-active); /** 2021 DS Primary/140 -- completed segment */
   --ea-plan-footer-text: var(--ea-color-action-primary-rest);

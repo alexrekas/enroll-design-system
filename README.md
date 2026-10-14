@@ -43,6 +43,19 @@ npm run build-storybook # static build (a prebuilt copy ships in storybook-stati
 3. Adding client #5 = one new theme file + one primitive ramp set.
 4. Contrast gate must pass for every theme before merge.
 
+## Where each story comes from
+
+Every Storybook story shows a **Source** badge under it, linking to the Figma frame it was built from:
+
+| Badge | Meaning |
+|---|---|
+| **From Figma** | Built from that frame and checked against it |
+| **Adapted from Figma** | Built from the frame, restyled onto Enroll tokens or anatomy (e.g. Fluent 2 tooltip/calendar) |
+| **Reference · not re-verified** | Built from that frame in an earlier pass; not re-checked since |
+| **Projected · no Figma frame yet** | No frame exists for this client/variant; built from the closest real frame |
+
+Stories declare this with `parameters.design` (see `.storybook/preview.js`). CI fails if a story file has none (`npm run check:sources`). Logos and header/footer icons in `stories/brand-assets.js` are exported from Figma (`exportAsync`), not redrawn.
+
 ## Resolved 10/14/26
 
 - **Base font:** Open Sans (`font.family.base`). Roboto Flex removed. ME keeps Barlow.
@@ -56,6 +69,7 @@ npm run build-storybook # static build (a prebuilt copy ships in storybook-stati
 ## Known gaps
 
 - **Vitae divergences from the 2021 type scale** (not adopted): Vitae h2 32/40, h3 28/35, 1.25 line-height everywhere, table data +2px.
+- **Header/Footer:** only the latest-Bootstrap style is modeled (DC/MA production still run an older version). Maine (ME-nuharbor-1) is the only client with latest-Bootstrap frames; EA/DC/MA are projected from it. The MA logo available in the 2021 file is the "for Business" lockup.
 - **Vitae EA-Dark mode** exists in the Vitae variable collection; no dark theme is built here yet.
 - **Stock Fluent 2 (decided 10/14/26):** date-picker calendar popover and tooltip follow Fluent 2 anatomy on Enroll tokens. Dropdown option panel isn't designed (native `<select>` used).
 - **Outline buttons rest on white**, not Vitae's ramp-005 tint. DC secondary `#0076CC` and MA secondary `#C15800` sit right at the AA line (4.71:1 and 4.50:1 on white); the 005 tint pulls them to 4.39:1 and 4.20:1. Text/border colors follow Vitae (100 → 120 → 140 across rest/hover/active).

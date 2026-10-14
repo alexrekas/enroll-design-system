@@ -2,6 +2,14 @@ export default {
   title: 'Components/Navigation/Progress Indicator',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "EA-DesignSystem-2021 · Navigation/Progress",
+        "status": "reference",
+        "url": "https://www.figma.com/design/pwv7np3TmLIWuBxO7Bz1go/EA-DesignSystem-2021?node-id=1387-37014",
+        "note": "Built 7/10; not re-verified"
+      }
+    ],
     docs: {
       description: {
         component: `Horizontal bar showing completion percentage through a multi-step flow.

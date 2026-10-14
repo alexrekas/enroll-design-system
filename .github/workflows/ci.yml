@@ -28,6 +28,8 @@ jobs:
         run: npm run build
       - name: WCAG AA contrast gate
         run: npm run check:contrast
+      - name: Design-source gate (every story names its Figma source)
+        run: npm run check:sources
       - name: Build Storybook
         run: npm run build-storybook
       - name: Upload Storybook artifact

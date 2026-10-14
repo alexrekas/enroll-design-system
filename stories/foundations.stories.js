@@ -9,6 +9,24 @@ export default {
   title: 'Foundations',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "Vitae · Colors",
+        "status": "figma",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=106-3"
+      },
+      {
+        "label": "Vitae · Typography",
+        "status": "adapted",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=106-2",
+        "note": "Type scale follows EA-DesignSystem-2021 text styles"
+      },
+      {
+        "label": "Vitae · Spacing",
+        "status": "figma",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=1123-2909"
+      }
+    ],
     docs: {
       description: {
         component: `Raw token values for the active theme (switch with the toolbar's Theme control) plus a cross-theme hex reference table. See the **Introduction** page for the full primitives → semantic → component token architecture explanation.`,

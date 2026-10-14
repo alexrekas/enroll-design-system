@@ -9,6 +9,19 @@ export default {
   title: 'Components/Button',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "Vitae · Button",
+        "status": "figma",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=1211-25159"
+      },
+      {
+        "label": "EA-DesignSystem-2021 · Button (radius per client)",
+        "status": "adapted",
+        "url": "https://www.figma.com/design/pwv7np3TmLIWuBxO7Bz1go/EA-DesignSystem-2021?node-id=1206-23079",
+        "note": "Only the per-client corner radius is taken from 2021"
+      }
+    ],
     docs: {
       description: {
         component: `Call-to-action control. Source: **Vitae → Button** (Level × Style × State), radius from **EA-DesignSystem-2021** per client theme (EA/ME 6px, DC 4px, MA 3px).

@@ -30,6 +30,14 @@ export default {
   title: 'Components/Tooltip',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "Vitae · Tooltip",
+        "status": "adapted",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=1232-9937",
+        "note": "Vitae page is stock Fluent 2; restyled onto Enroll tokens"
+      }
+    ],
     docs: {
       description: {
         component: `Short, non-essential help text attached to a control (most often the info icon in an input label). Source: **Vitae → Tooltip** (Beak = None / Top / Bottom / Left / Right).

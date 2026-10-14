@@ -1432,6 +1432,23 @@
           "$description": "Vitae tag/me-clear-choice-plan border"
         }
       }
+    },
+    "warmgray": {
+      "030": {
+        "$value": "#edebe9",
+        "$type": "color",
+        "$description": "2021 DS Greys/grey-030 (footer language row, help pill)"
+      },
+      "040": {
+        "$value": "#e1dfdd",
+        "$type": "color",
+        "$description": "2021 DS Greys/grey-040 (footer body)"
+      },
+      "060": {
+        "$value": "#c8c6c4",
+        "$type": "color",
+        "$description": "2021 DS Greys/grey-060 (header dividers)"
+      }
     }
   }
 }

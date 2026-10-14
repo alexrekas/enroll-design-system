@@ -2,6 +2,14 @@ export default {
   title: 'Components/Card',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "EA-DesignSystem-2021 · Card",
+        "status": "reference",
+        "url": "https://www.figma.com/design/pwv7np3TmLIWuBxO7Bz1go/EA-DesignSystem-2021?node-id=1089-15191",
+        "note": "Built 7/10; not re-verified"
+      }
+    ],
     docs: {
       description: {
         component: `Generic content container with title, divider, and body — used as the base surface for other patterns (e.g. Plan cards).

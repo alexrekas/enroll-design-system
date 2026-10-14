@@ -380,32 +380,53 @@ Page-through control for tables and lists, showing current position and total.
 ## Header / Footer / LeftNav
 
 ### Description
-Global page chrome. Scoped to a single EA baseline this cycle (by design — see below); the legacy 2021 file has additional biome and logged-in/cart-state variants not yet built.
+Global page chrome, **latest Bootstrap style only**. Rebuilt 10/14/26 from Figma. The July version was hand-built with a placeholder logo and dummy text.
+
+### Source of truth
+| Piece | Figma |
+|---|---|
+| Header, all user types + Broker/Admin nav bars | ME-nuharbor-1 · `Navigation` (5958:25693) |
+| Footer (desktop) | ME-nuharbor-1 · `Navigation/Footer/Desktop-1` (823:92866) |
+| Mobile header, drawer, footer | ME-nuharbor-1 · `000 - Mobile` (790:64426) |
+| Employer (building icon), cart count | EA-DesignSystem-2021 · `HeaderFooter-Desktop` (991:21766) |
+| Logos (EA, DC, MA, ME) | EA-DesignSystem-2021 `Logo/Domain`, ME-nuharbor-1 `coverme-logo` |
+
+ME is built directly from its frames. EA/DC/MA use the same anatomy with their own logo, contact details and brand tokens, marked **Projected** in Storybook until their latest-Bootstrap frames exist.
 
 ### Variants
-| Variant | Use When |
-|---|---|
-| EA baseline | The only variant currently built. Fuller biome (DC/ME/MA) and login/cart-state variants are explicitly out of scope for this pass — flagged in the design system audit as a deferred item, not silently missing. |
+| User type | Header right side | Nav bar |
+|---|---|---|
+| Logged out | none | none |
+| Individual & Family | consumer icon, name, ID / My Portal / Log Out (+ optional cart count) | none |
+| Employer | building icon, company name, ID / My Portal / Log Out | none |
+| Broker | expert icon, name, ID / My Portal / Log Out | brand-color bar: Home, Families, Mail (count) |
+| Admin | settings icon, name, ID / My Portal / Log Out | light bar: Home, Families▾, User Accounts, Issuers, Brokers▾, Admin▾, Mail (count) |
+
+Mobile: logo + menu button, then a right-side drawer with the marketplace label, portal, user, Home / My Portal (expandable) / Help, Call Customer Service and Logout. Footer: language row and contact pill (desktop); Get Help and copyright (mobile).
 
 ### Accessibility
-- **Footer**: uses the semantic `<footer>` element — correct.
-- **LeftNav**: uses `<nav>` — correct, though it currently has no `aria-label` distinguishing it from other nav landmarks (Breadcrumbs also uses `<nav>`). Recommend `aria-label="Main"` or similar.
-- **Header**: **known gap** — currently a plain `<div class="ea-header">`, not a semantic `<header>` element. Recommend switching to `<header>` when wiring this into the real app shell.
-
-### Do's and Don'ts
-| ✅ Do | ❌ Don't |
-|---|---|
-| Keep exactly one Header and one Footer per page | Nest a second Header inside page content |
+- `<header>`, `<nav aria-label>`, `<footer>` landmarks; current page uses `aria-current="page"`.
+- Admin dropdown triggers are `<button aria-expanded aria-haspopup>`; the mail badge carries an `aria-label` with the count.
+- Language list marks the active language with `aria-current` and each link with `lang`.
+- Mobile menu button toggles `aria-expanded` / label, moves focus into the drawer, closes on Esc or scrim click and returns focus.
 
 ### Code Example
 ```html
-<footer class="ea-footer">
-  <div class="ea-footer__details">...</div>
-</footer>
-<nav class="ea-left-nav" aria-label="Main">
-  <a href="/plans">Plans</a>
-</nav>
+<header class="ea-header">
+  <div class="ea-header__bar"><div class="ea-shell-inner">
+    <div class="ea-header__brand">
+      <a class="ea-header__logo" href="/">…logo…</a>
+      <span class="ea-header__divider" aria-hidden="true"></span>
+      <a class="ea-header__portal" href="/broker">Broker</a>
+    </div>
+    <div class="ea-header__user">…icon… <div><p class="ea-header__user-name">Broker McCain</p>
+      <div class="ea-header__user-meta"><span>ID: 2001953</span><a href="#">My Portal</a><a href="#">Log Out</a></div></div></div>
+  </div></div>
+  <nav class="ea-subnav ea-subnav--broker" aria-label="Broker"><ul class="ea-shell-inner">…</ul></nav>
+</header>
 ```
+
+**LeftNav** is unchanged this pass (EA-DesignSystem-2021 `Navigation/LeftNav`, not re-verified).
 
 ---
 

@@ -16,6 +16,20 @@ export default {
   title: 'Components/Table',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "EA-DesignSystem-2021 · Table",
+        "status": "reference",
+        "url": "https://www.figma.com/design/pwv7np3TmLIWuBxO7Bz1go/EA-DesignSystem-2021?node-id=1494-27154",
+        "note": "Built 7/10"
+      },
+      {
+        "label": "Vitae · Data Table",
+        "status": "projected",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=985-130",
+        "note": "Vitae Data Table not applied yet"
+      }
+    ],
     docs: {
       description: {
         component: `Row/column data display with optional row-selection via checkbox and an expandable-row mode. **Rebuilt 7/10/26** to match EA-DesignSystem-2021's actual architecture: cells are organized by column \`Position\` (first/middle/last) and \`Type\` (data/numerical, right-aligned) in Figma's \`Table/Cell\` component — this story mirrors that with matching CSS classes rather than one-off per-row markup.

@@ -88,6 +88,20 @@ export default {
   title: 'Components/Flow/Plan',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "EA-DesignSystem-2021 · Plan",
+        "status": "reference",
+        "url": "https://www.figma.com/design/pwv7np3TmLIWuBxO7Bz1go/EA-DesignSystem-2021?node-id=1601-27412",
+        "note": "Built 7/10"
+      },
+      {
+        "label": "Vitae · Plan Tile",
+        "status": "projected",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=2629-94743",
+        "note": "Vitae Plan Tile not applied yet"
+      }
+    ],
     docs: {
       description: {
         component: `Displays a single enrolled/available plan's key details — benefit type, carrier, plan name, cost, deductible, and actions. **Rebuilt 7/10/26** to match EA-DesignSystem-2021's Plan tile exactly. The standalone "Plan Compare" composition has been **removed** — comparison is a per-card \`Compare\` checkbox on Plan itself (select the checkbox on any number of Plan tiles to compare them), not a separate 3-cards-side-by-side component.

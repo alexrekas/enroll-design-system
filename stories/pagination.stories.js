@@ -9,6 +9,14 @@ export default {
   title: 'Components/Navigation/Pagination',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "EA-DesignSystem-2021 · Navigation/Pagination",
+        "status": "reference",
+        "url": "https://www.figma.com/design/pwv7np3TmLIWuBxO7Bz1go/EA-DesignSystem-2021?node-id=1189-17238",
+        "note": "Built 7/10; not re-verified"
+      }
+    ],
     docs: {
       description: {
         component: `Page-through control for tables and lists, showing current position and total.

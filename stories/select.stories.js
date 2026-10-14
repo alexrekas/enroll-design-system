@@ -32,6 +32,18 @@ export default {
   title: 'Components/Dropdown',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "Vitae · Dropdown",
+        "status": "figma",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=2582-215"
+      },
+      {
+        "label": "Native <select> option list",
+        "status": "adapted",
+        "note": "Option panel not designed in Vitae yet"
+      }
+    ],
     docs: {
       description: {
         component: `Single-choice picker from a known list. Source: **Vitae → Dropdown** (the shared \`.input-trunk\` + trailing chevron; Status = Rest/Hover/Active/Focus/Disabled/Error).

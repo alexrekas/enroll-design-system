@@ -33,6 +33,13 @@ export default {
   title: 'Components/Text Input',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "Vitae · Input",
+        "status": "figma",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=2625-82827"
+      }
+    ],
     docs: {
       description: {
         component: `Single-line text entry. Source: **Vitae → Input** (State = Rest/Hover/Active/Focus/Disabled/Error; Required, Tooltip, Dropdown/Search/Calendar slots).

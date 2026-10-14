@@ -277,6 +277,9 @@ $ea-color-program-dc-healthy-bg: #f8f3f9; // Vitae tag/dc-healthy-dc-plan bg
 $ea-color-program-dc-healthy-border: #711f8b; // Vitae tag/dc-healthy-dc-plan border
 $ea-color-program-me-clear-choice-bg: #d5c1ce; // Vitae tag/me-clear-choice-plan bg
 $ea-color-program-me-clear-choice-border: #824270; // Vitae tag/me-clear-choice-plan border
+$ea-color-warmgray-030: #edebe9; // 2021 DS Greys/grey-030 (footer language row, help pill)
+$ea-color-warmgray-040: #e1dfdd; // 2021 DS Greys/grey-040 (footer body)
+$ea-color-warmgray-060: #c8c6c4; // 2021 DS Greys/grey-060 (header dividers)
 $ea-color-text-primary: #333333;
 $ea-color-text-secondary: #4b5159; // Vitae text/secondary
 $ea-color-text-disabled: #9b9b9b;
@@ -631,19 +634,28 @@ $ea-nav-pagination-box-radius: 3px;
 $ea-nav-pagination-arrow-color: #4b5159;
 $ea-nav-pagination-arrow-color-disabled: #878584;
 $ea-nav-pagination-gap: 8px;
-$ea-nav-header-bg: #ffffff;
-$ea-nav-header-border: #d7d7d7;
-$ea-nav-header-height: 72px;
-$ea-nav-header-padding-x: 24px;
-$ea-nav-header-logo-height: 32px;
-$ea-nav-header-link-color: #333333;
-$ea-nav-header-link-color-active: #005e81;
-$ea-nav-footer-bg: #f2f2f2;
-$ea-nav-footer-border: #d7d7d7;
-$ea-nav-footer-padding-x: 24px;
-$ea-nav-footer-padding-y: 24px;
-$ea-nav-footer-text: #4b5159;
-$ea-nav-footer-link-color: #005e81;
+$ea-nav-header-bg: #ffffff; // ME-nuharbor-1 Navigation (5958:25693)
+$ea-nav-header-height: 70px; // ME-nuharbor-1 Navigation (5958:25693): 70px bar + 2px rule
+$ea-nav-header-rule: #c15800; // ME-nuharbor-1 Navigation (5958:25693): 2px bottom rule = Secondary/100/ME. DC/MA/EA projected
+$ea-nav-header-rule-width: 2px; // ME-nuharbor-1 Navigation (5958:25693)
+$ea-nav-header-content-width: 1140px; // ME-nuharbor-1 Navigation (5958:25693): 150px gutters at 1440
+$ea-nav-header-logo-height: 32px; // ME-nuharbor-1 Navigation (5958:25693): Logo/Domain 163x32
+$ea-nav-header-gap: 12px; // ME-nuharbor-1 Navigation (5958:25693)
+$ea-nav-header-divider: #c8c6c4; // ME-nuharbor-1 Navigation (5958:25693): 1px x 60px divider (Greys/grey-060)
+$ea-nav-header-portal-color: #005e81; // ME-nuharbor-1 Navigation (5958:25693): portal link = Primary/100/ME, SemiBold, underlined
+$ea-nav-header-user-icon: #005e81; // ME-nuharbor-1 Navigation (5958:25693): 32px user-type icon
+$ea-nav-header-user-name: #333333; // ME-nuharbor-1 Navigation (5958:25693): Bold 16/20
+$ea-nav-header-user-meta: #333333; // ME-nuharbor-1 Navigation (5958:25693): ID Regular 16/20
+$ea-nav-header-link: #005e81; // ME-nuharbor-1 Navigation (5958:25693): My Portal / Log Out, underlined
+$ea-nav-header-separator: #c8c6c4; // ME-nuharbor-1 Navigation (5958:25693): 1px separators between ID / My Portal / Log Out
+$ea-nav-footer-lang-bg: #edebe9; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): Top - Languages #EDEBE9
+$ea-nav-footer-bg: #e1dfdd; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): Bottom - Details and Help #E1DFDD
+$ea-nav-footer-text: #333333; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866)
+$ea-nav-footer-link: #005e81; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): language links Primary/100/ME, underlined
+$ea-nav-footer-help-bg: #edebe9; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): help pill #EDEBE9
+$ea-nav-footer-help-radius: 30px; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866)
+$ea-nav-footer-padding-y: 12px; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866)
+$ea-nav-footer-content-width: 1140px; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866)
 $ea-nav-left-nav-bg: #ffffff;
 $ea-nav-left-nav-width: 280px;
 $ea-nav-left-nav-item-padding-x: 16px;
@@ -653,6 +665,21 @@ $ea-nav-left-nav-item-text-active: #ffffff;
 $ea-nav-left-nav-item-bg-active: #005e81;
 $ea-nav-left-nav-item-bg-hover: #f2f2f2;
 $ea-nav-left-nav-divider: #d7d7d7;
+$ea-nav-subnav-broker-bg: #c15800; // ME-nuharbor-1 Navigation (5958:25693) User=Broker, Navigation=True: Secondary/100/ME bar
+$ea-nav-subnav-broker-text: #ffffff; // ME-nuharbor-1 Navigation (5958:25693)
+$ea-nav-subnav-admin-bg: #e5eff2; // ME-nuharbor-1 Navigation (5958:25693) User=Admin, Navigation=True: #EBEEF0 = ME primary-010
+$ea-nav-subnav-admin-text: #333333; // ME-nuharbor-1 Navigation (5958:25693)
+$ea-nav-subnav-padding-y: 11px; // ME-nuharbor-1 Navigation (5958:25693)
+$ea-nav-subnav-gap-broker: 12px; // ME-nuharbor-1 Navigation (5958:25693)
+$ea-nav-subnav-gap-admin: 24px; // ME-nuharbor-1 Navigation (5958:25693)
+$ea-nav-subnav-badge-bg: #e5a900; // ME-nuharbor-1 Navigation (5958:25693): Mail count badge #E5A900
+$ea-nav-subnav-badge-text: #333333; // ME-nuharbor-1 Navigation (5958:25693)
+$ea-nav-subnav-badge-radius: 6px; // ME-nuharbor-1 Navigation (5958:25693)
+$ea-nav-mobile-header-height: 73px; // ME-nuharbor-1 000 - Mobile (790:64426): 2px top rule + 69px row + 2px bottom rule
+$ea-nav-mobile-drawer-width: 260px; // ME-nuharbor-1 000 - Mobile (790:64426)
+$ea-nav-mobile-scrim: rgba(0, 0, 0, 0.2); // ME-nuharbor-1 000 - Mobile (790:64426): overlay over page while drawer is open
+$ea-nav-mobile-drawer-label: #333333; // ME-nuharbor-1 000 - Mobile (790:64426)
+$ea-nav-mobile-footer-bg: #e1dfdd; // ME-nuharbor-1 000 - Mobile (790:64426): HeaderFooter-Mobile footer
 $ea-card-bg: #ffffff;
 $ea-card-radius: 4px; // 2021 DS Card radius (approx 5px -> using 4px scale step)
 $ea-card-padding-x: 20px;

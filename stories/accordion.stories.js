@@ -46,6 +46,13 @@ export default {
   title: 'Components/Accordion',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "Vitae · Accordion",
+        "status": "figma",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=1219-44450"
+      }
+    ],
     docs: {
       description: {
         component: `Expandable section for progressive disclosure (FAQs, plan details, optional form sections). Source: **Vitae → Accordion** (Expanded = False/True; content slot).

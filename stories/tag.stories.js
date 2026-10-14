@@ -27,6 +27,13 @@ export default {
   title: 'Components/Tag',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "Vitae · Tag",
+        "status": "figma",
+        "url": "https://www.figma.com/design/1uhnWPqqgQQoMVFIgdbzoU/Vitae?node-id=2615-20776"
+      }
+    ],
     docs: {
       description: {
         component: `Compact status / category label. Source: **Vitae → Tag**.

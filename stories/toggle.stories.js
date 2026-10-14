@@ -2,6 +2,14 @@ export default {
   title: 'Components/Toggle',
   tags: ['autodocs'],
   parameters: {
+    design: [
+      {
+        "label": "EA-DesignSystem-2021 · Input/Toggle",
+        "status": "reference",
+        "url": "https://www.figma.com/design/pwv7np3TmLIWuBxO7Bz1go/EA-DesignSystem-2021?node-id=547-338",
+        "note": "No Vitae toggle page yet"
+      }
+    ],
     docs: {
       description: {
         component: `Binary on/off control for settings that take effect immediately (no separate "submit" step).
