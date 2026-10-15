@@ -27,6 +27,8 @@ const maSrc = { label: 'MA - Bootstrap Upgrade · Navigation', url: node(FIGMA_M
 const maFooterSrc = { label: 'MA - Bootstrap Upgrade · Navigation/Footer/Desktop-1', url: node(FIGMA_MA, '823:92866') };
 const CLIENT_SRC = { me: meSrc, dc: dcSrc, ma: maSrc };
 const shellOf = (theme) => brand[theme].shell || {};
+// Header anatomy each client is drawn from: its own Bootstrap Upgrade file, or ME projected for EA.
+const anatomyOf = (t) => CLIENT_SRC[t] ? { ...CLIENT_SRC[t], status: 'figma' } : { ...meSrc, status: 'projected', note: `No latest-Bootstrap ${t.toUpperCase()} header in Figma yet` };
 const ea2021 = { label: 'EA-DesignSystem-2021 · Navigation/HeaderFooter-Desktop', url: node(FIGMA_2021, '991:21766') };
 const headerDesign = (extra = []) => (globals) => {
   const t = globals.theme || 'ea';
@@ -113,7 +115,7 @@ export default {
       description: {
         component: `Global page chrome — **latest Bootstrap style only** (DC and MA production still run an older version; that older style is intentionally not modeled here).
 
-**Source of truth:** ME-nuharbor-1 \`Navigation\` (User = Individual & Family / Broker / Admin, Logged In, Navigation), \`Navigation/Footer/Desktop-1\`, and the \`000 - Mobile\` frames. Employer (building icon) and the cart-count variant come from EA-DesignSystem-2021 \`HeaderFooter-Desktop\`. **DC** is built from **DC - Bootstrap Upgrade** \`Navigation\` and \`Navigation/Footer/Desktop-0\`: no My Portal link, an Employee user type, a retail-building Employer icon, Notices in the Admin bar, both nav bars in #00629D, and a single-row white footer with ghost contact links. **MA** is built from **MA - Bootstrap Upgrade** \`Navigation\` and \`Navigation/Footer/Desktop-1\`: Employee user type (no My Portal), consumer icon for Employer, Notices in the Admin bar, both nav bars in MA primary-100, and a #EDEBE9 footer with a 2px top rule and Primary phone / Secondary Get Help buttons. Logos and icons are exported from those files, not redrawn. **Switch the toolbar Theme** to see each client: ME, DC and MA are direct builds; EA reuses the ME anatomy with their own logo and brand tokens until their latest-Bootstrap frames exist (the source badge under each story says which).
+**Source of truth:** ME-nuharbor-1 \`Navigation\` (User = Individual & Family / Broker / Admin, Logged In, Navigation), \`Navigation/Footer/Desktop-1\`, and the \`000 - Mobile\` frames. Employer (building icon) and the cart-count variant come from EA-DesignSystem-2021 \`HeaderFooter-Desktop\`. **DC** is built from **DC - Bootstrap Upgrade** \`Navigation\` and \`Navigation/Footer/Desktop-0\`: no My Portal link, an Employee user type, a retail-building Employer icon, Notices in the Admin bar, the header rule and both nav bars in secondary-100 #0076CC (the Figma's #00629D is not a defined DC color), and a single-row white footer with ghost contact links. **MA** is built from **MA - Bootstrap Upgrade** \`Navigation\` and \`Navigation/Footer/Desktop-1\`: Employee user type (no My Portal), consumer icon for Employer, Notices in the Admin bar, both nav bars in MA primary-100, and a #EDEBE9 footer with a 2px top rule and Primary phone / Secondary Get Help buttons. Logos and icons are exported from those files, not redrawn. **Switch the toolbar Theme** to see each client: ME, DC and MA are direct builds; EA reuses the ME anatomy with their own logo and brand tokens until their latest-Bootstrap frames exist (the source badge under each story says which).
 
 **Anatomy:** 70px bar + 2px brand rule · logo | divider | portal link · user block (32px user-type icon, name, ID / My Portal / Log Out). Broker adds a brand-color nav bar; Admin adds a light nav bar with dropdowns. Mail count uses a 24px badge.
 
@@ -135,11 +137,13 @@ export const IndividualFamily = { name: 'Individual & Family', parameters: { des
 export const IndividualWithCart = {
   name: 'Individual & Family · cart',
   args: { cartCount: 1 },
-  parameters: { design: () => [{ ...ea2021, status: 'adapted', note: 'Cart Full=True variant; cart restyled onto the latest anatomy' }, { ...meSrc, status: 'figma' }] },
+  parameters: { design: (g) => [{ ...ea2021, status: 'adapted', note: 'Cart Full=True variant; cart restyled onto the latest anatomy' }, anatomyOf(g.theme || 'ea')] },
 };
 export const Employer = {
   args: { user: 'employer' },
-  parameters: { design: () => [{ ...ea2021, status: 'adapted', note: 'UserType=Business (building icon) restyled onto the latest anatomy' }, { ...meSrc, status: 'figma' }] },
+  parameters: { design: (g) => ['dc', 'ma'].includes(g.theme || 'ea')
+    ? [{ ...CLIENT_SRC[g.theme], status: 'figma' }]
+    : [{ ...ea2021, status: 'adapted', note: 'UserType=Business (building icon) restyled onto the latest anatomy' }, anatomyOf(g.theme || 'ea')] },
 };
 export const Employee = {
   args: { user: 'employee' },

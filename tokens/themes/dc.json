@@ -253,9 +253,9 @@
   "nav": {
     "header": {
       "rule": {
-        "$value": "{color.dc.navbar}",
+        "$value": "{color.brand.secondary.100}",
         "$type": "color",
-        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): 2px rule #00629D"
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): 2px bottom rule under the header. Figma uses #00629D here; not a defined DC color, so secondary-100 is used (decided 10/15/26)"
       },
       "logo-height": {
         "$value": "35px",
@@ -266,16 +266,6 @@
         "$value": "{space.300}",
         "$type": "dimension",
         "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): 24px between logo, divider and portal"
-      },
-      "divider": {
-        "$value": "{color.warmgray.090}",
-        "$type": "color",
-        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): Line 1 #A19F9D"
-      },
-      "separator": {
-        "$value": "{color.warmgray.090}",
-        "$type": "color",
-        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): ID | Log Out separator #A19F9D"
       },
       "portal-color": {
         "$value": "{color.brand.secondary.100}",
@@ -300,14 +290,14 @@
     },
     "subnav": {
       "broker-bg": {
-        "$value": "{color.dc.navbar}",
+        "$value": "{color.brand.secondary.100}",
         "$type": "color",
-        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693) User=Broker, Navigation=True: #00629D bar"
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): Broker/Admin nav bar + 2px line under it. Figma uses #00629D here; not a defined DC color, so secondary-100 is used (decided 10/15/26)"
       },
       "admin-bg": {
-        "$value": "{color.dc.navbar}",
+        "$value": "{color.brand.secondary.100}",
         "$type": "color",
-        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693) User=Admin, Navigation=True: same #00629D bar as Broker"
+        "$description": "DC - Bootstrap Upgrade Navigation (5958:25693): Broker/Admin nav bar + 2px line under it. Figma uses #00629D here; not a defined DC color, so secondary-100 is used (decided 10/15/26)"
       },
       "admin-text": {
         "$value": "{color.white}",

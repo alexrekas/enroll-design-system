@@ -574,11 +574,6 @@
           "$type": "color",
           "$description": "Vitae Color/Brand/tertiary-150 [DC]"
         }
-      },
-      "navbar": {
-        "$value": "#00629d",
-        "$type": "color",
-        "$description": "DC - Bootstrap Upgrade 'Primary/120/DC' #00629D: header rule + Broker/Admin nav bar. Not a step in the Vitae DC ramp (Vitae primary-120 is #00284d)."
       }
     },
     "me": {
@@ -1453,11 +1448,6 @@
         "$value": "#c8c6c4",
         "$type": "color",
         "$description": "2021 DS Greys/grey-060 (header dividers)"
-      },
-      "090": {
-        "$value": "#a19f9d",
-        "$type": "color",
-        "$description": "Greys/grey-090 (DC - Bootstrap Upgrade header divider + separators)"
       }
     }
   }

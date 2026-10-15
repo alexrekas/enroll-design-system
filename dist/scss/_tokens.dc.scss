@@ -113,7 +113,6 @@ $ea-color-dc-tertiary-060: #e97b7c; // Vitae Color/Brand/tertiary-060 [DC]
 $ea-color-dc-tertiary-070: #e56566; // Vitae Color/Brand/tertiary-070 [DC]
 $ea-color-dc-tertiary-080: #e14f51; // Vitae Color/Brand/tertiary-080 [DC]
 $ea-color-dc-tertiary-090: #de393a; // Vitae Color/Brand/tertiary-090 [DC]
-$ea-color-dc-navbar: #00629d; // DC - Bootstrap Upgrade 'Primary/120/DC' #00629D: header rule + Broker/Admin nav bar. Not a step in the Vitae DC ramp (Vitae primary-120 is #00284d).
 $ea-color-me-primary-100: #3d5d6f; // Vitae Color/Brand/primary-100 [ME]
 $ea-color-me-primary-110: #375464; // Vitae Color/Brand/primary-110 [ME]
 $ea-color-me-primary-120: #314a59; // Vitae Color/Brand/primary-120 [ME]
@@ -281,7 +280,6 @@ $ea-color-program-me-clear-choice-border: #824270; // Vitae tag/me-clear-choice-
 $ea-color-warmgray-030: #edebe9; // 2021 DS Greys/grey-030 (footer language row, help pill)
 $ea-color-warmgray-040: #e1dfdd; // 2021 DS Greys/grey-040 (footer body)
 $ea-color-warmgray-060: #c8c6c4; // 2021 DS Greys/grey-060 (header dividers)
-$ea-color-warmgray-090: #a19f9d; // Greys/grey-090 (DC - Bootstrap Upgrade header divider + separators)
 $ea-color-text-primary: #333333;
 $ea-color-text-secondary: #4b5159; // Vitae text/secondary
 $ea-color-text-disabled: #9b9b9b;
@@ -638,18 +636,18 @@ $ea-nav-pagination-arrow-color-disabled: #878584;
 $ea-nav-pagination-gap: 8px;
 $ea-nav-header-bg: #ffffff; // ME-nuharbor-1 Navigation (5958:25693)
 $ea-nav-header-height: 70px; // ME-nuharbor-1 Navigation (5958:25693): 70px bar + 2px rule
-$ea-nav-header-rule: #00629d; // DC - Bootstrap Upgrade Navigation (5958:25693): 2px rule #00629D
+$ea-nav-header-rule: #0076cc; // DC - Bootstrap Upgrade Navigation (5958:25693): 2px bottom rule under the header. Figma uses #00629D here; not a defined DC color, so secondary-100 is used (decided 10/15/26)
 $ea-nav-header-rule-width: 2px; // ME-nuharbor-1 Navigation (5958:25693)
 $ea-nav-header-content-width: 1140px; // ME-nuharbor-1 Navigation (5958:25693): 150px gutters at 1440
 $ea-nav-header-logo-height: 35px; // DC - Bootstrap Upgrade Navigation (5958:25693): Logo/Domain 142.6x35
 $ea-nav-header-gap: 24px; // DC - Bootstrap Upgrade Navigation (5958:25693): 24px between logo, divider and portal
-$ea-nav-header-divider: #a19f9d; // DC - Bootstrap Upgrade Navigation (5958:25693): Line 1 #A19F9D
+$ea-nav-header-divider: #c8c6c4; // ME-nuharbor-1 Navigation (5958:25693): 1px x 60px divider (Greys/grey-060)
 $ea-nav-header-portal-color: #0076cc; // DC - Bootstrap Upgrade Navigation (5958:25693): portal label Secondary/100/DC #0076CC, SemiBold, not underlined
 $ea-nav-header-user-icon: #0076cc; // DC - Bootstrap Upgrade Navigation (5958:25693): user-type icon #0076CC
 $ea-nav-header-user-name: #333333; // ME-nuharbor-1 Navigation (5958:25693): Bold 16/20
 $ea-nav-header-user-meta: #333333; // ME-nuharbor-1 Navigation (5958:25693): ID Regular 16/20
 $ea-nav-header-link: #0076cc; // DC - Bootstrap Upgrade Navigation (5958:25693): Log Out #0076CC, underlined
-$ea-nav-header-separator: #a19f9d; // DC - Bootstrap Upgrade Navigation (5958:25693): ID | Log Out separator #A19F9D
+$ea-nav-header-separator: #c8c6c4; // ME-nuharbor-1 Navigation (5958:25693): 1px separators between ID / My Portal / Log Out
 $ea-nav-header-portal-decoration: none; // DC - Bootstrap Upgrade Navigation (5958:25693): portal label not underlined
 $ea-nav-footer-lang-bg: #edebe9; // ME-nuharbor-1 Navigation/Footer/Desktop-1 (823:92866): Top - Languages #EDEBE9
 $ea-nav-footer-bg: #ffffff; // DC - Bootstrap Upgrade Navigation/Footer/Desktop-0 (15640:6530): white
@@ -671,9 +669,9 @@ $ea-nav-left-nav-item-text-active: #ffffff;
 $ea-nav-left-nav-item-bg-active: #003260;
 $ea-nav-left-nav-item-bg-hover: #f2f2f2;
 $ea-nav-left-nav-divider: #d7d7d7;
-$ea-nav-subnav-broker-bg: #00629d; // DC - Bootstrap Upgrade Navigation (5958:25693) User=Broker, Navigation=True: #00629D bar
+$ea-nav-subnav-broker-bg: #0076cc; // DC - Bootstrap Upgrade Navigation (5958:25693): Broker/Admin nav bar + 2px line under it. Figma uses #00629D here; not a defined DC color, so secondary-100 is used (decided 10/15/26)
 $ea-nav-subnav-broker-text: #ffffff; // ME-nuharbor-1 Navigation (5958:25693)
-$ea-nav-subnav-admin-bg: #00629d; // DC - Bootstrap Upgrade Navigation (5958:25693) User=Admin, Navigation=True: same #00629D bar as Broker
+$ea-nav-subnav-admin-bg: #0076cc; // DC - Bootstrap Upgrade Navigation (5958:25693): Broker/Admin nav bar + 2px line under it. Figma uses #00629D here; not a defined DC color, so secondary-100 is used (decided 10/15/26)
 $ea-nav-subnav-admin-text: #ffffff; // DC - Bootstrap Upgrade Navigation (5958:25693): white nav text
 $ea-nav-subnav-padding-y: 11px; // ME-nuharbor-1 Navigation (5958:25693)
 $ea-nav-subnav-gap-broker: 24px; // DC - Bootstrap Upgrade Navigation (5958:25693): 24px
