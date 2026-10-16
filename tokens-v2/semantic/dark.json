@@ -1,0 +1,249 @@
+{
+  "$description": "Vitae 27 semantic color roles, dark mode (signed off 10/16/26). References brand.* (switched by client) and primitives.",
+  "background": {
+    "page": {
+      "$value": "{color.neutral.220}",
+      "$type": "color"
+    },
+    "layer-01": {
+      "$value": "{brand.primary.170}",
+      "$type": "color"
+    },
+    "layer-02": {
+      "$value": "{brand.primary.160}",
+      "$type": "color"
+    },
+    "layer-03": {
+      "$value": "{brand.primary.150}",
+      "$type": "color"
+    },
+    "layer-hover": {
+      "$value": "{brand.primary.140}",
+      "$type": "color"
+    },
+    "selected": {
+      "$value": "{brand.primary.130}",
+      "$type": "color"
+    },
+    "brand": {
+      "$value": "{brand.primary.030}",
+      "$type": "color"
+    },
+    "brand-subtle": {
+      "$value": "{brand.primary.170}",
+      "$type": "color"
+    },
+    "disabled": {
+      "$value": "{color.neutral.170}",
+      "$type": "color"
+    },
+    "overlay": {
+      "$value": "{color.black-alpha.60}",
+      "$type": "color"
+    }
+  },
+  "field": {
+    "background": {
+      "$value": "{brand.primary.180}",
+      "$type": "color"
+    },
+    "background-hover": {
+      "$value": "{brand.primary.170}",
+      "$type": "color"
+    },
+    "border": {
+      "$value": "{color.neutral.090}",
+      "$type": "color"
+    },
+    "border-hover": {
+      "$value": "{color.neutral.070}",
+      "$type": "color"
+    },
+    "border-disabled": {
+      "$value": "{color.neutral.150}",
+      "$type": "color"
+    }
+  },
+  "border": {
+    "subtle": {
+      "$value": "{color.neutral.170}",
+      "$type": "color"
+    },
+    "strong": {
+      "$value": "{color.neutral.110}",
+      "$type": "color"
+    },
+    "brand": {
+      "$value": "{brand.primary.040}",
+      "$type": "color"
+    },
+    "focus": {
+      "$value": "{brand.primary.030}",
+      "$type": "color"
+    },
+    "focus-ring": {
+      "$value": "{color.neutral.010}",
+      "$type": "color"
+    }
+  },
+  "text": {
+    "heading": {
+      "$value": "{brand.primary.005}",
+      "$type": "color"
+    },
+    "body": {
+      "$value": "{brand.primary.010}",
+      "$type": "color"
+    },
+    "secondary": {
+      "$value": "{color.neutral.060}",
+      "$type": "color"
+    },
+    "placeholder": {
+      "$value": "{color.neutral.080}",
+      "$type": "color"
+    },
+    "disabled": {
+      "$value": "{color.neutral.100}",
+      "$type": "color"
+    },
+    "on-brand": {
+      "$value": "{color.neutral.200}",
+      "$type": "color"
+    },
+    "error": {
+      "$value": "{color.status.error.040}",
+      "$type": "color"
+    },
+    "link": {
+      "$value": "{brand.primary.040}",
+      "$type": "color"
+    },
+    "link-hover": {
+      "$value": "{brand.primary.030}",
+      "$type": "color"
+    },
+    "link-active": {
+      "$value": "{brand.primary.020}",
+      "$type": "color"
+    },
+    "on-primary": {
+      "$value": "{brand.dark.on-primary}",
+      "$type": "color"
+    },
+    "on-secondary": {
+      "$value": "{brand.dark.on-secondary}",
+      "$type": "color"
+    },
+    "on-tertiary": {
+      "$value": "{brand.dark.on-tertiary}",
+      "$type": "color"
+    }
+  },
+  "icon": {
+    "primary": {
+      "$value": "{brand.primary.010}",
+      "$type": "color"
+    },
+    "secondary": {
+      "$value": "{color.neutral.060}",
+      "$type": "color"
+    },
+    "brand": {
+      "$value": "{brand.primary.040}",
+      "$type": "color"
+    }
+  },
+  "action": {
+    "primary": {
+      "$value": "{brand.dark.action-primary}",
+      "$type": "color"
+    },
+    "primary-hover": {
+      "$value": "{brand.dark.action-primary-hover}",
+      "$type": "color"
+    },
+    "primary-active": {
+      "$value": "{brand.dark.action-primary-active}",
+      "$type": "color"
+    },
+    "secondary": {
+      "$value": "{brand.dark.action-secondary}",
+      "$type": "color"
+    },
+    "secondary-hover": {
+      "$value": "{brand.dark.action-secondary-hover}",
+      "$type": "color"
+    },
+    "secondary-active": {
+      "$value": "{brand.dark.action-secondary-active}",
+      "$type": "color"
+    },
+    "tertiary": {
+      "$value": "{brand.dark.action-tertiary}",
+      "$type": "color"
+    },
+    "tertiary-hover": {
+      "$value": "{brand.dark.action-tertiary-hover}",
+      "$type": "color"
+    },
+    "tertiary-active": {
+      "$value": "{brand.dark.action-tertiary-active}",
+      "$type": "color"
+    },
+    "destructive": {
+      "$value": "{color.status.error.030}",
+      "$type": "color"
+    },
+    "destructive-hover": {
+      "$value": "{color.status.error.040}",
+      "$type": "color"
+    },
+    "destructive-active": {
+      "$value": "{color.status.error.050}",
+      "$type": "color"
+    },
+    "disabled": {
+      "$value": "{color.neutral.160}",
+      "$type": "color"
+    }
+  },
+  "support": {
+    "info": {
+      "$value": "{color.status.info.040}",
+      "$type": "color"
+    },
+    "success": {
+      "$value": "{color.status.success.040}",
+      "$type": "color"
+    },
+    "warning": {
+      "$value": "{color.status.warning.060}",
+      "$type": "color"
+    },
+    "error": {
+      "$value": "{color.status.error.040}",
+      "$type": "color"
+    },
+    "info-surface": {
+      "$value": "{color.status.info.170}",
+      "$type": "color"
+    },
+    "success-surface": {
+      "$value": "{color.status.success.170}",
+      "$type": "color"
+    },
+    "warning-surface": {
+      "$value": "{color.status.warning.170}",
+      "$type": "color"
+    },
+    "error-surface": {
+      "$value": "{color.status.error.170}",
+      "$type": "color"
+    },
+    "warning-border": {
+      "$value": "{color.status.warning.080}",
+      "$type": "color"
+    }
+  }
+}

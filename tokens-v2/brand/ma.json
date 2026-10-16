@@ -1,0 +1,363 @@
+{
+  "$description": "Vitae 27 Brand layer, MA mode (signed off 10/16/26). Maps brand roles to MA primitives.",
+  "brand": {
+    "primary": {
+      "005": {
+        "$value": "{color.ma.primary.005}",
+        "$type": "color"
+      },
+      "010": {
+        "$value": "{color.ma.primary.010}",
+        "$type": "color"
+      },
+      "015": {
+        "$value": "{color.ma.primary.015}",
+        "$type": "color"
+      },
+      "020": {
+        "$value": "{color.ma.primary.020}",
+        "$type": "color"
+      },
+      "025": {
+        "$value": "{color.ma.primary.025}",
+        "$type": "color"
+      },
+      "030": {
+        "$value": "{color.ma.primary.030}",
+        "$type": "color"
+      },
+      "035": {
+        "$value": "{color.ma.primary.035}",
+        "$type": "color"
+      },
+      "040": {
+        "$value": "{color.ma.primary.040}",
+        "$type": "color"
+      },
+      "050": {
+        "$value": "{color.ma.primary.050}",
+        "$type": "color"
+      },
+      "060": {
+        "$value": "{color.ma.primary.060}",
+        "$type": "color"
+      },
+      "070": {
+        "$value": "{color.ma.primary.070}",
+        "$type": "color"
+      },
+      "080": {
+        "$value": "{color.ma.primary.080}",
+        "$type": "color"
+      },
+      "090": {
+        "$value": "{color.ma.primary.090}",
+        "$type": "color"
+      },
+      "100": {
+        "$value": "{color.ma.primary.100}",
+        "$type": "color"
+      },
+      "110": {
+        "$value": "{color.ma.primary.110}",
+        "$type": "color"
+      },
+      "120": {
+        "$value": "{color.ma.primary.120}",
+        "$type": "color"
+      },
+      "130": {
+        "$value": "{color.ma.primary.130}",
+        "$type": "color"
+      },
+      "140": {
+        "$value": "{color.ma.primary.140}",
+        "$type": "color"
+      },
+      "150": {
+        "$value": "{color.ma.primary.150}",
+        "$type": "color"
+      },
+      "160": {
+        "$value": "{color.ma.primary.160}",
+        "$type": "color"
+      },
+      "170": {
+        "$value": "{color.ma.primary.170}",
+        "$type": "color"
+      },
+      "180": {
+        "$value": "{color.ma.primary.180}",
+        "$type": "color"
+      },
+      "190": {
+        "$value": "{color.ma.primary.190}",
+        "$type": "color"
+      }
+    },
+    "secondary": {
+      "005": {
+        "$value": "{color.ma.secondary.005}",
+        "$type": "color"
+      },
+      "010": {
+        "$value": "{color.ma.secondary.010}",
+        "$type": "color"
+      },
+      "015": {
+        "$value": "{color.ma.secondary.015}",
+        "$type": "color"
+      },
+      "020": {
+        "$value": "{color.ma.secondary.020}",
+        "$type": "color"
+      },
+      "025": {
+        "$value": "{color.ma.secondary.025}",
+        "$type": "color"
+      },
+      "030": {
+        "$value": "{color.ma.secondary.030}",
+        "$type": "color"
+      },
+      "035": {
+        "$value": "{color.ma.secondary.035}",
+        "$type": "color"
+      },
+      "040": {
+        "$value": "{color.ma.secondary.040}",
+        "$type": "color"
+      },
+      "050": {
+        "$value": "{color.ma.secondary.050}",
+        "$type": "color"
+      },
+      "060": {
+        "$value": "{color.ma.secondary.060}",
+        "$type": "color"
+      },
+      "070": {
+        "$value": "{color.ma.secondary.070}",
+        "$type": "color"
+      },
+      "080": {
+        "$value": "{color.ma.secondary.080}",
+        "$type": "color"
+      },
+      "090": {
+        "$value": "{color.ma.secondary.090}",
+        "$type": "color"
+      },
+      "100": {
+        "$value": "{color.ma.secondary.100}",
+        "$type": "color"
+      },
+      "110": {
+        "$value": "{color.ma.secondary.110}",
+        "$type": "color"
+      },
+      "120": {
+        "$value": "{color.ma.secondary.120}",
+        "$type": "color"
+      },
+      "130": {
+        "$value": "{color.ma.secondary.130}",
+        "$type": "color"
+      },
+      "140": {
+        "$value": "{color.ma.secondary.140}",
+        "$type": "color"
+      },
+      "150": {
+        "$value": "{color.ma.secondary.150}",
+        "$type": "color"
+      },
+      "160": {
+        "$value": "{color.ma.secondary.160}",
+        "$type": "color"
+      },
+      "170": {
+        "$value": "{color.ma.secondary.170}",
+        "$type": "color"
+      },
+      "180": {
+        "$value": "{color.ma.secondary.180}",
+        "$type": "color"
+      },
+      "190": {
+        "$value": "{color.ma.secondary.190}",
+        "$type": "color"
+      }
+    },
+    "tertiary": {
+      "005": {
+        "$value": "{color.ma.tertiary.005}",
+        "$type": "color"
+      },
+      "010": {
+        "$value": "{color.ma.tertiary.010}",
+        "$type": "color"
+      },
+      "015": {
+        "$value": "{color.ma.tertiary.015}",
+        "$type": "color"
+      },
+      "020": {
+        "$value": "{color.ma.tertiary.020}",
+        "$type": "color"
+      },
+      "025": {
+        "$value": "{color.ma.tertiary.025}",
+        "$type": "color"
+      },
+      "030": {
+        "$value": "{color.ma.tertiary.030}",
+        "$type": "color"
+      },
+      "035": {
+        "$value": "{color.ma.tertiary.035}",
+        "$type": "color"
+      },
+      "040": {
+        "$value": "{color.ma.tertiary.040}",
+        "$type": "color"
+      },
+      "050": {
+        "$value": "{color.ma.tertiary.050}",
+        "$type": "color"
+      },
+      "060": {
+        "$value": "{color.ma.tertiary.060}",
+        "$type": "color"
+      },
+      "070": {
+        "$value": "{color.ma.tertiary.070}",
+        "$type": "color"
+      },
+      "080": {
+        "$value": "{color.ma.tertiary.080}",
+        "$type": "color"
+      },
+      "090": {
+        "$value": "{color.ma.tertiary.090}",
+        "$type": "color"
+      },
+      "100": {
+        "$value": "{color.ma.tertiary.100}",
+        "$type": "color"
+      },
+      "110": {
+        "$value": "{color.ma.tertiary.110}",
+        "$type": "color"
+      },
+      "120": {
+        "$value": "{color.ma.tertiary.120}",
+        "$type": "color"
+      },
+      "130": {
+        "$value": "{color.ma.tertiary.130}",
+        "$type": "color"
+      },
+      "140": {
+        "$value": "{color.ma.tertiary.140}",
+        "$type": "color"
+      },
+      "150": {
+        "$value": "{color.ma.tertiary.150}",
+        "$type": "color"
+      },
+      "160": {
+        "$value": "{color.ma.tertiary.160}",
+        "$type": "color"
+      },
+      "170": {
+        "$value": "{color.ma.tertiary.170}",
+        "$type": "color"
+      },
+      "180": {
+        "$value": "{color.ma.tertiary.180}",
+        "$type": "color"
+      },
+      "190": {
+        "$value": "{color.ma.tertiary.190}",
+        "$type": "color"
+      }
+    },
+    "text": {
+      "heading-light": {
+        "$value": "{color.ma.primary.160}",
+        "$type": "color"
+      },
+      "body-light": {
+        "$value": "{color.ma.primary.140}",
+        "$type": "color"
+      }
+    },
+    "dark": {
+      "action-primary": {
+        "$value": "{color.ma.primary.080}",
+        "$type": "color"
+      },
+      "action-primary-hover": {
+        "$value": "{color.ma.primary.090}",
+        "$type": "color"
+      },
+      "action-primary-active": {
+        "$value": "{color.ma.primary.100}",
+        "$type": "color"
+      },
+      "action-secondary": {
+        "$value": "{color.ma.secondary.080}",
+        "$type": "color"
+      },
+      "action-secondary-hover": {
+        "$value": "{color.ma.secondary.070}",
+        "$type": "color"
+      },
+      "action-secondary-active": {
+        "$value": "{color.ma.secondary.060}",
+        "$type": "color"
+      },
+      "action-tertiary": {
+        "$value": "{color.ma.tertiary.050}",
+        "$type": "color"
+      },
+      "action-tertiary-hover": {
+        "$value": "{color.ma.tertiary.040}",
+        "$type": "color"
+      },
+      "action-tertiary-active": {
+        "$value": "{color.ma.tertiary.030}",
+        "$type": "color"
+      },
+      "on-primary": {
+        "$value": "{color.white}",
+        "$type": "color"
+      },
+      "on-secondary": {
+        "$value": "{color.neutral.200}",
+        "$type": "color"
+      },
+      "on-tertiary": {
+        "$value": "{color.neutral.200}",
+        "$type": "color"
+      }
+    },
+    "font": {
+      "family": {
+        "$value": "{font.family.open-sans}",
+        "$type": "fontFamily"
+      }
+    },
+    "radius": {
+      "button": {
+        "$value": "{radius.3}",
+        "$type": "dimension"
+      },
+      "card": {
+        "$value": "{radius.8}",
+        "$type": "dimension"
+      }
+    }
+  }
+}

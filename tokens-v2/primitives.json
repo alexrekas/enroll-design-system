@@ -1672,6 +1672,16 @@
         "$value": "#d5c1ce",
         "$type": "color"
       }
+    },
+    "black-alpha": {
+      "40": {
+        "$value": "#00000066",
+        "$type": "color"
+      },
+      "60": {
+        "$value": "#00000099",
+        "$type": "color"
+      }
     }
   },
   "space": {
