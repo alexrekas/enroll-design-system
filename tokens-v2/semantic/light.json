@@ -47,11 +47,6 @@
       "$value": "{color.white}",
       "$type": "color"
     },
-    "background-hover": {
-      "$value": "{brand.primary.005}",
-      "$type": "color",
-      "$description": "Not used by Input since 10/16/26 (hover keeps field.background). Kept until removal is approved."
-    },
     "background-active": {
       "$value": "{brand.primary.005}",
       "$type": "color",
