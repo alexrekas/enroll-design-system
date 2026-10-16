@@ -49,15 +49,28 @@
     },
     "background-hover": {
       "$value": "{brand.primary.005}",
-      "$type": "color"
+      "$type": "color",
+      "$description": "Not used by Input since 10/16/26 (hover keeps field.background). Kept until removal is approved."
+    },
+    "background-active": {
+      "$value": "{brand.primary.005}",
+      "$type": "color",
+      "$description": "Field background while clicked into / typing, and under the keyboard focus ring."
     },
     "border": {
-      "$value": "{color.neutral.120}",
-      "$type": "color"
+      "$value": "{brand.light.field-border}",
+      "$type": "color",
+      "$description": "Rest: mostly grey, 20% tint of the active border."
     },
     "border-hover": {
-      "$value": "{color.neutral.140}",
-      "$type": "color"
+      "$value": "{brand.light.field-border-hover}",
+      "$type": "color",
+      "$description": "Hover: 60% of the way from rest grey to the active border."
+    },
+    "border-active": {
+      "$value": "{brand.primary.100}",
+      "$type": "color",
+      "$description": "Clicked into / typing, and under the keyboard focus ring. Same as border.focus."
     },
     "border-disabled": {
       "$value": "{color.neutral.060}",

@@ -401,6 +401,16 @@
       "subtle-tertiary-active": {
         "$value": "{color.dc.tertiary.150}",
         "$type": "color"
+      },
+      "field-border": {
+        "$value": "#A0A7AF",
+        "$type": "color",
+        "$description": "Field border at rest: 20% OKLab blend from the grey rest border (neutral 090) toward the active border (primary 030)."
+      },
+      "field-border-hover": {
+        "$value": "#A9B4BF",
+        "$type": "color",
+        "$description": "Field border on hover: 60% OKLab blend from the grey rest border (neutral 090) toward the active border (primary 030)."
       }
     },
     "font": {
@@ -460,6 +470,16 @@
       "outline-tertiary-text-active": {
         "$value": "{color.dc.tertiary.160}",
         "$type": "color"
+      },
+      "field-border": {
+        "$value": "#5E6A7A",
+        "$type": "color",
+        "$description": "Field border at rest: 20% OKLab blend from the grey rest border (neutral 120) toward the active border (primary 100)."
+      },
+      "field-border-hover": {
+        "$value": "#334E6E",
+        "$type": "color",
+        "$description": "Field border on hover: 60% OKLab blend from the grey rest border (neutral 120) toward the active border (primary 100)."
       }
     }
   }
