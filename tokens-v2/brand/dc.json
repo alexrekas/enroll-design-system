@@ -1,5 +1,5 @@
 {
-  "$description": "Vitae 27 Brand layer, DC mode (signed off 10/16/26). Maps brand roles to DC primitives.",
+  "$description": "Vitae 27 Brand layer, DC mode (signed off 10/16/26; button roles added in Phase 3). Maps brand roles to DC primitives.",
   "brand": {
     "primary": {
       "005": {
@@ -295,35 +295,35 @@
     },
     "dark": {
       "action-primary": {
-        "$value": "{color.dc.primary.005}",
+        "$value": "{color.dc.primary.010}",
         "$type": "color"
       },
       "action-primary-hover": {
-        "$value": "{color.dc.primary.015}",
-        "$type": "color"
-      },
-      "action-primary-active": {
         "$value": "{color.dc.primary.025}",
         "$type": "color"
       },
+      "action-primary-active": {
+        "$value": "{color.dc.primary.040}",
+        "$type": "color"
+      },
       "action-secondary": {
-        "$value": "{color.dc.secondary.080}",
+        "$value": "{color.dc.secondary.020}",
         "$type": "color"
       },
       "action-secondary-hover": {
-        "$value": "{color.dc.secondary.070}",
+        "$value": "{color.dc.secondary.035}",
         "$type": "color"
       },
       "action-secondary-active": {
-        "$value": "{color.dc.secondary.060}",
+        "$value": "{color.dc.secondary.050}",
         "$type": "color"
       },
       "action-tertiary": {
-        "$value": "{color.dc.tertiary.070}",
+        "$value": "{color.dc.tertiary.020}",
         "$type": "color"
       },
       "action-tertiary-hover": {
-        "$value": "{color.dc.tertiary.060}",
+        "$value": "{color.dc.tertiary.035}",
         "$type": "color"
       },
       "action-tertiary-active": {
@@ -335,11 +335,71 @@
         "$type": "color"
       },
       "on-secondary": {
-        "$value": "{color.neutral.200}",
+        "$value": "{color.dc.secondary.140}",
         "$type": "color"
       },
       "on-tertiary": {
-        "$value": "{color.neutral.200}",
+        "$value": "{color.dc.tertiary.150}",
+        "$type": "color"
+      },
+      "outline-primary-text": {
+        "$value": "{color.dc.primary.020}",
+        "$type": "color"
+      },
+      "outline-primary-text-hover": {
+        "$value": "{color.dc.primary.010}",
+        "$type": "color"
+      },
+      "outline-primary-text-active": {
+        "$value": "{color.dc.primary.005}",
+        "$type": "color"
+      },
+      "outline-secondary-text": {
+        "$value": "{color.dc.secondary.080}",
+        "$type": "color"
+      },
+      "outline-secondary-text-hover": {
+        "$value": "{color.dc.secondary.070}",
+        "$type": "color"
+      },
+      "outline-secondary-text-active": {
+        "$value": "{color.dc.secondary.060}",
+        "$type": "color"
+      },
+      "outline-tertiary-text": {
+        "$value": "{color.dc.tertiary.070}",
+        "$type": "color"
+      },
+      "outline-tertiary-text-hover": {
+        "$value": "{color.dc.tertiary.060}",
+        "$type": "color"
+      },
+      "outline-tertiary-text-active": {
+        "$value": "{color.dc.tertiary.050}",
+        "$type": "color"
+      },
+      "subtle-primary-hover": {
+        "$value": "{color.dc.primary.120}",
+        "$type": "color"
+      },
+      "subtle-primary-active": {
+        "$value": "{color.dc.primary.110}",
+        "$type": "color"
+      },
+      "subtle-secondary-hover": {
+        "$value": "{color.dc.secondary.160}",
+        "$type": "color"
+      },
+      "subtle-secondary-active": {
+        "$value": "{color.dc.secondary.150}",
+        "$type": "color"
+      },
+      "subtle-tertiary-hover": {
+        "$value": "{color.dc.tertiary.160}",
+        "$type": "color"
+      },
+      "subtle-tertiary-active": {
+        "$value": "{color.dc.tertiary.150}",
         "$type": "color"
       }
     },
@@ -357,6 +417,44 @@
       "card": {
         "$value": "{radius.8}",
         "$type": "dimension"
+      }
+    },
+    "light": {
+      "outline-primary-text": {
+        "$value": "{color.dc.primary.100}",
+        "$type": "color"
+      },
+      "outline-primary-text-hover": {
+        "$value": "{color.dc.primary.120}",
+        "$type": "color"
+      },
+      "outline-primary-text-active": {
+        "$value": "{color.dc.primary.140}",
+        "$type": "color"
+      },
+      "outline-secondary-text": {
+        "$value": "{color.dc.secondary.120}",
+        "$type": "color"
+      },
+      "outline-secondary-text-hover": {
+        "$value": "{color.dc.secondary.140}",
+        "$type": "color"
+      },
+      "outline-secondary-text-active": {
+        "$value": "{color.dc.secondary.160}",
+        "$type": "color"
+      },
+      "outline-tertiary-text": {
+        "$value": "{color.dc.tertiary.120}",
+        "$type": "color"
+      },
+      "outline-tertiary-text-hover": {
+        "$value": "{color.dc.tertiary.140}",
+        "$type": "color"
+      },
+      "outline-tertiary-text-active": {
+        "$value": "{color.dc.tertiary.160}",
+        "$type": "color"
       }
     }
   }

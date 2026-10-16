@@ -1,5 +1,5 @@
 {
-  "$description": "Vitae 27 semantic color roles, light mode (signed off 10/16/26). References brand.* (switched by client) and primitives.",
+  "$description": "Vitae 27 semantic color roles, light mode (signed off 10/16/26; button and alert-border roles added in Phase 3). References brand.* (switched by client) and primitives.",
   "background": {
     "page": {
       "$value": "{color.neutral.010}",
@@ -206,6 +206,86 @@
     "disabled": {
       "$value": "{color.neutral.040}",
       "$type": "color"
+    },
+    "primary-text": {
+      "$value": "{brand.light.outline-primary-text}",
+      "$type": "color"
+    },
+    "primary-text-hover": {
+      "$value": "{brand.light.outline-primary-text-hover}",
+      "$type": "color"
+    },
+    "primary-text-active": {
+      "$value": "{brand.light.outline-primary-text-active}",
+      "$type": "color"
+    },
+    "primary-subtle-hover": {
+      "$value": "{brand.primary.015}",
+      "$type": "color"
+    },
+    "primary-subtle-active": {
+      "$value": "{brand.primary.025}",
+      "$type": "color"
+    },
+    "secondary-text": {
+      "$value": "{brand.light.outline-secondary-text}",
+      "$type": "color"
+    },
+    "secondary-text-hover": {
+      "$value": "{brand.light.outline-secondary-text-hover}",
+      "$type": "color"
+    },
+    "secondary-text-active": {
+      "$value": "{brand.light.outline-secondary-text-active}",
+      "$type": "color"
+    },
+    "secondary-subtle-hover": {
+      "$value": "{brand.secondary.015}",
+      "$type": "color"
+    },
+    "secondary-subtle-active": {
+      "$value": "{brand.secondary.025}",
+      "$type": "color"
+    },
+    "tertiary-text": {
+      "$value": "{brand.light.outline-tertiary-text}",
+      "$type": "color"
+    },
+    "tertiary-text-hover": {
+      "$value": "{brand.light.outline-tertiary-text-hover}",
+      "$type": "color"
+    },
+    "tertiary-text-active": {
+      "$value": "{brand.light.outline-tertiary-text-active}",
+      "$type": "color"
+    },
+    "tertiary-subtle-hover": {
+      "$value": "{brand.tertiary.015}",
+      "$type": "color"
+    },
+    "tertiary-subtle-active": {
+      "$value": "{brand.tertiary.025}",
+      "$type": "color"
+    },
+    "destructive-text": {
+      "$value": "{color.status.error.100}",
+      "$type": "color"
+    },
+    "destructive-text-hover": {
+      "$value": "{color.status.error.120}",
+      "$type": "color"
+    },
+    "destructive-text-active": {
+      "$value": "{color.status.error.140}",
+      "$type": "color"
+    },
+    "destructive-subtle-hover": {
+      "$value": "{color.status.error.015}",
+      "$type": "color"
+    },
+    "destructive-subtle-active": {
+      "$value": "{color.status.error.025}",
+      "$type": "color"
     }
   },
   "support": {
@@ -243,6 +323,18 @@
     },
     "warning-border": {
       "$value": "{color.status.warning.130}",
+      "$type": "color"
+    },
+    "info-border": {
+      "$value": "{color.status.info.130}",
+      "$type": "color"
+    },
+    "success-border": {
+      "$value": "{color.status.success.130}",
+      "$type": "color"
+    },
+    "error-border": {
+      "$value": "{color.status.error.130}",
       "$type": "color"
     }
   }

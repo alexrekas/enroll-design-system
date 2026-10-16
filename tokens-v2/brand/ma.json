@@ -1,5 +1,5 @@
 {
-  "$description": "Vitae 27 Brand layer, MA mode (signed off 10/16/26). Maps brand roles to MA primitives.",
+  "$description": "Vitae 27 Brand layer, MA mode (signed off 10/16/26; button roles added in Phase 3). Maps brand roles to MA primitives.",
   "brand": {
     "primary": {
       "005": {
@@ -295,51 +295,111 @@
     },
     "dark": {
       "action-primary": {
-        "$value": "{color.ma.primary.080}",
+        "$value": "{color.ma.primary.010}",
         "$type": "color"
       },
       "action-primary-hover": {
-        "$value": "{color.ma.primary.090}",
+        "$value": "{color.ma.primary.025}",
         "$type": "color"
       },
       "action-primary-active": {
-        "$value": "{color.ma.primary.100}",
+        "$value": "{color.ma.primary.040}",
         "$type": "color"
       },
       "action-secondary": {
-        "$value": "{color.ma.secondary.080}",
+        "$value": "{color.ma.secondary.020}",
         "$type": "color"
       },
       "action-secondary-hover": {
-        "$value": "{color.ma.secondary.070}",
+        "$value": "{color.ma.secondary.035}",
         "$type": "color"
       },
       "action-secondary-active": {
-        "$value": "{color.ma.secondary.060}",
+        "$value": "{color.ma.secondary.050}",
         "$type": "color"
       },
       "action-tertiary": {
-        "$value": "{color.ma.tertiary.050}",
+        "$value": "{color.ma.tertiary.020}",
         "$type": "color"
       },
       "action-tertiary-hover": {
-        "$value": "{color.ma.tertiary.040}",
+        "$value": "{color.ma.tertiary.035}",
         "$type": "color"
       },
       "action-tertiary-active": {
-        "$value": "{color.ma.tertiary.030}",
+        "$value": "{color.ma.tertiary.050}",
         "$type": "color"
       },
       "on-primary": {
-        "$value": "{color.white}",
+        "$value": "{color.ma.primary.120}",
         "$type": "color"
       },
       "on-secondary": {
-        "$value": "{color.neutral.200}",
+        "$value": "{color.ma.secondary.140}",
         "$type": "color"
       },
       "on-tertiary": {
-        "$value": "{color.neutral.200}",
+        "$value": "{color.ma.tertiary.100}",
+        "$type": "color"
+      },
+      "outline-primary-text": {
+        "$value": "{color.ma.primary.050}",
+        "$type": "color"
+      },
+      "outline-primary-text-hover": {
+        "$value": "{color.ma.primary.040}",
+        "$type": "color"
+      },
+      "outline-primary-text-active": {
+        "$value": "{color.ma.primary.035}",
+        "$type": "color"
+      },
+      "outline-secondary-text": {
+        "$value": "{color.ma.secondary.060}",
+        "$type": "color"
+      },
+      "outline-secondary-text-hover": {
+        "$value": "{color.ma.secondary.050}",
+        "$type": "color"
+      },
+      "outline-secondary-text-active": {
+        "$value": "{color.ma.secondary.040}",
+        "$type": "color"
+      },
+      "outline-tertiary-text": {
+        "$value": "{color.ma.tertiary.040}",
+        "$type": "color"
+      },
+      "outline-tertiary-text-hover": {
+        "$value": "{color.ma.tertiary.035}",
+        "$type": "color"
+      },
+      "outline-tertiary-text-active": {
+        "$value": "{color.ma.tertiary.030}",
+        "$type": "color"
+      },
+      "subtle-primary-hover": {
+        "$value": "{color.ma.primary.140}",
+        "$type": "color"
+      },
+      "subtle-primary-active": {
+        "$value": "{color.ma.primary.130}",
+        "$type": "color"
+      },
+      "subtle-secondary-hover": {
+        "$value": "{color.ma.secondary.160}",
+        "$type": "color"
+      },
+      "subtle-secondary-active": {
+        "$value": "{color.ma.secondary.150}",
+        "$type": "color"
+      },
+      "subtle-tertiary-hover": {
+        "$value": "{color.ma.tertiary.100}",
+        "$type": "color"
+      },
+      "subtle-tertiary-active": {
+        "$value": "{color.ma.tertiary.090}",
         "$type": "color"
       }
     },
@@ -357,6 +417,44 @@
       "card": {
         "$value": "{radius.8}",
         "$type": "dimension"
+      }
+    },
+    "light": {
+      "outline-primary-text": {
+        "$value": "{color.ma.primary.100}",
+        "$type": "color"
+      },
+      "outline-primary-text-hover": {
+        "$value": "{color.ma.primary.120}",
+        "$type": "color"
+      },
+      "outline-primary-text-active": {
+        "$value": "{color.ma.primary.140}",
+        "$type": "color"
+      },
+      "outline-secondary-text": {
+        "$value": "{color.ma.secondary.120}",
+        "$type": "color"
+      },
+      "outline-secondary-text-hover": {
+        "$value": "{color.ma.secondary.140}",
+        "$type": "color"
+      },
+      "outline-secondary-text-active": {
+        "$value": "{color.ma.secondary.160}",
+        "$type": "color"
+      },
+      "outline-tertiary-text": {
+        "$value": "{color.ma.tertiary.100}",
+        "$type": "color"
+      },
+      "outline-tertiary-text-hover": {
+        "$value": "{color.ma.tertiary.120}",
+        "$type": "color"
+      },
+      "outline-tertiary-text-active": {
+        "$value": "{color.ma.tertiary.140}",
+        "$type": "color"
       }
     }
   }
