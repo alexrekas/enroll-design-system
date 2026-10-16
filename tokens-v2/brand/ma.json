@@ -417,6 +417,11 @@
       "card": {
         "$value": "{radius.8}",
         "$type": "dimension"
+      },
+      "focus-ring": {
+        "$value": "{radius.7}",
+        "$type": "dimension",
+        "$description": "Button radius + 4px so the focus ring (2px offset + 2px stroke) runs parallel to the button corner."
       }
     },
     "light": {
