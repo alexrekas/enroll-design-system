@@ -1,5 +1,5 @@
 {
-  "$description": "Vitae 27 semantic color roles, dark mode (signed off 10/16/26; button and alert-border roles added in Phase 3). References brand.* (switched by client) and primitives.",
+  "$description": "Vitae 27 semantic color roles, dark mode (signed off 10/16/26; button and alert-border roles added in Phase 3). References brand.* (switched by client) and primitives; Tier 4 nav, footer, logo and progress roles added 10/20/26.",
   "background": {
     "page": {
       "$value": "{color.neutral.220}",
@@ -366,6 +366,109 @@
       "$value": "{color.program.me-clear-choice-dark}",
       "$type": "color",
       "$description": "ME only — Clear Choice Plan tag border and icon."
+    }
+  },
+  "nav": {
+    "accent": {
+      "$value": "{brand.dark.nav-accent}",
+      "$type": "color",
+      "$description": "Header accent rule and active top-nav indicator."
+    },
+    "rule": {
+      "$value": "{brand.dark.nav-rule}",
+      "$type": "color",
+      "$description": "Rule under the header."
+    },
+    "bar": {
+      "$value": "{brand.dark.nav-bar}",
+      "$type": "color",
+      "$description": "Consumer nav bar background."
+    },
+    "admin-bar": {
+      "$value": "{brand.dark.nav-admin-bar}",
+      "$type": "color",
+      "$description": "Broker/Admin nav bar background."
+    },
+    "admin-text": {
+      "$value": "{brand.dark.nav-admin-text}",
+      "$type": "color",
+      "$description": "Text on the Broker/Admin nav bar."
+    },
+    "bar-text": {
+      "$value": "{color.white}",
+      "$type": "color",
+      "$description": "Text on the consumer nav bar."
+    },
+    "badge": {
+      "$value": "{color.status.warning.100}",
+      "$type": "color",
+      "$description": "Count badges in the header (cart, mail) and Left nav."
+    },
+    "badge-text": {
+      "$value": "{color.neutral.190}",
+      "$type": "color",
+      "$description": "Text on nav/badge."
+    },
+    "drawer": {
+      "$value": "{brand.dark.nav-drawer}",
+      "$type": "color",
+      "$description": "Mobile header drawer surface, one step off the header."
+    },
+    "item-hover": {
+      "$value": "{brand.primary.160}",
+      "$type": "color",
+      "$description": "Left nav item hover fill (plus a 2px action.primary bar at 40%)."
+    },
+    "item-pressed": {
+      "$value": "{brand.primary.150}",
+      "$type": "color",
+      "$description": "Left nav item pressed fill (plus a 2px action.primary bar at 70%)."
+    },
+    "item-selected": {
+      "$value": "{background.brand-subtle}",
+      "$type": "color",
+      "$description": "Left nav selected row fill and mobile nav toggle background."
+    },
+    "panel": {
+      "$value": "{color.neutral.200}",
+      "$type": "color",
+      "$description": "Mobile nav overlay panels (Left nav, Progress). Dark is one step above the page."
+    }
+  },
+  "footer": {
+    "bg": {
+      "$value": "{brand.dark.footer-bg}",
+      "$type": "color",
+      "$description": "Footer background."
+    },
+    "lang-bg": {
+      "$value": "{brand.dark.footer-lang-bg}",
+      "$type": "color",
+      "$description": "Footer language row background (off by default)."
+    },
+    "pill": {
+      "$value": "{brand.dark.footer-pill}",
+      "$type": "color",
+      "$description": "Footer help pill (styling currently unused; kept for the language row)."
+    }
+  },
+  "logo": {
+    "show-color": {
+      "$value": false,
+      "$type": "boolean",
+      "$description": "Logo switch: full-color logo on light surfaces, all-white logo in dark mode (no client logo reaches 4.5:1 on the dark header)."
+    },
+    "show-white": {
+      "$value": true,
+      "$type": "boolean",
+      "$description": "Logo switch: the inverse of logo.show-color."
+    }
+  },
+  "progress": {
+    "upcoming": {
+      "$value": "{brand.dark.progress-upcoming}",
+      "$type": "color",
+      "$description": "Progress connectors, upcoming markers and the remaining Progress line; always used at 40% opacity. EA/MA/ME: action.primary. DC: neutral gray."
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "$description": "Vitae 27 Brand layer, DC mode (signed off 10/16/26; button roles added in Phase 3). Maps brand roles to DC primitives.",
+  "$description": "Vitae 27 Brand layer, DC mode (signed off 10/16/26; button roles added in Phase 3). Maps brand roles to DC primitives; Tier 4 nav, footer and progress roles added 10/20/26.",
   "brand": {
     "primary": {
       "005": {
@@ -411,6 +411,49 @@
         "$value": "#A9B4BF",
         "$type": "color",
         "$description": "Field border on hover: 60% OKLab blend from the grey rest border (neutral 090) toward the active border (primary 030)."
+      },
+      "nav-accent": {
+        "$value": "{brand.secondary.030}",
+        "$type": "color"
+      },
+      "nav-rule": {
+        "$value": "{brand.secondary.080}",
+        "$type": "color"
+      },
+      "nav-bar": {
+        "$value": "{brand.secondary.170}",
+        "$type": "color",
+        "$description": "Dark-mode nav bar: deep brand shade so it doesn't outshine the page (DC secondary 170, EA/MA/ME primary 150; decided 10/20/26)."
+      },
+      "nav-admin-bar": {
+        "$value": "{brand.secondary.170}",
+        "$type": "color",
+        "$description": "Dark-mode Broker/Admin nav bar (DC secondary 170, EA/MA/ME primary 150; decided 10/20/26)."
+      },
+      "nav-admin-text": {
+        "$value": "{color.white}",
+        "$type": "color"
+      },
+      "footer-bg": {
+        "$value": "{color.neutral.190}",
+        "$type": "color"
+      },
+      "footer-lang-bg": {
+        "$value": "{color.neutral.170}",
+        "$type": "color"
+      },
+      "footer-pill": {
+        "$value": "{color.neutral.160}",
+        "$type": "color"
+      },
+      "nav-drawer": {
+        "$value": "{brand.primary.150}",
+        "$type": "color",
+        "$description": "Dark mobile drawer surface (DC one step lighter at 150)."
+      },
+      "progress-upcoming": {
+        "$value": "{color.neutral.040}",
+        "$type": "color"
       }
     },
     "font": {
@@ -480,7 +523,60 @@
         "$value": "#334E6E",
         "$type": "color",
         "$description": "Field border on hover: 60% OKLab blend from the grey rest border (neutral 120) toward the active border (primary 100)."
+      },
+      "nav-accent": {
+        "$value": "{brand.secondary.100}",
+        "$type": "color"
+      },
+      "nav-rule": {
+        "$value": "{brand.secondary.100}",
+        "$type": "color"
+      },
+      "nav-bar": {
+        "$value": "{brand.secondary.100}",
+        "$type": "color"
+      },
+      "nav-admin-bar": {
+        "$value": "{brand.secondary.100}",
+        "$type": "color"
+      },
+      "nav-admin-text": {
+        "$value": "{color.white}",
+        "$type": "color"
+      },
+      "footer-bg": {
+        "$value": "{color.white}",
+        "$type": "color"
+      },
+      "footer-lang-bg": {
+        "$value": "{color.neutral.030}",
+        "$type": "color"
+      },
+      "footer-pill": {
+        "$value": "{color.white}",
+        "$type": "color"
+      },
+      "progress-upcoming": {
+        "$value": "{color.neutral.150}",
+        "$type": "color"
       }
+    }
+  },
+  "progress": {
+    "connector-gapped": {
+      "$value": false,
+      "$type": "boolean",
+      "$description": "Progress step connectors stop short of each marker (4px gap, rounded ends). EA, MA, ME."
+    },
+    "connector-continuous": {
+      "$value": true,
+      "$type": "boolean",
+      "$description": "Progress step connectors run through each marker. DC."
+    },
+    "current-center-dot": {
+      "$value": false,
+      "$type": "boolean",
+      "$description": "Current step marker shows a center dot inside the ring. Off for all clients (open ring); kept as a switch."
     }
   }
 }
