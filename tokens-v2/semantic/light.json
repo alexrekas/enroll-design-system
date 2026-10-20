@@ -345,5 +345,27 @@
       "$value": "{color.status.error.130}",
       "$type": "color"
     }
+  },
+  "program": {
+    "dc-healthy-surface": {
+      "$value": "{color.program.dc-healthy-surface}",
+      "$type": "color",
+      "$description": "DC only — Healthy DC Plan tag background."
+    },
+    "dc-healthy-border": {
+      "$value": "{color.program.dc-healthy}",
+      "$type": "color",
+      "$description": "DC only — Healthy DC Plan tag border and icon."
+    },
+    "me-clear-choice-surface": {
+      "$value": "{color.program.me-clear-choice-surface}",
+      "$type": "color",
+      "$description": "ME only — Clear Choice Plan tag background."
+    },
+    "me-clear-choice-border": {
+      "$value": "{color.program.me-clear-choice}",
+      "$type": "color",
+      "$description": "ME only — Clear Choice Plan tag border and icon."
+    }
   }
 }

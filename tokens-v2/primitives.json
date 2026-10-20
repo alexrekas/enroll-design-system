@@ -1671,6 +1671,22 @@
       "me-clear-choice-surface": {
         "$value": "#d5c1ce",
         "$type": "color"
+      },
+      "dc-healthy-dark": {
+        "$value": "#c792d6",
+        "$type": "color"
+      },
+      "dc-healthy-dark-surface": {
+        "$value": "#2e1438",
+        "$type": "color"
+      },
+      "me-clear-choice-dark": {
+        "$value": "#d29bc0",
+        "$type": "color"
+      },
+      "me-clear-choice-dark-surface": {
+        "$value": "#351a2d",
+        "$type": "color"
       }
     },
     "black-alpha": {
