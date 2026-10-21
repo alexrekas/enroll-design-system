@@ -1,5 +1,5 @@
 {
-  "$description": "Vitae 27 semantic color roles, light mode (signed off 10/16/26; button and alert-border roles added in Phase 3). References brand.* (switched by client) and primitives; Tier 4 nav, footer, logo and progress roles added 10/20/26; Tier 5 metal, card, table and program-tag roles added and text.body made neutral 10/21/26.",
+  "$description": "Vitae 27 semantic color roles, light mode (signed off 10/16/26; button and alert-border roles added in Phase 3). References brand.* (switched by client) and primitives; Tier 4 nav, footer, logo and progress roles added 10/20/26; Tier 5 metal, card, table and program-tag roles added and text.body made neutral 10/21/26; two-tone warning icon, alert text and surface.header-bar added 10/21/26 (table.header-bg renamed).",
   "background": {
     "page": {
       "$value": "{color.neutral.010}",
@@ -331,8 +331,9 @@
       "$type": "color"
     },
     "warning-border": {
-      "$value": "{color.status.warning.130}",
-      "$type": "color"
+      "$value": "{color.status.warning.100}",
+      "$type": "color",
+      "$description": "Warning alert and tag border. Light: warning/100 (bright amber; decorative, the two-tone icon and text carry the meaning). Dark: warning/080."
     },
     "info-border": {
       "$value": "{color.status.info.130}",
@@ -345,6 +346,21 @@
     "error-border": {
       "$value": "{color.status.error.130}",
       "$type": "color"
+    },
+    "warning-icon-fill": {
+      "$value": "{color.status.warning-icon}",
+      "$type": "color",
+      "$description": "Two-tone warning icon: triangle fill. Same in light and dark."
+    },
+    "warning-icon-ink": {
+      "$value": "{color.neutral.190}",
+      "$type": "color",
+      "$description": "Two-tone warning icon: exclamation mark (and the outline in light mode). 16:1 on white."
+    },
+    "warning-icon-outline-color": {
+      "$value": "{support.warning-icon-ink}",
+      "$type": "color",
+      "$description": "Two-tone warning icon: 1px outline around the triangle. Dark outline in light mode; matches the fill in dark mode (same footprint, no visible outline)."
     }
   },
   "program": {
@@ -592,11 +608,6 @@
     }
   },
   "table": {
-    "header-bg": {
-      "$value": "{color.neutral.020}",
-      "$type": "color",
-      "$description": "Table header row background (neutral so it never reads as selected)."
-    },
     "row-hover": {
       "$value": "{background.brand-subtle}",
       "$type": "color",
@@ -606,6 +617,20 @@
       "$value": "{nav.item-selected}",
       "$type": "color",
       "$description": "Selected (checked) table rows."
+    }
+  },
+  "surface": {
+    "header-bar": {
+      "$value": "{color.neutral.020}",
+      "$type": "color",
+      "$description": "Header strip at the top of a card-like item, e.g. the Plan tile header bar. Neutral so it never reads as selected. Renamed from table.header-bg 10/21/26; tables no longer use a header fill."
+    }
+  },
+  "alert": {
+    "text": {
+      "$value": "{color.neutral.150}",
+      "$type": "color",
+      "$description": "Title and message text inside alerts (all types). Light: neutral/150, a dark grey separate from body copy. Dark: white, so no brand tint shows on warning or success messages."
     }
   }
 }

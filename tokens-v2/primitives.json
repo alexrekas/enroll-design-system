@@ -1611,6 +1611,11 @@
           "$value": "#100303",
           "$type": "color"
         }
+      },
+      "warning-icon": {
+        "$value": "#f5c400",
+        "$type": "color",
+        "$description": "Bright warning yellow for the two-tone warning icon fill (only ever used with a dark outline)."
       }
     },
     "metal": {

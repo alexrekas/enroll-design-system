@@ -1,5 +1,5 @@
 {
-  "$description": "Vitae 27 Brand layer, DC mode (signed off 10/16/26; button roles added in Phase 3). Maps brand roles to DC primitives; Tier 4 nav, footer and progress roles added 10/20/26; Tier 5 card focus ring, filter and field-set switches added 10/21/26.",
+  "$description": "Vitae 27 Brand layer, DC mode (signed off 10/16/26; button roles added in Phase 3). Maps brand roles to DC primitives; Tier 4 nav, footer and progress roles added 10/20/26; Tier 5 card focus ring, filter and field-set switches added 10/21/26; Log-in banner, help phone and system-notice settings added 10/21/26.",
   "brand": {
     "primary": {
       "005": {
@@ -617,6 +617,43 @@
       "$value": false,
       "$type": "boolean",
       "$description": "Show the County field in the address field-set. ME only."
+    }
+  },
+  "login": {
+    "show-official-banner": {
+      "$value": false,
+      "$type": "boolean",
+      "$description": "Show the official-website banner above the header. MA only (matches mass.gov)."
+    },
+    "official-banner-text": {
+      "$value": "An official website of the District of Columbia",
+      "$type": "string",
+      "$description": "Official-website banner text. Only MA shows the banner; other values kept in case a client adopts one."
+    },
+    "official-domain-title": {
+      "$value": "Official websites use .dc.gov",
+      "$type": "string",
+      "$description": "Official-website banner, expanded panel: domain heading."
+    },
+    "official-domain-text": {
+      "$value": "A .dc.gov website belongs to an official government organization in the District of Columbia.",
+      "$type": "string",
+      "$description": "Official-website banner, expanded panel: domain explanation."
+    },
+    "show-system-notice": {
+      "$value": true,
+      "$type": "boolean",
+      "$description": "Show the system-use notice under the sign-in form. DC only."
+    },
+    "help-phone": {
+      "$value": "(855) 532-5465 / TTY: 711",
+      "$type": "string",
+      "$description": "Customer service phone shown on the sign-in card. EA is a placeholder."
+    },
+    "help-phone-tel": {
+      "$value": "+18555325465",
+      "$type": "string",
+      "$description": "Customer service number for tel: links (href=\"tel:<value>\"), E.164 format. Pairs with login.help-phone. EA is a placeholder."
     }
   }
 }
