@@ -1653,6 +1653,26 @@
       "catastrophic-surface": {
         "$value": "#dce4ea",
         "$type": "color"
+      },
+      "bronze-border": {
+        "$value": "#a46628",
+        "$type": "color"
+      },
+      "silver-border": {
+        "$value": "#9a9a9a",
+        "$type": "color"
+      },
+      "gold-border": {
+        "$value": "#c89613",
+        "$type": "color"
+      },
+      "platinum-border": {
+        "$value": "#4a4a4d",
+        "$type": "color"
+      },
+      "catastrophic-border": {
+        "$value": "#3b4e5d",
+        "$type": "color"
       }
     },
     "program": {
@@ -1686,6 +1706,62 @@
       },
       "me-clear-choice-dark-surface": {
         "$value": "#351a2d",
+        "$type": "color"
+      },
+      "dc-essential": {
+        "$value": "#003260",
+        "$type": "color"
+      },
+      "dc-essential-surface": {
+        "$value": "#e6f2fa",
+        "$type": "color"
+      },
+      "dc-essential-icon": {
+        "$value": "#377d22",
+        "$type": "color"
+      },
+      "dc-essential-dark": {
+        "$value": "#8ab4e0",
+        "$type": "color"
+      },
+      "dc-essential-dark-surface": {
+        "$value": "#0e2138",
+        "$type": "color"
+      },
+      "dc-essential-icon-dark": {
+        "$value": "#6fbf5a",
+        "$type": "color"
+      },
+      "me-current-plan": {
+        "$value": "#8dadc6",
+        "$type": "color"
+      },
+      "me-current-plan-surface": {
+        "$value": "#c3d3df",
+        "$type": "color"
+      },
+      "me-current-plan-dark": {
+        "$value": "#6f93b0",
+        "$type": "color"
+      },
+      "me-current-plan-dark-surface": {
+        "$value": "#1b2a37",
+        "$type": "color"
+      },
+      "ma-premium-value": {
+        "$value": "#003260",
+        "$type": "color"
+      },
+      "ma-premium-value-surface": {
+        "$value": "#e6f2fa",
+        "$type": "color"
+      },
+      "ma-premium-value-dark": {
+        "$value": "#8ab4e0",
+        "$type": "color"
+      },
+      "ma-premium-value-dark-surface": {
+        "$value": "#0e2138",
         "$type": "color"
       }
     },

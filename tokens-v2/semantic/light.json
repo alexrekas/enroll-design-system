@@ -1,5 +1,5 @@
 {
-  "$description": "Vitae 27 semantic color roles, light mode (signed off 10/16/26; button and alert-border roles added in Phase 3). References brand.* (switched by client) and primitives; Tier 4 nav, footer, logo and progress roles added 10/20/26.",
+  "$description": "Vitae 27 semantic color roles, light mode (signed off 10/16/26; button and alert-border roles added in Phase 3). References brand.* (switched by client) and primitives; Tier 4 nav, footer, logo and progress roles added 10/20/26; Tier 5 metal, card, table and program-tag roles added and text.body made neutral 10/21/26.",
   "background": {
     "page": {
       "$value": "{color.neutral.010}",
@@ -100,8 +100,9 @@
       "$type": "color"
     },
     "body": {
-      "$value": "{brand.text.body-light}",
-      "$type": "color"
+      "$value": "{color.neutral.170}",
+      "$type": "color",
+      "$description": "Body text: paragraphs, table cells, checkbox/radio labels, field values. Neutral in every client so brand color is reserved for links, actions and headings (changed 10/21/26; was brand-tinted)."
     },
     "secondary": {
       "$value": "{color.neutral.130}",
@@ -366,6 +367,41 @@
       "$value": "{color.program.me-clear-choice}",
       "$type": "color",
       "$description": "ME only — Clear Choice Plan tag border and icon."
+    },
+    "dc-essential-surface": {
+      "$value": "{color.program.dc-essential-surface}",
+      "$type": "color",
+      "$description": "DC only — Essential Plan tag."
+    },
+    "dc-essential-border": {
+      "$value": "{color.program.dc-essential}",
+      "$type": "color",
+      "$description": "DC only — Essential Plan tag."
+    },
+    "dc-essential-icon": {
+      "$value": "{color.program.dc-essential-icon}",
+      "$type": "color",
+      "$description": "DC only — Essential Plan tag bookmark icon."
+    },
+    "me-current-plan-surface": {
+      "$value": "{color.program.me-current-plan-surface}",
+      "$type": "color",
+      "$description": "ME only — Your current plan tag."
+    },
+    "me-current-plan-border": {
+      "$value": "{color.program.me-current-plan}",
+      "$type": "color",
+      "$description": "ME only — Your current plan tag."
+    },
+    "ma-premium-value-surface": {
+      "$value": "{color.program.ma-premium-value-surface}",
+      "$type": "color",
+      "$description": "MA only — Premium Value Plan tag."
+    },
+    "ma-premium-value": {
+      "$value": "{color.program.ma-premium-value}",
+      "$type": "color",
+      "$description": "MA only — Premium Value Plan tag border, icon and label."
     }
   },
   "nav": {
@@ -469,6 +505,107 @@
       "$value": "{brand.light.progress-upcoming}",
       "$type": "color",
       "$description": "Progress connectors, upcoming markers and the remaining Progress line; always used at 40% opacity. EA/MA/ME: action.primary. DC: neutral gray."
+    }
+  },
+  "metal": {
+    "bronze": {
+      "$value": "{color.metal.bronze}",
+      "$type": "color",
+      "$description": "Bronze metal badge fill (same in light and dark)."
+    },
+    "bronze-text": {
+      "$value": "{color.black}",
+      "$type": "color",
+      "$description": "Text on the bronze badge (black; passes 4.5:1)."
+    },
+    "bronze-border": {
+      "$value": "{color.metal.bronze-border}",
+      "$type": "color",
+      "$description": "Bronze badge border, a darker shade of the fill."
+    },
+    "silver": {
+      "$value": "{color.metal.silver}",
+      "$type": "color",
+      "$description": "Silver metal badge fill (same in light and dark)."
+    },
+    "silver-text": {
+      "$value": "{color.black}",
+      "$type": "color",
+      "$description": "Text on the silver badge (black; passes 4.5:1)."
+    },
+    "silver-border": {
+      "$value": "{color.metal.silver-border}",
+      "$type": "color",
+      "$description": "Silver badge border, a darker shade of the fill."
+    },
+    "gold": {
+      "$value": "{color.metal.gold}",
+      "$type": "color",
+      "$description": "Gold metal badge fill (same in light and dark)."
+    },
+    "gold-text": {
+      "$value": "{color.black}",
+      "$type": "color",
+      "$description": "Text on the gold badge (black; passes 4.5:1)."
+    },
+    "gold-border": {
+      "$value": "{color.metal.gold-border}",
+      "$type": "color",
+      "$description": "Gold badge border, a darker shade of the fill."
+    },
+    "platinum": {
+      "$value": "{color.metal.platinum}",
+      "$type": "color",
+      "$description": "Platinum metal badge fill (same in light and dark)."
+    },
+    "platinum-text": {
+      "$value": "{color.white}",
+      "$type": "color",
+      "$description": "Text on the platinum badge (white; passes 4.5:1)."
+    },
+    "platinum-border": {
+      "$value": "{color.metal.platinum-border}",
+      "$type": "color",
+      "$description": "Platinum badge border, a darker shade of the fill."
+    },
+    "catastrophic": {
+      "$value": "{color.metal.catastrophic}",
+      "$type": "color",
+      "$description": "Catastrophic metal badge fill (same in light and dark)."
+    },
+    "catastrophic-text": {
+      "$value": "{color.white}",
+      "$type": "color",
+      "$description": "Text on the catastrophic badge (white; passes 4.5:1)."
+    },
+    "catastrophic-border": {
+      "$value": "{color.metal.catastrophic-border}",
+      "$type": "color",
+      "$description": "Catastrophic badge border, a darker shade of the fill."
+    }
+  },
+  "card": {
+    "surface": {
+      "$value": "{background.layer-01}",
+      "$type": "color",
+      "$description": "Card background. Dark is a neutral lift so brand color is reserved for the selected state."
+    }
+  },
+  "table": {
+    "header-bg": {
+      "$value": "{color.neutral.020}",
+      "$type": "color",
+      "$description": "Table header row background (neutral so it never reads as selected)."
+    },
+    "row-hover": {
+      "$value": "{background.brand-subtle}",
+      "$type": "color",
+      "$description": "Hover on interactive table rows."
+    },
+    "row-selected": {
+      "$value": "{nav.item-selected}",
+      "$type": "color",
+      "$description": "Selected (checked) table rows."
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "$description": "Vitae 27 Brand layer, ME mode (signed off 10/16/26; button roles added in Phase 3). Maps brand roles to ME primitives; Tier 4 nav, footer and progress roles added 10/20/26.",
+  "$description": "Vitae 27 Brand layer, ME mode (signed off 10/16/26; button roles added in Phase 3). Maps brand roles to ME primitives; Tier 4 nav, footer and progress roles added 10/20/26; Tier 5 card focus ring, filter and field-set switches added 10/21/26.",
   "brand": {
     "primary": {
       "005": {
@@ -475,6 +475,11 @@
         "$value": "{radius.10}",
         "$type": "dimension",
         "$description": "Button radius + 4px so the focus ring (2px offset + 2px stroke) runs parallel to the button corner."
+      },
+      "card-focus-ring": {
+        "$value": "{radius.12}",
+        "$type": "dimension",
+        "$description": "Focus ring around cards: card radius + 4 (12px for all clients)."
       }
     },
     "light": {
@@ -526,7 +531,8 @@
       },
       "nav-accent": {
         "$value": "{brand.primary.100}",
-        "$type": "color"
+        "$type": "color",
+        "$description": "Header role label, links and role icon. DC changed from secondary 100 to primary 100 (dark blue) 10/21/26."
       },
       "nav-rule": {
         "$value": "{brand.secondary.100}",
@@ -577,6 +583,40 @@
       "$value": false,
       "$type": "boolean",
       "$description": "Current step marker shows a center dot inside the ring. Off for all clients (open ring); kept as a switch."
+    }
+  },
+  "filter": {
+    "show-healthy-dc-plan": {
+      "$value": false,
+      "$type": "boolean",
+      "$description": "Show the \"Healthy DC Plan\" plan-feature filter. DC only."
+    },
+    "show-essential-plan": {
+      "$value": false,
+      "$type": "boolean",
+      "$description": "Show the \"Essential Plan\" plan-feature filter. DC only."
+    },
+    "show-clear-choice-plan": {
+      "$value": true,
+      "$type": "boolean",
+      "$description": "Show the \"Clear Choice Plan\" plan-feature filter. ME only."
+    },
+    "network-local": {
+      "$value": "Maine / Regional",
+      "$type": "string",
+      "$description": "Label of the in-state option in the Network filter. EA and MA values are placeholders."
+    }
+  },
+  "fieldset": {
+    "address-line-1-label": {
+      "$value": "Address line 1",
+      "$type": "string",
+      "$description": "Label for Address line 1. DC asks for the quadrant."
+    },
+    "show-county": {
+      "$value": true,
+      "$type": "boolean",
+      "$description": "Show the County field in the address field-set. ME only."
     }
   }
 }
