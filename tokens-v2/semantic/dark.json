@@ -623,7 +623,7 @@
     "header-bar": {
       "$value": "{color.neutral.180}",
       "$type": "color",
-      "$description": "Header strip at the top of a card-like item, e.g. the Plan tile header bar. Neutral so it never reads as selected. Renamed from table.header-bg 10/21/26; tables no longer use a header fill."
+      "$description": "Header strip at the top of a card-like item, e.g. the Plan tile header bar; also Compare section rows and the Compare tray (10/21/26). Neutral so it never reads as selected. Renamed from table.header-bg 10/21/26; tables no longer use a header fill."
     }
   },
   "alert": {
