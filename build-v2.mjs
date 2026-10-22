@@ -4,6 +4,9 @@
 import StyleDictionary from 'style-dictionary';
 import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 
+// Style Dictionary's css group, minus time/seconds: durations stay in ms as authored (70ms, not 0.07s).
+const CSS_TRANSFORMS = StyleDictionary.hooks.transformGroups.css.filter((t) => t !== 'time/seconds');
+
 const CLIENTS = ['ea', 'dc', 'ma', 'me'];
 const MODES = ['light', 'dark'];
 const OUT = 'dist/v2';
@@ -23,7 +26,7 @@ for (const client of CLIENTS) {
       source: ['tokens-v2/primitives.json', `tokens-v2/brand/${client}.json`, `tokens-v2/semantic/${mode}.json`],
       platforms: {
         css: {
-          transformGroup: 'css',
+          transforms: CSS_TRANSFORMS,
           prefix: 'vitae',
           buildPath: `${OUT}/css/`,
           files: [{ destination: `${name}.css`, format: 'css/variables', options: { selector, outputReferences: true } }],
