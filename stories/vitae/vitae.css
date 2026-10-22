@@ -221,7 +221,6 @@ html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring)
 .vitae-header__logo svg, .vitae-header__logo img { width: auto; display: block; }
 [data-client="ea"] .vitae-header__logo svg { height: 32px; } [data-client="dc"] .vitae-header__logo svg { height: 35px; }
 [data-client="ma"] .vitae-header__logo img { height: 35px; } [data-client="me"] .vitae-header__logo svg { height: 48px; }
-[data-mode="dark"] .vitae-header__logo, [data-mode="dark"] .vitae-mobile-header__logo { filter: brightness(0) invert(1); } /* stand-in for the white logos in Figma */
 .vitae-header__divider { width: 1px; height: 60px; background: var(--vitae-border-subtle); }
 .vitae-header__portal { color: var(--vitae-nav-accent); font-weight: var(--vitae-font-weight-semibold); text-decoration: none; }
 [data-client="ea"] .vitae-header__portal, [data-client="me"] .vitae-header__portal { text-decoration: underline; text-underline-offset: 3px; }
@@ -638,7 +637,6 @@ th[aria-sort="ascending"] .vitae-sort .vitae-icon, th[aria-sort="descending"] .v
 .vitae-login-card__logo { display: flex; justify-content: center; }
 .vitae-login-card__logo svg, .vitae-login-card__logo img { height: 32px; width: auto; }
 [data-client="ma"] .vitae-login-card__logo svg, [data-client="ma"] .vitae-login-card__logo img { height: 40px; }
-[data-mode="dark"] .vitae-login-card__logo { filter: brightness(0) invert(1); }
 .vitae-login-card h1 { margin: 0; text-align: center; font-size: var(--vitae-font-size-24); line-height: var(--vitae-font-line-height-36); color: var(--vitae-text-heading); }
 .vitae-login-card__lede { margin: 0; text-align: center; color: var(--vitae-text-secondary); }
 .vitae-login-card .vitae-field { max-width: none; }
@@ -662,3 +660,10 @@ th[aria-sort="ascending"] .vitae-sort .vitae-icon, th[aria-sort="descending"] .v
 .vitae-password .vitae-input { padding-right: 88px; }
 .vitae-official-banner__panel[hidden] { display: none; }
 .vitae-official-banner__panel p { margin: 0; }
+
+/* Logos: color in light mode, white in dark (logo/show-color, logo/show-white) */
+.vitae-logo { display: contents; }
+.vitae-logo--white { display: none; }
+[data-mode="dark"] .vitae-logo--color { display: none; }
+[data-mode="dark"] .vitae-logo--white { display: contents; }
+img[data-white] { filter: brightness(0) invert(1); }

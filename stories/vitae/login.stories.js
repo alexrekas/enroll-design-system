@@ -3,7 +3,7 @@ import { icon } from './icons.js';
 import { field } from './field.stories.js';
 import { checkbox } from './selection.stories.js';
 import { alert } from './feedback.stories.js';
-import { logos } from '../brand-assets.js';
+import { logo } from './logos.js';
 
 // Values mirror the login/* client tokens in the Brand collection.
 const CLIENT = {
@@ -76,7 +76,7 @@ export const loginCard = ({ client = 'ea', screen = 'Sign in' } = {}) => {
   const c = CLIENT[client];
   const s = SCREENS[screen](client);
   return `<form class="vitae-login-card" novalidate aria-labelledby="login-title-${screen.replace(/\W/g, '')}">
-    <div class="vitae-login-card__logo">${logos[client]}<span class="vitae-visually-hidden">${esc(c.name)}</span></div>
+    <div class="vitae-login-card__logo">${logo(client)}<span class="vitae-visually-hidden">${esc(c.name)}</span></div>
     ${s.status ? `<div class="vitae-login-card__status" aria-hidden="true">${s.status}</div>` : ''}
     <h1 id="login-title-${screen.replace(/\W/g, '')}">${esc(s.title)}</h1>
     ${s.lede ? `<p class="vitae-login-card__lede">${esc(s.lede)}</p>` : ''}
@@ -151,7 +151,7 @@ Sign-in and account screens for every client. One card (440px max, \`card/surfac
 - "Keep me signed in" and "Trust this device" are unchecked by default.
 - Session timeout: warn 2 minutes before and land on **Signed out** (WCAG 2.2.1).
 - The help phone is a \`tel:\` link (\`login/help-phone-tel\`) at every width. DC alone shows the system-use notice (\`login/show-system-notice\`).
-- Dark mode uses the white logos from Figma; this preview inverts the color logo as a stand-in.` } },
+- Logos: render both the color and white logo and switch with \`[data-mode="dark"]\` (logo/show-color, logo/show-white), or swap the file server-side by mode. Never invert or filter the color logo, except MA, whose white logo is a white mask of the same artwork.` } },
   },
 };
 

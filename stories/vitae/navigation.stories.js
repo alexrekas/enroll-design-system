@@ -1,7 +1,7 @@
 import { canvas, figma, esc, matrix } from './_shared.js';
 import { icon } from './icons.js';
 import { button } from './button.stories.js';
-import { logos } from '../brand-assets.js';
+import { logo } from './logos.js';
 
 const CLIENT = {
   ea: { name: 'Enroll App', tagline: 'Enroll App', copyright: ['Enroll App', 'All Rights Reserved.'], phone: '(000) 000-0000 / TTY 000', tel: '+10000000000', help: [['secondary', 'phone'], ['tertiary', '']], languages: true },
@@ -32,7 +32,7 @@ const header = ({ client, user = 'Individual & Family', showCart = true }) => {
   const navbar = ['Broker', 'Admin'].includes(user) ? `<nav class="vitae-navbar" aria-label="${user}"><ul>${navItems.map((n, i) => `<li>${['Families', 'Issuers', 'Brokers', 'Admin'].includes(n) && user === 'Admin' ? `<button type="button" aria-expanded="false" aria-haspopup="true">${n}${icon('chevron-down', 16, 'filled')}</button>` : `<a href="#"${i === 0 ? ' aria-current="page"' : ''}>${n}</a>`}</li>`).join('')}
       <li><a href="#">Mail <span class="vitae-badge" aria-label="2 unread">2</span></a></li>${user === 'Admin' && ['dc', 'ma'].includes(client) ? '<li><a href="#">Notices</a></li>' : ''}</ul></nav>` : '';
   return `<header class="vitae-header"><div class="vitae-container vitae-header__bar">
-      <div class="vitae-header__brand"><a href="#" class="vitae-header__logo" aria-label="${esc(c.name)}">${logos[client]}</a><span class="vitae-header__divider" aria-hidden="true"></span><a href="#" class="vitae-header__portal">${esc(portal)}</a></div>
+      <div class="vitae-header__brand"><a href="#" class="vitae-header__logo" aria-label="${esc(c.name)}">${logo(client)}</a><span class="vitae-header__divider" aria-hidden="true"></span><a href="#" class="vitae-header__portal">${esc(portal)}</a></div>
       ${right}</div></header>${navbar}`;
 };
 
@@ -65,7 +65,7 @@ Global header, 70px bar with a 2px \`--vitae-nav-rule\` bottom border on a 1140p
 - Nav bar: \`<nav aria-label="Broker">\` / \`"Admin"\`; dropdown items are \`<button aria-expanded aria-haspopup>\`; current page has \`aria-current="page"\`; the Mail count reads "2 unread".
 - The cart link's name includes the count ("Cart, 1 plan").
 - Below 768px use the mobile header.
-- Dark mode uses the white logos from Figma; this preview inverts the color logo as a stand-in.` } },
+- Logos: render both the color and white logo and switch with \`[data-mode="dark"]\` (logo/show-color, logo/show-white), or swap the file server-side by mode. Never invert or filter the color logo, except MA, whose white logo is a white mask of the same artwork.` } },
   },
 };
 
@@ -82,7 +82,7 @@ export const MobileHeader = {
   render: ({ open, user }, { globals }) => {
     const client = clientOf(globals); const c = CLIENT[client];
     return `<div style="position:relative;width:375px;height:640px;overflow:hidden;border:1px solid var(--vitae-border-subtle);background:var(--vitae-background-page)">
-      <div class="vitae-mobile-header"><a href="#" class="vitae-mobile-header__logo" aria-label="${esc(c.name)}">${logos[client]}</a>
+      <div class="vitae-mobile-header"><a href="#" class="vitae-mobile-header__logo" aria-label="${esc(c.name)}">${logo(client)}</a>
         <button type="button" class="vitae-menu-button" aria-expanded="${open}" aria-controls="drawer" aria-label="${open ? 'Close menu' : 'Open menu'}">${icon(open ? 'close' : 'menu', 24, 'regular')}</button></div>
       ${open ? `<div class="vitae-scrim"></div><nav class="vitae-drawer" id="drawer" aria-label="Main">
         <div><div class="vitae-drawer__tagline">${esc(c.tagline)}</div><div>${esc(user)}</div></div>
