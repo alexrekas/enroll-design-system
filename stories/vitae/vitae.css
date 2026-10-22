@@ -207,3 +207,177 @@ html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring)
 .vitae-tooltip--left::after { top: calc(50% - 5px); right: -6px; transform: rotate(45deg); border-bottom-color: transparent; border-left-color: transparent; }
 .vitae-tooltip--right::after { top: calc(50% - 5px); left: -6px; transform: rotate(45deg); border-top-color: transparent; border-right-color: transparent; }
 .vitae-tooltip--none::after { display: none; }
+
+/* ===================== Batch 2: navigation ===================== */
+.vitae-container { max-width: 1140px; margin: 0 auto; padding: 0 var(--vitae-space-016); }
+.vitae-bleed { margin: calc(-1 * var(--vitae-space-024)); }
+
+/* ---------- Header ---------- */
+.vitae-header { background: var(--vitae-background-layer-01); border-bottom: var(--vitae-border-width-2) solid var(--vitae-nav-rule); }
+.vitae-header__bar { display: flex; align-items: center; justify-content: space-between; gap: var(--vitae-space-024); min-height: 70px; padding-top: 4px; padding-bottom: 8px; }
+.vitae-header__brand { display: flex; align-items: center; gap: var(--vitae-space-012); }
+[data-client="dc"] .vitae-header__brand, [data-client="ma"] .vitae-header__brand { gap: var(--vitae-space-024); }
+.vitae-header__logo { display: inline-flex; align-items: center; color: inherit; }
+.vitae-header__logo svg, .vitae-header__logo img { width: auto; display: block; }
+[data-client="ea"] .vitae-header__logo svg { height: 32px; } [data-client="dc"] .vitae-header__logo svg { height: 35px; }
+[data-client="ma"] .vitae-header__logo img { height: 35px; } [data-client="me"] .vitae-header__logo svg { height: 48px; }
+[data-mode="dark"] .vitae-header__logo, [data-mode="dark"] .vitae-mobile-header__logo { filter: brightness(0) invert(1); } /* stand-in for the white logos in Figma */
+.vitae-header__divider { width: 1px; height: 60px; background: var(--vitae-border-subtle); }
+.vitae-header__portal { color: var(--vitae-nav-accent); font-weight: var(--vitae-font-weight-semibold); text-decoration: none; }
+[data-client="ea"] .vitae-header__portal, [data-client="me"] .vitae-header__portal { text-decoration: underline; text-underline-offset: 3px; }
+.vitae-header__actions { display: flex; align-items: center; gap: var(--vitae-space-016); }
+.vitae-header__cart { position: relative; display: inline-flex; color: var(--vitae-nav-accent); }
+.vitae-header__cart .vitae-badge { position: absolute; top: -6px; right: -10px; }
+.vitae-header__user { display: flex; align-items: center; gap: var(--vitae-space-008); }
+.vitae-header__user > .vitae-icon { color: var(--vitae-nav-accent); width: 32px; height: 32px; }
+.vitae-header__name { font-weight: var(--vitae-font-weight-bold); }
+.vitae-header__meta { display: flex; align-items: center; gap: var(--vitae-space-008); font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-20); }
+.vitae-header__meta > * + *::before { content: ""; display: inline-block; width: 1px; height: 16px; margin-right: var(--vitae-space-008); vertical-align: middle; background: var(--vitae-border-strong); }
+.vitae-header__meta a { color: var(--vitae-nav-accent); text-decoration: underline; text-underline-offset: 3px; }
+.vitae-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 24px; height: 24px; padding: 0 var(--vitae-space-004); border-radius: var(--vitae-radius-6); background: var(--vitae-nav-badge); color: var(--vitae-nav-badge-text); font-size: var(--vitae-font-size-12); line-height: var(--vitae-font-line-height-16); }
+
+.vitae-navbar { background: var(--vitae-nav-admin-bar); color: var(--vitae-nav-admin-text); }
+.vitae-navbar ul { display: flex; flex-wrap: wrap; align-items: center; gap: var(--vitae-space-024); list-style: none; margin: 0; padding: 11px var(--vitae-space-016); max-width: 1140px; margin-inline: auto; }
+.vitae-navbar a, .vitae-navbar button { display: inline-flex; align-items: center; gap: var(--vitae-space-004); color: inherit; text-decoration: none; font: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.vitae-navbar [aria-current="page"] { font-weight: var(--vitae-font-weight-semibold); }
+.vitae-navbar a:hover { text-decoration: underline; }
+.vitae-navbar a:focus-visible, .vitae-navbar button:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+
+/* ---------- Mobile header + drawer ---------- */
+.vitae-mobile-header { position: relative; display: flex; align-items: center; justify-content: space-between; min-height: 71px; padding: 0 var(--vitae-space-016); background: var(--vitae-background-layer-01); border-bottom: var(--vitae-border-width-2) solid var(--vitae-nav-rule); }
+.vitae-mobile-header__logo svg, .vitae-mobile-header__logo img { height: 35px; width: auto; display: block; }
+.vitae-menu-button { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: var(--vitae-nav-accent); cursor: pointer; border-radius: var(--vitae-radius-4); }
+.vitae-menu-button:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+.vitae-scrim { position: absolute; inset: 0; background: var(--vitae-background-overlay); opacity: .6; }
+.vitae-drawer { position: absolute; top: 0; right: 0; bottom: 0; width: 260px; padding: var(--vitae-space-012); background: var(--vitae-nav-drawer); display: flex; flex-direction: column; gap: var(--vitae-space-012); box-shadow: var(--vitae-shadow-elevation-64); animation: vitae-drawer-in 240ms var(--vitae-motion-easing-productive-entrance); }
+@keyframes vitae-drawer-in { from { transform: translateX(100%); } }
+.vitae-drawer__tagline { font-size: var(--vitae-font-size-12); line-height: var(--vitae-font-line-height-16); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-secondary); }
+.vitae-drawer__user { display: flex; align-items: center; gap: var(--vitae-space-008); }
+.vitae-drawer__user .vitae-icon { color: var(--vitae-nav-accent); width: 32px; height: 32px; }
+.vitae-drawer ul { list-style: none; margin: 0; padding: 0; }
+.vitae-drawer li a, .vitae-drawer li button { display: flex; align-items: center; gap: var(--vitae-space-004); min-height: 44px; width: 100%; color: var(--vitae-nav-accent); text-decoration: underline; text-underline-offset: 3px; font: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.vitae-drawer hr { border: 0; border-top: 1px solid var(--vitae-border-subtle); margin: 0; width: 100%; }
+
+/* ---------- Footer ---------- */
+.vitae-footer__lang { background: var(--vitae-footer-lang-bg); }
+.vitae-footer__lang ul { display: flex; flex-wrap: wrap; gap: var(--vitae-space-016); list-style: none; margin: 0 auto; padding: var(--vitae-space-008) var(--vitae-space-016); max-width: 1140px; }
+.vitae-footer__lang a { color: var(--vitae-text-link); }
+.vitae-footer { background: var(--vitae-footer-bg); border-top: 1px solid var(--vitae-border-subtle); }
+.vitae-footer__content { display: flex; flex-wrap: wrap; align-items: center; gap: var(--vitae-space-016) var(--vitae-space-024); max-width: 1140px; margin: 0 auto; padding: var(--vitae-space-024) var(--vitae-space-016); }
+.vitae-footer__copyright { margin: 0; }
+.vitae-footer__help { display: flex; flex-wrap: wrap; gap: var(--vitae-space-008); margin-left: auto; justify-content: flex-end; }
+@container (max-width: 720px) { .vitae-footer__help { margin-left: 0; justify-content: flex-start; } [data-client="dc"] .vitae-footer__help { margin-inline-start: calc(-1 * var(--vitae-space-016)); flex-direction: column; align-items: flex-start; } }
+@container (max-width: 480px) { [data-client="ea"] .vitae-footer__help .vitae-btn, [data-client="ma"] .vitae-footer__help .vitae-btn, [data-client="me"] .vitae-footer__help .vitae-btn { width: 100%; } }
+.vitae-footer-wrap { container-type: inline-size; }
+
+/* ---------- Breadcrumbs + Back link ---------- */
+.vitae-breadcrumbs { display: flex; flex-wrap: wrap; gap: var(--vitae-space-004); list-style: none; margin: 0; padding: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); }
+.vitae-breadcrumbs__item { display: inline-flex; gap: var(--vitae-space-004); color: var(--vitae-text-secondary); }
+.vitae-breadcrumbs__item + .vitae-breadcrumbs__item::before { content: "/"; }
+.vitae-breadcrumbs__item a, .vitae-breadcrumbs__more { color: var(--vitae-text-secondary); text-decoration: none; font: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.vitae-breadcrumbs__item a:hover, .vitae-breadcrumbs__more:hover { text-decoration: underline; }
+.vitae-breadcrumbs__item a:focus-visible, .vitae-breadcrumbs__more:focus-visible { text-decoration: underline; outline: var(--_ring); outline-offset: 2px; }
+.vitae-breadcrumbs__item[aria-current="page"] { color: var(--vitae-text-body); font-weight: var(--vitae-font-weight-semibold); }
+.vitae-back-link { display: inline-flex; align-items: center; gap: var(--vitae-space-004); min-height: 24px; color: var(--vitae-text-link); font-weight: var(--vitae-font-weight-semibold); text-decoration: none; }
+.vitae-back-link:hover, .vitae-back-link.is-hover { color: var(--vitae-text-link-hover); text-decoration: underline; }
+.vitae-back-link:active, .vitae-back-link.is-pressed { color: var(--vitae-text-link-active); text-decoration: underline; }
+.vitae-back-link:focus-visible, .vitae-back-link.is-focus { outline: var(--_ring); outline-offset: 2px; }
+
+/* ---------- Pagination ---------- */
+.vitae-pagination-wrap { container-type: inline-size; }
+.vitae-pagination { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--vitae-space-012) var(--vitae-space-024); }
+.vitae-pagination__summary { flex: 1 1 200px; margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-pagination ul { display: flex; align-items: center; gap: var(--vitae-space-004); list-style: none; margin: 0; padding: 0; }
+.vitae-page { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; height: 44px; padding: 0 var(--vitae-space-008); border-radius: var(--vitae-brand-radius-button); color: var(--vitae-action-primary-text); text-decoration: none; transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-page:hover, .vitae-page.is-hover { background: var(--vitae-action-primary-subtle-hover); }
+.vitae-page:active, .vitae-page.is-pressed { background: var(--vitae-action-primary-subtle-active); }
+.vitae-page:focus-visible, .vitae-page.is-focus { outline: var(--_ring); outline-offset: 2px; }
+.vitae-page[aria-current="page"] { background: var(--vitae-action-primary); color: var(--vitae-text-on-primary); font-weight: var(--vitae-font-weight-semibold); }
+.vitae-page[aria-disabled="true"] { color: var(--vitae-text-disabled); pointer-events: none; }
+.vitae-page__ellipsis { width: 24px; text-align: center; color: var(--vitae-text-secondary); }
+.vitae-pagination--compact { flex-direction: column; align-items: stretch; gap: var(--vitae-space-008); }
+.vitae-pagination--compact .vitae-pagination__summary { text-align: center; flex: none; }
+.vitae-pagination--compact .vitae-pagination__controls { display: flex; align-items: center; justify-content: space-between; }
+.vitae-pagination__select { display: flex; align-items: center; gap: var(--vitae-space-008); }
+.vitae-pagination__select .vitae-input { width: 88px; }
+/* Full when the container is at least 560px, Compact below */
+.vitae-pagination-wrap .vitae-pagination--compact { display: none; }
+@container (max-width: 559px) { .vitae-pagination-wrap .vitae-pagination--full { display: none; } .vitae-pagination-wrap .vitae-pagination--compact { display: flex; } }
+
+/* ---------- Tabs ---------- */
+.vitae-tabs { position: relative; border-bottom: 1px solid var(--vitae-border-subtle); }
+.vitae-tabs__list { display: flex; overflow-x: auto; scrollbar-width: none; }
+.vitae-tabs__list::-webkit-scrollbar { display: none; }
+.vitae-tab { position: relative; flex: none; display: inline-flex; flex-direction: column; align-items: center; min-height: 44px; padding: 10px var(--vitae-space-016); border: 0; background: none; color: var(--vitae-text-body); font: inherit; cursor: pointer; }
+.vitae-tab__label { display: inline-flex; align-items: center; gap: var(--vitae-space-008); }
+.vitae-tab__text { display: inline-flex; flex-direction: column; }
+.vitae-tab__text::after { content: attr(data-label); font-weight: var(--vitae-font-weight-semibold); height: 0; visibility: hidden; overflow: hidden; } /* reserve SemiBold width */
+.vitae-tab::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 0; background: var(--vitae-action-primary); transition: height var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), opacity var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-tab:hover, .vitae-tab.is-hover { color: var(--vitae-text-heading); }
+.vitae-tab:hover::after, .vitae-tab.is-hover::after { height: 2px; opacity: .4; }
+.vitae-tab:active::after, .vitae-tab.is-pressed::after { height: 2px; opacity: .7; }
+.vitae-tab[aria-selected="true"] { color: var(--vitae-text-heading); font-weight: var(--vitae-font-weight-semibold); }
+.vitae-tab[aria-selected="true"]::after { height: 4px; opacity: 1; }
+.vitae-tab:focus-visible, .vitae-tab.is-focus { outline: var(--_ring); outline-offset: -4px; }
+.vitae-tab:disabled { color: var(--vitae-text-disabled); cursor: not-allowed; }
+.vitae-tab__count { min-width: 20px; padding: 0 6px; border-radius: var(--vitae-radius-full); background: var(--vitae-action-primary-subtle-hover); font-size: var(--vitae-font-size-12); line-height: var(--vitae-font-line-height-16); font-weight: var(--vitae-font-weight-regular); }
+.vitae-tabs__cue { position: absolute; top: 0; bottom: 1px; width: 64px; display: flex; align-items: center; pointer-events: none; color: var(--vitae-icon-primary); }
+.vitae-tabs__cue span { pointer-events: auto; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 43px; background: var(--vitae-background-page); cursor: pointer; }
+.vitae-tabs__cue--right { right: 0; justify-content: flex-end; background: linear-gradient(to right, transparent, var(--vitae-background-page) 32px); }
+.vitae-tabs__cue--left { left: 0; background: linear-gradient(to left, transparent, var(--vitae-background-page) 32px); }
+
+/* ---------- Left nav ---------- */
+.vitae-leftnav { width: 256px; }
+.vitae-leftnav ul { list-style: none; margin: 0; padding: 0; }
+.vitae-leftnav li + li { border-top: 1px solid var(--vitae-border-subtle); }
+.vitae-leftnav__item { position: relative; display: flex; align-items: center; gap: var(--vitae-space-008); min-height: 44px; padding: 10px var(--vitae-space-016); color: var(--vitae-text-body); text-decoration: none; transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-leftnav__item .vitae-icon { color: var(--vitae-icon-secondary); }
+.vitae-leftnav__item::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--vitae-action-primary); }
+.vitae-leftnav__item:hover, .vitae-leftnav__item.is-hover { background: var(--vitae-nav-item-hover); }
+.vitae-leftnav__item:hover::before, .vitae-leftnav__item.is-hover::before { width: 2px; opacity: .4; }
+.vitae-leftnav__item:active, .vitae-leftnav__item.is-pressed { background: var(--vitae-nav-item-pressed); }
+.vitae-leftnav__item:active::before, .vitae-leftnav__item.is-pressed::before { width: 2px; opacity: .7; }
+.vitae-leftnav__item[aria-current="page"] { background: var(--vitae-nav-item-selected); color: var(--vitae-text-heading); font-weight: var(--vitae-font-weight-semibold); }
+.vitae-leftnav__item[aria-current="page"]::before { width: 4px; opacity: 1; }
+.vitae-leftnav__item[aria-current="page"] .vitae-icon { color: var(--vitae-icon-brand); }
+.vitae-leftnav__item:focus-visible, .vitae-leftnav__item.is-focus { outline: var(--_ring); outline-offset: -4px; }
+.vitae-leftnav__item .vitae-badge { margin-left: auto; }
+
+/* ---------- Mobile nav toggle + panel ---------- */
+.vitae-navtoggle { display: flex; flex-direction: column; width: 100%; padding: 0; border: 0; background: var(--vitae-nav-item-selected); cursor: pointer; font: inherit; text-align: left; }
+.vitae-navtoggle__row { display: flex; align-items: center; justify-content: space-between; gap: var(--vitae-space-008); min-height: 48px; padding: 0 var(--vitae-space-016); color: var(--vitae-action-primary-text); font-weight: var(--vitae-font-weight-semibold); }
+.vitae-navtoggle--rule { border-bottom: 1px solid var(--vitae-border-strong); }
+.vitae-navtoggle:hover .vitae-navtoggle__row { color: var(--vitae-action-primary-text-hover); text-decoration: underline; }
+.vitae-navtoggle:focus-visible { outline: var(--_ring); outline-offset: -2px; }
+.vitae-navtoggle[aria-expanded="true"] .vitae-icon { transform: rotate(180deg); }
+.vitae-navpanel { position: relative; }
+.vitae-navpanel__surface { position: relative; z-index: 1; background: var(--vitae-nav-panel); box-shadow: var(--vitae-shadow-elevation-8); padding: var(--vitae-space-008) 0; animation: vitae-panel-in var(--vitae-motion-duration-moderate-01) var(--vitae-motion-easing-productive-entrance); }
+@keyframes vitae-panel-in { from { opacity: 0; transform: translateY(-4px); } }
+
+/* ---------- Progress ---------- */
+.vitae-progress-line { position: relative; height: 4px; border-radius: 2px; background: color-mix(in srgb, var(--vitae-action-primary) 40%, transparent); overflow: hidden; }
+.vitae-progress-line__fill { height: 100%; border-radius: 2px; background: var(--vitae-action-primary); }
+.vitae-progress-line--flush, .vitae-progress-line--flush .vitae-progress-line__fill { border-radius: 0 2px 2px 0; }
+.vitae-progress-line--flush { border-radius: 0; }
+.vitae-progress { width: 280px; display: flex; flex-direction: column; gap: var(--vitae-space-016); }
+.vitae-progress__card { background: var(--vitae-card-surface); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); padding: var(--vitae-space-016); display: flex; flex-direction: column; gap: var(--vitae-space-016); }
+.vitae-progress__title { margin: 0; font-size: var(--vitae-font-size-18); line-height: var(--vitae-font-line-height-27); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-steps { list-style: none; margin: 0; padding: 0; }
+.vitae-step { display: grid; grid-template-columns: 1fr 24px; column-gap: var(--vitae-space-012); min-height: 36px; }
+.vitae-step__label { padding: 6px 0; color: var(--vitae-text-secondary); }
+.vitae-step__label a { color: var(--vitae-action-primary-text); text-decoration: none; }
+.vitae-step__label a:hover { text-decoration: underline; }
+.vitae-step__label a:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+.vitae-step--current .vitae-step__label { color: var(--vitae-text-heading); font-weight: var(--vitae-font-weight-semibold); }
+.vitae-step__marker { position: relative; display: flex; justify-content: center; }
+.vitae-step__marker::before, .vitae-step__marker::after { content: ""; position: absolute; left: 11px; width: 2px; background: var(--vitae-action-primary); }
+.vitae-step__marker::before { top: 0; height: 8px; } .vitae-step__marker::after { top: 28px; bottom: 0; }
+.vitae-step.no-above .vitae-step__marker::before, .vitae-step.no-below .vitae-step__marker::after { display: none; }
+.vitae-step.dim-above .vitae-step__marker::before, .vitae-step.dim-below .vitae-step__marker::after { opacity: .4; }
+[data-client="ea"] .vitae-step__marker::before, [data-client="ma"] .vitae-step__marker::before, [data-client="me"] .vitae-step__marker::before { height: 4px; border-radius: 0 0 1px 1px; }
+[data-client="ea"] .vitae-step__marker::after, [data-client="ma"] .vitae-step__marker::after, [data-client="me"] .vitae-step__marker::after { top: 32px; border-radius: 1px 1px 0 0; }
+.vitae-step__dot { position: relative; z-index: 1; margin-top: 8px; width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--vitae-action-primary); background: var(--vitae-background-layer-01); }
+.vitae-step--complete .vitae-step__dot { background: var(--vitae-action-primary); }
+.vitae-step--upcoming .vitae-step__dot { border-color: color-mix(in srgb, var(--vitae-action-primary) 40%, transparent); }
+[data-client="dc"] .vitae-step--current .vitae-step__dot::after { content: ""; position: absolute; inset: 4px; border-radius: 50%; background: var(--vitae-action-primary); }
+.vitae-progress__links { display: flex; flex-direction: column; gap: var(--vitae-space-008); }
