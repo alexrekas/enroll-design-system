@@ -1,0 +1,209 @@
+/* Vitae 27 reference CSS for Storybook. Every value comes from tokens-v2 (dist/v2/css/vitae.css).
+   Class names follow the "Code:" lines in each Figma component description. */
+
+/* ---------- Base ---------- */
+.vitae-canvas {
+  background: var(--vitae-background-page); color: var(--vitae-text-body);
+  font-family: var(--vitae-brand-font-family), system-ui, -apple-system, "Segoe UI", sans-serif; font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-24);
+  padding: var(--vitae-space-024); min-height: 100%;
+}
+.vitae-canvas *, .vitae-canvas *::before, .vitae-canvas *::after { box-sizing: border-box; }
+.vitae-icon { flex: none; display: inline-block; vertical-align: middle; }
+.vitae-visually-hidden { position: absolute !important; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.vitae-demo-grid { display: grid; gap: var(--vitae-space-016) var(--vitae-space-024); align-items: start; }
+.vitae-demo-label { font-size: var(--vitae-font-size-12); line-height: var(--vitae-font-line-height-16); color: var(--vitae-text-secondary); }
+:root { --_ring: 2px dashed var(--vitae-border-focus-ring); }
+.vitae-transition { transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+@media (prefers-reduced-motion: reduce) { .vitae-canvas * { transition: none !important; animation: none !important; } }
+
+/* ---------- Button ---------- */
+.vitae-btn {
+  --_c: var(--vitae-action-primary); --_ch: var(--vitae-action-primary-hover); --_ca: var(--vitae-action-primary-active);
+  --_on: var(--vitae-text-on-primary);
+  --_t: var(--vitae-action-primary-text); --_th: var(--vitae-action-primary-text-hover); --_ta: var(--vitae-action-primary-text-active);
+  --_sh: var(--vitae-action-primary-subtle-hover); --_sa: var(--vitae-action-primary-subtle-active);
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--vitae-space-008);
+  min-height: 44px; padding: 10px var(--vitae-space-016);
+  border: var(--vitae-border-width-2) solid transparent; border-radius: var(--vitae-brand-radius-button);
+  font: inherit; font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-20); font-weight: var(--vitae-font-weight-semibold);
+  cursor: pointer; text-decoration: none; white-space: nowrap;
+  transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard);
+}
+.vitae-btn--secondary { --_c: var(--vitae-action-secondary); --_ch: var(--vitae-action-secondary-hover); --_ca: var(--vitae-action-secondary-active); --_on: var(--vitae-text-on-secondary); --_t: var(--vitae-action-secondary-text); --_th: var(--vitae-action-secondary-text-hover); --_ta: var(--vitae-action-secondary-text-active); --_sh: var(--vitae-action-secondary-subtle-hover); --_sa: var(--vitae-action-secondary-subtle-active); }
+.vitae-btn--tertiary { --_c: var(--vitae-action-tertiary); --_ch: var(--vitae-action-tertiary-hover); --_ca: var(--vitae-action-tertiary-active); --_on: var(--vitae-text-on-tertiary); --_t: var(--vitae-action-tertiary-text); --_th: var(--vitae-action-tertiary-text-hover); --_ta: var(--vitae-action-tertiary-text-active); --_sh: var(--vitae-action-tertiary-subtle-hover); --_sa: var(--vitae-action-tertiary-subtle-active); }
+.vitae-btn--destructive { --_c: var(--vitae-action-destructive); --_ch: var(--vitae-action-destructive-hover); --_ca: var(--vitae-action-destructive-active); --_on: var(--vitae-text-on-primary); --_t: var(--vitae-action-destructive-text); --_th: var(--vitae-action-destructive-text-hover); --_ta: var(--vitae-action-destructive-text-active); --_sh: var(--vitae-action-destructive-subtle-hover); --_sa: var(--vitae-action-destructive-subtle-active); }
+.vitae-btn--solid { background: var(--_c); border-color: var(--_c); color: var(--_on); }
+.vitae-btn--solid:hover, .vitae-btn--solid.is-hover { background: var(--_ch); border-color: var(--_ch); }
+.vitae-btn--solid:active, .vitae-btn--solid.is-pressed { background: var(--_ca); border-color: var(--_ca); }
+.vitae-btn--outline { background: transparent; border-color: var(--_t); color: var(--_t); }
+.vitae-btn--outline:hover, .vitae-btn--outline.is-hover { background: var(--_sh); border-color: var(--_th); color: var(--_th); }
+.vitae-btn--outline:active, .vitae-btn--outline.is-pressed { background: var(--_sa); border-color: var(--_ta); color: var(--_ta); }
+.vitae-btn--ghost { background: transparent; color: var(--_t); }
+.vitae-btn--ghost:hover, .vitae-btn--ghost.is-hover { background: var(--_sh); color: var(--_th); }
+.vitae-btn--ghost:active, .vitae-btn--ghost.is-pressed { background: var(--_sa); color: var(--_ta); }
+.vitae-btn:focus-visible, .vitae-btn.is-focus { outline: var(--_ring); outline-offset: 2px; }
+.vitae-btn:disabled, .vitae-btn[aria-disabled="true"] { cursor: not-allowed; color: var(--vitae-text-disabled); }
+.vitae-btn--solid:disabled, .vitae-btn--solid[aria-disabled="true"] { background: var(--vitae-action-disabled); border-color: var(--vitae-action-disabled); }
+.vitae-btn--outline:disabled, .vitae-btn--outline[aria-disabled="true"] { background: transparent; border-color: var(--vitae-field-border-disabled); }
+.vitae-btn--ghost:disabled, .vitae-btn--ghost[aria-disabled="true"] { background: transparent; }
+
+/* ---------- Link ---------- */
+.vitae-link {
+  color: var(--vitae-text-link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; cursor: pointer;
+  transition: color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), text-decoration-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard);
+}
+.vitae-link:hover, .vitae-link.is-hover { color: var(--vitae-text-link-hover); text-decoration-thickness: 2px; }
+.vitae-link:active, .vitae-link.is-pressed { color: var(--vitae-text-link-active); text-decoration-thickness: 2px; }
+.vitae-link:focus-visible, .vitae-link.is-focus { outline: var(--_ring); outline-offset: 2px; border-radius: var(--vitae-radius-2); }
+.vitae-link--standalone { display: inline-flex; align-items: center; gap: var(--vitae-space-004); font-weight: var(--vitae-font-weight-semibold); text-decoration: none; min-height: 24px; }
+.vitae-link--standalone:hover, .vitae-link--standalone.is-hover, .vitae-link--standalone:active, .vitae-link--standalone.is-pressed { text-decoration: underline; }
+
+/* ---------- Field (Input, Dropdown, Date picker, Search) ---------- */
+.vitae-field { display: flex; flex-direction: column; gap: var(--vitae-space-004); max-width: 320px; }
+.vitae-field__label-row { display: flex; align-items: center; gap: var(--vitae-space-004); }
+.vitae-field__label { font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-secondary); }
+.vitae-field__required { color: var(--vitae-text-error); }
+.vitae-field__control { position: relative; display: flex; align-items: center; }
+.vitae-field__control .vitae-icon { position: absolute; pointer-events: none; color: var(--vitae-icon-secondary); }
+.vitae-field__control .vitae-icon--leading { left: 12px; }
+.vitae-field__control .vitae-icon--trailing { right: 12px; }
+.vitae-input {
+  width: 100%; min-height: 44px; padding: 10px; padding-inline: 10px;
+  border: var(--vitae-border-width-2) solid var(--vitae-field-border); border-radius: var(--vitae-radius-4);
+  background: var(--vitae-field-background); color: var(--vitae-text-body);
+  font: inherit; font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-20);
+  transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard);
+}
+.vitae-input::placeholder { color: var(--vitae-text-placeholder); opacity: 1; }
+.vitae-input.has-leading { padding-left: 40px; }
+.vitae-input.has-trailing, .vitae-select { padding-right: 42px; }
+.vitae-input:hover, .vitae-input.is-hover { border-color: var(--vitae-field-border-hover); }
+.vitae-input:focus, .vitae-input.is-active, .vitae-input.is-focus { outline: none; background: var(--vitae-field-background-active); border-color: var(--vitae-field-border-active); }
+html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring); outline-offset: 2px; }
+.vitae-input[aria-invalid="true"], .vitae-input.is-error { border-color: var(--vitae-support-error); }
+.vitae-input:disabled { background: var(--vitae-background-disabled); border-color: var(--vitae-field-border-disabled); color: var(--vitae-text-disabled); cursor: not-allowed; }
+.vitae-select { appearance: none; -webkit-appearance: none; cursor: pointer; }
+.vitae-field__helper { margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-field__error {
+  margin: 0; display: flex; align-items: flex-start; gap: var(--vitae-space-004); padding: 2px var(--vitae-space-008);
+  background: var(--vitae-support-error-surface); border: var(--vitae-border-width-1) solid var(--vitae-support-error-border); border-radius: var(--vitae-radius-4);
+  color: var(--vitae-text-error); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20);
+}
+.vitae-field__error .vitae-icon { margin-top: 2px; color: var(--vitae-support-error); }
+.vitae-info-button {
+  display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; padding: 0;
+  border: 0; border-radius: var(--vitae-radius-full); background: transparent; color: var(--vitae-text-link); cursor: pointer;
+}
+.vitae-info-button:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+
+/* ---------- Checkbox / Radio ---------- */
+.vitae-check { position: relative; display: grid; grid-template-columns: 24px 1fr; column-gap: var(--vitae-space-008); padding: 10px 0; max-width: 320px; }
+.vitae-check__input { position: absolute; top: 10px; left: 0; width: 24px; height: 24px; margin: 0; opacity: 0; cursor: pointer; }
+.vitae-check__box {
+  grid-row: 1; width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center;
+  border: var(--vitae-border-width-2) solid var(--vitae-field-border); border-radius: var(--vitae-radius-4);
+  background: var(--vitae-field-background); color: transparent; pointer-events: none;
+  transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard);
+}
+.vitae-check--radio .vitae-check__box { border-radius: var(--vitae-radius-full); }
+.vitae-check__dot { width: 12px; height: 12px; border-radius: var(--vitae-radius-full); background: currentColor; }
+.vitae-check__label { grid-column: 2; cursor: pointer; }
+.vitae-check__description { grid-column: 2; margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-check__error { grid-column: 2; margin-top: var(--vitae-space-004); }
+.vitae-check__input:hover + .vitae-check__box, .vitae-check.is-hover .vitae-check__box { border-color: var(--vitae-field-border-hover); color: color-mix(in srgb, var(--vitae-field-border-hover) 40%, transparent); }
+.vitae-check__input:active + .vitae-check__box, .vitae-check.is-active .vitae-check__box { border-color: var(--vitae-field-border-active); background: var(--vitae-field-background-active); }
+.vitae-check__input:checked + .vitae-check__box, .vitae-check__input:indeterminate + .vitae-check__box { background: var(--vitae-action-primary); border-color: var(--vitae-action-primary); color: var(--vitae-text-on-primary); }
+.vitae-check--radio .vitae-check__input:checked + .vitae-check__box { background: var(--vitae-field-background); color: var(--vitae-action-primary); }
+.vitae-check__input:checked:hover + .vitae-check__box, .vitae-check.is-hover .vitae-check__input:checked + .vitae-check__box { border-color: var(--vitae-action-primary-hover); }
+.vitae-check:not(.vitae-check--radio) .vitae-check__input:checked:hover + .vitae-check__box { background: var(--vitae-action-primary-hover); }
+.vitae-check__input:focus-visible + .vitae-check__box, .vitae-check.is-focus .vitae-check__box { outline: var(--_ring); outline-offset: 2px; }
+.vitae-check__input[aria-invalid="true"] + .vitae-check__box, .vitae-check.is-error .vitae-check__box { border-color: var(--vitae-support-error); }
+.vitae-check__input:disabled + .vitae-check__box { background: var(--vitae-background-disabled); border-color: var(--vitae-field-border-disabled); }
+.vitae-check__input:disabled:checked + .vitae-check__box { background: var(--vitae-field-border-disabled); color: var(--vitae-background-disabled); }
+.vitae-check__input:disabled ~ .vitae-check__label, .vitae-check__input:disabled ~ .vitae-check__description { color: var(--vitae-text-disabled); cursor: not-allowed; }
+.vitae-check__dash { width: 12px; height: 2px; background: currentColor; border-radius: 1px; }
+
+/* ---------- Toggle ---------- */
+.vitae-toggle { display: grid; grid-template-columns: 48px 1fr; column-gap: var(--vitae-space-008); align-items: start; padding: 10px 0; max-width: 360px; }
+.vitae-toggle__track {
+  position: relative; width: 48px; height: 24px; padding: 0; cursor: pointer;
+  border: var(--vitae-border-width-2) solid var(--vitae-field-border); border-radius: var(--vitae-radius-full); background: var(--vitae-field-background);
+  transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard);
+}
+.vitae-toggle__knob { position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: var(--vitae-radius-full); background: var(--vitae-field-border); transition: transform var(--vitae-motion-duration-moderate-01) var(--vitae-motion-easing-productive-standard), background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-toggle__track:hover, .vitae-toggle.is-hover .vitae-toggle__track { border-color: var(--vitae-field-border-hover); }
+.vitae-toggle__track:hover .vitae-toggle__knob, .vitae-toggle.is-hover .vitae-toggle__knob { background: var(--vitae-field-border-hover); transform: translateX(6px); }
+.vitae-toggle__track[aria-checked="true"] { background: var(--vitae-action-primary); border-color: var(--vitae-action-primary); }
+.vitae-toggle__track[aria-checked="true"] .vitae-toggle__knob { background: var(--vitae-text-on-primary); transform: translateX(24px); }
+.vitae-toggle__track[aria-checked="true"]:hover, .vitae-toggle.is-hover .vitae-toggle__track[aria-checked="true"] { background: var(--vitae-action-primary-hover); border-color: var(--vitae-action-primary-hover); }
+.vitae-toggle__track[aria-checked="true"]:hover .vitae-toggle__knob, .vitae-toggle.is-hover .vitae-toggle__track[aria-checked="true"] .vitae-toggle__knob { transform: translateX(18px); }
+.vitae-toggle__track:focus-visible, .vitae-toggle.is-focus .vitae-toggle__track { outline: var(--_ring); outline-offset: 2px; }
+.vitae-toggle__track:disabled { background: var(--vitae-background-disabled); border-color: var(--vitae-field-border-disabled); cursor: not-allowed; }
+.vitae-toggle__track:disabled .vitae-toggle__knob { background: var(--vitae-field-border-disabled); transform: none; }
+.vitae-toggle__track:disabled[aria-checked="true"] .vitae-toggle__knob { transform: translateX(24px); }
+.vitae-toggle__label { cursor: pointer; }
+.vitae-toggle__description { grid-column: 2; margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+
+/* ---------- Alert ---------- */
+.vitae-alert {
+  display: flex; align-items: flex-start; gap: var(--vitae-space-012); max-width: 560px;
+  padding: var(--vitae-space-012) var(--vitae-space-012) var(--vitae-space-012) var(--vitae-space-016);
+  border: var(--vitae-border-width-1) solid var(--vitae-support-info-border); border-radius: var(--vitae-brand-radius-card);
+  background: var(--vitae-support-info-surface); color: var(--vitae-alert-text);
+  animation: vitae-alert-in var(--vitae-motion-duration-moderate-01) var(--vitae-motion-easing-productive-entrance);
+}
+@keyframes vitae-alert-in { from { opacity: 0; transform: translateY(-4px); } }
+.vitae-alert > .vitae-icon { color: var(--vitae-support-info); }
+.vitae-alert--success { background: var(--vitae-support-success-surface); border-color: var(--vitae-support-success-border); }
+.vitae-alert--success > .vitae-icon { color: var(--vitae-support-success); }
+.vitae-alert--warning { background: var(--vitae-support-warning-surface); border-color: var(--vitae-support-warning-border); }
+.vitae-alert--error { background: var(--vitae-support-error-surface); border-color: var(--vitae-support-error-border); }
+.vitae-alert--error > .vitae-icon { color: var(--vitae-support-error); }
+.vitae-alert__body { flex: 1; display: flex; flex-direction: column; gap: var(--vitae-space-004); }
+.vitae-alert__title { margin: 0; font-weight: var(--vitae-font-weight-bold); }
+.vitae-alert__message { margin: 0; }
+.vitae-alert__dismiss { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; margin: -4px -4px 0 0; padding: 0; border: 0; border-radius: var(--vitae-radius-full); background: transparent; color: var(--vitae-icon-secondary); cursor: pointer; }
+.vitae-alert__dismiss:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+
+/* ---------- Tag ---------- */
+.vitae-tag {
+  display: inline-flex; align-items: center; gap: var(--vitae-space-004); min-height: 24px; padding: 1px 7px; white-space: nowrap;
+  border: var(--vitae-border-width-1) solid var(--vitae-border-strong); border-radius: var(--vitae-radius-full);
+  background: var(--vitae-background-layer-02); color: var(--vitae-text-body);
+  font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-20); font-weight: var(--vitae-font-weight-semibold);
+}
+.vitae-tag--brand { background: var(--vitae-background-brand-subtle); border-color: var(--vitae-border-brand); }
+.vitae-tag--info { background: var(--vitae-support-info-surface); border-color: var(--vitae-support-info-border); } .vitae-tag--info .vitae-icon { color: var(--vitae-support-info); }
+.vitae-tag--success, .vitae-tag--current-plan { background: var(--vitae-support-success-surface); border-color: var(--vitae-support-success-border); } .vitae-tag--success .vitae-icon { color: var(--vitae-support-success); }
+.vitae-tag--warning { background: var(--vitae-support-warning-surface); border-color: var(--vitae-support-warning-border); }
+.vitae-tag--error { background: var(--vitae-support-error-surface); border-color: var(--vitae-support-error-border); } .vitae-tag--error .vitae-icon { color: var(--vitae-support-error); }
+.vitae-tag--dc-healthy { background: var(--vitae-program-dc-healthy-surface); border-color: var(--vitae-program-dc-healthy-border); }
+.vitae-tag--dc-essential { background: var(--vitae-program-dc-essential-surface); border-color: var(--vitae-program-dc-essential-border); } .vitae-tag--dc-essential .vitae-icon { color: var(--vitae-program-dc-essential-icon); }
+.vitae-tag--me-clear-choice { background: var(--vitae-program-me-clear-choice-surface); border-color: var(--vitae-program-me-clear-choice-border); }
+.vitae-tag--me-current-plan { background: var(--vitae-program-me-current-plan-surface); border-color: var(--vitae-program-me-current-plan-border); }
+.vitae-tag--ma-premium-value { background: var(--vitae-program-ma-premium-value-surface); border-color: var(--vitae-program-ma-premium-value); }
+
+/* ---------- Metal badge ---------- */
+.vitae-metal-badge {
+  display: inline-flex; align-items: center; padding: 2px var(--vitae-space-008); border: var(--vitae-border-width-1) solid; border-radius: var(--vitae-radius-4);
+  font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); font-weight: var(--vitae-font-weight-semibold);
+}
+.vitae-metal-badge--bronze { background: var(--vitae-metal-bronze); border-color: var(--vitae-metal-bronze-border); color: var(--vitae-metal-bronze-text); }
+.vitae-metal-badge--silver { background: var(--vitae-metal-silver); border-color: var(--vitae-metal-silver-border); color: var(--vitae-metal-silver-text); }
+.vitae-metal-badge--gold { background: var(--vitae-metal-gold); border-color: var(--vitae-metal-gold-border); color: var(--vitae-metal-gold-text); }
+.vitae-metal-badge--platinum { background: var(--vitae-metal-platinum); border-color: var(--vitae-metal-platinum-border); color: var(--vitae-metal-platinum-text); }
+.vitae-metal-badge--catastrophic { background: var(--vitae-metal-catastrophic); border-color: var(--vitae-metal-catastrophic-border); color: var(--vitae-metal-catastrophic-text); }
+
+/* ---------- Tooltip ---------- */
+.vitae-tooltip {
+  position: relative; display: inline-block; max-width: 240px; padding: var(--vitae-space-008) var(--vitae-space-012);
+  background: var(--vitae-background-layer-01); border: var(--vitae-border-width-1) solid var(--vitae-border-subtle); border-radius: var(--vitae-radius-4);
+  box-shadow: var(--vitae-shadow-elevation-8); color: var(--vitae-text-body);
+  font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20);
+}
+.vitae-tooltip::after { content: ""; position: absolute; width: 10px; height: 10px; background: inherit; border: inherit; border-radius: 0; box-shadow: none; }
+.vitae-tooltip--top::after { left: calc(50% - 5px); bottom: -6px; transform: rotate(45deg); border-top-color: transparent; border-left-color: transparent; }
+.vitae-tooltip--bottom::after { left: calc(50% - 5px); top: -6px; transform: rotate(45deg); border-bottom-color: transparent; border-right-color: transparent; }
+.vitae-tooltip--left::after { top: calc(50% - 5px); right: -6px; transform: rotate(45deg); border-bottom-color: transparent; border-left-color: transparent; }
+.vitae-tooltip--right::after { top: calc(50% - 5px); left: -6px; transform: rotate(45deg); border-top-color: transparent; border-right-color: transparent; }
+.vitae-tooltip--none::after { display: none; }

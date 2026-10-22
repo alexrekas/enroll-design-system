@@ -6,7 +6,7 @@ const FIGMA = 'https://www.figma.com/design/FgVdwGszfnY0vz75yxfJ7F/Vitae-27';
 const esc = (t) => String(t ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 const page = (title, intro, body) => `
-<div class="vf" style="background:var(--vitae-background-page);color:var(--vitae-text-body);font-family:var(--vitae-brand-font-family);padding:24px;">
+<div class="vf" style="background:var(--vitae-background-page);color:var(--vitae-text-body);font-family:var(--vitae-brand-font-family),system-ui,sans-serif;padding:24px;">
   <h2 class="vf-h2">${esc(title)}</h2>
   <p class="vf-intro">${intro}</p>
   ${body}
