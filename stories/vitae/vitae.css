@@ -516,3 +516,149 @@ th[aria-sort="ascending"] .vitae-sort .vitae-icon, th[aria-sort="descending"] .v
 .vitae-fieldset__pair { flex: 1 1 240px; display: flex; flex-wrap: wrap; gap: var(--vitae-space-016) var(--vitae-space-024); }
 .vitae-fieldset__pair > .vitae-field { flex: 1 1 120px; max-width: none; }
 .vitae-fieldset__row > .vitae-field.is-half { flex: 0 1 348px; }
+
+/* ===================== Batch 4: plan shopping and log-in ===================== */
+/* ---------- Plan tile ---------- */
+.vitae-plan { container-type: inline-size; max-width: 960px; background: var(--vitae-card-surface); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); box-shadow: var(--vitae-shadow-elevation-8); overflow: hidden; }
+.vitae-plan.is-compared { border: 2px solid var(--vitae-action-primary); }
+.vitae-plan__bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--vitae-space-008) var(--vitae-space-016); padding: var(--vitae-space-004) var(--vitae-space-024); background: var(--vitae-surface-header-bar); }
+.vitae-plan.is-compared .vitae-plan__bar { background: var(--vitae-nav-item-selected); }
+.vitae-plan__bar .vitae-check { padding: 10px 0; }
+.vitae-plan__product { display: flex; align-items: center; gap: var(--vitae-space-008); min-height: 44px; font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-heading); }
+.vitae-plan__product .vitae-icon { color: var(--vitae-icon-primary); }
+.vitae-plan__tags { display: flex; flex-wrap: wrap; gap: var(--vitae-space-008); }
+.vitae-plan__body { display: flex; flex-direction: column; gap: var(--vitae-space-016); padding: var(--vitae-space-016) var(--vitae-space-024); }
+.vitae-plan__top { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: var(--vitae-space-016) var(--vitae-space-024); }
+.vitae-plan__plan { flex: 1 1 280px; display: flex; flex-wrap: wrap; align-items: center; gap: var(--vitae-space-012) var(--vitae-space-016); }
+.vitae-plan__logo { flex: none; display: flex; align-items: center; justify-content: center; width: 100px; height: 70px; border: 1px dashed var(--vitae-border-strong); border-radius: var(--vitae-radius-4); color: var(--vitae-text-secondary); font-size: var(--vitae-font-size-14); }
+.vitae-plan__name { flex: 1 1 240px; margin: 0; font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-24); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-plan__premium { text-align: right; }
+.vitae-plan__premium-label { font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-plan__amount { font-size: var(--vitae-font-size-24); line-height: var(--vitae-font-line-height-36); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-plan__per { font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-plan__split { display: flex; gap: var(--vitae-space-016); text-align: right; }
+.vitae-plan__facts { display: flex; flex-wrap: wrap; gap: 0 var(--vitae-space-024); }
+.vitae-facts { flex: 1 1 300px; margin: 0; display: grid; grid-template-columns: 132px 1fr; column-gap: var(--vitae-space-008); row-gap: 4px; }
+.vitae-facts dt, .vitae-facts dd { margin: 0; min-height: 28px; display: flex; align-items: center; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); }
+.vitae-facts dt { color: var(--vitae-text-secondary); }
+.vitae-plan__footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--vitae-space-012) var(--vitae-space-024); padding: var(--vitae-space-012) var(--vitae-space-024) var(--vitae-space-016); border-top: 1px solid var(--vitae-border-subtle); }
+.vitae-plan__links { flex: 0 1 280px; display: flex; flex-wrap: wrap; gap: var(--vitae-space-004) var(--vitae-space-016); }
+.vitae-plan__limit { margin: 0 var(--vitae-space-024) var(--vitae-space-012); }
+@container (max-width: 479px) {
+  .vitae-plan__bar, .vitae-plan__body { padding-left: var(--vitae-space-016); padding-right: var(--vitae-space-016); }
+  .vitae-plan__footer { padding-left: var(--vitae-space-016); padding-right: var(--vitae-space-016); }
+  .vitae-plan__footer > .vitae-btn { width: 100%; }
+  .vitae-plan__amount { font-size: var(--vitae-font-size-18); line-height: var(--vitae-font-line-height-27); }
+  .vitae-plan__premium { text-align: left; }
+}
+
+/* ---------- Filter ---------- */
+.vitae-filter-label { display: flex; align-items: center; justify-content: space-between; gap: var(--vitae-space-008); width: 100%; padding: 0; font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-secondary); }
+.vitae-filter-label__title { display: inline-flex; align-items: center; gap: var(--vitae-space-004); }
+.vitae-filter-label .vitae-link { font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); font-weight: var(--vitae-font-weight-regular); }
+.vitae-filter-group { border: 0; margin: 0; padding: 0; min-width: 0; display: flex; flex-direction: column; gap: var(--vitae-space-004); }
+.vitae-filter-group .vitae-check { max-width: none; }
+.vitae-range__inputs { display: flex; align-items: flex-start; gap: var(--vitae-space-008); }
+.vitae-range__inputs .vitae-field { flex: 1; max-width: none; }
+.vitae-range__to { padding-top: 10px; color: var(--vitae-text-secondary); }
+.vitae-filter-panel { display: flex; flex-direction: column; gap: var(--vitae-space-016); padding-bottom: var(--vitae-space-016); border-bottom: 1px solid var(--vitae-border-subtle); }
+.vitae-filter-panel__toggle { align-self: flex-start; display: inline-flex; align-items: center; gap: var(--vitae-space-004); min-height: 44px; padding: 0; border: 0; background: none; color: var(--vitae-text-link); font: inherit; font-weight: var(--vitae-font-weight-semibold); cursor: pointer; }
+.vitae-filter-panel__toggle:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+.vitae-filter-panel__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--vitae-space-032); align-items: start; padding-top: var(--vitae-space-016); border-top: 1px solid var(--vitae-border-subtle); }
+.vitae-filter-panel__stack { display: flex; flex-direction: column; gap: var(--vitae-space-032); }
+.vitae-filter-panel__actions { display: flex; gap: var(--vitae-space-008); }
+.vitae-filter-panel--collapsed { flex-direction: row; flex-wrap: wrap; align-items: center; gap: var(--vitae-space-008) var(--vitae-space-016); }
+.vitae-filter-panel__summary { flex: 1 1 200px; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-carrier-field { position: relative; }
+.vitae-carrier-trigger { text-align: left; cursor: pointer; padding-right: 42px; }
+.vitae-carrier-list { position: absolute; top: calc(100% + 4px); left: 0; right: 0; z-index: 2; padding: var(--vitae-space-004) var(--vitae-space-012); background: var(--vitae-background-layer-01); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); box-shadow: var(--vitae-shadow-elevation-8); animation: vitae-panel-in var(--vitae-motion-duration-moderate-01) var(--vitae-motion-easing-productive-entrance); }
+.vitae-carrier-list .vitae-check { max-width: none; }
+.vitae-results-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--vitae-space-012) var(--vitae-space-024); }
+.vitae-results-bar__count { margin: 0; font-weight: var(--vitae-font-weight-semibold); }
+.vitae-results-bar__sort { display: flex; align-items: center; gap: var(--vitae-space-008); }
+.vitae-results-bar__sort .vitae-field__label-row { white-space: nowrap; }
+.vitae-results-bar__sort .vitae-field__control { width: 240px; max-width: 100%; }
+.vitae-sheet { width: 375px; height: 720px; display: flex; flex-direction: column; background: var(--vitae-nav-panel); border: 1px solid var(--vitae-border-subtle); }
+.vitae-sheet__header { display: flex; align-items: center; justify-content: space-between; padding: var(--vitae-space-008) var(--vitae-space-008) var(--vitae-space-008) var(--vitae-space-016); border-bottom: 1px solid var(--vitae-border-subtle); }
+.vitae-sheet__title { margin: 0; font-size: var(--vitae-font-size-20); line-height: var(--vitae-font-line-height-28); font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-heading); }
+.vitae-sheet__close { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; background: none; color: var(--vitae-icon-primary); cursor: pointer; }
+.vitae-sheet__content { flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: var(--vitae-space-024); padding: var(--vitae-space-016); }
+.vitae-sheet__footer { display: flex; gap: var(--vitae-space-008); padding: var(--vitae-space-012) var(--vitae-space-016); border-top: 1px solid var(--vitae-border-subtle); }
+.vitae-sheet__footer .vitae-btn { flex: 1; }
+
+/* ---------- Plan compare ---------- */
+.vitae-tray { container-type: inline-size; position: sticky; bottom: 0; background: var(--vitae-surface-header-bar); border-top: 1px solid var(--vitae-border-subtle); box-shadow: var(--vitae-shadow-elevation-8); }
+.vitae-tray__content { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--vitae-space-012) var(--vitae-space-024); max-width: 1140px; margin: 0 auto; padding: var(--vitae-space-012) var(--vitae-space-016); }
+.vitae-tray__selected { display: flex; flex-direction: column; gap: var(--vitae-space-008); }
+.vitae-tray__count { margin: 0; font-weight: var(--vitae-font-weight-semibold); }
+.vitae-tray__chips { display: flex; flex-wrap: wrap; gap: var(--vitae-space-008); }
+.vitae-tray__actions { display: flex; align-items: center; gap: var(--vitae-space-016); }
+.vitae-tray__helper { flex-basis: 100%; margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+@container (max-width: 479px) { .vitae-tray__chips { display: none; } .vitae-tray__actions { width: 100%; } .vitae-tray__actions .vitae-btn--solid { flex: 1; } }
+.vitae-chip { display: inline-flex; align-items: flex-start; gap: var(--vitae-space-004); width: 220px; padding: var(--vitae-space-004) var(--vitae-space-004) var(--vitae-space-004) var(--vitae-space-008); background: var(--vitae-background-layer-01); border: 1px solid var(--vitae-border-strong); border-radius: var(--vitae-radius-8); }
+.vitae-chip__name { flex: 1; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); }
+.vitae-chip__remove { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; padding: 0; border: 0; background: none; color: var(--vitae-icon-secondary); border-radius: var(--vitae-radius-full); cursor: pointer; }
+.vitae-chip__remove:focus-visible { outline: var(--_ring); outline-offset: 0; }
+.vitae-compare-scroll { overflow-x: auto; background: var(--vitae-card-surface); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); }
+.vitae-compare-scroll:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+.vitae-compare { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; min-width: 600px; }
+.vitae-compare col.is-label { width: 240px; }
+.vitae-compare thead th { position: sticky; top: 0; z-index: 1; vertical-align: top; height: 1px; padding: var(--vitae-space-016); background: var(--vitae-card-surface); border-bottom: 1px solid var(--vitae-border-strong); text-align: left; font-weight: var(--vitae-font-weight-regular); }
+.vitae-compare tbody th, .vitae-compare tbody td { padding: 11px var(--vitae-space-016) 12px; border-bottom: 1px solid var(--vitae-border-subtle); text-align: left; vertical-align: top; }
+.vitae-compare tbody th { font-weight: var(--vitae-font-weight-semibold); }
+.vitae-compare__section th { padding: 0 !important; background: var(--vitae-surface-header-bar); }
+.vitae-compare__section button { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 45px; padding: 0 var(--vitae-space-016); border: 0; background: none; color: var(--vitae-text-heading); font: inherit; font-size: var(--vitae-font-size-14); font-weight: var(--vitae-font-weight-bold); cursor: pointer; }
+.vitae-compare__section button:focus-visible { outline: var(--_ring); outline-offset: -4px; }
+.vitae-compare__section button[aria-expanded="false"] .vitae-icon { transform: rotate(180deg); }
+.vitae-plan-head { display: flex; flex-direction: column; justify-content: space-between; gap: var(--vitae-space-016); height: 100%; }
+.vitae-plan-head__details { display: flex; flex-direction: column; gap: var(--vitae-space-012); align-items: flex-start; }
+.vitae-plan-head__top { display: flex; justify-content: space-between; width: 100%; }
+.vitae-plan-head__name { font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-plan-head__remove { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; padding: 0; border: 0; background: none; color: var(--vitae-icon-secondary); border-radius: var(--vitae-radius-full); cursor: pointer; }
+.vitae-plan-head .vitae-btn { width: 100%; }
+.vitae-compare.is-compact .vitae-plan-head__top, .vitae-compare.is-compact .vitae-metal-badge, .vitae-compare.is-compact .vitae-plan-head .vitae-btn { display: none; }
+.vitae-compare.is-compact .vitae-plan-head__name { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* ---------- Log-in ---------- */
+.vitae-official-banner { background: var(--vitae-background-layer-02); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); }
+.vitae-official-banner__bar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--vitae-space-008); max-width: 1140px; margin: 0 auto; padding: var(--vitae-space-004) var(--vitae-space-016); }
+.vitae-official-banner__seal { width: 20px; height: 20px; border-radius: 50%; border: 1px dashed var(--vitae-border-strong); }
+.vitae-official-banner__toggle { display: inline-flex; align-items: center; gap: 2px; padding: 0; border: 0; background: none; color: var(--vitae-text-link); font: inherit; text-decoration: underline; cursor: pointer; }
+.vitae-official-banner__panel { display: flex; flex-wrap: wrap; gap: var(--vitae-space-016) var(--vitae-space-032); max-width: 1140px; margin: 0 auto; padding: var(--vitae-space-012) var(--vitae-space-016) var(--vitae-space-016); }
+.vitae-official-banner__panel > div { flex: 1 1 280px; display: flex; gap: var(--vitae-space-008); }
+.vitae-login-layout { container-type: inline-size; padding: 64px var(--vitae-space-016); }
+.vitae-login-layout--centered .vitae-login-card { margin: 0 auto; }
+.vitae-login-layout--split .vitae-login-layout__inner { display: flex; flex-wrap: wrap; gap: var(--vitae-space-024); max-width: 960px; margin: 0 auto; align-items: flex-start; }
+.vitae-login-layout--split .vitae-login-card { flex: 1 1 440px; }
+.vitae-login-panel { flex: 1 1 280px; padding: var(--vitae-space-032); background: var(--vitae-background-brand-subtle); border-radius: var(--vitae-brand-radius-card); }
+.vitae-login-panel h2 { margin: 0 0 var(--vitae-space-012); font-size: var(--vitae-font-size-18); line-height: var(--vitae-font-line-height-27); color: var(--vitae-text-heading); }
+.vitae-login-panel ul { margin: 0 0 var(--vitae-space-016); padding-left: 20px; }
+.vitae-login-card { max-width: 440px; display: flex; flex-direction: column; gap: var(--vitae-space-016); padding: var(--vitae-space-032); background: var(--vitae-card-surface); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); box-shadow: var(--vitae-shadow-elevation-8); }
+@container (max-width: 479px) { .vitae-login-card { padding: var(--vitae-space-024); } }
+.vitae-login-card__logo { display: flex; justify-content: center; }
+.vitae-login-card__logo svg, .vitae-login-card__logo img { height: 32px; width: auto; }
+[data-client="ma"] .vitae-login-card__logo svg, [data-client="ma"] .vitae-login-card__logo img { height: 40px; }
+[data-mode="dark"] .vitae-login-card__logo { filter: brightness(0) invert(1); }
+.vitae-login-card h1 { margin: 0; text-align: center; font-size: var(--vitae-font-size-24); line-height: var(--vitae-font-line-height-36); color: var(--vitae-text-heading); }
+.vitae-login-card__lede { margin: 0; text-align: center; color: var(--vitae-text-secondary); }
+.vitae-login-card .vitae-field { max-width: none; }
+.vitae-login-card .vitae-btn--solid { width: 100%; }
+.vitae-login-card__links { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--vitae-space-008); }
+.vitae-login-card__help { margin: 0; padding-top: var(--vitae-space-016); border-top: 1px solid var(--vitae-border-subtle); text-align: center; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-login-card .vitae-alert { max-width: none; }
+.vitae-password { position: relative; }
+.vitae-password__toggle { position: absolute; right: 4px; top: 4px; display: inline-flex; align-items: center; gap: 4px; height: 36px; padding: 0 var(--vitae-space-008); border: 0; background: none; color: var(--vitae-text-link); font: inherit; font-size: var(--vitae-font-size-14); font-weight: var(--vitae-font-weight-semibold); cursor: pointer; border-radius: var(--vitae-radius-4); }
+.vitae-checklist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--vitae-space-004); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); }
+.vitae-checklist li { display: flex; align-items: center; gap: var(--vitae-space-008); }
+.vitae-checklist li.is-met .vitae-icon { color: var(--vitae-support-success); }
+.vitae-checklist li:not(.is-met) .vitae-icon { color: var(--vitae-icon-secondary); }
+
+.vitae-login-card__notice { margin: 0; padding: var(--vitae-space-012); background: var(--vitae-background-layer-02); border-radius: var(--vitae-radius-4); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-login-card__legal { display: flex; justify-content: center; gap: var(--vitae-space-016); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); }
+.vitae-login-card__center { margin: 0; text-align: center; }
+.vitae-login-card__status { display: flex; justify-content: center; color: var(--vitae-icon-secondary); }
+.vitae-login-layout--split .vitae-login-panel p { margin: 0; }
+.vitae-password__toggle .vitae-icon, .vitae-password__toggle svg { position: static; transform: none; pointer-events: none; color: inherit; }
+.vitae-password .vitae-input { padding-right: 88px; }
+.vitae-official-banner__panel[hidden] { display: none; }
+.vitae-official-banner__panel p { margin: 0; }
