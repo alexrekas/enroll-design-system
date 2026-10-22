@@ -1,5 +1,5 @@
 export default {
-  title: 'Components/Radio Button',
+  title: 'Legacy (v1)/Components/Radio Button',
   tags: ['autodocs'],
   parameters: {
     design: [

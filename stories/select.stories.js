@@ -29,7 +29,7 @@ const STATES = ['AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA'
 const SUFFIX = ['Jr.', 'Sr.', 'II', 'III', 'IV'];
 
 export default {
-  title: 'Components/Dropdown',
+  title: 'Legacy (v1)/Components/Dropdown',
   tags: ['autodocs'],
   parameters: {
     design: [

@@ -6,7 +6,7 @@ const arrow = (dir, disabled) => `
   </button>`;
 
 export default {
-  title: 'Components/Navigation/Pagination',
+  title: 'Legacy (v1)/Components/Navigation/Pagination',
   tags: ['autodocs'],
   parameters: {
     design: [

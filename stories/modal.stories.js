@@ -36,7 +36,7 @@ const modal = ({ type, title, body, secondary, primary, destructive }) => {
 const inline = (inner) => `<div class="ea-modal-scrim ea-modal-scrim--inline">${inner}</div>`;
 
 export default {
-  title: 'Components/Modal',
+  title: 'Legacy (v1)/Components/Modal',
   tags: ['autodocs'],
   parameters: {
     design: [

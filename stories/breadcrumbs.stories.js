@@ -12,7 +12,7 @@ const trail = ({ levels, collapse }) => {
 };
 
 export default {
-  title: 'Components/Navigation/Breadcrumbs',
+  title: 'Legacy (v1)/Components/Navigation/Breadcrumbs',
   tags: ['autodocs'],
   parameters: {
     design: [

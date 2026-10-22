@@ -3,7 +3,7 @@ import { icon } from './icons.js';
 const checkIcon = icon.check('ea-checkbox__check');
 
 export default {
-  title: 'Components/Checkbox',
+  title: 'Legacy (v1)/Components/Checkbox',
   tags: ['autodocs'],
   parameters: {
     design: [

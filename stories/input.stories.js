@@ -30,7 +30,7 @@ export const field = ({ label, placeholder, state, errorText, trailing = 'none',
 };
 
 export default {
-  title: 'Components/Text Input',
+  title: 'Legacy (v1)/Components/Text Input',
   tags: ['autodocs'],
   parameters: {
     design: [

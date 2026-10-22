@@ -10,7 +10,7 @@ const icons = {
 const dismissIcon = sharedIcon.dismiss('ea-alert__close-icon');
 
 export default {
-  title: 'Components/Alert',
+  title: 'Legacy (v1)/Components/Alert',
   tags: ['autodocs'],
   parameters: {
     design: [

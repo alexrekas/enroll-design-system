@@ -107,7 +107,7 @@ const footer = (theme, { showLanguages = false } = {}) => {
 const themeOf = (ctx) => ctx.globals.theme || 'ea';
 
 export default {
-  title: 'Components/Navigation/Header & Footer',
+  title: 'Legacy (v1)/Components/Navigation/Header & Footer',
   tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',

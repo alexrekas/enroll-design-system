@@ -24,7 +24,7 @@ const tag = (type, label, { showIcon = true, dismissible = false, glyph } = {}) 
   </span>`;
 
 export default {
-  title: 'Components/Tag',
+  title: 'Legacy (v1)/Components/Tag',
   tags: ['autodocs'],
   parameters: {
     design: [

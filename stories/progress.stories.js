@@ -1,5 +1,5 @@
 export default {
-  title: 'Components/Navigation/Progress Indicator',
+  title: 'Legacy (v1)/Components/Navigation/Progress Indicator',
   tags: ['autodocs'],
   parameters: {
     design: [

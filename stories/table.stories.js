@@ -13,7 +13,7 @@ function cellClass(i) {
 }
 
 export default {
-  title: 'Components/Table',
+  title: 'Legacy (v1)/Components/Table',
   tags: ['autodocs'],
   parameters: {
     design: [

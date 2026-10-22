@@ -20,7 +20,7 @@ const usedIn = {
 };
 
 export default {
-  title: 'Foundations/Icon',
+  title: 'Legacy (v1)/Foundations/Icon',
   tags: ['autodocs'],
   parameters: {
     design: [

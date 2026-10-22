@@ -6,7 +6,7 @@ import me from '../dist/docs/tokens.me.json';
 const themes = { ea, dc, ma, me };
 
 export default {
-  title: 'Foundations',
+  title: 'Legacy (v1)/Foundations',
   tags: ['autodocs'],
   parameters: {
     design: [

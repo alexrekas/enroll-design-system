@@ -43,7 +43,7 @@ const FAQ = [
 ];
 
 export default {
-  title: 'Components/Accordion',
+  title: 'Legacy (v1)/Components/Accordion',
   tags: ['autodocs'],
   parameters: {
     design: [

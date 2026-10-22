@@ -1,5 +1,5 @@
 export default {
-  title: 'Components/Toggle',
+  title: 'Legacy (v1)/Components/Toggle',
   tags: ['autodocs'],
   parameters: {
     design: [

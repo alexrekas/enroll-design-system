@@ -109,7 +109,7 @@ const mount = ({ label, value, state, required, errorText, hint, today = new Dat
 };
 
 export default {
-  title: 'Components/Date Picker',
+  title: 'Legacy (v1)/Components/Date Picker',
   tags: ['autodocs'],
   parameters: {
     design: [

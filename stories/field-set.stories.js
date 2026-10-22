@@ -64,7 +64,7 @@ function render({ type, size }) {
 }
 
 export default {
-  title: 'Components/Field-Set',
+  title: 'Legacy (v1)/Components/Field-Set',
   tags: ['autodocs'],
   parameters: {
     design: [

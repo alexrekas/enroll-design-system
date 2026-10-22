@@ -6,7 +6,7 @@ const STYLES = ['solid', 'outline', 'ghost'];
 const cls = (level, style) => `ea-btn ea-btn--${level}${style === 'solid' ? '' : ` ea-btn--${style}`}`;
 
 export default {
-  title: 'Components/Button',
+  title: 'Legacy (v1)/Components/Button',
   tags: ['autodocs'],
   parameters: {
     design: [

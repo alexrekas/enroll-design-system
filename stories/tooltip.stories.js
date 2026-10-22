@@ -27,7 +27,7 @@ const staticTip = (placement, text = 'Tooltip') => `
   </span>`;
 
 export default {
-  title: 'Components/Tooltip',
+  title: 'Legacy (v1)/Components/Tooltip',
   tags: ['autodocs'],
   parameters: {
     design: [

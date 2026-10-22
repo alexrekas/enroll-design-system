@@ -1,5 +1,5 @@
 export default {
-  title: 'Components/Card',
+  title: 'Legacy (v1)/Components/Card',
   tags: ['autodocs'],
   parameters: {
     design: [

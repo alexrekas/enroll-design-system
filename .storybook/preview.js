@@ -90,5 +90,11 @@ export default {
   initialGlobals: { theme: 'ea', mode: 'light' },
   parameters: {
     backgrounds: { disable: true },
+    options: {
+      // Vitae 27 first; the original v1 stories sit in a Legacy group at the bottom.
+      storySort: {
+        order: ['Vitae 27', ['Foundations', 'Icons', 'Logos', 'Components', 'Sample users'], 'Legacy (v1)'],
+      },
+    },
   },
 };

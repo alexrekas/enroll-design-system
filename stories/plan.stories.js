@@ -85,7 +85,7 @@ function planCard({ benefitType, cost, cart, expanded }) {
 }
 
 export default {
-  title: 'Components/Flow/Plan',
+  title: 'Legacy (v1)/Components/Flow/Plan',
   tags: ['autodocs'],
   parameters: {
     design: [

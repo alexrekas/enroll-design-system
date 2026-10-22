@@ -1,5 +1,5 @@
 export default {
-  title: 'Components/Flow/Log-In',
+  title: 'Legacy (v1)/Components/Flow/Log-In',
   tags: ['autodocs'],
   parameters: {
     design: [
