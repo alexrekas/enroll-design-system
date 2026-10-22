@@ -51,7 +51,7 @@ export const Card = {
 
 export const CardStates = {
   name: 'Card · selectable states',
-  render: () => matrix(4, ['rest', 'hover', 'pressed', 'focus', 'selected', 'error', 'disabled'].map((s) => [s, card({ type: 'radio', state: s, title: 'Monthly payment', body: 'Pay $412.88 on the 1st of each month.', name: `c-${s}` })])),
+  render: () => matrix(3, ['rest', 'hover', 'pressed', 'focus', 'selected', 'error', 'disabled'].map((s) => [s, card({ type: 'radio', state: s, title: 'Monthly payment', body: 'Pay $412.88 on the 1st of each month.', name: `c-${s}` })])),
   parameters: { design: figma('183:349', 'Card') },
 };
 

@@ -33,14 +33,14 @@
 .vitae-btn--tertiary { --_c: var(--vitae-action-tertiary); --_ch: var(--vitae-action-tertiary-hover); --_ca: var(--vitae-action-tertiary-active); --_on: var(--vitae-text-on-tertiary); --_t: var(--vitae-action-tertiary-text); --_th: var(--vitae-action-tertiary-text-hover); --_ta: var(--vitae-action-tertiary-text-active); --_sh: var(--vitae-action-tertiary-subtle-hover); --_sa: var(--vitae-action-tertiary-subtle-active); }
 .vitae-btn--destructive { --_c: var(--vitae-action-destructive); --_ch: var(--vitae-action-destructive-hover); --_ca: var(--vitae-action-destructive-active); --_on: var(--vitae-text-on-primary); --_t: var(--vitae-action-destructive-text); --_th: var(--vitae-action-destructive-text-hover); --_ta: var(--vitae-action-destructive-text-active); --_sh: var(--vitae-action-destructive-subtle-hover); --_sa: var(--vitae-action-destructive-subtle-active); }
 .vitae-btn--solid { background: var(--_c); border-color: var(--_c); color: var(--_on); }
-.vitae-btn--solid:hover, .vitae-btn--solid.is-hover { background: var(--_ch); border-color: var(--_ch); }
-.vitae-btn--solid:active, .vitae-btn--solid.is-pressed { background: var(--_ca); border-color: var(--_ca); }
+.vitae-btn--solid:not(:disabled, [aria-disabled="true"]):hover, .vitae-btn--solid.is-hover { background: var(--_ch); border-color: var(--_ch); }
+.vitae-btn--solid:not(:disabled, [aria-disabled="true"]):active, .vitae-btn--solid.is-pressed { background: var(--_ca); border-color: var(--_ca); }
 .vitae-btn--outline { background: transparent; border-color: var(--_t); color: var(--_t); }
-.vitae-btn--outline:hover, .vitae-btn--outline.is-hover { background: var(--_sh); border-color: var(--_th); color: var(--_th); }
-.vitae-btn--outline:active, .vitae-btn--outline.is-pressed { background: var(--_sa); border-color: var(--_ta); color: var(--_ta); }
+.vitae-btn--outline:not(:disabled, [aria-disabled="true"]):hover, .vitae-btn--outline.is-hover { background: var(--_sh); border-color: var(--_th); color: var(--_th); }
+.vitae-btn--outline:not(:disabled, [aria-disabled="true"]):active, .vitae-btn--outline.is-pressed { background: var(--_sa); border-color: var(--_ta); color: var(--_ta); }
 .vitae-btn--ghost { background: transparent; color: var(--_t); }
-.vitae-btn--ghost:hover, .vitae-btn--ghost.is-hover { background: var(--_sh); color: var(--_th); }
-.vitae-btn--ghost:active, .vitae-btn--ghost.is-pressed { background: var(--_sa); color: var(--_ta); }
+.vitae-btn--ghost:not(:disabled, [aria-disabled="true"]):hover, .vitae-btn--ghost.is-hover { background: var(--_sh); color: var(--_th); }
+.vitae-btn--ghost:not(:disabled, [aria-disabled="true"]):active, .vitae-btn--ghost.is-pressed { background: var(--_sa); color: var(--_ta); }
 .vitae-btn:focus-visible, .vitae-btn.is-focus { outline: var(--_ring); outline-offset: 2px; }
 .vitae-btn:disabled, .vitae-btn[aria-disabled="true"] { cursor: not-allowed; color: var(--vitae-text-disabled); }
 .vitae-btn--solid:disabled, .vitae-btn--solid[aria-disabled="true"] { background: var(--vitae-action-disabled); border-color: var(--vitae-action-disabled); }
@@ -77,7 +77,7 @@
 .vitae-input::placeholder { color: var(--vitae-text-placeholder); opacity: 1; }
 .vitae-input.has-leading { padding-left: 40px; }
 .vitae-input.has-trailing, .vitae-select { padding-right: 42px; }
-.vitae-input:hover, .vitae-input.is-hover { border-color: var(--vitae-field-border-hover); }
+.vitae-input:not(:disabled):hover, .vitae-input.is-hover { border-color: var(--vitae-field-border-hover); }
 .vitae-input:focus, .vitae-input.is-active, .vitae-input.is-focus { outline: none; background: var(--vitae-field-background-active); border-color: var(--vitae-field-border-active); }
 html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring); outline-offset: 2px; }
 .vitae-input[aria-invalid="true"], .vitae-input.is-error { border-color: var(--vitae-support-error); }
@@ -110,16 +110,27 @@ html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring)
 .vitae-check__label { grid-column: 2; cursor: pointer; }
 .vitae-check__description { grid-column: 2; margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
 .vitae-check__error { grid-column: 2; margin-top: var(--vitae-space-004); }
-.vitae-check__input:hover + .vitae-check__box, .vitae-check.is-hover .vitae-check__box { border-color: var(--vitae-field-border-hover); color: color-mix(in srgb, var(--vitae-field-border-hover) 40%, transparent); }
-.vitae-check__input:active + .vitae-check__box, .vitae-check.is-active .vitae-check__box { border-color: var(--vitae-field-border-active); background: var(--vitae-field-background-active); }
-.vitae-check__input:checked + .vitae-check__box, .vitae-check:not(.vitae-check--radio) .vitae-check__input:indeterminate + .vitae-check__box { background: var(--vitae-action-primary); border-color: var(--vitae-action-primary); color: var(--vitae-text-on-primary); }
-.vitae-check--radio .vitae-check__input:checked + .vitae-check__box { background: var(--vitae-field-background); color: var(--vitae-action-primary); }
-.vitae-check__input:checked:hover + .vitae-check__box, .vitae-check.is-hover .vitae-check__input:checked + .vitae-check__box { border-color: var(--vitae-action-primary-hover); }
-.vitae-check:not(.vitae-check--radio) .vitae-check__input:checked:hover + .vitae-check__box { background: var(--vitae-action-primary-hover); }
+/* Check and radio states, per the Figma variants. Every rule is scoped .vitae-check .vitae-check__input… so the
+   cascade is predictable: on-states (checked, and indeterminate for checkboxes) > error > disabled, and hover/active
+   never apply to a disabled control. .is-* classes force a state for the Storybook matrices. */
+.vitae-check .vitae-check__input:not(:disabled):hover + .vitae-check__box, .vitae-check.is-hover .vitae-check__input:not(:disabled) + .vitae-check__box { border-color: var(--vitae-field-border-hover); color: color-mix(in srgb, var(--vitae-field-border-hover) 40%, transparent); }
+.vitae-check .vitae-check__input:not(:disabled):active + .vitae-check__box, .vitae-check.is-active .vitae-check__input:not(:disabled) + .vitae-check__box { border-color: var(--vitae-field-border-active); background: var(--vitae-field-background-active); color: transparent; }
+/* Checkbox on: checked or indeterminate */
+.vitae-check .vitae-check__input[type="checkbox"]:is(:checked, :indeterminate) + .vitae-check__box { background: var(--vitae-action-primary); border-color: var(--vitae-action-primary); color: var(--vitae-text-on-primary); }
+.vitae-check .vitae-check__input[type="checkbox"]:is(:checked, :indeterminate):not(:disabled):hover + .vitae-check__box, .vitae-check.is-hover .vitae-check__input[type="checkbox"]:is(:checked, :indeterminate):not(:disabled) + .vitae-check__box { background: var(--vitae-action-primary-hover); border-color: var(--vitae-action-primary-hover); color: var(--vitae-text-on-primary); }
+.vitae-check .vitae-check__input[type="checkbox"]:is(:checked, :indeterminate):not(:disabled):active + .vitae-check__box, .vitae-check.is-active .vitae-check__input[type="checkbox"]:is(:checked, :indeterminate):not(:disabled) + .vitae-check__box { background: var(--vitae-action-primary-active); border-color: var(--vitae-action-primary-active); color: var(--vitae-text-on-primary); }
+/* Radio on: white circle, primary border and dot */
+.vitae-check .vitae-check__input[type="radio"]:checked + .vitae-check__box { background: var(--vitae-field-background); border-color: var(--vitae-action-primary); color: var(--vitae-action-primary); }
+.vitae-check .vitae-check__input[type="radio"]:checked:not(:disabled):hover + .vitae-check__box, .vitae-check.is-hover .vitae-check__input[type="radio"]:checked:not(:disabled) + .vitae-check__box { background: var(--vitae-field-background); border-color: var(--vitae-action-primary-hover); color: var(--vitae-action-primary-hover); }
+.vitae-check .vitae-check__input[type="radio"]:checked:not(:disabled):active + .vitae-check__box, .vitae-check.is-active .vitae-check__input[type="radio"]:checked:not(:disabled) + .vitae-check__box { background: var(--vitae-field-background); border-color: var(--vitae-action-primary-active); color: var(--vitae-action-primary-active); }
 .vitae-check__input:focus-visible + .vitae-check__box, .vitae-check.is-focus .vitae-check__box { outline: var(--_ring); outline-offset: 2px; }
-.vitae-check__input[aria-invalid="true"] + .vitae-check__box, .vitae-check.is-error .vitae-check__box { border-color: var(--vitae-support-error); }
-.vitae-check__input:disabled + .vitae-check__box { background: var(--vitae-background-disabled); border-color: var(--vitae-field-border-disabled); }
-.vitae-check__input:disabled:checked + .vitae-check__box { background: var(--vitae-field-border-disabled); color: var(--vitae-background-disabled); }
+/* Error: error border on any value; checked keeps its primary fill */
+.vitae-check .vitae-check__input[aria-invalid="true"]:not(:disabled) + .vitae-check__box, .vitae-check.is-error .vitae-check__input:not(:disabled) + .vitae-check__box { border-color: var(--vitae-support-error); }
+/* Disabled: no hover or active */
+.vitae-check .vitae-check__input:disabled + .vitae-check__box { background: var(--vitae-background-disabled); border-color: var(--vitae-field-border-disabled); color: transparent; }
+.vitae-check .vitae-check__input[type="checkbox"]:disabled:is(:checked, :indeterminate) + .vitae-check__box { background: var(--vitae-field-border-disabled); border-color: var(--vitae-field-border-disabled); color: var(--vitae-background-disabled); }
+.vitae-check .vitae-check__input[type="radio"]:disabled:checked + .vitae-check__box { background: var(--vitae-background-disabled); border-color: var(--vitae-field-border-disabled); color: var(--vitae-field-border-disabled); }
+.vitae-check__input:disabled { cursor: not-allowed; }
 .vitae-check__input:disabled ~ .vitae-check__label, .vitae-check__input:disabled ~ .vitae-check__description { color: var(--vitae-text-disabled); cursor: not-allowed; }
 .vitae-check__dash { width: 12px; height: 2px; background: currentColor; border-radius: 1px; }
 
@@ -131,17 +142,18 @@ html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring)
   transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard);
 }
 .vitae-toggle__knob { position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: var(--vitae-radius-full); background: var(--vitae-field-border); transition: transform var(--vitae-motion-duration-moderate-01) var(--vitae-motion-easing-productive-standard), background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
-.vitae-toggle__track:hover, .vitae-toggle.is-hover .vitae-toggle__track { border-color: var(--vitae-field-border-hover); }
-.vitae-toggle__track:hover .vitae-toggle__knob, .vitae-toggle.is-hover .vitae-toggle__knob { background: var(--vitae-field-border-hover); transform: translateX(6px); }
+.vitae-toggle__track:not(:disabled):hover, .vitae-toggle.is-hover .vitae-toggle__track:not(:disabled) { border-color: var(--vitae-field-border-hover); }
+.vitae-toggle__track:not(:disabled):hover .vitae-toggle__knob, .vitae-toggle.is-hover .vitae-toggle__track:not(:disabled) .vitae-toggle__knob { background: var(--vitae-field-border-hover); transform: translateX(6px); }
 .vitae-toggle__track[aria-checked="true"] { background: var(--vitae-action-primary); border-color: var(--vitae-action-primary); }
 .vitae-toggle__track[aria-checked="true"] .vitae-toggle__knob { background: var(--vitae-text-on-primary); transform: translateX(24px); }
-.vitae-toggle__track[aria-checked="true"]:hover, .vitae-toggle.is-hover .vitae-toggle__track[aria-checked="true"] { background: var(--vitae-action-primary-hover); border-color: var(--vitae-action-primary-hover); }
-.vitae-toggle__track[aria-checked="true"]:hover .vitae-toggle__knob, .vitae-toggle.is-hover .vitae-toggle__track[aria-checked="true"] .vitae-toggle__knob { transform: translateX(18px); }
+.vitae-toggle__track[aria-checked="true"]:not(:disabled):hover, .vitae-toggle.is-hover .vitae-toggle__track[aria-checked="true"]:not(:disabled) { background: var(--vitae-action-primary-hover); border-color: var(--vitae-action-primary-hover); }
+.vitae-toggle__track[aria-checked="true"]:not(:disabled):hover .vitae-toggle__knob, .vitae-toggle.is-hover .vitae-toggle__track[aria-checked="true"]:not(:disabled) .vitae-toggle__knob { transform: translateX(18px); }
 .vitae-toggle__track:focus-visible, .vitae-toggle.is-focus .vitae-toggle__track { outline: var(--_ring); outline-offset: 2px; }
 .vitae-toggle__track:disabled { background: var(--vitae-background-disabled); border-color: var(--vitae-field-border-disabled); cursor: not-allowed; }
 .vitae-toggle__track:disabled .vitae-toggle__knob { background: var(--vitae-field-border-disabled); transform: none; }
 .vitae-toggle__track:disabled[aria-checked="true"] .vitae-toggle__knob { transform: translateX(24px); }
 .vitae-toggle__label { cursor: pointer; }
+.vitae-toggle:has(.vitae-toggle__track:disabled) .vitae-toggle__label { color: var(--vitae-text-disabled); cursor: not-allowed; }
 .vitae-toggle__description { grid-column: 2; margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
 
 /* ---------- Alert ---------- */
@@ -288,7 +300,7 @@ html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring)
 .vitae-pagination__summary { flex: 1 1 200px; margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
 .vitae-pagination ul { display: flex; align-items: center; gap: var(--vitae-space-004); list-style: none; margin: 0; padding: 0; }
 .vitae-page { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; height: 44px; padding: 0 var(--vitae-space-008); border-radius: var(--vitae-brand-radius-button); color: var(--vitae-action-primary-text); text-decoration: none; transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
-.vitae-page:hover, .vitae-page.is-hover { background: var(--vitae-action-primary-subtle-hover); }
+.vitae-page:not(:disabled, [aria-disabled="true"]):hover, .vitae-page.is-hover { background: var(--vitae-action-primary-subtle-hover); }
 .vitae-page:active, .vitae-page.is-pressed { background: var(--vitae-action-primary-subtle-active); }
 .vitae-page:focus-visible, .vitae-page.is-focus { outline: var(--_ring); outline-offset: 2px; }
 .vitae-page[aria-current="page"] { background: var(--vitae-action-primary); color: var(--vitae-text-on-primary); font-weight: var(--vitae-font-weight-semibold); }
@@ -312,9 +324,9 @@ html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring)
 .vitae-tab__text { display: inline-flex; flex-direction: column; }
 .vitae-tab__text::after { content: attr(data-label); font-weight: var(--vitae-font-weight-semibold); height: 0; visibility: hidden; overflow: hidden; } /* reserve SemiBold width */
 .vitae-tab::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 0; background: var(--vitae-action-primary); transition: height var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), opacity var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
-.vitae-tab:hover, .vitae-tab.is-hover { color: var(--vitae-text-heading); }
-.vitae-tab:hover::after, .vitae-tab.is-hover::after { height: 2px; opacity: .4; }
-.vitae-tab:active::after, .vitae-tab.is-pressed::after { height: 2px; opacity: .7; }
+.vitae-tab:not(:disabled, [aria-disabled="true"]):hover, .vitae-tab.is-hover { color: var(--vitae-text-heading); }
+.vitae-tab:not(:disabled, [aria-disabled="true"]):hover::after, .vitae-tab.is-hover::after { height: 2px; opacity: .4; }
+.vitae-tab:not(:disabled, [aria-disabled="true"]):active::after, .vitae-tab.is-pressed::after { height: 2px; opacity: .7; }
 .vitae-tab[aria-selected="true"] { color: var(--vitae-text-heading); font-weight: var(--vitae-font-weight-semibold); }
 .vitae-tab[aria-selected="true"]::after { height: 4px; opacity: 1; }
 .vitae-tab:focus-visible, .vitae-tab.is-focus { outline: var(--_ring); outline-offset: -4px; }
@@ -332,8 +344,8 @@ html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring)
 .vitae-leftnav__item { position: relative; display: flex; align-items: center; gap: var(--vitae-space-008); min-height: 44px; padding: 10px var(--vitae-space-016); color: var(--vitae-text-body); text-decoration: none; transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
 .vitae-leftnav__item .vitae-icon { color: var(--vitae-icon-secondary); }
 .vitae-leftnav__item::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--vitae-action-primary); }
-.vitae-leftnav__item:hover, .vitae-leftnav__item.is-hover { background: var(--vitae-nav-item-hover); }
-.vitae-leftnav__item:hover::before, .vitae-leftnav__item.is-hover::before { width: 2px; opacity: .4; }
+.vitae-leftnav__item:not([aria-disabled="true"]):hover, .vitae-leftnav__item.is-hover { background: var(--vitae-nav-item-hover); }
+.vitae-leftnav__item:not([aria-disabled="true"]):hover::before, .vitae-leftnav__item.is-hover::before { width: 2px; opacity: .4; }
 .vitae-leftnav__item:active, .vitae-leftnav__item.is-pressed { background: var(--vitae-nav-item-pressed); }
 .vitae-leftnav__item:active::before, .vitae-leftnav__item.is-pressed::before { width: 2px; opacity: .7; }
 .vitae-leftnav__item[aria-current="page"] { background: var(--vitae-nav-item-selected); color: var(--vitae-text-heading); font-weight: var(--vitae-font-weight-semibold); }
@@ -391,12 +403,12 @@ html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring)
 label.vitae-card { cursor: pointer; transition: border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
 label.vitae-card .vitae-card__control { position: relative; display: inline-flex; }
 label.vitae-card input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
-label.vitae-card:hover, label.vitae-card.is-hover { border-color: var(--vitae-border-strong); }
-label.vitae-card:active, label.vitae-card.is-pressed { border-color: var(--vitae-field-border-active); }
+label.vitae-card:not(:has(input:disabled)):hover, label.vitae-card.is-hover { border-color: var(--vitae-border-strong); }
+label.vitae-card:not(:has(input:disabled)):active, label.vitae-card.is-pressed { border-color: var(--vitae-field-border-active); }
 label.vitae-card:has(input:focus-visible), label.vitae-card.is-focus { outline: var(--_ring); outline-offset: 2px; border-radius: var(--vitae-brand-radius-card); }
 label.vitae-card:has(input:checked), label.vitae-card.is-selected { border: 2px solid var(--vitae-action-primary); background: var(--vitae-nav-item-selected); padding: 23px; }
 label.vitae-card.is-error { border: 2px solid var(--vitae-support-error); padding: 23px; }
-label.vitae-card:has(input:disabled) { background: var(--vitae-background-disabled); box-shadow: none; cursor: not-allowed; color: var(--vitae-text-disabled); }
+label.vitae-card:has(input:disabled), label.vitae-card:has(input:disabled) input { background: var(--vitae-background-disabled); box-shadow: none; cursor: not-allowed; color: var(--vitae-text-disabled); }
 
 /* ---------- Accordion ---------- */
 .vitae-accordion { display: flex; flex-direction: column; }
@@ -411,7 +423,7 @@ label.vitae-card:has(input:disabled) { background: var(--vitae-background-disabl
 .vitae-accordion__summary { font-weight: var(--vitae-font-weight-regular); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
 .vitae-accordion__button .vitae-icon { color: var(--vitae-icon-primary); transition: transform var(--vitae-motion-duration-moderate-01) var(--vitae-motion-easing-productive-entrance); }
 .vitae-accordion__button[aria-expanded="true"] .vitae-icon { transform: rotate(180deg); }
-.vitae-accordion__button:hover, .vitae-accordion__button.is-hover { background: var(--vitae-nav-item-hover); }
+.vitae-accordion__button:not(:disabled, [aria-disabled="true"]):hover, .vitae-accordion__button.is-hover { background: var(--vitae-nav-item-hover); }
 .vitae-accordion__button:active, .vitae-accordion__button.is-pressed { background: var(--vitae-nav-item-pressed); }
 .vitae-accordion__button:focus-visible, .vitae-accordion__button.is-focus { outline: var(--_ring); outline-offset: -4px; }
 .vitae-accordion__button:disabled { color: var(--vitae-text-disabled); cursor: not-allowed; }
@@ -464,7 +476,7 @@ th[aria-sort="ascending"] .vitae-sort .vitae-icon, th[aria-sort="descending"] .v
 .vitae-menu__item > .vitae-icon:first-child { color: var(--vitae-icon-secondary); }
 .vitae-menu__text { flex: 1; display: flex; flex-direction: column; }
 .vitae-menu__secondary { font-size: var(--vitae-font-size-14); color: var(--vitae-text-secondary); }
-.vitae-menu__item:hover, .vitae-menu__item.is-hover { background: var(--vitae-background-layer-hover); }
+.vitae-menu__item:not([aria-disabled="true"]):hover, .vitae-menu__item.is-hover { background: var(--vitae-background-layer-hover); }
 .vitae-menu__item.is-highlighted { background: var(--vitae-background-layer-hover); outline: var(--_ring); outline-offset: -2px; }
 .vitae-menu__item[aria-selected="true"] > .vitae-icon:last-child { color: var(--vitae-icon-brand); }
 .vitae-menu__item[aria-disabled="true"] { color: var(--vitae-text-disabled); cursor: not-allowed; }
@@ -491,7 +503,7 @@ th[aria-sort="ascending"] .vitae-sort .vitae-icon, th[aria-sort="descending"] .v
 .vitae-calendar__grid { border-collapse: separate; border-spacing: 4px; margin: -4px; }
 .vitae-calendar__grid th { font-size: var(--vitae-font-size-12); line-height: var(--vitae-font-line-height-20); font-weight: var(--vitae-font-weight-regular); color: var(--vitae-text-secondary); }
 .vitae-day { width: 28px; height: 28px; padding: 0; border: 0; border-radius: var(--vitae-radius-4); background: transparent; color: var(--vitae-text-body); font: inherit; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); cursor: pointer; transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
-.vitae-day:hover, .vitae-day.is-hover { background: var(--vitae-background-layer-hover); }
+.vitae-day:not(:disabled, [aria-disabled="true"]):hover, .vitae-day.is-hover { background: var(--vitae-background-layer-hover); }
 .vitae-day[aria-selected="true"] { background: var(--vitae-background-brand-subtle); box-shadow: inset 0 0 0 2px var(--vitae-border-brand); }
 .vitae-day[aria-current="date"] { background: var(--vitae-background-brand); color: var(--vitae-text-on-brand); border-radius: var(--vitae-radius-full); }
 .vitae-day[aria-current="date"][aria-selected="true"] { outline: 2px solid var(--vitae-border-focus-ring); outline-offset: 1px; box-shadow: none; }

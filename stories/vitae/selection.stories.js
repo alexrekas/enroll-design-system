@@ -47,7 +47,7 @@ export default {
     docs: { description: { component: `
 Native inputs styled with a sibling box, so they keep keyboard, screen reader and form behaviour. Rows are 44px tall (10px top and bottom) with an 8px gap to the label; labels and descriptions wrap with the control aligned to the first line.
 
-- **Checkbox:** 24px box, 2px border, radius 4. Checked and indeterminate use \`--vitae-action-primary\`. Indeterminate is set in JS (\`input.indeterminate = true\`) and announces "mixed". Hover on an unchecked box previews a faint checkmark.
+- **Checkbox:** 24px box, 2px border, radius 4. Checked and indeterminate use \`--vitae-action-primary\`. Indeterminate is set in JS (\`input.indeterminate = true\`) and announces "mixed". Hover on an unchecked box previews a faint checkmark. Disabled controls (checkbox, radio, toggle, and selectable cards) have no hover or pressed state: scope hover and active styles with \`:not(:disabled)\`.
 - **Radio:** 24px circle with a 12px dot. Use for 2–4 options in a \`<fieldset>\` with a \`<legend>\`; arrow keys move between options.
 - **Toggle:** \`<button role="switch" aria-checked>\`, for settings that apply immediately. Use Checkbox when the choice is submitted later. State shows by knob position as well as color; on hover the knob leans 6px toward the other side.
 - **Error:** \`aria-invalid="true"\` and the message via \`aria-describedby\` (on the fieldset for radio groups).` } },
