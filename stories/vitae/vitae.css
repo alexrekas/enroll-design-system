@@ -112,7 +112,7 @@ html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring)
 .vitae-check__error { grid-column: 2; margin-top: var(--vitae-space-004); }
 .vitae-check__input:hover + .vitae-check__box, .vitae-check.is-hover .vitae-check__box { border-color: var(--vitae-field-border-hover); color: color-mix(in srgb, var(--vitae-field-border-hover) 40%, transparent); }
 .vitae-check__input:active + .vitae-check__box, .vitae-check.is-active .vitae-check__box { border-color: var(--vitae-field-border-active); background: var(--vitae-field-background-active); }
-.vitae-check__input:checked + .vitae-check__box, .vitae-check__input:indeterminate + .vitae-check__box { background: var(--vitae-action-primary); border-color: var(--vitae-action-primary); color: var(--vitae-text-on-primary); }
+.vitae-check__input:checked + .vitae-check__box, .vitae-check:not(.vitae-check--radio) .vitae-check__input:indeterminate + .vitae-check__box { background: var(--vitae-action-primary); border-color: var(--vitae-action-primary); color: var(--vitae-text-on-primary); }
 .vitae-check--radio .vitae-check__input:checked + .vitae-check__box { background: var(--vitae-field-background); color: var(--vitae-action-primary); }
 .vitae-check__input:checked:hover + .vitae-check__box, .vitae-check.is-hover .vitae-check__input:checked + .vitae-check__box { border-color: var(--vitae-action-primary-hover); }
 .vitae-check:not(.vitae-check--radio) .vitae-check__input:checked:hover + .vitae-check__box { background: var(--vitae-action-primary-hover); }
@@ -381,3 +381,138 @@ html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring)
 .vitae-step--upcoming .vitae-step__dot { border-color: color-mix(in srgb, var(--vitae-action-primary) 40%, transparent); }
 [data-client="dc"] .vitae-step--current .vitae-step__dot::after { content: ""; position: absolute; inset: 4px; border-radius: 50%; background: var(--vitae-action-primary); }
 .vitae-progress__links { display: flex; flex-direction: column; gap: var(--vitae-space-008); }
+
+/* ===================== Batch 3: layout and data ===================== */
+/* ---------- Card ---------- */
+.vitae-card { position: relative; display: flex; flex-direction: column; gap: var(--vitae-space-016); padding: var(--vitae-space-024); max-width: 400px;
+  background: var(--vitae-card-surface); border: var(--vitae-border-width-1) solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); box-shadow: var(--vitae-shadow-elevation-8); }
+.vitae-card__header { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--vitae-space-012); }
+.vitae-card__title { margin: 0; font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-24); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-card__footer { display: flex; gap: var(--vitae-space-008); padding-top: var(--vitae-space-016); border-top: 1px solid var(--vitae-border-subtle); }
+label.vitae-card { cursor: pointer; transition: border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+label.vitae-card .vitae-card__control { position: relative; display: inline-flex; }
+label.vitae-card input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
+label.vitae-card:hover, label.vitae-card.is-hover { border-color: var(--vitae-border-strong); }
+label.vitae-card:active, label.vitae-card.is-pressed { border-color: var(--vitae-field-border-active); }
+label.vitae-card:has(input:focus-visible), label.vitae-card.is-focus { outline: var(--_ring); outline-offset: 2px; border-radius: var(--vitae-brand-radius-card); }
+label.vitae-card:has(input:checked), label.vitae-card.is-selected { border: 2px solid var(--vitae-action-primary); background: var(--vitae-nav-item-selected); padding: 23px; }
+label.vitae-card.is-error { border: 2px solid var(--vitae-support-error); padding: 23px; }
+label.vitae-card:has(input:disabled) { background: var(--vitae-background-disabled); box-shadow: none; cursor: not-allowed; color: var(--vitae-text-disabled); }
+
+/* ---------- Accordion ---------- */
+.vitae-accordion { display: flex; flex-direction: column; }
+.vitae-accordion__toolbar { display: flex; justify-content: flex-end; margin-bottom: var(--vitae-space-008); }
+.vitae-accordion__item { border-top: 1px solid var(--vitae-border-subtle); }
+.vitae-accordion__item:last-child { border-bottom: 1px solid var(--vitae-border-subtle); }
+.vitae-accordion--bordered .vitae-accordion__items { background: var(--vitae-card-surface); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); overflow: hidden; }
+.vitae-accordion--bordered .vitae-accordion__item:first-child { border-top: 0; } .vitae-accordion--bordered .vitae-accordion__item:last-child { border-bottom: 0; }
+.vitae-accordion__heading { margin: 0; font: inherit; }
+.vitae-accordion__button { display: flex; align-items: center; gap: var(--vitae-space-012); width: 100%; min-height: 56px; padding: var(--vitae-space-008) var(--vitae-space-016); border: 0; background: transparent; color: var(--vitae-text-heading); font: inherit; font-weight: var(--vitae-font-weight-semibold); text-align: left; cursor: pointer; transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-accordion__title { flex: 1; }
+.vitae-accordion__summary { font-weight: var(--vitae-font-weight-regular); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-accordion__button .vitae-icon { color: var(--vitae-icon-primary); transition: transform var(--vitae-motion-duration-moderate-01) var(--vitae-motion-easing-productive-entrance); }
+.vitae-accordion__button[aria-expanded="true"] .vitae-icon { transform: rotate(180deg); }
+.vitae-accordion__button:hover, .vitae-accordion__button.is-hover { background: var(--vitae-nav-item-hover); }
+.vitae-accordion__button:active, .vitae-accordion__button.is-pressed { background: var(--vitae-nav-item-pressed); }
+.vitae-accordion__button:focus-visible, .vitae-accordion__button.is-focus { outline: var(--_ring); outline-offset: -4px; }
+.vitae-accordion__button:disabled { color: var(--vitae-text-disabled); cursor: not-allowed; }
+.vitae-accordion__panel { padding: var(--vitae-space-016); padding-top: 0; }
+.vitae-accordion__panel[hidden] { display: none; }
+
+/* ---------- Modal ---------- */
+.vitae-modal-scrim { position: relative; display: flex; align-items: center; justify-content: center; padding: var(--vitae-space-016); min-height: 420px; background: color-mix(in srgb, var(--vitae-background-overlay) 60%, transparent); }
+.vitae-modal { width: 560px; max-width: 100%; display: flex; flex-direction: column; gap: var(--vitae-space-016); padding: var(--vitae-space-024); background: var(--vitae-background-layer-01); border-radius: var(--vitae-brand-radius-card); box-shadow: var(--vitae-shadow-elevation-64); animation: vitae-modal-in 240ms var(--vitae-motion-easing-expressive-entrance); }
+@keyframes vitae-modal-in { from { opacity: 0; transform: scale(.96); } }
+.vitae-modal__header { display: flex; align-items: flex-start; gap: var(--vitae-space-012); }
+.vitae-modal__header > .vitae-icon { margin-top: 2px; }
+.vitae-modal--info .vitae-modal__header > .vitae-icon { color: var(--vitae-support-info); } .vitae-modal--success .vitae-modal__header > .vitae-icon { color: var(--vitae-support-success); } .vitae-modal--error .vitae-modal__header > .vitae-icon { color: var(--vitae-support-error); }
+.vitae-modal__title { flex: 1; margin: 0; font-size: var(--vitae-font-size-20); line-height: var(--vitae-font-line-height-28); font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-heading); }
+.vitae-modal__close { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; margin: -4px -4px 0 0; padding: 0; border: 0; background: transparent; color: var(--vitae-icon-secondary); border-radius: var(--vitae-radius-full); cursor: pointer; }
+.vitae-modal__close:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+.vitae-modal__body { margin: 0; }
+.vitae-modal__footer { display: flex; justify-content: flex-end; gap: var(--vitae-space-008); }
+.vitae-modal-wrap { container-type: inline-size; }
+@container (max-width: 600px) { .vitae-modal__footer { flex-direction: column-reverse; } .vitae-modal__footer .vitae-btn { width: 100%; } }
+
+/* ---------- Table ---------- */
+.vitae-table-wrap { display: flex; flex-direction: column; gap: var(--vitae-space-012); }
+.vitae-bulkbar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--vitae-space-008) var(--vitae-space-016); padding: var(--vitae-space-008) var(--vitae-space-016); background: var(--vitae-background-selected); border-radius: var(--vitae-brand-radius-card); }
+.vitae-table-scroll { position: relative; overflow-x: auto; background: var(--vitae-card-surface); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); }
+.vitae-table-scroll:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+.vitae-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-24); }
+.vitae-table caption { text-align: left; }
+.vitae-table th, .vitae-table td { padding: var(--vitae-space-012) var(--vitae-space-016); min-height: 48px; text-align: left; white-space: nowrap; background: var(--vitae-card-surface); }
+.vitae-table thead th { font-size: var(--vitae-font-size-16); font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-heading); border-bottom: 1px solid var(--vitae-border-strong); }
+.vitae-table tbody tr + tr td { border-top: 1px solid var(--vitae-border-subtle); }
+.vitae-table .is-numeric { text-align: right; font-variant-numeric: tabular-nums; }
+.vitae-table--grid tbody tr:hover td { background: var(--vitae-table-row-hover); }
+.vitae-table tbody tr[aria-selected="true"] td { background: var(--vitae-table-row-selected); }
+.vitae-table .is-pinned { position: sticky; left: 0; z-index: 1; }
+.vitae-table .is-pinned + .is-pinned { left: 56px; }
+.vitae-table-scroll.is-scrolled .is-pinned.is-edge { box-shadow: 4px 0 6px -2px color-mix(in srgb, var(--vitae-text-body) 18%, transparent); }
+.vitae-table .is-check { width: 56px; padding-right: 0; }
+.vitae-table .vitae-check { padding: 0; }
+.vitae-sort { display: inline-flex; align-items: center; gap: var(--vitae-space-004); margin: -4px -8px; padding: 4px 8px; border: 0; border-radius: var(--vitae-radius-4); background: none; color: inherit; font: inherit; cursor: pointer; }
+.vitae-sort:hover { background: var(--vitae-background-layer-hover); }
+.vitae-sort:focus-visible { outline: var(--_ring); outline-offset: -2px; }
+.vitae-sort .vitae-icon { color: var(--vitae-icon-secondary); }
+th[aria-sort="ascending"] .vitae-sort .vitae-icon, th[aria-sort="descending"] .vitae-sort .vitae-icon { color: var(--vitae-icon-brand); }
+.vitae-table__more { position: sticky; right: 0; float: right; }
+
+/* ---------- Menu ---------- */
+.vitae-menu { width: 320px; max-height: 320px; overflow-y: auto; margin: 0; padding: var(--vitae-space-004); list-style: none; background: var(--vitae-background-layer-01); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); box-shadow: var(--vitae-shadow-elevation-8); animation: vitae-panel-in var(--vitae-motion-duration-moderate-01) var(--vitae-motion-easing-productive-entrance); }
+.vitae-menu__item { display: flex; align-items: flex-start; gap: var(--vitae-space-008); min-height: 40px; padding: 10px var(--vitae-space-012); border-radius: var(--vitae-radius-4); font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-20); cursor: pointer; transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-menu__item > .vitae-icon:first-child { color: var(--vitae-icon-secondary); }
+.vitae-menu__text { flex: 1; display: flex; flex-direction: column; }
+.vitae-menu__secondary { font-size: var(--vitae-font-size-14); color: var(--vitae-text-secondary); }
+.vitae-menu__item:hover, .vitae-menu__item.is-hover { background: var(--vitae-background-layer-hover); }
+.vitae-menu__item.is-highlighted { background: var(--vitae-background-layer-hover); outline: var(--_ring); outline-offset: -2px; }
+.vitae-menu__item[aria-selected="true"] > .vitae-icon:last-child { color: var(--vitae-icon-brand); }
+.vitae-menu__item[aria-disabled="true"] { color: var(--vitae-text-disabled); cursor: not-allowed; }
+.vitae-menu__group { padding: var(--vitae-space-008) var(--vitae-space-012) var(--vitae-space-004); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-secondary); }
+.vitae-menu__divider { height: 1px; margin: var(--vitae-space-004) 0; background: var(--vitae-border-subtle); }
+.vitae-menu__empty { padding: 10px var(--vitae-space-012); color: var(--vitae-text-secondary); }
+.vitae-menu mark { background: none; color: inherit; font-weight: var(--vitae-font-weight-semibold); }
+
+/* ---------- Search ---------- */
+.vitae-search { padding-left: 40px; padding-right: 42px; }
+.vitae-search::-webkit-search-cancel-button { -webkit-appearance: none; display: none; }
+.vitae-search__clear { position: absolute; right: 4px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; padding: 0; border: 0; border-radius: var(--vitae-radius-full); background: transparent; color: var(--vitae-icon-secondary); cursor: pointer; }
+.vitae-search__clear:focus-visible { outline: var(--_ring); outline-offset: -2px; }
+.vitae-popover-anchor { position: relative; }
+.vitae-popover-anchor > .vitae-menu, .vitae-popover-anchor > .vitae-calendar { position: absolute; top: calc(100% + 4px); left: 0; z-index: 2; }
+
+/* ---------- Date picker + Calendar ---------- */
+.vitae-datepicker__button { position: absolute; right: 0; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: var(--vitae-icon-primary); cursor: pointer; border-radius: var(--vitae-radius-4); }
+.vitae-datepicker__button:focus-visible { outline: var(--_ring); outline-offset: -4px; }
+.vitae-calendar { width: max-content; padding: var(--vitae-space-012); background: var(--vitae-background-layer-01); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); box-shadow: var(--vitae-shadow-elevation-8); }
+.vitae-calendar__header { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--vitae-space-008); font-weight: var(--vitae-font-weight-semibold); }
+.vitae-calendar__nav { display: inline-flex; gap: var(--vitae-space-004); }
+.vitae-calendar__nav button { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; padding: 0; border: 0; background: transparent; color: var(--vitae-icon-primary); border-radius: var(--vitae-radius-4); cursor: pointer; }
+.vitae-calendar__grid { border-collapse: separate; border-spacing: 4px; margin: -4px; }
+.vitae-calendar__grid th { font-size: var(--vitae-font-size-12); line-height: var(--vitae-font-line-height-20); font-weight: var(--vitae-font-weight-regular); color: var(--vitae-text-secondary); }
+.vitae-day { width: 28px; height: 28px; padding: 0; border: 0; border-radius: var(--vitae-radius-4); background: transparent; color: var(--vitae-text-body); font: inherit; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); cursor: pointer; transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-day:hover, .vitae-day.is-hover { background: var(--vitae-background-layer-hover); }
+.vitae-day[aria-selected="true"] { background: var(--vitae-background-brand-subtle); box-shadow: inset 0 0 0 2px var(--vitae-border-brand); }
+.vitae-day[aria-current="date"] { background: var(--vitae-background-brand); color: var(--vitae-text-on-brand); border-radius: var(--vitae-radius-full); }
+.vitae-day[aria-current="date"][aria-selected="true"] { outline: 2px solid var(--vitae-border-focus-ring); outline-offset: 1px; box-shadow: none; }
+.vitae-day.is-outside { color: var(--vitae-text-secondary); }
+.vitae-day[aria-disabled="true"] { color: var(--vitae-text-disabled); cursor: not-allowed; }
+.vitae-day:focus-visible, .vitae-day.is-focus { outline: var(--_ring); outline-offset: 1px; }
+.vitae-calendar__today { margin-top: var(--vitae-space-008); }
+
+/* ---------- Choice group + Field-set ---------- */
+.vitae-choice-group { border: 0; margin: 0; padding: 0; min-width: 0; }
+.vitae-choice-group > legend { padding: 0; font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-secondary); }
+.vitae-choice-group__helper { margin: var(--vitae-space-004) 0 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-choice-group--inline .vitae-choice-group__options { display: flex; flex-wrap: wrap; column-gap: var(--vitae-space-024); }
+.vitae-choice-group__error { margin-top: var(--vitae-space-004); max-width: 320px; }
+.vitae-fieldset { border: 0; margin: 0; padding: 0; min-width: 0; max-width: 720px; container-type: inline-size; }
+.vitae-fieldset__legend { padding: 0; margin-bottom: var(--vitae-space-016); font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-24); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-fieldset__rows { display: flex; flex-direction: column; gap: var(--vitae-space-016); }
+.vitae-fieldset__row { display: flex; flex-wrap: wrap; gap: var(--vitae-space-016) var(--vitae-space-024); }
+.vitae-fieldset__row > .vitae-field { flex: 1 1 240px; max-width: none; }
+.vitae-fieldset__row > .vitae-field.is-full { flex-basis: 100%; }
+.vitae-fieldset__pair { flex: 1 1 240px; display: flex; flex-wrap: wrap; gap: var(--vitae-space-016) var(--vitae-space-024); }
+.vitae-fieldset__pair > .vitae-field { flex: 1 1 120px; max-width: none; }
+.vitae-fieldset__row > .vitae-field.is-half { flex: 0 1 348px; }
