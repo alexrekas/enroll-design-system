@@ -4,7 +4,8 @@
   "type": "module",
   "description": "Tokens-first design system for Enroll App (EA/DC/MA/ME themes)",
   "scripts": {
-    "build": "node build.mjs",
+    "build": "node build.mjs && node build-v2.mjs",
+    "build:v2": "node build-v2.mjs",
     "check:contrast": "node contrast-check.mjs",
     "prepare:all": "npm run build && npm run check:contrast && npm run check:sources",
     "storybook": "storybook dev -p 6006",

@@ -1,0 +1,786 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+[data-client="ma"][data-mode="dark"] {
+  --vitae-color-white: #ffffff;
+  --vitae-color-black: #000000;
+  --vitae-color-neutral-100: #90969d;
+  --vitae-color-neutral-110: #838990;
+  --vitae-color-neutral-120: #73787f;
+  --vitae-color-neutral-130: #5a5f65;
+  --vitae-color-neutral-140: #42474c;
+  --vitae-color-neutral-150: #363a40;
+  --vitae-color-neutral-160: #2d3136;
+  --vitae-color-neutral-170: #24282d;
+  --vitae-color-neutral-180: #212428;
+  --vitae-color-neutral-190: #1c1f23;
+  --vitae-color-neutral-200: #181b1d;
+  --vitae-color-neutral-210: #131518;
+  --vitae-color-neutral-220: #0f1112;
+  --vitae-color-neutral-010: #f7fafd;
+  --vitae-color-neutral-020: #eff3f6;
+  --vitae-color-neutral-030: #e8ebf0;
+  --vitae-color-neutral-040: #dbe0e5;
+  --vitae-color-neutral-050: #ccd1d6;
+  --vitae-color-neutral-060: #c1c7cc;
+  --vitae-color-neutral-070: #b7bcc2;
+  --vitae-color-neutral-080: #acb1b8;
+  --vitae-color-neutral-090: #9ba0a7;
+  --vitae-color-ea-primary-100: #0254bc;
+  --vitae-color-ea-primary-110: #024caa;
+  --vitae-color-ea-primary-120: #024396;
+  --vitae-color-ea-primary-130: #013b84;
+  --vitae-color-ea-primary-140: #013271;
+  --vitae-color-ea-primary-150: #012a5e;
+  --vitae-color-ea-primary-160: #01224b;
+  --vitae-color-ea-primary-170: #011938;
+  --vitae-color-ea-primary-180: #001126;
+  --vitae-color-ea-primary-190: #000813;
+  --vitae-color-ea-primary-005: #f2f6fc;
+  --vitae-color-ea-primary-010: #e5eef8;
+  --vitae-color-ea-primary-015: #d9e6f5;
+  --vitae-color-ea-primary-020: #ccddf2;
+  --vitae-color-ea-primary-025: #c0d4ee;
+  --vitae-color-ea-primary-030: #b3cbeb;
+  --vitae-color-ea-primary-035: #a7c3e8;
+  --vitae-color-ea-primary-040: #9abbe4;
+  --vitae-color-ea-primary-050: #80a9dd;
+  --vitae-color-ea-primary-060: #6798d7;
+  --vitae-color-ea-primary-070: #4d87d0;
+  --vitae-color-ea-primary-080: #3576c9;
+  --vitae-color-ea-primary-090: #1b65c3;
+  --vitae-color-ea-secondary-100: #3b5b81;
+  --vitae-color-ea-secondary-110: #355274;
+  --vitae-color-ea-secondary-120: #2f4967;
+  --vitae-color-ea-secondary-130: #29405b;
+  --vitae-color-ea-secondary-140: #23374d;
+  --vitae-color-ea-secondary-150: #1e2e41;
+  --vitae-color-ea-secondary-160: #182434;
+  --vitae-color-ea-secondary-170: #121b27;
+  --vitae-color-ea-secondary-180: #0c121a;
+  --vitae-color-ea-secondary-190: #06090d;
+  --vitae-color-ea-secondary-005: #f5f7f9;
+  --vitae-color-ea-secondary-010: #ebeef2;
+  --vitae-color-ea-secondary-015: #e2e7ec;
+  --vitae-color-ea-secondary-020: #d8dee6;
+  --vitae-color-ea-secondary-025: #ced6df;
+  --vitae-color-ea-secondary-030: #c4cdd9;
+  --vitae-color-ea-secondary-035: #bbc6d3;
+  --vitae-color-ea-secondary-040: #b1bdcd;
+  --vitae-color-ea-secondary-050: #9dadc0;
+  --vitae-color-ea-secondary-060: #899db3;
+  --vitae-color-ea-secondary-070: #758ca7;
+  --vitae-color-ea-secondary-080: #627c9a;
+  --vitae-color-ea-secondary-090: #4e6b8d;
+  --vitae-color-ea-tertiary-100: #441c36;
+  --vitae-color-ea-tertiary-110: #3d1931;
+  --vitae-color-ea-tertiary-120: #36162b;
+  --vitae-color-ea-tertiary-130: #301426;
+  --vitae-color-ea-tertiary-140: #291120;
+  --vitae-color-ea-tertiary-150: #220e1b;
+  --vitae-color-ea-tertiary-160: #1b0b16;
+  --vitae-color-ea-tertiary-170: #140810;
+  --vitae-color-ea-tertiary-180: #0e060b;
+  --vitae-color-ea-tertiary-190: #070305;
+  --vitae-color-ea-tertiary-005: #f5f3f5;
+  --vitae-color-ea-tertiary-010: #ece8eb;
+  --vitae-color-ea-tertiary-015: #e3dde1;
+  --vitae-color-ea-tertiary-020: #dad2d7;
+  --vitae-color-ea-tertiary-025: #d0c6cd;
+  --vitae-color-ea-tertiary-030: #c7bac2;
+  --vitae-color-ea-tertiary-035: #beb0b9;
+  --vitae-color-ea-tertiary-040: #b4a4af;
+  --vitae-color-ea-tertiary-050: #a18d9a;
+  --vitae-color-ea-tertiary-060: #8f7786;
+  --vitae-color-ea-tertiary-070: #7c6072;
+  --vitae-color-ea-tertiary-080: #69495e;
+  --vitae-color-ea-tertiary-090: #56324a;
+  --vitae-color-dc-primary-100: #003260;
+  --vitae-color-dc-primary-110: #002d57;
+  --vitae-color-dc-primary-120: #00284d;
+  --vitae-color-dc-primary-130: #002343;
+  --vitae-color-dc-primary-140: #001e3a;
+  --vitae-color-dc-primary-150: #001930;
+  --vitae-color-dc-primary-160: #001426;
+  --vitae-color-dc-primary-170: #000f1d;
+  --vitae-color-dc-primary-180: #000a13;
+  --vitae-color-dc-primary-190: #00050a;
+  --vitae-color-dc-primary-005: #f2f5f7;
+  --vitae-color-dc-primary-010: #e5eaef;
+  --vitae-color-dc-primary-015: #d9e0e7;
+  --vitae-color-dc-primary-020: #ccd6df;
+  --vitae-color-dc-primary-025: #bfccd7;
+  --vitae-color-dc-primary-030: #b2c1cf;
+  --vitae-color-dc-primary-035: #a6b7c8;
+  --vitae-color-dc-primary-040: #99adbf;
+  --vitae-color-dc-primary-050: #7f98af;
+  --vitae-color-dc-primary-060: #6684a0;
+  --vitae-color-dc-primary-070: #4c6f8f;
+  --vitae-color-dc-primary-080: #335b80;
+  --vitae-color-dc-primary-090: #194670;
+  --vitae-color-dc-secondary-100: #0076cc;
+  --vitae-color-dc-secondary-110: #006ab8;
+  --vitae-color-dc-secondary-120: #005ea3;
+  --vitae-color-dc-secondary-130: #00538f;
+  --vitae-color-dc-secondary-140: #00477a;
+  --vitae-color-dc-secondary-150: #003b66;
+  --vitae-color-dc-secondary-160: #002f52;
+  --vitae-color-dc-secondary-170: #00233d;
+  --vitae-color-dc-secondary-180: #001829;
+  --vitae-color-dc-secondary-190: #000c14;
+  --vitae-color-dc-secondary-005: #f2f8fc;
+  --vitae-color-dc-secondary-010: #e5f1fa;
+  --vitae-color-dc-secondary-015: #d9ebf7;
+  --vitae-color-dc-secondary-020: #cce4f5;
+  --vitae-color-dc-secondary-025: #bfddf2;
+  --vitae-color-dc-secondary-030: #b2d6f0;
+  --vitae-color-dc-secondary-035: #a6cfed;
+  --vitae-color-dc-secondary-040: #99c8eb;
+  --vitae-color-dc-secondary-050: #7fbae5;
+  --vitae-color-dc-secondary-060: #66ade0;
+  --vitae-color-dc-secondary-070: #4c9fdb;
+  --vitae-color-dc-secondary-080: #3391d6;
+  --vitae-color-dc-secondary-090: #1983d1;
+  --vitae-color-dc-tertiary-100: #da2325;
+  --vitae-color-dc-tertiary-110: #c52021;
+  --vitae-color-dc-tertiary-120: #ae1c1e;
+  --vitae-color-dc-tertiary-130: #99191a;
+  --vitae-color-dc-tertiary-140: #831516;
+  --vitae-color-dc-tertiary-150: #6d1213;
+  --vitae-color-dc-tertiary-160: #570e0f;
+  --vitae-color-dc-tertiary-170: #410b0b;
+  --vitae-color-dc-tertiary-180: #2c0707;
+  --vitae-color-dc-tertiary-190: #160304;
+  --vitae-color-dc-tertiary-005: #fdf4f4;
+  --vitae-color-dc-tertiary-010: #fbe9e9;
+  --vitae-color-dc-tertiary-015: #f9dedf;
+  --vitae-color-dc-tertiary-020: #f8d3d3;
+  --vitae-color-dc-tertiary-025: #f6c8c8;
+  --vitae-color-dc-tertiary-030: #f4bdbd;
+  --vitae-color-dc-tertiary-035: #f2b2b3;
+  --vitae-color-dc-tertiary-040: #f0a7a8;
+  --vitae-color-dc-tertiary-050: #ec9192;
+  --vitae-color-dc-tertiary-060: #e97b7c;
+  --vitae-color-dc-tertiary-070: #e56566;
+  --vitae-color-dc-tertiary-080: #e14f51;
+  --vitae-color-dc-tertiary-090: #de393a;
+  --vitae-color-ma-primary-100: #005e81;
+  --vitae-color-ma-primary-110: #005574;
+  --vitae-color-ma-primary-120: #004b67;
+  --vitae-color-ma-primary-130: #00425b;
+  --vitae-color-ma-primary-140: #00384d;
+  --vitae-color-ma-primary-150: #002f41;
+  --vitae-color-ma-primary-160: #002634;
+  --vitae-color-ma-primary-170: #001c27;
+  --vitae-color-ma-primary-180: #00131a;
+  --vitae-color-ma-primary-190: #00090d;
+  --vitae-color-ma-primary-005: #f2f7f9;
+  --vitae-color-ma-primary-010: #e5eff2;
+  --vitae-color-ma-primary-015: #d9e7ec;
+  --vitae-color-ma-primary-020: #ccdfe6;
+  --vitae-color-ma-primary-025: #bfd7df;
+  --vitae-color-ma-primary-030: #b2ced9;
+  --vitae-color-ma-primary-035: #a6c7d3;
+  --vitae-color-ma-primary-040: #99bfcd;
+  --vitae-color-ma-primary-050: #7faec0;
+  --vitae-color-ma-primary-060: #669eb3;
+  --vitae-color-ma-primary-070: #4c8ea7;
+  --vitae-color-ma-primary-080: #337e9a;
+  --vitae-color-ma-primary-090: #196e8d;
+  --vitae-color-ma-secondary-100: #c15800;
+  --vitae-color-ma-secondary-110: #ae4f00;
+  --vitae-color-ma-secondary-120: #9a4600;
+  --vitae-color-ma-secondary-130: #873e00;
+  --vitae-color-ma-secondary-140: #743500;
+  --vitae-color-ma-secondary-150: #612c00;
+  --vitae-color-ma-secondary-160: #4d2300;
+  --vitae-color-ma-secondary-170: #3a1a00;
+  --vitae-color-ma-secondary-180: #271200;
+  --vitae-color-ma-secondary-190: #130900;
+  --vitae-color-ma-secondary-005: #fcf6f2;
+  --vitae-color-ma-secondary-010: #f9eee5;
+  --vitae-color-ma-secondary-015: #f6e6d9;
+  --vitae-color-ma-secondary-020: #f3decc;
+  --vitae-color-ma-secondary-025: #efd5bf;
+  --vitae-color-ma-secondary-030: #eccdb2;
+  --vitae-color-ma-secondary-035: #e9c5a6;
+  --vitae-color-ma-secondary-040: #e6bc99;
+  --vitae-color-ma-secondary-050: #e0ab7f;
+  --vitae-color-ma-secondary-060: #da9b66;
+  --vitae-color-ma-secondary-070: #d38a4c;
+  --vitae-color-ma-secondary-080: #cd7933;
+  --vitae-color-ma-secondary-090: #c76819;
+  --vitae-color-ma-tertiary-100: #00224c;
+  --vitae-color-ma-tertiary-110: #001f45;
+  --vitae-color-ma-tertiary-120: #001b3d;
+  --vitae-color-ma-tertiary-130: #001835;
+  --vitae-color-ma-tertiary-140: #00142e;
+  --vitae-color-ma-tertiary-150: #001126;
+  --vitae-color-ma-tertiary-160: #000e1e;
+  --vitae-color-ma-tertiary-170: #000a17;
+  --vitae-color-ma-tertiary-180: #00070f;
+  --vitae-color-ma-tertiary-190: #000308;
+  --vitae-color-ma-tertiary-005: #f2f4f6;
+  --vitae-color-ma-tertiary-010: #e5e8ed;
+  --vitae-color-ma-tertiary-015: #d9dee4;
+  --vitae-color-ma-tertiary-020: #ccd3db;
+  --vitae-color-ma-tertiary-025: #bfc8d2;
+  --vitae-color-ma-tertiary-030: #b2bcc9;
+  --vitae-color-ma-tertiary-035: #a6b2c0;
+  --vitae-color-ma-tertiary-040: #99a7b7;
+  --vitae-color-ma-tertiary-050: #7f90a5;
+  --vitae-color-ma-tertiary-060: #667a94;
+  --vitae-color-ma-tertiary-070: #4c6481;
+  --vitae-color-ma-tertiary-080: #334e70;
+  --vitae-color-ma-tertiary-090: #19385e;
+  --vitae-color-me-primary-100: #3d5d6f;
+  --vitae-color-me-primary-110: #375464;
+  --vitae-color-me-primary-120: #314a59;
+  --vitae-color-me-primary-130: #2b414e;
+  --vitae-color-me-primary-140: #253843;
+  --vitae-color-me-primary-150: #1f2f38;
+  --vitae-color-me-primary-160: #18252c;
+  --vitae-color-me-primary-170: #121c21;
+  --vitae-color-me-primary-180: #0c1316;
+  --vitae-color-me-primary-190: #06090b;
+  --vitae-color-me-primary-005: #f5f7f8;
+  --vitae-color-me-primary-010: #ebeef0;
+  --vitae-color-me-primary-015: #e2e7ea;
+  --vitae-color-me-primary-020: #d8dfe2;
+  --vitae-color-me-primary-025: #ced6db;
+  --vitae-color-me-primary-030: #c4ced4;
+  --vitae-color-me-primary-035: #bbc6cd;
+  --vitae-color-me-primary-040: #b1bec5;
+  --vitae-color-me-primary-050: #9eaeb7;
+  --vitae-color-me-primary-060: #8b9ea9;
+  --vitae-color-me-primary-070: #778d9a;
+  --vitae-color-me-primary-080: #647d8c;
+  --vitae-color-me-primary-090: #506d7d;
+  --vitae-color-me-secondary-100: #3b6b90;
+  --vitae-color-me-secondary-110: #356182;
+  --vitae-color-me-secondary-120: #2f5673;
+  --vitae-color-me-secondary-130: #294b65;
+  --vitae-color-me-secondary-140: #234056;
+  --vitae-color-me-secondary-150: #1e3648;
+  --vitae-color-me-secondary-160: #182b3a;
+  --vitae-color-me-secondary-170: #12202b;
+  --vitae-color-me-secondary-180: #0c151d;
+  --vitae-color-me-secondary-190: #060b0e;
+  --vitae-color-me-secondary-005: #f5f7f9;
+  --vitae-color-me-secondary-010: #ebf0f4;
+  --vitae-color-me-secondary-015: #e2e9ee;
+  --vitae-color-me-secondary-020: #d8e1e9;
+  --vitae-color-me-secondary-025: #cedae3;
+  --vitae-color-me-secondary-030: #c4d2dd;
+  --vitae-color-me-secondary-035: #bbcbd8;
+  --vitae-color-me-secondary-040: #b1c4d3;
+  --vitae-color-me-secondary-050: #9db5c7;
+  --vitae-color-me-secondary-060: #89a6bc;
+  --vitae-color-me-secondary-070: #7597b1;
+  --vitae-color-me-secondary-080: #6289a6;
+  --vitae-color-me-secondary-090: #4e7a9b;
+  --vitae-color-me-tertiary-100: #5a7334;
+  --vitae-color-me-tertiary-110: #51682f;
+  --vitae-color-me-tertiary-120: #485c2a;
+  --vitae-color-me-tertiary-130: #3f5125;
+  --vitae-color-me-tertiary-140: #36451f;
+  --vitae-color-me-tertiary-150: #2d3a1a;
+  --vitae-color-me-tertiary-160: #242e15;
+  --vitae-color-me-tertiary-170: #1b2310;
+  --vitae-color-me-tertiary-180: #12170a;
+  --vitae-color-me-tertiary-190: #090b05;
+  --vitae-color-me-tertiary-005: #f7f8f5;
+  --vitae-color-me-tertiary-010: #eef1ea;
+  --vitae-color-me-tertiary-015: #e6eae1;
+  --vitae-color-me-tertiary-020: #dee3d6;
+  --vitae-color-me-tertiary-025: #d6dccc;
+  --vitae-color-me-tertiary-030: #cdd5c2;
+  --vitae-color-me-tertiary-035: #c5ceb8;
+  --vitae-color-me-tertiary-040: #bdc7ae;
+  --vitae-color-me-tertiary-050: #acb999;
+  --vitae-color-me-tertiary-060: #9cab85;
+  --vitae-color-me-tertiary-070: #8b9d71;
+  --vitae-color-me-tertiary-080: #7b8f5d;
+  --vitae-color-me-tertiary-090: #6a8148;
+  --vitae-color-status-info-100: #005689;
+  --vitae-color-status-info-110: #004d7b;
+  --vitae-color-status-info-120: #00456e;
+  --vitae-color-status-info-130: #003c60;
+  --vitae-color-status-info-140: #003452;
+  --vitae-color-status-info-150: #002b44;
+  --vitae-color-status-info-160: #002237;
+  --vitae-color-status-info-170: #001a29;
+  --vitae-color-status-info-180: #00111b;
+  --vitae-color-status-info-190: #00090e;
+  --vitae-color-status-info-005: #f2f7f9;
+  --vitae-color-status-info-010: #e6eef3;
+  --vitae-color-status-info-015: #d9e6ed;
+  --vitae-color-status-info-020: #ccdde7;
+  --vitae-color-status-info-025: #bfd5e2;
+  --vitae-color-status-info-030: #b2ccdc;
+  --vitae-color-status-info-035: #a6c4d6;
+  --vitae-color-status-info-040: #99bbd0;
+  --vitae-color-status-info-050: #80aac4;
+  --vitae-color-status-info-060: #669ab8;
+  --vitae-color-status-info-070: #4c89ac;
+  --vitae-color-status-info-080: #3378a1;
+  --vitae-color-status-info-090: #1a6795;
+  --vitae-color-status-success-100: #027314;
+  --vitae-color-status-success-110: #026812;
+  --vitae-color-status-success-120: #025c10;
+  --vitae-color-status-success-130: #01500e;
+  --vitae-color-status-success-140: #01450c;
+  --vitae-color-status-success-150: #013a0a;
+  --vitae-color-status-success-160: #012e08;
+  --vitae-color-status-success-170: #012306;
+  --vitae-color-status-success-180: #001704;
+  --vitae-color-status-success-190: #000b02;
+  --vitae-color-status-success-005: #f2f8f3;
+  --vitae-color-status-success-010: #e6f1e8;
+  --vitae-color-status-success-015: #d9eadc;
+  --vitae-color-status-success-020: #cce3d0;
+  --vitae-color-status-success-025: #c0dcc4;
+  --vitae-color-status-success-030: #b3d5b8;
+  --vitae-color-status-success-035: #a6cead;
+  --vitae-color-status-success-040: #9ac7a1;
+  --vitae-color-status-success-050: #80b98a;
+  --vitae-color-status-success-060: #67ab72;
+  --vitae-color-status-success-070: #4e9d5a;
+  --vitae-color-status-success-080: #358f43;
+  --vitae-color-status-success-090: #1b812c;
+  --vitae-color-status-warning-100: #e5a900;
+  --vitae-color-status-warning-110: #ce9800;
+  --vitae-color-status-warning-120: #b78700;
+  --vitae-color-status-warning-130: #a07600;
+  --vitae-color-status-warning-140: #896500;
+  --vitae-color-status-warning-150: #725400;
+  --vitae-color-status-warning-160: #5c4400;
+  --vitae-color-status-warning-170: #453300;
+  --vitae-color-status-warning-180: #2e2200;
+  --vitae-color-status-warning-190: #171100;
+  --vitae-color-status-warning-005: #fefbf2;
+  --vitae-color-status-warning-010: #fcf6e6;
+  --vitae-color-status-warning-015: #fbf2d9;
+  --vitae-color-status-warning-020: #faeecc;
+  --vitae-color-status-warning-025: #f8eabf;
+  --vitae-color-status-warning-030: #f7e5b2;
+  --vitae-color-status-warning-035: #f6e1a6;
+  --vitae-color-status-warning-040: #f5dd99;
+  --vitae-color-status-warning-050: #f2d480;
+  --vitae-color-status-warning-060: #efcb66;
+  --vitae-color-status-warning-070: #edc34c;
+  --vitae-color-status-warning-080: #eaba33;
+  --vitae-color-status-warning-090: #e8b21a;
+  --vitae-color-status-error-100: #a21e1f;
+  --vitae-color-status-error-110: #921b1c;
+  --vitae-color-status-error-120: #821819;
+  --vitae-color-status-error-130: #711516;
+  --vitae-color-status-error-140: #611213;
+  --vitae-color-status-error-150: #510f10;
+  --vitae-color-status-error-160: #410c0c;
+  --vitae-color-status-error-170: #310909;
+  --vitae-color-status-error-180: #200606;
+  --vitae-color-status-error-190: #100303;
+  --vitae-color-status-error-005: #faf4f4;
+  --vitae-color-status-error-010: #f6e8e9;
+  --vitae-color-status-error-015: #f1dddd;
+  --vitae-color-status-error-020: #ecd2d2;
+  --vitae-color-status-error-025: #e8c7c7;
+  --vitae-color-status-error-030: #e3bcbc;
+  --vitae-color-status-error-035: #deb0b1;
+  --vitae-color-status-error-040: #daa5a5;
+  --vitae-color-status-error-050: #d08e8f;
+  --vitae-color-status-error-060: #c77879;
+  --vitae-color-status-error-070: #be6262;
+  --vitae-color-status-error-080: #b54b4c;
+  --vitae-color-status-error-090: #ab3435;
+  --vitae-color-status-warning-icon: #f5c400; /** Bright warning yellow for the two-tone warning icon fill (only ever used with a dark outline). */
+  --vitae-color-metal-platinum: #5d5d60;
+  --vitae-color-metal-gold: #fabb18;
+  --vitae-color-metal-silver: #c0c0c0;
+  --vitae-color-metal-bronze: #cd7f32;
+  --vitae-color-metal-catastrophic: #4a6274;
+  --vitae-color-metal-platinum-surface: #d6d6d7;
+  --vitae-color-metal-gold-surface: #fdeec5;
+  --vitae-color-metal-silver-surface: #efefef;
+  --vitae-color-metal-bronze-surface: #f2dfcb;
+  --vitae-color-metal-catastrophic-surface: #dce4ea;
+  --vitae-color-metal-bronze-border: #a46628;
+  --vitae-color-metal-silver-border: #9a9a9a;
+  --vitae-color-metal-gold-border: #c89613;
+  --vitae-color-metal-platinum-border: #4a4a4d;
+  --vitae-color-metal-catastrophic-border: #3b4e5d;
+  --vitae-color-program-dc-healthy: #711f8b;
+  --vitae-color-program-dc-healthy-surface: #f8f3f9;
+  --vitae-color-program-me-clear-choice: #824270;
+  --vitae-color-program-me-clear-choice-surface: #d5c1ce;
+  --vitae-color-program-dc-healthy-dark: #c792d6;
+  --vitae-color-program-dc-healthy-dark-surface: #2e1438;
+  --vitae-color-program-me-clear-choice-dark: #d29bc0;
+  --vitae-color-program-me-clear-choice-dark-surface: #351a2d;
+  --vitae-color-program-dc-essential: #003260;
+  --vitae-color-program-dc-essential-surface: #e6f2fa;
+  --vitae-color-program-dc-essential-icon: #377d22;
+  --vitae-color-program-dc-essential-dark: #8ab4e0;
+  --vitae-color-program-dc-essential-dark-surface: #0e2138;
+  --vitae-color-program-dc-essential-icon-dark: #6fbf5a;
+  --vitae-color-program-me-current-plan: #8dadc6;
+  --vitae-color-program-me-current-plan-surface: #c3d3df;
+  --vitae-color-program-me-current-plan-dark: #6f93b0;
+  --vitae-color-program-me-current-plan-dark-surface: #1b2a37;
+  --vitae-color-program-ma-premium-value: #003260;
+  --vitae-color-program-ma-premium-value-surface: #e6f2fa;
+  --vitae-color-program-ma-premium-value-dark: #8ab4e0;
+  --vitae-color-program-ma-premium-value-dark-surface: #0e2138;
+  --vitae-color-black-alpha-40: rgba(0, 0, 0, 0.4);
+  --vitae-color-black-alpha-60: rgba(0, 0, 0, 0.6);
+  --vitae-space-000: 0px;
+  --vitae-space-002: 2px;
+  --vitae-space-004: 4px;
+  --vitae-space-006: 6px;
+  --vitae-space-008: 8px;
+  --vitae-space-010: 10px;
+  --vitae-space-012: 12px;
+  --vitae-space-016: 16px;
+  --vitae-space-020: 20px;
+  --vitae-space-024: 24px;
+  --vitae-space-032: 32px;
+  --vitae-space-040: 40px;
+  --vitae-space-048: 48px;
+  --vitae-space-064: 64px;
+  --vitae-radius-0: 0px;
+  --vitae-radius-2: 2px;
+  --vitae-radius-3: 3px;
+  --vitae-radius-4: 4px;
+  --vitae-radius-6: 6px;
+  --vitae-radius-7: 7px;
+  --vitae-radius-8: 8px;
+  --vitae-radius-10: 10px;
+  --vitae-radius-12: 12px;
+  --vitae-radius-16: 16px;
+  --vitae-radius-full: 999px;
+  --vitae-border-width-1: 1px;
+  --vitae-border-width-2: 2px;
+  --vitae-font-size-12: 12px;
+  --vitae-font-size-14: 14px;
+  --vitae-font-size-16: 16px;
+  --vitae-font-size-18: 18px;
+  --vitae-font-size-20: 20px;
+  --vitae-font-size-24: 24px;
+  --vitae-font-size-36: 36px;
+  --vitae-font-line-height-16: 16px;
+  --vitae-font-line-height-18: 18px;
+  --vitae-font-line-height-20: 20px;
+  --vitae-font-line-height-21: 21px;
+  --vitae-font-line-height-24: 24px;
+  --vitae-font-line-height-27: 27px;
+  --vitae-font-line-height-28: 28px;
+  --vitae-font-line-height-36: 36px;
+  --vitae-font-line-height-54: 54px;
+  --vitae-font-weight-regular: 400;
+  --vitae-font-weight-semibold: 600;
+  --vitae-font-weight-bold: 700;
+  --vitae-font-family-open-sans: 'Open Sans';
+  --vitae-font-family-barlow: Barlow;
+  --vitae-motion-duration-fast-01: 70ms;
+  --vitae-motion-duration-fast-02: 110ms;
+  --vitae-motion-duration-moderate-01: 150ms;
+  --vitae-motion-duration-moderate-02: 240ms;
+  --vitae-motion-duration-slow-01: 400ms;
+  --vitae-motion-duration-slow-02: 700ms;
+  --vitae-motion-easing-productive-standard: cubic-bezier(0.2, 0, 0.38, 0.9);
+  --vitae-motion-easing-productive-entrance: cubic-bezier(0, 0, 0.38, 0.9);
+  --vitae-motion-easing-productive-exit: cubic-bezier(0.2, 0, 1, 0.9);
+  --vitae-motion-easing-expressive-standard: cubic-bezier(0.4, 0.14, 0.3, 1);
+  --vitae-motion-easing-expressive-entrance: cubic-bezier(0, 0, 0.3, 1);
+  --vitae-motion-easing-expressive-exit: cubic-bezier(0.4, 0.14, 1, 1);
+  --vitae-shadow-elevation-8: 0px 3.2px 7.2px 0px #00000022, 0px 0.6px 1.8px 0px #0000001c;
+  --vitae-shadow-elevation-64: 0px 25.6px 57.6px 0px #00000038, 0px 4.8px 14.4px 0px #0000002e;
+  --vitae-brand-dark-field-border: #a0a9b1; /** Field border at rest: 20% OKLab blend from the grey rest border (neutral 090) toward the active border (primary 030). */
+  --vitae-brand-dark-field-border-hover: #a9bbc5; /** Field border on hover: 60% OKLab blend from the grey rest border (neutral 090) toward the active border (primary 030). */
+  --vitae-brand-light-field-border: #637380; /** Field border at rest: 20% OKLab blend from the grey rest border (neutral 120) toward the active border (primary 100). */
+  --vitae-brand-light-field-border-hover: #3f6981; /** Field border on hover: 60% OKLab blend from the grey rest border (neutral 120) toward the active border (primary 100). */
+  --vitae-progress-connector-gapped: true; /** Progress step connectors stop short of each marker (4px gap, rounded ends). EA, MA, ME. */
+  --vitae-progress-connector-continuous: false; /** Progress step connectors run through each marker. DC. */
+  --vitae-progress-current-center-dot: false; /** Current step marker shows a center dot inside the ring. Off for all clients (open ring); kept as a switch. */
+  --vitae-filter-show-healthy-dc-plan: false; /** Show the "Healthy DC Plan" plan-feature filter. DC only. */
+  --vitae-filter-show-essential-plan: false; /** Show the "Essential Plan" plan-feature filter. DC only. */
+  --vitae-filter-show-clear-choice-plan: false; /** Show the "Clear Choice Plan" plan-feature filter. ME only. */
+  --vitae-filter-network-local: Massachusetts / Regional; /** Label of the in-state option in the Network filter. EA and MA values are placeholders. */
+  --vitae-fieldset-address-line-1-label: Address line 1; /** Label for Address line 1. DC asks for the quadrant. */
+  --vitae-fieldset-show-county: false; /** Show the County field in the address field-set. ME only. */
+  --vitae-login-show-official-banner: true; /** Show the official-website banner above the header. MA only (matches mass.gov). */
+  --vitae-login-official-banner-text: An official website of the Commonwealth of Massachusetts; /** Official-website banner text. Only MA shows the banner; other values kept in case a client adopts one. */
+  --vitae-login-official-domain-title: Official websites use .mass.gov; /** Official-website banner, expanded panel: domain heading. */
+  --vitae-login-official-domain-text: A .mass.gov website belongs to an official government organization in Massachusetts.; /** Official-website banner, expanded panel: domain explanation. */
+  --vitae-login-show-system-notice: false; /** Show the system-use notice under the sign-in form. DC only. */
+  --vitae-login-help-phone: 1-888-813-9220; /** Customer service phone shown on the sign-in card. EA is a placeholder. */
+  --vitae-login-help-phone-tel: +18888139220; /** Customer service number for tel: links (href="tel:<value>"), E.164 format. Pairs with login.help-phone. EA is a placeholder. */
+  --vitae-logo-show-color: false; /** Logo switch: full-color logo on light surfaces, all-white logo in dark mode (no client logo reaches 4.5:1 on the dark header). */
+  --vitae-logo-show-white: true; /** Logo switch: the inverse of logo.show-color. */
+  --vitae-brand-primary-100: var(--vitae-color-ma-primary-100);
+  --vitae-brand-primary-110: var(--vitae-color-ma-primary-110);
+  --vitae-brand-primary-120: var(--vitae-color-ma-primary-120);
+  --vitae-brand-primary-130: var(--vitae-color-ma-primary-130);
+  --vitae-brand-primary-140: var(--vitae-color-ma-primary-140);
+  --vitae-brand-primary-150: var(--vitae-color-ma-primary-150);
+  --vitae-brand-primary-160: var(--vitae-color-ma-primary-160);
+  --vitae-brand-primary-170: var(--vitae-color-ma-primary-170);
+  --vitae-brand-primary-180: var(--vitae-color-ma-primary-180);
+  --vitae-brand-primary-190: var(--vitae-color-ma-primary-190);
+  --vitae-brand-primary-005: var(--vitae-color-ma-primary-005);
+  --vitae-brand-primary-010: var(--vitae-color-ma-primary-010);
+  --vitae-brand-primary-015: var(--vitae-color-ma-primary-015);
+  --vitae-brand-primary-020: var(--vitae-color-ma-primary-020);
+  --vitae-brand-primary-025: var(--vitae-color-ma-primary-025);
+  --vitae-brand-primary-030: var(--vitae-color-ma-primary-030);
+  --vitae-brand-primary-035: var(--vitae-color-ma-primary-035);
+  --vitae-brand-primary-040: var(--vitae-color-ma-primary-040);
+  --vitae-brand-primary-050: var(--vitae-color-ma-primary-050);
+  --vitae-brand-primary-060: var(--vitae-color-ma-primary-060);
+  --vitae-brand-primary-070: var(--vitae-color-ma-primary-070);
+  --vitae-brand-primary-080: var(--vitae-color-ma-primary-080);
+  --vitae-brand-primary-090: var(--vitae-color-ma-primary-090);
+  --vitae-brand-secondary-100: var(--vitae-color-ma-secondary-100);
+  --vitae-brand-secondary-110: var(--vitae-color-ma-secondary-110);
+  --vitae-brand-secondary-120: var(--vitae-color-ma-secondary-120);
+  --vitae-brand-secondary-130: var(--vitae-color-ma-secondary-130);
+  --vitae-brand-secondary-140: var(--vitae-color-ma-secondary-140);
+  --vitae-brand-secondary-150: var(--vitae-color-ma-secondary-150);
+  --vitae-brand-secondary-160: var(--vitae-color-ma-secondary-160);
+  --vitae-brand-secondary-170: var(--vitae-color-ma-secondary-170);
+  --vitae-brand-secondary-180: var(--vitae-color-ma-secondary-180);
+  --vitae-brand-secondary-190: var(--vitae-color-ma-secondary-190);
+  --vitae-brand-secondary-005: var(--vitae-color-ma-secondary-005);
+  --vitae-brand-secondary-010: var(--vitae-color-ma-secondary-010);
+  --vitae-brand-secondary-015: var(--vitae-color-ma-secondary-015);
+  --vitae-brand-secondary-020: var(--vitae-color-ma-secondary-020);
+  --vitae-brand-secondary-025: var(--vitae-color-ma-secondary-025);
+  --vitae-brand-secondary-030: var(--vitae-color-ma-secondary-030);
+  --vitae-brand-secondary-035: var(--vitae-color-ma-secondary-035);
+  --vitae-brand-secondary-040: var(--vitae-color-ma-secondary-040);
+  --vitae-brand-secondary-050: var(--vitae-color-ma-secondary-050);
+  --vitae-brand-secondary-060: var(--vitae-color-ma-secondary-060);
+  --vitae-brand-secondary-070: var(--vitae-color-ma-secondary-070);
+  --vitae-brand-secondary-080: var(--vitae-color-ma-secondary-080);
+  --vitae-brand-secondary-090: var(--vitae-color-ma-secondary-090);
+  --vitae-brand-tertiary-100: var(--vitae-color-ma-tertiary-100);
+  --vitae-brand-tertiary-110: var(--vitae-color-ma-tertiary-110);
+  --vitae-brand-tertiary-120: var(--vitae-color-ma-tertiary-120);
+  --vitae-brand-tertiary-130: var(--vitae-color-ma-tertiary-130);
+  --vitae-brand-tertiary-140: var(--vitae-color-ma-tertiary-140);
+  --vitae-brand-tertiary-150: var(--vitae-color-ma-tertiary-150);
+  --vitae-brand-tertiary-160: var(--vitae-color-ma-tertiary-160);
+  --vitae-brand-tertiary-170: var(--vitae-color-ma-tertiary-170);
+  --vitae-brand-tertiary-180: var(--vitae-color-ma-tertiary-180);
+  --vitae-brand-tertiary-190: var(--vitae-color-ma-tertiary-190);
+  --vitae-brand-tertiary-005: var(--vitae-color-ma-tertiary-005);
+  --vitae-brand-tertiary-010: var(--vitae-color-ma-tertiary-010);
+  --vitae-brand-tertiary-015: var(--vitae-color-ma-tertiary-015);
+  --vitae-brand-tertiary-020: var(--vitae-color-ma-tertiary-020);
+  --vitae-brand-tertiary-025: var(--vitae-color-ma-tertiary-025);
+  --vitae-brand-tertiary-030: var(--vitae-color-ma-tertiary-030);
+  --vitae-brand-tertiary-035: var(--vitae-color-ma-tertiary-035);
+  --vitae-brand-tertiary-040: var(--vitae-color-ma-tertiary-040);
+  --vitae-brand-tertiary-050: var(--vitae-color-ma-tertiary-050);
+  --vitae-brand-tertiary-060: var(--vitae-color-ma-tertiary-060);
+  --vitae-brand-tertiary-070: var(--vitae-color-ma-tertiary-070);
+  --vitae-brand-tertiary-080: var(--vitae-color-ma-tertiary-080);
+  --vitae-brand-tertiary-090: var(--vitae-color-ma-tertiary-090);
+  --vitae-brand-text-heading-light: var(--vitae-color-ma-primary-160);
+  --vitae-brand-text-body-light: var(--vitae-color-ma-primary-140);
+  --vitae-brand-dark-action-primary: var(--vitae-color-ma-primary-010);
+  --vitae-brand-dark-action-primary-hover: var(--vitae-color-ma-primary-025);
+  --vitae-brand-dark-action-primary-active: var(--vitae-color-ma-primary-040);
+  --vitae-brand-dark-action-secondary: var(--vitae-color-ma-secondary-020);
+  --vitae-brand-dark-action-secondary-hover: var(--vitae-color-ma-secondary-035);
+  --vitae-brand-dark-action-secondary-active: var(--vitae-color-ma-secondary-050);
+  --vitae-brand-dark-action-tertiary: var(--vitae-color-ma-tertiary-020);
+  --vitae-brand-dark-action-tertiary-hover: var(--vitae-color-ma-tertiary-035);
+  --vitae-brand-dark-action-tertiary-active: var(--vitae-color-ma-tertiary-050);
+  --vitae-brand-dark-on-primary: var(--vitae-color-ma-primary-120);
+  --vitae-brand-dark-on-secondary: var(--vitae-color-ma-secondary-140);
+  --vitae-brand-dark-on-tertiary: var(--vitae-color-ma-tertiary-100);
+  --vitae-brand-dark-outline-primary-text: var(--vitae-color-ma-primary-050);
+  --vitae-brand-dark-outline-primary-text-hover: var(--vitae-color-ma-primary-040);
+  --vitae-brand-dark-outline-primary-text-active: var(--vitae-color-ma-primary-035);
+  --vitae-brand-dark-outline-secondary-text: var(--vitae-color-ma-secondary-060);
+  --vitae-brand-dark-outline-secondary-text-hover: var(--vitae-color-ma-secondary-050);
+  --vitae-brand-dark-outline-secondary-text-active: var(--vitae-color-ma-secondary-040);
+  --vitae-brand-dark-outline-tertiary-text: var(--vitae-color-ma-tertiary-040);
+  --vitae-brand-dark-outline-tertiary-text-hover: var(--vitae-color-ma-tertiary-035);
+  --vitae-brand-dark-outline-tertiary-text-active: var(--vitae-color-ma-tertiary-030);
+  --vitae-brand-dark-subtle-primary-hover: var(--vitae-color-ma-primary-140);
+  --vitae-brand-dark-subtle-primary-active: var(--vitae-color-ma-primary-130);
+  --vitae-brand-dark-subtle-secondary-hover: var(--vitae-color-ma-secondary-160);
+  --vitae-brand-dark-subtle-secondary-active: var(--vitae-color-ma-secondary-150);
+  --vitae-brand-dark-subtle-tertiary-hover: var(--vitae-color-ma-tertiary-100);
+  --vitae-brand-dark-subtle-tertiary-active: var(--vitae-color-ma-tertiary-090);
+  --vitae-brand-dark-nav-admin-text: var(--vitae-color-white);
+  --vitae-brand-dark-footer-bg: var(--vitae-color-neutral-180);
+  --vitae-brand-dark-footer-lang-bg: var(--vitae-color-neutral-170);
+  --vitae-brand-dark-footer-pill: var(--vitae-color-neutral-160);
+  --vitae-brand-font-family: var(--vitae-font-family-open-sans);
+  --vitae-brand-radius-button: var(--vitae-radius-3);
+  --vitae-brand-radius-card: var(--vitae-radius-8);
+  --vitae-brand-radius-focus-ring: var(--vitae-radius-7); /** Button radius + 4px so the focus ring (2px offset + 2px stroke) runs parallel to the button corner. */
+  --vitae-brand-radius-card-focus-ring: var(--vitae-radius-12); /** Focus ring around cards: card radius + 4 (12px for all clients). */
+  --vitae-brand-light-outline-primary-text: var(--vitae-color-ma-primary-100);
+  --vitae-brand-light-outline-primary-text-hover: var(--vitae-color-ma-primary-120);
+  --vitae-brand-light-outline-primary-text-active: var(--vitae-color-ma-primary-140);
+  --vitae-brand-light-outline-secondary-text: var(--vitae-color-ma-secondary-120);
+  --vitae-brand-light-outline-secondary-text-hover: var(--vitae-color-ma-secondary-140);
+  --vitae-brand-light-outline-secondary-text-active: var(--vitae-color-ma-secondary-160);
+  --vitae-brand-light-outline-tertiary-text: var(--vitae-color-ma-tertiary-100);
+  --vitae-brand-light-outline-tertiary-text-hover: var(--vitae-color-ma-tertiary-120);
+  --vitae-brand-light-outline-tertiary-text-active: var(--vitae-color-ma-tertiary-140);
+  --vitae-brand-light-nav-admin-text: var(--vitae-color-white);
+  --vitae-brand-light-footer-bg: var(--vitae-color-neutral-030);
+  --vitae-brand-light-footer-lang-bg: var(--vitae-color-neutral-030);
+  --vitae-brand-light-footer-pill: var(--vitae-color-white);
+  --vitae-background-page: var(--vitae-color-neutral-220);
+  --vitae-background-disabled: var(--vitae-color-neutral-170);
+  --vitae-background-overlay: var(--vitae-color-black-alpha-60);
+  --vitae-field-border: var(--vitae-brand-dark-field-border); /** Rest: mostly grey, 20% tint of the active border. */
+  --vitae-field-border-hover: var(--vitae-brand-dark-field-border-hover); /** Hover: 60% of the way from rest grey to the active border. */
+  --vitae-field-border-disabled: var(--vitae-color-neutral-150);
+  --vitae-border-subtle: var(--vitae-color-neutral-170);
+  --vitae-border-strong: var(--vitae-color-neutral-110);
+  --vitae-border-focus-ring: var(--vitae-color-neutral-010);
+  --vitae-text-body: var(--vitae-color-neutral-030); /** Body text: paragraphs, table cells, checkbox/radio labels, field values. Neutral in every client so brand color is reserved for links, actions and headings (changed 10/21/26; was brand-tinted). */
+  --vitae-text-secondary: var(--vitae-color-neutral-060);
+  --vitae-text-placeholder: var(--vitae-color-neutral-080);
+  --vitae-text-disabled: var(--vitae-color-neutral-100);
+  --vitae-text-on-brand: var(--vitae-color-neutral-200);
+  --vitae-text-error: var(--vitae-color-status-error-040);
+  --vitae-icon-secondary: var(--vitae-color-neutral-060);
+  --vitae-action-destructive: var(--vitae-color-status-error-030);
+  --vitae-action-destructive-hover: var(--vitae-color-status-error-040);
+  --vitae-action-destructive-active: var(--vitae-color-status-error-050);
+  --vitae-action-disabled: var(--vitae-color-neutral-160);
+  --vitae-action-destructive-text: var(--vitae-color-status-error-040);
+  --vitae-action-destructive-text-hover: var(--vitae-color-status-error-030);
+  --vitae-action-destructive-text-active: var(--vitae-color-status-error-020);
+  --vitae-action-destructive-subtle-hover: var(--vitae-color-status-error-140);
+  --vitae-action-destructive-subtle-active: var(--vitae-color-status-error-130);
+  --vitae-support-info: var(--vitae-color-status-info-040);
+  --vitae-support-success: var(--vitae-color-status-success-040);
+  --vitae-support-warning: var(--vitae-color-status-warning-060);
+  --vitae-support-error: var(--vitae-color-status-error-040);
+  --vitae-support-info-surface: var(--vitae-color-status-info-170);
+  --vitae-support-success-surface: var(--vitae-color-status-success-170);
+  --vitae-support-warning-surface: var(--vitae-color-status-warning-170);
+  --vitae-support-error-surface: var(--vitae-color-status-error-170);
+  --vitae-support-warning-border: var(--vitae-color-status-warning-080); /** Warning alert and tag border. Light: warning/100 (bright amber; decorative, the two-tone icon and text carry the meaning). Dark: warning/080. */
+  --vitae-support-info-border: var(--vitae-color-status-info-080);
+  --vitae-support-success-border: var(--vitae-color-status-success-080);
+  --vitae-support-error-border: var(--vitae-color-status-error-080);
+  --vitae-support-warning-icon-fill: var(--vitae-color-status-warning-icon); /** Two-tone warning icon: triangle fill. Same in light and dark. */
+  --vitae-support-warning-icon-ink: var(--vitae-color-neutral-190); /** Two-tone warning icon: exclamation mark (and the outline in light mode). 16:1 on white. */
+  --vitae-program-dc-healthy-surface: var(--vitae-color-program-dc-healthy-dark-surface); /** DC only — Healthy DC Plan tag background. */
+  --vitae-program-dc-healthy-border: var(--vitae-color-program-dc-healthy-dark); /** DC only — Healthy DC Plan tag border and icon. */
+  --vitae-program-me-clear-choice-surface: var(--vitae-color-program-me-clear-choice-dark-surface); /** ME only — Clear Choice Plan tag background. */
+  --vitae-program-me-clear-choice-border: var(--vitae-color-program-me-clear-choice-dark); /** ME only — Clear Choice Plan tag border and icon. */
+  --vitae-program-dc-essential-surface: var(--vitae-color-program-dc-essential-dark-surface); /** DC only — Essential Plan tag. */
+  --vitae-program-dc-essential-border: var(--vitae-color-program-dc-essential-dark); /** DC only — Essential Plan tag. */
+  --vitae-program-dc-essential-icon: var(--vitae-color-program-dc-essential-icon-dark); /** DC only — Essential Plan tag bookmark icon. */
+  --vitae-program-me-current-plan-surface: var(--vitae-color-program-me-current-plan-dark-surface); /** ME only — Your current plan tag. */
+  --vitae-program-me-current-plan-border: var(--vitae-color-program-me-current-plan-dark); /** ME only — Your current plan tag. */
+  --vitae-program-ma-premium-value-surface: var(--vitae-color-program-ma-premium-value-dark-surface); /** MA only — Premium Value Plan tag. */
+  --vitae-program-ma-premium-value: var(--vitae-color-program-ma-premium-value-dark); /** MA only — Premium Value Plan tag border, icon and label. */
+  --vitae-nav-bar-text: var(--vitae-color-white); /** Text on the consumer nav bar. */
+  --vitae-nav-badge: var(--vitae-color-status-warning-100); /** Count badges in the header (cart, mail) and Left nav. */
+  --vitae-nav-badge-text: var(--vitae-color-neutral-190); /** Text on nav/badge. */
+  --vitae-nav-panel: var(--vitae-color-neutral-200); /** Mobile nav overlay panels (Left nav, Progress). Dark is one step above the page. */
+  --vitae-metal-bronze: var(--vitae-color-metal-bronze); /** Bronze metal badge fill (same in light and dark). */
+  --vitae-metal-bronze-text: var(--vitae-color-black); /** Text on the bronze badge (black; passes 4.5:1). */
+  --vitae-metal-bronze-border: var(--vitae-color-metal-bronze-border); /** Bronze badge border, a darker shade of the fill. */
+  --vitae-metal-silver: var(--vitae-color-metal-silver); /** Silver metal badge fill (same in light and dark). */
+  --vitae-metal-silver-text: var(--vitae-color-black); /** Text on the silver badge (black; passes 4.5:1). */
+  --vitae-metal-silver-border: var(--vitae-color-metal-silver-border); /** Silver badge border, a darker shade of the fill. */
+  --vitae-metal-gold: var(--vitae-color-metal-gold); /** Gold metal badge fill (same in light and dark). */
+  --vitae-metal-gold-text: var(--vitae-color-black); /** Text on the gold badge (black; passes 4.5:1). */
+  --vitae-metal-gold-border: var(--vitae-color-metal-gold-border); /** Gold badge border, a darker shade of the fill. */
+  --vitae-metal-platinum: var(--vitae-color-metal-platinum); /** Platinum metal badge fill (same in light and dark). */
+  --vitae-metal-platinum-text: var(--vitae-color-white); /** Text on the platinum badge (white; passes 4.5:1). */
+  --vitae-metal-platinum-border: var(--vitae-color-metal-platinum-border); /** Platinum badge border, a darker shade of the fill. */
+  --vitae-metal-catastrophic: var(--vitae-color-metal-catastrophic); /** Catastrophic metal badge fill (same in light and dark). */
+  --vitae-metal-catastrophic-text: var(--vitae-color-white); /** Text on the catastrophic badge (white; passes 4.5:1). */
+  --vitae-metal-catastrophic-border: var(--vitae-color-metal-catastrophic-border); /** Catastrophic badge border, a darker shade of the fill. */
+  --vitae-card-surface: var(--vitae-color-neutral-200); /** Card background. Dark is a neutral lift so brand color is reserved for the selected state. */
+  --vitae-table-row-hover: var(--vitae-color-neutral-190); /** Hover on interactive table rows. */
+  --vitae-surface-header-bar: var(--vitae-color-neutral-180); /** Header strip at the top of a card-like item, e.g. the Plan tile header bar; also Compare section rows and the Compare tray (10/21/26). Neutral so it never reads as selected. Renamed from table.header-bg 10/21/26; tables no longer use a header fill. */
+  --vitae-alert-text: var(--vitae-color-white); /** Title and message text inside alerts (all types). Light: neutral/150, a dark grey separate from body copy. Dark: white, so no brand tint shows on warning or success messages. */
+  --vitae-brand-dark-nav-accent: var(--vitae-brand-primary-030);
+  --vitae-brand-dark-nav-rule: var(--vitae-brand-primary-080);
+  --vitae-brand-dark-nav-bar: var(--vitae-brand-primary-150); /** Dark-mode nav bar: deep brand shade so it doesn't outshine the page (DC secondary 170, EA/MA/ME primary 150; decided 10/20/26). */
+  --vitae-brand-dark-nav-admin-bar: var(--vitae-brand-primary-150); /** Dark-mode Broker/Admin nav bar (DC secondary 170, EA/MA/ME primary 150; decided 10/20/26). */
+  --vitae-brand-dark-nav-drawer: var(--vitae-brand-primary-160); /** Dark mobile drawer surface (DC one step lighter at 150). */
+  --vitae-brand-dark-progress-upcoming: var(--vitae-brand-dark-action-primary);
+  --vitae-brand-light-nav-accent: var(--vitae-brand-primary-100); /** Header role label, links and role icon. DC changed from secondary 100 to primary 100 (dark blue) 10/21/26. */
+  --vitae-brand-light-nav-rule: var(--vitae-brand-primary-100);
+  --vitae-brand-light-nav-bar: var(--vitae-brand-primary-100);
+  --vitae-brand-light-nav-admin-bar: var(--vitae-brand-primary-100);
+  --vitae-brand-light-progress-upcoming: var(--vitae-brand-primary-100);
+  --vitae-background-layer-01: var(--vitae-brand-primary-170);
+  --vitae-background-layer-02: var(--vitae-brand-primary-160);
+  --vitae-background-layer-03: var(--vitae-brand-primary-150);
+  --vitae-background-layer-hover: var(--vitae-brand-primary-140);
+  --vitae-background-selected: var(--vitae-brand-primary-130);
+  --vitae-background-brand: var(--vitae-brand-primary-030);
+  --vitae-background-brand-subtle: var(--vitae-brand-primary-170);
+  --vitae-field-background: var(--vitae-brand-primary-180);
+  --vitae-field-background-active: var(--vitae-brand-primary-170); /** Field background while clicked into / typing, and under the keyboard focus ring. */
+  --vitae-field-border-active: var(--vitae-brand-primary-030); /** Clicked into / typing, and under the keyboard focus ring. Same as border.focus. */
+  --vitae-border-brand: var(--vitae-brand-primary-040);
+  --vitae-border-focus: var(--vitae-brand-primary-030);
+  --vitae-text-heading: var(--vitae-brand-primary-005);
+  --vitae-text-link: var(--vitae-brand-primary-040);
+  --vitae-text-link-hover: var(--vitae-brand-primary-030);
+  --vitae-text-link-active: var(--vitae-brand-primary-020);
+  --vitae-text-on-primary: var(--vitae-brand-dark-on-primary);
+  --vitae-text-on-secondary: var(--vitae-brand-dark-on-secondary);
+  --vitae-text-on-tertiary: var(--vitae-brand-dark-on-tertiary);
+  --vitae-icon-primary: var(--vitae-brand-primary-010);
+  --vitae-icon-brand: var(--vitae-brand-primary-040);
+  --vitae-action-primary: var(--vitae-brand-dark-action-primary);
+  --vitae-action-primary-hover: var(--vitae-brand-dark-action-primary-hover);
+  --vitae-action-primary-active: var(--vitae-brand-dark-action-primary-active);
+  --vitae-action-secondary: var(--vitae-brand-dark-action-secondary);
+  --vitae-action-secondary-hover: var(--vitae-brand-dark-action-secondary-hover);
+  --vitae-action-secondary-active: var(--vitae-brand-dark-action-secondary-active);
+  --vitae-action-tertiary: var(--vitae-brand-dark-action-tertiary);
+  --vitae-action-tertiary-hover: var(--vitae-brand-dark-action-tertiary-hover);
+  --vitae-action-tertiary-active: var(--vitae-brand-dark-action-tertiary-active);
+  --vitae-action-primary-text: var(--vitae-brand-dark-outline-primary-text);
+  --vitae-action-primary-text-hover: var(--vitae-brand-dark-outline-primary-text-hover);
+  --vitae-action-primary-text-active: var(--vitae-brand-dark-outline-primary-text-active);
+  --vitae-action-primary-subtle-hover: var(--vitae-brand-dark-subtle-primary-hover);
+  --vitae-action-primary-subtle-active: var(--vitae-brand-dark-subtle-primary-active);
+  --vitae-action-secondary-text: var(--vitae-brand-dark-outline-secondary-text);
+  --vitae-action-secondary-text-hover: var(--vitae-brand-dark-outline-secondary-text-hover);
+  --vitae-action-secondary-text-active: var(--vitae-brand-dark-outline-secondary-text-active);
+  --vitae-action-secondary-subtle-hover: var(--vitae-brand-dark-subtle-secondary-hover);
+  --vitae-action-secondary-subtle-active: var(--vitae-brand-dark-subtle-secondary-active);
+  --vitae-action-tertiary-text: var(--vitae-brand-dark-outline-tertiary-text);
+  --vitae-action-tertiary-text-hover: var(--vitae-brand-dark-outline-tertiary-text-hover);
+  --vitae-action-tertiary-text-active: var(--vitae-brand-dark-outline-tertiary-text-active);
+  --vitae-action-tertiary-subtle-hover: var(--vitae-brand-dark-subtle-tertiary-hover);
+  --vitae-action-tertiary-subtle-active: var(--vitae-brand-dark-subtle-tertiary-active);
+  --vitae-support-warning-icon-outline-color: var(--vitae-support-warning-icon-fill); /** Two-tone warning icon: 1px outline around the triangle. Dark outline in light mode; matches the fill in dark mode (same footprint, no visible outline). */
+  --vitae-nav-admin-text: var(--vitae-brand-dark-nav-admin-text); /** Text on the Broker/Admin nav bar. */
+  --vitae-nav-item-hover: var(--vitae-brand-primary-160); /** Left nav item hover fill (plus a 2px action.primary bar at 40%). */
+  --vitae-nav-item-pressed: var(--vitae-brand-primary-150); /** Left nav item pressed fill (plus a 2px action.primary bar at 70%). */
+  --vitae-footer-bg: var(--vitae-brand-dark-footer-bg); /** Footer background. */
+  --vitae-footer-lang-bg: var(--vitae-brand-dark-footer-lang-bg); /** Footer language row background (off by default). */
+  --vitae-footer-pill: var(--vitae-brand-dark-footer-pill); /** Footer help pill (styling currently unused; kept for the language row). */
+  --vitae-progress-upcoming: var(--vitae-brand-dark-progress-upcoming); /** Progress connectors, upcoming markers and the remaining Progress line; always used at 40% opacity. EA/MA/ME: action.primary. DC: neutral gray. */
+  --vitae-nav-accent: var(--vitae-brand-dark-nav-accent); /** Header accent rule and active top-nav indicator. */
+  --vitae-nav-rule: var(--vitae-brand-dark-nav-rule); /** Rule under the header. */
+  --vitae-nav-bar: var(--vitae-brand-dark-nav-bar); /** Consumer nav bar background. */
+  --vitae-nav-admin-bar: var(--vitae-brand-dark-nav-admin-bar); /** Broker/Admin nav bar background. */
+  --vitae-nav-drawer: var(--vitae-brand-dark-nav-drawer); /** Mobile header drawer surface, one step off the header. */
+  --vitae-nav-item-selected: var(--vitae-background-brand-subtle); /** Left nav selected row fill and mobile nav toggle background. */
+  --vitae-table-row-selected: var(--vitae-nav-item-selected); /** Selected (checked) table rows. */
+}

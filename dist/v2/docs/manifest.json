@@ -1,0 +1,5462 @@
+[
+ {
+  "path": "color.white",
+  "cssVar": "--vitae-color-white",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.black",
+  "cssVar": "--vitae-color-black",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.100",
+  "cssVar": "--vitae-color-neutral-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.110",
+  "cssVar": "--vitae-color-neutral-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.120",
+  "cssVar": "--vitae-color-neutral-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.130",
+  "cssVar": "--vitae-color-neutral-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.140",
+  "cssVar": "--vitae-color-neutral-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.150",
+  "cssVar": "--vitae-color-neutral-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.160",
+  "cssVar": "--vitae-color-neutral-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.170",
+  "cssVar": "--vitae-color-neutral-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.180",
+  "cssVar": "--vitae-color-neutral-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.190",
+  "cssVar": "--vitae-color-neutral-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.200",
+  "cssVar": "--vitae-color-neutral-200",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.210",
+  "cssVar": "--vitae-color-neutral-210",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.220",
+  "cssVar": "--vitae-color-neutral-220",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.010",
+  "cssVar": "--vitae-color-neutral-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.020",
+  "cssVar": "--vitae-color-neutral-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.030",
+  "cssVar": "--vitae-color-neutral-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.040",
+  "cssVar": "--vitae-color-neutral-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.050",
+  "cssVar": "--vitae-color-neutral-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.060",
+  "cssVar": "--vitae-color-neutral-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.070",
+  "cssVar": "--vitae-color-neutral-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.080",
+  "cssVar": "--vitae-color-neutral-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.neutral.090",
+  "cssVar": "--vitae-color-neutral-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.100",
+  "cssVar": "--vitae-color-ea-primary-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.110",
+  "cssVar": "--vitae-color-ea-primary-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.120",
+  "cssVar": "--vitae-color-ea-primary-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.130",
+  "cssVar": "--vitae-color-ea-primary-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.140",
+  "cssVar": "--vitae-color-ea-primary-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.150",
+  "cssVar": "--vitae-color-ea-primary-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.160",
+  "cssVar": "--vitae-color-ea-primary-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.170",
+  "cssVar": "--vitae-color-ea-primary-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.180",
+  "cssVar": "--vitae-color-ea-primary-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.190",
+  "cssVar": "--vitae-color-ea-primary-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.005",
+  "cssVar": "--vitae-color-ea-primary-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.010",
+  "cssVar": "--vitae-color-ea-primary-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.015",
+  "cssVar": "--vitae-color-ea-primary-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.020",
+  "cssVar": "--vitae-color-ea-primary-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.025",
+  "cssVar": "--vitae-color-ea-primary-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.030",
+  "cssVar": "--vitae-color-ea-primary-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.035",
+  "cssVar": "--vitae-color-ea-primary-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.040",
+  "cssVar": "--vitae-color-ea-primary-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.050",
+  "cssVar": "--vitae-color-ea-primary-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.060",
+  "cssVar": "--vitae-color-ea-primary-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.070",
+  "cssVar": "--vitae-color-ea-primary-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.080",
+  "cssVar": "--vitae-color-ea-primary-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.primary.090",
+  "cssVar": "--vitae-color-ea-primary-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.100",
+  "cssVar": "--vitae-color-ea-secondary-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.110",
+  "cssVar": "--vitae-color-ea-secondary-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.120",
+  "cssVar": "--vitae-color-ea-secondary-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.130",
+  "cssVar": "--vitae-color-ea-secondary-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.140",
+  "cssVar": "--vitae-color-ea-secondary-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.150",
+  "cssVar": "--vitae-color-ea-secondary-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.160",
+  "cssVar": "--vitae-color-ea-secondary-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.170",
+  "cssVar": "--vitae-color-ea-secondary-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.180",
+  "cssVar": "--vitae-color-ea-secondary-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.190",
+  "cssVar": "--vitae-color-ea-secondary-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.005",
+  "cssVar": "--vitae-color-ea-secondary-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.010",
+  "cssVar": "--vitae-color-ea-secondary-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.015",
+  "cssVar": "--vitae-color-ea-secondary-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.020",
+  "cssVar": "--vitae-color-ea-secondary-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.025",
+  "cssVar": "--vitae-color-ea-secondary-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.030",
+  "cssVar": "--vitae-color-ea-secondary-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.035",
+  "cssVar": "--vitae-color-ea-secondary-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.040",
+  "cssVar": "--vitae-color-ea-secondary-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.050",
+  "cssVar": "--vitae-color-ea-secondary-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.060",
+  "cssVar": "--vitae-color-ea-secondary-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.070",
+  "cssVar": "--vitae-color-ea-secondary-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.080",
+  "cssVar": "--vitae-color-ea-secondary-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.secondary.090",
+  "cssVar": "--vitae-color-ea-secondary-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.100",
+  "cssVar": "--vitae-color-ea-tertiary-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.110",
+  "cssVar": "--vitae-color-ea-tertiary-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.120",
+  "cssVar": "--vitae-color-ea-tertiary-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.130",
+  "cssVar": "--vitae-color-ea-tertiary-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.140",
+  "cssVar": "--vitae-color-ea-tertiary-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.150",
+  "cssVar": "--vitae-color-ea-tertiary-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.160",
+  "cssVar": "--vitae-color-ea-tertiary-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.170",
+  "cssVar": "--vitae-color-ea-tertiary-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.180",
+  "cssVar": "--vitae-color-ea-tertiary-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.190",
+  "cssVar": "--vitae-color-ea-tertiary-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.005",
+  "cssVar": "--vitae-color-ea-tertiary-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.010",
+  "cssVar": "--vitae-color-ea-tertiary-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.015",
+  "cssVar": "--vitae-color-ea-tertiary-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.020",
+  "cssVar": "--vitae-color-ea-tertiary-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.025",
+  "cssVar": "--vitae-color-ea-tertiary-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.030",
+  "cssVar": "--vitae-color-ea-tertiary-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.035",
+  "cssVar": "--vitae-color-ea-tertiary-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.040",
+  "cssVar": "--vitae-color-ea-tertiary-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.050",
+  "cssVar": "--vitae-color-ea-tertiary-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.060",
+  "cssVar": "--vitae-color-ea-tertiary-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.070",
+  "cssVar": "--vitae-color-ea-tertiary-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.080",
+  "cssVar": "--vitae-color-ea-tertiary-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.tertiary.090",
+  "cssVar": "--vitae-color-ea-tertiary-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.100",
+  "cssVar": "--vitae-color-dc-primary-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.110",
+  "cssVar": "--vitae-color-dc-primary-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.120",
+  "cssVar": "--vitae-color-dc-primary-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.130",
+  "cssVar": "--vitae-color-dc-primary-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.140",
+  "cssVar": "--vitae-color-dc-primary-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.150",
+  "cssVar": "--vitae-color-dc-primary-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.160",
+  "cssVar": "--vitae-color-dc-primary-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.170",
+  "cssVar": "--vitae-color-dc-primary-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.180",
+  "cssVar": "--vitae-color-dc-primary-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.190",
+  "cssVar": "--vitae-color-dc-primary-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.005",
+  "cssVar": "--vitae-color-dc-primary-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.010",
+  "cssVar": "--vitae-color-dc-primary-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.015",
+  "cssVar": "--vitae-color-dc-primary-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.020",
+  "cssVar": "--vitae-color-dc-primary-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.025",
+  "cssVar": "--vitae-color-dc-primary-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.030",
+  "cssVar": "--vitae-color-dc-primary-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.035",
+  "cssVar": "--vitae-color-dc-primary-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.040",
+  "cssVar": "--vitae-color-dc-primary-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.050",
+  "cssVar": "--vitae-color-dc-primary-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.060",
+  "cssVar": "--vitae-color-dc-primary-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.070",
+  "cssVar": "--vitae-color-dc-primary-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.080",
+  "cssVar": "--vitae-color-dc-primary-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.primary.090",
+  "cssVar": "--vitae-color-dc-primary-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.100",
+  "cssVar": "--vitae-color-dc-secondary-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.110",
+  "cssVar": "--vitae-color-dc-secondary-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.120",
+  "cssVar": "--vitae-color-dc-secondary-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.130",
+  "cssVar": "--vitae-color-dc-secondary-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.140",
+  "cssVar": "--vitae-color-dc-secondary-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.150",
+  "cssVar": "--vitae-color-dc-secondary-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.160",
+  "cssVar": "--vitae-color-dc-secondary-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.170",
+  "cssVar": "--vitae-color-dc-secondary-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.180",
+  "cssVar": "--vitae-color-dc-secondary-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.190",
+  "cssVar": "--vitae-color-dc-secondary-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.005",
+  "cssVar": "--vitae-color-dc-secondary-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.010",
+  "cssVar": "--vitae-color-dc-secondary-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.015",
+  "cssVar": "--vitae-color-dc-secondary-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.020",
+  "cssVar": "--vitae-color-dc-secondary-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.025",
+  "cssVar": "--vitae-color-dc-secondary-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.030",
+  "cssVar": "--vitae-color-dc-secondary-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.035",
+  "cssVar": "--vitae-color-dc-secondary-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.040",
+  "cssVar": "--vitae-color-dc-secondary-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.050",
+  "cssVar": "--vitae-color-dc-secondary-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.060",
+  "cssVar": "--vitae-color-dc-secondary-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.070",
+  "cssVar": "--vitae-color-dc-secondary-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.080",
+  "cssVar": "--vitae-color-dc-secondary-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.secondary.090",
+  "cssVar": "--vitae-color-dc-secondary-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.100",
+  "cssVar": "--vitae-color-dc-tertiary-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.110",
+  "cssVar": "--vitae-color-dc-tertiary-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.120",
+  "cssVar": "--vitae-color-dc-tertiary-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.130",
+  "cssVar": "--vitae-color-dc-tertiary-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.140",
+  "cssVar": "--vitae-color-dc-tertiary-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.150",
+  "cssVar": "--vitae-color-dc-tertiary-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.160",
+  "cssVar": "--vitae-color-dc-tertiary-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.170",
+  "cssVar": "--vitae-color-dc-tertiary-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.180",
+  "cssVar": "--vitae-color-dc-tertiary-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.190",
+  "cssVar": "--vitae-color-dc-tertiary-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.005",
+  "cssVar": "--vitae-color-dc-tertiary-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.010",
+  "cssVar": "--vitae-color-dc-tertiary-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.015",
+  "cssVar": "--vitae-color-dc-tertiary-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.020",
+  "cssVar": "--vitae-color-dc-tertiary-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.025",
+  "cssVar": "--vitae-color-dc-tertiary-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.030",
+  "cssVar": "--vitae-color-dc-tertiary-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.035",
+  "cssVar": "--vitae-color-dc-tertiary-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.040",
+  "cssVar": "--vitae-color-dc-tertiary-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.050",
+  "cssVar": "--vitae-color-dc-tertiary-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.060",
+  "cssVar": "--vitae-color-dc-tertiary-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.070",
+  "cssVar": "--vitae-color-dc-tertiary-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.080",
+  "cssVar": "--vitae-color-dc-tertiary-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.dc.tertiary.090",
+  "cssVar": "--vitae-color-dc-tertiary-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.100",
+  "cssVar": "--vitae-color-ma-primary-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.110",
+  "cssVar": "--vitae-color-ma-primary-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.120",
+  "cssVar": "--vitae-color-ma-primary-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.130",
+  "cssVar": "--vitae-color-ma-primary-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.140",
+  "cssVar": "--vitae-color-ma-primary-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.150",
+  "cssVar": "--vitae-color-ma-primary-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.160",
+  "cssVar": "--vitae-color-ma-primary-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.170",
+  "cssVar": "--vitae-color-ma-primary-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.180",
+  "cssVar": "--vitae-color-ma-primary-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.190",
+  "cssVar": "--vitae-color-ma-primary-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.005",
+  "cssVar": "--vitae-color-ma-primary-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.010",
+  "cssVar": "--vitae-color-ma-primary-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.015",
+  "cssVar": "--vitae-color-ma-primary-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.020",
+  "cssVar": "--vitae-color-ma-primary-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.025",
+  "cssVar": "--vitae-color-ma-primary-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.030",
+  "cssVar": "--vitae-color-ma-primary-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.035",
+  "cssVar": "--vitae-color-ma-primary-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.040",
+  "cssVar": "--vitae-color-ma-primary-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.050",
+  "cssVar": "--vitae-color-ma-primary-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.060",
+  "cssVar": "--vitae-color-ma-primary-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.070",
+  "cssVar": "--vitae-color-ma-primary-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.080",
+  "cssVar": "--vitae-color-ma-primary-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.primary.090",
+  "cssVar": "--vitae-color-ma-primary-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.100",
+  "cssVar": "--vitae-color-ma-secondary-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.110",
+  "cssVar": "--vitae-color-ma-secondary-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.120",
+  "cssVar": "--vitae-color-ma-secondary-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.130",
+  "cssVar": "--vitae-color-ma-secondary-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.140",
+  "cssVar": "--vitae-color-ma-secondary-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.150",
+  "cssVar": "--vitae-color-ma-secondary-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.160",
+  "cssVar": "--vitae-color-ma-secondary-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.170",
+  "cssVar": "--vitae-color-ma-secondary-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.180",
+  "cssVar": "--vitae-color-ma-secondary-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.190",
+  "cssVar": "--vitae-color-ma-secondary-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.005",
+  "cssVar": "--vitae-color-ma-secondary-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.010",
+  "cssVar": "--vitae-color-ma-secondary-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.015",
+  "cssVar": "--vitae-color-ma-secondary-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.020",
+  "cssVar": "--vitae-color-ma-secondary-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.025",
+  "cssVar": "--vitae-color-ma-secondary-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.030",
+  "cssVar": "--vitae-color-ma-secondary-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.035",
+  "cssVar": "--vitae-color-ma-secondary-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.040",
+  "cssVar": "--vitae-color-ma-secondary-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.050",
+  "cssVar": "--vitae-color-ma-secondary-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.060",
+  "cssVar": "--vitae-color-ma-secondary-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.070",
+  "cssVar": "--vitae-color-ma-secondary-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.080",
+  "cssVar": "--vitae-color-ma-secondary-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.secondary.090",
+  "cssVar": "--vitae-color-ma-secondary-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.100",
+  "cssVar": "--vitae-color-ma-tertiary-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.110",
+  "cssVar": "--vitae-color-ma-tertiary-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.120",
+  "cssVar": "--vitae-color-ma-tertiary-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.130",
+  "cssVar": "--vitae-color-ma-tertiary-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.140",
+  "cssVar": "--vitae-color-ma-tertiary-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.150",
+  "cssVar": "--vitae-color-ma-tertiary-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.160",
+  "cssVar": "--vitae-color-ma-tertiary-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.170",
+  "cssVar": "--vitae-color-ma-tertiary-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.180",
+  "cssVar": "--vitae-color-ma-tertiary-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.190",
+  "cssVar": "--vitae-color-ma-tertiary-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.005",
+  "cssVar": "--vitae-color-ma-tertiary-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.010",
+  "cssVar": "--vitae-color-ma-tertiary-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.015",
+  "cssVar": "--vitae-color-ma-tertiary-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.020",
+  "cssVar": "--vitae-color-ma-tertiary-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.025",
+  "cssVar": "--vitae-color-ma-tertiary-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.030",
+  "cssVar": "--vitae-color-ma-tertiary-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.035",
+  "cssVar": "--vitae-color-ma-tertiary-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.040",
+  "cssVar": "--vitae-color-ma-tertiary-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.050",
+  "cssVar": "--vitae-color-ma-tertiary-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.060",
+  "cssVar": "--vitae-color-ma-tertiary-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.070",
+  "cssVar": "--vitae-color-ma-tertiary-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.080",
+  "cssVar": "--vitae-color-ma-tertiary-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ma.tertiary.090",
+  "cssVar": "--vitae-color-ma-tertiary-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.100",
+  "cssVar": "--vitae-color-me-primary-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.110",
+  "cssVar": "--vitae-color-me-primary-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.120",
+  "cssVar": "--vitae-color-me-primary-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.130",
+  "cssVar": "--vitae-color-me-primary-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.140",
+  "cssVar": "--vitae-color-me-primary-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.150",
+  "cssVar": "--vitae-color-me-primary-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.160",
+  "cssVar": "--vitae-color-me-primary-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.170",
+  "cssVar": "--vitae-color-me-primary-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.180",
+  "cssVar": "--vitae-color-me-primary-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.190",
+  "cssVar": "--vitae-color-me-primary-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.005",
+  "cssVar": "--vitae-color-me-primary-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.010",
+  "cssVar": "--vitae-color-me-primary-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.015",
+  "cssVar": "--vitae-color-me-primary-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.020",
+  "cssVar": "--vitae-color-me-primary-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.025",
+  "cssVar": "--vitae-color-me-primary-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.030",
+  "cssVar": "--vitae-color-me-primary-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.035",
+  "cssVar": "--vitae-color-me-primary-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.040",
+  "cssVar": "--vitae-color-me-primary-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.050",
+  "cssVar": "--vitae-color-me-primary-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.060",
+  "cssVar": "--vitae-color-me-primary-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.070",
+  "cssVar": "--vitae-color-me-primary-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.080",
+  "cssVar": "--vitae-color-me-primary-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.primary.090",
+  "cssVar": "--vitae-color-me-primary-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.100",
+  "cssVar": "--vitae-color-me-secondary-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.110",
+  "cssVar": "--vitae-color-me-secondary-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.120",
+  "cssVar": "--vitae-color-me-secondary-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.130",
+  "cssVar": "--vitae-color-me-secondary-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.140",
+  "cssVar": "--vitae-color-me-secondary-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.150",
+  "cssVar": "--vitae-color-me-secondary-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.160",
+  "cssVar": "--vitae-color-me-secondary-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.170",
+  "cssVar": "--vitae-color-me-secondary-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.180",
+  "cssVar": "--vitae-color-me-secondary-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.190",
+  "cssVar": "--vitae-color-me-secondary-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.005",
+  "cssVar": "--vitae-color-me-secondary-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.010",
+  "cssVar": "--vitae-color-me-secondary-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.015",
+  "cssVar": "--vitae-color-me-secondary-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.020",
+  "cssVar": "--vitae-color-me-secondary-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.025",
+  "cssVar": "--vitae-color-me-secondary-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.030",
+  "cssVar": "--vitae-color-me-secondary-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.035",
+  "cssVar": "--vitae-color-me-secondary-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.040",
+  "cssVar": "--vitae-color-me-secondary-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.050",
+  "cssVar": "--vitae-color-me-secondary-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.060",
+  "cssVar": "--vitae-color-me-secondary-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.070",
+  "cssVar": "--vitae-color-me-secondary-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.080",
+  "cssVar": "--vitae-color-me-secondary-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.secondary.090",
+  "cssVar": "--vitae-color-me-secondary-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.100",
+  "cssVar": "--vitae-color-me-tertiary-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.110",
+  "cssVar": "--vitae-color-me-tertiary-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.120",
+  "cssVar": "--vitae-color-me-tertiary-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.130",
+  "cssVar": "--vitae-color-me-tertiary-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.140",
+  "cssVar": "--vitae-color-me-tertiary-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.150",
+  "cssVar": "--vitae-color-me-tertiary-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.160",
+  "cssVar": "--vitae-color-me-tertiary-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.170",
+  "cssVar": "--vitae-color-me-tertiary-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.180",
+  "cssVar": "--vitae-color-me-tertiary-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.190",
+  "cssVar": "--vitae-color-me-tertiary-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.005",
+  "cssVar": "--vitae-color-me-tertiary-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.010",
+  "cssVar": "--vitae-color-me-tertiary-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.015",
+  "cssVar": "--vitae-color-me-tertiary-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.020",
+  "cssVar": "--vitae-color-me-tertiary-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.025",
+  "cssVar": "--vitae-color-me-tertiary-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.030",
+  "cssVar": "--vitae-color-me-tertiary-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.035",
+  "cssVar": "--vitae-color-me-tertiary-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.040",
+  "cssVar": "--vitae-color-me-tertiary-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.050",
+  "cssVar": "--vitae-color-me-tertiary-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.060",
+  "cssVar": "--vitae-color-me-tertiary-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.070",
+  "cssVar": "--vitae-color-me-tertiary-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.080",
+  "cssVar": "--vitae-color-me-tertiary-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.me.tertiary.090",
+  "cssVar": "--vitae-color-me-tertiary-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.100",
+  "cssVar": "--vitae-color-status-info-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.110",
+  "cssVar": "--vitae-color-status-info-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.120",
+  "cssVar": "--vitae-color-status-info-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.130",
+  "cssVar": "--vitae-color-status-info-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.140",
+  "cssVar": "--vitae-color-status-info-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.150",
+  "cssVar": "--vitae-color-status-info-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.160",
+  "cssVar": "--vitae-color-status-info-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.170",
+  "cssVar": "--vitae-color-status-info-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.180",
+  "cssVar": "--vitae-color-status-info-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.190",
+  "cssVar": "--vitae-color-status-info-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.005",
+  "cssVar": "--vitae-color-status-info-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.010",
+  "cssVar": "--vitae-color-status-info-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.015",
+  "cssVar": "--vitae-color-status-info-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.020",
+  "cssVar": "--vitae-color-status-info-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.025",
+  "cssVar": "--vitae-color-status-info-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.030",
+  "cssVar": "--vitae-color-status-info-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.035",
+  "cssVar": "--vitae-color-status-info-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.040",
+  "cssVar": "--vitae-color-status-info-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.050",
+  "cssVar": "--vitae-color-status-info-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.060",
+  "cssVar": "--vitae-color-status-info-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.070",
+  "cssVar": "--vitae-color-status-info-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.080",
+  "cssVar": "--vitae-color-status-info-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.info.090",
+  "cssVar": "--vitae-color-status-info-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.100",
+  "cssVar": "--vitae-color-status-success-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.110",
+  "cssVar": "--vitae-color-status-success-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.120",
+  "cssVar": "--vitae-color-status-success-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.130",
+  "cssVar": "--vitae-color-status-success-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.140",
+  "cssVar": "--vitae-color-status-success-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.150",
+  "cssVar": "--vitae-color-status-success-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.160",
+  "cssVar": "--vitae-color-status-success-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.170",
+  "cssVar": "--vitae-color-status-success-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.180",
+  "cssVar": "--vitae-color-status-success-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.190",
+  "cssVar": "--vitae-color-status-success-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.005",
+  "cssVar": "--vitae-color-status-success-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.010",
+  "cssVar": "--vitae-color-status-success-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.015",
+  "cssVar": "--vitae-color-status-success-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.020",
+  "cssVar": "--vitae-color-status-success-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.025",
+  "cssVar": "--vitae-color-status-success-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.030",
+  "cssVar": "--vitae-color-status-success-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.035",
+  "cssVar": "--vitae-color-status-success-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.040",
+  "cssVar": "--vitae-color-status-success-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.050",
+  "cssVar": "--vitae-color-status-success-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.060",
+  "cssVar": "--vitae-color-status-success-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.070",
+  "cssVar": "--vitae-color-status-success-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.080",
+  "cssVar": "--vitae-color-status-success-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.success.090",
+  "cssVar": "--vitae-color-status-success-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.100",
+  "cssVar": "--vitae-color-status-warning-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.110",
+  "cssVar": "--vitae-color-status-warning-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.120",
+  "cssVar": "--vitae-color-status-warning-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.130",
+  "cssVar": "--vitae-color-status-warning-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.140",
+  "cssVar": "--vitae-color-status-warning-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.150",
+  "cssVar": "--vitae-color-status-warning-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.160",
+  "cssVar": "--vitae-color-status-warning-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.170",
+  "cssVar": "--vitae-color-status-warning-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.180",
+  "cssVar": "--vitae-color-status-warning-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.190",
+  "cssVar": "--vitae-color-status-warning-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.005",
+  "cssVar": "--vitae-color-status-warning-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.010",
+  "cssVar": "--vitae-color-status-warning-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.015",
+  "cssVar": "--vitae-color-status-warning-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.020",
+  "cssVar": "--vitae-color-status-warning-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.025",
+  "cssVar": "--vitae-color-status-warning-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.030",
+  "cssVar": "--vitae-color-status-warning-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.035",
+  "cssVar": "--vitae-color-status-warning-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.040",
+  "cssVar": "--vitae-color-status-warning-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.050",
+  "cssVar": "--vitae-color-status-warning-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.060",
+  "cssVar": "--vitae-color-status-warning-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.070",
+  "cssVar": "--vitae-color-status-warning-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.080",
+  "cssVar": "--vitae-color-status-warning-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning.090",
+  "cssVar": "--vitae-color-status-warning-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.100",
+  "cssVar": "--vitae-color-status-error-100",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.110",
+  "cssVar": "--vitae-color-status-error-110",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.120",
+  "cssVar": "--vitae-color-status-error-120",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.130",
+  "cssVar": "--vitae-color-status-error-130",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.140",
+  "cssVar": "--vitae-color-status-error-140",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.150",
+  "cssVar": "--vitae-color-status-error-150",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.160",
+  "cssVar": "--vitae-color-status-error-160",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.170",
+  "cssVar": "--vitae-color-status-error-170",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.180",
+  "cssVar": "--vitae-color-status-error-180",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.190",
+  "cssVar": "--vitae-color-status-error-190",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.005",
+  "cssVar": "--vitae-color-status-error-005",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.010",
+  "cssVar": "--vitae-color-status-error-010",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.015",
+  "cssVar": "--vitae-color-status-error-015",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.020",
+  "cssVar": "--vitae-color-status-error-020",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.025",
+  "cssVar": "--vitae-color-status-error-025",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.030",
+  "cssVar": "--vitae-color-status-error-030",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.035",
+  "cssVar": "--vitae-color-status-error-035",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.040",
+  "cssVar": "--vitae-color-status-error-040",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.050",
+  "cssVar": "--vitae-color-status-error-050",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.060",
+  "cssVar": "--vitae-color-status-error-060",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.070",
+  "cssVar": "--vitae-color-status-error-070",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.080",
+  "cssVar": "--vitae-color-status-error-080",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.error.090",
+  "cssVar": "--vitae-color-status-error-090",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.status.warning-icon",
+  "cssVar": "--vitae-color-status-warning-icon",
+  "type": "color",
+  "description": "Bright warning yellow for the two-tone warning icon fill (only ever used with a dark outline).",
+  "source": "primitive"
+ },
+ {
+  "path": "color.metal.platinum",
+  "cssVar": "--vitae-color-metal-platinum",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.metal.gold",
+  "cssVar": "--vitae-color-metal-gold",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.metal.silver",
+  "cssVar": "--vitae-color-metal-silver",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.metal.bronze",
+  "cssVar": "--vitae-color-metal-bronze",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.metal.catastrophic",
+  "cssVar": "--vitae-color-metal-catastrophic",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.metal.platinum-surface",
+  "cssVar": "--vitae-color-metal-platinum-surface",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.metal.gold-surface",
+  "cssVar": "--vitae-color-metal-gold-surface",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.metal.silver-surface",
+  "cssVar": "--vitae-color-metal-silver-surface",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.metal.bronze-surface",
+  "cssVar": "--vitae-color-metal-bronze-surface",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.metal.catastrophic-surface",
+  "cssVar": "--vitae-color-metal-catastrophic-surface",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.metal.bronze-border",
+  "cssVar": "--vitae-color-metal-bronze-border",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.metal.silver-border",
+  "cssVar": "--vitae-color-metal-silver-border",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.metal.gold-border",
+  "cssVar": "--vitae-color-metal-gold-border",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.metal.platinum-border",
+  "cssVar": "--vitae-color-metal-platinum-border",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.metal.catastrophic-border",
+  "cssVar": "--vitae-color-metal-catastrophic-border",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.dc-healthy",
+  "cssVar": "--vitae-color-program-dc-healthy",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.dc-healthy-surface",
+  "cssVar": "--vitae-color-program-dc-healthy-surface",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.me-clear-choice",
+  "cssVar": "--vitae-color-program-me-clear-choice",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.me-clear-choice-surface",
+  "cssVar": "--vitae-color-program-me-clear-choice-surface",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.dc-healthy-dark",
+  "cssVar": "--vitae-color-program-dc-healthy-dark",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.dc-healthy-dark-surface",
+  "cssVar": "--vitae-color-program-dc-healthy-dark-surface",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.me-clear-choice-dark",
+  "cssVar": "--vitae-color-program-me-clear-choice-dark",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.me-clear-choice-dark-surface",
+  "cssVar": "--vitae-color-program-me-clear-choice-dark-surface",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.dc-essential",
+  "cssVar": "--vitae-color-program-dc-essential",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.dc-essential-surface",
+  "cssVar": "--vitae-color-program-dc-essential-surface",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.dc-essential-icon",
+  "cssVar": "--vitae-color-program-dc-essential-icon",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.dc-essential-dark",
+  "cssVar": "--vitae-color-program-dc-essential-dark",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.dc-essential-dark-surface",
+  "cssVar": "--vitae-color-program-dc-essential-dark-surface",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.dc-essential-icon-dark",
+  "cssVar": "--vitae-color-program-dc-essential-icon-dark",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.me-current-plan",
+  "cssVar": "--vitae-color-program-me-current-plan",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.me-current-plan-surface",
+  "cssVar": "--vitae-color-program-me-current-plan-surface",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.me-current-plan-dark",
+  "cssVar": "--vitae-color-program-me-current-plan-dark",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.me-current-plan-dark-surface",
+  "cssVar": "--vitae-color-program-me-current-plan-dark-surface",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.ma-premium-value",
+  "cssVar": "--vitae-color-program-ma-premium-value",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.ma-premium-value-surface",
+  "cssVar": "--vitae-color-program-ma-premium-value-surface",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.ma-premium-value-dark",
+  "cssVar": "--vitae-color-program-ma-premium-value-dark",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.program.ma-premium-value-dark-surface",
+  "cssVar": "--vitae-color-program-ma-premium-value-dark-surface",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.black-alpha.40",
+  "cssVar": "--vitae-color-black-alpha-40",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.black-alpha.60",
+  "cssVar": "--vitae-color-black-alpha-60",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "space.000",
+  "cssVar": "--vitae-space-000",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "space.002",
+  "cssVar": "--vitae-space-002",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "space.004",
+  "cssVar": "--vitae-space-004",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "space.006",
+  "cssVar": "--vitae-space-006",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "space.008",
+  "cssVar": "--vitae-space-008",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "space.010",
+  "cssVar": "--vitae-space-010",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "space.012",
+  "cssVar": "--vitae-space-012",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "space.016",
+  "cssVar": "--vitae-space-016",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "space.020",
+  "cssVar": "--vitae-space-020",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "space.024",
+  "cssVar": "--vitae-space-024",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "space.032",
+  "cssVar": "--vitae-space-032",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "space.040",
+  "cssVar": "--vitae-space-040",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "space.048",
+  "cssVar": "--vitae-space-048",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "space.064",
+  "cssVar": "--vitae-space-064",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "radius.0",
+  "cssVar": "--vitae-radius-0",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "radius.2",
+  "cssVar": "--vitae-radius-2",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "radius.3",
+  "cssVar": "--vitae-radius-3",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "radius.4",
+  "cssVar": "--vitae-radius-4",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "radius.6",
+  "cssVar": "--vitae-radius-6",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "radius.7",
+  "cssVar": "--vitae-radius-7",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "radius.8",
+  "cssVar": "--vitae-radius-8",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "radius.10",
+  "cssVar": "--vitae-radius-10",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "radius.12",
+  "cssVar": "--vitae-radius-12",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "radius.16",
+  "cssVar": "--vitae-radius-16",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "radius.full",
+  "cssVar": "--vitae-radius-full",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "border-width.1",
+  "cssVar": "--vitae-border-width-1",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "border-width.2",
+  "cssVar": "--vitae-border-width-2",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.size.12",
+  "cssVar": "--vitae-font-size-12",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.size.14",
+  "cssVar": "--vitae-font-size-14",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.size.16",
+  "cssVar": "--vitae-font-size-16",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.size.18",
+  "cssVar": "--vitae-font-size-18",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.size.20",
+  "cssVar": "--vitae-font-size-20",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.size.24",
+  "cssVar": "--vitae-font-size-24",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.size.36",
+  "cssVar": "--vitae-font-size-36",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.line-height.16",
+  "cssVar": "--vitae-font-line-height-16",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.line-height.18",
+  "cssVar": "--vitae-font-line-height-18",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.line-height.20",
+  "cssVar": "--vitae-font-line-height-20",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.line-height.21",
+  "cssVar": "--vitae-font-line-height-21",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.line-height.24",
+  "cssVar": "--vitae-font-line-height-24",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.line-height.27",
+  "cssVar": "--vitae-font-line-height-27",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.line-height.28",
+  "cssVar": "--vitae-font-line-height-28",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.line-height.36",
+  "cssVar": "--vitae-font-line-height-36",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.line-height.54",
+  "cssVar": "--vitae-font-line-height-54",
+  "type": "dimension",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.weight.regular",
+  "cssVar": "--vitae-font-weight-regular",
+  "type": "fontWeight",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.weight.semibold",
+  "cssVar": "--vitae-font-weight-semibold",
+  "type": "fontWeight",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.weight.bold",
+  "cssVar": "--vitae-font-weight-bold",
+  "type": "fontWeight",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.family.open-sans",
+  "cssVar": "--vitae-font-family-open-sans",
+  "type": "fontFamily",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "font.family.barlow",
+  "cssVar": "--vitae-font-family-barlow",
+  "type": "fontFamily",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "motion.duration.fast-01",
+  "cssVar": "--vitae-motion-duration-fast-01",
+  "type": "duration",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "motion.duration.fast-02",
+  "cssVar": "--vitae-motion-duration-fast-02",
+  "type": "duration",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "motion.duration.moderate-01",
+  "cssVar": "--vitae-motion-duration-moderate-01",
+  "type": "duration",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "motion.duration.moderate-02",
+  "cssVar": "--vitae-motion-duration-moderate-02",
+  "type": "duration",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "motion.duration.slow-01",
+  "cssVar": "--vitae-motion-duration-slow-01",
+  "type": "duration",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "motion.duration.slow-02",
+  "cssVar": "--vitae-motion-duration-slow-02",
+  "type": "duration",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "motion.easing.productive-standard",
+  "cssVar": "--vitae-motion-easing-productive-standard",
+  "type": "cubicBezier",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "motion.easing.productive-entrance",
+  "cssVar": "--vitae-motion-easing-productive-entrance",
+  "type": "cubicBezier",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "motion.easing.productive-exit",
+  "cssVar": "--vitae-motion-easing-productive-exit",
+  "type": "cubicBezier",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "motion.easing.expressive-standard",
+  "cssVar": "--vitae-motion-easing-expressive-standard",
+  "type": "cubicBezier",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "motion.easing.expressive-entrance",
+  "cssVar": "--vitae-motion-easing-expressive-entrance",
+  "type": "cubicBezier",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "motion.easing.expressive-exit",
+  "cssVar": "--vitae-motion-easing-expressive-exit",
+  "type": "cubicBezier",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "shadow.elevation-8",
+  "cssVar": "--vitae-shadow-elevation-8",
+  "type": "shadow",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "shadow.elevation-64",
+  "cssVar": "--vitae-shadow-elevation-64",
+  "type": "shadow",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "brand.primary.100",
+  "cssVar": "--vitae-brand-primary-100",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.110",
+  "cssVar": "--vitae-brand-primary-110",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.120",
+  "cssVar": "--vitae-brand-primary-120",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.130",
+  "cssVar": "--vitae-brand-primary-130",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.140",
+  "cssVar": "--vitae-brand-primary-140",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.150",
+  "cssVar": "--vitae-brand-primary-150",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.160",
+  "cssVar": "--vitae-brand-primary-160",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.170",
+  "cssVar": "--vitae-brand-primary-170",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.180",
+  "cssVar": "--vitae-brand-primary-180",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.190",
+  "cssVar": "--vitae-brand-primary-190",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.005",
+  "cssVar": "--vitae-brand-primary-005",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.010",
+  "cssVar": "--vitae-brand-primary-010",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.015",
+  "cssVar": "--vitae-brand-primary-015",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.020",
+  "cssVar": "--vitae-brand-primary-020",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.025",
+  "cssVar": "--vitae-brand-primary-025",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.030",
+  "cssVar": "--vitae-brand-primary-030",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.035",
+  "cssVar": "--vitae-brand-primary-035",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.040",
+  "cssVar": "--vitae-brand-primary-040",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.050",
+  "cssVar": "--vitae-brand-primary-050",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.060",
+  "cssVar": "--vitae-brand-primary-060",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.070",
+  "cssVar": "--vitae-brand-primary-070",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.080",
+  "cssVar": "--vitae-brand-primary-080",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.primary.090",
+  "cssVar": "--vitae-brand-primary-090",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.100",
+  "cssVar": "--vitae-brand-secondary-100",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.110",
+  "cssVar": "--vitae-brand-secondary-110",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.120",
+  "cssVar": "--vitae-brand-secondary-120",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.130",
+  "cssVar": "--vitae-brand-secondary-130",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.140",
+  "cssVar": "--vitae-brand-secondary-140",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.150",
+  "cssVar": "--vitae-brand-secondary-150",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.160",
+  "cssVar": "--vitae-brand-secondary-160",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.170",
+  "cssVar": "--vitae-brand-secondary-170",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.180",
+  "cssVar": "--vitae-brand-secondary-180",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.190",
+  "cssVar": "--vitae-brand-secondary-190",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.005",
+  "cssVar": "--vitae-brand-secondary-005",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.010",
+  "cssVar": "--vitae-brand-secondary-010",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.015",
+  "cssVar": "--vitae-brand-secondary-015",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.020",
+  "cssVar": "--vitae-brand-secondary-020",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.025",
+  "cssVar": "--vitae-brand-secondary-025",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.030",
+  "cssVar": "--vitae-brand-secondary-030",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.035",
+  "cssVar": "--vitae-brand-secondary-035",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.040",
+  "cssVar": "--vitae-brand-secondary-040",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.050",
+  "cssVar": "--vitae-brand-secondary-050",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.060",
+  "cssVar": "--vitae-brand-secondary-060",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.070",
+  "cssVar": "--vitae-brand-secondary-070",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.080",
+  "cssVar": "--vitae-brand-secondary-080",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.secondary.090",
+  "cssVar": "--vitae-brand-secondary-090",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.100",
+  "cssVar": "--vitae-brand-tertiary-100",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.110",
+  "cssVar": "--vitae-brand-tertiary-110",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.120",
+  "cssVar": "--vitae-brand-tertiary-120",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.130",
+  "cssVar": "--vitae-brand-tertiary-130",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.140",
+  "cssVar": "--vitae-brand-tertiary-140",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.150",
+  "cssVar": "--vitae-brand-tertiary-150",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.160",
+  "cssVar": "--vitae-brand-tertiary-160",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.170",
+  "cssVar": "--vitae-brand-tertiary-170",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.180",
+  "cssVar": "--vitae-brand-tertiary-180",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.190",
+  "cssVar": "--vitae-brand-tertiary-190",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.005",
+  "cssVar": "--vitae-brand-tertiary-005",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.010",
+  "cssVar": "--vitae-brand-tertiary-010",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.015",
+  "cssVar": "--vitae-brand-tertiary-015",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.020",
+  "cssVar": "--vitae-brand-tertiary-020",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.025",
+  "cssVar": "--vitae-brand-tertiary-025",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.030",
+  "cssVar": "--vitae-brand-tertiary-030",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.035",
+  "cssVar": "--vitae-brand-tertiary-035",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.040",
+  "cssVar": "--vitae-brand-tertiary-040",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.050",
+  "cssVar": "--vitae-brand-tertiary-050",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.060",
+  "cssVar": "--vitae-brand-tertiary-060",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.070",
+  "cssVar": "--vitae-brand-tertiary-070",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.080",
+  "cssVar": "--vitae-brand-tertiary-080",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.tertiary.090",
+  "cssVar": "--vitae-brand-tertiary-090",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.text.heading-light",
+  "cssVar": "--vitae-brand-text-heading-light",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.text.body-light",
+  "cssVar": "--vitae-brand-text-body-light",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.action-primary",
+  "cssVar": "--vitae-brand-dark-action-primary",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.action-primary-hover",
+  "cssVar": "--vitae-brand-dark-action-primary-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.action-primary-active",
+  "cssVar": "--vitae-brand-dark-action-primary-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.action-secondary",
+  "cssVar": "--vitae-brand-dark-action-secondary",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.action-secondary-hover",
+  "cssVar": "--vitae-brand-dark-action-secondary-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.action-secondary-active",
+  "cssVar": "--vitae-brand-dark-action-secondary-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.action-tertiary",
+  "cssVar": "--vitae-brand-dark-action-tertiary",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.action-tertiary-hover",
+  "cssVar": "--vitae-brand-dark-action-tertiary-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.action-tertiary-active",
+  "cssVar": "--vitae-brand-dark-action-tertiary-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.on-primary",
+  "cssVar": "--vitae-brand-dark-on-primary",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.on-secondary",
+  "cssVar": "--vitae-brand-dark-on-secondary",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.on-tertiary",
+  "cssVar": "--vitae-brand-dark-on-tertiary",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.outline-primary-text",
+  "cssVar": "--vitae-brand-dark-outline-primary-text",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.outline-primary-text-hover",
+  "cssVar": "--vitae-brand-dark-outline-primary-text-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.outline-primary-text-active",
+  "cssVar": "--vitae-brand-dark-outline-primary-text-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.outline-secondary-text",
+  "cssVar": "--vitae-brand-dark-outline-secondary-text",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.outline-secondary-text-hover",
+  "cssVar": "--vitae-brand-dark-outline-secondary-text-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.outline-secondary-text-active",
+  "cssVar": "--vitae-brand-dark-outline-secondary-text-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.outline-tertiary-text",
+  "cssVar": "--vitae-brand-dark-outline-tertiary-text",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.outline-tertiary-text-hover",
+  "cssVar": "--vitae-brand-dark-outline-tertiary-text-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.outline-tertiary-text-active",
+  "cssVar": "--vitae-brand-dark-outline-tertiary-text-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.subtle-primary-hover",
+  "cssVar": "--vitae-brand-dark-subtle-primary-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.subtle-primary-active",
+  "cssVar": "--vitae-brand-dark-subtle-primary-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.subtle-secondary-hover",
+  "cssVar": "--vitae-brand-dark-subtle-secondary-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.subtle-secondary-active",
+  "cssVar": "--vitae-brand-dark-subtle-secondary-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.subtle-tertiary-hover",
+  "cssVar": "--vitae-brand-dark-subtle-tertiary-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.subtle-tertiary-active",
+  "cssVar": "--vitae-brand-dark-subtle-tertiary-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.field-border",
+  "cssVar": "--vitae-brand-dark-field-border",
+  "type": "color",
+  "description": "Field border at rest: 20% OKLab blend from the grey rest border (neutral 090) toward the active border (primary 030).",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.field-border-hover",
+  "cssVar": "--vitae-brand-dark-field-border-hover",
+  "type": "color",
+  "description": "Field border on hover: 60% OKLab blend from the grey rest border (neutral 090) toward the active border (primary 030).",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.nav-accent",
+  "cssVar": "--vitae-brand-dark-nav-accent",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.nav-rule",
+  "cssVar": "--vitae-brand-dark-nav-rule",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.nav-bar",
+  "cssVar": "--vitae-brand-dark-nav-bar",
+  "type": "color",
+  "description": "Dark-mode nav bar: deep brand shade so it doesn't outshine the page (DC secondary 170, EA/MA/ME primary 150; decided 10/20/26).",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.nav-admin-bar",
+  "cssVar": "--vitae-brand-dark-nav-admin-bar",
+  "type": "color",
+  "description": "Dark-mode Broker/Admin nav bar (DC secondary 170, EA/MA/ME primary 150; decided 10/20/26).",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.nav-admin-text",
+  "cssVar": "--vitae-brand-dark-nav-admin-text",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.footer-bg",
+  "cssVar": "--vitae-brand-dark-footer-bg",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.footer-lang-bg",
+  "cssVar": "--vitae-brand-dark-footer-lang-bg",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.footer-pill",
+  "cssVar": "--vitae-brand-dark-footer-pill",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.nav-drawer",
+  "cssVar": "--vitae-brand-dark-nav-drawer",
+  "type": "color",
+  "description": "Dark mobile drawer surface (DC one step lighter at 150).",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.progress-upcoming",
+  "cssVar": "--vitae-brand-dark-progress-upcoming",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.font.family",
+  "cssVar": "--vitae-brand-font-family",
+  "type": "fontFamily",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.radius.button",
+  "cssVar": "--vitae-brand-radius-button",
+  "type": "dimension",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.radius.card",
+  "cssVar": "--vitae-brand-radius-card",
+  "type": "dimension",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.radius.focus-ring",
+  "cssVar": "--vitae-brand-radius-focus-ring",
+  "type": "dimension",
+  "description": "Button radius + 4px so the focus ring (2px offset + 2px stroke) runs parallel to the button corner.",
+  "source": "brand"
+ },
+ {
+  "path": "brand.radius.card-focus-ring",
+  "cssVar": "--vitae-brand-radius-card-focus-ring",
+  "type": "dimension",
+  "description": "Focus ring around cards: card radius + 4 (12px for all clients).",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.outline-primary-text",
+  "cssVar": "--vitae-brand-light-outline-primary-text",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.outline-primary-text-hover",
+  "cssVar": "--vitae-brand-light-outline-primary-text-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.outline-primary-text-active",
+  "cssVar": "--vitae-brand-light-outline-primary-text-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.outline-secondary-text",
+  "cssVar": "--vitae-brand-light-outline-secondary-text",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.outline-secondary-text-hover",
+  "cssVar": "--vitae-brand-light-outline-secondary-text-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.outline-secondary-text-active",
+  "cssVar": "--vitae-brand-light-outline-secondary-text-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.outline-tertiary-text",
+  "cssVar": "--vitae-brand-light-outline-tertiary-text",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.outline-tertiary-text-hover",
+  "cssVar": "--vitae-brand-light-outline-tertiary-text-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.outline-tertiary-text-active",
+  "cssVar": "--vitae-brand-light-outline-tertiary-text-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.field-border",
+  "cssVar": "--vitae-brand-light-field-border",
+  "type": "color",
+  "description": "Field border at rest: 20% OKLab blend from the grey rest border (neutral 120) toward the active border (primary 100).",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.field-border-hover",
+  "cssVar": "--vitae-brand-light-field-border-hover",
+  "type": "color",
+  "description": "Field border on hover: 60% OKLab blend from the grey rest border (neutral 120) toward the active border (primary 100).",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.nav-accent",
+  "cssVar": "--vitae-brand-light-nav-accent",
+  "type": "color",
+  "description": "Header role label, links and role icon. DC changed from secondary 100 to primary 100 (dark blue) 10/21/26.",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.nav-rule",
+  "cssVar": "--vitae-brand-light-nav-rule",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.nav-bar",
+  "cssVar": "--vitae-brand-light-nav-bar",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.nav-admin-bar",
+  "cssVar": "--vitae-brand-light-nav-admin-bar",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.nav-admin-text",
+  "cssVar": "--vitae-brand-light-nav-admin-text",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.footer-bg",
+  "cssVar": "--vitae-brand-light-footer-bg",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.footer-lang-bg",
+  "cssVar": "--vitae-brand-light-footer-lang-bg",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.footer-pill",
+  "cssVar": "--vitae-brand-light-footer-pill",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.progress-upcoming",
+  "cssVar": "--vitae-brand-light-progress-upcoming",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "progress.connector-gapped",
+  "cssVar": "--vitae-progress-connector-gapped",
+  "type": "boolean",
+  "description": "Progress step connectors stop short of each marker (4px gap, rounded ends). EA, MA, ME.",
+  "source": "brand"
+ },
+ {
+  "path": "progress.connector-continuous",
+  "cssVar": "--vitae-progress-connector-continuous",
+  "type": "boolean",
+  "description": "Progress step connectors run through each marker. DC.",
+  "source": "brand"
+ },
+ {
+  "path": "progress.current-center-dot",
+  "cssVar": "--vitae-progress-current-center-dot",
+  "type": "boolean",
+  "description": "Current step marker shows a center dot inside the ring. Off for all clients (open ring); kept as a switch.",
+  "source": "brand"
+ },
+ {
+  "path": "filter.show-healthy-dc-plan",
+  "cssVar": "--vitae-filter-show-healthy-dc-plan",
+  "type": "boolean",
+  "description": "Show the \"Healthy DC Plan\" plan-feature filter. DC only.",
+  "source": "brand"
+ },
+ {
+  "path": "filter.show-essential-plan",
+  "cssVar": "--vitae-filter-show-essential-plan",
+  "type": "boolean",
+  "description": "Show the \"Essential Plan\" plan-feature filter. DC only.",
+  "source": "brand"
+ },
+ {
+  "path": "filter.show-clear-choice-plan",
+  "cssVar": "--vitae-filter-show-clear-choice-plan",
+  "type": "boolean",
+  "description": "Show the \"Clear Choice Plan\" plan-feature filter. ME only.",
+  "source": "brand"
+ },
+ {
+  "path": "filter.network-local",
+  "cssVar": "--vitae-filter-network-local",
+  "type": "string",
+  "description": "Label of the in-state option in the Network filter. EA and MA values are placeholders.",
+  "source": "brand"
+ },
+ {
+  "path": "fieldset.address-line-1-label",
+  "cssVar": "--vitae-fieldset-address-line-1-label",
+  "type": "string",
+  "description": "Label for Address line 1. DC asks for the quadrant.",
+  "source": "brand"
+ },
+ {
+  "path": "fieldset.show-county",
+  "cssVar": "--vitae-fieldset-show-county",
+  "type": "boolean",
+  "description": "Show the County field in the address field-set. ME only.",
+  "source": "brand"
+ },
+ {
+  "path": "login.show-official-banner",
+  "cssVar": "--vitae-login-show-official-banner",
+  "type": "boolean",
+  "description": "Show the official-website banner above the header. MA only (matches mass.gov).",
+  "source": "brand"
+ },
+ {
+  "path": "login.official-banner-text",
+  "cssVar": "--vitae-login-official-banner-text",
+  "type": "string",
+  "description": "Official-website banner text. Only MA shows the banner; other values kept in case a client adopts one.",
+  "source": "brand"
+ },
+ {
+  "path": "login.official-domain-title",
+  "cssVar": "--vitae-login-official-domain-title",
+  "type": "string",
+  "description": "Official-website banner, expanded panel: domain heading.",
+  "source": "brand"
+ },
+ {
+  "path": "login.official-domain-text",
+  "cssVar": "--vitae-login-official-domain-text",
+  "type": "string",
+  "description": "Official-website banner, expanded panel: domain explanation.",
+  "source": "brand"
+ },
+ {
+  "path": "login.show-system-notice",
+  "cssVar": "--vitae-login-show-system-notice",
+  "type": "boolean",
+  "description": "Show the system-use notice under the sign-in form. DC only.",
+  "source": "brand"
+ },
+ {
+  "path": "login.help-phone",
+  "cssVar": "--vitae-login-help-phone",
+  "type": "string",
+  "description": "Customer service phone shown on the sign-in card. EA is a placeholder.",
+  "source": "brand"
+ },
+ {
+  "path": "login.help-phone-tel",
+  "cssVar": "--vitae-login-help-phone-tel",
+  "type": "string",
+  "description": "Customer service number for tel: links (href=\"tel:<value>\"), E.164 format. Pairs with login.help-phone. EA is a placeholder.",
+  "source": "brand"
+ },
+ {
+  "path": "background.page",
+  "cssVar": "--vitae-background-page",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "background.layer-01",
+  "cssVar": "--vitae-background-layer-01",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "background.layer-02",
+  "cssVar": "--vitae-background-layer-02",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "background.layer-03",
+  "cssVar": "--vitae-background-layer-03",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "background.layer-hover",
+  "cssVar": "--vitae-background-layer-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "background.selected",
+  "cssVar": "--vitae-background-selected",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "background.brand",
+  "cssVar": "--vitae-background-brand",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "background.brand-subtle",
+  "cssVar": "--vitae-background-brand-subtle",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "background.disabled",
+  "cssVar": "--vitae-background-disabled",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "background.overlay",
+  "cssVar": "--vitae-background-overlay",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "field.background",
+  "cssVar": "--vitae-field-background",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "field.background-active",
+  "cssVar": "--vitae-field-background-active",
+  "type": "color",
+  "description": "Field background while clicked into / typing, and under the keyboard focus ring.",
+  "source": "semantic"
+ },
+ {
+  "path": "field.border",
+  "cssVar": "--vitae-field-border",
+  "type": "color",
+  "description": "Rest: mostly grey, 20% tint of the active border.",
+  "source": "semantic"
+ },
+ {
+  "path": "field.border-hover",
+  "cssVar": "--vitae-field-border-hover",
+  "type": "color",
+  "description": "Hover: 60% of the way from rest grey to the active border.",
+  "source": "semantic"
+ },
+ {
+  "path": "field.border-active",
+  "cssVar": "--vitae-field-border-active",
+  "type": "color",
+  "description": "Clicked into / typing, and under the keyboard focus ring. Same as border.focus.",
+  "source": "semantic"
+ },
+ {
+  "path": "field.border-disabled",
+  "cssVar": "--vitae-field-border-disabled",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "border.subtle",
+  "cssVar": "--vitae-border-subtle",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "border.strong",
+  "cssVar": "--vitae-border-strong",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "border.brand",
+  "cssVar": "--vitae-border-brand",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "border.focus",
+  "cssVar": "--vitae-border-focus",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "border.focus-ring",
+  "cssVar": "--vitae-border-focus-ring",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "text.heading",
+  "cssVar": "--vitae-text-heading",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "text.body",
+  "cssVar": "--vitae-text-body",
+  "type": "color",
+  "description": "Body text: paragraphs, table cells, checkbox/radio labels, field values. Neutral in every client so brand color is reserved for links, actions and headings (changed 10/21/26; was brand-tinted).",
+  "source": "semantic"
+ },
+ {
+  "path": "text.secondary",
+  "cssVar": "--vitae-text-secondary",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "text.placeholder",
+  "cssVar": "--vitae-text-placeholder",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "text.disabled",
+  "cssVar": "--vitae-text-disabled",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "text.on-brand",
+  "cssVar": "--vitae-text-on-brand",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "text.error",
+  "cssVar": "--vitae-text-error",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "text.link",
+  "cssVar": "--vitae-text-link",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "text.link-hover",
+  "cssVar": "--vitae-text-link-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "text.link-active",
+  "cssVar": "--vitae-text-link-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "text.on-primary",
+  "cssVar": "--vitae-text-on-primary",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "text.on-secondary",
+  "cssVar": "--vitae-text-on-secondary",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "text.on-tertiary",
+  "cssVar": "--vitae-text-on-tertiary",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "icon.primary",
+  "cssVar": "--vitae-icon-primary",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "icon.secondary",
+  "cssVar": "--vitae-icon-secondary",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "icon.brand",
+  "cssVar": "--vitae-icon-brand",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.primary",
+  "cssVar": "--vitae-action-primary",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.primary-hover",
+  "cssVar": "--vitae-action-primary-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.primary-active",
+  "cssVar": "--vitae-action-primary-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.secondary",
+  "cssVar": "--vitae-action-secondary",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.secondary-hover",
+  "cssVar": "--vitae-action-secondary-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.secondary-active",
+  "cssVar": "--vitae-action-secondary-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.tertiary",
+  "cssVar": "--vitae-action-tertiary",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.tertiary-hover",
+  "cssVar": "--vitae-action-tertiary-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.tertiary-active",
+  "cssVar": "--vitae-action-tertiary-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.destructive",
+  "cssVar": "--vitae-action-destructive",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.destructive-hover",
+  "cssVar": "--vitae-action-destructive-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.destructive-active",
+  "cssVar": "--vitae-action-destructive-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.disabled",
+  "cssVar": "--vitae-action-disabled",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.primary-text",
+  "cssVar": "--vitae-action-primary-text",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.primary-text-hover",
+  "cssVar": "--vitae-action-primary-text-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.primary-text-active",
+  "cssVar": "--vitae-action-primary-text-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.primary-subtle-hover",
+  "cssVar": "--vitae-action-primary-subtle-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.primary-subtle-active",
+  "cssVar": "--vitae-action-primary-subtle-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.secondary-text",
+  "cssVar": "--vitae-action-secondary-text",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.secondary-text-hover",
+  "cssVar": "--vitae-action-secondary-text-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.secondary-text-active",
+  "cssVar": "--vitae-action-secondary-text-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.secondary-subtle-hover",
+  "cssVar": "--vitae-action-secondary-subtle-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.secondary-subtle-active",
+  "cssVar": "--vitae-action-secondary-subtle-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.tertiary-text",
+  "cssVar": "--vitae-action-tertiary-text",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.tertiary-text-hover",
+  "cssVar": "--vitae-action-tertiary-text-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.tertiary-text-active",
+  "cssVar": "--vitae-action-tertiary-text-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.tertiary-subtle-hover",
+  "cssVar": "--vitae-action-tertiary-subtle-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.tertiary-subtle-active",
+  "cssVar": "--vitae-action-tertiary-subtle-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.destructive-text",
+  "cssVar": "--vitae-action-destructive-text",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.destructive-text-hover",
+  "cssVar": "--vitae-action-destructive-text-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.destructive-text-active",
+  "cssVar": "--vitae-action-destructive-text-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.destructive-subtle-hover",
+  "cssVar": "--vitae-action-destructive-subtle-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.destructive-subtle-active",
+  "cssVar": "--vitae-action-destructive-subtle-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "support.info",
+  "cssVar": "--vitae-support-info",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "support.success",
+  "cssVar": "--vitae-support-success",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "support.warning",
+  "cssVar": "--vitae-support-warning",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "support.error",
+  "cssVar": "--vitae-support-error",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "support.info-surface",
+  "cssVar": "--vitae-support-info-surface",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "support.success-surface",
+  "cssVar": "--vitae-support-success-surface",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "support.warning-surface",
+  "cssVar": "--vitae-support-warning-surface",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "support.error-surface",
+  "cssVar": "--vitae-support-error-surface",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "support.warning-border",
+  "cssVar": "--vitae-support-warning-border",
+  "type": "color",
+  "description": "Warning alert and tag border. Light: warning/100 (bright amber; decorative, the two-tone icon and text carry the meaning). Dark: warning/080.",
+  "source": "semantic"
+ },
+ {
+  "path": "support.info-border",
+  "cssVar": "--vitae-support-info-border",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "support.success-border",
+  "cssVar": "--vitae-support-success-border",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "support.error-border",
+  "cssVar": "--vitae-support-error-border",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "support.warning-icon-fill",
+  "cssVar": "--vitae-support-warning-icon-fill",
+  "type": "color",
+  "description": "Two-tone warning icon: triangle fill. Same in light and dark.",
+  "source": "semantic"
+ },
+ {
+  "path": "support.warning-icon-ink",
+  "cssVar": "--vitae-support-warning-icon-ink",
+  "type": "color",
+  "description": "Two-tone warning icon: exclamation mark (and the outline in light mode). 16:1 on white.",
+  "source": "semantic"
+ },
+ {
+  "path": "support.warning-icon-outline-color",
+  "cssVar": "--vitae-support-warning-icon-outline-color",
+  "type": "color",
+  "description": "Two-tone warning icon: 1px outline around the triangle. Dark outline in light mode; matches the fill in dark mode (same footprint, no visible outline).",
+  "source": "semantic"
+ },
+ {
+  "path": "program.dc-healthy-surface",
+  "cssVar": "--vitae-program-dc-healthy-surface",
+  "type": "color",
+  "description": "DC only — Healthy DC Plan tag background.",
+  "source": "semantic"
+ },
+ {
+  "path": "program.dc-healthy-border",
+  "cssVar": "--vitae-program-dc-healthy-border",
+  "type": "color",
+  "description": "DC only — Healthy DC Plan tag border and icon.",
+  "source": "semantic"
+ },
+ {
+  "path": "program.me-clear-choice-surface",
+  "cssVar": "--vitae-program-me-clear-choice-surface",
+  "type": "color",
+  "description": "ME only — Clear Choice Plan tag background.",
+  "source": "semantic"
+ },
+ {
+  "path": "program.me-clear-choice-border",
+  "cssVar": "--vitae-program-me-clear-choice-border",
+  "type": "color",
+  "description": "ME only — Clear Choice Plan tag border and icon.",
+  "source": "semantic"
+ },
+ {
+  "path": "program.dc-essential-surface",
+  "cssVar": "--vitae-program-dc-essential-surface",
+  "type": "color",
+  "description": "DC only — Essential Plan tag.",
+  "source": "semantic"
+ },
+ {
+  "path": "program.dc-essential-border",
+  "cssVar": "--vitae-program-dc-essential-border",
+  "type": "color",
+  "description": "DC only — Essential Plan tag.",
+  "source": "semantic"
+ },
+ {
+  "path": "program.dc-essential-icon",
+  "cssVar": "--vitae-program-dc-essential-icon",
+  "type": "color",
+  "description": "DC only — Essential Plan tag bookmark icon.",
+  "source": "semantic"
+ },
+ {
+  "path": "program.me-current-plan-surface",
+  "cssVar": "--vitae-program-me-current-plan-surface",
+  "type": "color",
+  "description": "ME only — Your current plan tag.",
+  "source": "semantic"
+ },
+ {
+  "path": "program.me-current-plan-border",
+  "cssVar": "--vitae-program-me-current-plan-border",
+  "type": "color",
+  "description": "ME only — Your current plan tag.",
+  "source": "semantic"
+ },
+ {
+  "path": "program.ma-premium-value-surface",
+  "cssVar": "--vitae-program-ma-premium-value-surface",
+  "type": "color",
+  "description": "MA only — Premium Value Plan tag.",
+  "source": "semantic"
+ },
+ {
+  "path": "program.ma-premium-value",
+  "cssVar": "--vitae-program-ma-premium-value",
+  "type": "color",
+  "description": "MA only — Premium Value Plan tag border, icon and label.",
+  "source": "semantic"
+ },
+ {
+  "path": "nav.accent",
+  "cssVar": "--vitae-nav-accent",
+  "type": "color",
+  "description": "Header accent rule and active top-nav indicator.",
+  "source": "semantic"
+ },
+ {
+  "path": "nav.rule",
+  "cssVar": "--vitae-nav-rule",
+  "type": "color",
+  "description": "Rule under the header.",
+  "source": "semantic"
+ },
+ {
+  "path": "nav.bar",
+  "cssVar": "--vitae-nav-bar",
+  "type": "color",
+  "description": "Consumer nav bar background.",
+  "source": "semantic"
+ },
+ {
+  "path": "nav.admin-bar",
+  "cssVar": "--vitae-nav-admin-bar",
+  "type": "color",
+  "description": "Broker/Admin nav bar background.",
+  "source": "semantic"
+ },
+ {
+  "path": "nav.admin-text",
+  "cssVar": "--vitae-nav-admin-text",
+  "type": "color",
+  "description": "Text on the Broker/Admin nav bar.",
+  "source": "semantic"
+ },
+ {
+  "path": "nav.bar-text",
+  "cssVar": "--vitae-nav-bar-text",
+  "type": "color",
+  "description": "Text on the consumer nav bar.",
+  "source": "semantic"
+ },
+ {
+  "path": "nav.badge",
+  "cssVar": "--vitae-nav-badge",
+  "type": "color",
+  "description": "Count badges in the header (cart, mail) and Left nav.",
+  "source": "semantic"
+ },
+ {
+  "path": "nav.badge-text",
+  "cssVar": "--vitae-nav-badge-text",
+  "type": "color",
+  "description": "Text on nav/badge.",
+  "source": "semantic"
+ },
+ {
+  "path": "nav.drawer",
+  "cssVar": "--vitae-nav-drawer",
+  "type": "color",
+  "description": "Mobile header drawer surface, one step off the header.",
+  "source": "semantic"
+ },
+ {
+  "path": "nav.item-hover",
+  "cssVar": "--vitae-nav-item-hover",
+  "type": "color",
+  "description": "Left nav item hover fill (plus a 2px action.primary bar at 40%).",
+  "source": "semantic"
+ },
+ {
+  "path": "nav.item-pressed",
+  "cssVar": "--vitae-nav-item-pressed",
+  "type": "color",
+  "description": "Left nav item pressed fill (plus a 2px action.primary bar at 70%).",
+  "source": "semantic"
+ },
+ {
+  "path": "nav.item-selected",
+  "cssVar": "--vitae-nav-item-selected",
+  "type": "color",
+  "description": "Left nav selected row fill and mobile nav toggle background.",
+  "source": "semantic"
+ },
+ {
+  "path": "nav.panel",
+  "cssVar": "--vitae-nav-panel",
+  "type": "color",
+  "description": "Mobile nav overlay panels (Left nav, Progress). Dark is one step above the page.",
+  "source": "semantic"
+ },
+ {
+  "path": "footer.bg",
+  "cssVar": "--vitae-footer-bg",
+  "type": "color",
+  "description": "Footer background.",
+  "source": "semantic"
+ },
+ {
+  "path": "footer.lang-bg",
+  "cssVar": "--vitae-footer-lang-bg",
+  "type": "color",
+  "description": "Footer language row background (off by default).",
+  "source": "semantic"
+ },
+ {
+  "path": "footer.pill",
+  "cssVar": "--vitae-footer-pill",
+  "type": "color",
+  "description": "Footer help pill (styling currently unused; kept for the language row).",
+  "source": "semantic"
+ },
+ {
+  "path": "logo.show-color",
+  "cssVar": "--vitae-logo-show-color",
+  "type": "boolean",
+  "description": "Logo switch: full-color logo on light surfaces, all-white logo in dark mode (no client logo reaches 4.5:1 on the dark header).",
+  "source": "semantic"
+ },
+ {
+  "path": "logo.show-white",
+  "cssVar": "--vitae-logo-show-white",
+  "type": "boolean",
+  "description": "Logo switch: the inverse of logo.show-color.",
+  "source": "semantic"
+ },
+ {
+  "path": "progress.upcoming",
+  "cssVar": "--vitae-progress-upcoming",
+  "type": "color",
+  "description": "Progress connectors, upcoming markers and the remaining Progress line; always used at 40% opacity. EA/MA/ME: action.primary. DC: neutral gray.",
+  "source": "semantic"
+ },
+ {
+  "path": "metal.bronze",
+  "cssVar": "--vitae-metal-bronze",
+  "type": "color",
+  "description": "Bronze metal badge fill (same in light and dark).",
+  "source": "semantic"
+ },
+ {
+  "path": "metal.bronze-text",
+  "cssVar": "--vitae-metal-bronze-text",
+  "type": "color",
+  "description": "Text on the bronze badge (black; passes 4.5:1).",
+  "source": "semantic"
+ },
+ {
+  "path": "metal.bronze-border",
+  "cssVar": "--vitae-metal-bronze-border",
+  "type": "color",
+  "description": "Bronze badge border, a darker shade of the fill.",
+  "source": "semantic"
+ },
+ {
+  "path": "metal.silver",
+  "cssVar": "--vitae-metal-silver",
+  "type": "color",
+  "description": "Silver metal badge fill (same in light and dark).",
+  "source": "semantic"
+ },
+ {
+  "path": "metal.silver-text",
+  "cssVar": "--vitae-metal-silver-text",
+  "type": "color",
+  "description": "Text on the silver badge (black; passes 4.5:1).",
+  "source": "semantic"
+ },
+ {
+  "path": "metal.silver-border",
+  "cssVar": "--vitae-metal-silver-border",
+  "type": "color",
+  "description": "Silver badge border, a darker shade of the fill.",
+  "source": "semantic"
+ },
+ {
+  "path": "metal.gold",
+  "cssVar": "--vitae-metal-gold",
+  "type": "color",
+  "description": "Gold metal badge fill (same in light and dark).",
+  "source": "semantic"
+ },
+ {
+  "path": "metal.gold-text",
+  "cssVar": "--vitae-metal-gold-text",
+  "type": "color",
+  "description": "Text on the gold badge (black; passes 4.5:1).",
+  "source": "semantic"
+ },
+ {
+  "path": "metal.gold-border",
+  "cssVar": "--vitae-metal-gold-border",
+  "type": "color",
+  "description": "Gold badge border, a darker shade of the fill.",
+  "source": "semantic"
+ },
+ {
+  "path": "metal.platinum",
+  "cssVar": "--vitae-metal-platinum",
+  "type": "color",
+  "description": "Platinum metal badge fill (same in light and dark).",
+  "source": "semantic"
+ },
+ {
+  "path": "metal.platinum-text",
+  "cssVar": "--vitae-metal-platinum-text",
+  "type": "color",
+  "description": "Text on the platinum badge (white; passes 4.5:1).",
+  "source": "semantic"
+ },
+ {
+  "path": "metal.platinum-border",
+  "cssVar": "--vitae-metal-platinum-border",
+  "type": "color",
+  "description": "Platinum badge border, a darker shade of the fill.",
+  "source": "semantic"
+ },
+ {
+  "path": "metal.catastrophic",
+  "cssVar": "--vitae-metal-catastrophic",
+  "type": "color",
+  "description": "Catastrophic metal badge fill (same in light and dark).",
+  "source": "semantic"
+ },
+ {
+  "path": "metal.catastrophic-text",
+  "cssVar": "--vitae-metal-catastrophic-text",
+  "type": "color",
+  "description": "Text on the catastrophic badge (white; passes 4.5:1).",
+  "source": "semantic"
+ },
+ {
+  "path": "metal.catastrophic-border",
+  "cssVar": "--vitae-metal-catastrophic-border",
+  "type": "color",
+  "description": "Catastrophic badge border, a darker shade of the fill.",
+  "source": "semantic"
+ },
+ {
+  "path": "card.surface",
+  "cssVar": "--vitae-card-surface",
+  "type": "color",
+  "description": "Card background. Dark is a neutral lift so brand color is reserved for the selected state.",
+  "source": "semantic"
+ },
+ {
+  "path": "table.row-hover",
+  "cssVar": "--vitae-table-row-hover",
+  "type": "color",
+  "description": "Hover on interactive table rows.",
+  "source": "semantic"
+ },
+ {
+  "path": "table.row-selected",
+  "cssVar": "--vitae-table-row-selected",
+  "type": "color",
+  "description": "Selected (checked) table rows.",
+  "source": "semantic"
+ },
+ {
+  "path": "surface.header-bar",
+  "cssVar": "--vitae-surface-header-bar",
+  "type": "color",
+  "description": "Header strip at the top of a card-like item, e.g. the Plan tile header bar; also Compare section rows and the Compare tray (10/21/26). Neutral so it never reads as selected. Renamed from table.header-bg 10/21/26; tables no longer use a header fill.",
+  "source": "semantic"
+ },
+ {
+  "path": "alert.text",
+  "cssVar": "--vitae-alert-text",
+  "type": "color",
+  "description": "Title and message text inside alerts (all types). Light: neutral/150, a dark grey separate from body copy. Dark: white, so no brand tint shows on warning or success messages.",
+  "source": "semantic"
+ }
+]

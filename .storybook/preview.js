@@ -1,4 +1,5 @@
 import './tokens.css';
+import '../dist/v2/css/vitae.css';
 
 /**
  * Design-source badge. Every story declares `parameters.design`: one source or a list,
@@ -43,7 +44,11 @@ const withSource = (storyFn, ctx) => {
 /** Theme switcher: sets data-theme on the story root */
 const withTheme = (storyFn, context) => {
   const theme = context.globals.theme || 'ea';
+  const mode = context.globals.mode || 'light';
   document.documentElement.setAttribute('data-theme', theme);
+  // Vitae 27 (tokens-v2) reads data-client + data-mode.
+  document.documentElement.setAttribute('data-client', theme);
+  document.documentElement.setAttribute('data-mode', mode);
   const root = storyFn();
   if (typeof root === 'string') {
     return `<div data-theme="${theme}" style="font-family: var(--ea-font-family-brand); color: var(--ea-color-text-primary);">${root}</div>`;
@@ -69,8 +74,20 @@ export default {
         dynamicTitle: true,
       },
     },
+    mode: {
+      description: 'Light or dark mode (Vitae 27 stories)',
+      toolbar: {
+        title: 'Mode',
+        icon: 'mirror',
+        items: [
+          { value: 'light', title: 'Light' },
+          { value: 'dark', title: 'Dark' },
+        ],
+        dynamicTitle: true,
+      },
+    },
   },
-  initialGlobals: { theme: 'ea' },
+  initialGlobals: { theme: 'ea', mode: 'light' },
   parameters: {
     backgrounds: { disable: true },
   },
