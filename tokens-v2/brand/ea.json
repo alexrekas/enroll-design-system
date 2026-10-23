@@ -655,5 +655,78 @@
       "$type": "string",
       "$description": "Customer service number for tel: links (href=\"tel:<value>\"), E.164 format. Pairs with login.help-phone. EA is a placeholder."
     }
+  },
+  "client": {
+    "is-ea": {
+      "$value": true,
+      "$type": "boolean",
+      "$description": "True only for EA. Shows EA-only layers (logo, footer help) so header and footer follow the page's client."
+    },
+    "is-dc": {
+      "$value": false,
+      "$type": "boolean",
+      "$description": "True only for DC. Shows DC-only layers (logo, footer help) so header and footer follow the page's client."
+    },
+    "is-ma": {
+      "$value": false,
+      "$type": "boolean",
+      "$description": "True only for MA. Shows MA-only layers (logo, footer help) so header and footer follow the page's client."
+    },
+    "is-me": {
+      "$value": false,
+      "$type": "boolean",
+      "$description": "True only for ME. Shows ME-only layers (logo, footer help) so header and footer follow the page's client."
+    },
+    "tagline": {
+      "$value": "IdeaCrew’s State Based Marketplace",
+      "$type": "string",
+      "$description": "Marketplace tagline (mobile drawer)."
+    }
+  },
+  "header": {
+    "brand-gap": {
+      "$value": "{space.012}",
+      "$type": "dimension",
+      "$description": "Gap between logo, divider and portal name in the header."
+    },
+    "show-employee-portal": {
+      "$value": true,
+      "$type": "boolean",
+      "$description": "Employee header shows My Portal (not MA)."
+    }
+  },
+  "nav": {
+    "item-gap": {
+      "$value": "{space.012}",
+      "$type": "dimension",
+      "$description": "Gap between nav bar items."
+    },
+    "show-notices": {
+      "$value": false,
+      "$type": "boolean",
+      "$description": "Admin nav bar shows Notices (DC and MA)."
+    }
+  },
+  "footer": {
+    "copyright-name": {
+      "$value": "Enroll App",
+      "$type": "string",
+      "$description": "First copyright line in the footer."
+    },
+    "show-rights": {
+      "$value": true,
+      "$type": "boolean",
+      "$description": "Footer shows the \"All Rights Reserved.\" line (not DC)."
+    },
+    "top-border-width": {
+      "$value": "0px",
+      "$type": "dimension",
+      "$description": "Footer top border width: DC 1, MA 2, EA and ME none."
+    },
+    "top-border": {
+      "$value": "{border.subtle}",
+      "$type": "color",
+      "$description": "Footer top border color (MA strong, others subtle)."
+    }
   }
 }

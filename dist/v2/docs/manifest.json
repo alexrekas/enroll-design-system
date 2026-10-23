@@ -4515,6 +4515,97 @@
   "source": "brand"
  },
  {
+  "path": "client.is-ea",
+  "cssVar": "--vitae-client-is-ea",
+  "type": "boolean",
+  "description": "True only for EA. Shows EA-only layers (logo, footer help) so header and footer follow the page's client.",
+  "source": "brand"
+ },
+ {
+  "path": "client.is-dc",
+  "cssVar": "--vitae-client-is-dc",
+  "type": "boolean",
+  "description": "True only for DC. Shows DC-only layers (logo, footer help) so header and footer follow the page's client.",
+  "source": "brand"
+ },
+ {
+  "path": "client.is-ma",
+  "cssVar": "--vitae-client-is-ma",
+  "type": "boolean",
+  "description": "True only for MA. Shows MA-only layers (logo, footer help) so header and footer follow the page's client.",
+  "source": "brand"
+ },
+ {
+  "path": "client.is-me",
+  "cssVar": "--vitae-client-is-me",
+  "type": "boolean",
+  "description": "True only for ME. Shows ME-only layers (logo, footer help) so header and footer follow the page's client.",
+  "source": "brand"
+ },
+ {
+  "path": "client.tagline",
+  "cssVar": "--vitae-client-tagline",
+  "type": "string",
+  "description": "Marketplace tagline (mobile drawer).",
+  "source": "brand"
+ },
+ {
+  "path": "header.brand-gap",
+  "cssVar": "--vitae-header-brand-gap",
+  "type": "dimension",
+  "description": "Gap between logo, divider and portal name in the header.",
+  "source": "brand"
+ },
+ {
+  "path": "header.show-employee-portal",
+  "cssVar": "--vitae-header-show-employee-portal",
+  "type": "boolean",
+  "description": "Employee header shows My Portal (not MA).",
+  "source": "brand"
+ },
+ {
+  "path": "nav.item-gap",
+  "cssVar": "--vitae-nav-item-gap",
+  "type": "dimension",
+  "description": "Gap between nav bar items.",
+  "source": "brand"
+ },
+ {
+  "path": "nav.show-notices",
+  "cssVar": "--vitae-nav-show-notices",
+  "type": "boolean",
+  "description": "Admin nav bar shows Notices (DC and MA).",
+  "source": "brand"
+ },
+ {
+  "path": "footer.copyright-name",
+  "cssVar": "--vitae-footer-copyright-name",
+  "type": "string",
+  "description": "First copyright line in the footer.",
+  "source": "brand"
+ },
+ {
+  "path": "footer.show-rights",
+  "cssVar": "--vitae-footer-show-rights",
+  "type": "boolean",
+  "description": "Footer shows the \"All Rights Reserved.\" line (not DC).",
+  "source": "brand"
+ },
+ {
+  "path": "footer.top-border-width",
+  "cssVar": "--vitae-footer-top-border-width",
+  "type": "dimension",
+  "description": "Footer top border width: DC 1, MA 2, EA and ME none.",
+  "source": "brand"
+ },
+ {
+  "path": "footer.top-border",
+  "cssVar": "--vitae-footer-top-border",
+  "type": "color",
+  "description": "Footer top border color (MA strong, others subtle).",
+  "source": "brand"
+ },
+ {
   "path": "background.page",
   "cssVar": "--vitae-background-page",
   "type": "color",

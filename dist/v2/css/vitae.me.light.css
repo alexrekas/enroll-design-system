@@ -517,6 +517,16 @@
   --vitae-login-show-system-notice: false; /** Show the system-use notice under the sign-in form. DC only. */
   --vitae-login-help-phone: (866) 636-0355 / TTY 711; /** Customer service phone shown on the sign-in card. EA is a placeholder. */
   --vitae-login-help-phone-tel: +18666360355; /** Customer service number for tel: links (href="tel:<value>"), E.164 format. Pairs with login.help-phone. EA is a placeholder. */
+  --vitae-client-is-ea: false; /** True only for EA. Shows EA-only layers (logo, footer help) so header and footer follow the page's client. */
+  --vitae-client-is-dc: false; /** True only for DC. Shows DC-only layers (logo, footer help) so header and footer follow the page's client. */
+  --vitae-client-is-ma: false; /** True only for MA. Shows MA-only layers (logo, footer help) so header and footer follow the page's client. */
+  --vitae-client-is-me: true; /** True only for ME. Shows ME-only layers (logo, footer help) so header and footer follow the page's client. */
+  --vitae-client-tagline: Maine’s Health Insurance Marketplace; /** Marketplace tagline (mobile drawer). */
+  --vitae-header-show-employee-portal: true; /** Employee header shows My Portal (not MA). */
+  --vitae-nav-show-notices: false; /** Admin nav bar shows Notices (DC and MA). */
+  --vitae-footer-copyright-name: CoverME.gov; /** First copyright line in the footer. */
+  --vitae-footer-show-rights: true; /** Footer shows the "All Rights Reserved." line (not DC). */
+  --vitae-footer-top-border-width: 0px; /** Footer top border width: DC 1, MA 2, EA and ME none. */
   --vitae-logo-show-color: true; /** Logo switch: full-color logo on light surfaces, all-white logo in dark mode (no client logo reaches 4.5:1 on the dark header). */
   --vitae-logo-show-white: false; /** Logo switch: the inverse of logo.show-color. */
   --vitae-brand-primary-100: var(--vitae-color-me-primary-100);
@@ -639,6 +649,11 @@
   --vitae-brand-light-footer-bg: var(--vitae-color-neutral-040);
   --vitae-brand-light-footer-lang-bg: var(--vitae-color-neutral-030);
   --vitae-brand-light-footer-pill: var(--vitae-color-neutral-030);
+  --vitae-header-brand-gap: var(--vitae-space-012); /** Gap between logo, divider and portal name in the header. */
+  --vitae-nav-item-gap: var(--vitae-space-012); /** Gap between nav bar items. */
+  --vitae-nav-bar-text: var(--vitae-color-white); /** Text on the consumer nav bar. */
+  --vitae-nav-badge: var(--vitae-color-status-warning-100); /** Count badges in the header (cart, mail) and Left nav. */
+  --vitae-nav-badge-text: var(--vitae-color-neutral-190); /** Text on nav/badge. */
   --vitae-background-page: var(--vitae-color-neutral-010);
   --vitae-background-layer-01: var(--vitae-color-white);
   --vitae-background-layer-02: var(--vitae-color-neutral-010);
@@ -696,9 +711,6 @@
   --vitae-program-me-current-plan-border: var(--vitae-color-program-me-current-plan); /** ME only — Your current plan tag. */
   --vitae-program-ma-premium-value-surface: var(--vitae-color-program-ma-premium-value-surface); /** MA only — Premium Value Plan tag. */
   --vitae-program-ma-premium-value: var(--vitae-color-program-ma-premium-value); /** MA only — Premium Value Plan tag border, icon and label. */
-  --vitae-nav-bar-text: var(--vitae-color-white); /** Text on the consumer nav bar. */
-  --vitae-nav-badge: var(--vitae-color-status-warning-100); /** Count badges in the header (cart, mail) and Left nav. */
-  --vitae-nav-badge-text: var(--vitae-color-neutral-190); /** Text on nav/badge. */
   --vitae-metal-bronze: var(--vitae-color-metal-bronze); /** Bronze metal badge fill (same in light and dark). */
   --vitae-metal-bronze-text: var(--vitae-color-black); /** Text on the bronze badge (black; passes 4.5:1). */
   --vitae-metal-bronze-border: var(--vitae-color-metal-bronze-border); /** Bronze badge border, a darker shade of the fill. */
@@ -727,6 +739,13 @@
   --vitae-brand-light-nav-bar: var(--vitae-brand-secondary-100);
   --vitae-brand-light-nav-admin-bar: var(--vitae-brand-primary-010);
   --vitae-brand-light-progress-upcoming: var(--vitae-brand-primary-100);
+  --vitae-nav-admin-text: var(--vitae-brand-light-nav-admin-text); /** Text on the Broker/Admin nav bar. */
+  --vitae-nav-drawer: var(--vitae-background-layer-02); /** Mobile header drawer surface, one step off the header. */
+  --vitae-nav-panel: var(--vitae-background-layer-01); /** Mobile nav overlay panels (Left nav, Progress). Dark is one step above the page. */
+  --vitae-footer-top-border: var(--vitae-border-subtle); /** Footer top border color (MA strong, others subtle). */
+  --vitae-footer-bg: var(--vitae-brand-light-footer-bg); /** Footer background. */
+  --vitae-footer-lang-bg: var(--vitae-brand-light-footer-lang-bg); /** Footer language row background (off by default). */
+  --vitae-footer-pill: var(--vitae-brand-light-footer-pill); /** Footer help pill (styling currently unused; kept for the language row). */
   --vitae-background-layer-hover: var(--vitae-brand-primary-005);
   --vitae-background-selected: var(--vitae-brand-primary-010);
   --vitae-background-brand: var(--vitae-brand-primary-100);
@@ -766,12 +785,6 @@
   --vitae-action-tertiary-subtle-hover: var(--vitae-brand-tertiary-015);
   --vitae-action-tertiary-subtle-active: var(--vitae-brand-tertiary-025);
   --vitae-support-warning-icon-outline-color: var(--vitae-support-warning-icon-ink); /** Two-tone warning icon: 1px outline around the triangle. Dark outline in light mode; matches the fill in dark mode (same footprint, no visible outline). */
-  --vitae-nav-admin-text: var(--vitae-brand-light-nav-admin-text); /** Text on the Broker/Admin nav bar. */
-  --vitae-nav-drawer: var(--vitae-background-layer-02); /** Mobile header drawer surface, one step off the header. */
-  --vitae-nav-panel: var(--vitae-background-layer-01); /** Mobile nav overlay panels (Left nav, Progress). Dark is one step above the page. */
-  --vitae-footer-bg: var(--vitae-brand-light-footer-bg); /** Footer background. */
-  --vitae-footer-lang-bg: var(--vitae-brand-light-footer-lang-bg); /** Footer language row background (off by default). */
-  --vitae-footer-pill: var(--vitae-brand-light-footer-pill); /** Footer help pill (styling currently unused; kept for the language row). */
   --vitae-card-surface: var(--vitae-background-layer-01); /** Card background. Dark is a neutral lift so brand color is reserved for the selected state. */
   --vitae-progress-upcoming: var(--vitae-brand-light-progress-upcoming); /** Progress connectors, upcoming markers and the remaining Progress line; always used at 40% opacity. EA/MA/ME: action.primary. DC: neutral gray. */
   --vitae-nav-accent: var(--vitae-brand-light-nav-accent); /** Header accent rule and active top-nav indicator. */
