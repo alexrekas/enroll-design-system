@@ -10,7 +10,8 @@
     "prepare:all": "npm run build && npm run check:contrast && npm run check:sources",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "check:sources": "node check-sources.mjs"
+    "check:sources": "node check-sources.mjs",
+    "check:links": "node check-links.mjs"
   },
   "devDependencies": {
     "@storybook/addon-docs": "^10.6.3",

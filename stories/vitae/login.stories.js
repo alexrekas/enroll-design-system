@@ -130,6 +130,7 @@ const wire = (storyFn) => {
 
 export default {
   title: 'Vitae 27/Components/Log-in',
+  tags: ['autodocs'],
   excludeStories: /^[a-z]/,
   decorators: [wire, canvas],
   parameters: {

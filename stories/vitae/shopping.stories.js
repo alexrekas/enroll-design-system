@@ -27,6 +27,7 @@ const wire = (storyFn) => {
 
 export default {
   title: 'Vitae 27/Components/Plan shopping',
+  tags: ['autodocs'],
   excludeStories: /^[a-z]/,
   decorators: [wire, canvas],
 };

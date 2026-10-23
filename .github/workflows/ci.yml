@@ -33,6 +33,8 @@ jobs:
         run: npm run check:sources
       - name: Build Storybook
         run: npm run build-storybook
+      - name: Figma link gate (every Figma documentation link resolves)
+        run: npm run check:links
       - name: Upload Storybook artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -11,6 +11,7 @@ export const button = ({ label = 'Continue', style = 'solid', level = 'primary',
 
 export default {
   title: 'Vitae 27/Components/Button',
+  tags: ['autodocs'],
   excludeStories: /^[a-z]/,
   decorators: [canvas],
   parameters: {

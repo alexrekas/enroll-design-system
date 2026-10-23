@@ -47,6 +47,7 @@ export const footer = ({ client }) => {
 
 export default {
   title: 'Vitae 27/Components/Navigation',
+  tags: ['autodocs'],
   excludeStories: /^[a-z]/,
   decorators: [canvas],
   parameters: { layout: 'fullscreen' },

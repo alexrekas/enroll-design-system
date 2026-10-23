@@ -5,6 +5,7 @@ const NAMES = { ea: 'Enroll App', dc: 'DC Health Link', ma: 'Massachusetts Healt
 
 export default {
   title: 'Vitae 27/Logos',
+  tags: ['autodocs'],
   excludeStories: /^[a-z]/,
   decorators: [canvas],
   parameters: {

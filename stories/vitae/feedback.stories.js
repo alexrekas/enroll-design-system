@@ -26,6 +26,7 @@ export const metalBadge = (level = 'Gold') => `<span class="vitae-metal-badge vi
 
 export default {
   title: 'Vitae 27/Components/Alert, Tag and Metal badge',
+  tags: ['autodocs'],
   excludeStories: /^[a-z]/,
   decorators: [canvas],
   parameters: { design: [figma('94:56', 'Alert'), figma('96:27', 'Tag'), figma('180:32', 'Metal badge')] },

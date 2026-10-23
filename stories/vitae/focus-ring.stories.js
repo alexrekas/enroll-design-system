@@ -11,6 +11,7 @@ const SHAPES = [
 
 export default {
   title: 'Vitae 27/Components/Focus ring',
+  tags: ['autodocs'],
   excludeStories: /^[a-z]/,
   decorators: [canvas],
   parameters: {

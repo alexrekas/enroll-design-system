@@ -61,6 +61,7 @@ const USERS = (client) => [
 
 export default {
   title: 'Vitae 27/Sample users',
+  tags: ['autodocs'],
   excludeStories: /^[a-z]/,
   decorators: [canvas],
   parameters: {

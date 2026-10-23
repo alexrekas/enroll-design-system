@@ -40,6 +40,7 @@ const STATES = ['rest', 'hover', 'active', 'focus', 'error', 'disabled'];
 
 export default {
   title: 'Vitae 27/Components/Checkbox, Radio and Toggle',
+  tags: ['autodocs'],
   excludeStories: /^[a-z]/,
   decorators: [wire, canvas],
   parameters: {

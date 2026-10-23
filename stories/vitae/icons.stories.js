@@ -3,6 +3,7 @@ import { icon, iconNames } from './icons.js';
 
 export default {
   title: 'Vitae 27/Icons',
+  tags: ['autodocs'],
   excludeStories: /^[a-z]/,
   decorators: [canvas],
   parameters: {

@@ -37,6 +37,7 @@ const swatch = (t) => `
 
 export default {
   title: 'Vitae 27/Foundations',
+  tags: ['autodocs'],
   parameters: {
     design: { label: 'Vitae 27 · Variables (Primitives, Brand, Color)', url: FIGMA, status: 'figma' },
     docs: { description: { component: 'Generated from tokens-v2. Use the Theme and Mode toolbar controls to see each client in light and dark.' } },

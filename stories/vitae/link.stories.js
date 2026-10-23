@@ -8,6 +8,7 @@ const link = ({ label = 'View plan details', type = 'inline', state = 'rest', tr
 
 export default {
   title: 'Vitae 27/Components/Link',
+  tags: ['autodocs'],
   excludeStories: /^[a-z]/,
   decorators: [canvas],
   parameters: {
