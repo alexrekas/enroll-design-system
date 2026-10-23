@@ -4,6 +4,7 @@ on:
   push:
     branches: [main, trunk]
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -38,8 +39,8 @@ jobs:
           path: storybook-static
 
   deploy-pages:
-    # Publishes the design library to GitHub Pages on the default branch only
-    if: github.event_name == 'push'
+    # Publishes the design library to GitHub Pages on pushes to main, or when run by hand (Actions → Design System CI → Run workflow)
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     needs: build-and-check
     runs-on: ubuntu-latest
     environment:
