@@ -34,7 +34,9 @@ npm run build-storybook # static build (a prebuilt copy ships in storybook-stati
 
 ## CI (GitHub)
 
-`.github/workflows/ci.yml` runs on every push/PR: token build → contrast gate (build fails on any AA violation) → Storybook build → deploy to **GitHub Pages**. One-time setup after pushing the repo: Settings → Pages → Source = "GitHub Actions". The design library is then hosted at `https://<org>.github.io/<repo>/` and updates on every merge.
+`.github/workflows/ci.yml` runs on every push/PR: token build → contrast gate (build fails on any AA violation) → design-source gate → Storybook build → deploy to **GitHub Pages** (pushes to main only; pull requests run the checks without deploying). One-time setup: Settings → Pages → Source = "GitHub Actions". The Storybook is hosted at `https://alexrekas.github.io/enroll-design-system/` and updates on every push to main.
+
+Hosting is GitHub Pages only (decided 10/23/26). Netlify is no longer used; if a Netlify site is still connected to this repo, delete it or stop its builds in Netlify. To push without rebuilding the site, put `[skip ci]` in the commit message (GitHub skips the whole workflow, checks included).
 
 ## Architecture rules
 
