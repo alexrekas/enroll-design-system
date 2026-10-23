@@ -1,0 +1,73 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Vitae 27/Introduction" />
+
+# Vitae 27
+
+Vitae 27 is the design system for Enroll. One set of components and tokens serves four clients, each in light and dark mode:
+
+- **EA:** Enroll App, the unbranded demo client and the default
+- **DC:** DC Health Link
+- **MA:** Massachusetts Health Connector (also shows the official-website banner)
+- **ME:** CoverME.gov
+
+The design source is the [Vitae 27 Figma file](https://www.figma.com/design/FgVdwGszfnY0vz75yxfJ7F/Vitae-27). Every story links back to the Figma component it was built from ("From Figma" under Source).
+
+## Using this Storybook
+
+- **Theme** and **Mode** in the toolbar switch the client and light or dark. Every Vitae 27 story re-renders live.
+- **Docs** tabs hold the usage rules, accessibility notes and developer notes for each component. Read them before building; they cover what a static picture can't (keyboard behavior, ARIA, what happens at narrow widths).
+- Resize the canvas or use the viewport button to see responsive behavior. Components are built once and reflow with their width; there are no separate desktop and mobile versions unless the pattern really differs (the mobile header is the main one).
+- **Legacy (v1)** at the bottom of the sidebar is the earlier system on the v1 tokens, kept for reference only. Build new work from Vitae 27.
+
+## How it's organized
+
+- **Foundations:** semantic color roles, each client's color ramps, text styles, spacing, radius and borders, elevation, motion and client settings. All generated from the tokens.
+- **Icons:** the Fluent 2 icon set used across the system, plus the header icons.
+- **Logos:** each client's logo in color (light mode) and white (dark mode).
+- **Components:** buttons, links, the focus ring, form fields, selection controls, feedback (alerts, tags, metal badges, tooltips), navigation, layout and data, plan shopping and log-in.
+- **Sample users:** the fictional household, admin, broker, assister, employer and employee used in every mockup, so screens tell a consistent story.
+
+## Tokens
+
+Tokens are authored in `tokens-v2/` (DTCG JSON) and built with Style Dictionary into `dist/v2/css/vitae.css` (`npm run build`). Every variable starts with `--vitae-`.
+
+The client and mode come from two attributes on the page:
+
+```html
+<html data-client="dc" data-mode="dark">
+```
+
+`vitae.css` has one block per client and mode, and EA light is also the `:root` default, so a page with no attributes still renders. Per-combination files (`vitae.dc.light.css` and so on) and flat JSON exports are in `dist/v2/` as well.
+
+Three layers:
+
+1. **Primitives:** raw values (color ramps, spacing, radius, type sizes). Never use them directly in components.
+2. **Brand:** what differs by client: brand colors, font, radii, and client settings such as the help phone number or whether a client shows a banner.
+3. **Semantic:** what components use, by meaning, with light and dark values (`--vitae-text-body`, `--vitae-action-primary`, `--vitae-border-subtle`).
+
+Components reference semantic and brand tokens only, never hard-coded values.
+
+## Building with it
+
+The target is Rails `html.erb`. The markup in each story's Docs tab is the contract: semantic HTML first, `vitae-*` class names, and native elements wherever they exist (a real `<button>`, `<input type="checkbox">`, `<select>`). The component CSS these stories use is in `stories/vitae/vitae.css` and is the reference implementation.
+
+Rules that apply everywhere:
+
+- **WCAG 2.1 AA.** Contrast is checked in CI (`npm run check:contrast`) and the build fails on any miss.
+- **Never rely on color alone.** States and statuses also change an icon, text or shape.
+- **Focus:** a 2px dashed ring on `:focus-visible` (see Focus ring). Never remove an outline without replacing it.
+- **Disabled controls have no hover or pressed state.**
+- **Phone numbers are always `tel:` links**, at every screen size.
+- **Labels end with a colon**; field and plan-fact values stay regular weight.
+- **Whole-pixel geometry** for sizes and spacing.
+
+## In Figma
+
+Components follow the mode of the frame or section they sit in. Set the **Brand** mode (EA, DC, MA, ME) and **Color** mode (Light, Dark) on the page frame or section, never on the component. The header, footer and logo switch their logo, colors and client-only parts automatically.
+
+## Contributing
+
+- Every story declares its Figma source; CI fails if one is missing (`npm run check:sources`).
+- Every push to `main` rebuilds this Storybook and publishes it to GitHub Pages. Put `[skip ci]` anywhere in a commit message to push without rebuilding, or rebuild by hand from Actions → Design System CI → Run workflow.
+- Run it locally with `npm install` and `npm run storybook` (http://localhost:6006).

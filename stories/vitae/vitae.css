@@ -271,7 +271,9 @@ html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring)
 
 /* ---------- Footer ---------- */
 .vitae-footer__lang { background: var(--vitae-footer-lang-bg); }
-.vitae-footer__lang ul { display: flex; flex-wrap: wrap; gap: var(--vitae-space-016); list-style: none; margin: 0 auto; padding: var(--vitae-space-008) var(--vitae-space-016); max-width: 1140px; }
+.vitae-footer__lang-row { display: flex; align-items: center; gap: var(--vitae-space-012); max-width: 1140px; margin: 0 auto; padding: var(--vitae-space-008) var(--vitae-space-016); color: var(--vitae-icon-primary); }
+.vitae-footer__lang ul { display: flex; flex-wrap: wrap; gap: var(--vitae-space-008) var(--vitae-space-012); list-style: none; margin: 0; padding: 0; }
+.vitae-footer__lang li:first-child a { color: var(--vitae-text-body); text-decoration: none; }
 .vitae-footer__lang a { color: var(--vitae-text-link); }
 .vitae-footer { background: var(--vitae-footer-bg); border-top: 1px solid var(--vitae-border-subtle); }
 .vitae-footer__content { display: flex; flex-wrap: wrap; align-items: center; gap: var(--vitae-space-016) var(--vitae-space-024); max-width: 1140px; margin: 0 auto; padding: var(--vitae-space-024) var(--vitae-space-016); }

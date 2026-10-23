@@ -41,7 +41,7 @@ export const footer = ({ client }) => {
   const help = c.ghost
     ? [['phone', c.phone, `tel:${c.tel}`], ['mail', c.email, `mailto:${c.email}`], ['', 'Get Help', '#']].map(([i, l, h]) => `<a href="${h}" class="vitae-btn vitae-btn--ghost vitae-btn--primary">${i ? icon(i, 20, 'filled') : ''}${esc(l)}</a>`).join('')
     : c.help.map(([level, i], n) => `<a href="${n === 0 ? `tel:${c.tel}` : '#'}" class="vitae-btn vitae-btn--solid vitae-btn--${level}">${i ? icon(i, 20, 'filled') : ''}${esc(n === 0 ? c.phone : 'Get Help')}</a>`).join('');
-  return `<div class="vitae-footer-wrap">${c.languages ? `<nav class="vitae-footer__lang" aria-label="Language"><ul><li><a href="#" lang="en" aria-current="true">English</a></li><li><a href="#" lang="es">Español</a></li><li><a href="#" lang="am">Amharic</a></li></ul></nav>` : ''}
+  return `<div class="vitae-footer-wrap">${c.languages ? `<nav class="vitae-footer__lang" aria-label="Language"><div class="vitae-footer__lang-row">${icon('nav-translate', 24)}<ul><li><a href="#" lang="en" aria-current="true">English</a></li><li><a href="#" lang="es">Español</a></li><li><a href="#" lang="am">Amharic</a></li></ul></div></nav>` : ''}
     <footer class="vitae-footer"><div class="vitae-footer__content"><p class="vitae-footer__copyright">${c.copyright.length > 1 ? `<strong>${esc(c.copyright[0])}</strong><br>${esc(c.copyright[1])}` : esc(c.copyright[0])}</p><div class="vitae-footer__help">${help}</div></div></footer></div>`;
 };
 

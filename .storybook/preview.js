@@ -93,7 +93,7 @@ export default {
     options: {
       // Vitae 27 first; the original v1 stories sit in a Legacy group at the bottom.
       storySort: {
-        order: ['Vitae 27', ['Foundations', 'Icons', 'Logos', 'Components', 'Sample users'], 'Legacy (v1)'],
+        order: ['Vitae 27', ['Introduction', 'Foundations', 'Icons', 'Logos', 'Components', 'Sample users'], 'Legacy (v1)'],
       },
     },
   },
