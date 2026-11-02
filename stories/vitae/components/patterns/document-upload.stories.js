@@ -1,133 +1,16 @@
-import { canvas, figma, esc, id, matrix } from './_shared.js';
-import { icon } from './icons.js';
-import { button } from './button.stories.js';
-import { field } from './field.stories.js';
-import { tag, alert } from './feedback.stories.js';
-import { modal } from './layout.stories.js';
-
-// Document upload pattern (Figma: Upload page 393:20) and the Progress bar (398:2845).
-
-export const progressBar = ({ value = 45, label = `Uploading… ${value}%`, name = 'Upload progress', showLabel = true } = {}) => {
-  const lid = id('pb');
-  return `<div class="vitae-progress-bar">
-    <div class="vitae-progress-bar__track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${value}" aria-label="${esc(name)}"${showLabel ? ` aria-describedby="${lid}"` : ''}><div class="vitae-progress-bar__fill" style="width:${value}%"></div></div>
-    ${showLabel ? `<p class="vitae-progress-bar__label" id="${lid}">${esc(label)}</p>` : ''}
-  </div>`;
-};
-
-const DOC_TYPES = ['Paystub', 'Employer letter', 'Tax return', 'Unemployment benefits letter', 'Social Security statement'];
-const LIMITS = 'PDF, JPG, PNG or GIF, up to 10 MB';
-const ACCEPT = '.pdf,.jpg,.jpeg,.png,.gif';
-
-export const fileInput = ({ state = 'empty', docType = false, takePhoto = true, limits = LIMITS, error = 'That file is larger than 10 MB. Choose a smaller file or a different file type.', showPhotoOnDesktop = true } = {}) => {
-  const fid = id('file'); const pid = id('photo');
-  const cls = ['vitae-upload-input', state === 'dragover' ? 'is-dragover' : '', state === 'error' ? 'is-error' : '', showPhotoOnDesktop ? 'vitae-upload-input--show-photo' : ''].join(' ').trim();
-  return `<div class="${cls}">
-    ${docType ? field({ kind: 'select', label: 'Document type', placeholder: 'Select a document type', required: true, options: DOC_TYPES }) : ''}
-    <div class="vitae-dropzone">
-      ${icon('upload', 24, 'regular')}
-      <p class="vitae-dropzone__prompt">Drag a file here, or</p>
-      <div class="vitae-dropzone__actions">
-        <input type="file" id="${fid}" class="vitae-file-trigger" accept="${ACCEPT}" multiple aria-describedby="${fid}-limits${state === 'error' ? ` ${fid}-error` : ''}"${state === 'error' ? ' aria-invalid="true"' : ''}>
-        <label for="${fid}" class="vitae-btn vitae-btn--outline vitae-btn--primary">${icon('upload', 20, 'filled')}Choose file</label>
-        ${takePhoto ? `<span class="vitae-photo-only"><input type="file" id="${pid}" class="vitae-file-trigger" accept="image/*" capture="environment">
-        <label for="${pid}" class="vitae-btn vitae-btn--ghost vitae-btn--primary">${icon('camera', 20, 'filled')}Take a photo</label></span>` : ''}
-      </div>
-      <p class="vitae-dropzone__limits" id="${fid}-limits">${esc(limits)}</p>
-    </div>
-    ${state === 'error' ? `<p class="vitae-field__error" id="${fid}-error">${icon('error', 16, 'filled')}<span>${esc(error)}</span></p>` : ''}
-  </div>`;
-};
-
-const ghost = (label, iconName, level = 'primary', hidden = '') => `<button type="button" class="vitae-btn vitae-btn--ghost vitae-btn--${level}">${icon(iconName, 20, 'filled')}${esc(label)}${hidden ? `<span class="vitae-visually-hidden"> ${esc(hidden)}</span>` : ''}</button>`;
-
-export const attachment = ({ state = 'attached', type = 'Paystub', name = 'Bennett_paystub_September.pdf', meta = '', progress = 45, showType = true, changeType = true } = {}) => {
-  const defaults = { uploading: `Uploading… ${progress}%`, attached: 'PDF, 1.2 MB', error: 'Upload failed. Check your connection and try again.' };
-  const m = meta || defaults[state];
-  const fixable = state === 'error' && !/connection/i.test(m);
-  const actions = state === 'uploading'
-    ? ghost('Cancel', 'close', 'secondary', `upload of ${name}`)
-    : [state === 'error' ? ghost(fixable ? 'Replace file' : 'Try again', 'upload', 'primary', name) : '',
-      changeType ? ghost('Change type', 'edit', 'primary', `for ${name}`) : '',
-      ghost('Remove', 'delete', 'destructive', name)].join('');
-  return `<li class="vitae-attachment vitae-attachment--${state}">
-    ${state === 'error' ? icon('error', 24, 'filled') : icon('document', 24, 'regular')}
-    <div class="vitae-attachment__details">
-      ${showType ? `<p class="vitae-attachment__type">${esc(type)}</p>` : ''}
-      ${state === 'attached' ? `<a class="vitae-link vitae-attachment__name" href="#" download>${esc(name)}</a>` : `<p class="vitae-attachment__name">${esc(name)}</p>`}
-      ${state === 'uploading' ? progressBar({ value: progress, label: m, name: `Uploading ${name}` }) : `<p class="vitae-attachment__meta">${esc(m)}</p>`}
-    </div>
-    <div class="vitae-attachment__actions">${actions}</div>
-  </li>`;
-};
-
-const FILES_ADDED = [
-  { state: 'attached', name: 'Bennett_paystub_September.pdf', meta: 'PDF, 1.2 MB' },
-  { state: 'attached', name: 'Bennett_paystub_October.jpg', meta: 'JPG, 840 KB' },
-  { state: 'uploading', type: 'Employer letter', name: 'Employer_letter.pdf' },
-];
-const FILES_ERROR = [
-  { state: 'attached', name: 'Bennett_paystub_September.pdf', meta: 'PDF, 1.2 MB' },
-  { state: 'error', name: 'Bennett_paystub_October.heic', meta: 'HEIC files can’t be uploaded. Save it as JPG or PDF and try again.' },
-  { state: 'error', name: 'Tax_return_2025.pdf', type: 'Tax return', meta: 'That file is larger than 10 MB. Choose a smaller file.' },
-];
-
-export const uploadPanel = ({ state = 'files', title = 'Upload documents', intro = 'Upload a document that shows your income for the last 30 days, such as pay stubs or a letter from your employer. You can add more than one file.', showActions = true, docType = false, headingLevel = 3 } = {}) => {
-  const files = state === 'error' ? FILES_ERROR : state === 'files' ? FILES_ADDED : [];
-  const h = `h${headingLevel}`;
-  return `<section class="vitae-upload-panel" aria-label="${esc(title)}">
-    <div class="vitae-upload-panel__intro"><${h} class="vitae-upload-panel__title">${esc(title)}</${h}><p>${esc(intro)}</p></div>
-    ${state === 'error' ? alert({ type: 'error', title: '2 files need your attention', message: 'Fix or remove these files, then submit again.', dismissible: false }) : ''}
-    ${files.length ? `<ul class="vitae-upload-list" aria-label="Files to submit">${files.map((f) => attachment(f)).join('')}</ul>${button({ label: 'Add another document', style: 'ghost', iconLeft: 'add-circle' })}` : fileInput({ docType })}
-    <p class="vitae-visually-hidden" aria-live="polite"></p>
-    ${showActions ? `<div class="vitae-upload-panel__actions">${button({ label: 'Cancel', style: 'outline' })}${button({ label: 'Submit documents', iconLeft: 'upload' })}</div>` : ''}
-  </section>`;
-};
-
-const HISTORY_TAG = { 'In review': 'info', Accepted: 'success', Rejected: 'error' };
-export const historyRow = ({ status = 'In review', type = 'Paystub', name = 'Bennett_paystub_September.pdf', submitted = '10/12/2026', reason = 'The pay stub doesn’t show your name. Upload a pay stub with your name and the pay period.', remove = true } = {}) => `
-  <li class="vitae-history-row">
-    <div class="vitae-attachment__details">
-      <p class="vitae-attachment__type">${esc(type)}</p>
-      <a class="vitae-link vitae-attachment__name" href="#" download>${esc(name)}</a>
-      ${status === 'Rejected' ? `<p class="vitae-history-row__reason">Reason: ${esc(reason)}</p>` : ''}
-    </div>
-    <p class="vitae-history-row__date"><span>Submitted:</span>${esc(submitted)}</p>
-    <div class="vitae-history-row__status">${tag({ label: status, type: HISTORY_TAG[status] })}</div>
-    <div class="vitae-history-row__actions">${ghost('Download', 'download', 'primary', name)}${remove ? ghost('Remove', 'delete', 'destructive', name) : ''}</div>
-  </li>`;
-
-const VERIFY = {
-  'Action needed': { tag: 'warning', msg: 'We couldn’t verify the income you reported. Upload proof of income for the last 30 days.' },
-  Uploading: { tag: 'warning', msg: 'We couldn’t verify the income you reported. Upload proof of income for the last 30 days.' },
-  'In review': { tag: 'info', msg: 'We received your documents. We’ll review them within 10 business days.' },
-  Verified: { tag: 'success', msg: 'Your income is verified. No action needed.' },
-};
-export const verification = ({ state = 'Action needed', title = 'Income', member = 'Marcus Bennett', due = '12/01/2026', message = '' } = {}) => {
-  const v = VERIFY[state]; const tid = id('verify');
-  const needs = state === 'Action needed' || state === 'Uploading';
-  return `<section class="vitae-verification${state === 'Uploading' ? ' is-open' : ''}" aria-labelledby="${tid}">
-    <div class="vitae-verification__summary">
-      <div class="vitae-verification__details">
-        <h3 class="vitae-verification__title" id="${tid}">${esc(title)}</h3>
-        <p class="vitae-verification__member">${esc(member)}</p>
-        <p>${esc(message || v.msg)}</p>
-        ${needs ? `<p class="vitae-verification__due">Due by: ${esc(due)}</p>` : ''}
-      </div>
-      <div class="vitae-verification__side">${tag({ label: needs ? 'Action needed' : state, type: v.tag })}${state === 'Action needed' ? `<button type="button" class="vitae-btn vitae-btn--outline vitae-btn--primary" aria-expanded="false">${icon('upload', 20, 'filled')}Upload documents<span class="vitae-visually-hidden"> for ${esc(title)}</span></button>` : ''}</div>
-    </div>
-    ${state === 'Uploading' ? uploadPanel({ title: `Upload proof of ${title.toLowerCase()}`, headingLevel: 4 }) : ''}
-    ${state === 'In review' ? `<ul class="vitae-upload-history" aria-label="Submitted files">${historyRow({ name: 'Bennett_paystub_September.pdf' })}${historyRow({ name: 'Bennett_paystub_October.pdf' })}</ul>${button({ label: 'Upload more documents', style: 'ghost', iconLeft: 'add-circle' })}` : ''}
-  </section>`;
-};
+import { expect, userEvent, waitFor, within } from 'storybook/test';
+import { canvas, figma } from '../../_shared.js';
+import { button } from '../../markup/button.js';
+import { alert } from '../../markup/feedback.js';
+import { modal } from '../../markup/layout.js';
+import { LIMITS, OK_TYPES, attachment, fileInput, fmtSize, historyRow, uploadPanel, verification } from '../../markup/upload.js';
 
 export default {
-  title: 'Vitae 27/Components/Document upload',
+  title: 'Vitae 27/Components/Patterns/Document upload',
   tags: ['autodocs'],
-  excludeStories: /^[a-z]/,
   decorators: [canvas],
   parameters: {
-    design: [figma('394:351', 'Upload/Panel'), figma('393:168', 'Upload/File input'), figma('394:109', 'Upload/Attachment'), figma('395:443', 'Upload/History row'), figma('395:654', 'Upload/Verification'), figma('398:2845', 'Progress bar')],
+    design: [figma('394:351', 'Upload/Panel'), figma('393:168', 'Upload/File input'), figma('394:109', 'Upload/Attachment'), figma('395:443', 'Upload/History row'), figma('395:654', 'Upload/Verification')],
     docs: { description: { component: `
 A pattern for uploading one or more documents: verification documents (income, citizenship, residency), employer and broker files, and other supporting files. It's built from five parts that are used together:
 
@@ -145,22 +28,6 @@ Rules:
 - **Document type is optional per request.** When it matters and isn't chosen, the type-confirm dialog can ask before submitting; turn it off where it doesn't apply.
 - **No card inside a card.** File rows are a divided list inside the panel; the panel sits inside the page's card or section.
 - Long file names wrap. Actions sit on their own line and wrap on narrow screens; under 480px the panel's footer stacks full width with Submit first.` } },
-  },
-};
-
-export const ProgressBar = {
-  name: 'Progress bar',
-  args: { value: 45, label: 'Uploading… 45%', name: 'Uploading Employer_letter.pdf', showLabel: true },
-  argTypes: { value: { control: { type: 'range', min: 0, max: 100, step: 1 } } },
-  render: (args) => `<div style="max-width:320px">${progressBar(args)}</div>`,
-  parameters: {
-    design: figma('398:2845', 'Progress bar'),
-    docs: { description: { story: `
-How far along one task is, such as a file upload. 8px track (\`--vitae-border-subtle\`) with an \`--vitae-action-primary\` fill and a 14px label below. Not for multi-step flows (use Progress).
-
-- \`role="progressbar"\` with \`aria-valuenow\`, \`aria-valuemin="0"\`, \`aria-valuemax="100"\` and a name that says what is loading (for example the file name).
-- Keep the visible label so progress isn't shown by the bar alone. Announce completion or failure once in a polite live region, not every percent.
-- The fill animates linearly; no animation under reduced motion.` } },
   },
 };
 
@@ -199,7 +66,7 @@ One file in an upload list (\`<li>\` in a \`<ul class="vitae-upload-list">\`). R
 };
 
 export const AttachmentStates = {
-  name: 'Attachment · all states',
+  name: 'Attachment states',
   render: () => `<ul class="vitae-upload-list" style="max-width:560px">${attachment({ state: 'uploading', type: 'Employer letter', name: 'Employer_letter.pdf' })}${attachment({ state: 'attached' })}${attachment({ state: 'error', name: 'Bennett_paystub_October.pdf' })}${attachment({ state: 'error', name: 'Tax_return_2025.pdf', type: 'Tax return', meta: 'That file is larger than 10 MB. Choose a smaller file.' })}</ul>`,
 };
 
@@ -236,7 +103,7 @@ A submitted file. The file name downloads it; **Download** and **Remove** are al
 };
 
 export const History = {
-  name: 'History · household documents',
+  name: 'History',
   render: () => `<div class="vitae-upload-page"><h2>Household documents</h2><p>Documents you and your household have uploaded. Download a copy or remove a file you uploaded by mistake.</p>
     <ul class="vitae-upload-history">${historyRow({ status: 'Accepted', type: 'Lease', name: 'Lease_2026.pdf', submitted: '09/03/2026' })}${historyRow({ status: 'Rejected', name: 'Paystub_Aug.jpg', submitted: '09/03/2026' })}${historyRow({ status: 'In review', name: 'Paystub_Sept.pdf' })}</ul>
     <div>${button({ label: 'Upload documents', style: 'outline', iconLeft: 'upload' })}</div></div>`,
@@ -278,10 +145,6 @@ export const Mobile = {
   render: () => `<div style="width:343px;max-width:100%" title="Card width on a 375px screen with 16px gutters"><div class="vitae-card" style="max-width:none;padding:16px">${uploadPanel({ state: 'files' })}</div></div>`,
   parameters: { design: figma('395:938', 'Example: Upload panel (mobile 375)') },
 };
-
-// ---------- Interactive demo ----------
-const fmtSize = (b) => (b >= 1048576 ? `${(b / 1048576).toFixed(1)} MB` : `${Math.max(1, Math.round(b / 1024))} KB`);
-const OK_TYPES = /\.(pdf|jpe?g|png|gif)$/i;
 
 export const TryIt = {
   name: 'Try it',
@@ -357,4 +220,28 @@ export const TryIt = {
     return root;
   },
   parameters: { docs: { description: { story: 'A working demo of the behavior: choose or drop files, watch them upload, remove or replace them, and submit. Uploads are simulated in the browser. Turn off **confirmType** to skip the optional dialog.' } } },
+  play: async ({ canvasElement, step }) => {
+    const canvas = within(canvasElement);
+    const live = () => canvasElement.querySelector('[data-live]');
+    const choose = async (files) => {
+      const input = canvasElement.querySelector('.vitae-upload-input input[type="file"]');
+      const dt = new DataTransfer(); files.forEach((f) => dt.items.add(f));
+      input.files = dt.files; input.dispatchEvent(new Event('change', { bubbles: true }));
+    };
+    await step('Submitting with no files shows the error summary and moves focus to it', async () => {
+      await userEvent.click(canvas.getByRole('button', { name: /Submit documents/ }));
+      await expect(canvas.getByText('Add at least one document')).toBeInTheDocument();
+      await expect(canvasElement.querySelector('.vitae-alert')).toHaveFocus();
+    });
+    await step('A good file uploads; an unsupported type shows an error row', async () => {
+      await choose([new File(['%PDF-1.4'], 'Paystub_Oct.pdf', { type: 'application/pdf' }), new File(['x'], 'scan.heic', { type: 'image/heic' })]);
+      await waitFor(() => expect(live()).toHaveTextContent('Paystub_Oct.pdf uploaded'), { timeout: 4000 });
+      await expect(canvasElement.querySelectorAll('.vitae-attachment--error')).toHaveLength(1);
+    });
+    await step('Remove takes the file out and announces it', async () => {
+      await userEvent.click(canvas.getByRole('button', { name: 'Remove scan.heic' }));
+      await expect(live()).toHaveTextContent('Removed scan.heic');
+      await expect(canvasElement.querySelectorAll('.vitae-attachment')).toHaveLength(1);
+    });
+  },
 };

@@ -1,18 +1,10 @@
-import { canvas, figma, esc, matrix } from './_shared.js';
-import { icon, iconNames } from './icons.js';
-
-const LEVELS = ['primary', 'secondary', 'tertiary', 'destructive'];
-const STATES = ['rest', 'hover', 'pressed', 'focus', 'disabled'];
-
-export const button = ({ label = 'Continue', style = 'solid', level = 'primary', state = 'rest', iconLeft = '', iconRight = '' } = {}) => {
-  const cls = ['vitae-btn', `vitae-btn--${style}`, `vitae-btn--${level}`, ['hover', 'pressed', 'focus'].includes(state) ? `is-${state}` : ''].join(' ').trim();
-  return `<button type="button" class="${cls}"${state === 'disabled' ? ' disabled' : ''}>${iconLeft ? icon(iconLeft, 20, 'filled') : ''}${esc(label)}${iconRight ? icon(iconRight, 20, 'filled') : ''}</button>`;
-};
+import { canvas, figma, matrix } from '../../_shared.js';
+import { iconNames } from '../../icons.js';
+import { LEVELS, STATES, button } from '../../markup/button.js';
 
 export default {
-  title: 'Vitae 27/Components/Button',
+  title: 'Vitae 27/Components/Actions/Button',
   tags: ['autodocs'],
-  excludeStories: /^[a-z]/,
   decorators: [canvas],
   parameters: {
     design: [figma('5:989', 'Button/Solid'), figma('5:1188', 'Button/Outline'), figma('5:1373', 'Button/Ghost')],

@@ -1,15 +1,9 @@
-import { canvas, figma, esc, matrix } from './_shared.js';
-import { icon } from './icons.js';
-
-const link = ({ label = 'View plan details', type = 'inline', state = 'rest', trailingIcon = 'arrow-right' } = {}) => {
-  const cls = ['vitae-link', type === 'standalone' ? 'vitae-link--standalone' : '', state !== 'rest' ? `is-${state}` : ''].join(' ').trim();
-  return `<a href="#" class="${cls}">${esc(label)}${type === 'standalone' && trailingIcon ? icon(trailingIcon, 20, 'filled') : ''}</a>`;
-};
+import { canvas, figma, matrix } from '../../_shared.js';
+import { link } from '../../markup/link.js';
 
 export default {
-  title: 'Vitae 27/Components/Link',
+  title: 'Vitae 27/Components/Actions/Link',
   tags: ['autodocs'],
-  excludeStories: /^[a-z]/,
   decorators: [canvas],
   parameters: {
     design: figma('42:2307', 'Link'),

@@ -1,25 +1,30 @@
-import { canvas, figma, esc, id } from './_shared.js';
-import { icon } from './icons.js';
-import { field } from './field.stories.js';
-import { checkbox } from './selection.stories.js';
-import { alert } from './feedback.stories.js';
-import { logo } from './logos.js';
+// Vitae 27 markup: pure functions that return the HTML contract for each component.
+// Stories render these; the Rails components should produce the same markup.
+import { esc, id } from '../_shared.js';
+import { icon } from '../icons.js';
+import { logo } from '../logos.js';
+import { alert } from './feedback.js';
+import { field } from './field.js';
+import { checkbox } from './selection.js';
 
 // Values mirror the login/* client tokens in the Brand collection.
-const CLIENT = {
+export const LOGIN_CLIENT = {
   ea: { name: 'Enroll App', phone: '(000) 000-0000 / TTY 000', tel: '+10000000000', banner: false, notice: false, gov: ['An official website', 'Official websites use .gov', 'A .gov website belongs to an official government organization.'] },
   dc: { name: 'DC Health Link', phone: '(855) 532-5465 / TTY: 711', tel: '+18555325465', banner: false, notice: true, gov: ['An official website of the District of Columbia', 'Official websites use .dc.gov', 'A .dc.gov website belongs to an official government organization in the District of Columbia.'] },
   ma: { name: 'Massachusetts Health Connector', phone: '1-888-813-9220', tel: '+18888139220', banner: true, notice: false, gov: ['An official website of the Commonwealth of Massachusetts', 'Official websites use .mass.gov', 'A .mass.gov website belongs to an official government organization in Massachusetts.'] },
   me: { name: 'CoverME.gov', phone: '(866) 636-0355 / TTY 711', tel: '+18666360355', banner: false, notice: false, gov: ['An official website of the State of Maine', 'Official websites use .maine.gov', 'A .maine.gov website belongs to an official government organization in Maine.'] },
 };
-const SYSTEM_NOTICE = 'This system is the property of the District of Columbia Government. Use of this system may be monitored, recorded and subject to audit. Unauthorized use is prohibited.';
-const clientOf = (g) => g.theme || 'ea';
 
-const link = (label, href = '#') => `<a href="${href}" class="vitae-link">${esc(label)}</a>`;
-const submit = (label) => `<button type="submit" class="vitae-btn vitae-btn--solid vitae-btn--primary">${esc(label)}</button>`;
+export const SYSTEM_NOTICE = 'This system is the property of the District of Columbia Government. Use of this system may be monitored, recorded and subject to audit. Unauthorized use is prohibited.';
+
+export const clientOf = (g) => g.theme || 'ea';
+
+export const link = (label, href = '#') => `<a href="${href}" class="vitae-link">${esc(label)}</a>`;
+
+export const submit = (label) => `<button type="submit" class="vitae-btn vitae-btn--solid vitae-btn--primary">${esc(label)}</button>`;
 
 // Text field with the right type and autocomplete; password fields get a Show/Hide toggle.
-const input = ({ label, type = 'text', autocomplete, placeholder = '', inputmode = '', error = '' }) => {
+export const input = ({ label, type = 'text', autocomplete, placeholder = '', inputmode = '', error = '' }) => {
   let html = field({ label, placeholder, required: true, error })
     .replace('<input type="text"', `<input type="${type}" autocomplete="${autocomplete}"${inputmode ? ` inputmode="${inputmode}"` : ''}`);
   if (type === 'password') {
@@ -29,24 +34,25 @@ const input = ({ label, type = 'text', autocomplete, placeholder = '', inputmode
   return html;
 };
 
-const CHECKS = ['At least 12 characters', 'An uppercase and a lowercase letter', 'A number', 'A special character (for example ! @ # $)', 'Not your email or username'];
-const checklist = (met) => {
+export const CHECKS = ['At least 12 characters', 'An uppercase and a lowercase letter', 'A number', 'A special character (for example ! @ # $)', 'Not your email or username'];
+
+export const checklist = (met) => {
   const lid = id('pw-rules');
   return `<div><p class="vitae-field__helper" id="${lid}">Your password needs:</p>
     <ul class="vitae-checklist" aria-labelledby="${lid}">${CHECKS.map((c, i) => `<li class="${i < met ? 'is-met' : ''}">${icon('success', 20, i < met ? 'filled' : 'regular')}<span>${esc(c)}<span class="vitae-visually-hidden">${i < met ? ' (met)' : ' (not yet met)'}</span></span></li>`).join('')}</ul>
     <p class="vitae-visually-hidden" aria-live="polite">${met} of ${CHECKS.length} requirements met</p></div>`;
 };
 
-const signInForm = (client) => `
+export const signInForm = (client) => `
   ${input({ label: 'Email or username', autocomplete: 'username', placeholder: 'name@example.com' })}
   ${input({ label: 'Password', type: 'password', autocomplete: 'current-password' })}
   ${checkbox({ label: 'Keep me signed in on this device' })}
   ${submit('Sign in')}
   <div class="vitae-login-card__links">${link('Forgot password?')}${link('Forgot username?')}</div>
   <p class="vitae-login-card__center">New here? ${link('Create an account')}</p>
-  ${CLIENT[client].notice ? `<p class="vitae-login-card__notice">${esc(SYSTEM_NOTICE)}</p>` : ''}`;
+  ${LOGIN_CLIENT[client].notice ? `<p class="vitae-login-card__notice">${esc(SYSTEM_NOTICE)}</p>` : ''}`;
 
-const SCREENS = {
+export const SCREENS = {
   'Sign in': (c) => ({ title: 'Sign in', body: signInForm(c) }),
   'Sign in error': (c) => ({ title: 'Sign in', top: alert({ type: 'error', title: 'That email and password don’t match our records', message: 'Check them and try again, or reset your password.', dismissible: false }), body: signInForm(c) }),
   'Lockout warning': (c) => ({ title: 'Sign in', top: alert({ type: 'warning', title: '2 attempts left', message: 'After 2 more unsuccessful attempts your account will be locked for 30 minutes. You can reset your password instead.', dismissible: false }), body: signInForm(c) }),
@@ -73,7 +79,7 @@ const SCREENS = {
 };
 
 export const loginCard = ({ client = 'ea', screen = 'Sign in' } = {}) => {
-  const c = CLIENT[client];
+  const c = LOGIN_CLIENT[client];
   const s = SCREENS[screen](client);
   return `<form class="vitae-login-card" novalidate aria-labelledby="login-title-${screen.replace(/\W/g, '')}">
     <div class="vitae-login-card__logo">${logo(client)}<span class="vitae-visually-hidden">${esc(c.name)}</span></div>
@@ -88,7 +94,7 @@ export const loginCard = ({ client = 'ea', screen = 'Sign in' } = {}) => {
 };
 
 export const officialBanner = ({ client = 'ma', expanded = false } = {}) => {
-  const [text, title, desc] = CLIENT[client].gov;
+  const [text, title, desc] = LOGIN_CLIENT[client].gov;
   const pid = id('gov-panel');
   return `<section class="vitae-official-banner" aria-label="Official website of the government">
     <div class="vitae-official-banner__bar"><span class="vitae-official-banner__seal" aria-hidden="true"></span><span>${esc(text)}</span>
@@ -108,7 +114,7 @@ export const loginLayout = ({ client = 'ea', layout = 'centered', screen = 'Sign
       : loginCard({ client, screen })}
   </div>`;
 
-const wire = (storyFn) => {
+export const wireLogin = (storyFn) => {
   const el = storyFn();
   setTimeout(() => {
     document.querySelectorAll('.vitae-password__toggle').forEach((b) => {
@@ -128,66 +134,4 @@ const wire = (storyFn) => {
   return el;
 };
 
-export default {
-  title: 'Vitae 27/Components/Log-in',
-  tags: ['autodocs'],
-  excludeStories: /^[a-z]/,
-  decorators: [wire, canvas],
-  parameters: {
-    design: [figma('263:841', 'Log-in/Card'), figma('264:565', 'Log-in/Layout'), figma('265:38213', 'Log-in/Logo'), figma('270:3132', 'Log-in/Official banner')],
-    docs: { description: { component: `
-Sign-in and account screens for every client. One card (440px max, \`card/surface\`, \`border/subtle\`, \`brand/radius/card\`, elevation 8) that fills the width on phones; the padding drops from 32px to 24px below 480px (container query).
-
-**Security and UX rules**
-- One generic sign-in error ("That email and password don’t match our records"). Never say which field was wrong. The reset confirmation is generic too ("If an account exists…").
-- Errors are inline: an alert at the top of the card plus field messages. No pop-up dialogs. Never disable the submit button; show what is missing when it is pressed.
-- Warn before lockout (attempts left) and say when a locked account unlocks, with a reset path and the help phone.
-- Verification code: one input, not split boxes. Say where the code went; resend with a countdown and an alternate method.
-- Create account: live password checklist. Met requirements show a filled check, unmet an outline check, plus text (never color alone). Show/Hide on every password field.
-
-**Developer notes**
-- Allow paste and password managers everywhere (WCAG 2.2 SC 3.3.8). \`autocomplete\`: \`username\`, \`current-password\`, \`new-password\`, \`one-time-code\`; \`inputmode="numeric"\` on the code field. No CAPTCHA puzzles.
-- Top-of-card alerts use \`role="alert"\` and take focus on a submit error; field errors use \`aria-describedby\`.
-- The checklist is a list with an \`aria-live="polite"\` summary ("3 of 5 requirements met").
-- "Keep me signed in" and "Trust this device" are unchecked by default.
-- Session timeout: warn 2 minutes before and land on **Signed out** (WCAG 2.2.1).
-- The help phone is a \`tel:\` link (\`login/help-phone-tel\`) at every width. DC alone shows the system-use notice (\`login/show-system-notice\`).
-- Logos: render both the color and white logo and switch with \`[data-mode="dark"]\` (logo/show-color, logo/show-white), or swap the file server-side by mode. Never invert or filter the color logo, except MA, whose white logo is a white mask of the same artwork.` } },
-  },
-};
-
-const SCREEN_NAMES = Object.keys(SCREENS);
-
-export const Card = {
-  args: { screen: 'Sign in' },
-  argTypes: { screen: { control: 'select', options: SCREEN_NAMES } },
-  render: (args, { globals }) => `<div style="background:var(--vitae-background-page);padding:32px 16px">${loginCard({ client: clientOf(globals), ...args })}</div>`,
-  parameters: { docs: { description: { story: 'Pick a screen with the control. The client logo, help phone and DC system notice follow the Theme toolbar.' } } },
-};
-
-export const AllScreens = {
-  name: 'All screens',
-  render: (_a, { globals }) => `<div style="display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;background:var(--vitae-background-page);padding:24px">${SCREEN_NAMES.map((s) => `<div style="flex:1 1 360px;max-width:440px"><p class="vitae-field__helper" style="margin:0 0 8px">Screen: ${esc(s)}</p>${loginCard({ client: clientOf(globals), screen: s })}</div>`).join('')}</div>`,
-};
-
-export const Layout = {
-  args: { layout: 'centered', screen: 'Sign in' },
-  argTypes: { layout: { control: 'inline-radio', options: ['centered', 'split'] }, screen: { control: 'select', options: SCREEN_NAMES } },
-  render: (args, { globals }) => loginLayout({ client: clientOf(globals), ...args }),
-  parameters: { docs: { description: { story: `Page body between the header and footer. **Centered**: card on \`background/page\`, 64px top and bottom. **Split**: card plus an info panel (\`background/brand-subtle\`), 960px max; below about 680px the panel wraps under the card. Keep the card first in the code so visual and reading order match (no CSS \`order\`). The card title is the page h1; the panel heading is h2.` } } },
-};
-
-export const LayoutPhone = {
-  name: 'Layout · 375px',
-  render: (_a, { globals }) => `<div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start">${['centered', 'split'].map((l) => `<div style="width:375px;border:1px dashed var(--vitae-border-subtle)">${loginLayout({ client: clientOf(globals), layout: l })}</div>`).join('')}</div>`,
-};
-
-export const OfficialBanner = {
-  name: 'Official banner',
-  args: { expanded: false },
-  render: (args, { globals }) => {
-    const client = clientOf(globals);
-    return `${CLIENT[client].banner ? '' : `<p class="vitae-field__helper" style="margin:0 0 8px">Shown for MA only (login/show-official-banner). Previewing with ${client.toUpperCase()} text.</p>`}${officialBanner({ client, ...args })}`;
-  },
-  parameters: { docs: { description: { story: 'Above the header, MA only today. The 20px seal slot takes the client’s own seal artwork (placeholder here; we don’t redraw government seals). The toggle is a button with `aria-expanded` and `aria-controls`. The two explanations sit side by side and stack on phones. Full width; content max 1140px.' } } },
-};
+export const SCREEN_NAMES = Object.keys(SCREENS);

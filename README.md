@@ -41,7 +41,7 @@ Load one stylesheet and set the client and mode on the page:
 | `dist/v2/docs/vitae.<client>.<mode>.json` | Flat resolved values (used by the contrast check and for reference) |
 | `dist/v2/docs/manifest.json` | Token list with descriptions |
 
-Component CSS (`vitae-btn`, `vitae-field`, `vitae-alert` …) is in `stories/vitae/vitae.css`, the reference implementation for the Rails components.
+Component CSS (`vitae-btn`, `vitae-field`, `vitae-alert` …) is in `stories/vitae/vitae.css` and each component's markup is in `stories/vitae/markup/`; together they're the reference implementation for the Rails components.
 
 ## How the repo is organized
 
@@ -51,7 +51,10 @@ tokens-v2/            Vitae 27 tokens (DTCG JSON) — see tokens-v2/README.md
   brand/{ea,dc,ma,me}   what differs by client: brand ramps, fonts, radii, client settings
   semantic/{light,dark} what components use, by meaning, per mode
 build-v2.mjs          Style Dictionary build for tokens-v2 → dist/v2/
-stories/vitae/        Vitae 27 Storybook: Introduction, Foundations, Icons, Logos, Components, Sample users
+stories/vitae/        Vitae 27 Storybook: Introduction, Foundations, Icons, Logos, Sample users
+  components/<group>/   one story file per component (actions, forms, feedback, navigation, layout, shopping, patterns)
+  markup/               plain functions that return each component's HTML (the contract the Rails components match)
+  data.js               shared sample data: people, plans and records used by every story
   vitae.css             component CSS
   icons/                Fluent 2 icons (from github.com/microsoft/fluentui-system-icons) and header icons
 .storybook/           Storybook config: Theme and Mode toolbar, design-source badge, accessibility panel
@@ -80,6 +83,7 @@ The **Accessibility** tab under each story in Storybook runs the same axe rules.
 ## Contributing
 
 - **Design first.** Components are built in Figma, then in Storybook; every story's Source badge links to its Figma frame.
+- **Adding a component:** put its HTML function in `stories/vitae/markup/`, its stories in `stories/vitae/components/<group>/<name>.stories.js` (title `Vitae 27/Components/<Group>/<Name>`, a `Playground` story driven by args, then state stories), sample content in `data.js`, and an interaction test (`play`) if it has behavior. Add its Figma node to `figma-links.json` and set the Figma documentation link.
 - **No hard-coded values.** Colors, spacing, radius, borders, type and effects come from tokens.
 - **Accessibility:** WCAG 2.1 AA. Never rely on color alone; focus is a 2px dashed ring on `:focus-visible`; disabled controls have no hover or pressed state; phone numbers are `tel:` links.
 - **One responsive component** rather than separate desktop and mobile versions, unless the narrow version is a different pattern.

@@ -25,7 +25,14 @@ The design source is the [Vitae 27 Figma file](https://www.figma.com/design/FgVd
 - **Foundations:** semantic color roles, each client's color ramps, text styles, spacing, radius and borders, elevation, motion and client settings. All generated from the tokens.
 - **Icons:** the Fluent 2 icon set used across the system, plus the header icons.
 - **Logos:** each client's logo in color (light mode) and white (dark mode).
-- **Components:** buttons, links, the focus ring, form fields, selection controls, feedback (alerts, tags, metal badges, tooltips), navigation, layout and data, plan shopping, log-in and document upload (with the progress bar).
+- **Components**, one page per component, grouped the way you'd build a screen:
+  - **Actions:** Button, Link, Focus ring
+  - **Forms:** Input, Dropdown, Checkbox, Radio, Toggle, Choice group, Field-set, Search, Date picker
+  - **Feedback:** Alert, Tag, Metal badge, Tooltip, Modal, Progress bar
+  - **Navigation:** Header, Footer, Breadcrumbs, Pagination, Tabs, Left nav, Progress
+  - **Layout and data:** Card, Accordion, Table, Menu
+  - **Plan shopping:** Plan tile, Filter panel, Compare
+  - **Patterns:** Log-in, Document upload
 - **Sample users:** the fictional household, admin, broker, assister, employer and employee used in every mockup, so screens tell a consistent story.
 
 ## Tokens
@@ -50,7 +57,12 @@ Components reference semantic and brand tokens only, never hard-coded values.
 
 ## Building with it
 
-The target is Rails `html.erb`. The markup in each story's Docs tab is the contract: semantic HTML first, `vitae-*` class names, and native elements wherever they exist (a real `<button>`, `<input type="checkbox">`, `<select>`). The component CSS these stories use is in `stories/vitae/vitae.css` and is the reference implementation.
+The target is Rails `html.erb`. The markup in each story's Docs tab is the contract: semantic HTML first, `vitae-*` class names, and native elements wherever they exist (a real `<button>`, `<input type="checkbox">`, `<select>`). In the repo:
+
+- `stories/vitae/markup/` holds one plain function per component that returns that HTML. It's the reference a Rails component should match.
+- `stories/vitae/vitae.css` is the component CSS.
+- `stories/vitae/data.js` is the shared sample data (people, plans, records), so every story uses the same Sample users.
+- Stateful stories (Tabs, Accordion, Checkbox, Radio, Toggle, Log-in, Compare, Document upload) include an interaction test that runs in CI; see the Interactions tab.
 
 Rules that apply everywhere:
 

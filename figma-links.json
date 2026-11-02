@@ -10,127 +10,127 @@
     {
       "figma": "5:989",
       "name": "Button/Solid",
-      "docs": "vitae-27-components-button--docs"
+      "docs": "vitae-27-components-actions-button--docs"
     },
     {
       "figma": "5:1188",
       "name": "Button/Outline",
-      "docs": "vitae-27-components-button--docs"
+      "docs": "vitae-27-components-actions-button--docs"
     },
     {
       "figma": "5:1373",
       "name": "Button/Ghost",
-      "docs": "vitae-27-components-button--docs"
+      "docs": "vitae-27-components-actions-button--docs"
     },
     {
       "figma": "42:6",
       "name": "Focus ring",
-      "docs": "vitae-27-components-focus-ring--docs"
+      "docs": "vitae-27-components-actions-focus-ring--docs"
     },
     {
       "figma": "42:2307",
       "name": "Link",
-      "docs": "vitae-27-components-link--docs"
+      "docs": "vitae-27-components-actions-link--docs"
     },
     {
       "figma": "44:191",
       "name": "Input",
-      "docs": "vitae-27-components-input-and-dropdown--docs"
+      "docs": "vitae-27-components-forms-input--docs"
     },
     {
       "figma": "53:782",
       "name": "Dropdown",
-      "docs": "vitae-27-components-input-and-dropdown--docs"
+      "docs": "vitae-27-components-forms-dropdown--docs"
     },
     {
       "figma": "58:240",
       "name": "Checkbox",
-      "docs": "vitae-27-components-checkbox-radio-and-toggle--docs"
+      "docs": "vitae-27-components-forms-checkbox--docs"
     },
     {
       "figma": "61:137",
       "name": "Radio",
-      "docs": "vitae-27-components-checkbox-radio-and-toggle--docs"
+      "docs": "vitae-27-components-forms-radio--docs"
     },
     {
       "figma": "68:75",
       "name": "Toggle",
-      "docs": "vitae-27-components-checkbox-radio-and-toggle--docs"
+      "docs": "vitae-27-components-forms-toggle--docs"
     },
     {
       "figma": "73:20",
       "name": "Calendar/Day",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-forms-date-picker--docs"
     },
     {
       "figma": "73:21",
       "name": "Calendar",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-forms-date-picker--docs"
     },
     {
       "figma": "73:6441",
       "name": "Date picker",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-forms-date-picker--docs"
     },
     {
       "figma": "74:800",
       "name": "Choice group",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-forms-choice-group--docs"
     },
     {
       "figma": "242:2295",
       "name": "Field-set",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-forms-field-set--docs"
     },
     {
       "figma": "86:43",
       "name": "Menu/Item",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-layout-and-data-menu--docs"
     },
     {
       "figma": "86:44",
       "name": "Menu/Group heading",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-layout-and-data-menu--docs"
     },
     {
       "figma": "86:46",
       "name": "Menu/Divider",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-layout-and-data-menu--docs"
     },
     {
       "figma": "86:48",
       "name": "Menu/Empty",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-layout-and-data-menu--docs"
     },
     {
       "figma": "86:50",
       "name": "Menu",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-layout-and-data-menu--docs"
     },
     {
       "figma": "87:3",
       "name": "Search",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-forms-search--docs"
     },
     {
       "figma": "94:56",
       "name": "Alert",
-      "docs": "vitae-27-components-alert-tag-and-metal-badge--docs"
+      "docs": "vitae-27-components-feedback-alert--docs"
     },
     {
       "figma": "96:27",
       "name": "Tag",
-      "docs": "vitae-27-components-alert-tag-and-metal-badge--docs"
+      "docs": "vitae-27-components-feedback-tag--docs"
     },
     {
       "figma": "101:33",
       "name": "Tooltip",
-      "docs": "vitae-27-components-alert-tag-and-metal-badge--docs"
+      "docs": "vitae-27-components-feedback-tooltip--docs"
     },
     {
       "figma": "112:124",
       "name": "Modal",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-feedback-modal--docs"
     },
     {
       "figma": "115:12316",
@@ -160,17 +160,17 @@
     {
       "figma": "116:382",
       "name": "Header/Nav bar",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-header--docs"
     },
     {
       "figma": "117:721",
       "name": "Header",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-header--docs"
     },
     {
       "figma": "119:718",
       "name": "Header/Mobile",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-header--docs"
     },
     {
       "figma": "121:1244",
@@ -205,247 +205,247 @@
     {
       "figma": "119:404",
       "name": "Header/Mobile drawer",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-header--docs"
     },
     {
       "figma": "246:2052",
       "name": "Footer",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-footer--docs"
     },
     {
       "figma": "135:44",
       "name": "Breadcrumb/Item",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-breadcrumbs--docs"
     },
     {
       "figma": "135:101",
       "name": "Breadcrumbs",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-breadcrumbs--docs"
     },
     {
       "figma": "309:3052",
       "name": "Back link",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-breadcrumbs--docs"
     },
     {
       "figma": "139:247",
       "name": "Pagination/Page",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-pagination--docs"
     },
     {
       "figma": "140:53",
       "name": "Pagination",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-pagination--docs"
     },
     {
       "figma": "145:43",
       "name": "Left nav/Item",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-left-nav--docs"
     },
     {
       "figma": "145:149",
       "name": "Left nav",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-left-nav--docs"
     },
     {
       "figma": "154:1078",
       "name": "Mobile nav toggle",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-left-nav--docs"
     },
     {
       "figma": "159:996",
       "name": "Progress line",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-progress--docs"
     },
     {
       "figma": "161:68",
       "name": "Progress/Step",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-progress--docs"
     },
     {
       "figma": "161:205",
       "name": "Progress",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-progress--docs"
     },
     {
       "figma": "175:37",
       "name": "Tabs/Item",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-tabs--docs"
     },
     {
       "figma": "248:566",
       "name": "Tabs",
-      "docs": "vitae-27-components-navigation--docs"
+      "docs": "vitae-27-components-navigation-tabs--docs"
     },
     {
       "figma": "180:32",
       "name": "Metal badge",
-      "docs": "vitae-27-components-alert-tag-and-metal-badge--docs"
+      "docs": "vitae-27-components-feedback-metal-badge--docs"
     },
     {
       "figma": "183:3",
       "name": "Card/Slot",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-layout-and-data-card--docs"
     },
     {
       "figma": "183:349",
       "name": "Card",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-layout-and-data-card--docs"
     },
     {
       "figma": "188:90",
       "name": "Accordion/Item",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-layout-and-data-accordion--docs"
     },
     {
       "figma": "188:180",
       "name": "Accordion",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-layout-and-data-accordion--docs"
     },
     {
       "figma": "190:47",
       "name": "Table/Header cell",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-layout-and-data-table--docs"
     },
     {
       "figma": "190:88",
       "name": "Table/Cell",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-layout-and-data-table--docs"
     },
     {
       "figma": "255:2897",
       "name": "Table",
-      "docs": "vitae-27-components-layout-and-data--docs"
+      "docs": "vitae-27-components-layout-and-data-table--docs"
     },
     {
       "figma": "192:3",
       "name": "Filter label",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-filter-panel--docs"
     },
     {
       "figma": "195:28",
       "name": "Filter/Group",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-filter-panel--docs"
     },
     {
       "figma": "195:218",
       "name": "Filter/Range",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-filter-panel--docs"
     },
     {
       "figma": "195:219",
       "name": "Filter/Results bar",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-filter-panel--docs"
     },
     {
       "figma": "196:770",
       "name": "Filter panel",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-filter-panel--docs"
     },
     {
       "figma": "199:4694",
       "name": "Filter/Plan features",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-filter-panel--docs"
     },
     {
       "figma": "200:4454",
       "name": "Filter/Network",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-filter-panel--docs"
     },
     {
       "figma": "202:4399",
       "name": "Filter/Plan level",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-filter-panel--docs"
     },
     {
       "figma": "319:7598",
       "name": "Filter/Carrier list",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-filter-panel--docs"
     },
     {
       "figma": "208:3",
       "name": "Plan tile/Carrier logo",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-plan-tile--docs"
     },
     {
       "figma": "208:12",
       "name": "Plan tile/Fact",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-plan-tile--docs"
     },
     {
       "figma": "235:2596",
       "name": "Plan tile",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-plan-tile--docs"
     },
     {
       "figma": "263:841",
       "name": "Log-in/Card",
-      "docs": "vitae-27-components-log-in--docs"
+      "docs": "vitae-27-components-patterns-log-in--docs"
     },
     {
       "figma": "264:565",
       "name": "Log-in/Layout",
-      "docs": "vitae-27-components-log-in--docs"
+      "docs": "vitae-27-components-patterns-log-in--docs"
     },
     {
       "figma": "270:3132",
       "name": "Log-in/Official banner",
-      "docs": "vitae-27-components-log-in--docs"
+      "docs": "vitae-27-components-patterns-log-in--docs"
     },
     {
       "figma": "293:38161",
       "name": "Plan compare/Chip",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-compare--docs"
     },
     {
       "figma": "293:38166",
       "name": "Plan compare/Tray",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-compare--docs"
     },
     {
       "figma": "295:42",
       "name": "Plan compare/Row",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-compare--docs"
     },
     {
       "figma": "295:38844",
       "name": "Plan compare/Table",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-compare--docs"
     },
     {
       "figma": "298:39641",
       "name": "Plan compare/Plan header",
-      "docs": "vitae-27-components-plan-shopping--docs"
+      "docs": "vitae-27-components-plan-shopping-compare--docs"
     },
     {
       "figma": "398:2845",
       "name": "Progress bar",
-      "docs": "vitae-27-components-document-upload--docs"
+      "docs": "vitae-27-components-feedback-progress-bar--docs"
     },
     {
       "figma": "393:168",
       "name": "Upload/File input",
-      "docs": "vitae-27-components-document-upload--docs"
+      "docs": "vitae-27-components-patterns-document-upload--docs"
     },
     {
       "figma": "394:109",
       "name": "Upload/Attachment",
-      "docs": "vitae-27-components-document-upload--docs"
+      "docs": "vitae-27-components-patterns-document-upload--docs"
     },
     {
       "figma": "394:351",
       "name": "Upload/Panel",
-      "docs": "vitae-27-components-document-upload--docs"
+      "docs": "vitae-27-components-patterns-document-upload--docs"
     },
     {
       "figma": "395:443",
       "name": "Upload/History row",
-      "docs": "vitae-27-components-document-upload--docs"
+      "docs": "vitae-27-components-patterns-document-upload--docs"
     },
     {
       "figma": "395:654",
       "name": "Upload/Verification",
-      "docs": "vitae-27-components-document-upload--docs"
+      "docs": "vitae-27-components-patterns-document-upload--docs"
     }
   ]
 }

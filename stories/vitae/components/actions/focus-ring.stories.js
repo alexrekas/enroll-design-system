@@ -1,5 +1,6 @@
-import { canvas, figma } from './_shared.js';
-import { icon } from './icons.js';
+import { expect, userEvent, within } from 'storybook/test';
+import { canvas, figma } from '../../_shared.js';
+import { icon } from '../../icons.js';
 
 const SHAPES = [
   ['Button', 'Buttons and the back link', '<button type="button" class="vitae-btn vitae-btn--solid vitae-btn--primary is-focus">Continue</button>', 'brand/radius/focus-ring (button radius + 4)'],
@@ -10,9 +11,8 @@ const SHAPES = [
 ];
 
 export default {
-  title: 'Vitae 27/Components/Focus ring',
+  title: 'Vitae 27/Components/Actions/Focus ring',
   tags: ['autodocs'],
-  excludeStories: /^[a-z]/,
   decorators: [canvas],
   parameters: {
     design: figma('42:6', 'Focus ring'),
@@ -48,4 +48,14 @@ export const TryIt = {
       <a href="#" class="vitae-link">View plan details</a>
       <input class="vitae-input" aria-label="Annual income" placeholder="$0" style="max-width:200px">
     </div>`,
+  play: async ({ canvasElement, step }) => {
+    const canvas = within(canvasElement);
+    await step('Keyboard focus shows the ring', async () => {
+      await userEvent.tab();
+      const btn = canvas.getByRole('button', { name: 'Continue' });
+      await expect(btn).toHaveFocus();
+      await expect(btn.matches(':focus-visible')).toBe(true);
+      await expect(getComputedStyle(btn).outlineStyle).toBe('dashed');
+    });
+  },
 };
