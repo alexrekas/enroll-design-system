@@ -23,7 +23,16 @@ Choose one option from about 5–15 (use Radio for 2–4). Shares one field anat
 
 - A native \`<select>\` with a hidden, disabled first option as the placeholder. The open list is the operating system's own menu, so keyboard and screen reader behavior come for free.
 - **Error:** \`aria-invalid="true"\` and the message linked with \`aria-describedby\`.
-- For a searchable or richer list, use Search with a Menu instead.` } },
+- For a searchable or richer list, use Search with a Menu instead.
+
+### Rails
+
+\`Vitae::DropdownComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::DropdownComponent.new(label: "Tax filing status", name: "household[filing_status]", value: @household.filing_status,
+      options: [["Single", "single"], ["Married filing jointly", "mfj"]], required: true) %>
+\`\`\`` } },
   },
   argTypes: { state: { control: 'select', options: STATES } },
   args: { kind: 'select', label: 'Tax filing status', placeholder: 'Select', value: '', helper: '', error: '', required: true, info: false, showLabel: true, state: 'rest' },

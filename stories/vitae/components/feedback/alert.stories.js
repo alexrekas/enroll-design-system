@@ -5,7 +5,14 @@ export default {
   title: 'Vitae 27/Components/Feedback/Alert',
   tags: ['autodocs'],
   decorators: [canvas],
-  parameters: { design: figma('94:56', 'Alert') },
+  parameters: { docs: { description: { component: `### Rails
+
+\`Vitae::AlertComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::AlertComponent.new(type: :success, title: "Your plan is selected", message: "Pay your first premium to start coverage.") %>
+<%= render Vitae::AlertComponent.new(type: :error, title: "There are 2 problems on this page", message: "Fix the fields marked below, then continue.", dismissible: false) %>
+\`\`\`` } }, design: figma('94:56', 'Alert') },
 };
 
 export const Playground = {

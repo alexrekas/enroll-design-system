@@ -1,0 +1,4 @@
+<div style="display:grid;gap:24px;max-width:360px">
+  <%= render Vitae::InputComponent.new(label: "Email", name: "email", type: "email", placeholder: "name@example.com", leading_icon: "mail", autocomplete: "email") %>
+  <%= render Vitae::InputComponent.new(label: "Date of birth", name: "dob", placeholder: "MM/DD/YYYY", trailing_icon: "calendar", inputmode: "numeric", autocomplete: "bday") %>
+</div>

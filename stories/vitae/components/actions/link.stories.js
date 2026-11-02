@@ -12,7 +12,17 @@ export default {
 
 \`<a class="vitae-link">\` / \`<a class="vitae-link vitae-link--standalone">\`
 
-Colors: \`--vitae-text-link\`, \`-hover\`, \`-active\`. Hover and pressed thicken the underline. Focus: dashed ring, 2px outside.` } },
+Colors: \`--vitae-text-link\`, \`-hover\`, \`-active\`. Hover and pressed thicken the underline. Focus: dashed ring, 2px outside.
+
+### Rails
+
+\`Vitae::LinkComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::LinkComponent.new(label: "Learn how plan levels work", href: help_levels_path) %>
+<%= render Vitae::LinkComponent.new(label: "View plan details", href: plan_path(plan), standalone: true) %>
+<%= render Vitae::LinkComponent.new(label: "IRS Form 1095-A", href: irs_url, standalone: true, icon: "external-link") %>
+\`\`\`` } },
   },
   argTypes: {
     type: { control: 'inline-radio', options: ['inline', 'standalone'] },

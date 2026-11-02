@@ -5,7 +5,14 @@ export default {
   title: 'Vitae 27/Components/Feedback/Tag',
   tags: ['autodocs'],
   decorators: [canvas],
-  parameters: { design: figma('96:27', 'Tag') },
+  parameters: { docs: { description: { component: `### Rails
+
+\`Vitae::TagComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::TagComponent.new(label: "Approved", type: :success) %>
+<%= render Vitae::TagComponent.new(label: "Draft", type: :neutral, show_icon: false) %>
+\`\`\`` } }, design: figma('96:27', 'Tag') },
 };
 
 export const Playground = {

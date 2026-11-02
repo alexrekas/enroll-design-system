@@ -1,0 +1,771 @@
+/* Vitae 27 reference CSS for Storybook. Every value comes from tokens-v2 (dist/v2/css/vitae.css).
+   Class names follow the "Code:" lines in each Figma component description. */
+
+/* ---------- Base ---------- */
+.vitae-canvas {
+  background: var(--vitae-background-page); color: var(--vitae-text-body);
+  font-family: var(--vitae-brand-font-family), system-ui, -apple-system, "Segoe UI", sans-serif; font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-24);
+  padding: var(--vitae-space-024); min-height: 100%;
+}
+.vitae-canvas *, .vitae-canvas *::before, .vitae-canvas *::after { box-sizing: border-box; }
+.vitae-icon { flex: none; display: inline-block; vertical-align: middle; }
+.vitae-visually-hidden { position: absolute !important; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.vitae-demo-grid { display: grid; gap: var(--vitae-space-016) var(--vitae-space-024); align-items: start; }
+.vitae-demo-label { font-size: var(--vitae-font-size-12); line-height: var(--vitae-font-line-height-16); color: var(--vitae-text-secondary); }
+:root { --_ring: 2px dashed var(--vitae-border-focus-ring); }
+.vitae-transition { transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+@media (prefers-reduced-motion: reduce) { .vitae-canvas * { transition: none !important; animation: none !important; } }
+
+/* ---------- Button ---------- */
+.vitae-btn {
+  --_c: var(--vitae-action-primary); --_ch: var(--vitae-action-primary-hover); --_ca: var(--vitae-action-primary-active);
+  --_on: var(--vitae-text-on-primary);
+  --_t: var(--vitae-action-primary-text); --_th: var(--vitae-action-primary-text-hover); --_ta: var(--vitae-action-primary-text-active);
+  --_sh: var(--vitae-action-primary-subtle-hover); --_sa: var(--vitae-action-primary-subtle-active);
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--vitae-space-008);
+  min-height: 44px; padding: 10px var(--vitae-space-016);
+  border: var(--vitae-border-width-2) solid transparent; border-radius: var(--vitae-brand-radius-button);
+  font: inherit; font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-20); font-weight: var(--vitae-font-weight-semibold);
+  cursor: pointer; text-decoration: none; white-space: nowrap;
+  transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard);
+}
+.vitae-btn--secondary { --_c: var(--vitae-action-secondary); --_ch: var(--vitae-action-secondary-hover); --_ca: var(--vitae-action-secondary-active); --_on: var(--vitae-text-on-secondary); --_t: var(--vitae-action-secondary-text); --_th: var(--vitae-action-secondary-text-hover); --_ta: var(--vitae-action-secondary-text-active); --_sh: var(--vitae-action-secondary-subtle-hover); --_sa: var(--vitae-action-secondary-subtle-active); }
+.vitae-btn--tertiary { --_c: var(--vitae-action-tertiary); --_ch: var(--vitae-action-tertiary-hover); --_ca: var(--vitae-action-tertiary-active); --_on: var(--vitae-text-on-tertiary); --_t: var(--vitae-action-tertiary-text); --_th: var(--vitae-action-tertiary-text-hover); --_ta: var(--vitae-action-tertiary-text-active); --_sh: var(--vitae-action-tertiary-subtle-hover); --_sa: var(--vitae-action-tertiary-subtle-active); }
+.vitae-btn--destructive { --_c: var(--vitae-action-destructive); --_ch: var(--vitae-action-destructive-hover); --_ca: var(--vitae-action-destructive-active); --_on: var(--vitae-text-on-destructive); --_t: var(--vitae-action-destructive-text); --_th: var(--vitae-action-destructive-text-hover); --_ta: var(--vitae-action-destructive-text-active); --_sh: var(--vitae-action-destructive-subtle-hover); --_sa: var(--vitae-action-destructive-subtle-active); }
+.vitae-btn--solid { background: var(--_c); border-color: var(--_c); color: var(--_on); }
+.vitae-btn--solid:not(:disabled, [aria-disabled="true"]):hover, .vitae-btn--solid.is-hover { background: var(--_ch); border-color: var(--_ch); }
+.vitae-btn--solid:not(:disabled, [aria-disabled="true"]):active, .vitae-btn--solid.is-pressed { background: var(--_ca); border-color: var(--_ca); }
+.vitae-btn--outline { background: transparent; border-color: var(--_t); color: var(--_t); }
+.vitae-btn--outline:not(:disabled, [aria-disabled="true"]):hover, .vitae-btn--outline.is-hover { background: var(--_sh); border-color: var(--_th); color: var(--_th); }
+.vitae-btn--outline:not(:disabled, [aria-disabled="true"]):active, .vitae-btn--outline.is-pressed { background: var(--_sa); border-color: var(--_ta); color: var(--_ta); }
+.vitae-btn--ghost { background: transparent; color: var(--_t); }
+.vitae-btn--ghost:not(:disabled, [aria-disabled="true"]):hover, .vitae-btn--ghost.is-hover { background: var(--_sh); color: var(--_th); }
+.vitae-btn--ghost:not(:disabled, [aria-disabled="true"]):active, .vitae-btn--ghost.is-pressed { background: var(--_sa); color: var(--_ta); }
+.vitae-btn:focus-visible, .vitae-btn.is-focus { outline: var(--_ring); outline-offset: 2px; }
+.vitae-btn:disabled, .vitae-btn[aria-disabled="true"] { cursor: not-allowed; color: var(--vitae-text-disabled); }
+.vitae-btn--solid:disabled, .vitae-btn--solid[aria-disabled="true"] { background: var(--vitae-action-disabled); border-color: var(--vitae-action-disabled); }
+.vitae-btn--outline:disabled, .vitae-btn--outline[aria-disabled="true"] { background: transparent; border-color: var(--vitae-field-border-disabled); }
+.vitae-btn--ghost:disabled, .vitae-btn--ghost[aria-disabled="true"] { background: transparent; }
+
+/* ---------- Link ---------- */
+.vitae-link {
+  color: var(--vitae-text-link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; cursor: pointer;
+  transition: color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), text-decoration-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard);
+}
+.vitae-link:hover, .vitae-link.is-hover { color: var(--vitae-text-link-hover); text-decoration-thickness: 2px; }
+.vitae-link:active, .vitae-link.is-pressed { color: var(--vitae-text-link-active); text-decoration-thickness: 2px; }
+.vitae-link:focus-visible, .vitae-link.is-focus { outline: var(--_ring); outline-offset: 2px; border-radius: var(--vitae-radius-2); }
+.vitae-link--standalone { display: inline-flex; align-items: center; gap: var(--vitae-space-004); font-weight: var(--vitae-font-weight-semibold); text-decoration: none; min-height: 24px; }
+.vitae-link--standalone:hover, .vitae-link--standalone.is-hover, .vitae-link--standalone:active, .vitae-link--standalone.is-pressed { text-decoration: underline; }
+
+/* ---------- Field (Input, Dropdown, Date picker, Search) ---------- */
+.vitae-field { display: flex; flex-direction: column; gap: var(--vitae-space-004); max-width: 320px; }
+.vitae-field__label-row { display: flex; align-items: center; gap: var(--vitae-space-004); }
+.vitae-field__label { font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-secondary); }
+.vitae-field__required { color: var(--vitae-text-error); }
+.vitae-field__control { position: relative; display: flex; align-items: center; }
+.vitae-field__control .vitae-icon { position: absolute; pointer-events: none; color: var(--vitae-icon-secondary); }
+.vitae-field__control .vitae-icon--leading { left: 12px; }
+.vitae-field__control .vitae-icon--trailing { right: 12px; }
+.vitae-input {
+  width: 100%; min-height: 44px; padding: 10px; padding-inline: 10px;
+  border: var(--vitae-border-width-2) solid var(--vitae-field-border); border-radius: var(--vitae-radius-4);
+  background: var(--vitae-field-background); color: var(--vitae-text-body);
+  font: inherit; font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-20);
+  transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard);
+}
+.vitae-input::placeholder { color: var(--vitae-text-placeholder); opacity: 1; }
+.vitae-input.has-leading { padding-left: 40px; }
+.vitae-input.has-trailing, .vitae-select { padding-right: 42px; }
+.vitae-input:not(:disabled):hover, .vitae-input.is-hover { border-color: var(--vitae-field-border-hover); }
+.vitae-input:focus, .vitae-input.is-active, .vitae-input.is-focus { outline: none; background: var(--vitae-field-background-active); border-color: var(--vitae-field-border-active); }
+html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring); outline-offset: 2px; }
+.vitae-input[aria-invalid="true"], .vitae-input.is-error { border-color: var(--vitae-support-error); }
+.vitae-input:disabled { background: var(--vitae-background-disabled); border-color: var(--vitae-field-border-disabled); color: var(--vitae-text-disabled); cursor: not-allowed; }
+.vitae-select { appearance: none; -webkit-appearance: none; cursor: pointer; }
+.vitae-field__helper { margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-field__error {
+  margin: 0; display: flex; align-items: flex-start; gap: var(--vitae-space-004); padding: 2px var(--vitae-space-008);
+  background: var(--vitae-support-error-surface); border: var(--vitae-border-width-1) solid var(--vitae-support-error-border); border-radius: var(--vitae-radius-4);
+  color: var(--vitae-text-error); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20);
+}
+.vitae-field__error .vitae-icon { margin-top: 2px; color: var(--vitae-support-error); }
+.vitae-info-button {
+  display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; padding: 0;
+  border: 0; border-radius: var(--vitae-radius-full); background: transparent; color: var(--vitae-text-link); cursor: pointer;
+}
+.vitae-info-button:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+
+/* ---------- Checkbox / Radio ---------- */
+.vitae-check { position: relative; display: grid; grid-template-columns: 24px 1fr; column-gap: var(--vitae-space-008); padding: 10px 0; max-width: 320px; }
+.vitae-check__input { position: absolute; top: 10px; left: 0; width: 24px; height: 24px; margin: 0; opacity: 0; cursor: pointer; }
+.vitae-check__box {
+  grid-row: 1; width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center;
+  border: var(--vitae-border-width-2) solid var(--vitae-field-border); border-radius: var(--vitae-radius-4);
+  background: var(--vitae-field-background); color: transparent; pointer-events: none;
+  transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard);
+}
+.vitae-check--radio .vitae-check__box { border-radius: var(--vitae-radius-full); }
+.vitae-check__dot { width: 12px; height: 12px; border-radius: var(--vitae-radius-full); background: currentColor; }
+.vitae-check__label { grid-column: 2; cursor: pointer; }
+.vitae-check__description { grid-column: 2; margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-check__error { grid-column: 2; margin-top: var(--vitae-space-004); }
+/* Check and radio states, per the Figma variants. Every rule is scoped .vitae-check .vitae-check__input… so the
+   cascade is predictable: on-states (checked, and indeterminate for checkboxes) > error > disabled, and hover/active
+   never apply to a disabled control. .is-* classes force a state for the Storybook matrices. */
+.vitae-check .vitae-check__input:not(:disabled):hover + .vitae-check__box, .vitae-check.is-hover .vitae-check__input:not(:disabled) + .vitae-check__box { border-color: var(--vitae-field-border-hover); color: color-mix(in srgb, var(--vitae-field-border-hover) 40%, transparent); }
+.vitae-check .vitae-check__input:not(:disabled):active + .vitae-check__box, .vitae-check.is-active .vitae-check__input:not(:disabled) + .vitae-check__box { border-color: var(--vitae-field-border-active); background: var(--vitae-field-background-active); color: transparent; }
+/* Checkbox on: checked or indeterminate */
+.vitae-check .vitae-check__input[type="checkbox"]:is(:checked, :indeterminate) + .vitae-check__box { background: var(--vitae-action-primary); border-color: var(--vitae-action-primary); color: var(--vitae-text-on-primary); }
+.vitae-check .vitae-check__input[type="checkbox"]:is(:checked, :indeterminate):not(:disabled):hover + .vitae-check__box, .vitae-check.is-hover .vitae-check__input[type="checkbox"]:is(:checked, :indeterminate):not(:disabled) + .vitae-check__box { background: var(--vitae-action-primary-hover); border-color: var(--vitae-action-primary-hover); color: var(--vitae-text-on-primary); }
+.vitae-check .vitae-check__input[type="checkbox"]:is(:checked, :indeterminate):not(:disabled):active + .vitae-check__box, .vitae-check.is-active .vitae-check__input[type="checkbox"]:is(:checked, :indeterminate):not(:disabled) + .vitae-check__box { background: var(--vitae-action-primary-active); border-color: var(--vitae-action-primary-active); color: var(--vitae-text-on-primary); }
+/* Radio on: white circle, primary border and dot */
+.vitae-check .vitae-check__input[type="radio"]:checked + .vitae-check__box { background: var(--vitae-field-background); border-color: var(--vitae-action-primary); color: var(--vitae-action-primary); }
+.vitae-check .vitae-check__input[type="radio"]:checked:not(:disabled):hover + .vitae-check__box, .vitae-check.is-hover .vitae-check__input[type="radio"]:checked:not(:disabled) + .vitae-check__box { background: var(--vitae-field-background); border-color: var(--vitae-action-primary-hover); color: var(--vitae-action-primary-hover); }
+.vitae-check .vitae-check__input[type="radio"]:checked:not(:disabled):active + .vitae-check__box, .vitae-check.is-active .vitae-check__input[type="radio"]:checked:not(:disabled) + .vitae-check__box { background: var(--vitae-field-background); border-color: var(--vitae-action-primary-active); color: var(--vitae-action-primary-active); }
+.vitae-check__input:focus-visible + .vitae-check__box, .vitae-check.is-focus .vitae-check__box { outline: var(--_ring); outline-offset: 2px; }
+/* Error: error border on any value; checked keeps its primary fill */
+.vitae-check .vitae-check__input[aria-invalid="true"]:not(:disabled) + .vitae-check__box, .vitae-check.is-error .vitae-check__input:not(:disabled) + .vitae-check__box { border-color: var(--vitae-support-error); }
+/* Disabled: no hover or active */
+.vitae-check .vitae-check__input:disabled + .vitae-check__box { background: var(--vitae-background-disabled); border-color: var(--vitae-field-border-disabled); color: transparent; }
+.vitae-check .vitae-check__input[type="checkbox"]:disabled:is(:checked, :indeterminate) + .vitae-check__box { background: var(--vitae-field-border-disabled); border-color: var(--vitae-field-border-disabled); color: var(--vitae-background-disabled); }
+.vitae-check .vitae-check__input[type="radio"]:disabled:checked + .vitae-check__box { background: var(--vitae-background-disabled); border-color: var(--vitae-field-border-disabled); color: var(--vitae-field-border-disabled); }
+.vitae-check__input:disabled { cursor: not-allowed; }
+.vitae-check__input:disabled ~ .vitae-check__label, .vitae-check__input:disabled ~ .vitae-check__description { color: var(--vitae-text-disabled); cursor: not-allowed; }
+.vitae-check__dash { width: 12px; height: 2px; background: currentColor; border-radius: 1px; }
+
+/* ---------- Toggle ---------- */
+.vitae-toggle { display: grid; grid-template-columns: 48px 1fr; column-gap: var(--vitae-space-008); align-items: start; padding: 10px 0; max-width: 360px; }
+.vitae-toggle__track {
+  position: relative; width: 48px; height: 24px; padding: 0; cursor: pointer;
+  border: var(--vitae-border-width-2) solid var(--vitae-field-border); border-radius: var(--vitae-radius-full); background: var(--vitae-field-background);
+  transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard);
+}
+.vitae-toggle__knob { position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: var(--vitae-radius-full); background: var(--vitae-field-border); transition: transform var(--vitae-motion-duration-moderate-01) var(--vitae-motion-easing-productive-standard), background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-toggle__track:not(:disabled):hover, .vitae-toggle.is-hover .vitae-toggle__track:not(:disabled) { border-color: var(--vitae-field-border-hover); }
+.vitae-toggle__track:not(:disabled):hover .vitae-toggle__knob, .vitae-toggle.is-hover .vitae-toggle__track:not(:disabled) .vitae-toggle__knob { background: var(--vitae-field-border-hover); transform: translateX(6px); }
+.vitae-toggle__track[aria-checked="true"] { background: var(--vitae-action-primary); border-color: var(--vitae-action-primary); }
+.vitae-toggle__track[aria-checked="true"] .vitae-toggle__knob { background: var(--vitae-text-on-primary); transform: translateX(24px); }
+.vitae-toggle__track[aria-checked="true"]:not(:disabled):hover, .vitae-toggle.is-hover .vitae-toggle__track[aria-checked="true"]:not(:disabled) { background: var(--vitae-action-primary-hover); border-color: var(--vitae-action-primary-hover); }
+.vitae-toggle__track[aria-checked="true"]:not(:disabled):hover .vitae-toggle__knob, .vitae-toggle.is-hover .vitae-toggle__track[aria-checked="true"]:not(:disabled) .vitae-toggle__knob { transform: translateX(18px); }
+.vitae-toggle__track:focus-visible, .vitae-toggle.is-focus .vitae-toggle__track { outline: var(--_ring); outline-offset: 2px; }
+.vitae-toggle__track:disabled { background: var(--vitae-background-disabled); border-color: var(--vitae-field-border-disabled); cursor: not-allowed; }
+.vitae-toggle__track:disabled .vitae-toggle__knob { background: var(--vitae-field-border-disabled); transform: none; }
+.vitae-toggle__track:disabled[aria-checked="true"] .vitae-toggle__knob { transform: translateX(24px); }
+.vitae-toggle__label { cursor: pointer; }
+.vitae-toggle:has(.vitae-toggle__track:disabled) .vitae-toggle__label { color: var(--vitae-text-disabled); cursor: not-allowed; }
+.vitae-toggle__description { grid-column: 2; margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+
+/* ---------- Alert ---------- */
+.vitae-alert {
+  display: flex; align-items: flex-start; gap: var(--vitae-space-012); max-width: 560px;
+  padding: var(--vitae-space-012) var(--vitae-space-012) var(--vitae-space-012) var(--vitae-space-016);
+  border: var(--vitae-border-width-1) solid var(--vitae-support-info-border); border-radius: var(--vitae-brand-radius-card);
+  background: var(--vitae-support-info-surface); color: var(--vitae-alert-text);
+  animation: vitae-alert-in var(--vitae-motion-duration-moderate-01) var(--vitae-motion-easing-productive-entrance);
+}
+@keyframes vitae-alert-in { from { opacity: 0; transform: translateY(-4px); } }
+.vitae-alert > .vitae-icon { color: var(--vitae-support-info); }
+.vitae-alert--success { background: var(--vitae-support-success-surface); border-color: var(--vitae-support-success-border); }
+.vitae-alert--success > .vitae-icon { color: var(--vitae-support-success); }
+.vitae-alert--warning { background: var(--vitae-support-warning-surface); border-color: var(--vitae-support-warning-border); }
+.vitae-alert--error { background: var(--vitae-support-error-surface); border-color: var(--vitae-support-error-border); }
+.vitae-alert--error > .vitae-icon { color: var(--vitae-support-error); }
+.vitae-alert__body { flex: 1; display: flex; flex-direction: column; gap: var(--vitae-space-004); }
+.vitae-alert__title { margin: 0; font-weight: var(--vitae-font-weight-bold); }
+.vitae-alert__message { margin: 0; }
+.vitae-alert__dismiss { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; margin: -4px -4px 0 0; padding: 0; border: 0; border-radius: var(--vitae-radius-full); background: transparent; color: var(--vitae-icon-secondary); cursor: pointer; }
+.vitae-alert__dismiss:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+
+/* ---------- Tag ---------- */
+.vitae-tag {
+  display: inline-flex; align-items: center; gap: var(--vitae-space-004); min-height: 24px; padding: 1px 7px; white-space: nowrap;
+  border: var(--vitae-border-width-1) solid var(--vitae-border-strong); border-radius: var(--vitae-radius-full);
+  background: var(--vitae-background-layer-02); color: var(--vitae-text-body);
+  font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-20); font-weight: var(--vitae-font-weight-semibold);
+}
+.vitae-tag--brand { background: var(--vitae-background-brand-subtle); border-color: var(--vitae-border-brand); }
+.vitae-tag--info { background: var(--vitae-support-info-surface); border-color: var(--vitae-support-info-border); } .vitae-tag--info .vitae-icon { color: var(--vitae-support-info); }
+.vitae-tag--success, .vitae-tag--current-plan { background: var(--vitae-support-success-surface); border-color: var(--vitae-support-success-border); } .vitae-tag--success .vitae-icon { color: var(--vitae-support-success); }
+.vitae-tag--warning { background: var(--vitae-support-warning-surface); border-color: var(--vitae-support-warning-border); }
+.vitae-tag--error { background: var(--vitae-support-error-surface); border-color: var(--vitae-support-error-border); } .vitae-tag--error .vitae-icon { color: var(--vitae-support-error); }
+.vitae-tag--dc-healthy { background: var(--vitae-program-dc-healthy-surface); border-color: var(--vitae-program-dc-healthy-border); }
+.vitae-tag--dc-essential { background: var(--vitae-program-dc-essential-surface); border-color: var(--vitae-program-dc-essential-border); } .vitae-tag--dc-essential .vitae-icon { color: var(--vitae-program-dc-essential-icon); }
+.vitae-tag--me-clear-choice { background: var(--vitae-program-me-clear-choice-surface); border-color: var(--vitae-program-me-clear-choice-border); }
+.vitae-tag--me-current-plan { background: var(--vitae-program-me-current-plan-surface); border-color: var(--vitae-program-me-current-plan-border); }
+.vitae-tag--ma-premium-value { background: var(--vitae-program-ma-premium-value-surface); border-color: var(--vitae-program-ma-premium-value); }
+
+/* ---------- Metal badge ---------- */
+.vitae-metal-badge {
+  display: inline-flex; align-items: center; padding: 2px var(--vitae-space-008); border: var(--vitae-border-width-1) solid; border-radius: var(--vitae-radius-4);
+  font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); font-weight: var(--vitae-font-weight-semibold);
+}
+.vitae-metal-badge--bronze { background: var(--vitae-metal-bronze); border-color: var(--vitae-metal-bronze-border); color: var(--vitae-metal-bronze-text); }
+.vitae-metal-badge--silver { background: var(--vitae-metal-silver); border-color: var(--vitae-metal-silver-border); color: var(--vitae-metal-silver-text); }
+.vitae-metal-badge--gold { background: var(--vitae-metal-gold); border-color: var(--vitae-metal-gold-border); color: var(--vitae-metal-gold-text); }
+.vitae-metal-badge--platinum { background: var(--vitae-metal-platinum); border-color: var(--vitae-metal-platinum-border); color: var(--vitae-metal-platinum-text); }
+.vitae-metal-badge--catastrophic { background: var(--vitae-metal-catastrophic); border-color: var(--vitae-metal-catastrophic-border); color: var(--vitae-metal-catastrophic-text); }
+
+/* ---------- Tooltip ---------- */
+.vitae-tooltip {
+  position: relative; display: inline-block; max-width: 240px; padding: var(--vitae-space-008) var(--vitae-space-012);
+  background: var(--vitae-background-layer-01); border: var(--vitae-border-width-1) solid var(--vitae-border-subtle); border-radius: var(--vitae-radius-4);
+  box-shadow: var(--vitae-shadow-elevation-8); color: var(--vitae-text-body);
+  font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20);
+}
+.vitae-tooltip::after { content: ""; position: absolute; width: 10px; height: 10px; background: inherit; border: inherit; border-radius: 0; box-shadow: none; }
+.vitae-tooltip--top::after { left: calc(50% - 5px); bottom: -6px; transform: rotate(45deg); border-top-color: transparent; border-left-color: transparent; }
+.vitae-tooltip--bottom::after { left: calc(50% - 5px); top: -6px; transform: rotate(45deg); border-bottom-color: transparent; border-right-color: transparent; }
+.vitae-tooltip--left::after { top: calc(50% - 5px); right: -6px; transform: rotate(45deg); border-bottom-color: transparent; border-left-color: transparent; }
+.vitae-tooltip--right::after { top: calc(50% - 5px); left: -6px; transform: rotate(45deg); border-top-color: transparent; border-right-color: transparent; }
+.vitae-tooltip--none::after { display: none; }
+
+/* ===================== Batch 2: navigation ===================== */
+.vitae-container { max-width: 1140px; margin: 0 auto; padding: 0 var(--vitae-space-016); }
+.vitae-bleed { margin: calc(-1 * var(--vitae-space-024)); }
+
+/* ---------- Header ---------- */
+.vitae-header { background: var(--vitae-background-layer-01); border-bottom: var(--vitae-border-width-2) solid var(--vitae-nav-rule); }
+.vitae-header__bar { display: flex; align-items: center; justify-content: space-between; gap: var(--vitae-space-024); min-height: 70px; padding-top: 4px; padding-bottom: 8px; }
+.vitae-header__brand { display: flex; align-items: center; gap: var(--vitae-space-012); }
+[data-client="dc"] .vitae-header__brand, [data-client="ma"] .vitae-header__brand { gap: var(--vitae-space-024); }
+.vitae-header__logo { display: inline-flex; align-items: center; color: inherit; }
+.vitae-header__logo svg, .vitae-header__logo img { width: auto; display: block; }
+[data-client="ea"] .vitae-header__logo svg { height: 32px; } [data-client="dc"] .vitae-header__logo svg { height: 35px; }
+[data-client="ma"] .vitae-header__logo img { height: 35px; } [data-client="me"] .vitae-header__logo svg { height: 48px; }
+.vitae-header__divider { width: 1px; height: 60px; background: var(--vitae-border-subtle); }
+.vitae-header__portal { color: var(--vitae-nav-accent); font-weight: var(--vitae-font-weight-semibold); text-decoration: none; }
+[data-client="ea"] .vitae-header__portal, [data-client="me"] .vitae-header__portal { text-decoration: underline; text-underline-offset: 3px; }
+.vitae-header__actions { display: flex; align-items: center; gap: var(--vitae-space-016); }
+.vitae-header__cart { position: relative; display: inline-flex; color: var(--vitae-nav-accent); }
+.vitae-header__cart .vitae-badge { position: absolute; top: -6px; right: -10px; }
+.vitae-header__user { display: flex; align-items: center; gap: var(--vitae-space-008); }
+.vitae-header__user > .vitae-icon { color: var(--vitae-nav-accent); width: 32px; height: 32px; }
+.vitae-header__name { font-weight: var(--vitae-font-weight-bold); }
+.vitae-header__meta { display: flex; align-items: center; gap: var(--vitae-space-008); font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-20); }
+.vitae-header__meta > * + *::before { content: ""; display: inline-block; width: 1px; height: 16px; margin-right: var(--vitae-space-008); vertical-align: middle; background: var(--vitae-border-strong); }
+.vitae-header__meta a { color: var(--vitae-nav-accent); text-decoration: underline; text-underline-offset: 3px; }
+.vitae-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 24px; height: 24px; padding: 0 var(--vitae-space-004); border-radius: var(--vitae-radius-6); background: var(--vitae-nav-badge); color: var(--vitae-nav-badge-text); font-size: var(--vitae-font-size-12); line-height: var(--vitae-font-line-height-16); }
+
+.vitae-navbar { background: var(--vitae-nav-admin-bar); color: var(--vitae-nav-admin-text); }
+.vitae-navbar ul { display: flex; flex-wrap: wrap; align-items: center; gap: var(--vitae-space-024); list-style: none; margin: 0; padding: 11px var(--vitae-space-016); max-width: 1140px; margin-inline: auto; }
+.vitae-navbar a, .vitae-navbar button { display: inline-flex; align-items: center; gap: var(--vitae-space-004); color: inherit; text-decoration: none; font: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.vitae-navbar [aria-current="page"] { font-weight: var(--vitae-font-weight-semibold); }
+.vitae-navbar a:hover { text-decoration: underline; }
+.vitae-navbar a:focus-visible, .vitae-navbar button:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+
+/* ---------- Mobile header + drawer ---------- */
+.vitae-mobile-header { position: relative; display: flex; align-items: center; justify-content: space-between; min-height: 71px; padding: 0 var(--vitae-space-016); background: var(--vitae-background-layer-01); border-bottom: var(--vitae-border-width-2) solid var(--vitae-nav-rule); }
+.vitae-mobile-header__logo svg, .vitae-mobile-header__logo img { height: 35px; width: auto; display: block; }
+.vitae-menu-button { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: var(--vitae-nav-accent); cursor: pointer; border-radius: var(--vitae-radius-4); }
+.vitae-menu-button:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+.vitae-scrim { position: absolute; inset: 0; background: var(--vitae-background-overlay); opacity: .6; }
+.vitae-drawer { position: absolute; top: 0; right: 0; bottom: 0; width: 260px; padding: var(--vitae-space-012); background: var(--vitae-nav-drawer); display: flex; flex-direction: column; gap: var(--vitae-space-012); box-shadow: var(--vitae-shadow-elevation-64); animation: vitae-drawer-in 240ms var(--vitae-motion-easing-productive-entrance); }
+@keyframes vitae-drawer-in { from { transform: translateX(100%); } }
+.vitae-drawer__tagline { font-size: var(--vitae-font-size-12); line-height: var(--vitae-font-line-height-16); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-secondary); }
+.vitae-drawer__user { display: flex; align-items: center; gap: var(--vitae-space-008); }
+.vitae-drawer__user .vitae-icon { color: var(--vitae-nav-accent); width: 32px; height: 32px; }
+.vitae-drawer ul { list-style: none; margin: 0; padding: 0; }
+.vitae-drawer li a, .vitae-drawer li button { display: flex; align-items: center; gap: var(--vitae-space-004); min-height: 44px; width: 100%; color: var(--vitae-nav-accent); text-decoration: underline; text-underline-offset: 3px; font: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.vitae-drawer hr { border: 0; border-top: 1px solid var(--vitae-border-subtle); margin: 0; width: 100%; }
+
+/* ---------- Footer ---------- */
+.vitae-footer__lang { background: var(--vitae-footer-lang-bg); }
+.vitae-footer__lang-row { display: flex; align-items: center; gap: var(--vitae-space-012); max-width: 1140px; margin: 0 auto; padding: var(--vitae-space-008) var(--vitae-space-016); color: var(--vitae-icon-primary); }
+.vitae-footer__lang ul { display: flex; flex-wrap: wrap; gap: var(--vitae-space-008) var(--vitae-space-012); list-style: none; margin: 0; padding: 0; }
+.vitae-footer__lang li:first-child a { color: var(--vitae-text-body); text-decoration: none; }
+.vitae-footer__lang a { color: var(--vitae-text-link); }
+.vitae-footer { background: var(--vitae-footer-bg); border-top: 1px solid var(--vitae-border-subtle); }
+.vitae-footer__content { display: flex; flex-wrap: wrap; align-items: center; gap: var(--vitae-space-016) var(--vitae-space-024); max-width: 1140px; margin: 0 auto; padding: var(--vitae-space-024) var(--vitae-space-016); }
+.vitae-footer__copyright { margin: 0; }
+.vitae-footer__help { display: flex; flex-wrap: wrap; gap: var(--vitae-space-008); margin-left: auto; justify-content: flex-end; }
+@container (max-width: 720px) { .vitae-footer__help { margin-left: 0; justify-content: flex-start; } [data-client="dc"] .vitae-footer__help { margin-inline-start: calc(-1 * var(--vitae-space-016)); flex-direction: column; align-items: flex-start; } }
+@container (max-width: 480px) { [data-client="ea"] .vitae-footer__help .vitae-btn, [data-client="ma"] .vitae-footer__help .vitae-btn, [data-client="me"] .vitae-footer__help .vitae-btn { width: 100%; } }
+.vitae-footer-wrap { container-type: inline-size; }
+
+/* ---------- Breadcrumbs + Back link ---------- */
+.vitae-breadcrumbs { display: flex; flex-wrap: wrap; gap: var(--vitae-space-004); list-style: none; margin: 0; padding: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); }
+.vitae-breadcrumbs__item { display: inline-flex; gap: var(--vitae-space-004); color: var(--vitae-text-secondary); }
+.vitae-breadcrumbs__item + .vitae-breadcrumbs__item::before { content: "/"; }
+.vitae-breadcrumbs__item a, .vitae-breadcrumbs__more { color: var(--vitae-text-secondary); text-decoration: none; font: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.vitae-breadcrumbs__item a:hover, .vitae-breadcrumbs__more:hover { text-decoration: underline; }
+.vitae-breadcrumbs__item a:focus-visible, .vitae-breadcrumbs__more:focus-visible { text-decoration: underline; outline: var(--_ring); outline-offset: 2px; }
+.vitae-breadcrumbs__item[aria-current="page"] { color: var(--vitae-text-body); font-weight: var(--vitae-font-weight-semibold); }
+.vitae-back-link { display: inline-flex; align-items: center; gap: var(--vitae-space-004); min-height: 24px; color: var(--vitae-text-link); font-weight: var(--vitae-font-weight-semibold); text-decoration: none; }
+.vitae-back-link:hover, .vitae-back-link.is-hover { color: var(--vitae-text-link-hover); text-decoration: underline; }
+.vitae-back-link:active, .vitae-back-link.is-pressed { color: var(--vitae-text-link-active); text-decoration: underline; }
+.vitae-back-link:focus-visible, .vitae-back-link.is-focus { outline: var(--_ring); outline-offset: 2px; }
+
+/* ---------- Pagination ---------- */
+.vitae-pagination-wrap { container-type: inline-size; }
+.vitae-pagination { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--vitae-space-012) var(--vitae-space-024); }
+.vitae-pagination__summary { flex: 1 1 200px; margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-pagination ul { display: flex; align-items: center; gap: var(--vitae-space-004); list-style: none; margin: 0; padding: 0; }
+.vitae-page { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; height: 44px; padding: 0 var(--vitae-space-008); border-radius: var(--vitae-brand-radius-button); color: var(--vitae-action-primary-text); text-decoration: none; transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-page:not(:disabled, [aria-disabled="true"]):hover, .vitae-page.is-hover { background: var(--vitae-action-primary-subtle-hover); }
+.vitae-page:active, .vitae-page.is-pressed { background: var(--vitae-action-primary-subtle-active); }
+.vitae-page:focus-visible, .vitae-page.is-focus { outline: var(--_ring); outline-offset: 2px; }
+.vitae-page[aria-current="page"] { background: var(--vitae-action-primary); color: var(--vitae-text-on-primary); font-weight: var(--vitae-font-weight-semibold); }
+.vitae-page[aria-disabled="true"] { color: var(--vitae-text-disabled); pointer-events: none; }
+.vitae-page__ellipsis { width: 24px; text-align: center; color: var(--vitae-text-secondary); }
+.vitae-pagination--compact { flex-direction: column; align-items: stretch; gap: var(--vitae-space-008); }
+.vitae-pagination--compact .vitae-pagination__summary { text-align: center; flex: none; }
+.vitae-pagination--compact .vitae-pagination__controls { display: flex; align-items: center; justify-content: space-between; }
+.vitae-pagination__select { display: flex; align-items: center; gap: var(--vitae-space-008); }
+.vitae-pagination__select .vitae-input { width: 88px; }
+/* Full when the container is at least 560px, Compact below */
+.vitae-pagination-wrap .vitae-pagination--compact { display: none; }
+@container (max-width: 559px) { .vitae-pagination-wrap .vitae-pagination--full { display: none; } .vitae-pagination-wrap .vitae-pagination--compact { display: flex; } }
+
+/* ---------- Tabs ---------- */
+.vitae-tabs { position: relative; border-bottom: 1px solid var(--vitae-border-subtle); }
+.vitae-tabs__list { display: flex; overflow-x: auto; scrollbar-width: none; }
+.vitae-tabs__list::-webkit-scrollbar { display: none; }
+.vitae-tab { position: relative; flex: none; display: inline-flex; flex-direction: column; align-items: center; min-height: 44px; padding: 10px var(--vitae-space-016); border: 0; background: none; color: var(--vitae-text-body); font: inherit; cursor: pointer; }
+.vitae-tab__label { display: inline-flex; align-items: center; gap: var(--vitae-space-008); }
+.vitae-tab__text { display: inline-flex; flex-direction: column; }
+.vitae-tab__text::after { content: attr(data-label); font-weight: var(--vitae-font-weight-semibold); height: 0; visibility: hidden; overflow: hidden; } /* reserve SemiBold width */
+.vitae-tab::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 0; background: var(--vitae-action-primary); transition: height var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), opacity var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-tab:not(:disabled, [aria-disabled="true"]):hover, .vitae-tab.is-hover { color: var(--vitae-text-heading); }
+.vitae-tab:not(:disabled, [aria-disabled="true"]):hover::after, .vitae-tab.is-hover::after { height: 2px; opacity: .4; }
+.vitae-tab:not(:disabled, [aria-disabled="true"]):active::after, .vitae-tab.is-pressed::after { height: 2px; opacity: .7; }
+.vitae-tab[aria-selected="true"] { color: var(--vitae-text-heading); font-weight: var(--vitae-font-weight-semibold); }
+.vitae-tab[aria-selected="true"]::after { height: 4px; opacity: 1; }
+.vitae-tab:focus-visible, .vitae-tab.is-focus { outline: var(--_ring); outline-offset: -4px; }
+.vitae-tab:disabled { color: var(--vitae-text-disabled); cursor: not-allowed; }
+.vitae-tab__count { min-width: 20px; padding: 0 6px; border-radius: var(--vitae-radius-full); background: var(--vitae-action-primary-subtle-hover); font-size: var(--vitae-font-size-12); line-height: var(--vitae-font-line-height-16); font-weight: var(--vitae-font-weight-regular); }
+.vitae-tabs__cue { position: absolute; top: 0; bottom: 1px; width: 64px; display: flex; align-items: center; pointer-events: none; color: var(--vitae-icon-primary); }
+.vitae-tabs__cue span { pointer-events: auto; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 43px; background: var(--vitae-background-page); cursor: pointer; }
+.vitae-tabs__cue--right { right: 0; justify-content: flex-end; background: linear-gradient(to right, transparent, var(--vitae-background-page) 32px); }
+.vitae-tabs__cue--left { left: 0; background: linear-gradient(to left, transparent, var(--vitae-background-page) 32px); }
+
+/* ---------- Left nav ---------- */
+.vitae-leftnav { width: 256px; }
+.vitae-leftnav ul { list-style: none; margin: 0; padding: 0; }
+.vitae-leftnav li + li { border-top: 1px solid var(--vitae-border-subtle); }
+.vitae-leftnav__item { position: relative; display: flex; align-items: center; gap: var(--vitae-space-008); min-height: 44px; padding: 10px var(--vitae-space-016); color: var(--vitae-text-body); text-decoration: none; transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-leftnav__item .vitae-icon { color: var(--vitae-icon-secondary); }
+.vitae-leftnav__item::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--vitae-action-primary); }
+.vitae-leftnav__item:not([aria-disabled="true"]):hover, .vitae-leftnav__item.is-hover { background: var(--vitae-nav-item-hover); }
+.vitae-leftnav__item:not([aria-disabled="true"]):hover::before, .vitae-leftnav__item.is-hover::before { width: 2px; opacity: .4; }
+.vitae-leftnav__item:active, .vitae-leftnav__item.is-pressed { background: var(--vitae-nav-item-pressed); }
+.vitae-leftnav__item:active::before, .vitae-leftnav__item.is-pressed::before { width: 2px; opacity: .7; }
+.vitae-leftnav__item[aria-current="page"] { background: var(--vitae-nav-item-selected); color: var(--vitae-text-heading); font-weight: var(--vitae-font-weight-semibold); }
+.vitae-leftnav__item[aria-current="page"]::before { width: 4px; opacity: 1; }
+.vitae-leftnav__item[aria-current="page"] .vitae-icon { color: var(--vitae-icon-brand); }
+.vitae-leftnav__item:focus-visible, .vitae-leftnav__item.is-focus { outline: var(--_ring); outline-offset: -4px; }
+.vitae-leftnav__item .vitae-badge { margin-left: auto; }
+
+/* ---------- Mobile nav toggle + panel ---------- */
+.vitae-navtoggle { display: flex; flex-direction: column; width: 100%; padding: 0; border: 0; background: var(--vitae-nav-item-selected); cursor: pointer; font: inherit; text-align: left; }
+.vitae-navtoggle__row { display: flex; align-items: center; justify-content: space-between; gap: var(--vitae-space-008); min-height: 48px; padding: 0 var(--vitae-space-016); color: var(--vitae-action-primary-text); font-weight: var(--vitae-font-weight-semibold); }
+.vitae-navtoggle--rule { border-bottom: 1px solid var(--vitae-border-strong); }
+.vitae-navtoggle:hover .vitae-navtoggle__row { color: var(--vitae-action-primary-text-hover); text-decoration: underline; }
+.vitae-navtoggle:focus-visible { outline: var(--_ring); outline-offset: -2px; }
+.vitae-navtoggle[aria-expanded="true"] .vitae-icon { transform: rotate(180deg); }
+.vitae-navpanel { position: relative; }
+.vitae-navpanel__surface { position: relative; z-index: 1; background: var(--vitae-nav-panel); box-shadow: var(--vitae-shadow-elevation-8); padding: var(--vitae-space-008) 0; animation: vitae-panel-in var(--vitae-motion-duration-moderate-01) var(--vitae-motion-easing-productive-entrance); }
+@keyframes vitae-panel-in { from { opacity: 0; transform: translateY(-4px); } }
+
+/* ---------- Progress ---------- */
+.vitae-progress-line { position: relative; height: 4px; border-radius: 2px; background: color-mix(in srgb, var(--vitae-action-primary) 40%, transparent); overflow: hidden; }
+.vitae-progress-line__fill { height: 100%; border-radius: 2px; background: var(--vitae-action-primary); }
+.vitae-progress-line--flush, .vitae-progress-line--flush .vitae-progress-line__fill { border-radius: 0 2px 2px 0; }
+.vitae-progress-line--flush { border-radius: 0; }
+.vitae-progress { width: 280px; display: flex; flex-direction: column; gap: var(--vitae-space-016); }
+.vitae-progress__card { background: var(--vitae-card-surface); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); padding: var(--vitae-space-016); display: flex; flex-direction: column; gap: var(--vitae-space-016); }
+.vitae-progress__title { margin: 0; font-size: var(--vitae-font-size-18); line-height: var(--vitae-font-line-height-27); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-steps { list-style: none; margin: 0; padding: 0; }
+.vitae-step { display: grid; grid-template-columns: 1fr 24px; column-gap: var(--vitae-space-012); min-height: 36px; }
+.vitae-step__label { padding: 6px 0; color: var(--vitae-text-secondary); }
+.vitae-step__label a { color: var(--vitae-action-primary-text); text-decoration: none; }
+.vitae-step__label a:hover { text-decoration: underline; }
+.vitae-step__label a:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+.vitae-step--current .vitae-step__label { color: var(--vitae-text-heading); font-weight: var(--vitae-font-weight-semibold); }
+.vitae-step__marker { position: relative; display: flex; justify-content: center; }
+.vitae-step__marker::before, .vitae-step__marker::after { content: ""; position: absolute; left: 11px; width: 2px; background: var(--vitae-action-primary); }
+.vitae-step__marker::before { top: 0; height: 8px; } .vitae-step__marker::after { top: 28px; bottom: 0; }
+.vitae-step.no-above .vitae-step__marker::before, .vitae-step.no-below .vitae-step__marker::after { display: none; }
+.vitae-step.dim-above .vitae-step__marker::before, .vitae-step.dim-below .vitae-step__marker::after { opacity: .4; }
+[data-client="ea"] .vitae-step__marker::before, [data-client="ma"] .vitae-step__marker::before, [data-client="me"] .vitae-step__marker::before { height: 4px; border-radius: 0 0 1px 1px; }
+[data-client="ea"] .vitae-step__marker::after, [data-client="ma"] .vitae-step__marker::after, [data-client="me"] .vitae-step__marker::after { top: 32px; border-radius: 1px 1px 0 0; }
+.vitae-step__dot { position: relative; z-index: 1; margin-top: 8px; width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--vitae-action-primary); background: var(--vitae-background-layer-01); }
+.vitae-step--complete .vitae-step__dot { background: var(--vitae-action-primary); }
+.vitae-step--upcoming .vitae-step__dot { border-color: color-mix(in srgb, var(--vitae-action-primary) 40%, transparent); }
+[data-client="dc"] .vitae-step--current .vitae-step__dot::after { content: ""; position: absolute; inset: 4px; border-radius: 50%; background: var(--vitae-action-primary); }
+.vitae-progress__links { display: flex; flex-direction: column; gap: var(--vitae-space-008); }
+
+/* ===================== Batch 3: layout and data ===================== */
+/* ---------- Card ---------- */
+.vitae-card { position: relative; display: flex; flex-direction: column; gap: var(--vitae-space-016); padding: var(--vitae-space-024); max-width: 400px;
+  background: var(--vitae-card-surface); border: var(--vitae-border-width-1) solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); box-shadow: var(--vitae-shadow-elevation-8); }
+.vitae-card__header { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--vitae-space-012); }
+.vitae-card__title { margin: 0; font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-24); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-card__footer { display: flex; gap: var(--vitae-space-008); padding-top: var(--vitae-space-016); border-top: 1px solid var(--vitae-border-subtle); }
+label.vitae-card { cursor: pointer; transition: border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+label.vitae-card .vitae-card__control { position: relative; display: inline-flex; }
+label.vitae-card input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
+label.vitae-card:not(:has(input:disabled)):hover, label.vitae-card.is-hover { border-color: var(--vitae-border-strong); }
+label.vitae-card:not(:has(input:disabled)):active, label.vitae-card.is-pressed { border-color: var(--vitae-field-border-active); }
+label.vitae-card:has(input:focus-visible), label.vitae-card.is-focus { outline: var(--_ring); outline-offset: 2px; border-radius: var(--vitae-brand-radius-card); }
+label.vitae-card:has(input:checked), label.vitae-card.is-selected { border: 2px solid var(--vitae-action-primary); background: var(--vitae-nav-item-selected); padding: 23px; }
+label.vitae-card.is-error { border: 2px solid var(--vitae-support-error); padding: 23px; }
+label.vitae-card:has(input:disabled), label.vitae-card:has(input:disabled) input { background: var(--vitae-background-disabled); box-shadow: none; cursor: not-allowed; color: var(--vitae-text-disabled); }
+
+/* ---------- Accordion ---------- */
+.vitae-accordion { display: flex; flex-direction: column; }
+.vitae-accordion__toolbar { display: flex; justify-content: flex-end; margin-bottom: var(--vitae-space-008); }
+.vitae-accordion__item { border-top: 1px solid var(--vitae-border-subtle); }
+.vitae-accordion__item:last-child { border-bottom: 1px solid var(--vitae-border-subtle); }
+.vitae-accordion--bordered .vitae-accordion__items { background: var(--vitae-card-surface); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); overflow: hidden; }
+.vitae-accordion--bordered .vitae-accordion__item:first-child { border-top: 0; } .vitae-accordion--bordered .vitae-accordion__item:last-child { border-bottom: 0; }
+.vitae-accordion__heading { margin: 0; font: inherit; }
+.vitae-accordion__button { display: flex; align-items: center; gap: var(--vitae-space-012); width: 100%; min-height: 56px; padding: var(--vitae-space-008) var(--vitae-space-016); border: 0; background: transparent; color: var(--vitae-text-heading); font: inherit; font-weight: var(--vitae-font-weight-semibold); text-align: left; cursor: pointer; transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-accordion__title { flex: 1; }
+.vitae-accordion__summary { font-weight: var(--vitae-font-weight-regular); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-accordion__button .vitae-icon { color: var(--vitae-icon-primary); transition: transform var(--vitae-motion-duration-moderate-01) var(--vitae-motion-easing-productive-entrance); }
+.vitae-accordion__button[aria-expanded="true"] .vitae-icon { transform: rotate(180deg); }
+.vitae-accordion__button:not(:disabled, [aria-disabled="true"]):hover, .vitae-accordion__button.is-hover { background: var(--vitae-nav-item-hover); }
+.vitae-accordion__button:active, .vitae-accordion__button.is-pressed { background: var(--vitae-nav-item-pressed); }
+.vitae-accordion__button:focus-visible, .vitae-accordion__button.is-focus { outline: var(--_ring); outline-offset: -4px; }
+.vitae-accordion__button:disabled { color: var(--vitae-text-disabled); cursor: not-allowed; }
+.vitae-accordion__panel { padding: var(--vitae-space-016); padding-top: 0; }
+.vitae-accordion__panel[hidden] { display: none; }
+
+/* ---------- Modal ---------- */
+.vitae-modal-scrim { position: relative; display: flex; align-items: center; justify-content: center; padding: var(--vitae-space-016); min-height: 420px; background: color-mix(in srgb, var(--vitae-background-overlay) 60%, transparent); }
+.vitae-modal { width: 560px; max-width: 100%; display: flex; flex-direction: column; gap: var(--vitae-space-016); padding: var(--vitae-space-024); background: var(--vitae-background-layer-01); border-radius: var(--vitae-brand-radius-card); box-shadow: var(--vitae-shadow-elevation-64); animation: vitae-modal-in 240ms var(--vitae-motion-easing-expressive-entrance); }
+@keyframes vitae-modal-in { from { opacity: 0; transform: scale(.96); } }
+.vitae-modal__header { display: flex; align-items: flex-start; gap: var(--vitae-space-012); }
+.vitae-modal__header > .vitae-icon { margin-top: 2px; }
+.vitae-modal--info .vitae-modal__header > .vitae-icon { color: var(--vitae-support-info); } .vitae-modal--success .vitae-modal__header > .vitae-icon { color: var(--vitae-support-success); } .vitae-modal--error .vitae-modal__header > .vitae-icon { color: var(--vitae-support-error); }
+.vitae-modal__title { flex: 1; margin: 0; font-size: var(--vitae-font-size-20); line-height: var(--vitae-font-line-height-28); font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-heading); }
+.vitae-modal__close { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; margin: -4px -4px 0 0; padding: 0; border: 0; background: transparent; color: var(--vitae-icon-secondary); border-radius: var(--vitae-radius-full); cursor: pointer; }
+.vitae-modal__close:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+.vitae-modal__body { margin: 0; }
+.vitae-modal__footer { display: flex; justify-content: flex-end; gap: var(--vitae-space-008); }
+.vitae-modal-wrap { container-type: inline-size; }
+@container (max-width: 600px) { .vitae-modal__footer { flex-direction: column-reverse; } .vitae-modal__footer .vitae-btn { width: 100%; } }
+
+/* ---------- Table ---------- */
+.vitae-table-wrap { display: flex; flex-direction: column; gap: var(--vitae-space-012); }
+.vitae-bulkbar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--vitae-space-008) var(--vitae-space-016); padding: var(--vitae-space-008) var(--vitae-space-016); background: var(--vitae-background-selected); border-radius: var(--vitae-brand-radius-card); }
+/* Buttons on the selected background: brand text in light mode, body text in dark mode (brand text on the deep brand tone is under 4.5:1). */
+.vitae-bulkbar .vitae-btn--primary:is(.vitae-btn--outline, .vitae-btn--ghost) { --_t: var(--vitae-action-primary-text-on-selected); --_th: var(--vitae-action-primary-text-on-selected); --_ta: var(--vitae-action-primary-text-on-selected); }
+.vitae-table-scroll { position: relative; overflow-x: auto; background: var(--vitae-card-surface); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); }
+.vitae-table-scroll:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+.vitae-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-24); }
+.vitae-table caption { text-align: left; }
+.vitae-table th, .vitae-table td { padding: var(--vitae-space-012) var(--vitae-space-016); min-height: 48px; text-align: left; white-space: nowrap; background: var(--vitae-card-surface); }
+.vitae-table thead th { font-size: var(--vitae-font-size-16); font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-heading); border-bottom: 1px solid var(--vitae-border-strong); }
+.vitae-table tbody tr + tr td { border-top: 1px solid var(--vitae-border-subtle); }
+.vitae-table .is-numeric { text-align: right; font-variant-numeric: tabular-nums; }
+.vitae-table--grid tbody tr:hover td { background: var(--vitae-table-row-hover); }
+.vitae-table tbody tr[aria-selected="true"] td { background: var(--vitae-table-row-selected); }
+.vitae-table .is-pinned { position: sticky; left: 0; z-index: 1; }
+.vitae-table .is-pinned + .is-pinned { left: 56px; }
+.vitae-table-scroll.is-scrolled .is-pinned.is-edge { box-shadow: 4px 0 6px -2px color-mix(in srgb, var(--vitae-text-body) 18%, transparent); }
+.vitae-table .is-check { width: 56px; padding-right: 0; }
+.vitae-table .vitae-check { padding: 0; }
+.vitae-sort { display: inline-flex; align-items: center; gap: var(--vitae-space-004); margin: -4px -8px; padding: 4px 8px; border: 0; border-radius: var(--vitae-radius-4); background: none; color: inherit; font: inherit; cursor: pointer; }
+.vitae-sort:hover { background: var(--vitae-background-layer-hover); }
+.vitae-sort:focus-visible { outline: var(--_ring); outline-offset: -2px; }
+.vitae-sort .vitae-icon { color: var(--vitae-icon-secondary); }
+th[aria-sort="ascending"] .vitae-sort .vitae-icon, th[aria-sort="descending"] .vitae-sort .vitae-icon { color: var(--vitae-icon-brand); }
+.vitae-table__more { position: sticky; right: 0; float: right; }
+
+/* ---------- Menu ---------- */
+.vitae-menu { width: 320px; max-height: 320px; overflow-y: auto; margin: 0; padding: var(--vitae-space-004); list-style: none; background: var(--vitae-background-layer-01); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); box-shadow: var(--vitae-shadow-elevation-8); animation: vitae-panel-in var(--vitae-motion-duration-moderate-01) var(--vitae-motion-easing-productive-entrance); }
+.vitae-menu__item { display: flex; align-items: flex-start; gap: var(--vitae-space-008); min-height: 40px; padding: 10px var(--vitae-space-012); border-radius: var(--vitae-radius-4); font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-20); cursor: pointer; transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-menu__item > .vitae-icon:first-child { color: var(--vitae-icon-secondary); }
+.vitae-menu__text { flex: 1; display: flex; flex-direction: column; }
+.vitae-menu__secondary { font-size: var(--vitae-font-size-14); color: var(--vitae-text-secondary); }
+.vitae-menu__item:not([aria-disabled="true"]):hover, .vitae-menu__item.is-hover { background: var(--vitae-background-layer-hover); }
+.vitae-menu__item.is-highlighted { background: var(--vitae-background-layer-hover); outline: var(--_ring); outline-offset: -2px; }
+.vitae-menu__item[aria-selected="true"] > .vitae-icon:last-child { color: var(--vitae-icon-brand); }
+.vitae-menu__item[aria-disabled="true"] { color: var(--vitae-text-disabled); cursor: not-allowed; }
+.vitae-menu__group-list { margin: 0; padding: 0; list-style: none; }
+.vitae-menu__group { padding: var(--vitae-space-008) var(--vitae-space-012) var(--vitae-space-004); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-secondary); }
+.vitae-menu__divider { height: 1px; margin: var(--vitae-space-004) 0; background: var(--vitae-border-subtle); }
+.vitae-menu__empty { padding: 10px var(--vitae-space-012); color: var(--vitae-text-secondary); }
+.vitae-menu mark { background: none; color: inherit; font-weight: var(--vitae-font-weight-semibold); }
+
+/* ---------- Search ---------- */
+.vitae-search { padding-left: 40px; padding-right: 42px; }
+.vitae-search::-webkit-search-cancel-button { -webkit-appearance: none; display: none; }
+.vitae-search__clear { position: absolute; right: 4px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; padding: 0; border: 0; border-radius: var(--vitae-radius-full); background: transparent; color: var(--vitae-icon-secondary); cursor: pointer; }
+.vitae-search__clear:focus-visible { outline: var(--_ring); outline-offset: -2px; }
+.vitae-popover-anchor { position: relative; }
+.vitae-popover-anchor > .vitae-menu, .vitae-popover-anchor > .vitae-calendar { position: absolute; top: calc(100% + 4px); left: 0; z-index: 2; }
+
+/* ---------- Date picker + Calendar ---------- */
+.vitae-datepicker__button { position: absolute; right: 0; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: var(--vitae-icon-primary); cursor: pointer; border-radius: var(--vitae-radius-4); }
+.vitae-datepicker__button:focus-visible { outline: var(--_ring); outline-offset: -4px; }
+.vitae-calendar { width: max-content; padding: var(--vitae-space-012); background: var(--vitae-background-layer-01); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); box-shadow: var(--vitae-shadow-elevation-8); }
+.vitae-calendar__header { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--vitae-space-008); font-weight: var(--vitae-font-weight-semibold); }
+.vitae-calendar__nav { display: inline-flex; gap: var(--vitae-space-004); }
+.vitae-calendar__nav button { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; padding: 0; border: 0; background: transparent; color: var(--vitae-icon-primary); border-radius: var(--vitae-radius-4); cursor: pointer; }
+.vitae-calendar__grid { border-collapse: separate; border-spacing: 4px; margin: -4px; }
+.vitae-calendar__grid th { font-size: var(--vitae-font-size-12); line-height: var(--vitae-font-line-height-20); font-weight: var(--vitae-font-weight-regular); color: var(--vitae-text-secondary); }
+.vitae-day { width: 28px; height: 28px; padding: 0; border: 0; border-radius: var(--vitae-radius-4); background: transparent; color: var(--vitae-text-body); font: inherit; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); cursor: pointer; transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-day:not(:disabled, [aria-disabled="true"]):hover, .vitae-day.is-hover { background: var(--vitae-background-layer-hover); }
+[aria-selected="true"] > .vitae-day { background: var(--vitae-background-brand-subtle); box-shadow: inset 0 0 0 2px var(--vitae-border-brand); }
+.vitae-day[aria-current="date"] { background: var(--vitae-background-brand); color: var(--vitae-text-on-brand); border-radius: var(--vitae-radius-full); }
+[aria-selected="true"] > .vitae-day[aria-current="date"] { outline: 2px solid var(--vitae-border-focus-ring); outline-offset: 1px; box-shadow: none; }
+.vitae-day.is-outside { color: var(--vitae-text-secondary); }
+.vitae-day[aria-disabled="true"] { color: var(--vitae-text-disabled); cursor: not-allowed; }
+.vitae-day:focus-visible, .vitae-day.is-focus { outline: var(--_ring); outline-offset: 1px; }
+.vitae-calendar__today { margin-top: var(--vitae-space-008); }
+
+/* ---------- Choice group + Field-set ---------- */
+.vitae-choice-group { border: 0; margin: 0; padding: 0; min-width: 0; }
+.vitae-choice-group > legend { padding: 0; font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-secondary); }
+.vitae-choice-group__helper { margin: var(--vitae-space-004) 0 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-choice-group--inline .vitae-choice-group__options { display: flex; flex-wrap: wrap; column-gap: var(--vitae-space-024); }
+.vitae-choice-group__error { margin-top: var(--vitae-space-004); max-width: 320px; }
+.vitae-fieldset { border: 0; margin: 0; padding: 0; min-width: 0; max-width: 720px; container-type: inline-size; }
+.vitae-fieldset__legend { padding: 0; margin-bottom: var(--vitae-space-016); font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-24); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-fieldset__rows { display: flex; flex-direction: column; gap: var(--vitae-space-016); }
+.vitae-fieldset__row { display: flex; flex-wrap: wrap; gap: var(--vitae-space-016) var(--vitae-space-024); }
+.vitae-fieldset__row > .vitae-field { flex: 1 1 240px; max-width: none; }
+.vitae-fieldset__row > .vitae-field.is-full { flex-basis: 100%; }
+.vitae-fieldset__pair { flex: 1 1 240px; display: flex; flex-wrap: wrap; gap: var(--vitae-space-016) var(--vitae-space-024); }
+.vitae-fieldset__pair > .vitae-field { flex: 1 1 120px; max-width: none; }
+.vitae-fieldset__row > .vitae-field.is-half { flex: 0 1 348px; }
+
+/* ===================== Batch 4: plan shopping and log-in ===================== */
+/* ---------- Plan tile ---------- */
+.vitae-plan { container-type: inline-size; max-width: 960px; background: var(--vitae-card-surface); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); box-shadow: var(--vitae-shadow-elevation-8); overflow: hidden; }
+.vitae-plan.is-compared { border: 2px solid var(--vitae-action-primary); }
+.vitae-plan__bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--vitae-space-008) var(--vitae-space-016); padding: var(--vitae-space-004) var(--vitae-space-024); background: var(--vitae-surface-header-bar); }
+.vitae-plan.is-compared .vitae-plan__bar { background: var(--vitae-nav-item-selected); }
+.vitae-plan__bar .vitae-check { padding: 10px 0; }
+.vitae-plan__product { display: flex; align-items: center; gap: var(--vitae-space-008); min-height: 44px; font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-heading); }
+.vitae-plan__product .vitae-icon { color: var(--vitae-icon-primary); }
+.vitae-plan__tags { display: flex; flex-wrap: wrap; gap: var(--vitae-space-008); }
+.vitae-plan__body { display: flex; flex-direction: column; gap: var(--vitae-space-016); padding: var(--vitae-space-016) var(--vitae-space-024); }
+.vitae-plan__top { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: var(--vitae-space-016) var(--vitae-space-024); }
+.vitae-plan__plan { flex: 1 1 280px; display: flex; flex-wrap: wrap; align-items: center; gap: var(--vitae-space-012) var(--vitae-space-016); }
+.vitae-plan__logo { flex: none; display: flex; align-items: center; justify-content: center; width: 100px; height: 70px; border: 1px dashed var(--vitae-border-strong); border-radius: var(--vitae-radius-4); color: var(--vitae-text-secondary); font-size: var(--vitae-font-size-14); }
+.vitae-plan__name { flex: 1 1 240px; margin: 0; font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-24); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-plan__premium { text-align: right; }
+.vitae-plan__premium-label { font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-plan__amount { font-size: var(--vitae-font-size-24); line-height: var(--vitae-font-line-height-36); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-plan__per { font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-plan__split { display: flex; gap: var(--vitae-space-016); text-align: right; }
+.vitae-plan__facts { display: flex; flex-wrap: wrap; gap: 0 var(--vitae-space-024); }
+.vitae-facts { flex: 1 1 300px; margin: 0; display: grid; grid-template-columns: 132px 1fr; column-gap: var(--vitae-space-008); row-gap: 4px; }
+.vitae-facts dt, .vitae-facts dd { margin: 0; min-height: 28px; display: flex; align-items: center; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); }
+.vitae-facts dt { color: var(--vitae-text-secondary); }
+.vitae-plan__footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--vitae-space-012) var(--vitae-space-024); padding: var(--vitae-space-012) var(--vitae-space-024) var(--vitae-space-016); border-top: 1px solid var(--vitae-border-subtle); }
+.vitae-plan__links { flex: 0 1 280px; display: flex; flex-wrap: wrap; gap: var(--vitae-space-004) var(--vitae-space-016); }
+.vitae-plan__limit { margin: 0 var(--vitae-space-024) var(--vitae-space-012); }
+@container (max-width: 479px) {
+  .vitae-plan__bar, .vitae-plan__body { padding-left: var(--vitae-space-016); padding-right: var(--vitae-space-016); }
+  .vitae-plan__footer { padding-left: var(--vitae-space-016); padding-right: var(--vitae-space-016); }
+  .vitae-plan__footer > .vitae-btn { width: 100%; }
+  .vitae-plan__amount { font-size: var(--vitae-font-size-18); line-height: var(--vitae-font-line-height-27); }
+  .vitae-plan__premium { text-align: left; }
+}
+
+/* ---------- Filter ---------- */
+.vitae-filter-label { display: flex; align-items: center; justify-content: space-between; gap: var(--vitae-space-008); width: 100%; padding: 0; font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-secondary); }
+.vitae-filter-label__title { display: inline-flex; align-items: center; gap: var(--vitae-space-004); }
+.vitae-filter-label .vitae-link { font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); font-weight: var(--vitae-font-weight-regular); }
+.vitae-filter-group { border: 0; margin: 0; padding: 0; min-width: 0; display: flex; flex-direction: column; gap: var(--vitae-space-004); }
+.vitae-filter-group .vitae-check { max-width: none; }
+.vitae-range__inputs { display: flex; align-items: flex-start; gap: var(--vitae-space-008); }
+.vitae-range__inputs .vitae-field { flex: 1; max-width: none; }
+.vitae-range__to { padding-top: 10px; color: var(--vitae-text-secondary); }
+.vitae-filter-panel { display: flex; flex-direction: column; gap: var(--vitae-space-016); padding-bottom: var(--vitae-space-016); border-bottom: 1px solid var(--vitae-border-subtle); }
+.vitae-filter-panel__toggle { align-self: flex-start; display: inline-flex; align-items: center; gap: var(--vitae-space-004); min-height: 44px; padding: 0; border: 0; background: none; color: var(--vitae-text-link); font: inherit; font-weight: var(--vitae-font-weight-semibold); cursor: pointer; }
+.vitae-filter-panel__toggle:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+.vitae-filter-panel__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--vitae-space-032); align-items: start; padding-top: var(--vitae-space-016); border-top: 1px solid var(--vitae-border-subtle); }
+.vitae-filter-panel__stack { display: flex; flex-direction: column; gap: var(--vitae-space-032); }
+.vitae-filter-panel__actions { display: flex; gap: var(--vitae-space-008); }
+.vitae-filter-panel--collapsed { flex-direction: row; flex-wrap: wrap; align-items: center; gap: var(--vitae-space-008) var(--vitae-space-016); }
+.vitae-filter-panel__summary { flex: 1 1 200px; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-carrier-field { position: relative; }
+.vitae-carrier-trigger { text-align: left; cursor: pointer; padding-right: 42px; }
+.vitae-carrier-list { position: absolute; top: calc(100% + 4px); left: 0; right: 0; z-index: 2; padding: var(--vitae-space-004) var(--vitae-space-012); background: var(--vitae-background-layer-01); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); box-shadow: var(--vitae-shadow-elevation-8); animation: vitae-panel-in var(--vitae-motion-duration-moderate-01) var(--vitae-motion-easing-productive-entrance); }
+.vitae-carrier-list .vitae-check { max-width: none; }
+.vitae-results-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--vitae-space-012) var(--vitae-space-024); }
+.vitae-results-bar__count { margin: 0; font-weight: var(--vitae-font-weight-semibold); }
+.vitae-results-bar__sort { display: flex; align-items: center; gap: var(--vitae-space-008); }
+.vitae-results-bar__sort .vitae-field__label-row { white-space: nowrap; }
+.vitae-results-bar__sort .vitae-field__control { width: 240px; max-width: 100%; }
+.vitae-sheet { width: 375px; height: 720px; display: flex; flex-direction: column; background: var(--vitae-nav-panel); border: 1px solid var(--vitae-border-subtle); }
+.vitae-sheet__header { display: flex; align-items: center; justify-content: space-between; padding: var(--vitae-space-008) var(--vitae-space-008) var(--vitae-space-008) var(--vitae-space-016); border-bottom: 1px solid var(--vitae-border-subtle); }
+.vitae-sheet__title { margin: 0; font-size: var(--vitae-font-size-20); line-height: var(--vitae-font-line-height-28); font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-heading); }
+.vitae-sheet__close { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; background: none; color: var(--vitae-icon-primary); cursor: pointer; }
+.vitae-sheet__content { flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: var(--vitae-space-024); padding: var(--vitae-space-016); }
+.vitae-sheet__footer { display: flex; gap: var(--vitae-space-008); padding: var(--vitae-space-012) var(--vitae-space-016); border-top: 1px solid var(--vitae-border-subtle); }
+.vitae-sheet__footer .vitae-btn { flex: 1; }
+
+/* ---------- Plan compare ---------- */
+.vitae-tray { container-type: inline-size; position: sticky; bottom: 0; background: var(--vitae-surface-header-bar); border-top: 1px solid var(--vitae-border-subtle); box-shadow: var(--vitae-shadow-elevation-8); }
+.vitae-tray__content { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--vitae-space-012) var(--vitae-space-024); max-width: 1140px; margin: 0 auto; padding: var(--vitae-space-012) var(--vitae-space-016); }
+.vitae-tray__selected { display: flex; flex-direction: column; gap: var(--vitae-space-008); }
+.vitae-tray__count { margin: 0; font-weight: var(--vitae-font-weight-semibold); }
+.vitae-tray__chips { display: flex; flex-wrap: wrap; gap: var(--vitae-space-008); }
+.vitae-tray__actions { display: flex; align-items: center; gap: var(--vitae-space-016); }
+.vitae-tray__helper { flex-basis: 100%; margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+@container (max-width: 479px) { .vitae-tray__chips { display: none; } .vitae-tray__actions { width: 100%; } .vitae-tray__actions .vitae-btn--solid { flex: 1; } }
+.vitae-chip { display: inline-flex; align-items: flex-start; gap: var(--vitae-space-004); width: 220px; padding: var(--vitae-space-004) var(--vitae-space-004) var(--vitae-space-004) var(--vitae-space-008); background: var(--vitae-background-layer-01); border: 1px solid var(--vitae-border-strong); border-radius: var(--vitae-radius-8); }
+.vitae-chip__name { flex: 1; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); }
+.vitae-chip__remove { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; padding: 0; border: 0; background: none; color: var(--vitae-icon-secondary); border-radius: var(--vitae-radius-full); cursor: pointer; }
+.vitae-chip__remove:focus-visible { outline: var(--_ring); outline-offset: 0; }
+.vitae-compare-scroll { overflow-x: auto; background: var(--vitae-card-surface); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); }
+.vitae-compare-scroll:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+.vitae-compare { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; min-width: 600px; }
+.vitae-compare col.is-label { width: 240px; }
+.vitae-compare thead th { position: sticky; top: 0; z-index: 1; vertical-align: top; height: 1px; padding: var(--vitae-space-016); background: var(--vitae-card-surface); border-bottom: 1px solid var(--vitae-border-strong); text-align: left; font-weight: var(--vitae-font-weight-regular); }
+.vitae-compare tbody th, .vitae-compare tbody td { padding: 11px var(--vitae-space-016) 12px; border-bottom: 1px solid var(--vitae-border-subtle); text-align: left; vertical-align: top; }
+.vitae-compare tbody th { font-weight: var(--vitae-font-weight-semibold); }
+.vitae-compare__section th { padding: 0 !important; background: var(--vitae-surface-header-bar); }
+.vitae-compare__section button { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 45px; padding: 0 var(--vitae-space-016); border: 0; background: none; color: var(--vitae-text-heading); font: inherit; font-size: var(--vitae-font-size-14); font-weight: var(--vitae-font-weight-bold); cursor: pointer; }
+.vitae-compare__section button:focus-visible { outline: var(--_ring); outline-offset: -4px; }
+.vitae-compare__section button[aria-expanded="false"] .vitae-icon { transform: rotate(180deg); }
+.vitae-plan-head { display: flex; flex-direction: column; justify-content: space-between; gap: var(--vitae-space-016); height: 100%; }
+.vitae-plan-head__details { display: flex; flex-direction: column; gap: var(--vitae-space-012); align-items: flex-start; }
+.vitae-plan-head__top { display: flex; justify-content: space-between; width: 100%; }
+.vitae-plan-head__name { font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-plan-head__remove { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; padding: 0; border: 0; background: none; color: var(--vitae-icon-secondary); border-radius: var(--vitae-radius-full); cursor: pointer; }
+.vitae-plan-head .vitae-btn { width: 100%; }
+.vitae-compare.is-compact .vitae-plan-head__top, .vitae-compare.is-compact .vitae-metal-badge, .vitae-compare.is-compact .vitae-plan-head .vitae-btn { display: none; }
+.vitae-compare.is-compact .vitae-plan-head__name { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* ---------- Log-in ---------- */
+.vitae-official-banner { background: var(--vitae-background-layer-02); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); }
+.vitae-official-banner__bar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--vitae-space-008); max-width: 1140px; margin: 0 auto; padding: var(--vitae-space-004) var(--vitae-space-016); }
+.vitae-official-banner__seal { width: 20px; height: 20px; border-radius: 50%; border: 1px dashed var(--vitae-border-strong); }
+.vitae-official-banner__toggle { display: inline-flex; align-items: center; gap: 2px; padding: 0; border: 0; background: none; color: var(--vitae-text-link); font: inherit; text-decoration: underline; cursor: pointer; }
+.vitae-official-banner__panel { display: flex; flex-wrap: wrap; gap: var(--vitae-space-016) var(--vitae-space-032); max-width: 1140px; margin: 0 auto; padding: var(--vitae-space-012) var(--vitae-space-016) var(--vitae-space-016); }
+.vitae-official-banner__panel > div { flex: 1 1 280px; display: flex; gap: var(--vitae-space-008); }
+.vitae-login-layout { container-type: inline-size; padding: 64px var(--vitae-space-016); }
+.vitae-login-layout--centered .vitae-login-card { margin: 0 auto; }
+.vitae-login-layout--split .vitae-login-layout__inner { display: flex; flex-wrap: wrap; gap: var(--vitae-space-024); max-width: 960px; margin: 0 auto; align-items: flex-start; }
+.vitae-login-layout--split .vitae-login-card { flex: 1 1 440px; }
+.vitae-login-panel { flex: 1 1 280px; padding: var(--vitae-space-032); background: var(--vitae-background-brand-subtle); border-radius: var(--vitae-brand-radius-card); }
+.vitae-login-panel h2 { margin: 0 0 var(--vitae-space-012); font-size: var(--vitae-font-size-18); line-height: var(--vitae-font-line-height-27); color: var(--vitae-text-heading); }
+.vitae-login-panel ul { margin: 0 0 var(--vitae-space-016); padding-left: 20px; }
+.vitae-login-card { max-width: 440px; display: flex; flex-direction: column; gap: var(--vitae-space-016); padding: var(--vitae-space-032); background: var(--vitae-card-surface); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); box-shadow: var(--vitae-shadow-elevation-8); }
+@container (max-width: 479px) { .vitae-login-card { padding: var(--vitae-space-024); } }
+.vitae-login-card__logo { display: flex; justify-content: center; }
+.vitae-login-card__logo svg, .vitae-login-card__logo img { height: 32px; width: auto; }
+[data-client="ma"] .vitae-login-card__logo svg, [data-client="ma"] .vitae-login-card__logo img { height: 40px; }
+.vitae-login-card h1 { margin: 0; text-align: center; font-size: var(--vitae-font-size-24); line-height: var(--vitae-font-line-height-36); color: var(--vitae-text-heading); }
+.vitae-login-card__lede { margin: 0; text-align: center; color: var(--vitae-text-secondary); }
+.vitae-login-card .vitae-field { max-width: none; }
+.vitae-login-card .vitae-btn--solid { width: 100%; }
+.vitae-login-card__links { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--vitae-space-008); }
+.vitae-login-card__help { margin: 0; padding-top: var(--vitae-space-016); border-top: 1px solid var(--vitae-border-subtle); text-align: center; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-login-card .vitae-alert { max-width: none; }
+.vitae-password { position: relative; }
+.vitae-password__toggle { position: absolute; right: 4px; top: 4px; display: inline-flex; align-items: center; gap: 4px; height: 36px; padding: 0 var(--vitae-space-008); border: 0; background: none; color: var(--vitae-text-link); font: inherit; font-size: var(--vitae-font-size-14); font-weight: var(--vitae-font-weight-semibold); cursor: pointer; border-radius: var(--vitae-radius-4); }
+.vitae-checklist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--vitae-space-004); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); }
+.vitae-checklist li { display: flex; align-items: center; gap: var(--vitae-space-008); }
+.vitae-checklist li.is-met .vitae-icon { color: var(--vitae-support-success); }
+.vitae-checklist li:not(.is-met) .vitae-icon { color: var(--vitae-icon-secondary); }
+
+.vitae-login-card__notice { margin: 0; padding: var(--vitae-space-012); background: var(--vitae-background-layer-02); border-radius: var(--vitae-radius-4); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-login-card__legal { display: flex; justify-content: center; gap: var(--vitae-space-016); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); }
+.vitae-login-card__center { margin: 0; text-align: center; }
+.vitae-login-card__status { display: flex; justify-content: center; color: var(--vitae-icon-secondary); }
+.vitae-login-layout--split .vitae-login-panel p { margin: 0; }
+.vitae-password__toggle .vitae-icon, .vitae-password__toggle svg { position: static; transform: none; pointer-events: none; color: inherit; }
+.vitae-password .vitae-input { padding-right: 88px; }
+.vitae-official-banner__panel[hidden] { display: none; }
+.vitae-official-banner__panel p { margin: 0; }
+
+/* Logos: color in light mode, white in dark (logo/show-color, logo/show-white) */
+.vitae-logo { display: contents; }
+.vitae-logo--white { display: none; }
+[data-mode="dark"] .vitae-logo--color { display: none; }
+[data-mode="dark"] .vitae-logo--white { display: contents; }
+img[data-white] { filter: brightness(0) invert(1); }
+
+/* ---------- Progress bar (Figma 398:2845) ---------- */
+.vitae-progress-bar { display: flex; flex-direction: column; gap: var(--vitae-space-004); min-width: 0; }
+.vitae-progress-bar__track { height: 8px; border-radius: 4px; background: var(--vitae-border-subtle); overflow: hidden; }
+.vitae-progress-bar__fill { height: 100%; border-radius: 4px; background: var(--vitae-action-primary); transition: width var(--vitae-motion-duration-moderate-01, 150ms) linear; }
+.vitae-progress-bar__label { margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); color: var(--vitae-text-secondary); }
+@media (prefers-reduced-motion: reduce) { .vitae-progress-bar__fill { transition: none; } }
+
+/* ---------- Document upload (Figma page 393:20) ---------- */
+.vitae-upload-input { display: flex; flex-direction: column; gap: var(--vitae-space-008); width: 100%; max-width: 560px; }
+.vitae-dropzone { display: flex; flex-direction: column; align-items: center; gap: var(--vitae-space-008); padding: var(--vitae-space-024) var(--vitae-space-016); text-align: center;
+  border: var(--vitae-border-width-2) dashed var(--vitae-field-border); border-radius: var(--vitae-brand-radius-card); background: var(--vitae-field-background); color: var(--vitae-text-body);
+  transition: border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-dropzone > .vitae-icon { color: var(--vitae-icon-secondary); }
+.vitae-dropzone__prompt { margin: 0; }
+.vitae-dropzone__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--vitae-space-008); }
+.vitae-dropzone__limits { margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); color: var(--vitae-text-secondary); }
+.vitae-upload-input.is-dragover .vitae-dropzone { border-color: var(--vitae-field-border-active); background: var(--vitae-field-background-active); }
+.vitae-upload-input.is-error .vitae-dropzone { border-color: var(--vitae-support-error); }
+/* The real <input type="file"> stays focusable but hidden; its <label> is styled as a button and shows the focus ring. */
+.vitae-file-trigger { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; }
+.vitae-file-trigger + label.vitae-btn { cursor: pointer; }
+.vitae-file-trigger:focus-visible + label.vitae-btn { outline: 2px dashed var(--vitae-border-focus); outline-offset: 2px; }
+.vitae-photo-only { display: none; }
+@media (pointer: coarse) { .vitae-photo-only { display: inline-flex; } }
+.vitae-upload-input--show-photo .vitae-photo-only { display: inline-flex; }
+
+.vitae-upload-list { list-style: none; margin: 0; padding: 0; border-top: var(--vitae-border-width-1) solid var(--vitae-border-subtle); }
+.vitae-attachment { display: grid; grid-template-columns: 24px minmax(0, 1fr); column-gap: var(--vitae-space-012); row-gap: var(--vitae-space-004);
+  padding: var(--vitae-space-016) 0 var(--vitae-space-012); border-bottom: var(--vitae-border-width-1) solid var(--vitae-border-subtle); }
+.vitae-attachment > .vitae-icon { color: var(--vitae-icon-secondary); margin-top: 2px; }
+.vitae-attachment--error > .vitae-icon { color: var(--vitae-support-error); }
+.vitae-attachment__details { display: flex; flex-direction: column; gap: var(--vitae-space-002); min-width: 0; }
+.vitae-attachment__type { margin: 0; font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-body); }
+.vitae-attachment__name { margin: 0; overflow-wrap: anywhere; }
+.vitae-attachment__meta { margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); color: var(--vitae-text-secondary); }
+.vitae-attachment--error .vitae-attachment__meta { color: var(--vitae-text-error); }
+.vitae-attachment__details .vitae-progress-bar { margin-top: var(--vitae-space-004); }
+.vitae-attachment__actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; }
+
+.vitae-upload-panel { container-type: inline-size; display: flex; flex-direction: column; gap: var(--vitae-space-020); min-width: 0; }
+.vitae-upload-panel__intro { display: flex; flex-direction: column; gap: var(--vitae-space-008); }
+.vitae-upload-panel__title { margin: 0; font-size: var(--vitae-font-size-18); line-height: var(--vitae-font-line-height-27); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-upload-panel__intro p { margin: 0; }
+.vitae-upload-panel > .vitae-btn--ghost { align-self: flex-start; }
+.vitae-upload-panel__actions { display: flex; justify-content: flex-end; gap: var(--vitae-space-012); }
+@container (max-width: 480px) {
+  .vitae-upload-panel__actions { flex-direction: column-reverse; }
+  .vitae-upload-panel__actions .vitae-btn { width: 100%; }
+}
+
+.vitae-upload-history { list-style: none; margin: 0; padding: 0; container-type: inline-size; }
+.vitae-history-row { display: grid; grid-template-columns: minmax(0, 1fr) 150px 140px auto; gap: var(--vitae-space-024); align-items: start;
+  padding: var(--vitae-space-016) 0 var(--vitae-space-016) var(--vitae-space-016); border-bottom: var(--vitae-border-width-1) solid var(--vitae-border-subtle); }
+.vitae-history-row__reason { margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); color: var(--vitae-text-error); }
+.vitae-history-row__date { margin: 0; }
+.vitae-history-row__date span { display: block; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); color: var(--vitae-text-secondary); }
+.vitae-history-row__actions { display: flex; flex-wrap: wrap; margin-top: -10px; }
+@container (max-width: 600px) {
+  .vitae-history-row { grid-template-columns: minmax(0, 1fr) auto; gap: var(--vitae-space-008) var(--vitae-space-016); padding-left: 0; }
+  .vitae-history-row__date { grid-column: 1; }
+  .vitae-history-row__status { grid-column: 2; grid-row: 1; }
+  .vitae-history-row__actions { grid-column: 1 / -1; margin: 0 0 0 calc(-1 * var(--vitae-space-016)); }
+}
+
+.vitae-verification { container-type: inline-size; display: flex; flex-direction: column; gap: var(--vitae-space-016); padding: var(--vitae-space-020);
+  background: var(--vitae-card-surface); border: var(--vitae-border-width-1) solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); }
+.vitae-verification.is-open { border-color: var(--vitae-border-strong); }
+.vitae-verification__summary { display: flex; gap: var(--vitae-space-024); align-items: flex-start; }
+.vitae-verification__details { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: var(--vitae-space-004); }
+.vitae-verification__title { margin: 0; font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-24); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-verification__member, .vitae-verification__due { margin: 0; }
+.vitae-verification__member { font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); color: var(--vitae-text-secondary); }
+.vitae-verification__details p:not([class]) { margin: 0; }
+.vitae-verification__due { font-weight: var(--vitae-font-weight-bold); }
+.vitae-verification__side { display: flex; flex-direction: column; align-items: flex-end; gap: var(--vitae-space-012); }
+.vitae-verification > .vitae-upload-panel { border-top: var(--vitae-border-width-1) solid var(--vitae-border-subtle); padding-top: var(--vitae-space-020); }
+.vitae-verification > .vitae-btn--ghost { align-self: flex-start; }
+@container (max-width: 520px) {
+  .vitae-verification__summary { flex-direction: column; gap: var(--vitae-space-012); }
+  .vitae-verification__side { flex-direction: row; flex-wrap: wrap; align-items: center; }
+}
+.vitae-upload-page { display: flex; flex-direction: column; gap: var(--vitae-space-016); max-width: 960px; }
+.vitae-upload-page h2 { margin: 0; font-size: var(--vitae-font-size-20); line-height: var(--vitae-font-line-height-28); color: var(--vitae-text-heading); }
+.vitae-upload-page > p { margin: 0; }

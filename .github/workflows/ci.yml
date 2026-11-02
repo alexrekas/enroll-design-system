@@ -38,6 +38,8 @@ jobs:
         run: npm run check:contrast
       - name: Design-source gate (every story names its Figma source)
         run: npm run check:sources
+      - name: Rails parity gate (every Rails component renders the same HTML as Storybook)
+        run: npm run check:rails
       - name: Build Storybook
         run: npm run build-storybook
       - name: Figma link gate (every Figma documentation link resolves)

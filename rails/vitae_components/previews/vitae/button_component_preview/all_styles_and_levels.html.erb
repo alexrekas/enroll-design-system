@@ -1,0 +1,10 @@
+<div style="display:grid;gap:16px">
+  <% %w[solid outline ghost].each do |style| %>
+    <div style="display:flex;flex-wrap:wrap;gap:12px">
+      <% %w[primary secondary tertiary destructive].each do |level| %>
+        <%= render Vitae::ButtonComponent.new(label: "#{level.capitalize}", style: style, level: level) %>
+      <% end %>
+      <%= render Vitae::ButtonComponent.new(label: "Disabled", style: style, disabled: true) %>
+    </div>
+  <% end %>
+</div>

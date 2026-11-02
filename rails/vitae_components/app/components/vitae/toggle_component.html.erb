@@ -1,0 +1,5 @@
+<div class="<%= wrapper_class %>">
+  <button<%= attrs(type: "button", role: "switch", "aria-checked": @on.to_s, id: @id, class: "vitae-toggle__track", disabled: @disabled, **@html) %>><span class="vitae-toggle__knob"></span></button>
+  <label class="vitae-toggle__label" for="<%= @id %>"><%= @label %></label>
+  <% if @description.present? %><p class="vitae-toggle__description"><%= @description %></p><% end %>
+</div>

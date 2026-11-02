@@ -12,7 +12,15 @@ export default {
 A setting that applies immediately. Use Checkbox when the choice is submitted later with a form.
 
 - \`<button role="switch" aria-checked>\` with a \`<label for>\`. State shows by knob position as well as color; on hover the knob leans 6px toward the other side.
-- Disabled toggles have no hover or pressed state.` } },
+- Disabled toggles have no hover or pressed state.
+
+### Rails
+
+\`Vitae::ToggleComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::ToggleComponent.new(label: "Paperless notices", on: @account.paperless?) %>
+\`\`\`` } },
   },
 };
 

@@ -1,0 +1,6 @@
+<fieldset style="border:0;padding:0;margin:0">
+  <legend style="font-weight:var(--vitae-font-weight-semibold);margin-bottom:4px">Does anyone in your household have health coverage through a job?</legend>
+  <%= render Vitae::RadioComponent.new(label: "Yes", name: "job_coverage", value: "yes", checked: true) %>
+  <%= render Vitae::RadioComponent.new(label: "No", name: "job_coverage", value: "no") %>
+  <%= render Vitae::RadioComponent.new(label: "I'm not sure", name: "job_coverage", value: "unsure", description: "We'll ask a few questions to find out.") %>
+</fieldset>

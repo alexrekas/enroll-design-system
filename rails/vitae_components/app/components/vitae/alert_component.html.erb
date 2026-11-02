@@ -1,0 +1,9 @@
+<div<%= attrs(class: "vitae-alert vitae-alert--#{@type}", role: role, **@html) %>>
+  <%= icon(ICONS[@type][0], 24, ICONS[@type][1]) %>
+  <div class="vitae-alert__body">
+    <% if @title.present? %><p class="vitae-alert__title"><%= @title %></p><% end %>
+    <p class="vitae-alert__message"><%= message_text %></p>
+    <% if @link %><a href="<%= @link_href %>" class="vitae-link vitae-link--standalone"><%= @link %><%= icon("arrow-right", 20, "filled") %></a><% end %>
+  </div>
+  <% if @dismissible %><button type="button" class="vitae-alert__dismiss" aria-label="Dismiss"><%= icon("close", 20, "filled") %></button><% end %>
+</div>

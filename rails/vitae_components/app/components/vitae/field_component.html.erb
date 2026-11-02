@@ -1,0 +1,9 @@
+<div class="vitae-field">
+  <div class="<%= label_row_class %>">
+    <label class="vitae-field__label" for="<%= @id %>"><%= @label %><% if @required %> <span class="vitae-field__required" aria-hidden="true">*</span><% end %></label>
+    <% if @info %><button type="button" class="vitae-info-button" aria-expanded="false"><%= icon("info", 16, "filled") %><span class="vitae-visually-hidden">More about <%= @label %></span></button><% end %>
+  </div>
+  <div class="vitae-field__control"><%= render_control %></div>
+  <% if @helper.present? %><p class="vitae-field__helper" id="<%= helper_id %>"><%= @helper %></p><% end %>
+  <% if @error.present? %><p class="vitae-field__error" id="<%= error_id %>"><%= icon("error", 16, "filled") %><span><%= @error %></span></p><% end %>
+</div>

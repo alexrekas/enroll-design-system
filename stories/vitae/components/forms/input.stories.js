@@ -23,7 +23,17 @@ Single-line text entry. Shares one field anatomy with Dropdown: label (Body/Labe
 - **Active** (clicked into or typing) changes the background and border. **Focus** adds the dashed ring only for keyboard users: browsers match \`:focus-visible\` on text fields even after a click, so set \`html.vitae-kbd\` on Tab and remove it on pointer down (this Storybook does that).
 - **Error:** \`aria-invalid="true"\` and the message linked with \`aria-describedby\`.
 - Leading and trailing icons are decorative (\`aria-hidden\`); the label carries the meaning.
-- **Info button** is a 24×24 toggletip trigger, not a hover tooltip.` } },
+- **Info button** is a 24×24 toggletip trigger, not a hover tooltip.
+
+### Rails
+
+\`Vitae::InputComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::InputComponent.new(label: "Annual income", name: "household[income]", value: @household.income,
+      placeholder: "$0", helper: "Before taxes, for everyone in your household.", required: true, inputmode: "decimal",
+      error: @household.errors[:income].first) %>
+\`\`\`` } },
   },
   argTypes: {
     state: { control: 'select', options: STATES },

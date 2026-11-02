@@ -4,7 +4,7 @@
   "type": "module",
   "description": "Tokens-first design system for Enroll App (EA/DC/MA/ME themes)",
   "scripts": {
-    "build": "node build.mjs && node build-v2.mjs",
+    "build": "node build.mjs && node build-v2.mjs && node sync-rails.mjs",
     "build:v2": "node build-v2.mjs",
     "check:contrast": "node contrast-check.mjs",
     "prepare:all": "npm run build && npm run check:contrast && npm run check:sources",
@@ -13,7 +13,9 @@
     "check:sources": "node check-sources.mjs",
     "check:links": "node check-links.mjs",
     "check:stories": "node check-stories.mjs",
-    "check:visual": "node check-visual.mjs"
+    "check:visual": "node check-visual.mjs",
+    "sync:rails": "node sync-rails.mjs",
+    "check:rails": "node check-rails.mjs"
   },
   "devDependencies": {
     "@fontsource/barlow": "^5.3.0",

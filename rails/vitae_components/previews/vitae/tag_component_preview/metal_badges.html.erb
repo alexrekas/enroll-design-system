@@ -1,0 +1,3 @@
+<div style="display:flex;flex-wrap:wrap;gap:12px">
+  <% Vitae::MetalBadgeComponent::LEVELS.each do |level| %><%= render Vitae::MetalBadgeComponent.new(level: level) %><% end %>
+</div>

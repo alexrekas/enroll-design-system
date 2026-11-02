@@ -16,7 +16,19 @@ Three styles × four levels. **Solid** leads; **Outline** and **Ghost** are lowe
 - Icons: 20px Filled, 8px gap. Never icon-only without an \`aria-label\`.
 - Focus: 2px dashed ring, 2px offset, appears instantly.
 - Motion: background, border and text color ease over \`--vitae-motion-duration-fast-02\` with \`--vitae-motion-easing-productive-standard\`; none under \`prefers-reduced-motion\`.
-- Disabled: prefer keeping actions enabled and explaining what's missing; use \`aria-disabled="true"\` if it must stay focusable.` } },
+- Disabled: prefer keeping actions enabled and explaining what's missing; use \`aria-disabled="true"\` if it must stay focusable.
+
+### Rails
+
+\`Vitae::ButtonComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::ButtonComponent.new(label: "Continue") %>
+<%= render Vitae::ButtonComponent.new(label: "Cancel", style: :outline) %>
+<%= render Vitae::ButtonComponent.new(label: "Remove", style: :ghost, level: :destructive, icon_left: "delete") %>
+<%= render Vitae::ButtonComponent.new(label: "Submit documents", type: "submit", icon_left: "upload") %>
+<%= render Vitae::ButtonComponent.new(label: "(855) 532-5465", href: "tel:+18555325465", style: :ghost, icon_left: "phone") %>
+\`\`\`` } },
   },
   argTypes: {
     style: { control: 'inline-radio', options: ['solid', 'outline', 'ghost'] },

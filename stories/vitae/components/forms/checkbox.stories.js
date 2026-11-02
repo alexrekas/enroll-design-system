@@ -13,7 +13,15 @@ Choose any number of options, or agree to one statement. Native inputs styled wi
 
 - 24px box, 2px border, radius 4. Checked and indeterminate use \`--vitae-action-primary\`. Hover on an unchecked box previews a faint checkmark.
 - **Indeterminate** is set in JS (\`input.indeterminate = true\`) and announces "mixed". Use it only for a "select all" that controls a group.
-- **Error:** \`aria-invalid="true"\` and the message via \`aria-describedby\`. For a group, use Choice group so the error belongs to the question.` } },
+- **Error:** \`aria-invalid="true"\` and the message via \`aria-describedby\`. For a group, use Choice group so the error belongs to the question.
+
+### Rails
+
+\`Vitae::CheckboxComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::CheckboxComponent.new(label: "Email me reminders", name: "account[reminders]", value: "1", checked: @account.reminders?) %>
+\`\`\`` } },
   },
 };
 

@@ -5,7 +5,13 @@ export default {
   title: 'Vitae 27/Components/Feedback/Metal badge',
   tags: ['autodocs'],
   decorators: [canvas],
-  parameters: { design: figma('180:32', 'Metal badge') },
+  parameters: { docs: { description: { component: `### Rails
+
+\`Vitae::MetalBadgeComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::MetalBadgeComponent.new(level: plan.metal_level) %>   <%# "Bronze", "Silver", "Gold", "Platinum", "Catastrophic" %>
+\`\`\`` } }, design: figma('180:32', 'Metal badge') },
 };
 
 export const AllLevels = {

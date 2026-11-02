@@ -1,0 +1,31 @@
+<%
+  display = (params[:lookbook] || {})[:display] || {}
+  client = %w[ea dc ma me].include?(display[:client] || params[:client]) ? (display[:client] || params[:client]) : "ea"
+  mode = %w[light dark].include?(display[:mode] || params[:mode]) ? (display[:mode] || params[:mode]) : "light"
+%>
+<!doctype html>
+<html lang="en" data-client="<%= client %>" data-mode="<%= mode %>">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vitae 27</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Barlow:wght@400;500;600;700&display=swap">
+  <%= stylesheet_link_tag "vitae/tokens", "vitae/components" %>
+  <style>
+    body { margin: 0; padding: 24px; background: var(--vitae-background-page); color: var(--vitae-text-body);
+           font-family: var(--vitae-brand-font-family), system-ui, sans-serif; font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-24); }
+  </style>
+</head>
+<body>
+  <%= yield %>
+  <script>
+    // Demo behaviour only (Enroll would use Stimulus): indeterminate checkboxes and switches.
+    document.querySelectorAll("[data-indeterminate]").forEach((i) => { i.indeterminate = true; });
+    document.addEventListener("click", (e) => {
+      const t = e.target.closest(".vitae-toggle__track");
+      if (t && !t.disabled) t.setAttribute("aria-checked", String(t.getAttribute("aria-checked") !== "true"));
+    });
+  </script>
+</body>
+</html>

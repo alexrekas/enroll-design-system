@@ -12,7 +12,19 @@ export default {
 Choose one of 2–4 options (Dropdown for more). Native inputs styled with a sibling box, so they keep keyboard, screen reader and form behaviour. Rows are 44px tall (10px top and bottom) with an 8px gap to the label; labels and descriptions wrap with the control aligned to the first line. Disabled controls have no hover or pressed state: scope hover and active styles with \`:not(:disabled)\`.
 
 - 24px circle with a 12px dot. Always in a \`<fieldset>\` with a \`<legend>\` and a shared \`name\`; arrow keys move between options.
-- **Error:** \`aria-invalid="true"\` and the message via \`aria-describedby\` on the fieldset (see Choice group).` } },
+- **Error:** \`aria-invalid="true"\` and the message via \`aria-describedby\` on the fieldset (see Choice group).
+
+### Rails
+
+\`Vitae::RadioComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<fieldset>
+  <legend>Does anyone in your household have health coverage through a job?</legend>
+  <%= render Vitae::RadioComponent.new(label: "Yes", name: "job_coverage", value: "yes", checked: @answer == "yes") %>
+  <%= render Vitae::RadioComponent.new(label: "No", name: "job_coverage", value: "no", checked: @answer == "no") %>
+</fieldset>
+\`\`\`` } },
   },
 };
 

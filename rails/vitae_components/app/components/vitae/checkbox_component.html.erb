@@ -1,0 +1,7 @@
+<div class="<%= wrapper_class %>">
+  <input<%= attrs(**input_attrs, **@html) %>>
+  <span class="vitae-check__box" aria-hidden="true"><%= mark %></span>
+  <label class="vitae-check__label" for="<%= @id %>"><%= @label %></label>
+  <% if @description.present? %><p class="vitae-check__description"><%= @description %></p><% end %>
+  <% if @error.present? %><p class="vitae-field__error vitae-check__error" id="<%= error_id %>"><%= icon("error", 16, "filled") %><span><%= @error %></span></p><% end %>
+</div>

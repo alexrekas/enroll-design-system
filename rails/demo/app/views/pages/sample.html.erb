@@ -1,0 +1,19 @@
+<main style="max-width:640px;display:grid;gap:24px">
+  <h1 style="margin:0;font-size:var(--vitae-font-size-24);color:var(--vitae-text-heading)">Tell us about your income</h1>
+  <%= render Vitae::AlertComponent.new(type: :info, title: "Have your pay stubs ready", message: "We use income for the last 30 days to see what you qualify for.", dismissible: false) %>
+  <form style="display:grid;gap:24px" onsubmit="event.preventDefault()">
+    <%= render Vitae::InputComponent.new(label: "Annual income", name: "income", placeholder: "$0", helper: "Before taxes, for everyone in your household.", required: true, inputmode: "decimal") %>
+    <%= render Vitae::DropdownComponent.new(label: "Tax filing status", name: "filing_status", options: ["Single", "Married filing jointly", "Married filing separately", "Head of household"], required: true) %>
+    <fieldset style="border:0;padding:0;margin:0">
+      <legend style="font-weight:var(--vitae-font-weight-semibold);margin-bottom:4px">Does anyone in your household have health coverage through a job?</legend>
+      <%= render Vitae::RadioComponent.new(label: "Yes", name: "job_coverage", value: "yes") %>
+      <%= render Vitae::RadioComponent.new(label: "No", name: "job_coverage", value: "no") %>
+    </fieldset>
+    <%= render Vitae::CheckboxComponent.new(label: "Email me a copy of my application", name: "email_copy", value: "1") %>
+    <div style="display:flex;gap:12px;justify-content:flex-end">
+      <%= render Vitae::ButtonComponent.new(label: "Save and exit", style: :outline) %>
+      <%= render Vitae::ButtonComponent.new(label: "Continue", type: "submit", icon_right: "arrow-right") %>
+    </div>
+  </form>
+  <p>Try <a href="?client=dc">DC</a>, <a href="?client=ma">MA</a>, <a href="?client=me">ME</a> or <a href="?mode=dark">dark mode</a>.</p>
+</main>
