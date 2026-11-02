@@ -681,3 +681,88 @@ th[aria-sort="ascending"] .vitae-sort .vitae-icon, th[aria-sort="descending"] .v
 [data-mode="dark"] .vitae-logo--color { display: none; }
 [data-mode="dark"] .vitae-logo--white { display: contents; }
 img[data-white] { filter: brightness(0) invert(1); }
+
+/* ---------- Progress bar (Figma 398:2845) ---------- */
+.vitae-progress-bar { display: flex; flex-direction: column; gap: var(--vitae-space-004); min-width: 0; }
+.vitae-progress-bar__track { height: 8px; border-radius: 4px; background: var(--vitae-border-subtle); overflow: hidden; }
+.vitae-progress-bar__fill { height: 100%; border-radius: 4px; background: var(--vitae-action-primary); transition: width var(--vitae-motion-duration-moderate-01, 150ms) linear; }
+.vitae-progress-bar__label { margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); color: var(--vitae-text-secondary); }
+@media (prefers-reduced-motion: reduce) { .vitae-progress-bar__fill { transition: none; } }
+
+/* ---------- Document upload (Figma page 393:20) ---------- */
+.vitae-upload-input { display: flex; flex-direction: column; gap: var(--vitae-space-008); width: 100%; max-width: 560px; }
+.vitae-dropzone { display: flex; flex-direction: column; align-items: center; gap: var(--vitae-space-008); padding: var(--vitae-space-024) var(--vitae-space-016); text-align: center;
+  border: var(--vitae-border-width-2) dashed var(--vitae-field-border); border-radius: var(--vitae-brand-radius-card); background: var(--vitae-field-background); color: var(--vitae-text-body);
+  transition: border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
+.vitae-dropzone > .vitae-icon { color: var(--vitae-icon-secondary); }
+.vitae-dropzone__prompt { margin: 0; }
+.vitae-dropzone__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--vitae-space-008); }
+.vitae-dropzone__limits { margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); color: var(--vitae-text-secondary); }
+.vitae-upload-input.is-dragover .vitae-dropzone { border-color: var(--vitae-field-border-active); background: var(--vitae-field-background-active); }
+.vitae-upload-input.is-error .vitae-dropzone { border-color: var(--vitae-support-error); }
+/* The real <input type="file"> stays focusable but hidden; its <label> is styled as a button and shows the focus ring. */
+.vitae-file-trigger { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; }
+.vitae-file-trigger + label.vitae-btn { cursor: pointer; }
+.vitae-file-trigger:focus-visible + label.vitae-btn { outline: 2px dashed var(--vitae-border-focus); outline-offset: 2px; }
+.vitae-photo-only { display: none; }
+@media (pointer: coarse) { .vitae-photo-only { display: inline-flex; } }
+.vitae-upload-input--show-photo .vitae-photo-only { display: inline-flex; }
+
+.vitae-upload-list { list-style: none; margin: 0; padding: 0; border-top: var(--vitae-border-width-1) solid var(--vitae-border-subtle); }
+.vitae-attachment { display: grid; grid-template-columns: 24px minmax(0, 1fr); column-gap: var(--vitae-space-012); row-gap: var(--vitae-space-004);
+  padding: var(--vitae-space-016) 0 var(--vitae-space-012); border-bottom: var(--vitae-border-width-1) solid var(--vitae-border-subtle); }
+.vitae-attachment > .vitae-icon { color: var(--vitae-icon-secondary); margin-top: 2px; }
+.vitae-attachment--error > .vitae-icon { color: var(--vitae-support-error); }
+.vitae-attachment__details { display: flex; flex-direction: column; gap: var(--vitae-space-002); min-width: 0; }
+.vitae-attachment__type { margin: 0; font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-body); }
+.vitae-attachment__name { margin: 0; overflow-wrap: anywhere; }
+.vitae-attachment__meta { margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); color: var(--vitae-text-secondary); }
+.vitae-attachment--error .vitae-attachment__meta { color: var(--vitae-text-error); }
+.vitae-attachment__details .vitae-progress-bar { margin-top: var(--vitae-space-004); }
+.vitae-attachment__actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; }
+
+.vitae-upload-panel { container-type: inline-size; display: flex; flex-direction: column; gap: var(--vitae-space-020); min-width: 0; }
+.vitae-upload-panel__intro { display: flex; flex-direction: column; gap: var(--vitae-space-008); }
+.vitae-upload-panel__title { margin: 0; font-size: var(--vitae-font-size-18); line-height: var(--vitae-font-line-height-27); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-upload-panel__intro p { margin: 0; }
+.vitae-upload-panel > .vitae-btn--ghost { align-self: flex-start; }
+.vitae-upload-panel__actions { display: flex; justify-content: flex-end; gap: var(--vitae-space-012); }
+@container (max-width: 480px) {
+  .vitae-upload-panel__actions { flex-direction: column-reverse; }
+  .vitae-upload-panel__actions .vitae-btn { width: 100%; }
+}
+
+.vitae-upload-history { list-style: none; margin: 0; padding: 0; container-type: inline-size; }
+.vitae-history-row { display: grid; grid-template-columns: minmax(0, 1fr) 150px 140px auto; gap: var(--vitae-space-024); align-items: start;
+  padding: var(--vitae-space-016) 0 var(--vitae-space-016) var(--vitae-space-016); border-bottom: var(--vitae-border-width-1) solid var(--vitae-border-subtle); }
+.vitae-history-row__reason { margin: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); color: var(--vitae-text-error); }
+.vitae-history-row__date { margin: 0; }
+.vitae-history-row__date span { display: block; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); color: var(--vitae-text-secondary); }
+.vitae-history-row__actions { display: flex; flex-wrap: wrap; margin-top: -10px; }
+@container (max-width: 600px) {
+  .vitae-history-row { grid-template-columns: minmax(0, 1fr) auto; gap: var(--vitae-space-008) var(--vitae-space-016); padding-left: 0; }
+  .vitae-history-row__date { grid-column: 1; }
+  .vitae-history-row__status { grid-column: 2; grid-row: 1; }
+  .vitae-history-row__actions { grid-column: 1 / -1; margin: 0 0 0 calc(-1 * var(--vitae-space-016)); }
+}
+
+.vitae-verification { container-type: inline-size; display: flex; flex-direction: column; gap: var(--vitae-space-016); padding: var(--vitae-space-020);
+  background: var(--vitae-card-surface); border: var(--vitae-border-width-1) solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); }
+.vitae-verification.is-open { border-color: var(--vitae-border-strong); }
+.vitae-verification__summary { display: flex; gap: var(--vitae-space-024); align-items: flex-start; }
+.vitae-verification__details { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: var(--vitae-space-004); }
+.vitae-verification__title { margin: 0; font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-24); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-verification__member, .vitae-verification__due { margin: 0; }
+.vitae-verification__member { font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); color: var(--vitae-text-secondary); }
+.vitae-verification__details p:not([class]) { margin: 0; }
+.vitae-verification__due { font-weight: var(--vitae-font-weight-bold); }
+.vitae-verification__side { display: flex; flex-direction: column; align-items: flex-end; gap: var(--vitae-space-012); }
+.vitae-verification > .vitae-upload-panel { border-top: var(--vitae-border-width-1) solid var(--vitae-border-subtle); padding-top: var(--vitae-space-020); }
+.vitae-verification > .vitae-btn--ghost { align-self: flex-start; }
+@container (max-width: 520px) {
+  .vitae-verification__summary { flex-direction: column; gap: var(--vitae-space-012); }
+  .vitae-verification__side { flex-direction: row; flex-wrap: wrap; align-items: center; }
+}
+.vitae-upload-page { display: flex; flex-direction: column; gap: var(--vitae-space-016); max-width: 960px; }
+.vitae-upload-page h2 { margin: 0; font-size: var(--vitae-font-size-20); line-height: var(--vitae-font-line-height-28); color: var(--vitae-text-heading); }
+.vitae-upload-page > p { margin: 0; }

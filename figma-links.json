@@ -4,7 +4,7 @@
   "storybook": "https://alexrekas.github.io/enroll-design-system/?path=/docs/",
   "pages": {
     "introduction": "vitae-27-introduction--docs",
-    "icons (all 58 components on the Icon page)": "vitae-27-icons--docs"
+    "icons (all 60 components on the Icon page)": "vitae-27-icons--docs"
   },
   "components": [
     {
@@ -416,6 +416,36 @@
       "figma": "298:39641",
       "name": "Plan compare/Plan header",
       "docs": "vitae-27-components-plan-shopping--docs"
+    },
+    {
+      "figma": "398:2845",
+      "name": "Progress bar",
+      "docs": "vitae-27-components-document-upload--docs"
+    },
+    {
+      "figma": "393:168",
+      "name": "Upload/File input",
+      "docs": "vitae-27-components-document-upload--docs"
+    },
+    {
+      "figma": "394:109",
+      "name": "Upload/Attachment",
+      "docs": "vitae-27-components-document-upload--docs"
+    },
+    {
+      "figma": "394:351",
+      "name": "Upload/Panel",
+      "docs": "vitae-27-components-document-upload--docs"
+    },
+    {
+      "figma": "395:443",
+      "name": "Upload/History row",
+      "docs": "vitae-27-components-document-upload--docs"
+    },
+    {
+      "figma": "395:654",
+      "name": "Upload/Verification",
+      "docs": "vitae-27-components-document-upload--docs"
     }
   ]
 }

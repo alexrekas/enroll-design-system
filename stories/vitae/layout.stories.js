@@ -80,7 +80,7 @@ Sections open independently; click a header here to toggle it. 56px headers with
 
 /* ---------- Modal ---------- */
 const MODAL_ICON = { info: ['info', 'filled'], success: ['success', 'filled'], warning: ['warning', 'two-tone'], error: ['error', 'filled'] };
-const modal = ({ type = 'standard', title = 'Discard your changes?', body = "You haven't saved the changes to your household. If you leave now, they'll be lost.", secondary = true, close = true, primary = 'Discard changes', secondaryLabel = 'Keep editing' } = {}) => {
+export const modal = ({ type = 'standard', title = 'Discard your changes?', body = "You haven't saved the changes to your household. If you leave now, they'll be lost.", secondary = true, close = true, primary = 'Discard changes', secondaryLabel = 'Keep editing' } = {}) => {
   const tid = id('modal'); const i = MODAL_ICON[type];
   const level = type === 'warning' ? 'destructive' : 'primary';
   return `<div class="vitae-modal-wrap"><div class="vitae-modal-scrim"><div class="vitae-modal vitae-modal--${type}" role="${['warning', 'error'].includes(type) ? 'alertdialog' : 'dialog'}" aria-modal="true" aria-labelledby="${tid}" aria-describedby="${tid}-d">
