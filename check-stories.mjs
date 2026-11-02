@@ -46,7 +46,7 @@ const base = `http://127.0.0.1:${server.address().port}`;
 
 const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
 const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, reducedMotion: 'reduce' });
-// Fonts come from Google Fonts on the live site; skip external requests so runs are fast and offline-safe.
+// Fonts are self-hosted, so nothing outside the Storybook build is needed; block external requests.
 await context.route((url) => !url.href.startsWith(base), (route) => route.abort());
 
 // Storybook reports play-function failures on its channel, not in the render phase, so listen for them.

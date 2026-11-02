@@ -4984,6 +4984,13 @@
   "source": "semantic"
  },
  {
+  "path": "action.primary-text-on-selected",
+  "cssVar": "--vitae-action-primary-text-on-selected",
+  "type": "color",
+  "description": "Outline and Ghost primary button text (and outline border) on a selected surface, such as the table bulk-action bar. Brand text in light mode; body text in dark mode, where brand text on the deep brand selected tone drops below 4.5:1.",
+  "source": "semantic"
+ },
+ {
   "path": "action.primary-subtle-hover",
   "cssVar": "--vitae-action-primary-subtle-hover",
   "type": "color",

@@ -773,6 +773,7 @@
   --vitae-action-primary-text: var(--vitae-brand-light-outline-primary-text);
   --vitae-action-primary-text-hover: var(--vitae-brand-light-outline-primary-text-hover);
   --vitae-action-primary-text-active: var(--vitae-brand-light-outline-primary-text-active);
+  --vitae-action-primary-text-on-selected: var(--vitae-brand-light-outline-primary-text); /** Outline and Ghost primary button text (and outline border) on a selected surface, such as the table bulk-action bar. Brand text in light mode; body text in dark mode, where brand text on the deep brand selected tone drops below 4.5:1. */
   --vitae-action-primary-subtle-hover: var(--vitae-brand-primary-015);
   --vitae-action-primary-subtle-active: var(--vitae-brand-primary-025);
   --vitae-action-secondary-text: var(--vitae-brand-light-outline-secondary-text);
@@ -1477,6 +1478,7 @@
   --vitae-action-destructive-hover: var(--vitae-color-status-error-040);
   --vitae-action-destructive-active: var(--vitae-color-status-error-050);
   --vitae-action-disabled: var(--vitae-color-neutral-160);
+  --vitae-action-primary-text-on-selected: var(--vitae-color-neutral-030); /** Outline and Ghost primary button text (and outline border) on a selected surface, such as the table bulk-action bar. Brand text in light mode; body text in dark mode, where brand text on the deep brand selected tone drops below 4.5:1. */
   --vitae-action-destructive-text: var(--vitae-color-status-error-040);
   --vitae-action-destructive-text-hover: var(--vitae-color-status-error-030);
   --vitae-action-destructive-text-active: var(--vitae-color-status-error-020);
@@ -2376,6 +2378,7 @@
   --vitae-action-primary-text: var(--vitae-brand-light-outline-primary-text);
   --vitae-action-primary-text-hover: var(--vitae-brand-light-outline-primary-text-hover);
   --vitae-action-primary-text-active: var(--vitae-brand-light-outline-primary-text-active);
+  --vitae-action-primary-text-on-selected: var(--vitae-brand-light-outline-primary-text); /** Outline and Ghost primary button text (and outline border) on a selected surface, such as the table bulk-action bar. Brand text in light mode; body text in dark mode, where brand text on the deep brand selected tone drops below 4.5:1. */
   --vitae-action-primary-subtle-hover: var(--vitae-brand-primary-015);
   --vitae-action-primary-subtle-active: var(--vitae-brand-primary-025);
   --vitae-action-secondary-text: var(--vitae-brand-light-outline-secondary-text);
@@ -3081,6 +3084,7 @@
   --vitae-action-destructive-hover: var(--vitae-color-status-error-040);
   --vitae-action-destructive-active: var(--vitae-color-status-error-050);
   --vitae-action-disabled: var(--vitae-color-neutral-160);
+  --vitae-action-primary-text-on-selected: var(--vitae-color-neutral-030); /** Outline and Ghost primary button text (and outline border) on a selected surface, such as the table bulk-action bar. Brand text in light mode; body text in dark mode, where brand text on the deep brand selected tone drops below 4.5:1. */
   --vitae-action-destructive-text: var(--vitae-color-status-error-040);
   --vitae-action-destructive-text-hover: var(--vitae-color-status-error-030);
   --vitae-action-destructive-text-active: var(--vitae-color-status-error-020);
@@ -3977,6 +3981,7 @@
   --vitae-action-primary-text: var(--vitae-brand-light-outline-primary-text);
   --vitae-action-primary-text-hover: var(--vitae-brand-light-outline-primary-text-hover);
   --vitae-action-primary-text-active: var(--vitae-brand-light-outline-primary-text-active);
+  --vitae-action-primary-text-on-selected: var(--vitae-brand-light-outline-primary-text); /** Outline and Ghost primary button text (and outline border) on a selected surface, such as the table bulk-action bar. Brand text in light mode; body text in dark mode, where brand text on the deep brand selected tone drops below 4.5:1. */
   --vitae-action-primary-subtle-hover: var(--vitae-brand-primary-015);
   --vitae-action-primary-subtle-active: var(--vitae-brand-primary-025);
   --vitae-action-secondary-text: var(--vitae-brand-light-outline-secondary-text);
@@ -4681,6 +4686,7 @@
   --vitae-action-destructive-hover: var(--vitae-color-status-error-040);
   --vitae-action-destructive-active: var(--vitae-color-status-error-050);
   --vitae-action-disabled: var(--vitae-color-neutral-160);
+  --vitae-action-primary-text-on-selected: var(--vitae-color-neutral-030); /** Outline and Ghost primary button text (and outline border) on a selected surface, such as the table bulk-action bar. Brand text in light mode; body text in dark mode, where brand text on the deep brand selected tone drops below 4.5:1. */
   --vitae-action-destructive-text: var(--vitae-color-status-error-040);
   --vitae-action-destructive-text-hover: var(--vitae-color-status-error-030);
   --vitae-action-destructive-text-active: var(--vitae-color-status-error-020);
@@ -5579,6 +5585,7 @@
   --vitae-action-primary-text: var(--vitae-brand-light-outline-primary-text);
   --vitae-action-primary-text-hover: var(--vitae-brand-light-outline-primary-text-hover);
   --vitae-action-primary-text-active: var(--vitae-brand-light-outline-primary-text-active);
+  --vitae-action-primary-text-on-selected: var(--vitae-brand-light-outline-primary-text); /** Outline and Ghost primary button text (and outline border) on a selected surface, such as the table bulk-action bar. Brand text in light mode; body text in dark mode, where brand text on the deep brand selected tone drops below 4.5:1. */
   --vitae-action-primary-subtle-hover: var(--vitae-brand-primary-015);
   --vitae-action-primary-subtle-active: var(--vitae-brand-primary-025);
   --vitae-action-secondary-text: var(--vitae-brand-light-outline-secondary-text);
@@ -6283,6 +6290,7 @@
   --vitae-action-destructive-hover: var(--vitae-color-status-error-040);
   --vitae-action-destructive-active: var(--vitae-color-status-error-050);
   --vitae-action-disabled: var(--vitae-color-neutral-160);
+  --vitae-action-primary-text-on-selected: var(--vitae-color-neutral-030); /** Outline and Ghost primary button text (and outline border) on a selected surface, such as the table bulk-action bar. Brand text in light mode; body text in dark mode, where brand text on the deep brand selected tone drops below 4.5:1. */
   --vitae-action-destructive-text: var(--vitae-color-status-error-040);
   --vitae-action-destructive-text-hover: var(--vitae-color-status-error-030);
   --vitae-action-destructive-text-active: var(--vitae-color-status-error-020);

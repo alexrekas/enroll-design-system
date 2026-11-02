@@ -5,6 +5,11 @@ on:
     branches: [main, trunk]
   pull_request:
   workflow_dispatch:
+    inputs:
+      update_visual_baselines:
+        description: Accept the current look of every story as the new visual baseline
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -18,6 +23,8 @@ concurrency:
 jobs:
   build-and-check:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # only used to commit new visual baselines when that box is ticked
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -39,6 +46,24 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Story gate (every Vitae 27 story renders, play functions pass, axe WCAG 2.1 A/AA in all clients and modes)
         run: npm run check:stories
+      - name: Visual regression (every story compared with visual-baselines/)
+        id: visual
+        if: ${{ !inputs.update_visual_baselines }}
+        run: npm run check:visual
+      - name: Upload visual report (baseline, new screenshot and diff for each change)
+        if: ${{ always() && steps.visual.outcome == 'failure' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-report
+          path: visual-report
+      - name: Accept the current look as the new visual baseline
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.update_visual_baselines }}
+        run: |
+          npm run check:visual -- --update
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A visual-baselines
+          if git diff --cached --quiet; then echo "Baselines already match."; else git commit -m "Update visual baselines [skip ci]" && git push; fi
       - name: Upload Storybook artifact
         uses: actions/upload-pages-artifact@v3
         with:

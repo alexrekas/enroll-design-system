@@ -233,6 +233,11 @@
       "$value": "{brand.dark.outline-primary-text-active}",
       "$type": "color"
     },
+    "primary-text-on-selected": {
+      "$value": "{color.neutral.030}",
+      "$type": "color",
+      "$description": "Outline and Ghost primary button text (and outline border) on a selected surface, such as the table bulk-action bar. Brand text in light mode; body text in dark mode, where brand text on the deep brand selected tone drops below 4.5:1."
+    },
     "primary-subtle-hover": {
       "$value": "{brand.dark.subtle-primary-hover}",
       "$type": "color"

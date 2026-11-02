@@ -118,9 +118,8 @@ const V2 = [
   ['TextBody', 'FieldBackgroundActive', 4.5, 'field value (active)'], ['FieldBorder', 'FieldBackground', 3, 'field border'],
   ['FieldBorderActive', 'FieldBackground', 3, 'field border (active)'],
   ...['BackgroundLayerHover', 'BackgroundSelected', 'TableRowHover', 'TableRowSelected'].map((bg) => ['TextBody', bg, 4.5, 'text on hover/selected']),
-  // Light mode only: in dark mode, buttons on a selected surface (e.g. the table bulk-action bar) switch to TextBody,
-  // because brand text on the deep brand selected tone falls below 4.5:1 for EA (see .vitae-bulkbar in vitae.css).
-  ['ActionPrimaryText', 'BackgroundSelected', 4.5, 'link/button on selected', 'light'],
+  // Buttons on a selected surface (table bulk-action bar) use their own role so dark mode can switch to body text.
+  ['ActionPrimaryTextOnSelected', 'BackgroundSelected', 4.5, 'button on selected surface'],
   ['TextOnBrand', 'BackgroundBrand', 4.5, 'text on brand'],
   ...['Info', 'Success', 'Warning', 'Error'].flatMap((t) => [['AlertText', `Support${t}Surface`, 4.5, 'alert text'], ['TextLink', `Support${t}Surface`, 4.5, 'alert link']]),
   ...['Info', 'Success', 'Error'].map((t) => [`Support${t}`, `Support${t}Surface`, 3, 'status icon']),

@@ -77,6 +77,9 @@ CI (`.github/workflows/ci.yml`) runs these on every push and pull request, then 
 | `npm run check:sources` | A story file with no `parameters.design` (the Figma frame it was built from). |
 | `npm run check:links` | A Storybook page that a Figma component links to no longer exists. Renaming a Storybook title means updating `figma-links.json` and the Figma documentation link. |
 | `npm run check:stories` | Any Vitae 27 story that errors, has a failing play function, or has an axe WCAG 2.1 A/AA violation, in any of the 8 client/mode combinations. Run after `npm run build-storybook`; add `--quick` for EA light only or `--only=button,upload` to filter. |
+| `npm run check:visual` | Any Vitae 27 story that looks different from its approved screenshot in `visual-baselines/` (EA light, DC dark, MA light, ME dark). CI uploads a **visual-report** artifact with the baseline, the new screenshot and the difference for each change. |
+
+**Approving visual changes.** When a change is intended, accept it as the new baseline: Actions → Design System CI → Run workflow → tick **Accept the current look of every story as the new visual baseline**. CI takes new screenshots and commits them. Baselines are made in CI because a Mac renders text slightly differently, so compare there rather than locally. A new story only gets a baseline on the next acceptance.
 
 The **Accessibility** tab under each story in Storybook runs the same axe rules. Automated checks find only part of the problems, so also check new components with a keyboard and a screen reader.
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Barlow:wght@400;500;600;700&display=swap');
+/* Open Sans and Barlow are self-hosted from @fontsource (imported in preview.js), so stories render the same offline, in CI and in visual tests. */
 @import '../dist/css/tokens.ea.css';
 @import '../dist/css/tokens.dc.css';
 @import '../dist/css/tokens.ma.css';

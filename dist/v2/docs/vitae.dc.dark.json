@@ -728,6 +728,7 @@
   "ActionPrimaryText": "#ccd6df",
   "ActionPrimaryTextHover": "#e5eaef",
   "ActionPrimaryTextActive": "#f2f5f7",
+  "ActionPrimaryTextOnSelected": "#e8ebf0",
   "ActionPrimarySubtleHover": "#00284d",
   "ActionPrimarySubtleActive": "#002d57",
   "ActionSecondaryText": "#3391d6",

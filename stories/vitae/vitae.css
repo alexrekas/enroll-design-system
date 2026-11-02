@@ -450,8 +450,8 @@ label.vitae-card:has(input:disabled), label.vitae-card:has(input:disabled) input
 /* ---------- Table ---------- */
 .vitae-table-wrap { display: flex; flex-direction: column; gap: var(--vitae-space-012); }
 .vitae-bulkbar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--vitae-space-008) var(--vitae-space-016); padding: var(--vitae-space-008) var(--vitae-space-016); background: var(--vitae-background-selected); border-radius: var(--vitae-brand-radius-card); }
-/* In dark mode the selected background is a deep brand tone, so brand-colored button text drops below 4.5:1 on it. Use the body text color there. */
-[data-mode="dark"] .vitae-bulkbar .vitae-btn--primary:is(.vitae-btn--outline, .vitae-btn--ghost) { --_t: var(--vitae-text-body); --_th: var(--vitae-text-body); --_ta: var(--vitae-text-body); }
+/* Buttons on the selected background: brand text in light mode, body text in dark mode (brand text on the deep brand tone is under 4.5:1). */
+.vitae-bulkbar .vitae-btn--primary:is(.vitae-btn--outline, .vitae-btn--ghost) { --_t: var(--vitae-action-primary-text-on-selected); --_th: var(--vitae-action-primary-text-on-selected); --_ta: var(--vitae-action-primary-text-on-selected); }
 .vitae-table-scroll { position: relative; overflow-x: auto; background: var(--vitae-card-surface); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); }
 .vitae-table-scroll:focus-visible { outline: var(--_ring); outline-offset: 2px; }
 .vitae-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-24); }

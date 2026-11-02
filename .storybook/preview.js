@@ -1,3 +1,13 @@
+// Brand fonts, self-hosted (Latin subset). EA, DC and MA use Open Sans; ME uses Barlow.
+import '@fontsource/open-sans/latin-300.css';
+import '@fontsource/open-sans/latin-400.css';
+import '@fontsource/open-sans/latin-500.css';
+import '@fontsource/open-sans/latin-600.css';
+import '@fontsource/open-sans/latin-700.css';
+import '@fontsource/barlow/latin-400.css';
+import '@fontsource/barlow/latin-500.css';
+import '@fontsource/barlow/latin-600.css';
+import '@fontsource/barlow/latin-700.css';
 import './tokens.css';
 import '../dist/v2/css/vitae.css';
 
@@ -97,9 +107,17 @@ export default {
       options: { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'] } },
     },
     options: {
-      // Vitae 27 first; the original v1 stories sit in a Legacy group at the bottom.
+      // Vitae 27 first, components in the order you'd build a screen; the v1 stories sit in a Legacy group at the bottom.
       storySort: {
-        order: ['Vitae 27', ['Introduction', 'Foundations', 'Icons', 'Logos', 'Components', ['Actions', 'Forms', 'Feedback', 'Navigation', 'Layout and data', 'Plan shopping', 'Patterns'], 'Sample users'], 'Legacy (v1)'],
+        order: ['Vitae 27', ['Introduction', 'Foundations', 'Icons', 'Logos', 'Components', [
+          'Actions', ['Button', 'Link', 'Focus ring'],
+          'Forms', ['Input', 'Dropdown', 'Checkbox', 'Radio', 'Toggle', 'Choice group', 'Field-set', 'Search', 'Date picker'],
+          'Feedback', ['Alert', 'Tag', 'Metal badge', 'Tooltip', 'Modal', 'Progress bar'],
+          'Navigation', ['Header', 'Footer', 'Breadcrumbs', 'Pagination', 'Tabs', 'Left nav', 'Progress'],
+          'Layout and data', ['Card', 'Accordion', 'Table', 'Menu'],
+          'Plan shopping', ['Plan tile', 'Filter panel', 'Compare'],
+          'Patterns', ['Log-in', 'Document upload'],
+        ], 'Sample users'], 'Legacy (v1)'],
       },
     },
   },
