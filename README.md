@@ -1,83 +1,88 @@
-# Enroll Design System — Tokens (Phase 1)
+# Enroll Design System (Vitae 27)
 
-DTCG-format design tokens for Enroll App, themed for **EA** (unbranded default), **DC HealthLink**, **MA Health Connector**, and **CoverME.gov**. Built with Style Dictionary v4.
+Vitae 27 is the design system for Enroll. One set of tokens and components serves four clients, each in light and dark mode:
 
-Source precedence (decided 7/9/26): **Vitae → EA-DesignSystem-2021 → Enroll code.** Every color token's `$description` names its source; `interpolated`/`extrapolated`/`PLACEHOLDER` values are flagged for review.
+| Client | Product |
+|---|---|
+| **EA** | Enroll App, the unbranded demo client (default) |
+| **DC** | DC Health Link |
+| **MA** | Massachusetts Health Connector |
+| **ME** | CoverME.gov |
 
-## Structure
+- **Storybook:** https://alexrekas.github.io/enroll-design-system/ (rebuilt on every push to `main`)
+- **Figma:** [Vitae 27](https://www.figma.com/design/FgVdwGszfnY0vz75yxfJ7F/Vitae-27), the design source for every component
+- **Target stack:** Rails `html.erb`. The markup on each Storybook Docs page is the contract.
 
-```
-tokens/
-  primitives/   color.json (brand ramps per client, gray, feedback), dimension.json, typography.json
-  semantic/     semantic.json — intent-named tokens; THE theming layer. References {color.brand.*}
-  component/    component.json — button + input seed, aliases semantic only
-  themes/       ea.json  dc.json  ma.json  me.json — bind color.brand.* to a client's primitive ramps
-build.mjs       builds all 4 themes → dist/
-contrast-check.mjs  WCAG 2.1 AA gate for the v1 (legacy) token pairs (run in CI)
-check-stories.mjs   Story gate: every Vitae 27 story in 4 clients x light/dark; fails on render or play-function errors and axe WCAG 2.1 A/AA violations
-```
-
-## Usage
+## Quick start
 
 ```bash
 npm install
-npm run build           # dist/css, dist/scss, dist/docs per theme
-npm run check:contrast  # AA gate (v1 tokens)
-npm run build-storybook && npm run check:stories  # story gate (add --quick for EA light only)
-npm run storybook       # design library at localhost:6006
-npm run build-storybook # static build (a prebuilt copy ships in storybook-static/)
+npm run storybook        # http://localhost:6006
+npm run build            # rebuild tokens into dist/
 ```
 
-**Storybook design library:** 23 components (Accordion, Alert, Breadcrumbs, Button, Card, Checkbox, Date Picker, Dropdown, Field-Set, Header/Footer/LeftNav, Icon, Log-In, Modal, Pagination, Plan, Progress, Radio, Table, Tag, Text Input, Toggle, Tooltip), plus Foundations pages (color ramps, cross-theme hex reference, spacing, radius, typography) generated from the built token manifests. The toolbar's Theme menu re-renders any story in EA / DC / MA / ME instantly. Reference component classes live in `.storybook/tokens.css` (`ea-btn`, `ea-input`, `ea-alert`) — the same markup contract mockups and Enroll App adoption will use.
+Uses Node 22 (the version CI runs). Story checks also need Chromium for Playwright: `npx playwright install chromium`.
 
-**Web:** load `dist/css/tokens.ea.css` (also binds `:root`) plus the client file; switch brand with `<html data-theme="dc">`.
-**Enroll App (Rails):** `@import 'dist/scss/tokens.me';` — replaces `.scss.erb` config interpolation over time.
-**Figma:** `dist/docs/tokens.{theme}.json` flat manifests feed variable import / REST sync (Phase 2).
+## Using the tokens
 
-## CI (GitHub)
+Load one stylesheet and set the client and mode on the page:
 
-`.github/workflows/ci.yml` runs on every push/PR: token build → contrast gate (v1 tokens) → design-source gate → Storybook build → Figma link gate → story gate (axe in every client and mode; build fails on any violation) → deploy to **GitHub Pages** (pushes to main only; pull requests run the checks without deploying). One-time setup: Settings → Pages → Source = "GitHub Actions". The Storybook is hosted at `https://alexrekas.github.io/enroll-design-system/` and updates on every push to main.
+```html
+<link rel="stylesheet" href="dist/v2/css/vitae.css">
+<html data-client="dc" data-mode="dark">
+```
 
-Figma links: every Vitae 27 component in Figma has a documentation link to its Storybook Docs page (listed in `figma-links.json`). CI runs `npm run check:links` after the Storybook build and fails if any of those pages is missing, so renaming a Storybook title means updating that file and the Figma links.
+`vitae.css` holds all 8 client/mode combinations; EA light is also the `:root` default. Every variable starts with `--vitae-`. Use semantic tokens (`--vitae-text-body`, `--vitae-action-primary`, `--vitae-border-subtle`) in components, never primitives or hard-coded values.
 
-Hosting is GitHub Pages only (decided 10/23/26). Netlify is no longer used; if a Netlify site is still connected to this repo, delete it or stop its builds in Netlify. To push without rebuilding the site, put `[skip ci]` anywhere in the commit message, including the body (GitHub skips the whole workflow, checks included). To rebuild by hand: Actions → Design System CI → Run workflow.
-
-## Architecture rules
-
-1. Components/designs never reference primitives — only semantic (or component) tokens.
-2. A client theme overrides **only** `color.brand.*` bindings, `font.family.brand`, and `radius.button` (+ documented exceptions).
-3. Adding client #5 = one new theme file + one primitive ramp set.
-4. Contrast gate must pass for every theme before merge.
-
-## Where each story comes from
-
-Every Storybook story shows a **Source** badge under it, linking to the Figma frame it was built from:
-
-| Badge | Meaning |
+| Output | What it's for |
 |---|---|
-| **From Figma** | Built from that frame and checked against it |
-| **Adapted from Figma** | Built from the frame, restyled onto Enroll tokens or anatomy (e.g. Fluent 2 tooltip/calendar) |
-| **Reference · not re-verified** | Built from that frame in an earlier pass; not re-checked since |
-| **Projected · no Figma frame yet** | No frame exists for this client/variant; built from the closest real frame |
+| `dist/v2/css/vitae.css` | All clients and modes, switched by `data-client` / `data-mode` |
+| `dist/v2/css/vitae.<client>.<mode>.css` | One combination, for apps that only ever need one |
+| `dist/v2/docs/vitae.<client>.<mode>.json` | Flat resolved values (used by the contrast check and for reference) |
+| `dist/v2/docs/manifest.json` | Token list with descriptions |
 
-Stories declare this with `parameters.design` (see `.storybook/preview.js`). CI fails if a story file has none (`npm run check:sources`). Logos and header/footer icons in `stories/brand-assets.js` are exported from Figma (`exportAsync`), not redrawn.
+Component CSS (`vitae-btn`, `vitae-field`, `vitae-alert` …) is in `stories/vitae/vitae.css`, the reference implementation for the Rails components.
 
-## Resolved 10/14/26
+## How the repo is organized
 
-- **Base font:** Open Sans (`font.family.base`). Roboto Flex removed. ME keeps Barlow.
-- **Button radius** comes from EA-DesignSystem-2021 per theme: EA 6px, DC 4px, MA 3px, ME 6px. (Vitae draws 24px pills; not adopted.)
-- **Metal levels** (2021 DS `Metal-Level/*` = Vitae semantic `Tag/*` borders): Platinum `#5D5D60`, Gold `#FABB18`, Silver `#C0C0C0`, Bronze `#CD7F32`, plus Vitae tag tints. `#F7B319` was legacy Enroll code, not Vitae. Vitae's *primitive* metal layer (`#D4AF37` gold, `#E5E4E2` platinum) is stale and superseded.
-- **Catastrophic** metal level: `#4A6274` steel, tint `#DCE4EA` (approved 10/14/26; not in either Figma file).
-- **EA secondary** is Vitae slate `#3B5B81`, not the 2021 swatch navy `#00224D` (confirmed 10/14/26).
-- **Color ramps:** every brand ramp (EA/DC/MA/ME × primary/secondary/tertiary, steps 005–150 incl. 010/020/030/035/040) is now taken verbatim from Vitae's `Color/Brand/*` variables. Nothing is interpolated. The 2021 DS's *variables* disagree with its own swatch page in places (e.g. its DC page labels Primary-100 `#007BC4` under a navy swatch, and its EA Tertiary/100 variable is blue `#0067A1` under a plum swatch). Vitae is internally consistent, so it wins.
-- **Type scale:** semantic `type.*` tokens follow the 2021 DS (h1 36/54, h2 24/36, h3 18/27, dialog 20/28, paragraph 16/24, button 16/20, table 16/14/12, breadcrumb 14/20).
+```
+tokens-v2/            Vitae 27 tokens (DTCG JSON) — see tokens-v2/README.md
+  primitives.json       raw values: color ramps, spacing, radius, type, motion
+  brand/{ea,dc,ma,me}   what differs by client: brand ramps, fonts, radii, client settings
+  semantic/{light,dark} what components use, by meaning, per mode
+build-v2.mjs          Style Dictionary build for tokens-v2 → dist/v2/
+stories/vitae/        Vitae 27 Storybook: Introduction, Foundations, Icons, Logos, Components, Sample users
+  vitae.css             component CSS
+  icons/                Fluent 2 icons (from github.com/microsoft/fluentui-system-icons) and header icons
+.storybook/           Storybook config: Theme and Mode toolbar, design-source badge, accessibility panel
+figma-links.json      Storybook pages each Figma component links to
+check-*.mjs           CI checks (below)
 
-## Known gaps
+tokens/, build.mjs, stories/*.stories.js, dist/{css,scss,docs}
+                      Legacy (v1) system, kept for reference (notes in LEGACY.md). Shown under "Legacy (v1)" in Storybook.
+```
 
-- **Vitae divergences from the 2021 type scale** (not adopted): Vitae h2 32/40, h3 28/35, 1.25 line-height everywhere, table data +2px.
-- **Header/Footer:** only the latest-Bootstrap style is modeled (DC/MA production still run an older version). Maine (ME-nuharbor-1), DC (DC - Bootstrap Upgrade) and MA (MA - Bootstrap Upgrade) are built from their own frames; EA is projected from the Maine anatomy. The MA logo available in the 2021 file is the "for Business" lockup.
-- **Vitae EA-Dark mode** exists in the Vitae variable collection; no dark theme is built here yet.
-- **Stock Fluent 2 (decided 10/14/26):** date-picker calendar popover and tooltip follow Fluent 2 anatomy on Enroll tokens. Dropdown option panel isn't designed (native `<select>` used).
-- **Outline buttons rest on white**, not Vitae's ramp-005 tint. DC secondary `#0076CC` and MA secondary `#C15800` sit right at the AA line (4.71:1 and 4.50:1 on white); the 005 tint pulls them to 4.39:1 and 4.20:1. Text/border colors follow Vitae (100 → 120 → 140 across rest/hover/active).
-- **Solid button border** = ramp 150 (Vitae `button-*-solid`). Vitae's MA secondary-solid border points at *primary*-150 (likely a typo); we use secondary-150.
-- Gold `#FABB18` lives at `color.metal.gold` and is a metal-level plan indicator ONLY. Never use it for buttons or accents.
+The token layers mirror the Figma variable collections: **Primitives**, **Brand** (modes EA, DC, MA, ME) and **Color** (modes Light, Dark). In Figma, set the Brand and Color modes on the page frame or section, never on a component.
+
+## Checks
+
+CI (`.github/workflows/ci.yml`) runs these on every push and pull request, then publishes Storybook to GitHub Pages from `main`.
+
+| Command | What fails the build |
+|---|---|
+| `npm run check:contrast` | Any Vitae 27 semantic color pair below WCAG 2.1 AA in any client or mode: 4.5:1 for text, 3:1 for focus rings, field borders and icons. Also checks the legacy v1 pairs. |
+| `npm run check:sources` | A story file with no `parameters.design` (the Figma frame it was built from). |
+| `npm run check:links` | A Storybook page that a Figma component links to no longer exists. Renaming a Storybook title means updating `figma-links.json` and the Figma documentation link. |
+| `npm run check:stories` | Any Vitae 27 story that errors, has a failing play function, or has an axe WCAG 2.1 A/AA violation, in any of the 8 client/mode combinations. Run after `npm run build-storybook`; add `--quick` for EA light only or `--only=button,upload` to filter. |
+
+The **Accessibility** tab under each story in Storybook runs the same axe rules. Automated checks find only part of the problems, so also check new components with a keyboard and a screen reader.
+
+## Contributing
+
+- **Design first.** Components are built in Figma, then in Storybook; every story's Source badge links to its Figma frame.
+- **No hard-coded values.** Colors, spacing, radius, borders, type and effects come from tokens.
+- **Accessibility:** WCAG 2.1 AA. Never rely on color alone; focus is a 2px dashed ring on `:focus-visible`; disabled controls have no hover or pressed state; phone numbers are `tel:` links.
+- **One responsive component** rather than separate desktop and mobile versions, unless the narrow version is a different pattern.
+- **Publishing:** pushing to `main` rebuilds Storybook. Put `[skip ci]` anywhere in the commit message to skip the workflow, or rebuild by hand from Actions → Design System CI → Run workflow. Hosting is GitHub Pages only.
+
+Questions or changes: Alex Rekas, Design Lead, IdeaCrew.

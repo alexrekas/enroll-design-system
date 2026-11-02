@@ -484,6 +484,7 @@ th[aria-sort="ascending"] .vitae-sort .vitae-icon, th[aria-sort="descending"] .v
 .vitae-menu__item.is-highlighted { background: var(--vitae-background-layer-hover); outline: var(--_ring); outline-offset: -2px; }
 .vitae-menu__item[aria-selected="true"] > .vitae-icon:last-child { color: var(--vitae-icon-brand); }
 .vitae-menu__item[aria-disabled="true"] { color: var(--vitae-text-disabled); cursor: not-allowed; }
+.vitae-menu__group-list { margin: 0; padding: 0; list-style: none; }
 .vitae-menu__group { padding: var(--vitae-space-008) var(--vitae-space-012) var(--vitae-space-004); font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-secondary); }
 .vitae-menu__divider { height: 1px; margin: var(--vitae-space-004) 0; background: var(--vitae-border-subtle); }
 .vitae-menu__empty { padding: 10px var(--vitae-space-012); color: var(--vitae-text-secondary); }
