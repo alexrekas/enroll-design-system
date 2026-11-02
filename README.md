@@ -13,7 +13,8 @@ tokens/
   component/    component.json — button + input seed, aliases semantic only
   themes/       ea.json  dc.json  ma.json  me.json — bind color.brand.* to a client's primitive ramps
 build.mjs       builds all 4 themes → dist/
-contrast-check.mjs  WCAG 2.1 AA gate (run in CI; fails build on violation)
+contrast-check.mjs  WCAG 2.1 AA gate for the v1 (legacy) token pairs (run in CI)
+check-stories.mjs   Story gate: every Vitae 27 story in 4 clients x light/dark; fails on render or play-function errors and axe WCAG 2.1 A/AA violations
 ```
 
 ## Usage
@@ -21,7 +22,8 @@ contrast-check.mjs  WCAG 2.1 AA gate (run in CI; fails build on violation)
 ```bash
 npm install
 npm run build           # dist/css, dist/scss, dist/docs per theme
-npm run check:contrast  # AA gate
+npm run check:contrast  # AA gate (v1 tokens)
+npm run build-storybook && npm run check:stories  # story gate (add --quick for EA light only)
 npm run storybook       # design library at localhost:6006
 npm run build-storybook # static build (a prebuilt copy ships in storybook-static/)
 ```
@@ -34,7 +36,7 @@ npm run build-storybook # static build (a prebuilt copy ships in storybook-stati
 
 ## CI (GitHub)
 
-`.github/workflows/ci.yml` runs on every push/PR: token build → contrast gate (build fails on any AA violation) → design-source gate → Storybook build → deploy to **GitHub Pages** (pushes to main only; pull requests run the checks without deploying). One-time setup: Settings → Pages → Source = "GitHub Actions". The Storybook is hosted at `https://alexrekas.github.io/enroll-design-system/` and updates on every push to main.
+`.github/workflows/ci.yml` runs on every push/PR: token build → contrast gate (v1 tokens) → design-source gate → Storybook build → Figma link gate → story gate (axe in every client and mode; build fails on any violation) → deploy to **GitHub Pages** (pushes to main only; pull requests run the checks without deploying). One-time setup: Settings → Pages → Source = "GitHub Actions". The Storybook is hosted at `https://alexrekas.github.io/enroll-design-system/` and updates on every push to main.
 
 Figma links: every Vitae 27 component in Figma has a documentation link to its Storybook Docs page (listed in `figma-links.json`). CI runs `npm run check:links` after the Storybook build and fails if any of those pages is missing, so renaming a Storybook title means updating that file and the Figma links.
 

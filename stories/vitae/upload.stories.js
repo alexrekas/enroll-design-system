@@ -30,8 +30,8 @@ export const fileInput = ({ state = 'empty', docType = false, takePhoto = true, 
       <div class="vitae-dropzone__actions">
         <input type="file" id="${fid}" class="vitae-file-trigger" accept="${ACCEPT}" multiple aria-describedby="${fid}-limits${state === 'error' ? ` ${fid}-error` : ''}"${state === 'error' ? ' aria-invalid="true"' : ''}>
         <label for="${fid}" class="vitae-btn vitae-btn--outline vitae-btn--primary">${icon('upload', 20, 'filled')}Choose file</label>
-        ${takePhoto ? `<input type="file" id="${pid}" class="vitae-file-trigger" accept="image/*" capture="environment">
-        <label for="${pid}" class="vitae-btn vitae-btn--ghost vitae-btn--primary vitae-photo-only">${icon('camera', 20, 'filled')}Take a photo</label>` : ''}
+        ${takePhoto ? `<span class="vitae-photo-only"><input type="file" id="${pid}" class="vitae-file-trigger" accept="image/*" capture="environment">
+        <label for="${pid}" class="vitae-btn vitae-btn--ghost vitae-btn--primary">${icon('camera', 20, 'filled')}Take a photo</label></span>` : ''}
       </div>
       <p class="vitae-dropzone__limits" id="${fid}-limits">${esc(limits)}</p>
     </div>

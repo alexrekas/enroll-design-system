@@ -676,6 +676,7 @@
   --vitae-text-on-primary: var(--vitae-color-white);
   --vitae-text-on-secondary: var(--vitae-color-white);
   --vitae-text-on-tertiary: var(--vitae-color-white);
+  --vitae-text-on-destructive: var(--vitae-color-white); /** Label on a solid Destructive button. White in light mode; darkest error red in dark mode (5.5:1 or better on every state). */
   --vitae-icon-secondary: var(--vitae-color-neutral-130);
   --vitae-action-destructive: var(--vitae-color-status-error-100);
   --vitae-action-destructive-hover: var(--vitae-color-status-error-120);

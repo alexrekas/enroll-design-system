@@ -35,6 +35,10 @@ jobs:
         run: npm run build-storybook
       - name: Figma link gate (every Figma documentation link resolves)
         run: npm run check:links
+      - name: Install Chromium for story tests
+        run: npx playwright install --with-deps chromium
+      - name: Story gate (every Vitae 27 story renders, play functions pass, axe WCAG 2.1 A/AA in all clients and modes)
+        run: npm run check:stories
       - name: Upload Storybook artifact
         uses: actions/upload-pages-artifact@v3
         with:

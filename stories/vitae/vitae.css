@@ -31,7 +31,7 @@
 }
 .vitae-btn--secondary { --_c: var(--vitae-action-secondary); --_ch: var(--vitae-action-secondary-hover); --_ca: var(--vitae-action-secondary-active); --_on: var(--vitae-text-on-secondary); --_t: var(--vitae-action-secondary-text); --_th: var(--vitae-action-secondary-text-hover); --_ta: var(--vitae-action-secondary-text-active); --_sh: var(--vitae-action-secondary-subtle-hover); --_sa: var(--vitae-action-secondary-subtle-active); }
 .vitae-btn--tertiary { --_c: var(--vitae-action-tertiary); --_ch: var(--vitae-action-tertiary-hover); --_ca: var(--vitae-action-tertiary-active); --_on: var(--vitae-text-on-tertiary); --_t: var(--vitae-action-tertiary-text); --_th: var(--vitae-action-tertiary-text-hover); --_ta: var(--vitae-action-tertiary-text-active); --_sh: var(--vitae-action-tertiary-subtle-hover); --_sa: var(--vitae-action-tertiary-subtle-active); }
-.vitae-btn--destructive { --_c: var(--vitae-action-destructive); --_ch: var(--vitae-action-destructive-hover); --_ca: var(--vitae-action-destructive-active); --_on: var(--vitae-text-on-primary); --_t: var(--vitae-action-destructive-text); --_th: var(--vitae-action-destructive-text-hover); --_ta: var(--vitae-action-destructive-text-active); --_sh: var(--vitae-action-destructive-subtle-hover); --_sa: var(--vitae-action-destructive-subtle-active); }
+.vitae-btn--destructive { --_c: var(--vitae-action-destructive); --_ch: var(--vitae-action-destructive-hover); --_ca: var(--vitae-action-destructive-active); --_on: var(--vitae-text-on-destructive); --_t: var(--vitae-action-destructive-text); --_th: var(--vitae-action-destructive-text-hover); --_ta: var(--vitae-action-destructive-text-active); --_sh: var(--vitae-action-destructive-subtle-hover); --_sa: var(--vitae-action-destructive-subtle-active); }
 .vitae-btn--solid { background: var(--_c); border-color: var(--_c); color: var(--_on); }
 .vitae-btn--solid:not(:disabled, [aria-disabled="true"]):hover, .vitae-btn--solid.is-hover { background: var(--_ch); border-color: var(--_ch); }
 .vitae-btn--solid:not(:disabled, [aria-disabled="true"]):active, .vitae-btn--solid.is-pressed { background: var(--_ca); border-color: var(--_ca); }
@@ -450,6 +450,8 @@ label.vitae-card:has(input:disabled), label.vitae-card:has(input:disabled) input
 /* ---------- Table ---------- */
 .vitae-table-wrap { display: flex; flex-direction: column; gap: var(--vitae-space-012); }
 .vitae-bulkbar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--vitae-space-008) var(--vitae-space-016); padding: var(--vitae-space-008) var(--vitae-space-016); background: var(--vitae-background-selected); border-radius: var(--vitae-brand-radius-card); }
+/* In dark mode the selected background is a deep brand tone, so brand-colored button text drops below 4.5:1 on it. Use the body text color there. */
+[data-mode="dark"] .vitae-bulkbar .vitae-btn--primary:is(.vitae-btn--outline, .vitae-btn--ghost) { --_t: var(--vitae-text-body); --_th: var(--vitae-text-body); --_ta: var(--vitae-text-body); }
 .vitae-table-scroll { position: relative; overflow-x: auto; background: var(--vitae-card-surface); border: 1px solid var(--vitae-border-subtle); border-radius: var(--vitae-brand-radius-card); }
 .vitae-table-scroll:focus-visible { outline: var(--_ring); outline-offset: 2px; }
 .vitae-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-24); }
@@ -506,9 +508,9 @@ th[aria-sort="ascending"] .vitae-sort .vitae-icon, th[aria-sort="descending"] .v
 .vitae-calendar__grid th { font-size: var(--vitae-font-size-12); line-height: var(--vitae-font-line-height-20); font-weight: var(--vitae-font-weight-regular); color: var(--vitae-text-secondary); }
 .vitae-day { width: 28px; height: 28px; padding: 0; border: 0; border-radius: var(--vitae-radius-4); background: transparent; color: var(--vitae-text-body); font: inherit; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); cursor: pointer; transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
 .vitae-day:not(:disabled, [aria-disabled="true"]):hover, .vitae-day.is-hover { background: var(--vitae-background-layer-hover); }
-.vitae-day[aria-selected="true"] { background: var(--vitae-background-brand-subtle); box-shadow: inset 0 0 0 2px var(--vitae-border-brand); }
+[aria-selected="true"] > .vitae-day { background: var(--vitae-background-brand-subtle); box-shadow: inset 0 0 0 2px var(--vitae-border-brand); }
 .vitae-day[aria-current="date"] { background: var(--vitae-background-brand); color: var(--vitae-text-on-brand); border-radius: var(--vitae-radius-full); }
-.vitae-day[aria-current="date"][aria-selected="true"] { outline: 2px solid var(--vitae-border-focus-ring); outline-offset: 1px; box-shadow: none; }
+[aria-selected="true"] > .vitae-day[aria-current="date"] { outline: 2px solid var(--vitae-border-focus-ring); outline-offset: 1px; box-shadow: none; }
 .vitae-day.is-outside { color: var(--vitae-text-secondary); }
 .vitae-day[aria-disabled="true"] { color: var(--vitae-text-disabled); cursor: not-allowed; }
 .vitae-day:focus-visible, .vitae-day.is-focus { outline: var(--_ring); outline-offset: 1px; }

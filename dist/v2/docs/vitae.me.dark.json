@@ -708,6 +708,7 @@
   "TextOnPrimary": "#314a59",
   "TextOnSecondary": "#234056",
   "TextOnTertiary": "#36451f",
+  "TextOnDestructive": "#510f10",
   "IconPrimary": "#ebeef0",
   "IconSecondary": "#c1c7cc",
   "IconBrand": "#b1bec5",

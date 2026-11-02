@@ -203,7 +203,7 @@ Sections within a page. 44px tabs on a 1px rule; selected tab has a 4px \`--vita
 
 export const TabStates = {
   name: 'Tabs · item states',
-  render: () => matrix(7, ['rest', 'hover', 'pressed', 'focus', 'selected', 'selected focus', 'disabled'].map((s) => [s, `<div class="vitae-tabs" style="border:0"><div class="vitae-tabs__list"><button type="button" role="tab" class="vitae-tab${['hover', 'pressed', 'focus'].includes(s) || s === 'selected focus' ? ` is-${s.replace('selected ', '')}` : ''}" aria-selected="${s.startsWith('selected')}"${s === 'disabled' ? ' disabled' : ''}><span class="vitae-tab__label"><span class="vitae-tab__text" data-label="Documents">Documents</span></span></button></div></div>`])),
+  render: () => matrix(7, ['rest', 'hover', 'pressed', 'focus', 'selected', 'selected focus', 'disabled'].map((s) => [s, `<div class="vitae-tabs" style="border:0"><div class="vitae-tabs__list" role="tablist" aria-label="${s}"><button type="button" role="tab" class="vitae-tab${['hover', 'pressed', 'focus'].includes(s) || s === 'selected focus' ? ` is-${s.replace('selected ', '')}` : ''}" aria-selected="${s.startsWith('selected')}"${s === 'disabled' ? ' disabled' : ''}><span class="vitae-tab__label"><span class="vitae-tab__text" data-label="Documents">Documents</span></span></button></div></div>`])),
   parameters: { design: figma('175:37', 'Tabs/Item') },
 };
 
@@ -233,13 +233,14 @@ const steps = (current = 1) => `<ol class="vitae-steps">${STEP_NAMES.map((s, i) 
   const label = status === 'complete' ? `<a href="#">${esc(s)}<span class="vitae-visually-hidden"> completed</span></a>` : esc(s);
   return `<li class="${cls}"${status === 'current' ? ' aria-current="step"' : ''}><span class="vitae-step__label">${label}</span><span class="vitae-step__marker" aria-hidden="true"><span class="vitae-step__dot"></span></span></li>`;
 }).join('')}</ol>`;
-const progressLine = (pct, flush = false) => `<div class="vitae-progress-line${flush ? ' vitae-progress-line--flush' : ''}" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}" aria-valuetext="Step 2 of 4"><div class="vitae-progress-line__fill" style="width:${pct}%"></div></div>`;
+// In the mobile toggle the line is decorative (the button text already says the step), so it's hidden there.
+const progressLine = (pct, flush = false, text = '') => `<div class="vitae-progress-line${flush ? ' vitae-progress-line--flush' : ''}"${flush ? ' aria-hidden="true"' : ` role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}" aria-valuetext="${esc(text)}"`}><div class="vitae-progress-line__fill" style="width:${pct}%"></div></div>`;
 
 export const Progress = {
   args: { current: 1 },
   argTypes: { current: { control: { type: 'range', min: 0, max: 3 } } },
   render: ({ current }) => `<div style="display:flex;gap:48px;align-items:flex-start">
-    <nav class="vitae-progress" aria-label="Progress"><div class="vitae-progress__card"><h3 class="vitae-progress__title">Create New Employer</h3>${progressLine(Math.round(((current + 0.5) / 4) * 100))}${steps(current)}</div>
+    <nav class="vitae-progress" aria-label="Progress"><div class="vitae-progress__card"><h3 class="vitae-progress__title">Create New Employer</h3>${progressLine(Math.round(((current + 0.5) / 4) * 100), false, `Step ${current + 1} of 4`)}${steps(current)}</div>
       <div class="vitae-progress__links"><a href="#" class="vitae-link vitae-link--standalone">Save &amp; Exit</a><a href="#" class="vitae-link vitae-link--standalone">Get Help</a><a href="#" class="vitae-link vitae-link--standalone">Return Home</a></div></nav>
     <div style="width:375px"><div class="vitae-demo-label">Mobile (under 640px)</div>
       <button type="button" class="vitae-navtoggle" aria-expanded="false"><span class="vitae-navtoggle__row"><span><span class="vitae-visually-hidden">Create New Employer, </span>Step ${current + 1} of 4: ${esc(STEP_NAMES[current])}</span>${icon('chevron-down', 20, 'filled')}</span>${progressLine(Math.round(((current + 0.5) / 4) * 100), true)}</button></div></div>`,

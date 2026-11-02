@@ -4844,6 +4844,13 @@
   "source": "semantic"
  },
  {
+  "path": "text.on-destructive",
+  "cssVar": "--vitae-text-on-destructive",
+  "type": "color",
+  "description": "Label on a solid Destructive button. White in light mode; darkest error red in dark mode (5.5:1 or better on every state).",
+  "source": "semantic"
+ },
+ {
   "path": "icon.primary",
   "cssVar": "--vitae-icon-primary",
   "type": "color",

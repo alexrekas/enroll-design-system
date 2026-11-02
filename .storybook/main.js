@@ -5,5 +5,5 @@ export default {
   // Token files are also served as plain downloads at /static/dist/... . Don't mount them at /dist:
   // in dev that path shadows Vite's own /dist module requests and the preview never loads.
   staticDirs: [{ from: '../dist', to: '/static/dist' }],
-  addons: ['@storybook/addon-docs'],
+  addons: ['@storybook/addon-docs', '@storybook/addon-a11y'],
 };

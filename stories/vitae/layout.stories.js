@@ -168,7 +168,7 @@ const menuItem = ({ label, secondary = '', lead = '', state = 'rest', match = ''
 export const Menu = {
   render: () => matrix(2, [
     ['Item states', `<ul class="vitae-menu" role="listbox" aria-label="Plan">${[['Rest', 'rest'], ['Hover', 'hover'], ['Highlighted (keyboard)', 'highlighted'], ['Selected', 'selected'], ['Disabled', 'disabled']].map(([l, s]) => menuItem({ label: l, state: s })).join('')}</ul>`],
-    ['Groups, secondary text and icons', `<ul class="vitae-menu" role="listbox" aria-label="Plan"><li class="vitae-menu__group" role="presentation">Gold</li>${menuItem({ label: 'CareFirst BlueChoice HMO Gold $0', secondary: '$442.07 per month', lead: 'health' })}${menuItem({ label: 'Kaiser Permanente Gold 0/20', secondary: '$468.30 per month', lead: 'health', state: 'selected' })}<li class="vitae-menu__divider" role="separator"></li><li class="vitae-menu__group" role="presentation">Silver</li>${menuItem({ label: 'Kaiser Permanente DC Silver 2500/40 HMO', secondary: '$389.15 per month', lead: 'health' })}</ul>`],
+    ['Groups, secondary text and icons', `<ul class="vitae-menu" role="listbox" aria-label="Plan"><li class="vitae-menu__group" role="presentation">Gold</li>${menuItem({ label: 'CareFirst BlueChoice HMO Gold $0', secondary: '$442.07 per month', lead: 'health' })}${menuItem({ label: 'Kaiser Permanente Gold 0/20', secondary: '$468.30 per month', lead: 'health', state: 'selected' })}<li class="vitae-menu__divider" role="none"></li><li class="vitae-menu__group" role="presentation">Silver</li>${menuItem({ label: 'Kaiser Permanente DC Silver 2500/40 HMO', secondary: '$389.15 per month', lead: 'health' })}</ul>`],
   ]),
   parameters: {
     design: [figma('86:50', 'Menu'), figma('86:43', 'Menu/Item')],
@@ -214,7 +214,7 @@ const calendar = () => {
   return `<div class="vitae-calendar" role="dialog" aria-modal="true" aria-label="Choose date">
     <div class="vitae-calendar__header"><span id="cal-m">October 2026</span><span class="vitae-calendar__nav"><button type="button" aria-label="Previous month">${icon('arrow-up', 20, 'regular')}</button><button type="button" aria-label="Next month">${icon('arrow-down', 20, 'regular')}</button></span></div>
     <table class="vitae-calendar__grid" role="grid" aria-labelledby="cal-m"><thead><tr>${['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((d) => `<th scope="col">${d}</th>`).join('')}</tr></thead>
-    <tbody>${weeks.map((w) => `<tr>${w.map(([d, s]) => `<td><button type="button" class="vitae-day${s === 'outside' ? ' is-outside' : ''}"${s === 'today' ? ' aria-current="date"' : ''}${s === 'selected' ? ' aria-selected="true"' : ''} tabindex="${s === 'selected' ? 0 : -1}">${d}</button></td>`).join('')}</tr>`).join('')}</tbody></table>
+    <tbody>${weeks.map((w) => `<tr>${w.map(([d, s]) => `<td${s === 'selected' ? ' aria-selected="true"' : ''}><button type="button" class="vitae-day${s === 'outside' ? ' is-outside' : ''}"${s === 'today' ? ' aria-current="date"' : ''} tabindex="${s === 'selected' ? 0 : -1}">${d}</button></td>`).join('')}</tr>`).join('')}</tbody></table>
     <div class="vitae-calendar__today"><a href="#" class="vitae-link vitae-link--standalone">Go to today</a></div></div>`;
 };
 

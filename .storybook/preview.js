@@ -90,6 +90,12 @@ export default {
   initialGlobals: { theme: 'ea', mode: 'light' },
   parameters: {
     backgrounds: { disable: true },
+    // Accessibility panel (axe). Same rules as CI (npm run check:stories): WCAG 2.0/2.1 A and AA.
+    // The design-source bar under each story is Storybook chrome, so it's excluded.
+    a11y: {
+      context: { exclude: ['.sb-src'] },
+      options: { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'] } },
+    },
     options: {
       // Vitae 27 first; the original v1 stories sit in a Legacy group at the bottom.
       storySort: {

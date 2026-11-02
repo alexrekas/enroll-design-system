@@ -147,6 +147,11 @@
     "on-tertiary": {
       "$value": "{color.white}",
       "$type": "color"
+    },
+    "on-destructive": {
+      "$value": "{color.white}",
+      "$type": "color",
+      "$description": "Label on a solid Destructive button. White in light mode; darkest error red in dark mode (5.5:1 or better on every state)."
     }
   },
   "icon": {

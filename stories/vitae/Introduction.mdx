@@ -54,7 +54,7 @@ The target is Rails `html.erb`. The markup in each story's Docs tab is the contr
 
 Rules that apply everywhere:
 
-- **WCAG 2.1 AA.** Contrast is checked in CI (`npm run check:contrast`) and the build fails on any miss.
+- **WCAG 2.1 AA.** CI opens every Vitae 27 story in all four clients, light and dark, and runs axe against WCAG 2.1 A and AA (`npm run check:stories`); the build fails on any violation. The **Accessibility** tab under each story runs the same rules while you work. Automated checks catch about a third of issues, so keyboard and screen reader checks are still needed.
 - **Never rely on color alone.** States and statuses also change an icon, text or shape.
 - **Focus:** a 2px dashed ring on `:focus-visible` (see Focus ring). Never remove an outline without replacing it.
 - **Disabled controls have no hover or pressed state.**
