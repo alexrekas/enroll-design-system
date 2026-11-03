@@ -3,7 +3,7 @@
 # Demo app for the Vitae 27 Rails components: Lookbook at http://localhost:3000/lookbook
 source "https://rubygems.org"
 
-gem "rails", "~> 8.0.0"
+gem "rails", "~> 8.0" # 8.0 or 8.1; 8.1 is needed for Ruby 4
 gem "propshaft"
 gem "puma"
 gem "view_component", "~> 3.21"

@@ -21,12 +21,14 @@ You only need to do steps 1–3 once.
    source ~/.zshrc
    ruby -v
    ```
-   `ruby -v` should print 3.3 or newer (not 2.6).
-4. **Install the demo's gems** (a few minutes the first time):
+   `ruby -v` should print 3.3 or newer (not 2.6). Ruby 4 works too.
+4. **Install the demo's gems** into the project (a few minutes the first time):
    ```
    cd ~/Documents/enroll-design-system/rails/demo
+   bundle config set --local path vendor/bundle
    bundle install
    ```
+   Keeping the gems in `rails/demo/vendor/bundle` (ignored by git) avoids permission errors in Homebrew's shared gem folder.
 5. **Start it:**
    ```
    bin/rails server
