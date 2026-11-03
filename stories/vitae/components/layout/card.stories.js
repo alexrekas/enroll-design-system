@@ -5,6 +5,19 @@ export default {
   title: 'Vitae 27/Components/Layout and data/Card',
   tags: ['autodocs'],
   decorators: [wireLayout, canvas],
+  parameters: { docs: { description: { component: `### Rails
+
+\`Vitae::CardComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::CardComponent.new(title: "Health coverage", body: "Marcus, Dana, Ava, Leo and Mia are covered through December 31, 2027.") do |card| %>
+  <% card.with_tag { render Vitae::TagComponent.new(label: "Enrolled", type: :success) } %>
+  <% card.with_footer { render Vitae::ButtonComponent.new(label: "View details", style: :outline) } %>
+<% end %>
+
+<%= render Vitae::CardComponent.new(type: :radio, name: "payment_plan", value: "monthly", title: "Monthly payment",
+      body: "Pay $412.88 on the 1st of each month.", checked: @plan == "monthly") %>
+\`\`\`` } } },
 };
 
 export const Playground = {

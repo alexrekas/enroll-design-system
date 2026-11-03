@@ -5,6 +5,23 @@ export default {
   title: 'Vitae 27/Components/Layout and data/Table',
   tags: ['autodocs'],
   decorators: [wireLayout, canvas],
+  parameters: { docs: { description: { component: `### Rails
+
+\`Vitae::TableComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::TableComponent.new(caption: "Employees", selectable: true,
+      columns: [{ label: "Name", sort: :ascending, pinned: true }, { label: "Status" }, { label: "Premium", numeric: true },
+                { label: "Actions", hidden: true, numeric: true }],
+      rows: @employees.map { |e| { label: e.name, selected: @selected.include?(e.id),
+        cells: [link_to(e.name, e, class: "vitae-link"), render(Vitae::TagComponent.new(label: e.status, type: :success)),
+                number_to_currency(e.premium), link_to("View", e, class: "vitae-link")] } }) do |table| %>
+  <% table.with_bulk_actions do %>
+    <%= render Vitae::ButtonComponent.new(label: "Send reminder", style: :outline) %>
+    <%= render Vitae::ButtonComponent.new(label: "Export", style: :ghost) %>
+  <% end %>
+<% end %>
+\`\`\`` } } },
 };
 
 export const Playground = {

@@ -1,0 +1,21 @@
+<%
+  members = [
+    ["Marcus Bennett", "1004 2381", "Active", :success, "$412.88", "01/01/2027"],
+    ["Dana Bennett", "1004 2382", "Active", :success, "$398.10", "01/01/2027"],
+    ["James Whitaker", "NB-0007", "Pending", :info, "$289.40", "02/01/2027"],
+    ["Hannah Cole", "NB-0001", "Action needed", :warning, "$0.00", "—"],
+    ["Erin Whitaker", "NB-0008", "Terminated", :neutral, "$0.00", "12/31/2026"]
+  ]
+  rows = members.each_with_index.map do |(name, id, status, type, premium, start), i|
+    { label: name, selected: i == 1,
+      cells: [link_to(name, "#", class: "vitae-link"), id, render(Vitae::TagComponent.new(label: status, type: type, show_icon: type != :neutral)), premium, start, link_to("View", "#", class: "vitae-link")] }
+  end
+%>
+<%= render Vitae::TableComponent.new(caption: "Employees", selectable: true, width: width, rows: rows,
+      columns: [{ label: "Name", sort: :ascending, pinned: true }, { label: "ID", sort: :none }, { label: "Status", sort: :none },
+                { label: "Premium", sort: :none, numeric: true }, { label: "Start date" }, { label: "Actions", hidden: true, numeric: true }]) do |table| %>
+  <% table.with_bulk_actions do %>
+    <%= render Vitae::ButtonComponent.new(label: "Send reminder", style: :outline) %>
+    <%= render Vitae::ButtonComponent.new(label: "Export", style: :ghost) %>
+  <% end %>
+<% end %>

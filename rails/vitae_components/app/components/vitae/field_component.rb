@@ -15,7 +15,8 @@ module Vitae
     # id:        control id (generated when omitted)
     # **html:    extra attributes for the <input>/<select>, e.g. autocomplete:, inputmode:
     def initialize(label:, name: nil, value: nil, placeholder: nil, helper: nil, error: nil, required: false, info: false, show_label: true,
-                   leading_icon: nil, trailing_icon: nil, options: [], disabled: false, state: nil, id: nil, **html)
+                   leading_icon: nil, trailing_icon: nil, options: [], disabled: false, state: nil, id: nil, width: nil, **html)
+      @width = width # :full or :half inside a Field-set row
       @label = label
       @name = name
       @value = value
@@ -52,6 +53,8 @@ module Vitae
       { id: @id, class: control_class, "aria-describedby": described_by, "aria-invalid": (@error.present? || @state == "error") ? "true" : nil,
         required: @required, disabled: @disabled, name: @name }
     end
+
+    def field_class = classes("vitae-field", (@width ? "is-#{@width}" : nil))
 
     def label_row_class = classes("vitae-field__label-row", (@show_label ? nil : "vitae-visually-hidden"))
   end

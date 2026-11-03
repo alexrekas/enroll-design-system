@@ -1,0 +1,4 @@
+<div class="vitae-field"><div class="vitae-field__label-row"><label class="vitae-field__label" for="<%= @id %>"><%= @label %></label></div>
+  <div class="vitae-field__control vitae-popover-anchor"><input<%= attrs(class: "vitae-input has-trailing", id: @id, name: @name, inputmode: "numeric", autocomplete: @autocomplete, placeholder: "MM/DD/YYYY", value: @value, "aria-describedby": "#{@id}-hint", **@html) %>>
+    <button type="button" class="vitae-datepicker__button" aria-label="Choose date" aria-haspopup="dialog" aria-expanded="<%= @open %>"><%= icon("calendar", 20, "filled") %></button><% if @open %><%= calendar %><% end %></div>
+  <p class="vitae-field__helper" id="<%= @id %>-hint">MM/DD/YYYY</p></div>

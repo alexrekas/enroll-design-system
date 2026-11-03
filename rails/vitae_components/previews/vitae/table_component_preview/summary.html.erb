@@ -1,0 +1,3 @@
+<%= render Vitae::TableComponent.new(caption: "Payment history",
+      columns: [{ label: "Date" }, { label: "Description" }, { label: "Amount", numeric: true }],
+      rows: [{ cells: ["10/01/2026", "Monthly premium", "$412.88"] }, { cells: ["09/01/2026", "Monthly premium", "$412.88"] }]) %>

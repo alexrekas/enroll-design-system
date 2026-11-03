@@ -1,0 +1,4 @@
+<div class="vitae-modal-wrap"><div class="vitae-modal-scrim"><div<%= attrs(class: "vitae-modal vitae-modal--#{@type}", role: role, "aria-modal": "true", "aria-labelledby": @id, "aria-describedby": "#{@id}-d", **@html) %>>
+  <div class="vitae-modal__header"><% if ICONS[@type] %><%= icon(ICONS[@type][0], 24, ICONS[@type][1]) %><% end %><h2 class="vitae-modal__title" id="<%= @id %>"><%= @title %></h2><% if @close %><button type="button" class="vitae-modal__close" aria-label="Close"><%= icon("close", 20, "filled") %></button><% end %></div>
+  <p class="vitae-modal__body" id="<%= @id %>-d"><%= body_text %></p>
+  <div class="vitae-modal__footer"><% if @secondary %><%= render Vitae::ButtonComponent.new(label: @secondary_label, style: :outline, level: level) %><% end %><%= render Vitae::ButtonComponent.new(label: @primary, level: level) %></div></div></div></div>

@@ -1,0 +1,5 @@
+<fieldset<%= attrs(class: classes("vitae-choice-group", (@inline ? "vitae-choice-group--inline" : nil)), "aria-describedby": described_by, "aria-invalid": (@error.present? ? "true" : nil), **@html) %>>
+  <legend><%= @legend %><% if @required %> <span class="vitae-field__required" aria-hidden="true">*</span><% end %></legend>
+  <% if @helper.present? %><p class="vitae-choice-group__helper" id="<%= @id %>-help"><%= @helper %></p><% end %>
+  <div class="vitae-choice-group__options"><% @options.each do |o| %><%= option(o) %><% end %></div>
+  <% if @error.present? %><p class="vitae-field__error vitae-choice-group__error" id="<%= @id %>-error"><%= icon("error", 16, "filled") %><span><%= @error %></span></p><% end %></fieldset>

@@ -1,0 +1,13 @@
+<div style="max-width:720px">
+  <%= render Vitae::FieldsetComponent.new(legend: "Home address") do |fs| %>
+    <% fs.with_row { render Vitae::InputComponent.new(label: "Address line 1", name: "address1", value: "25 Sample Rd", required: true, width: :full, autocomplete: "address-line1") } %>
+    <% fs.with_row { render Vitae::InputComponent.new(label: "Address line 2 (optional)", name: "address2", width: :full, autocomplete: "address-line2") } %>
+    <% fs.with_row do %>
+      <%= render Vitae::InputComponent.new(label: "City", name: "city", value: "Portland", required: true, autocomplete: "address-level2") %>
+      <%= render Vitae::FieldsetComponent::PairComponent.new do %>
+        <%= render Vitae::DropdownComponent.new(label: "State", name: "state", value: "ME", options: %w[DC MA ME], required: true) %>
+        <%= render Vitae::InputComponent.new(label: "ZIP code", name: "zip", value: "04101", required: true, autocomplete: "postal-code") %>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>

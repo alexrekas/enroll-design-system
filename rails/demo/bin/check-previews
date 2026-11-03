@@ -1,0 +1,51 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Boots the demo app and renders every component preview (the same pages Lookbook shows), plus the
+# sample page and Lookbook itself, in every client and mode. Fails if any page errors.
+# Runs in CI with the real Rails, ViewComponent and Lookbook gems:  cd rails/demo && bin/check-previews
+ENV["RAILS_ENV"] ||= "development"
+require_relative "../config/environment"
+require "rack/mock"
+
+def get(path)
+  env = Rack::MockRequest.env_for(path, "HTTP_HOST" => "localhost", "REMOTE_ADDR" => "127.0.0.1")
+  status, _headers, body = Rails.application.call(env)
+  html = +""
+  body.each { |chunk| html << chunk }
+  body.close if body.respond_to?(:close)
+  [status, html]
+end
+
+previews = ViewComponent::Preview.all.sort_by(&:preview_name)
+paths = previews.flat_map { |p| p.examples.map { |example| "/rails/view_components/#{p.preview_name}/#{example}" } }
+abort "No previews found. Check config.view_component.preview_paths." if paths.empty?
+
+failures = []
+checks = 0
+paths.each do |path|
+  %w[ea dc ma me].product(%w[light dark]).each do |client, mode|
+    status, html = get("#{path}?lookbook[display][client]=#{client}&lookbook[display][mode]=#{mode}")
+    checks += 1
+    if status != 200
+      failures << "#{path} [#{client} #{mode}] HTTP #{status}: #{html[/<h1>(.*?)<\/h1>/m, 1]&.strip || html[0, 200]}"
+    elsif !html.include?(%(data-client="#{client}")) || !html.include?(%(data-mode="#{mode}"))
+      failures << "#{path} [#{client} #{mode}] the preview layout didn't apply the client and mode"
+    elsif !html.include?('class="vitae-')
+      failures << "#{path} [#{client} #{mode}] no Vitae markup rendered"
+    end
+  end
+end
+
+%w[/sample /sample?client=dc&mode=dark /lookbook].each do |path|
+  status, html = get(path)
+  checks += 1
+  status = get(path.sub("/lookbook", "/lookbook/"))[0] if status.between?(300, 399)
+  failures << "#{path} HTTP #{status}: #{html[0, 200]}" unless status == 200
+end
+
+if failures.any?
+  warn "#{failures.size} of #{checks} pages failed:\n\n#{failures.join("\n")}"
+  exit 1
+end
+puts "All #{checks} pages render: #{paths.size} previews × 8 client/mode combinations, the sample page and Lookbook."

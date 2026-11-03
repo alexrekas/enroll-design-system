@@ -1,0 +1,4 @@
+<div<%= attrs(class: "vitae-accordion vitae-accordion--#{@style}", **@html) %>>
+  <% if @expand_all %><div class="vitae-accordion__toolbar"><button type="button" class="vitae-link vitae-link--standalone" style="background:none;border:0;padding:0;font:inherit;font-weight:var(--vitae-font-weight-semibold)">Expand all</button></div><% end %>
+  <div class="vitae-accordion__items"><% items.each do |item| %><%= item %><% end %></div>
+</div>

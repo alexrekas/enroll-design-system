@@ -1,0 +1,6 @@
+<div role="search" style="max-width:360px"><div class="vitae-field"><label for="<%= @id %>" class="vitae-field__label vitae-visually-hidden"><%= @label %></label>
+  <div class="vitae-field__control vitae-popover-anchor"><%= icon("search", 20, "filled", class_name: "vitae-icon vitae-icon--leading") %>
+    <input<%= attrs(type: "search", id: @id, class: "vitae-input vitae-search", name: @name, placeholder: @placeholder, value: @value, role: "combobox", "aria-expanded": @open.to_s, "aria-controls": "#{@id}-list", "aria-autocomplete": "list", **@html) %>>
+    <% if @value.present? %><button type="button" class="vitae-search__clear" aria-label="Clear search"><%= icon("close", 20, "filled") %></button><% end %>
+    <% if @open %><%= menu %><% end %>
+  </div></div><p class="vitae-visually-hidden" role="status"><%= status_text %></p></div>

@@ -1,16 +1,30 @@
 import { canvas, figma, matrix } from '../../_shared.js';
-import { menuGroup, menuItem } from '../../markup/layout.js';
+import { menu } from '../../markup/layout.js';
 
 export default {
   title: 'Vitae 27/Components/Layout and data/Menu',
   tags: ['autodocs'],
   decorators: [canvas],
+  parameters: { docs: { description: { component: `### Rails
+
+\`Vitae::MenuComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::MenuComponent.new(label: "Plan", entries: [
+      { group: "Gold", items: [{ label: "Kaiser Permanente Gold 0/20", secondary: "$468.30 per month", icon: "health", state: :selected }] },
+      :divider,
+      { label: "Kaiser Permanente DC Silver 2500/40 HMO", secondary: "$389.15 per month", icon: "health" }]) %>
+\`\`\`` } } },
 };
 
 export const Examples = {
   render: () => matrix(2, [
-    ['Item states', `<ul class="vitae-menu" role="listbox" aria-label="Plan">${[['Rest', 'rest'], ['Hover', 'hover'], ['Highlighted (keyboard)', 'highlighted'], ['Selected', 'selected'], ['Disabled', 'disabled']].map(([l, s]) => menuItem({ label: l, state: s })).join('')}</ul>`],
-    ['Groups, secondary text and icons', `<ul class="vitae-menu" role="listbox" aria-label="Plan">${menuGroup('Gold', 'menu-gold', menuItem({ label: 'CareFirst BlueChoice HMO Gold $0', secondary: '$442.07 per month', lead: 'health' }) + menuItem({ label: 'Kaiser Permanente Gold 0/20', secondary: '$468.30 per month', lead: 'health', state: 'selected' }))}<li class="vitae-menu__divider" role="none"></li>${menuGroup('Silver', 'menu-silver', menuItem({ label: 'Kaiser Permanente DC Silver 2500/40 HMO', secondary: '$389.15 per month', lead: 'health' }))}</ul>`],
+    ['Item states', menu({ label: 'Plan', entries: [['Rest', 'rest'], ['Hover', 'hover'], ['Highlighted (keyboard)', 'highlighted'], ['Selected', 'selected'], ['Disabled', 'disabled']].map(([label, state]) => ({ label, state })) })],
+    ['Groups, secondary text and icons', menu({ label: 'Plan', entries: [
+      { group: 'Gold', items: [{ label: 'CareFirst BlueChoice HMO Gold $0', secondary: '$442.07 per month', lead: 'health' }, { label: 'Kaiser Permanente Gold 0/20', secondary: '$468.30 per month', lead: 'health', state: 'selected' }] },
+      'divider',
+      { group: 'Silver', items: [{ label: 'Kaiser Permanente DC Silver 2500/40 HMO', secondary: '$389.15 per month', lead: 'health' }] },
+    ] })],
   ]),
   parameters: {
     design: [figma('86:50', 'Menu'), figma('86:43', 'Menu/Item')],

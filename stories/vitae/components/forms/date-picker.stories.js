@@ -1,22 +1,22 @@
-import { canvas, figma, id } from '../../_shared.js';
-import { icon } from '../../icons.js';
-import { calendar } from '../../markup/layout.js';
+import { canvas, figma } from '../../_shared.js';
+import { datePicker } from '../../markup/layout.js';
 
 export default {
   title: 'Vitae 27/Components/Forms/Date picker',
   tags: ['autodocs'],
   decorators: [canvas],
+  parameters: { docs: { description: { component: `### Rails
+
+\`Vitae::DatePickerComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::DatePickerComponent.new(label: "Date of birth", name: "dob", value: @person.dob&.strftime("%m/%d/%Y")) %>
+\`\`\`` } } },
 };
 
 export const Playground = {
   args: { open: true },
-  render: ({ open }) => {
-    const did = id('date');
-    return `<div style="min-height:${open ? 420 : 120}px"><div class="vitae-field"><div class="vitae-field__label-row"><label class="vitae-field__label" for="${did}">Date of birth</label></div>
-      <div class="vitae-field__control vitae-popover-anchor"><input class="vitae-input has-trailing" id="${did}" inputmode="numeric" autocomplete="bday" placeholder="MM/DD/YYYY" value="10/14/2026" aria-describedby="${did}-hint">
-        <button type="button" class="vitae-datepicker__button" aria-label="Choose date" aria-haspopup="dialog" aria-expanded="${open}">${icon('calendar', 20, 'filled')}</button>${open ? calendar() : ''}</div>
-      <p class="vitae-field__helper" id="${did}-hint">MM/DD/YYYY</p></div></div>`;
-  },
+  render: ({ open }) => `<div style="min-height:${open ? 420 : 120}px">${datePicker({ open })}</div>`,
   parameters: {
     design: [figma('73:6441', 'Date picker'), figma('73:21', 'Calendar'), figma('73:20', 'Calendar/Day')],
     docs: { description: { story: `

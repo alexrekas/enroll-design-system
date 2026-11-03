@@ -1,0 +1,5 @@
+<div class="vitae-calendar" role="dialog" aria-modal="true" aria-label="Choose date">
+  <div class="vitae-calendar__header"><span id="<%= @id %>"><%= MONTHS[@first.month - 1] %> <%= @first.year %></span><span class="vitae-calendar__nav"><button type="button" aria-label="Previous month"><%= icon("arrow-up", 20, "regular") %></button><button type="button" aria-label="Next month"><%= icon("arrow-down", 20, "regular") %></button></span></div>
+  <table class="vitae-calendar__grid" role="grid" aria-labelledby="<%= @id %>"><thead><tr><% %w[S M T W T F S].each do |d| %><th scope="col"><%= d %></th><% end %></tr></thead>
+  <tbody><% weeks.each do |week| %><tr><% week.each do |date, status| %><%= day(date, status).html_safe %><% end %></tr><% end %></tbody></table>
+  <div class="vitae-calendar__today"><a href="#" class="vitae-link vitae-link--standalone">Go to today</a></div></div>

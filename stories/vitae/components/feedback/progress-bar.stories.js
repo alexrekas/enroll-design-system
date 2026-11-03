@@ -5,6 +5,13 @@ export default {
   title: 'Vitae 27/Components/Feedback/Progress bar',
   tags: ['autodocs'],
   decorators: [canvas],
+  parameters: { docs: { description: { component: `### Rails
+
+\`Vitae::ProgressBarComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::ProgressBarComponent.new(value: 45, name: "Uploading Employer_letter.pdf") %>
+\`\`\`` } } },
 };
 
 export const Playground = {

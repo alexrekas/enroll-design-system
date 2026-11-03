@@ -1,0 +1,11 @@
+<div style="max-width:720px">
+  <%= render Vitae::AccordionComponent.new(style: style, expand_all: expand_all) do |accordion| %>
+    <% accordion.with_item(title: "Household", summary: "5 people", open: true) do %>
+      <p style="margin:0 0 8px">Marcus Bennett (41), Dana Bennett (39), Ava (16), Leo (11) and Mia (4).</p>
+      <%= render Vitae::LinkComponent.new(label: "Edit household", standalone: true) %>
+    <% end %>
+    <% accordion.with_item(title: "Income", summary: "$68,400 / year") do %><p style="margin:0">Jobs and self-employment for everyone in the household.</p><% end %>
+    <% accordion.with_item(title: "Health coverage") do %><p style="margin:0">No one has other coverage.</p><% end %>
+    <% accordion.with_item(title: "Review and sign") do %><p style="margin:0">Check your answers, then sign.</p><% end %>
+  <% end %>
+</div>

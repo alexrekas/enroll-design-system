@@ -9,11 +9,13 @@ require "securerandom"
 
 class SafeString < String
   def html_safe = self
+  def html_safe? = true
   def +(other) = SafeString.new(super(other.to_s))
 end
 
 class String
   def html_safe = SafeString.new(self)
+  def html_safe? = false
 end
 
 # Like Rails: escaping returns a safe string, and an already-safe string isn't escaped again.
@@ -60,10 +62,37 @@ module ViewComponent
     end
 
     def content = @__content
+
     def render_with(content = nil)
       @__content = content&.html_safe
+      return call.to_s.html_safe if respond_to?(:call)
       self.class.compile!
       __render_template
+    end
+
+    # render(SomeComponent.new(...)) inside a template or method
+    def render(component, &block) = component.render_with(block&.call).html_safe
+
+    # Slots, as in ViewComponent: renders_one :footer / renders_many :items, ItemComponent / renders_many :items, ->(**) { ... }
+    def self.renders_one(name, kind = nil) = define_slot(name, kind, many: false)
+    def self.renders_many(name, kind = nil) = define_slot(name.to_s.sub(/s\z/, ""), kind, many: true, plural: name)
+
+    def self.define_slot(name, kind, many:, plural: nil)
+      store = :"@__slot_#{name}"
+      define_method(:"with_#{name}") do |*args, **kwargs, &block|
+        built = if kind.is_a?(Proc)
+          instance_exec(*args, **kwargs, &kind).render_with(block&.call)
+        elsif kind
+          kind.new(*args, **kwargs).render_with(block&.call)
+        else
+          (block ? block.call : args.first).to_s.html_safe
+        end
+        many ? (instance_variable_get(store) || instance_variable_set(store, [])) << built : instance_variable_set(store, built)
+        self
+      end
+      reader = many ? plural : name
+      define_method(reader) { instance_variable_get(store) || (many ? [] : nil) }
+      define_method(:"#{reader}?") { many ? !(instance_variable_get(store) || []).empty? : !instance_variable_get(store).nil? }
     end
   end
 

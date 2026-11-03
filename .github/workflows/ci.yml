@@ -71,6 +71,22 @@ jobs:
         with:
           path: storybook-static
 
+  rails-demo:
+    # Installs the real Rails, ViewComponent and Lookbook gems and renders every component preview.
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: rails/demo
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '4.0'
+          bundler-cache: true
+          working-directory: rails/demo
+      - name: Render every Rails component preview in every client and mode
+        run: bin/check-previews
+
   deploy-pages:
     # Publishes the design library to GitHub Pages on pushes to main, or when run by hand (Actions → Design System CI → Run workflow)
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'

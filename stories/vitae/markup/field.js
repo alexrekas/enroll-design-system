@@ -5,7 +5,7 @@ import { icon } from '../icons.js';
 
 export const field = ({
   kind = 'input', label = 'Annual income', placeholder = '$0', value = '', helper = '', error = '', required = false,
-  info = false, showLabel = true, leadingIcon = '', trailingIcon = '', state = 'rest', options = ['Single', 'Married filing jointly', 'Married filing separately', 'Head of household'],
+  info = false, showLabel = true, leadingIcon = '', trailingIcon = '', state = 'rest', width = '', options = ['Single', 'Married filing jointly', 'Married filing separately', 'Head of household'],
 } = {}) => {
   const fid = id('field');
   const describedby = [helper && `${fid}-help`, error && `${fid}-error`].filter(Boolean).join(' ');
@@ -14,7 +14,7 @@ export const field = ({
   const control = kind === 'select'
     ? `<select ${attrs}><option value="" disabled hidden${value ? '' : ' selected'}>${esc(placeholder || 'Select')}</option>${options.map((o) => `<option${o === value ? ' selected' : ''}>${esc(o)}</option>`).join('')}</select>${icon('chevron-down', 20, 'filled', { className: 'vitae-icon vitae-icon--trailing' })}`
     : `<input type="text" ${attrs} placeholder="${esc(placeholder)}" value="${esc(value)}">${leadingIcon ? icon(leadingIcon, 20, 'filled', { className: 'vitae-icon vitae-icon--leading' }) : ''}${trailingIcon ? icon(trailingIcon, 20, 'filled', { className: 'vitae-icon vitae-icon--trailing' }) : ''}`;
-  return `<div class="vitae-field">
+  return `<div class="vitae-field${width ? ` is-${width}` : ''}">
     <div class="vitae-field__label-row${showLabel ? '' : ' vitae-visually-hidden'}">
       <label class="vitae-field__label" for="${fid}">${esc(label)}${required ? ' <span class="vitae-field__required" aria-hidden="true">*</span>' : ''}</label>
       ${info ? `<button type="button" class="vitae-info-button" aria-expanded="false">${icon('info', 16, 'filled')}<span class="vitae-visually-hidden">More about ${esc(label)}</span></button>` : ''}

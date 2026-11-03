@@ -5,6 +5,15 @@ export default {
   title: 'Vitae 27/Components/Feedback/Modal',
   tags: ['autodocs'],
   decorators: [canvas],
+  parameters: { docs: { description: { component: `### Rails
+
+\`Vitae::ModalComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::ModalComponent.new(type: :warning, title: "Discard your changes?",
+      body: "You haven't saved the changes to your household. If you leave now, they'll be lost.",
+      primary: "Discard changes", secondary_label: "Keep editing") %>
+\`\`\`` } } },
 };
 
 export const Playground = {

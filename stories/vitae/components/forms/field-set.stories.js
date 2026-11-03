@@ -1,11 +1,27 @@
 import { canvas, figma } from '../../_shared.js';
 import { field } from '../../markup/field.js';
-import { wireLayout } from '../../markup/layout.js';
+import { fieldset, fieldsetPair, wireLayout } from '../../markup/layout.js';
 
 export default {
   title: 'Vitae 27/Components/Forms/Field-set',
   tags: ['autodocs'],
   decorators: [wireLayout, canvas],
+  parameters: { docs: { description: { component: `### Rails
+
+\`Vitae::FieldsetComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::FieldsetComponent.new(legend: "Home address") do |fs| %>
+  <% fs.with_row { render Vitae::InputComponent.new(label: "Address line 1", name: "address1", width: :full, autocomplete: "address-line1") } %>
+  <% fs.with_row do %>
+    <%= render Vitae::InputComponent.new(label: "City", name: "city", autocomplete: "address-level2") %>
+    <%= render Vitae::FieldsetComponent::PairComponent.new do %>
+      <%= render Vitae::DropdownComponent.new(label: "State", name: "state", options: %w[DC MA ME]) %>
+      <%= render Vitae::InputComponent.new(label: "ZIP code", name: "zip", autocomplete: "postal-code") %>
+    <% end %>
+  <% end %>
+<% end %>
+\`\`\`` } } },
 };
 
 export const Playground = {
@@ -16,13 +32,12 @@ export const Playground = {
     const f = (o) => field({ helper: '', info: false, required: true, placeholder: '', ...o });
     const rows = {
       Name: [[f({ label: 'First name', value: 'Marcus' }), f({ label: 'Last name', value: 'Bennett' })], [f({ label: 'Suffix (optional)', required: false, kind: 'select', placeholder: 'Select', options: ['Jr.', 'Sr.', 'II', 'III'] }), f({ label: 'Date of birth', placeholder: 'MM/DD/YYYY', trailingIcon: 'calendar' })]],
-      Address: [[f({ label: client === 'dc' ? 'Address line 1 (number, street, quadrant)' : 'Address line 1', value: client === 'dc' ? '1420 Example St NW' : '25 Sample Rd' }).replace('class="vitae-field"', 'class="vitae-field is-full"')], [f({ label: 'Address line 2 (optional)', required: false }).replace('class="vitae-field"', 'class="vitae-field is-full"')],
-        [f({ label: 'City', value: client === 'dc' ? 'Washington' : 'Portland' }), `<div class="vitae-fieldset__pair">${f({ label: 'State', kind: 'select', value: client === 'dc' ? 'DC' : 'ME', options: ['DC', 'MA', 'ME'] })}${f({ label: 'ZIP code', value: client === 'dc' ? '20009' : '04101' })}</div>`],
-        ...(client === 'me' ? [[f({ label: 'County', kind: 'select', placeholder: 'Select', options: ['Cumberland', 'York'] }).replace('class="vitae-field"', 'class="vitae-field is-half"')]] : [])],
+      Address: [[f({ label: client === 'dc' ? 'Address line 1 (number, street, quadrant)' : 'Address line 1', value: client === 'dc' ? '1420 Example St NW' : '25 Sample Rd', width: 'full' })], [f({ label: 'Address line 2 (optional)', required: false, width: 'full' })],
+        [f({ label: 'City', value: client === 'dc' ? 'Washington' : 'Portland' }), fieldsetPair(f({ label: 'State', kind: 'select', value: client === 'dc' ? 'DC' : 'ME', options: ['DC', 'MA', 'ME'] }), f({ label: 'ZIP code', value: client === 'dc' ? '20009' : '04101' }))],
+        ...(client === 'me' ? [[f({ label: 'County', kind: 'select', placeholder: 'Select', options: ['Cumberland', 'York'], width: 'half' })]] : [])],
       Contact: [[f({ label: 'Phone number', value: '(202) 555-0142' }), f({ label: 'Email', value: 'marcus.bennett@example.com' })]],
     }[type];
-    return `<div style="width:${width}px;max-width:100%"><fieldset class="vitae-fieldset"><legend class="vitae-fieldset__legend">${type === 'Name' ? 'Your name' : type === 'Address' ? 'Home address' : 'Contact information'}</legend>
-      <div class="vitae-fieldset__rows">${rows.map((r) => `<div class="vitae-fieldset__row">${r.join('')}</div>`).join('')}</div></fieldset></div>`;
+    return `<div style="width:${width}px;max-width:100%">${fieldset({ legend: type === 'Name' ? 'Your name' : type === 'Address' ? 'Home address' : 'Contact information', rows })}</div>`;
   },
   parameters: {
     design: figma('242:2295', 'Field-set'),

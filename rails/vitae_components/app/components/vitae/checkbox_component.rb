@@ -10,8 +10,10 @@ module Vitae
     # checked: true, false or :indeterminate
     # description: second line under the label
     # state: "hover", "active" or "focus" forces that look (documentation only); "error" and "disabled" are real states
-    def initialize(label:, name: nil, value: nil, checked: false, description: nil, error: nil, disabled: false, state: nil, id: nil, **html)
+    # label: nil renders no <label> (when a selectable card is the label); hide_label: true keeps it for screen readers only
+    def initialize(label:, name: nil, value: nil, checked: false, description: nil, error: nil, disabled: false, state: nil, id: nil, hide_label: false, **html)
       @label = label
+      @hide_label = hide_label
       @name = name
       @value = value
       @checked = checked.to_s

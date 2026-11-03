@@ -57,7 +57,7 @@ Every component's options are listed at the top of its file in `vitae_components
 
 ## Components so far
 
-Button, Link, Alert, Tag, Metal badge, Input, Dropdown, Checkbox, Radio, Toggle. The rest follow in batches.
+Button, Link, Alert, Tag, Metal badge, Input, Dropdown, Checkbox, Radio, Toggle, Progress bar, Card, Accordion, Modal, Table, Menu, Search, Date picker (and Calendar), Choice group, Field-set. Navigation, plan shopping, log-in and document upload follow.
 
 ## Keeping it in sync
 

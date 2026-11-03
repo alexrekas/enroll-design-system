@@ -1,0 +1,4 @@
+<div<%= attrs(class: "vitae-progress-bar", **@html) %>>
+  <div<%= attrs(class: "vitae-progress-bar__track", role: "progressbar", "aria-valuemin": "0", "aria-valuemax": "100", "aria-valuenow": @value, "aria-label": @name, "aria-describedby": (@show_label ? @id : nil)) %>><div class="vitae-progress-bar__fill" style="width:<%= @value %>%"></div></div>
+  <% if @show_label %><p class="vitae-progress-bar__label" id="<%= @id %>"><%= @label %></p><% end %>
+</div>

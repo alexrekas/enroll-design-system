@@ -68,6 +68,9 @@ async function shoot({ s, client, mode }) {
     }, null, { timeout: 20000 });
     await page.evaluate(() => document.fonts.ready);
     await page.addStyleTag({ content: '*,*::before,*::after{animation:none!important;transition:none!important}' });
+    // Make the viewport as tall as the story, so tall stories are captured in one pass (no scroll stitching).
+    const h = await page.evaluate(() => Math.ceil(document.querySelector('#storybook-root').getBoundingClientRect().bottom + 16));
+    if (h > 900) await page.setViewportSize({ width: 1280, height: Math.min(h, 16000) });
     await page.waitForTimeout(100);
     const png = await page.locator('#storybook-root').screenshot({ animations: 'disabled', caret: 'hide' });
     const file = name(s.id, client, mode);

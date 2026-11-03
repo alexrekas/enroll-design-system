@@ -6,6 +6,19 @@ export default {
   title: 'Vitae 27/Components/Layout and data/Accordion',
   tags: ['autodocs'],
   decorators: [wireLayout, canvas],
+  parameters: { docs: { description: { component: `### Rails
+
+\`Vitae::AccordionComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::AccordionComponent.new(style: :bordered) do |accordion| %>
+  <% accordion.with_item(title: "Household", summary: "5 people", open: true) do %>
+    <p>Marcus Bennett (41), Dana Bennett (39), Ava (16), Leo (11) and Mia (4).</p>
+    <%= render Vitae::LinkComponent.new(label: "Edit household", href: edit_household_path, standalone: true) %>
+  <% end %>
+  <% accordion.with_item(title: "Income", summary: "$68,400 / year") do %>…<% end %>
+<% end %>
+\`\`\`` } } },
 };
 
 export const Playground = {

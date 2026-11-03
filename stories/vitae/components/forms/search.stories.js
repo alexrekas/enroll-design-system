@@ -5,6 +5,14 @@ export default {
   title: 'Vitae 27/Components/Forms/Search',
   tags: ['autodocs'],
   decorators: [canvas],
+  parameters: { docs: { description: { component: `### Rails
+
+\`Vitae::SearchComponent\` in \`rails/vitae_components\` renders this markup (CI checks they match).
+
+\`\`\`erb
+<%= render Vitae::SearchComponent.new(label: "Search plans", name: "q", value: params[:q], open: @suggestions.any?,
+      results: @suggestions.map { |p| { label: p.name } }) %>
+\`\`\`` } } },
 };
 
 export const Playground = {

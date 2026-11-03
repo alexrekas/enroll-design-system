@@ -1,0 +1,12 @@
+<div<%= attrs(class: "vitae-table-wrap", style: "#{@width ? "width:#{@width}px;" : ""}max-width:100%", **@html) %>>
+  <% if @selectable && bulk_actions? && selected_count.positive? %><div class="vitae-bulkbar" role="region" aria-label="Bulk actions"><strong><%= selected_count %> selected</strong><%= bulk_actions %></div><% end %>
+  <div class="vitae-table-scroll" tabindex="0" role="region" aria-label="<%= @caption %>">
+  <table class="<%= classes("vitae-table", (@selectable ? "vitae-table--grid" : nil)) %>"><caption class="vitae-visually-hidden"><%= @caption %></caption><thead><tr>
+    <% if @selectable %><th scope="col" class="is-check is-pinned"><%= check("Select all rows", all_checked) %></th><% end %>
+    <% @columns.each_with_index do |col, i| %><%= header_cell(col, i) %><% end %>
+  </tr></thead><tbody>
+    <% @rows.each do |row| %><tr<%= attrs("aria-selected": (@selectable && row[:selected] ? "true" : nil)) %>>
+      <% if @selectable %><td class="is-check is-pinned"><%= check("Select #{row[:label]}", row[:selected] ? true : false) %></td><% end %>
+      <% row[:cells].each_with_index do |value, i| %><td<%= attrs(class: cell_class(i)) %>><%= cell(value) %></td><% end %></tr><% end %>
+  </tbody></table></div>
+</div>
