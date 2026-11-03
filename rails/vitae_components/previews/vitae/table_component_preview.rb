@@ -5,7 +5,7 @@ module Vitae
   # @logical_path Layout and data
   class TableComponentPreview < ViewComponent::Preview
     # @label Data grid
-    # @param width select { choices: ["", "560", "375"] }
+    # @param width select "Container width in px, to check narrow screens. Empty is full width." { choices: ["", "560", "375"] }
     def data_grid(width: "")
       render_with_template(locals: { width: width.presence&.to_i })
     end

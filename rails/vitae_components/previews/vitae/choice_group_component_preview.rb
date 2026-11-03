@@ -4,9 +4,9 @@ module Vitae
   # @label Choice group and Field-set
   # @logical_path Forms
   class ChoiceGroupComponentPreview < ViewComponent::Preview
-    # @param type select { choices: [radio, checkbox] }
-    # @param error toggle
-    # @param inline toggle
+    # @param type select "Radio for one answer, checkbox for any number of answers." { choices: [radio, checkbox] }
+    # @param error toggle "Show the group error (in code, error: takes the message)."
+    # @param inline toggle "Options side by side. Only for two or three short options like Yes / No."
     def choice_group(type: "radio", error: false, inline: false)
       radio = type == "radio"
       render Vitae::ChoiceGroupComponent.new(

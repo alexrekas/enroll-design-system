@@ -7,6 +7,10 @@
   font-family: var(--vitae-brand-font-family), system-ui, -apple-system, "Segoe UI", sans-serif; font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-24);
   padding: var(--vitae-space-024); min-height: 100%;
 }
+/* Components size with border-box wherever they're used (Storybook, Lookbook, Enroll), not only inside the Storybook canvas.
+   :where() keeps this at zero specificity so any component rule wins. */
+:where([class*="vitae-"]), :where([class*="vitae-"])::before, :where([class*="vitae-"])::after,
+:where([class*="vitae-"]) *, :where([class*="vitae-"]) *::before, :where([class*="vitae-"]) *::after { box-sizing: border-box; }
 .vitae-canvas *, .vitae-canvas *::before, .vitae-canvas *::after { box-sizing: border-box; }
 .vitae-icon { flex: none; display: inline-block; vertical-align: middle; }
 .vitae-visually-hidden { position: absolute !important; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
@@ -14,7 +18,7 @@
 .vitae-demo-label { font-size: var(--vitae-font-size-12); line-height: var(--vitae-font-line-height-16); color: var(--vitae-text-secondary); }
 :root { --_ring: 2px dashed var(--vitae-border-focus-ring); }
 .vitae-transition { transition: background-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), border-color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard), color var(--vitae-motion-duration-fast-02) var(--vitae-motion-easing-productive-standard); }
-@media (prefers-reduced-motion: reduce) { .vitae-canvas * { transition: none !important; animation: none !important; } }
+@media (prefers-reduced-motion: reduce) { .vitae-canvas *, :where([class*="vitae-"]), :where([class*="vitae-"]) * { transition: none !important; animation: none !important; } }
 
 /* ---------- Button ---------- */
 .vitae-btn {

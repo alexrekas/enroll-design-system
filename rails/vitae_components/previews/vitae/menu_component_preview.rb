@@ -13,7 +13,7 @@ module Vitae
       ])
     end
 
-    # @param value text
+    # @param value text "Typed text. Matching text in each result is bold."
     def search(value: "kai")
       render Vitae::SearchComponent.new(label: "Search plans", name: "q", value: value, open: true,
         results: [{ label: "Kaiser Permanente DC Silver 2500/40 HMO", state: :highlighted }, { label: "Kaiser Permanente Gold 0/20" }])
