@@ -117,7 +117,7 @@ export default {
           'Layout and data', ['Card', 'Accordion', 'Table', 'Menu'],
           'Plan shopping', ['Plan tile', 'Filter panel', 'Compare'],
           'Patterns', ['Log-in', 'Document upload'],
-        ], 'Sample users'], 'Legacy (v1)'],
+        ], 'Templates', ['Account dashboard', 'Application step', 'Documents', 'Admin table'], 'Sample users'], 'Legacy (v1)'],
       },
     },
   },

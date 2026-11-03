@@ -54,6 +54,7 @@ build-v2.mjs          Style Dictionary build for tokens-v2 → dist/v2/
 stories/vitae/        Vitae 27 Storybook: Introduction, Foundations, Icons, Logos, Sample users
   components/<group>/   one story file per component (actions, forms, feedback, navigation, layout, shopping, patterns)
   markup/               plain functions that return each component's HTML (the contract the Rails components match)
+  templates/            whole-page templates (Account dashboard, Application step, Documents, Admin table) built only from components
   data.js               shared sample data: people, plans and records used by every story
   vitae.css             component CSS
   icons/                Fluent 2 icons (from github.com/microsoft/fluentui-system-icons) and header icons

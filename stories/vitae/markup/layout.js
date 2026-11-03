@@ -79,11 +79,11 @@ export const dataTable = ({ caption, columns, rows, selectable = false, bulkActi
 };
 
 // The Storybook example: employees (data grid) or payment history (summary), from MEMBERS in data.js.
-export const table = ({ layout = 'grid', selected = [1], bulk = true, width = '' } = {}) => {
+export const table = ({ layout = 'grid', selected = [1], bulk = true, width = '', caption = '' } = {}) => {
   const grid = layout === 'grid';
   const rowLink = (t) => `<a href="#" class="vitae-link" style="font-size:14px">${esc(t)}</a>`;
   return dataTable({
-    caption: grid ? 'Employees' : 'Payment history', selectable: grid, width,
+    caption: caption || (grid ? 'Employees' : 'Payment history'), selectable: grid, width,
     bulkActions: bulk ? `${button({ label: 'Send reminder', style: 'outline' })}${button({ label: 'Export', style: 'ghost' })}` : '',
     columns: [
       { label: grid ? 'Name' : 'Member', sort: grid ? 'ascending' : undefined, pinned: grid },

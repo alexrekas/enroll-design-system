@@ -151,7 +151,7 @@ html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring)
 .vitae-toggle__track[aria-checked="true"] { background: var(--vitae-action-primary); border-color: var(--vitae-action-primary); }
 .vitae-toggle__track[aria-checked="true"] .vitae-toggle__knob { background: var(--vitae-text-on-primary); transform: translateX(24px); }
 .vitae-toggle__track[aria-checked="true"]:not(:disabled):hover, .vitae-toggle.is-hover .vitae-toggle__track[aria-checked="true"]:not(:disabled) { background: var(--vitae-action-primary-hover); border-color: var(--vitae-action-primary-hover); }
-.vitae-toggle__track[aria-checked="true"]:not(:disabled):hover .vitae-toggle__knob, .vitae-toggle.is-hover .vitae-toggle__track[aria-checked="true"]:not(:disabled) .vitae-toggle__knob { transform: translateX(18px); }
+.vitae-toggle__track[aria-checked="true"]:not(:disabled):hover .vitae-toggle__knob, .vitae-toggle.is-hover .vitae-toggle__track[aria-checked="true"]:not(:disabled) .vitae-toggle__knob { background: var(--vitae-text-on-primary); transform: translateX(18px); }
 .vitae-toggle__track:focus-visible, .vitae-toggle.is-focus .vitae-toggle__track { outline: var(--_ring); outline-offset: 2px; }
 .vitae-toggle__track:disabled { background: var(--vitae-background-disabled); border-color: var(--vitae-field-border-disabled); cursor: not-allowed; }
 .vitae-toggle__track:disabled .vitae-toggle__knob { background: var(--vitae-field-border-disabled); transform: none; }
@@ -746,7 +746,7 @@ img[data-white] { filter: brightness(0) invert(1); }
 .vitae-history-row__date { margin: 0; }
 .vitae-history-row__date span { display: block; font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-21); color: var(--vitae-text-secondary); }
 .vitae-history-row__actions { display: flex; flex-wrap: wrap; margin-top: -10px; }
-@container (max-width: 600px) {
+@container (max-width: 720px) {
   .vitae-history-row { grid-template-columns: minmax(0, 1fr) auto; gap: var(--vitae-space-008) var(--vitae-space-016); padding-left: 0; }
   .vitae-history-row__date { grid-column: 1; }
   .vitae-history-row__status { grid-column: 2; grid-row: 1; }
@@ -773,3 +773,58 @@ img[data-white] { filter: brightness(0) invert(1); }
 .vitae-upload-page { display: flex; flex-direction: column; gap: var(--vitae-space-016); max-width: 960px; }
 .vitae-upload-page h2 { margin: 0; font-size: var(--vitae-font-size-20); line-height: var(--vitae-font-line-height-28); color: var(--vitae-text-heading); }
 .vitae-upload-page > p { margin: 0; }
+
+/* ---------- Templates (page layout) ----------
+   Page shell used by the Templates stories. Breakpoint: 768px (phone header, collapsed side column).
+   Container queries so the stories respond to the frame width; in Enroll use the same values as media queries. */
+.vitae-app { container: vitae-app / inline-size; display: flex; flex-direction: column; min-height: 100%; background: var(--vitae-background-page); }
+.vitae-skip-link { position: absolute; left: var(--vitae-space-016); top: -100px; z-index: 20; padding: var(--vitae-space-008) var(--vitae-space-016); background: var(--vitae-background-layer-01); color: var(--vitae-text-link); border-radius: var(--vitae-radius-4); }
+.vitae-skip-link:focus { top: var(--vitae-space-008); outline: var(--_ring); outline-offset: 2px; }
+.vitae-app__header--narrow, .vitae-app__side--narrow { display: none; }
+.vitae-app__body { flex: 1; width: 100%; display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--vitae-space-032); padding-top: var(--vitae-space-032); padding-bottom: var(--vitae-space-064); }
+.vitae-app__body--side { grid-template-columns: max-content minmax(0, 1fr); }
+.vitae-app__main { display: flex; flex-direction: column; gap: var(--vitae-space-032); min-width: 0; }
+.vitae-app__main:focus { outline: none; }
+@container vitae-app (max-width: 767px) {
+  .vitae-app__header--wide, .vitae-app__side--wide { display: none; }
+  .vitae-app__header--narrow, .vitae-app__side--narrow { display: block; }
+  .vitae-app__body, .vitae-app__body--side { grid-template-columns: minmax(0, 1fr); gap: var(--vitae-space-024); padding-top: 0; }
+  .vitae-app__side--narrow { margin-inline: calc(-1 * var(--vitae-space-016)); }
+  .vitae-app__body:not(.vitae-app__body--side) { padding-top: var(--vitae-space-024); }
+}
+.vitae-page-header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--vitae-space-016) var(--vitae-space-024); }
+.vitae-page-header__text { display: flex; flex-direction: column; gap: var(--vitae-space-008); max-width: 720px; }
+.vitae-page-title { margin: 0; font-size: var(--vitae-font-size-36); line-height: var(--vitae-font-line-height-54); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-page-lead { margin: 0; font-size: var(--vitae-font-size-18); line-height: var(--vitae-font-line-height-27); color: var(--vitae-text-body); }
+.vitae-page-header__actions { display: flex; flex-wrap: wrap; gap: var(--vitae-space-008); }
+@container vitae-app (max-width: 767px) { .vitae-page-title { font-size: var(--vitae-font-size-24); line-height: var(--vitae-font-line-height-36); } .vitae-page-lead { font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-24); } }
+.vitae-page-section { display: flex; flex-direction: column; gap: var(--vitae-space-016); }
+.vitae-page-section__header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--vitae-space-008) var(--vitae-space-016); }
+.vitae-page-section__title { margin: 0; font-size: var(--vitae-font-size-24); line-height: var(--vitae-font-line-height-36); font-weight: var(--vitae-font-weight-bold); color: var(--vitae-text-heading); }
+.vitae-stack { display: flex; flex-direction: column; gap: var(--vitae-space-016); }
+.vitae-card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: var(--vitae-space-016) var(--vitae-space-024); }
+.vitae-card--fill { max-width: none; }
+.vitae-card__lead { margin: 0; font-weight: var(--vitae-font-weight-semibold); color: var(--vitae-text-heading); }
+.vitae-card__footer { flex-wrap: wrap; margin-top: auto; }
+.vitae-summary-list { margin: 0; display: flex; flex-direction: column; gap: var(--vitae-space-008); }
+.vitae-summary-list > div { display: grid; grid-template-columns: minmax(120px, 40%) 1fr; gap: var(--vitae-space-016); }
+.vitae-summary-list dt { color: var(--vitae-text-secondary); }
+.vitae-summary-list dd { margin: 0; }
+.vitae-message-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--vitae-border-subtle); }
+.vitae-message { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--vitae-space-004) var(--vitae-space-016); padding: var(--vitae-space-012) 0; border-bottom: 1px solid var(--vitae-border-subtle); }
+.vitae-message__subject { color: var(--vitae-text-link); text-underline-offset: 3px; }
+.vitae-message__subject:hover { color: var(--vitae-text-link-hover); }
+.vitae-message__subject:focus-visible { outline: var(--_ring); outline-offset: 2px; }
+.vitae-message.is-unread .vitae-message__subject { font-weight: var(--vitae-font-weight-bold); }
+.vitae-message__meta { font-size: var(--vitae-font-size-14); line-height: var(--vitae-font-line-height-20); color: var(--vitae-text-secondary); }
+.vitae-form { display: flex; flex-direction: column; gap: var(--vitae-space-032); max-width: 720px; }
+.vitae-form-actions { display: flex; justify-content: space-between; gap: var(--vitae-space-016); padding-top: var(--vitae-space-024); border-top: 1px solid var(--vitae-border-subtle); }
+@container vitae-app (max-width: 767px) { .vitae-form-actions { flex-direction: column-reverse; } .vitae-form-actions .vitae-btn { width: 100%; } }
+.vitae-toolbar { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--vitae-space-016) var(--vitae-space-024); }
+.vitae-toolbar > [role="search"] { flex: 1 1 280px; }
+.vitae-toolbar > .vitae-field { flex: 0 1 240px; }
+/* Ghost buttons line their text up with the content edge; the hover fill extends into the gutter. */
+.vitae-page-section__header > .vitae-btn--ghost:last-child { margin-inline-end: calc(-1 * var(--vitae-space-016)); }
+.vitae-form__add > .vitae-btn--ghost { margin-inline-start: calc(-1 * var(--vitae-space-016)); }
+/* Phones: toolbar controls take the full width (the Search component sets a 360px max-width inline). */
+@container vitae-app (max-width: 767px) { .vitae-toolbar > * { flex-basis: 100%; } .vitae-toolbar > [role="search"] { max-width: none !important; } }

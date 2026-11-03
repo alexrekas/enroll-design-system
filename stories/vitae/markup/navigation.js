@@ -61,18 +61,20 @@ export const crumbs = (depth) => {
 export const backLink = (label = 'Back to Income', state = 'rest') => `<nav aria-label="Breadcrumb"><a href="#" class="vitae-back-link${state !== 'rest' ? ` is-${state}` : ''}">${icon('arrow-left', 20, 'filled')}${esc(label)}</a></nav>`;
 
 export const pagination = (type, current = 5, total = 32, summary = true) => {
-  const pages = [1, '…', current - 1, current, current + 1, '…', total];
+  // First, last and the pages either side of the current one, with an ellipsis for each gap.
+  const nums = [...new Set([1, current - 1, current, current + 1, total])].filter((p) => p >= 1 && p <= total).sort((a, b) => a - b);
+  const pages = nums.flatMap((p, i) => (i && p - nums[i - 1] > 1 ? ['…', p] : [p]));
   const sum = summary ? `<p class="vitae-pagination__summary" aria-live="polite">Showing ${(current - 1) * 10 + 1}–${current * 10} of 312 results</p>` : '';
   if (type === 'compact') {
     return `<nav class="vitae-pagination vitae-pagination--compact" aria-label="Pagination">${sum}<div class="vitae-pagination__controls">
-      <a href="#" class="vitae-page" aria-label="Previous page">${icon('chevron-left', 20, 'filled')}</a>
+      <a ${current === 1 ? 'role="link" aria-disabled="true"' : 'href="#"'} class="vitae-page" aria-label="Previous page">${icon('chevron-left', 20, 'filled')}</a>
       <label class="vitae-pagination__select">Page <select class="vitae-input vitae-select" aria-label="Page, ${current} of ${total}" style="background-image:none">${Array.from({ length: total }, (_, i) => `<option${i + 1 === current ? ' selected' : ''}>${i + 1}</option>`).join('')}</select> of ${total}</label>
-      <a href="#" class="vitae-page" aria-label="Next page">${icon('chevron-right', 20, 'filled')}</a></div></nav>`;
+      <a ${current === total ? 'role="link" aria-disabled="true"' : 'href="#"'} class="vitae-page" aria-label="Next page">${icon('chevron-right', 20, 'filled')}</a></div></nav>`;
   }
   return `<nav class="vitae-pagination vitae-pagination--full" aria-label="Pagination">${sum}<ul>
-    <li>${button({ label: 'Previous', style: 'ghost', iconLeft: 'chevron-left' }).replace('<button type="button"', '<a href="#"').replace('</button>', '</a>')}</li>
+    <li>${button({ label: 'Previous', style: 'ghost', iconLeft: 'chevron-left' }).replace('<button type="button"', current === 1 ? '<a role="link" aria-disabled="true"' : '<a href="#"').replace('</button>', '</a>')}</li>
     ${pages.map((p) => `<li>${p === '…' ? '<span class="vitae-page__ellipsis" aria-hidden="true">…</span>' : `<a href="#" class="vitae-page" aria-label="Page ${p}${p === current ? ', current page' : ''}"${p === current ? ' aria-current="page"' : ''}>${p}</a>`}</li>`).join('')}
-    <li>${button({ label: 'Next', style: 'ghost', iconRight: 'chevron-right' }).replace('<button type="button"', '<a href="#"').replace('</button>', '</a>')}</li></ul></nav>`;
+    <li>${button({ label: 'Next', style: 'ghost', iconRight: 'chevron-right' }).replace('<button type="button"', current === total ? '<a role="link" aria-disabled="true"' : '<a href="#"').replace('</button>', '</a>')}</li></ul></nav>`;
 };
 
 export const tabsHtml = ({ labels, selected = 0, counts = {}, cues = '' }) => `<div class="vitae-tabs"><div class="vitae-tabs__list" role="tablist">${labels.map((l, i) => `<button type="button" role="tab" class="vitae-tab" aria-selected="${i === selected}" tabindex="${i === selected ? 0 : -1}"><span class="vitae-tab__label"><span class="vitae-tab__text" data-label="${esc(l)}">${esc(l)}</span>${counts[l] ? `<span class="vitae-tab__count">${counts[l]}<span class="vitae-visually-hidden"> new</span></span>` : ''}</span></button>`).join('')}</div>
@@ -100,9 +102,9 @@ export const leftnav = (current = 0, icons = true) => `<nav class="vitae-leftnav
 
 export const STEP_NAMES = ['Business Information', 'Benefits', 'Employees', 'Review and submit'];
 
-export const steps = (current = 1) => `<ol class="vitae-steps">${STEP_NAMES.map((s, i) => {
+export const steps = (current = 1, names = STEP_NAMES) => `<ol class="vitae-steps">${names.map((s, i) => {
   const status = i < current ? 'complete' : i === current ? 'current' : 'upcoming';
-  const cls = [`vitae-step vitae-step--${status}`, i === 0 ? 'no-above' : '', i === STEP_NAMES.length - 1 ? 'no-below' : '', i > current ? 'dim-above' : '', i >= current ? 'dim-below' : ''].join(' ');
+  const cls = [`vitae-step vitae-step--${status}`, i === 0 ? 'no-above' : '', i === names.length - 1 ? 'no-below' : '', i > current ? 'dim-above' : '', i >= current ? 'dim-below' : ''].join(' ');
   const label = status === 'complete' ? `<a href="#">${esc(s)}<span class="vitae-visually-hidden"> completed</span></a>` : esc(s);
   return `<li class="${cls}"${status === 'current' ? ' aria-current="step"' : ''}><span class="vitae-step__label">${label}</span><span class="vitae-step__marker" aria-hidden="true"><span class="vitae-step__dot"></span></span></li>`;
 }).join('')}</ol>`;
