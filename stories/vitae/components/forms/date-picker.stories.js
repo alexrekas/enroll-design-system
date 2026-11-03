@@ -1,4 +1,4 @@
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { datePicker } from '../../markup/layout.js';
 
 export default {
@@ -16,6 +16,9 @@ export default {
 
 export const Playground = {
   args: { open: true },
+  argTypes: argDocs({
+    open: ["Show the calendar. People can always type the date instead. Rails: `open:`", "false", "boolean"],
+  }),
   render: ({ open }) => `<div style="min-height:${open ? 420 : 120}px">${datePicker({ open })}</div>`,
   parameters: {
     design: [figma('73:6441', 'Date picker'), figma('73:21', 'Calendar'), figma('73:20', 'Calendar/Day')],

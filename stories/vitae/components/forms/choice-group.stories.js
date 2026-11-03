@@ -1,4 +1,4 @@
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { choiceGroup, wireLayout } from '../../markup/layout.js';
 
 export default {
@@ -20,7 +20,11 @@ export default {
 /* ---------- Choice group + Field-set ---------- */
 export const Playground = {
   args: { type: 'radio', error: false, inline: false },
-  argTypes: { type: { control: 'inline-radio', options: ['radio', 'checkbox'] } },
+  argTypes: argDocs({
+    type: ["Radio for one answer, checkbox for any number of answers. Rails: `type:`", "radio"],
+    error: ["Show the group error. In Rails `error:` takes the message text.", "false", "boolean"],
+    inline: ["Options side by side. Only for two or three short options like Yes / No. Rails: `inline:`", "false", "boolean"],
+  }, { type: { control: 'inline-radio', options: ['radio', 'checkbox'] } }),
   render: ({ type, error, inline }) => {
     const radio = type === 'radio';
     return choiceGroup({

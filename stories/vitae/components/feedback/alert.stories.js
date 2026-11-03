@@ -1,4 +1,4 @@
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { alert } from '../../markup/feedback.js';
 
 export default {
@@ -17,7 +17,13 @@ export default {
 
 export const Playground = {
   args: { type: 'info', title: 'Your application was submitted', message: "We'll email you when your eligibility results are ready.", link: 'View your application', dismissible: true },
-  argTypes: { type: { control: 'inline-radio', options: ['info', 'success', 'warning', 'error'] } },
+  argTypes: argDocs({
+    type: ["Sets the color and icon. The icon is the cue that doesn’t rely on color. Rails: `type:`", "info"],
+    title: ["Bold first line. Short and specific. Rails: `title:`", "(none)", "string"],
+    message: ["Detail under the title. Rails: `message:`", "(none)", "string"],
+    link: ["Optional link text after the message. Empty for none. Rails: `link:` and `link_href:`", "(none)", "string"],
+    dismissible: ["Shows a close button. Don’t let people dismiss errors they still need to fix. Rails: `dismissible:`", "true", "boolean"],
+  }, { type: { control: 'inline-radio', options: ['info', 'success', 'warning', 'error'] } }),
   render: (args) => alert(args),
   parameters: { docs: { description: { story: `
 Inline message about the page or a task, with a status icon (Warning is two-tone). Title and message use \`--vitae-alert-text\`.

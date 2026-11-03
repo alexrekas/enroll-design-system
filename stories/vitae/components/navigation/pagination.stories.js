@@ -1,4 +1,4 @@
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { pagination } from '../../markup/navigation.js';
 
 export default {
@@ -10,7 +10,10 @@ export default {
 
 export const Playground = {
   args: { width: 960, summary: true },
-  argTypes: { width: { control: 'inline-radio', options: [960, 720, 600, 375] } },
+  argTypes: argDocs({
+    width: ["Container width in px. 560px and wider shows the full control; narrower shows the compact one.", undefined, "number (example)"],
+    summary: ["Show the \"Showing 41–50 of 312 results\" text.", "true", "boolean"],
+  }, { width: { control: 'inline-radio', options: [960, 720, 600, 375] } }),
   render: ({ width, summary }) => `<div class="vitae-pagination-wrap" style="width:${width}px;max-width:100%">${pagination('full', 5, 32, summary)}${pagination('compact', 5, 32, summary)}</div>`,
   parameters: {
     design: [figma('140:53', 'Pagination'), figma('139:247', 'Pagination/Page')],

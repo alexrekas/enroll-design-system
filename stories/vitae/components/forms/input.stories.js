@@ -1,4 +1,4 @@
-import { canvas, figma, matrix } from '../../_shared.js';
+import { canvas, figma, matrix, argDocs } from '../../_shared.js';
 import { iconNames } from '../../icons.js';
 import { STATES, field } from '../../markup/field.js';
 
@@ -35,11 +35,24 @@ Single-line text entry. Shares one field anatomy with Dropdown: label (Body/Labe
       error: @household.errors[:income].first) %>
 \`\`\`` } },
   },
-  argTypes: {
+  argTypes: argDocs({
+    kind: ["Text input or select. In Rails use Vitae::InputComponent or Vitae::DropdownComponent.", "input", undefined, {"control": false}],
+    label: ["Visible label. Always set it, even when showLabel is off, so screen readers get a name. Rails: `label:`", undefined, "string (required)"],
+    placeholder: ["Example format only (\"MM/DD/YYYY\", \"$0\"). Never put instructions here; they disappear when typing. Use helper instead. Rails: `placeholder:`", "(none)", "string"],
+    value: ["Current value. Rails: `value:`", "(none)", "string"],
+    helper: ["Hint under the field, linked with aria-describedby. Rails: `helper:`", "(none)", "string"],
+    error: ["Error message under the field. Adds the error icon and aria-invalid. Say how to fix it. Rails: `error:`", "(none)", "string"],
+    required: ["Adds the asterisk and the required attribute. Rails: `required:`", "false", "boolean"],
+    info: ["Adds an info button after the label that opens more help. Rails: `info:`", "false", "boolean"],
+    showLabel: ["Show the label. Turn off only when the context makes the field obvious; the label stays for screen readers. Rails: `show_label:`", "true", "boolean"],
+    leadingIcon: ["Fluent icon at the start of the field (20px). Rails: `leading_icon:`", "(none)", "icon name"],
+    trailingIcon: ["Fluent icon at the end of the field (20px), e.g. calendar. Rails: `trailing_icon:`", "(none)", "icon name"],
+    state: ["Preview a state. In real use hover, pressed and focus come from the browser. Error and disabled map to `error:` and `disabled: true` in Rails.", "rest"],
+  }, {
     state: { control: 'select', options: STATES },
     leadingIcon: { control: 'select', options: ['', ...iconNames] },
     trailingIcon: { control: 'select', options: ['', ...iconNames] },
-  },
+  }),
   args: { kind: 'input', label: 'Annual income', placeholder: '$0', value: '', helper: 'Before taxes, for everyone in your household.', error: '', required: true, info: true, showLabel: true, leadingIcon: '', trailingIcon: '', state: 'rest' },
   render: (args) => field(args),
 };

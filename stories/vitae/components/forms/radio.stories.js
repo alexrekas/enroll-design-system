@@ -1,5 +1,5 @@
 import { expect, userEvent, within } from 'storybook/test';
-import { canvas, figma, matrix } from '../../_shared.js';
+import { canvas, figma, matrix, argDocs } from '../../_shared.js';
 import { STATES, checkbox, wireSelection } from '../../markup/selection.js';
 
 export default {
@@ -30,7 +30,12 @@ Choose one of 2–4 options (Dropdown for more). Native inputs styled with a sib
 
 export const Playground = {
   args: { label: 'Yes', description: '', checked: 'false', state: 'rest' },
-  argTypes: { checked: { control: 'inline-radio', options: ['false', 'true'] }, state: { control: 'select', options: STATES } },
+  argTypes: argDocs({
+    label: ["Label text. Clicking it selects the option. Use radios in a Choice group. Rails: `label:`", undefined, "string (required)"],
+    description: ["Second line under the label, linked with aria-describedby. Rails: `description:`", "(none)", "string"],
+    checked: ["Selected or not. Rails: `checked:`", "false"],
+    state: ["Preview a state. In real use hover, pressed and focus come from the browser. Disabled maps to `disabled: true` in Rails.", "rest"],
+  }, { checked: { control: 'inline-radio', options: ['false', 'true'] }, state: { control: 'select', options: STATES } }),
   render: (args) => checkbox({ ...args, radio: true }),
 };
 

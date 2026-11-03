@@ -1,4 +1,4 @@
-import { canvas, esc, figma } from '../../_shared.js';
+import { canvas, esc, figma, argDocs } from '../../_shared.js';
 import { SIGNED_IN } from '../../data.js';
 import { icon } from '../../icons.js';
 import { logo } from '../../logos.js';
@@ -13,7 +13,10 @@ export default {
 
 export const Playground = {
   args: { user: 'Individual & Family', showCart: true },
-  argTypes: { user: { control: 'select', options: ['Logged out', 'Individual & Family', 'Employer', 'Employee', 'Broker', 'Admin'] } },
+  argTypes: argDocs({
+    user: ["Who is signed in. Sets the role icon, account name and menu; Logged out shows Sign in.", "Individual & Family", "role"],
+    showCart: ["Show the cart button. Plan shopping only.", "true", "boolean"],
+  }, { user: { control: 'select', options: ['Logged out', 'Individual & Family', 'Employer', 'Employee', 'Broker', 'Admin'] } }),
   render: (args, { globals }) => `<div class="vitae-bleed">${header({ ...args, client: clientOf(globals) })}</div>`,
   parameters: {
     design: [figma('117:721', 'Header'), figma('116:382', 'Header/Nav bar')],
@@ -37,7 +40,10 @@ export const EveryRole = {
 export const Mobile = {
   name: 'Mobile',
   args: { open: true, user: 'Individual & Family' },
-  argTypes: { user: { control: 'select', options: ['Individual & Family', 'Employer', 'Broker', 'Admin'] } },
+  argTypes: argDocs({
+    open: ["Show the menu drawer open.", undefined, "boolean"],
+    user: ["Who is signed in. Sets the role icon, account name and menu.", "Individual & Family", "role"],
+  }, { user: { control: 'select', options: ['Individual & Family', 'Employer', 'Broker', 'Admin'] } }),
   render: ({ open, user }, { globals }) => {
     const client = clientOf(globals); const c = CLIENT_INFO[client];
     return `<div style="position:relative;width:375px;height:640px;overflow:hidden;border:1px solid var(--vitae-border-subtle);background:var(--vitae-background-page)">

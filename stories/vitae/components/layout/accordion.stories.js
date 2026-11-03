@@ -1,5 +1,5 @@
 import { expect, userEvent, within } from 'storybook/test';
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { accordion, wireLayout } from '../../markup/layout.js';
 
 export default {
@@ -23,7 +23,10 @@ export default {
 
 export const Playground = {
   args: { style: 'divided', expandAll: true },
-  argTypes: { style: { control: 'inline-radio', options: ['divided', 'bordered'] } },
+  argTypes: argDocs({
+    style: ["Divided: rules between sections. Bordered: each section in its own box. Rails: `style:`", "divided"],
+    expandAll: ["Show the Expand all / Collapse all button. Rails: `expand_all:`", "true", "boolean"],
+  }, { style: { control: 'inline-radio', options: ['divided', 'bordered'] } }),
   render: ({ style, expandAll }) => `<div style="max-width:720px">${accordion(style, [0], expandAll)}</div>`,
   parameters: {
     design: [figma('188:180', 'Accordion'), figma('188:90', 'Accordion/Item')],

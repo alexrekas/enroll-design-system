@@ -88,7 +88,7 @@ The **Accessibility** tab under each story in Storybook runs the same axe rules.
 ## Contributing
 
 - **Design first.** Components are built in Figma, then in Storybook; every story's Source badge links to its Figma frame.
-- **Adding a component:** put its HTML function in `stories/vitae/markup/`, its stories in `stories/vitae/components/<group>/<name>.stories.js` (title `Vitae 27/Components/<Group>/<Name>`, a `Playground` story driven by args, then state stories), sample content in `data.js`, and an interaction test (`play`) if it has behavior. Add its Figma node to `figma-links.json` and set the Figma documentation link.
+- **Adding a component:** put its HTML function in `stories/vitae/markup/`, its stories in `stories/vitae/components/<group>/<name>.stories.js` (title `Vitae 27/Components/<Group>/<Name>`, a `Playground` story driven by args, then state stories), sample content in `data.js`, a description and default for every arg with `argDocs` from `_shared.js` (these fill the Docs table; include the Rails option name), and an interaction test (`play`) if it has behavior. Add its Figma node to `figma-links.json` and set the Figma documentation link.
 - **No hard-coded values.** Colors, spacing, radius, borders, type and effects come from tokens.
 - **Accessibility:** WCAG 2.1 AA. Never rely on color alone; focus is a 2px dashed ring on `:focus-visible`; disabled controls have no hover or pressed state; phone numbers are `tel:` links.
 - **One responsive component** rather than separate desktop and mobile versions, unless the narrow version is a different pattern.

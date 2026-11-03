@@ -1,4 +1,4 @@
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { clientOf, footer } from '../../markup/navigation.js';
 
 export default {
@@ -10,7 +10,9 @@ export default {
 
 export const Playground = {
   args: { width: 1140 },
-  argTypes: { width: { control: 'inline-radio', options: [1140, 720, 375] } },
+  argTypes: argDocs({
+    width: ["Container width in px. The columns stack on narrow screens.", undefined, "number (example)"],
+  }, { width: { control: 'inline-radio', options: [1140, 720, 375] } }),
   render: ({ width }, { globals }) => `<div style="width:${width}px;max-width:100%">${footer({ client: clientOf(globals) })}</div>`,
   parameters: {
     design: figma('246:2099', 'Footer'),

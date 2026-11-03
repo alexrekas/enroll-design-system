@@ -1,4 +1,4 @@
-import { canvas, esc, figma } from '../../_shared.js';
+import { canvas, esc, figma, argDocs } from '../../_shared.js';
 import { icon } from '../../icons.js';
 import { STEP_NAMES, progressLine, steps } from '../../markup/navigation.js';
 
@@ -11,7 +11,9 @@ export default {
 
 export const Playground = {
   args: { current: 1 },
-  argTypes: { current: { control: { type: 'range', min: 0, max: 3 } } },
+  argTypes: argDocs({
+    current: ["Current step, counted from 0 (0 is the first step). Earlier steps show as complete.", undefined, "number"],
+  }, { current: { control: { type: 'range', min: 0, max: 3 } } }),
   render: ({ current }) => `<div style="display:flex;gap:48px;align-items:flex-start">
     <nav class="vitae-progress" aria-label="Progress"><div class="vitae-progress__card"><h3 class="vitae-progress__title">Create New Employer</h3>${progressLine(Math.round(((current + 0.5) / 4) * 100), false, `Step ${current + 1} of 4`)}${steps(current)}</div>
       <div class="vitae-progress__links"><a href="#" class="vitae-link vitae-link--standalone">Save &amp; Exit</a><a href="#" class="vitae-link vitae-link--standalone">Get Help</a><a href="#" class="vitae-link vitae-link--standalone">Return Home</a></div></nav>

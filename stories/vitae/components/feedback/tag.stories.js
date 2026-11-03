@@ -1,4 +1,4 @@
-import { canvas, figma, matrix } from '../../_shared.js';
+import { canvas, figma, matrix, argDocs } from '../../_shared.js';
 import { tag } from '../../markup/feedback.js';
 
 export default {
@@ -17,7 +17,11 @@ export default {
 
 export const Playground = {
   args: { label: 'Approved', type: 'success', showIcon: true },
-  argTypes: { type: { control: 'select', options: ['neutral', 'brand', 'info', 'success', 'warning', 'error', 'current-plan', 'dc-healthy', 'dc-essential', 'me-clear-choice', 'me-current-plan', 'ma-premium-value'] } },
+  argTypes: argDocs({
+    label: ["Tag text. Keep the capitalization the product already uses. Rails: `label:`", undefined, "string (required)"],
+    type: ["Status color (neutral to error) or a client program tag. Use client tags only on their own client. Rails: `type:`", "success", "status or client tag"],
+    showIcon: ["Show the leading icon. Keep it on status tags so the meaning doesn’t rely on color. Rails: `show_icon:`", "true", "boolean"],
+  }, { type: { control: 'select', options: ['neutral', 'brand', 'info', 'success', 'warning', 'error', 'current-plan', 'dc-healthy', 'dc-essential', 'me-clear-choice', 'me-current-plan', 'ma-premium-value'] } }),
   render: (args) => tag(args),
   parameters: { docs: { description: { story: `
 Compact, non-interactive label (24px pill, Body/Button). Status types carry a 16px icon so color is never the only cue. Program tags belong to one client only: Healthy DC Plan and Essential Plan (DC), Clear Choice Plan (ME), Premium Value Plan (MA).

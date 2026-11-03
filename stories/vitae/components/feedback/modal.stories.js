@@ -1,4 +1,4 @@
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { modal } from '../../markup/layout.js';
 
 export default {
@@ -18,7 +18,15 @@ export default {
 
 export const Playground = {
   args: { type: 'warning', title: 'Discard your changes?', body: "You haven't saved the changes to your household. If you leave now, they'll be lost.", primary: 'Discard changes', secondaryLabel: 'Keep editing', secondary: true, close: true },
-  argTypes: { type: { control: 'inline-radio', options: ['standard', 'info', 'success', 'warning', 'error'] } },
+  argTypes: argDocs({
+    type: ["Standard has no icon; the others add a status icon by the title. Rails: `type:`", "standard"],
+    title: ["Dialog title and its accessible name. Ask the question or say the outcome (\"Discard your changes?\"). Rails: `title:`", undefined, "string (required)"],
+    body: ["Explanation under the title. Rails: `body:`", "(none)", "string"],
+    primary: ["Main button label. Name the action, not \"OK\". Rails: `primary:`", "Continue", "string"],
+    secondaryLabel: ["Second button label. Rails: `secondary_label:`", "Cancel", "string"],
+    secondary: ["Show the second button. Rails: `secondary:`", "true", "boolean"],
+    close: ["Show the close (X) button in the corner. Esc closes the dialog either way. Rails: `close:`", "true", "boolean"],
+  }, { type: { control: 'inline-radio', options: ['standard', 'info', 'success', 'warning', 'error'] } }),
   render: (args) => modal(args),
   parameters: {
     design: figma('112:124', 'Modal'),

@@ -1,5 +1,5 @@
 import { expect, userEvent, within } from 'storybook/test';
-import { canvas, figma, matrix } from '../../_shared.js';
+import { canvas, figma, matrix, argDocs } from '../../_shared.js';
 import { STATES, checkbox, wireSelection } from '../../markup/selection.js';
 
 export default {
@@ -27,7 +27,13 @@ Choose any number of options, or agree to one statement. Native inputs styled wi
 
 export const Playground = {
   args: { label: 'Bronze', description: '', checked: 'false', state: 'rest', error: '' },
-  argTypes: { checked: { control: 'inline-radio', options: ['false', 'true', 'indeterminate'] }, state: { control: 'select', options: STATES } },
+  argTypes: argDocs({
+    label: ["Label text. Clicking it toggles the box. Rails: `label:`", undefined, "string (required)"],
+    description: ["Second line under the label, linked with aria-describedby. Rails: `description:`", "(none)", "string"],
+    checked: ["Checked state. Indeterminate (mixed) is for a parent whose children are partly selected. Rails: `checked:` (true, false or :indeterminate)", "false"],
+    state: ["Preview a state. In real use hover, pressed and focus come from the browser. Disabled maps to `disabled: true` in Rails.", "rest"],
+    error: ["Error message under the box; sets aria-invalid. Rails: `error:`", "(none)", "string"],
+  }, { checked: { control: 'inline-radio', options: ['false', 'true', 'indeterminate'] }, state: { control: 'select', options: STATES } }),
   render: (args) => checkbox(args),
   play: async ({ canvasElement, step }) => {
     const box = within(canvasElement).getByRole('checkbox', { name: 'Bronze' });

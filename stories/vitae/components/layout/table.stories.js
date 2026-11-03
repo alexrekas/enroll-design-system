@@ -1,4 +1,4 @@
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { table, wireLayout } from '../../markup/layout.js';
 
 export default {
@@ -26,7 +26,11 @@ export default {
 
 export const Playground = {
   args: { layout: 'grid', bulk: true, width: '' },
-  argTypes: { layout: { control: 'inline-radio', options: ['grid', 'summary'] }, width: { control: 'inline-radio', options: ['', '560', '375'] } },
+  argTypes: argDocs({
+    layout: ["Grid: rows and columns with row selection. Summary: label and value rows for review pages.", "grid"],
+    bulk: ["Show the bulk-action bar when rows are selected. Rails: the `bulk_actions` slot.", undefined, "boolean"],
+    width: ["Container width in px, to check narrow screens. Empty is full width. Rails: `width:`", "(full width)"],
+  }, { layout: { control: 'inline-radio', options: ['grid', 'summary'] }, width: { control: 'inline-radio', options: ['', '560', '375'] } }),
   render: (args) => table({ ...args, selected: args.layout === 'grid' ? [1] : [] }),
   parameters: {
     design: [figma('255:2897', 'Table'), figma('190:47', 'Table/Header cell'), figma('190:88', 'Table/Cell')],

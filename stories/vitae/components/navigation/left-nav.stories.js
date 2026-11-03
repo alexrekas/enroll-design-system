@@ -1,4 +1,4 @@
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { icon } from '../../icons.js';
 import { leftnav } from '../../markup/navigation.js';
 
@@ -11,6 +11,9 @@ export default {
 
 export const Playground = {
   args: { icons: true },
+  argTypes: argDocs({
+    icons: ["Show an icon before each item. Use icons on every item or on none.", "true", "boolean"],
+  }),
   render: ({ icons }) => `<div style="display:flex;gap:48px;align-items:flex-start">${leftnav(0, icons)}
     <div style="width:375px"><div class="vitae-demo-label">Mobile (under 640px), open</div>
       <button type="button" class="vitae-navtoggle vitae-navtoggle--rule" aria-expanded="true" aria-controls="acct-panel"><span class="vitae-navtoggle__row"><span><span class="vitae-visually-hidden">My Account: </span>My Coverage</span>${icon('chevron-down', 20, 'filled')}</span></button>

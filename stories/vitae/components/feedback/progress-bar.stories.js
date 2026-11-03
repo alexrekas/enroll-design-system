@@ -1,4 +1,4 @@
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { progressBar } from '../../markup/upload.js';
 
 export default {
@@ -16,7 +16,12 @@ export default {
 
 export const Playground = {
   args: { value: 45, label: 'Uploading… 45%', name: 'Uploading Employer_letter.pdf', showLabel: true },
-  argTypes: { value: { control: { type: 'range', min: 0, max: 100, step: 1 } } },
+  argTypes: argDocs({
+    value: ["Percent complete, 0 to 100. Rails: `value:`", undefined, "number (required)"],
+    label: ["Text above the bar, also used as aria-valuetext. Rails: `label:`", "\"Uploading… {value}%\"", "string"],
+    name: ["Accessible name of the progress bar, e.g. which file is uploading. Rails: `name:`", "Upload progress", "string"],
+    showLabel: ["Show the label text. When off, screen readers still get it. Rails: `show_label:`", "true", "boolean"],
+  }, { value: { control: { type: 'range', min: 0, max: 100, step: 1 } } }),
   render: (args) => `<div style="max-width:320px">${progressBar(args)}</div>`,
   parameters: {
     design: figma('398:2845', 'Progress bar'),

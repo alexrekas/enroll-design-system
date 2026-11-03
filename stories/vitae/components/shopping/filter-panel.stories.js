@@ -1,4 +1,4 @@
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { field } from '../../markup/field.js';
 import { clientOf, filterPanel, wireShopping } from '../../markup/shopping.js';
 
@@ -10,7 +10,11 @@ export default {
 
 export const Playground = {
   args: { layout: 'expanded', carrierOpen: false, rangeError: false },
-  argTypes: { layout: { control: 'inline-radio', options: ['expanded', 'collapsed', 'sheet'] } },
+  argTypes: argDocs({
+    layout: ["Expanded: the sidebar with every group open. Collapsed: groups closed. Sheet: the full-screen panel used on phones.", "expanded"],
+    carrierOpen: ["Show the carrier list open.", "false", "boolean"],
+    rangeError: ["Show the error when the minimum premium is higher than the maximum.", "false", "boolean"],
+  }, { layout: { control: 'inline-radio', options: ['expanded', 'collapsed', 'sheet'] } }),
   render: (args, { globals }) => `<div style="max-width:1140px;min-height:${args.layout === 'sheet' ? 740 : 560}px">${filterPanel({ ...args, client: clientOf(globals) })}</div>`,
   parameters: {
     design: [figma('196:770', 'Filter panel'), figma('319:7598', 'Filter/Carrier list'), figma('195:218', 'Filter/Range'), figma('192:3', 'Filter label')],

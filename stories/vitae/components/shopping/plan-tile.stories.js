@@ -1,4 +1,4 @@
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { PLANS } from '../../data.js';
 import { clientOf, planTile, wireShopping } from '../../markup/shopping.js';
 
@@ -10,7 +10,13 @@ export default {
 
 export const Playground = {
   args: { context: 'shopping', compare: false, current: false, program: true, width: '' },
-  argTypes: { context: { control: 'inline-radio', options: ['shopping', 'employer', 'enrolled'] }, width: { control: 'inline-radio', options: ['', '720', '375'] } },
+  argTypes: argDocs({
+    context: ["Shopping: individual market. Employer: a plan offered through an employer. Enrolled: the plan someone has.", "shopping"],
+    compare: ["Plan is added to compare (checkbox checked, tile highlighted).", "false", "boolean"],
+    current: ["Mark as the person’s current plan.", "false", "boolean"],
+    program: ["Show the client program tag (Healthy DC Plan, Clear Choice Plan, Premium Value Plan). EA has none.", "true", "boolean"],
+    width: ["Container width in px, to check narrow screens. Empty is full width.", "(full width)"],
+  }, { context: { control: 'inline-radio', options: ['shopping', 'employer', 'enrolled'] }, width: { control: 'inline-radio', options: ['', '720', '375'] } }),
   render: (args, { globals }) => planTile({ ...args, client: clientOf(globals) }),
   parameters: {
     design: [figma('235:2596', 'Plan tile'), figma('208:12', 'Plan tile/Fact')],

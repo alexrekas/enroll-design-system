@@ -1,5 +1,5 @@
 import { expect, userEvent, within } from 'storybook/test';
-import { canvas, esc, figma } from '../../_shared.js';
+import { canvas, esc, figma, argDocs } from '../../_shared.js';
 import { LOGIN_CLIENT, SCREEN_NAMES, clientOf, loginCard, loginLayout, officialBanner, wireLogin } from '../../markup/login.js';
 
 export default {
@@ -31,7 +31,9 @@ Sign-in and account screens for every client. One card (440px max, \`card/surfac
 
 export const Card = {
   args: { screen: 'Sign in' },
-  argTypes: { screen: { control: 'select', options: SCREEN_NAMES } },
+  argTypes: argDocs({
+    screen: ["Which screen of the sign-in flow to show.", "Sign in", "screen name"],
+  }, { screen: { control: 'select', options: SCREEN_NAMES } }),
   render: (args, { globals }) => `<div style="background:var(--vitae-background-page);padding:32px 16px">${loginCard({ client: clientOf(globals), ...args })}</div>`,
   parameters: { docs: { description: { story: 'Pick a screen with the control. The client logo, help phone and DC system notice follow the Theme toolbar.' } } },
   play: async ({ canvasElement, step }) => {
@@ -54,7 +56,10 @@ export const AllScreens = {
 
 export const Layout = {
   args: { layout: 'centered', screen: 'Sign in' },
-  argTypes: { layout: { control: 'inline-radio', options: ['centered', 'split'] }, screen: { control: 'select', options: SCREEN_NAMES } },
+  argTypes: argDocs({
+    layout: ["Centered: the card alone. Split: the card plus an info panel, which wraps under the card on narrow screens.", "centered"],
+    screen: ["Which screen of the sign-in flow to show.", "Sign in", "screen name"],
+  }, { layout: { control: 'inline-radio', options: ['centered', 'split'] }, screen: { control: 'select', options: SCREEN_NAMES } }),
   render: (args, { globals }) => loginLayout({ client: clientOf(globals), ...args }),
   parameters: { docs: { description: { story: `Page body between the header and footer. **Centered**: card on \`background/page\`, 64px top and bottom. **Split**: card plus an info panel (\`background/brand-subtle\`), 960px max; below about 680px the panel wraps under the card. Keep the card first in the code so visual and reading order match (no CSS \`order\`). The card title is the page h1; the panel heading is h2.` } } },
 };
@@ -67,6 +72,9 @@ export const LayoutPhone = {
 export const OfficialBanner = {
   name: 'Official banner',
   args: { expanded: false },
+  argTypes: argDocs({
+    expanded: ["Show the \"Here’s how you know\" explanation open.", "false", "boolean"],
+  }),
   render: (args, { globals }) => {
     const client = clientOf(globals);
     return `${LOGIN_CLIENT[client].banner ? '' : `<p class="vitae-field__helper" style="margin:0 0 8px">Shown for MA only (login/show-official-banner). Previewing with ${client.toUpperCase()} text.</p>`}${officialBanner({ client, ...args })}`;

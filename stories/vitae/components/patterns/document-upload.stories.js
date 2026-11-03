@@ -1,5 +1,5 @@
 import { expect, userEvent, waitFor, within } from 'storybook/test';
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { button } from '../../markup/button.js';
 import { alert } from '../../markup/feedback.js';
 import { modal } from '../../markup/layout.js';
@@ -34,7 +34,13 @@ Rules:
 export const FileInput = {
   name: 'File input',
   args: { state: 'empty', docType: false, takePhoto: true, showPhotoOnDesktop: true, limits: LIMITS },
-  argTypes: { state: { control: 'inline-radio', options: ['empty', 'dragover', 'error'] } },
+  argTypes: argDocs({
+    state: ["Empty, dragover (a file is being dragged over the drop zone) or error.", "empty"],
+    docType: ["Show the document type dropdown above the drop zone.", "false", "boolean"],
+    takePhoto: ["Show the Take a photo button.", "true", "boolean"],
+    showPhotoOnDesktop: ["Show Take a photo on wide screens too. When off, it only appears on narrow screens.", "true", "boolean"],
+    limits: ["Accepted file types and size limit, shown in the drop zone.", "\"PDF, JPG, PNG or GIF, up to 10 MB\"", "string"],
+  }, { state: { control: 'inline-radio', options: ['empty', 'dragover', 'error'] } }),
   render: (args) => fileInput(args),
   parameters: {
     design: figma('393:168', 'Upload/File input'),
@@ -51,7 +57,15 @@ A drop zone around a real \`<input type="file" multiple accept="…">\`. The inp
 
 export const Attachment = {
   args: { state: 'attached', type: 'Paystub', name: 'Bennett_paystub_September.pdf', meta: '', progress: 45, showType: true, changeType: true },
-  argTypes: { state: { control: 'inline-radio', options: ['uploading', 'attached', 'error'] }, progress: { control: { type: 'range', min: 0, max: 100 } } },
+  argTypes: argDocs({
+    state: ["Uploading shows a progress bar; error shows the message and a Try again button.", "attached"],
+    type: ["Document type the file was added as.", "Paystub", "string"],
+    name: ["File name, shown in full (it wraps).", undefined, "string"],
+    meta: ["Line under the name (size, status or error). Empty uses the default for the state.", "(none)", "string"],
+    progress: ["Upload percent while uploading.", "45", "number"],
+    showType: ["Show the document type.", "true", "boolean"],
+    changeType: ["Show the Change type button.", "true", "boolean"],
+  }, { state: { control: 'inline-radio', options: ['uploading', 'attached', 'error'] }, progress: { control: { type: 'range', min: 0, max: 100 } } }),
   render: (args) => `<ul class="vitae-upload-list" style="max-width:560px">${attachment(args)}</ul>`,
   parameters: {
     design: figma('394:109', 'Upload/Attachment'),
@@ -72,7 +86,12 @@ export const AttachmentStates = {
 
 export const Panel = {
   args: { state: 'files', title: 'Upload documents', showActions: true, docType: false },
-  argTypes: { state: { control: 'inline-radio', options: ['empty', 'files', 'error'] } },
+  argTypes: argDocs({
+    state: ["Empty (nothing added), files (a list of attachments) or error.", "files"],
+    title: ["Panel heading.", "Upload documents", "string"],
+    showActions: ["Show Cancel and Submit documents at the bottom.", "true", "boolean"],
+    docType: ["Ask for the document type before files are added.", "false", "boolean"],
+  }, { state: { control: 'inline-radio', options: ['empty', 'files', 'error'] } }),
   render: (args) => `<div class="vitae-card" style="max-width:640px">${uploadPanel(args)}</div>`,
   parameters: {
     design: figma('394:351', 'Upload/Panel'),
@@ -90,7 +109,13 @@ The whole upload task for one request. It has no card of its own; place it in th
 export const HistoryRow = {
   name: 'History row',
   args: { status: 'Rejected', type: 'Paystub', name: 'Paystub_Aug.jpg', submitted: '09/03/2026', remove: true },
-  argTypes: { status: { control: 'inline-radio', options: ['In review', 'Accepted', 'Rejected'] } },
+  argTypes: argDocs({
+    status: ["Review status. Rejected shows the reason.", "In review"],
+    type: ["Document type.", "Paystub", "string"],
+    name: ["File name.", undefined, "string"],
+    submitted: ["Date submitted, MM/DD/YYYY.", undefined, "string"],
+    remove: ["Show the Remove button.", undefined, "boolean"],
+  }, { status: { control: 'inline-radio', options: ['In review', 'Accepted', 'Rejected'] } }),
   render: (args) => `<ul class="vitae-upload-history" style="max-width:880px">${historyRow(args)}</ul>`,
   parameters: {
     design: figma('395:443', 'Upload/History row'),
@@ -112,7 +137,12 @@ export const History = {
 
 export const Verification = {
   args: { state: 'Action needed', title: 'Income', member: 'Marcus Bennett', due: '12/01/2026' },
-  argTypes: { state: { control: 'inline-radio', options: ['Action needed', 'Uploading', 'In review', 'Verified'] } },
+  argTypes: argDocs({
+    state: ["Where this verification stands. Each state has its own tag, message and action.", "Action needed"],
+    title: ["What is being verified, e.g. Income or Citizenship.", "Income", "string"],
+    member: ["Household member it applies to.", undefined, "string"],
+    due: ["Due date, MM/DD/YYYY.", undefined, "string"],
+  }, { state: { control: 'inline-radio', options: ['Action needed', 'Uploading', 'In review', 'Verified'] } }),
   render: (args) => `<div style="max-width:880px">${verification(args)}</div>`,
   parameters: {
     design: figma('395:654', 'Upload/Verification'),
@@ -149,6 +179,9 @@ export const Mobile = {
 export const TryIt = {
   name: 'Try it',
   args: { confirmType: true },
+  argTypes: argDocs({
+    confirmType: ["Ask for the document type of each file you add.", undefined, "boolean"],
+  }),
   render: ({ confirmType }) => {
     const root = document.createElement('div');
     root.className = 'vitae-card';

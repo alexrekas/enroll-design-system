@@ -1,4 +1,4 @@
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { field } from '../../markup/field.js';
 import { fieldset, fieldsetPair, wireLayout } from '../../markup/layout.js';
 
@@ -26,7 +26,10 @@ export default {
 
 export const Playground = {
   args: { type: 'Address', width: 720 },
-  argTypes: { type: { control: 'inline-radio', options: ['Name', 'Address', 'Contact'] }, width: { control: 'inline-radio', options: [720, 480, 320] } },
+  argTypes: argDocs({
+    type: ["Which example group to show.", undefined, "Name | Address | Contact (example)"],
+    width: ["Container width in px, to see how paired fields stack on narrow screens.", undefined, "number (example)"],
+  }, { type: { control: 'inline-radio', options: ['Name', 'Address', 'Contact'] }, width: { control: 'inline-radio', options: [720, 480, 320] } }),
   render: ({ type, width }, { globals }) => {
     const client = globals.theme || 'ea';
     const f = (o) => field({ helper: '', info: false, required: true, placeholder: '', ...o });

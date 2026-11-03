@@ -1,5 +1,5 @@
 import { expect, userEvent, within } from 'storybook/test';
-import { canvas, figma, matrix } from '../../_shared.js';
+import { canvas, figma, matrix, argDocs } from '../../_shared.js';
 import { toggle, wireSelection } from '../../markup/selection.js';
 
 export default {
@@ -26,7 +26,12 @@ A setting that applies immediately. Use Checkbox when the choice is submitted la
 
 export const Playground = {
   args: { label: 'Email me reminders', description: 'We send a reminder 30 days before open enrollment ends.', on: false, state: 'rest' },
-  argTypes: { state: { control: 'inline-radio', options: ['rest', 'hover', 'focus', 'disabled'] } },
+  argTypes: argDocs({
+    label: ["What the setting controls. Rails: `label:`", undefined, "string (required)"],
+    description: ["Second line under the label. Rails: `description:`", "(none)", "string"],
+    on: ["On or off. Use toggles for settings that apply immediately; in forms with a Submit button use a checkbox. Rails: `on:`", "false", "boolean"],
+    state: ["Preview a state. In real use hover, pressed and focus come from the browser. Disabled maps to `disabled: true` in Rails.", "rest"],
+  }, { state: { control: 'inline-radio', options: ['rest', 'hover', 'focus', 'disabled'] } }),
   render: (args) => toggle(args),
   play: async ({ canvasElement, step }) => {
     await new Promise((r) => setTimeout(r, 0)); // let the wiring decorator attach its listeners

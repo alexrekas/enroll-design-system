@@ -1,4 +1,4 @@
-import { canvas, figma, matrix } from '../../_shared.js';
+import { canvas, figma, matrix, argDocs } from '../../_shared.js';
 import { link } from '../../markup/link.js';
 
 export default {
@@ -24,11 +24,16 @@ Colors: \`--vitae-text-link\`, \`-hover\`, \`-active\`. Hover and pressed thicke
 <%= render Vitae::LinkComponent.new(label: "IRS Form 1095-A", href: irs_url, standalone: true, icon: "external-link") %>
 \`\`\`` } },
   },
-  argTypes: {
+  argTypes: argDocs({
+    label: ["Link text. Say where it goes; avoid \"click here\". Rails: `label:`", undefined, "string"],
+    type: ["Inline sits inside a sentence and is underlined. Standalone is on its own line, SemiBold, with an optional trailing icon. Rails: `standalone: true`", "inline"],
+    state: ["Preview a state. In real use hover, pressed and focus come from the browser.", "rest"],
+    trailingIcon: ["Icon after a standalone link: arrow-right for the next page, external-link when it opens another site. Rails: `icon:`", "arrow-right"],
+  }, {
     type: { control: 'inline-radio', options: ['inline', 'standalone'] },
     state: { control: 'inline-radio', options: ['rest', 'hover', 'pressed', 'focus'] },
     trailingIcon: { control: 'inline-radio', options: ['', 'arrow-right', 'external-link'] },
-  },
+  }),
   args: { label: 'View plan details', type: 'standalone', state: 'rest', trailingIcon: 'arrow-right' },
   render: (args) => link(args),
 };

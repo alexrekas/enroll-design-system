@@ -1,4 +1,4 @@
-import { canvas, figma, matrix } from '../../_shared.js';
+import { canvas, figma, matrix, argDocs } from '../../_shared.js';
 import { iconNames } from '../../icons.js';
 import { LEVELS, STATES, button } from '../../markup/button.js';
 
@@ -30,13 +30,20 @@ Three styles × four levels. **Solid** leads; **Outline** and **Ghost** are lowe
 <%= render Vitae::ButtonComponent.new(label: "(855) 532-5465", href: "tel:+18555325465", style: :ghost, icon_left: "phone") %>
 \`\`\`` } },
   },
-  argTypes: {
+  argTypes: argDocs({
+    label: ["Button text. Start with a verb that says what happens (\"Continue\", \"Upload documents\"). Rails: `label:`", undefined, "string"],
+    style: ["Emphasis. Solid for the main action on a page, Outline for secondary actions, Ghost for Cancel or inline tools. Rails: `style:`", "solid"],
+    level: ["Color role. Destructive is only for irreversible actions like Remove or Delete. Rails: `level:`", "primary"],
+    state: ["Preview a state. In real use hover, pressed and focus come from the browser. Disabled maps to `disabled: true` in Rails.", "rest"],
+    iconLeft: ["Fluent icon before the label (20px Filled). Empty for none. Rails: `icon_left:`", "(none)", "icon name"],
+    iconRight: ["Fluent icon after the label, e.g. arrow-right for Next. Rails: `icon_right:`", "(none)", "icon name"],
+  }, {
     style: { control: 'inline-radio', options: ['solid', 'outline', 'ghost'] },
     level: { control: 'inline-radio', options: LEVELS },
     state: { control: 'select', options: STATES },
     iconLeft: { control: 'select', options: ['', ...iconNames] },
     iconRight: { control: 'select', options: ['', ...iconNames] },
-  },
+  }),
   args: { label: 'Continue', style: 'solid', level: 'primary', state: 'rest', iconLeft: '', iconRight: '' },
   render: (args) => button(args),
 };

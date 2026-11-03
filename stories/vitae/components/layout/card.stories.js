@@ -1,4 +1,4 @@
-import { canvas, figma, matrix } from '../../_shared.js';
+import { canvas, figma, matrix, argDocs } from '../../_shared.js';
 import { card, wireLayout } from '../../markup/layout.js';
 
 export default {
@@ -22,7 +22,13 @@ export default {
 
 export const Playground = {
   args: { type: 'static', state: 'rest', title: 'Health coverage', withTag: true, footer: true },
-  argTypes: { type: { control: 'inline-radio', options: ['static', 'radio', 'checkbox'] }, state: { control: 'select', options: ['rest', 'hover', 'pressed', 'focus', 'selected', 'error', 'disabled'] } },
+  argTypes: argDocs({
+    type: ["Static holds content. Radio and Checkbox make the whole card the label of a real input. Rails: `type:`", "static"],
+    state: ["Preview a state. In real use hover, pressed and focus come from the browser. Selected, error and disabled map to `checked:`, `error:` and `disabled:` in Rails.", "rest"],
+    title: ["Card heading (h4 by default). Rails: `title:` and `heading_level:`", undefined, "string (required)"],
+    withTag: ["Show a tag next to the title. Rails: the `tag` slot.", undefined, "boolean"],
+    footer: ["Show the footer with actions. Not for selectable cards. Rails: the `footer` slot.", undefined, "boolean"],
+  }, { type: { control: 'inline-radio', options: ['static', 'radio', 'checkbox'] }, state: { control: 'select', options: ['rest', 'hover', 'pressed', 'focus', 'selected', 'error', 'disabled'] } }),
   render: (args) => card(args),
   parameters: {
     design: figma('183:349', 'Card'),

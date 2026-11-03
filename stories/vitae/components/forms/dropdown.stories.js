@@ -1,4 +1,4 @@
-import { canvas, figma, matrix } from '../../_shared.js';
+import { canvas, figma, matrix, argDocs } from '../../_shared.js';
 import { iconNames } from '../../icons.js';
 import { STATES, field } from '../../markup/field.js';
 
@@ -34,7 +34,18 @@ Choose one option from about 5–15 (use Radio for 2–4). Shares one field anat
       options: [["Single", "single"], ["Married filing jointly", "mfj"]], required: true) %>
 \`\`\`` } },
   },
-  argTypes: { state: { control: 'select', options: STATES } },
+  argTypes: argDocs({
+    kind: ["Text input or select. In Rails use Vitae::InputComponent or Vitae::DropdownComponent.", "input", undefined, {"control": false}],
+    label: ["Visible label. Always set it, even when showLabel is off, so screen readers get a name. Rails: `label:`", undefined, "string (required)"],
+    placeholder: ["Text shown before a choice is made. Rails: `placeholder:`", "Select", "string"],
+    value: ["Current value. Rails: `value:`", "(none)", "string"],
+    helper: ["Hint under the field, linked with aria-describedby. Rails: `helper:`", "(none)", "string"],
+    error: ["Error message under the field. Adds the error icon and aria-invalid. Say how to fix it. Rails: `error:`", "(none)", "string"],
+    required: ["Adds the asterisk and the required attribute. Rails: `required:`", "false", "boolean"],
+    info: ["Adds an info button after the label that opens more help. Rails: `info:`", "false", "boolean"],
+    showLabel: ["Show the label. Turn off only when the context makes the field obvious; the label stays for screen readers. Rails: `show_label:`", "true", "boolean"],
+    state: ["Preview a state. In real use hover, pressed and focus come from the browser. Error and disabled map to `error:` and `disabled: true` in Rails.", "rest"],
+  }, { state: { control: 'select', options: STATES } }),
   args: { kind: 'select', label: 'Tax filing status', placeholder: 'Select', value: '', helper: '', error: '', required: true, info: false, showLabel: true, state: 'rest' },
   render: (args) => field(args),
 };

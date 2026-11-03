@@ -1,4 +1,4 @@
-import { canvas, esc, figma } from '../../_shared.js';
+import { canvas, esc, figma, argDocs } from '../../_shared.js';
 
 export default {
   title: 'Vitae 27/Components/Feedback/Tooltip',
@@ -8,7 +8,10 @@ export default {
 
 export const Playground = {
   args: { message: 'Include income from jobs, self-employment and unemployment for everyone in your tax household.', placement: 'top' },
-  argTypes: { placement: { control: 'inline-radio', options: ['top', 'bottom', 'left', 'right', 'none'] } },
+  argTypes: argDocs({
+    message: ["Tooltip text. Short supporting help; never the only place essential information appears.", undefined, "string"],
+    placement: ["Which side of the trigger the tooltip sits on, which sets where the arrow points. None has no arrow.", "top"],
+  }, { placement: { control: 'inline-radio', options: ['top', 'bottom', 'left', 'right', 'none'] } }),
   render: ({ message, placement }) => `<div style="padding:24px"><div role="tooltip" class="vitae-tooltip vitae-tooltip--${placement}">${esc(message)}</div></div>`,
   parameters: {
     design: figma('101:33', 'Tooltip'),

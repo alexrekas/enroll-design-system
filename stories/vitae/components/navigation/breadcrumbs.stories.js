@@ -1,4 +1,4 @@
-import { canvas, figma, matrix } from '../../_shared.js';
+import { canvas, figma, matrix, argDocs } from '../../_shared.js';
 import { backLink, crumbs } from '../../markup/navigation.js';
 
 export default {
@@ -10,7 +10,9 @@ export default {
 
 export const Playground = {
   args: { depth: '3' },
-  argTypes: { depth: { control: 'inline-radio', options: ['2', '3', '4', 'Collapsed'] } },
+  argTypes: argDocs({
+    depth: ["How many levels to show. Collapsed keeps the first, parent and current page and hides the middle behind a \"…\" button.", undefined, "2 | 3 | 4 | Collapsed (example)"],
+  }, { depth: { control: 'inline-radio', options: ['2', '3', '4', 'Collapsed'] } }),
   render: ({ depth }) => crumbs(depth),
   parameters: {
     design: figma('135:101', 'Breadcrumbs'),

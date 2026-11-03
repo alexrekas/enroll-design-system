@@ -1,4 +1,4 @@
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { search } from '../../markup/layout.js';
 
 export default {
@@ -17,6 +17,10 @@ export default {
 
 export const Playground = {
   args: { value: 'kai', open: true },
+  argTypes: argDocs({
+    value: ["Typed text. Matching text in each result is bold. Rails: `value:`", "(none)", "string"],
+    open: ["Show the results list. Rails: `open:`", "false", "boolean"],
+  }),
   render: (args) => `<div style="min-height:220px">${search(args)}</div>`,
   parameters: {
     design: figma('87:3', 'Search'),

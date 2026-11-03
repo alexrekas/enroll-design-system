@@ -1,5 +1,5 @@
 import { expect, userEvent, within } from 'storybook/test';
-import { canvas, figma } from '../../_shared.js';
+import { canvas, figma, argDocs } from '../../_shared.js';
 import { compareTable, tray, wireShopping } from '../../markup/shopping.js';
 
 export default {
@@ -11,7 +11,10 @@ export default {
 export const Tray = {
   name: 'Tray',
   args: { count: 2, width: 1140 },
-  argTypes: { count: { control: 'inline-radio', options: [1, 2, 3] }, width: { control: 'inline-radio', options: [1140, 375] } },
+  argTypes: argDocs({
+    count: ["Plans selected for comparison (up to 3).", "2"],
+    width: ["Container width in px, to see the phone layout.", undefined, "number (example)"],
+  }, { count: { control: 'inline-radio', options: [1, 2, 3] }, width: { control: 'inline-radio', options: [1140, 375] } }),
   render: ({ count, width }) => `<div style="width:${width}px;max-width:100%">${tray(count)}</div>`,
   parameters: {
     design: [figma('293:38166', 'Plan compare/Tray'), figma('293:38161', 'Plan compare/Chip')],
@@ -29,7 +32,10 @@ Appears once a plan is checked. Background \`--vitae-surface-header-bar\`. It's 
 export const Table = {
   name: 'Table',
   args: { plans: 3, compact: false },
-  argTypes: { plans: { control: 'inline-radio', options: [2, 3] } },
+  argTypes: argDocs({
+    plans: ["Number of plans compared.", "3"],
+    compact: ["Tighter rows.", "false", "boolean"],
+  }, { plans: { control: 'inline-radio', options: [2, 3] } }),
   render: (args) => `<div style="max-width:1140px">${compareTable(args)}</div>`,
   parameters: {
     design: [figma('295:38844', 'Plan compare/Table'), figma('298:39641', 'Plan compare/Plan header'), figma('295:42', 'Plan compare/Row')],
