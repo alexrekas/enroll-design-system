@@ -1,7 +1,7 @@
 import { canvas, figma, esc } from './_shared.js';
 import { logoColor, logoWhite } from './logos.js';
 
-const NAMES = { ea: 'Enroll App', dc: 'DC Health Link', ma: 'Massachusetts Health Connector', me: 'CoverME.gov' };
+const NAMES = { ea: 'EnrollApp', dc: 'DC Health Link', ma: 'Massachusetts Health Connector', me: 'CoverME.gov' };
 
 export default {
   title: 'Vitae 27/Logos',

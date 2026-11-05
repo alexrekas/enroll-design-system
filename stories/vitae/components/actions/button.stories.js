@@ -11,6 +11,8 @@ export default {
     docs: { description: { component: `
 Three styles × four levels. **Solid** leads; **Outline** and **Ghost** are lower emphasis (Ghost for Cancel or inline tools). **Destructive** is for irreversible actions. All are 44px tall.
 
+**Solid primary is the call to action: one per page.** It's the step we want people to take next (the happy path), so it uses its own color role, \`--vitae-action-cta\`. In EA that's signal green with ink text (8.6:1); in DC, MA and ME it's their primary color, as before. Every other action on the page is secondary, outline or ghost. The page templates fail CI if they show more than one.
+
 \`<button class="vitae-btn vitae-btn--solid vitae-btn--primary">\`
 
 - Icons: 20px Filled, 8px gap. Never icon-only without an \`aria-label\`.

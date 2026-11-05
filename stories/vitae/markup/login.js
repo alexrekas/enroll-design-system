@@ -9,7 +9,7 @@ import { checkbox } from './selection.js';
 
 // Values mirror the login/* client tokens in the Brand collection.
 export const LOGIN_CLIENT = {
-  ea: { name: 'Enroll App', phone: '(000) 000-0000 / TTY 000', tel: '+10000000000', banner: false, notice: false, gov: ['An official website', 'Official websites use .gov', 'A .gov website belongs to an official government organization.'] },
+  ea: { name: 'EnrollApp', phone: '(000) 000-0000 / TTY 000', tel: '+10000000000', banner: false, notice: false, gov: ['An official website', 'Official websites use .gov', 'A .gov website belongs to an official government organization.'] },
   dc: { name: 'DC Health Link', phone: '(855) 532-5465 / TTY: 711', tel: '+18555325465', banner: false, notice: true, gov: ['An official website of the District of Columbia', 'Official websites use .dc.gov', 'A .dc.gov website belongs to an official government organization in the District of Columbia.'] },
   ma: { name: 'Massachusetts Health Connector', phone: '1-888-813-9220', tel: '+18888139220', banner: true, notice: false, gov: ['An official website of the Commonwealth of Massachusetts', 'Official websites use .mass.gov', 'A .mass.gov website belongs to an official government organization in Massachusetts.'] },
   me: { name: 'CoverME.gov', phone: '(866) 636-0355 / TTY 711', tel: '+18666360355', banner: false, notice: false, gov: ['An official website of the State of Maine', 'Official websites use .maine.gov', 'A .maine.gov website belongs to an official government organization in Maine.'] },

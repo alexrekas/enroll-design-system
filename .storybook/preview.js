@@ -1,4 +1,4 @@
-// Brand fonts, self-hosted (Latin subset). EA, DC and MA use Open Sans; ME uses Barlow.
+// Brand fonts, self-hosted (Latin subset). EA uses Inter; DC and MA use Open Sans; ME uses Barlow.
 import '@fontsource/open-sans/latin-300.css';
 import '@fontsource/open-sans/latin-400.css';
 import '@fontsource/open-sans/latin-500.css';
@@ -8,6 +8,10 @@ import '@fontsource/barlow/latin-400.css';
 import '@fontsource/barlow/latin-500.css';
 import '@fontsource/barlow/latin-600.css';
 import '@fontsource/barlow/latin-700.css';
+import '@fontsource/inter/latin-400.css';
+import '@fontsource/inter/latin-500.css';
+import '@fontsource/inter/latin-600.css';
+import '@fontsource/inter/latin-700.css';
 import './tokens.css';
 import '../dist/v2/css/vitae.css';
 

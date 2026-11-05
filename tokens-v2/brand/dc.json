@@ -454,6 +454,34 @@
       "progress-upcoming": {
         "$value": "{color.neutral.040}",
         "$type": "color"
+      },
+      "cta": {
+        "$value": "{brand.dark.action-primary}",
+        "$type": "color"
+      },
+      "cta-hover": {
+        "$value": "{brand.dark.action-primary-hover}",
+        "$type": "color"
+      },
+      "cta-active": {
+        "$value": "{brand.dark.action-primary-active}",
+        "$type": "color"
+      },
+      "on-cta": {
+        "$value": "{brand.dark.on-primary}",
+        "$type": "color"
+      },
+      "link": {
+        "$value": "{brand.primary.040}",
+        "$type": "color"
+      },
+      "link-hover": {
+        "$value": "{brand.primary.030}",
+        "$type": "color"
+      },
+      "link-active": {
+        "$value": "{brand.primary.020}",
+        "$type": "color"
       }
     },
     "font": {
@@ -480,6 +508,11 @@
         "$value": "{radius.12}",
         "$type": "dimension",
         "$description": "Focus ring around cards: card radius + 4 (12px for all clients)."
+      },
+      "tag": {
+        "$value": "{radius.full}",
+        "$type": "dimension",
+        "$description": "Tag and status-pill radius. EA uses 4px so tags never look like its pill buttons; other clients keep full pills."
       }
     },
     "light": {
@@ -564,6 +597,55 @@
       },
       "progress-upcoming": {
         "$value": "{color.neutral.150}",
+        "$type": "color"
+      },
+      "cta": {
+        "$value": "{brand.primary.100}",
+        "$type": "color",
+        "$description": "Call-to-action fill: the solid primary button, one per page. EA uses signal green; other clients use their primary color."
+      },
+      "cta-hover": {
+        "$value": "{brand.primary.120}",
+        "$type": "color"
+      },
+      "cta-active": {
+        "$value": "{brand.primary.140}",
+        "$type": "color"
+      },
+      "on-cta": {
+        "$value": "{color.white}",
+        "$type": "color"
+      },
+      "action-secondary": {
+        "$value": "{brand.secondary.100}",
+        "$type": "color"
+      },
+      "action-secondary-hover": {
+        "$value": "{brand.secondary.120}",
+        "$type": "color"
+      },
+      "action-secondary-active": {
+        "$value": "{brand.secondary.140}",
+        "$type": "color"
+      },
+      "subtle-secondary-hover": {
+        "$value": "{brand.secondary.015}",
+        "$type": "color"
+      },
+      "subtle-secondary-active": {
+        "$value": "{brand.secondary.025}",
+        "$type": "color"
+      },
+      "link": {
+        "$value": "{brand.primary.100}",
+        "$type": "color"
+      },
+      "link-hover": {
+        "$value": "{brand.primary.120}",
+        "$type": "color"
+      },
+      "link-active": {
+        "$value": "{brand.primary.140}",
         "$type": "color"
       }
     }

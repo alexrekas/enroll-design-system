@@ -4,7 +4,10 @@
 // use the same geometry as the color logos with every fill and stroke set to white;
 // MA's white logo is a white alpha mask of the same PNG. So the white version is derived
 // here from the exported color artwork instead of shipping a second copy of the path data.
-import { logos as colorLogos } from '../brand-assets.js';
+import { logos as legacyLogos, enrollAppLogo } from '../brand-assets.js';
+
+// EA uses the EnrollApp logo (Enroll Microsite file); DC, MA and ME use their client logos.
+const colorLogos = { ...legacyLogos, ea: enrollAppLogo };
 
 const toWhite = (html) => html
   .replace(/(fill|stroke)="#[0-9A-Fa-f]{3,8}"/g, '$1="#FFFFFF"')
@@ -12,7 +15,9 @@ const toWhite = (html) => html
   .replace(/url\(#([^)]+)\)/g, 'url(#$1-white)');
 
 const white = {
-  ea: toWhite(colorLogos.ea),
+  // EnrollApp in dark mode keeps its green mark (6.1:1 on the dark page) and turns only the ink wordmark white,
+  // matching the dark lockup in the microsite file.
+  ea: colorLogos.ea.replace(/fill="#0C264A"/g, 'fill="#FFFFFF"'),
   dc: toWhite(colorLogos.dc),
   me: toWhite(colorLogos.me),
   ma: colorLogos.ma.replace('<img ', '<img data-white '), // CSS turns the PNG into a white mask

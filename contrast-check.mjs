@@ -114,6 +114,8 @@ const V2 = [
     [`Action${a}TextHover`, `Action${a}SubtleHover`, 4.5, 'outline/ghost hover'],
     [`Action${a}TextActive`, `Action${a}SubtleActive`, 4.5, 'outline/ghost pressed'],
   ]),
+  // Call-to-action button (solid primary): its own role so EA can use signal green with ink text.
+  ...['', 'Hover', 'Active'].map((st) => ['TextOnCta', `ActionCta${st}`, 4.5, 'CTA button label']),
   ['TextBody', 'FieldBackground', 4.5, 'field value'], ['TextPlaceholder', 'FieldBackground', 4.5, 'placeholder'],
   ['TextBody', 'FieldBackgroundActive', 4.5, 'field value (active)'], ['FieldBorder', 'FieldBackground', 3, 'field border'],
   ['FieldBorderActive', 'FieldBackground', 3, 'field border (active)'],

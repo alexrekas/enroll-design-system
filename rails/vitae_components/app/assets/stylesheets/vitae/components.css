@@ -36,6 +36,9 @@
 .vitae-btn--secondary { --_c: var(--vitae-action-secondary); --_ch: var(--vitae-action-secondary-hover); --_ca: var(--vitae-action-secondary-active); --_on: var(--vitae-text-on-secondary); --_t: var(--vitae-action-secondary-text); --_th: var(--vitae-action-secondary-text-hover); --_ta: var(--vitae-action-secondary-text-active); --_sh: var(--vitae-action-secondary-subtle-hover); --_sa: var(--vitae-action-secondary-subtle-active); }
 .vitae-btn--tertiary { --_c: var(--vitae-action-tertiary); --_ch: var(--vitae-action-tertiary-hover); --_ca: var(--vitae-action-tertiary-active); --_on: var(--vitae-text-on-tertiary); --_t: var(--vitae-action-tertiary-text); --_th: var(--vitae-action-tertiary-text-hover); --_ta: var(--vitae-action-tertiary-text-active); --_sh: var(--vitae-action-tertiary-subtle-hover); --_sa: var(--vitae-action-tertiary-subtle-active); }
 .vitae-btn--destructive { --_c: var(--vitae-action-destructive); --_ch: var(--vitae-action-destructive-hover); --_ca: var(--vitae-action-destructive-active); --_on: var(--vitae-text-on-destructive); --_t: var(--vitae-action-destructive-text); --_th: var(--vitae-action-destructive-text-hover); --_ta: var(--vitae-action-destructive-text-active); --_sh: var(--vitae-action-destructive-subtle-hover); --_sa: var(--vitae-action-destructive-subtle-active); }
+/* The solid primary button is the call to action (one per page): it uses the CTA role, which is EA's signal green
+   with ink text and equals the primary color for the other clients. Outline and ghost primary keep the primary color. */
+.vitae-btn--primary.vitae-btn--solid { --_c: var(--vitae-action-cta); --_ch: var(--vitae-action-cta-hover); --_ca: var(--vitae-action-cta-active); --_on: var(--vitae-text-on-cta); }
 .vitae-btn--solid { background: var(--_c); border-color: var(--_c); color: var(--_on); }
 .vitae-btn--solid:not(:disabled, [aria-disabled="true"]):hover, .vitae-btn--solid.is-hover { background: var(--_ch); border-color: var(--_ch); }
 .vitae-btn--solid:not(:disabled, [aria-disabled="true"]):active, .vitae-btn--solid.is-pressed { background: var(--_ca); border-color: var(--_ca); }
@@ -184,7 +187,7 @@ html.vitae-kbd .vitae-input:focus, .vitae-input.is-focus { outline: var(--_ring)
 /* ---------- Tag ---------- */
 .vitae-tag {
   display: inline-flex; align-items: center; gap: var(--vitae-space-004); min-height: 24px; padding: 1px 7px; white-space: nowrap;
-  border: var(--vitae-border-width-1) solid var(--vitae-border-strong); border-radius: var(--vitae-radius-full);
+  border: var(--vitae-border-width-1) solid var(--vitae-border-strong); border-radius: var(--vitae-brand-radius-tag);
   background: var(--vitae-background-layer-02); color: var(--vitae-text-body);
   font-size: var(--vitae-font-size-16); line-height: var(--vitae-font-line-height-20); font-weight: var(--vitae-font-weight-semibold);
 }

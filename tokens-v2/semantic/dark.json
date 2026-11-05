@@ -125,19 +125,23 @@
       "$type": "color"
     },
     "link": {
-      "$value": "{brand.primary.040}",
+      "$value": "{brand.dark.link}",
       "$type": "color"
     },
     "link-hover": {
-      "$value": "{brand.primary.030}",
+      "$value": "{brand.dark.link-hover}",
       "$type": "color"
     },
     "link-active": {
-      "$value": "{brand.primary.020}",
+      "$value": "{brand.dark.link-active}",
       "$type": "color"
     },
     "on-primary": {
       "$value": "{brand.dark.on-primary}",
+      "$type": "color"
+    },
+    "on-cta": {
+      "$value": "{brand.dark.on-cta}",
       "$type": "color"
     },
     "on-secondary": {
@@ -179,6 +183,19 @@
     },
     "primary-active": {
       "$value": "{brand.dark.action-primary-active}",
+      "$type": "color"
+    },
+    "cta": {
+      "$value": "{brand.dark.cta}",
+      "$type": "color",
+      "$description": "Call-to-action button fill (the solid primary button only, one per page)."
+    },
+    "cta-hover": {
+      "$value": "{brand.dark.cta-hover}",
+      "$type": "color"
+    },
+    "cta-active": {
+      "$value": "{brand.dark.cta-active}",
       "$type": "color"
     },
     "secondary": {

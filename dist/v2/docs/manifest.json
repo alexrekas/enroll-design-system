@@ -651,6 +651,20 @@
   "source": "primitive"
  },
  {
+  "path": "color.ea.cta.rest",
+  "cssVar": "--vitae-color-ea-cta-rest",
+  "type": "color",
+  "description": "EnrollApp signal green: the call-to-action fill. Ink text only (8.6:1); never white text, never body text.",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.cta.hover",
+  "cssVar": "--vitae-color-ea-cta-hover",
+  "type": "color",
+  "description": "CTA hover, between signal green and logo green (ink text 6.5:1).",
+  "source": "primitive"
+ },
+ {
   "path": "color.dc.primary.100",
   "cssVar": "--vitae-color-dc-primary-100",
   "type": "color",
@@ -3360,6 +3374,13 @@
   "source": "primitive"
  },
  {
+  "path": "font.family.inter",
+  "cssVar": "--vitae-font-family-inter",
+  "type": "fontFamily",
+  "description": "",
+  "source": "primitive"
+ },
+ {
   "path": "motion.duration.fast-01",
   "cssVar": "--vitae-motion-duration-fast-01",
   "type": "duration",
@@ -4228,6 +4249,55 @@
   "source": "brand"
  },
  {
+  "path": "brand.dark.cta",
+  "cssVar": "--vitae-brand-dark-cta",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.cta-hover",
+  "cssVar": "--vitae-brand-dark-cta-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.cta-active",
+  "cssVar": "--vitae-brand-dark-cta-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.on-cta",
+  "cssVar": "--vitae-brand-dark-on-cta",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.link",
+  "cssVar": "--vitae-brand-dark-link",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.link-hover",
+  "cssVar": "--vitae-brand-dark-link-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.link-active",
+  "cssVar": "--vitae-brand-dark-link-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
   "path": "brand.font.family",
   "cssVar": "--vitae-brand-font-family",
   "type": "fontFamily",
@@ -4260,6 +4330,13 @@
   "cssVar": "--vitae-brand-radius-card-focus-ring",
   "type": "dimension",
   "description": "Focus ring around cards: card radius + 4 (12px for all clients).",
+  "source": "brand"
+ },
+ {
+  "path": "brand.radius.tag",
+  "cssVar": "--vitae-brand-radius-tag",
+  "type": "dimension",
+  "description": "Tag and status-pill radius. EA uses 4px so tags never look like its pill buttons; other clients keep full pills.",
   "source": "brand"
  },
  {
@@ -4398,6 +4475,90 @@
  {
   "path": "brand.light.progress-upcoming",
   "cssVar": "--vitae-brand-light-progress-upcoming",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.cta",
+  "cssVar": "--vitae-brand-light-cta",
+  "type": "color",
+  "description": "Call-to-action fill: the solid primary button, one per page. EA uses signal green; other clients use their primary color.",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.cta-hover",
+  "cssVar": "--vitae-brand-light-cta-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.cta-active",
+  "cssVar": "--vitae-brand-light-cta-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.on-cta",
+  "cssVar": "--vitae-brand-light-on-cta",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.action-secondary",
+  "cssVar": "--vitae-brand-light-action-secondary",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.action-secondary-hover",
+  "cssVar": "--vitae-brand-light-action-secondary-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.action-secondary-active",
+  "cssVar": "--vitae-brand-light-action-secondary-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.subtle-secondary-hover",
+  "cssVar": "--vitae-brand-light-subtle-secondary-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.subtle-secondary-active",
+  "cssVar": "--vitae-brand-light-subtle-secondary-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.link",
+  "cssVar": "--vitae-brand-light-link",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.link-hover",
+  "cssVar": "--vitae-brand-light-link-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.link-active",
+  "cssVar": "--vitae-brand-light-link-active",
   "type": "color",
   "description": "",
   "source": "brand"
@@ -4830,6 +4991,13 @@
   "source": "semantic"
  },
  {
+  "path": "text.on-cta",
+  "cssVar": "--vitae-text-on-cta",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
   "path": "text.on-secondary",
   "cssVar": "--vitae-text-on-secondary",
   "type": "color",
@@ -4888,6 +5056,27 @@
  {
   "path": "action.primary-active",
   "cssVar": "--vitae-action-primary-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.cta",
+  "cssVar": "--vitae-action-cta",
+  "type": "color",
+  "description": "Call-to-action button fill (the solid primary button only, one per page).",
+  "source": "semantic"
+ },
+ {
+  "path": "action.cta-hover",
+  "cssVar": "--vitae-action-cta-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.cta-active",
+  "cssVar": "--vitae-action-cta-active",
   "type": "color",
   "description": "",
   "source": "semantic"

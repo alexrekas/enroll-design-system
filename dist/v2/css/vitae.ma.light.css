@@ -27,75 +27,77 @@
   --vitae-color-neutral-070: #b7bcc2;
   --vitae-color-neutral-080: #acb1b8;
   --vitae-color-neutral-090: #9ba0a7;
-  --vitae-color-ea-primary-100: #0254bc;
-  --vitae-color-ea-primary-110: #024caa;
-  --vitae-color-ea-primary-120: #024396;
-  --vitae-color-ea-primary-130: #013b84;
-  --vitae-color-ea-primary-140: #013271;
-  --vitae-color-ea-primary-150: #012a5e;
-  --vitae-color-ea-primary-160: #01224b;
-  --vitae-color-ea-primary-170: #011938;
-  --vitae-color-ea-primary-180: #001126;
-  --vitae-color-ea-primary-190: #000813;
-  --vitae-color-ea-primary-005: #f2f6fc;
-  --vitae-color-ea-primary-010: #e5eef8;
-  --vitae-color-ea-primary-015: #d9e6f5;
-  --vitae-color-ea-primary-020: #ccddf2;
-  --vitae-color-ea-primary-025: #c0d4ee;
-  --vitae-color-ea-primary-030: #b3cbeb;
-  --vitae-color-ea-primary-035: #a7c3e8;
-  --vitae-color-ea-primary-040: #9abbe4;
-  --vitae-color-ea-primary-050: #80a9dd;
-  --vitae-color-ea-primary-060: #6798d7;
-  --vitae-color-ea-primary-070: #4d87d0;
-  --vitae-color-ea-primary-080: #3576c9;
-  --vitae-color-ea-primary-090: #1b65c3;
-  --vitae-color-ea-secondary-100: #3b5b81;
-  --vitae-color-ea-secondary-110: #355274;
-  --vitae-color-ea-secondary-120: #2f4967;
-  --vitae-color-ea-secondary-130: #29405b;
-  --vitae-color-ea-secondary-140: #23374d;
-  --vitae-color-ea-secondary-150: #1e2e41;
-  --vitae-color-ea-secondary-160: #182434;
-  --vitae-color-ea-secondary-170: #121b27;
-  --vitae-color-ea-secondary-180: #0c121a;
-  --vitae-color-ea-secondary-190: #06090d;
-  --vitae-color-ea-secondary-005: #f5f7f9;
-  --vitae-color-ea-secondary-010: #ebeef2;
-  --vitae-color-ea-secondary-015: #e2e7ec;
-  --vitae-color-ea-secondary-020: #d8dee6;
-  --vitae-color-ea-secondary-025: #ced6df;
-  --vitae-color-ea-secondary-030: #c4cdd9;
-  --vitae-color-ea-secondary-035: #bbc6d3;
-  --vitae-color-ea-secondary-040: #b1bdcd;
-  --vitae-color-ea-secondary-050: #9dadc0;
-  --vitae-color-ea-secondary-060: #899db3;
-  --vitae-color-ea-secondary-070: #758ca7;
-  --vitae-color-ea-secondary-080: #627c9a;
-  --vitae-color-ea-secondary-090: #4e6b8d;
-  --vitae-color-ea-tertiary-100: #441c36;
-  --vitae-color-ea-tertiary-110: #3d1931;
-  --vitae-color-ea-tertiary-120: #36162b;
-  --vitae-color-ea-tertiary-130: #301426;
-  --vitae-color-ea-tertiary-140: #291120;
-  --vitae-color-ea-tertiary-150: #220e1b;
-  --vitae-color-ea-tertiary-160: #1b0b16;
-  --vitae-color-ea-tertiary-170: #140810;
-  --vitae-color-ea-tertiary-180: #0e060b;
-  --vitae-color-ea-tertiary-190: #070305;
-  --vitae-color-ea-tertiary-005: #f5f3f5;
-  --vitae-color-ea-tertiary-010: #ece8eb;
-  --vitae-color-ea-tertiary-015: #e3dde1;
-  --vitae-color-ea-tertiary-020: #dad2d7;
-  --vitae-color-ea-tertiary-025: #d0c6cd;
-  --vitae-color-ea-tertiary-030: #c7bac2;
-  --vitae-color-ea-tertiary-035: #beb0b9;
-  --vitae-color-ea-tertiary-040: #b4a4af;
-  --vitae-color-ea-tertiary-050: #a18d9a;
-  --vitae-color-ea-tertiary-060: #8f7786;
-  --vitae-color-ea-tertiary-070: #7c6072;
-  --vitae-color-ea-tertiary-080: #69495e;
-  --vitae-color-ea-tertiary-090: #56324a;
+  --vitae-color-ea-primary-100: #0c264a;
+  --vitae-color-ea-primary-110: #0b2243;
+  --vitae-color-ea-primary-120: #0a1e3b;
+  --vitae-color-ea-primary-130: #081b34;
+  --vitae-color-ea-primary-140: #07172c;
+  --vitae-color-ea-primary-150: #061325;
+  --vitae-color-ea-primary-160: #050f1e;
+  --vitae-color-ea-primary-170: #040b16;
+  --vitae-color-ea-primary-180: #02080f;
+  --vitae-color-ea-primary-190: #010407;
+  --vitae-color-ea-primary-005: #f3f4f6;
+  --vitae-color-ea-primary-010: #e7e9ed;
+  --vitae-color-ea-primary-015: #dbdee4;
+  --vitae-color-ea-primary-020: #ced4db;
+  --vitae-color-ea-primary-025: #c2c9d2;
+  --vitae-color-ea-primary-030: #b6bec9;
+  --vitae-color-ea-primary-035: #aab3c0;
+  --vitae-color-ea-primary-040: #9ea8b7;
+  --vitae-color-ea-primary-050: #8692a4;
+  --vitae-color-ea-primary-060: #6d7d92;
+  --vitae-color-ea-primary-070: #556780;
+  --vitae-color-ea-primary-080: #3d516e;
+  --vitae-color-ea-primary-090: #243c5c;
+  --vitae-color-ea-secondary-100: #00aa60;
+  --vitae-color-ea-secondary-110: #009956;
+  --vitae-color-ea-secondary-120: #00884d;
+  --vitae-color-ea-secondary-130: #007743;
+  --vitae-color-ea-secondary-140: #00663a;
+  --vitae-color-ea-secondary-150: #005530;
+  --vitae-color-ea-secondary-160: #004426;
+  --vitae-color-ea-secondary-170: #00331d;
+  --vitae-color-ea-secondary-180: #002213;
+  --vitae-color-ea-secondary-190: #00110a;
+  --vitae-color-ea-secondary-005: #f2fbf7;
+  --vitae-color-ea-secondary-010: #e6f6ef;
+  --vitae-color-ea-secondary-015: #d9f2e7;
+  --vitae-color-ea-secondary-020: #cceedf;
+  --vitae-color-ea-secondary-025: #bfead7;
+  --vitae-color-ea-secondary-030: #b2e6cf;
+  --vitae-color-ea-secondary-035: #a6e1c7;
+  --vitae-color-ea-secondary-040: #99ddbf;
+  --vitae-color-ea-secondary-050: #80d4b0;
+  --vitae-color-ea-secondary-060: #66cca0;
+  --vitae-color-ea-secondary-070: #4dc490;
+  --vitae-color-ea-secondary-080: #33bb80;
+  --vitae-color-ea-secondary-090: #19b270;
+  --vitae-color-ea-tertiary-100: #51607a;
+  --vitae-color-ea-tertiary-110: #49566e;
+  --vitae-color-ea-tertiary-120: #414d62;
+  --vitae-color-ea-tertiary-130: #394355;
+  --vitae-color-ea-tertiary-140: #313a49;
+  --vitae-color-ea-tertiary-150: #28303d;
+  --vitae-color-ea-tertiary-160: #202631;
+  --vitae-color-ea-tertiary-170: #181d25;
+  --vitae-color-ea-tertiary-180: #101318;
+  --vitae-color-ea-tertiary-190: #080a0c;
+  --vitae-color-ea-tertiary-005: #f6f7f8;
+  --vitae-color-ea-tertiary-010: #eeeff2;
+  --vitae-color-ea-tertiary-015: #e5e7eb;
+  --vitae-color-ea-tertiary-020: #dcdfe4;
+  --vitae-color-ea-tertiary-025: #d4d7de;
+  --vitae-color-ea-tertiary-030: #cbcfd7;
+  --vitae-color-ea-tertiary-035: #c2c7d0;
+  --vitae-color-ea-tertiary-040: #b9bfca;
+  --vitae-color-ea-tertiary-050: #a8b0bc;
+  --vitae-color-ea-tertiary-060: #97a0af;
+  --vitae-color-ea-tertiary-070: #8590a2;
+  --vitae-color-ea-tertiary-080: #748095;
+  --vitae-color-ea-tertiary-090: #627087;
+  --vitae-color-ea-cta-rest: #00e07a; /** EnrollApp signal green: the call-to-action fill. Ink text only (8.6:1); never white text, never body text. */
+  --vitae-color-ea-cta-hover: #00c46b; /** CTA hover, between signal green and logo green (ink text 6.5:1). */
   --vitae-color-dc-primary-100: #003260;
   --vitae-color-dc-primary-110: #002d57;
   --vitae-color-dc-primary-120: #00284d;
@@ -483,6 +485,7 @@
   --vitae-font-weight-bold: 700;
   --vitae-font-family-open-sans: 'Open Sans';
   --vitae-font-family-barlow: Barlow;
+  --vitae-font-family-inter: Inter;
   --vitae-motion-duration-fast-01: 70ms;
   --vitae-motion-duration-fast-02: 110ms;
   --vitae-motion-duration-moderate-01: 150ms;
@@ -635,6 +638,7 @@
   --vitae-brand-radius-card: var(--vitae-radius-8);
   --vitae-brand-radius-focus-ring: var(--vitae-radius-7); /** Button radius + 4px so the focus ring (2px offset + 2px stroke) runs parallel to the button corner. */
   --vitae-brand-radius-card-focus-ring: var(--vitae-radius-12); /** Focus ring around cards: card radius + 4 (12px for all clients). */
+  --vitae-brand-radius-tag: var(--vitae-radius-full); /** Tag and status-pill radius. EA uses 4px so tags never look like its pill buttons; other clients keep full pills. */
   --vitae-brand-light-outline-primary-text: var(--vitae-color-ma-primary-100);
   --vitae-brand-light-outline-primary-text-hover: var(--vitae-color-ma-primary-120);
   --vitae-brand-light-outline-primary-text-active: var(--vitae-color-ma-primary-140);
@@ -648,6 +652,7 @@
   --vitae-brand-light-footer-bg: var(--vitae-color-neutral-030);
   --vitae-brand-light-footer-lang-bg: var(--vitae-color-neutral-030);
   --vitae-brand-light-footer-pill: var(--vitae-color-white);
+  --vitae-brand-light-on-cta: var(--vitae-color-white);
   --vitae-header-brand-gap: var(--vitae-space-024); /** Gap between logo, divider and portal name in the header. */
   --vitae-nav-item-gap: var(--vitae-space-024); /** Gap between nav bar items. */
   --vitae-nav-bar-text: var(--vitae-color-white); /** Text on the consumer nav bar. */
@@ -735,11 +740,29 @@
   --vitae-brand-dark-nav-admin-bar: var(--vitae-brand-primary-150); /** Dark-mode Broker/Admin nav bar (DC secondary 170, EA/MA/ME primary 150; decided 10/20/26). */
   --vitae-brand-dark-nav-drawer: var(--vitae-brand-primary-160); /** Dark mobile drawer surface (DC one step lighter at 150). */
   --vitae-brand-dark-progress-upcoming: var(--vitae-brand-dark-action-primary);
+  --vitae-brand-dark-cta: var(--vitae-brand-dark-action-primary);
+  --vitae-brand-dark-cta-hover: var(--vitae-brand-dark-action-primary-hover);
+  --vitae-brand-dark-cta-active: var(--vitae-brand-dark-action-primary-active);
+  --vitae-brand-dark-on-cta: var(--vitae-brand-dark-on-primary);
+  --vitae-brand-dark-link: var(--vitae-brand-primary-040);
+  --vitae-brand-dark-link-hover: var(--vitae-brand-primary-030);
+  --vitae-brand-dark-link-active: var(--vitae-brand-primary-020);
   --vitae-brand-light-nav-accent: var(--vitae-brand-primary-100); /** Header role label, links and role icon. DC changed from secondary 100 to primary 100 (dark blue) 10/21/26. */
   --vitae-brand-light-nav-rule: var(--vitae-brand-primary-100);
   --vitae-brand-light-nav-bar: var(--vitae-brand-primary-100);
   --vitae-brand-light-nav-admin-bar: var(--vitae-brand-primary-100);
   --vitae-brand-light-progress-upcoming: var(--vitae-brand-primary-100);
+  --vitae-brand-light-cta: var(--vitae-brand-primary-100); /** Call-to-action fill: the solid primary button, one per page. EA uses signal green; other clients use their primary color. */
+  --vitae-brand-light-cta-hover: var(--vitae-brand-primary-120);
+  --vitae-brand-light-cta-active: var(--vitae-brand-primary-140);
+  --vitae-brand-light-action-secondary: var(--vitae-brand-secondary-100);
+  --vitae-brand-light-action-secondary-hover: var(--vitae-brand-secondary-120);
+  --vitae-brand-light-action-secondary-active: var(--vitae-brand-secondary-140);
+  --vitae-brand-light-subtle-secondary-hover: var(--vitae-brand-secondary-015);
+  --vitae-brand-light-subtle-secondary-active: var(--vitae-brand-secondary-025);
+  --vitae-brand-light-link: var(--vitae-brand-primary-100);
+  --vitae-brand-light-link-hover: var(--vitae-brand-primary-120);
+  --vitae-brand-light-link-active: var(--vitae-brand-primary-140);
   --vitae-nav-admin-text: var(--vitae-brand-light-nav-admin-text); /** Text on the Broker/Admin nav bar. */
   --vitae-nav-drawer: var(--vitae-background-layer-02); /** Mobile header drawer surface, one step off the header. */
   --vitae-nav-panel: var(--vitae-background-layer-01); /** Mobile nav overlay panels (Left nav, Progress). Dark is one step above the page. */
@@ -756,17 +779,12 @@
   --vitae-border-brand: var(--vitae-brand-primary-100);
   --vitae-border-focus: var(--vitae-brand-primary-100);
   --vitae-text-heading: var(--vitae-brand-text-heading-light);
-  --vitae-text-link: var(--vitae-brand-primary-100);
-  --vitae-text-link-hover: var(--vitae-brand-primary-120);
-  --vitae-text-link-active: var(--vitae-brand-primary-140);
+  --vitae-text-on-cta: var(--vitae-brand-light-on-cta);
   --vitae-icon-primary: var(--vitae-brand-text-body-light);
   --vitae-icon-brand: var(--vitae-brand-primary-100);
   --vitae-action-primary: var(--vitae-brand-primary-100);
   --vitae-action-primary-hover: var(--vitae-brand-primary-120);
   --vitae-action-primary-active: var(--vitae-brand-primary-140);
-  --vitae-action-secondary: var(--vitae-brand-secondary-100);
-  --vitae-action-secondary-hover: var(--vitae-brand-secondary-120);
-  --vitae-action-secondary-active: var(--vitae-brand-secondary-140);
   --vitae-action-tertiary: var(--vitae-brand-tertiary-100);
   --vitae-action-tertiary-hover: var(--vitae-brand-tertiary-120);
   --vitae-action-tertiary-active: var(--vitae-brand-tertiary-140);
@@ -779,8 +797,6 @@
   --vitae-action-secondary-text: var(--vitae-brand-light-outline-secondary-text);
   --vitae-action-secondary-text-hover: var(--vitae-brand-light-outline-secondary-text-hover);
   --vitae-action-secondary-text-active: var(--vitae-brand-light-outline-secondary-text-active);
-  --vitae-action-secondary-subtle-hover: var(--vitae-brand-secondary-015);
-  --vitae-action-secondary-subtle-active: var(--vitae-brand-secondary-025);
   --vitae-action-tertiary-text: var(--vitae-brand-light-outline-tertiary-text);
   --vitae-action-tertiary-text-hover: var(--vitae-brand-light-outline-tertiary-text-hover);
   --vitae-action-tertiary-text-active: var(--vitae-brand-light-outline-tertiary-text-active);
@@ -796,6 +812,17 @@
   --vitae-nav-item-hover: var(--vitae-action-primary-subtle-hover); /** Left nav item hover fill (plus a 2px action.primary bar at 40%). */
   --vitae-nav-item-pressed: var(--vitae-action-primary-subtle-active); /** Left nav item pressed fill (plus a 2px action.primary bar at 70%). */
   --vitae-nav-item-selected: var(--vitae-background-brand-subtle); /** Left nav selected row fill and mobile nav toggle background. */
+  --vitae-text-link: var(--vitae-brand-light-link);
+  --vitae-text-link-hover: var(--vitae-brand-light-link-hover);
+  --vitae-text-link-active: var(--vitae-brand-light-link-active);
+  --vitae-action-cta: var(--vitae-brand-light-cta); /** Call-to-action button fill (the solid primary button only, one per page). */
+  --vitae-action-cta-hover: var(--vitae-brand-light-cta-hover);
+  --vitae-action-cta-active: var(--vitae-brand-light-cta-active);
+  --vitae-action-secondary: var(--vitae-brand-light-action-secondary);
+  --vitae-action-secondary-hover: var(--vitae-brand-light-action-secondary-hover);
+  --vitae-action-secondary-active: var(--vitae-brand-light-action-secondary-active);
+  --vitae-action-secondary-subtle-hover: var(--vitae-brand-light-subtle-secondary-hover);
+  --vitae-action-secondary-subtle-active: var(--vitae-brand-light-subtle-secondary-active);
   --vitae-table-row-hover: var(--vitae-background-brand-subtle); /** Hover on interactive table rows. */
   --vitae-table-row-selected: var(--vitae-nav-item-selected); /** Selected (checked) table rows. */
 }

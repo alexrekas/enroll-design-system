@@ -102,284 +102,296 @@
     "ea": {
       "primary": {
         "005": {
-          "$value": "#f2f6fc",
+          "$value": "#f3f4f6",
           "$type": "color"
         },
         "010": {
-          "$value": "#e5eef8",
+          "$value": "#e7e9ed",
           "$type": "color"
         },
         "015": {
-          "$value": "#d9e6f5",
+          "$value": "#dbdee4",
           "$type": "color"
         },
         "020": {
-          "$value": "#ccddf2",
+          "$value": "#ced4db",
           "$type": "color"
         },
         "025": {
-          "$value": "#c0d4ee",
+          "$value": "#c2c9d2",
           "$type": "color"
         },
         "030": {
-          "$value": "#b3cbeb",
+          "$value": "#b6bec9",
           "$type": "color"
         },
         "035": {
-          "$value": "#a7c3e8",
+          "$value": "#aab3c0",
           "$type": "color"
         },
         "040": {
-          "$value": "#9abbe4",
+          "$value": "#9ea8b7",
           "$type": "color"
         },
         "050": {
-          "$value": "#80a9dd",
+          "$value": "#8692a4",
           "$type": "color"
         },
         "060": {
-          "$value": "#6798d7",
+          "$value": "#6d7d92",
           "$type": "color"
         },
         "070": {
-          "$value": "#4d87d0",
+          "$value": "#556780",
           "$type": "color"
         },
         "080": {
-          "$value": "#3576c9",
+          "$value": "#3d516e",
           "$type": "color"
         },
         "090": {
-          "$value": "#1b65c3",
+          "$value": "#243c5c",
           "$type": "color"
         },
         "100": {
-          "$value": "#0254bc",
+          "$value": "#0c264a",
           "$type": "color"
         },
         "110": {
-          "$value": "#024caa",
+          "$value": "#0b2243",
           "$type": "color"
         },
         "120": {
-          "$value": "#024396",
+          "$value": "#0a1e3b",
           "$type": "color"
         },
         "130": {
-          "$value": "#013b84",
+          "$value": "#081b34",
           "$type": "color"
         },
         "140": {
-          "$value": "#013271",
+          "$value": "#07172c",
           "$type": "color"
         },
         "150": {
-          "$value": "#012a5e",
+          "$value": "#061325",
           "$type": "color"
         },
         "160": {
-          "$value": "#01224b",
+          "$value": "#050f1e",
           "$type": "color"
         },
         "170": {
-          "$value": "#011938",
+          "$value": "#040b16",
           "$type": "color"
         },
         "180": {
-          "$value": "#001126",
+          "$value": "#02080f",
           "$type": "color"
         },
         "190": {
-          "$value": "#000813",
+          "$value": "#010407",
           "$type": "color"
         }
       },
       "secondary": {
         "005": {
-          "$value": "#f5f7f9",
+          "$value": "#f2fbf7",
           "$type": "color"
         },
         "010": {
-          "$value": "#ebeef2",
+          "$value": "#e6f6ef",
           "$type": "color"
         },
         "015": {
-          "$value": "#e2e7ec",
+          "$value": "#d9f2e7",
           "$type": "color"
         },
         "020": {
-          "$value": "#d8dee6",
+          "$value": "#cceedf",
           "$type": "color"
         },
         "025": {
-          "$value": "#ced6df",
+          "$value": "#bfead7",
           "$type": "color"
         },
         "030": {
-          "$value": "#c4cdd9",
+          "$value": "#b2e6cf",
           "$type": "color"
         },
         "035": {
-          "$value": "#bbc6d3",
+          "$value": "#a6e1c7",
           "$type": "color"
         },
         "040": {
-          "$value": "#b1bdcd",
+          "$value": "#99ddbf",
           "$type": "color"
         },
         "050": {
-          "$value": "#9dadc0",
+          "$value": "#80d4b0",
           "$type": "color"
         },
         "060": {
-          "$value": "#899db3",
+          "$value": "#66cca0",
           "$type": "color"
         },
         "070": {
-          "$value": "#758ca7",
+          "$value": "#4dc490",
           "$type": "color"
         },
         "080": {
-          "$value": "#627c9a",
+          "$value": "#33bb80",
           "$type": "color"
         },
         "090": {
-          "$value": "#4e6b8d",
+          "$value": "#19b270",
           "$type": "color"
         },
         "100": {
-          "$value": "#3b5b81",
+          "$value": "#00aa60",
           "$type": "color"
         },
         "110": {
-          "$value": "#355274",
+          "$value": "#009956",
           "$type": "color"
         },
         "120": {
-          "$value": "#2f4967",
+          "$value": "#00884d",
           "$type": "color"
         },
         "130": {
-          "$value": "#29405b",
+          "$value": "#007743",
           "$type": "color"
         },
         "140": {
-          "$value": "#23374d",
+          "$value": "#00663a",
           "$type": "color"
         },
         "150": {
-          "$value": "#1e2e41",
+          "$value": "#005530",
           "$type": "color"
         },
         "160": {
-          "$value": "#182434",
+          "$value": "#004426",
           "$type": "color"
         },
         "170": {
-          "$value": "#121b27",
+          "$value": "#00331d",
           "$type": "color"
         },
         "180": {
-          "$value": "#0c121a",
+          "$value": "#002213",
           "$type": "color"
         },
         "190": {
-          "$value": "#06090d",
+          "$value": "#00110a",
           "$type": "color"
         }
       },
       "tertiary": {
         "005": {
-          "$value": "#f5f3f5",
+          "$value": "#f6f7f8",
           "$type": "color"
         },
         "010": {
-          "$value": "#ece8eb",
+          "$value": "#eeeff2",
           "$type": "color"
         },
         "015": {
-          "$value": "#e3dde1",
+          "$value": "#e5e7eb",
           "$type": "color"
         },
         "020": {
-          "$value": "#dad2d7",
+          "$value": "#dcdfe4",
           "$type": "color"
         },
         "025": {
-          "$value": "#d0c6cd",
+          "$value": "#d4d7de",
           "$type": "color"
         },
         "030": {
-          "$value": "#c7bac2",
+          "$value": "#cbcfd7",
           "$type": "color"
         },
         "035": {
-          "$value": "#beb0b9",
+          "$value": "#c2c7d0",
           "$type": "color"
         },
         "040": {
-          "$value": "#b4a4af",
+          "$value": "#b9bfca",
           "$type": "color"
         },
         "050": {
-          "$value": "#a18d9a",
+          "$value": "#a8b0bc",
           "$type": "color"
         },
         "060": {
-          "$value": "#8f7786",
+          "$value": "#97a0af",
           "$type": "color"
         },
         "070": {
-          "$value": "#7c6072",
+          "$value": "#8590a2",
           "$type": "color"
         },
         "080": {
-          "$value": "#69495e",
+          "$value": "#748095",
           "$type": "color"
         },
         "090": {
-          "$value": "#56324a",
+          "$value": "#627087",
           "$type": "color"
         },
         "100": {
-          "$value": "#441c36",
+          "$value": "#51607a",
           "$type": "color"
         },
         "110": {
-          "$value": "#3d1931",
+          "$value": "#49566e",
           "$type": "color"
         },
         "120": {
-          "$value": "#36162b",
+          "$value": "#414d62",
           "$type": "color"
         },
         "130": {
-          "$value": "#301426",
+          "$value": "#394355",
           "$type": "color"
         },
         "140": {
-          "$value": "#291120",
+          "$value": "#313a49",
           "$type": "color"
         },
         "150": {
-          "$value": "#220e1b",
+          "$value": "#28303d",
           "$type": "color"
         },
         "160": {
-          "$value": "#1b0b16",
+          "$value": "#202631",
           "$type": "color"
         },
         "170": {
-          "$value": "#140810",
+          "$value": "#181d25",
           "$type": "color"
         },
         "180": {
-          "$value": "#0e060b",
+          "$value": "#101318",
           "$type": "color"
         },
         "190": {
-          "$value": "#070305",
+          "$value": "#080a0c",
           "$type": "color"
+        }
+      },
+      "cta": {
+        "rest": {
+          "$value": "#00e07a",
+          "$type": "color",
+          "$description": "EnrollApp signal green: the call-to-action fill. Ink text only (8.6:1); never white text, never body text."
+        },
+        "hover": {
+          "$value": "#00c46b",
+          "$type": "color",
+          "$description": "CTA hover, between signal green and logo green (ink text 6.5:1)."
         }
       }
     },
@@ -1985,6 +1997,10 @@
       },
       "barlow": {
         "$value": "Barlow",
+        "$type": "fontFamily"
+      },
+      "inter": {
+        "$value": "Inter",
         "$type": "fontFamily"
       }
     }

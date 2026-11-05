@@ -4,7 +4,7 @@ Vitae 27 is the design system for Enroll. One set of tokens and components serve
 
 | Client | Product |
 |---|---|
-| **EA** | Enroll App, the unbranded demo client (default) |
+| **EA** | EnrollApp, IdeaCrew’s own brand for Enroll, used for demos (default) |
 | **DC** | DC Health Link |
 | **MA** | Massachusetts Health Connector |
 | **ME** | CoverME.gov |

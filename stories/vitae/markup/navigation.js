@@ -7,7 +7,7 @@ import { logo } from '../logos.js';
 import { button } from './button.js';
 
 export const CLIENT_INFO = {
-  ea: { name: 'Enroll App', tagline: 'Enroll App', copyright: ['Enroll App', 'All Rights Reserved.'], phone: '(000) 000-0000 / TTY 000', tel: '+10000000000', help: [['secondary', 'phone'], ['tertiary', '']], languages: true },
+  ea: { name: 'EnrollApp', tagline: 'EnrollApp', copyright: ['EnrollApp', 'All Rights Reserved.'], phone: '(000) 000-0000 / TTY 000', tel: '+10000000000', help: [['secondary', 'phone'], ['tertiary', '']], languages: true },
   dc: { name: 'DC Health Link', tagline: 'DC Health Link', copyright: ['© 2026 District of Columbia Health Link.'], phone: '(855) 532-5465 / TTY: 711', tel: '+18555325465', email: 'info@dchealthlink.com', ghost: true },
   ma: { name: 'Massachusetts Health Connector', tagline: 'MA Health Connector', copyright: ['MA Health Connector', 'All Rights Reserved.'], phone: '1-888-813-9220', tel: '+18888139220', help: [['primary', 'phone'], ['secondary', '']] },
   me: { name: 'CoverME.gov', tagline: 'CoverME.gov', copyright: ['CoverME.gov', 'All Rights Reserved.'], phone: '(866) 636-0355 / TTY 711', tel: '+18666360355', help: [['secondary', 'phone'], ['tertiary', '']] },
