@@ -73,31 +73,52 @@
   --vitae-color-ea-secondary-070: #4dc490;
   --vitae-color-ea-secondary-080: #33bb80;
   --vitae-color-ea-secondary-090: #19b270;
-  --vitae-color-ea-tertiary-100: #51607a;
-  --vitae-color-ea-tertiary-110: #49566e;
-  --vitae-color-ea-tertiary-120: #414d62;
-  --vitae-color-ea-tertiary-130: #394355;
-  --vitae-color-ea-tertiary-140: #313a49;
-  --vitae-color-ea-tertiary-150: #28303d;
-  --vitae-color-ea-tertiary-160: #202631;
-  --vitae-color-ea-tertiary-170: #181d25;
-  --vitae-color-ea-tertiary-180: #101318;
-  --vitae-color-ea-tertiary-190: #080a0c;
-  --vitae-color-ea-tertiary-005: #f6f7f8;
-  --vitae-color-ea-tertiary-010: #eeeff2;
-  --vitae-color-ea-tertiary-015: #e5e7eb;
-  --vitae-color-ea-tertiary-020: #dcdfe4;
-  --vitae-color-ea-tertiary-025: #d4d7de;
-  --vitae-color-ea-tertiary-030: #cbcfd7;
-  --vitae-color-ea-tertiary-035: #c2c7d0;
-  --vitae-color-ea-tertiary-040: #b9bfca;
-  --vitae-color-ea-tertiary-050: #a8b0bc;
-  --vitae-color-ea-tertiary-060: #97a0af;
-  --vitae-color-ea-tertiary-070: #8590a2;
-  --vitae-color-ea-tertiary-080: #748095;
-  --vitae-color-ea-tertiary-090: #627087;
-  --vitae-color-ea-cta-rest: #00e07a; /** EnrollApp signal green: the call-to-action fill. Ink text only (8.6:1); never white text, never body text. */
-  --vitae-color-ea-cta-hover: #00c46b; /** CTA hover, between signal green and logo green (ink text 6.5:1). */
+  --vitae-color-ea-tertiary-100: #5046e5;
+  --vitae-color-ea-tertiary-110: #483fce;
+  --vitae-color-ea-tertiary-120: #4038b7;
+  --vitae-color-ea-tertiary-130: #3831a0;
+  --vitae-color-ea-tertiary-140: #302a89;
+  --vitae-color-ea-tertiary-150: #282372;
+  --vitae-color-ea-tertiary-160: #201c5c;
+  --vitae-color-ea-tertiary-170: #181545;
+  --vitae-color-ea-tertiary-180: #100e2e;
+  --vitae-color-ea-tertiary-190: #080717;
+  --vitae-color-ea-tertiary-005: #f6f6fe;
+  --vitae-color-ea-tertiary-010: #eeecfc;
+  --vitae-color-ea-tertiary-015: #e5e3fb;
+  --vitae-color-ea-tertiary-020: #dcdafa;
+  --vitae-color-ea-tertiary-025: #d3d1f8;
+  --vitae-color-ea-tertiary-030: #cac8f7;
+  --vitae-color-ea-tertiary-035: #c2bef6;
+  --vitae-color-ea-tertiary-040: #b9b5f5;
+  --vitae-color-ea-tertiary-050: #a8a2f2;
+  --vitae-color-ea-tertiary-060: #9690ef;
+  --vitae-color-ea-tertiary-070: #847eed;
+  --vitae-color-ea-tertiary-080: #736bea;
+  --vitae-color-ea-tertiary-090: #6258e8;
+  --vitae-color-ea-alpha-green-075: rgba(0, 170, 96, 0.07450980392156863); /** Logo green at 7.5%: light-mode hover tint for green outline and ghost buttons (see-through, so it works on any background). */
+  --vitae-color-ea-alpha-green-130: rgba(0, 170, 96, 0.12941176470588237); /** Logo green at 13%: light-mode pressed tint. */
+  --vitae-color-ea-alpha-green-100: rgba(0, 170, 96, 0.10196078431372549); /** Logo green at 10%: dark-mode hover tint. */
+  --vitae-color-ea-alpha-green-160: rgba(0, 170, 96, 0.1607843137254902); /** Logo green at 16%: dark-mode pressed tint. */
+  --vitae-color-ea-alpha-ink-075: rgba(12, 38, 74, 0.07450980392156863); /** Ink at 7.5%: light-mode hover tint for ink outline and ghost buttons. */
+  --vitae-color-ea-alpha-ink-130: rgba(12, 38, 74, 0.12941176470588237); /** Ink at 13%: light-mode pressed tint. */
+  --vitae-color-ea-alpha-ink-tint-100: rgba(231, 233, 237, 0.10196078431372549); /** Light ink (primary 010) at 10%: dark-mode hover tint. */
+  --vitae-color-ea-alpha-ink-tint-160: rgba(231, 233, 237, 0.1607843137254902); /** Light ink at 16%: dark-mode pressed tint. */
+  --vitae-color-ea-alpha-purple-075: rgba(80, 70, 229, 0.07450980392156863); /** Purple at 7.5%: light-mode hover tint for purple outline and ghost buttons. */
+  --vitae-color-ea-alpha-purple-130: rgba(80, 70, 229, 0.12941176470588237); /** Purple at 13%: light-mode pressed tint. */
+  --vitae-color-ea-alpha-purple-100: rgba(80, 70, 229, 0.10196078431372549); /** Purple at 10%: dark-mode hover tint. */
+  --vitae-color-ea-alpha-purple-160: rgba(80, 70, 229, 0.1607843137254902); /** Purple at 16%: dark-mode pressed tint. */
+  --vitae-color-ea-alpha-blue-tint-100: rgba(169, 198, 240, 0.10196078431372549); /** Light blue at 10%: dark-mode hover tint for ink outline and ghost buttons. */
+  --vitae-color-ea-alpha-blue-tint-160: rgba(169, 198, 240, 0.1607843137254902); /** Light blue at 16%: dark-mode pressed tint. */
+  --vitae-color-ea-blue-dark-fill: #24487a; /** Dark-mode secondary button fill: a deep ink blue that stays blue on dark pages (white text 9.2:1). */
+  --vitae-color-ea-blue-dark-fill-hover: #2c5590;
+  --vitae-color-ea-blue-dark-fill-active: #1b3a66;
+  --vitae-color-ea-blue-dark-control: #9dbcf0; /** Dark-mode blue for checked boxes, toggles, selected tabs and progress (9.8:1 on the dark page; ink check marks 7.8:1). */
+  --vitae-color-ea-blue-dark-control-hover: #8db4ea;
+  --vitae-color-ea-blue-dark-control-active: #7aa7e6;
+  --vitae-color-ea-blue-dark-text: #a9c6f0; /** Dark-mode ink-blue text for outline and ghost buttons and other primary text. */
+  --vitae-color-ea-blue-dark-text-hover: #c3d7f5;
+  --vitae-color-ea-blue-dark-text-active: #d5e3f8;
   --vitae-color-dc-primary-100: #003260;
   --vitae-color-dc-primary-110: #002d57;
   --vitae-color-dc-primary-120: #00284d;
@@ -744,6 +765,11 @@
   --vitae-brand-dark-link: var(--vitae-brand-primary-040);
   --vitae-brand-dark-link-hover: var(--vitae-brand-primary-030);
   --vitae-brand-dark-link-active: var(--vitae-brand-primary-020);
+  --vitae-brand-dark-cta-text: var(--vitae-brand-dark-outline-primary-text);
+  --vitae-brand-dark-cta-text-hover: var(--vitae-brand-dark-outline-primary-text-hover);
+  --vitae-brand-dark-cta-text-active: var(--vitae-brand-dark-outline-primary-text-active);
+  --vitae-brand-dark-cta-subtle-hover: var(--vitae-brand-dark-subtle-primary-hover);
+  --vitae-brand-dark-cta-subtle-active: var(--vitae-brand-dark-subtle-primary-active);
   --vitae-brand-light-nav-accent: var(--vitae-brand-primary-100); /** Header role label, links and role icon. DC changed from secondary 100 to primary 100 (dark blue) 10/21/26. */
   --vitae-brand-light-nav-rule: var(--vitae-brand-primary-100);
   --vitae-brand-light-nav-bar: var(--vitae-brand-primary-100);
@@ -760,6 +786,15 @@
   --vitae-brand-light-link: var(--vitae-brand-primary-100);
   --vitae-brand-light-link-hover: var(--vitae-brand-primary-120);
   --vitae-brand-light-link-active: var(--vitae-brand-primary-140);
+  --vitae-brand-light-cta-text: var(--vitae-brand-light-outline-primary-text);
+  --vitae-brand-light-cta-text-hover: var(--vitae-brand-light-outline-primary-text-hover);
+  --vitae-brand-light-cta-text-active: var(--vitae-brand-light-outline-primary-text-active);
+  --vitae-brand-light-cta-subtle-hover: var(--vitae-brand-primary-015);
+  --vitae-brand-light-cta-subtle-active: var(--vitae-brand-primary-025);
+  --vitae-brand-light-subtle-primary-hover: var(--vitae-brand-primary-015);
+  --vitae-brand-light-subtle-primary-active: var(--vitae-brand-primary-025);
+  --vitae-brand-light-subtle-tertiary-hover: var(--vitae-brand-tertiary-015);
+  --vitae-brand-light-subtle-tertiary-active: var(--vitae-brand-tertiary-025);
   --vitae-nav-admin-text: var(--vitae-brand-dark-nav-admin-text); /** Text on the Broker/Admin nav bar. */
   --vitae-nav-item-hover: var(--vitae-brand-primary-160); /** Left nav item hover fill (plus a 2px action.primary bar at 40%). */
   --vitae-nav-item-pressed: var(--vitae-brand-primary-150); /** Left nav item pressed fill (plus a 2px action.primary bar at 70%). */
@@ -824,5 +859,10 @@
   --vitae-action-cta: var(--vitae-brand-dark-cta); /** Call-to-action button fill (the solid primary button only, one per page). */
   --vitae-action-cta-hover: var(--vitae-brand-dark-cta-hover);
   --vitae-action-cta-active: var(--vitae-brand-dark-cta-active);
+  --vitae-action-cta-text: var(--vitae-brand-dark-cta-text); /** Outline and ghost primary buttons: label and border. EA: green; other clients: their primary text color. */
+  --vitae-action-cta-text-hover: var(--vitae-brand-dark-cta-text-hover);
+  --vitae-action-cta-text-active: var(--vitae-brand-dark-cta-text-active);
+  --vitae-action-cta-subtle-hover: var(--vitae-brand-dark-cta-subtle-hover);
+  --vitae-action-cta-subtle-active: var(--vitae-brand-dark-cta-subtle-active);
   --vitae-table-row-selected: var(--vitae-nav-item-selected); /** Selected (checked) table rows. */
 }

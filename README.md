@@ -41,6 +41,8 @@ Load one stylesheet and set the client and mode on the page:
 | `dist/v2/docs/vitae.<client>.<mode>.json` | Flat resolved values (used by the contrast check and for reference) |
 | `dist/v2/docs/manifest.json` | Token list with descriptions |
 
+**EnrollApp brand export.** `npm run export:enrollapp` (part of `npm run build`) writes `dist/brand/enrollapp/`: the EA colors, type and button rules as CSS variables (light and dark), JSON, a usage guide (`enrollapp-brand.md`) and the logo SVGs, for the enroll.ideacrew.com microsite and other non-app work. It's generated from the tokens, so rebuild after any EA change.
+
 Component CSS (`vitae-btn`, `vitae-field`, `vitae-alert` …) is in `stories/vitae/vitae.css` and each component's markup is in `stories/vitae/markup/`; together they're the reference implementation for the Rails components.
 
 ## How the repo is organized

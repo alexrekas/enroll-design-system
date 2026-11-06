@@ -295,111 +295,111 @@
     },
     "dark": {
       "action-primary": {
-        "$value": "{color.ea.primary.010}",
+        "$value": "{color.ea.blue-dark.control}",
         "$type": "color"
       },
       "action-primary-hover": {
-        "$value": "{color.ea.primary.025}",
+        "$value": "{color.ea.blue-dark.control-hover}",
         "$type": "color"
       },
       "action-primary-active": {
-        "$value": "{color.ea.primary.040}",
+        "$value": "{color.ea.blue-dark.control-active}",
         "$type": "color"
       },
       "action-secondary": {
-        "$value": "{color.ea.primary.020}",
+        "$value": "{color.ea.blue-dark.fill}",
         "$type": "color"
       },
       "action-secondary-hover": {
-        "$value": "{color.ea.primary.035}",
+        "$value": "{color.ea.blue-dark.fill-hover}",
         "$type": "color"
       },
       "action-secondary-active": {
-        "$value": "{color.ea.primary.050}",
+        "$value": "{color.ea.blue-dark.fill-active}",
         "$type": "color"
       },
       "action-tertiary": {
-        "$value": "{color.ea.tertiary.020}",
+        "$value": "{color.ea.tertiary.100}",
         "$type": "color"
       },
       "action-tertiary-hover": {
-        "$value": "{color.ea.tertiary.035}",
+        "$value": "{color.ea.tertiary.090}",
         "$type": "color"
       },
       "action-tertiary-active": {
-        "$value": "{color.ea.tertiary.050}",
+        "$value": "{color.ea.tertiary.110}",
         "$type": "color"
       },
       "on-primary": {
-        "$value": "{color.ea.primary.120}",
+        "$value": "{color.ea.primary.100}",
         "$type": "color"
       },
       "on-secondary": {
-        "$value": "{color.ea.primary.130}",
+        "$value": "{color.white}",
         "$type": "color"
       },
       "on-tertiary": {
-        "$value": "{color.ea.tertiary.140}",
+        "$value": "{color.white}",
         "$type": "color"
       },
       "outline-primary-text": {
-        "$value": "{color.ea.primary.025}",
+        "$value": "{color.ea.blue-dark.text}",
         "$type": "color"
       },
       "outline-primary-text-hover": {
-        "$value": "{color.ea.primary.015}",
+        "$value": "{color.ea.blue-dark.text-hover}",
         "$type": "color"
       },
       "outline-primary-text-active": {
-        "$value": "{color.ea.primary.010}",
+        "$value": "{color.ea.blue-dark.text-active}",
         "$type": "color"
       },
       "outline-secondary-text": {
-        "$value": "{color.ea.primary.025}",
+        "$value": "{color.ea.blue-dark.text}",
         "$type": "color"
       },
       "outline-secondary-text-hover": {
-        "$value": "{color.ea.primary.015}",
+        "$value": "{color.ea.blue-dark.text-hover}",
         "$type": "color"
       },
       "outline-secondary-text-active": {
-        "$value": "{color.ea.primary.010}",
+        "$value": "{color.ea.blue-dark.text-active}",
         "$type": "color"
       },
       "outline-tertiary-text": {
-        "$value": "{color.ea.tertiary.030}",
+        "$value": "{color.ea.tertiary.050}",
         "$type": "color"
       },
       "outline-tertiary-text-hover": {
-        "$value": "{color.ea.tertiary.020}",
+        "$value": "{color.ea.tertiary.040}",
         "$type": "color"
       },
       "outline-tertiary-text-active": {
-        "$value": "{color.ea.tertiary.015}",
+        "$value": "{color.ea.tertiary.030}",
         "$type": "color"
       },
       "subtle-primary-hover": {
-        "$value": "{color.ea.primary.140}",
+        "$value": "{color.ea.alpha.blue-tint-100}",
         "$type": "color"
       },
       "subtle-primary-active": {
-        "$value": "{color.ea.primary.130}",
+        "$value": "{color.ea.alpha.blue-tint-160}",
         "$type": "color"
       },
       "subtle-secondary-hover": {
-        "$value": "{color.ea.primary.150}",
+        "$value": "{color.ea.alpha.blue-tint-100}",
         "$type": "color"
       },
       "subtle-secondary-active": {
-        "$value": "{color.ea.primary.140}",
+        "$value": "{color.ea.alpha.blue-tint-160}",
         "$type": "color"
       },
       "subtle-tertiary-hover": {
-        "$value": "{color.ea.tertiary.150}",
+        "$value": "{color.ea.alpha.purple-100}",
         "$type": "color"
       },
       "subtle-tertiary-active": {
-        "$value": "{color.ea.tertiary.140}",
+        "$value": "{color.ea.alpha.purple-160}",
         "$type": "color"
       },
       "field-border": {
@@ -456,19 +456,19 @@
         "$type": "color"
       },
       "cta": {
-        "$value": "{color.ea.cta.rest}",
+        "$value": "{color.ea.secondary.120}",
         "$type": "color"
       },
       "cta-hover": {
-        "$value": "{color.ea.cta.hover}",
+        "$value": "{color.ea.secondary.130}",
         "$type": "color"
       },
       "cta-active": {
-        "$value": "{color.ea.secondary.100}",
+        "$value": "{color.ea.secondary.140}",
         "$type": "color"
       },
       "on-cta": {
-        "$value": "{color.ea.primary.100}",
+        "$value": "{color.white}",
         "$type": "color"
       },
       "link": {
@@ -481,6 +481,26 @@
       },
       "link-active": {
         "$value": "{color.ea.secondary.020}",
+        "$type": "color"
+      },
+      "cta-text": {
+        "$value": "{color.ea.secondary.050}",
+        "$type": "color"
+      },
+      "cta-text-hover": {
+        "$value": "{color.ea.secondary.040}",
+        "$type": "color"
+      },
+      "cta-text-active": {
+        "$value": "{color.ea.secondary.030}",
+        "$type": "color"
+      },
+      "cta-subtle-hover": {
+        "$value": "{color.ea.alpha.green-100}",
+        "$type": "color"
+      },
+      "cta-subtle-active": {
+        "$value": "{color.ea.alpha.green-160}",
         "$type": "color"
       }
     },
@@ -541,15 +561,15 @@
         "$type": "color"
       },
       "outline-tertiary-text": {
-        "$value": "{color.ea.tertiary.130}",
+        "$value": "{color.ea.tertiary.100}",
         "$type": "color"
       },
       "outline-tertiary-text-hover": {
-        "$value": "{color.ea.tertiary.140}",
+        "$value": "{color.ea.tertiary.120}",
         "$type": "color"
       },
       "outline-tertiary-text-active": {
-        "$value": "{color.ea.tertiary.150}",
+        "$value": "{color.ea.tertiary.140}",
         "$type": "color"
       },
       "field-border": {
@@ -600,20 +620,20 @@
         "$type": "color"
       },
       "cta": {
-        "$value": "{color.ea.cta.rest}",
+        "$value": "{color.ea.secondary.120}",
         "$type": "color",
-        "$description": "Call-to-action fill: the solid primary button, one per page. EA uses signal green; other clients use their primary color."
+        "$description": "Call-to-action fill: the solid primary button. EA: green 120 (#00884D), the closest logo-green shade that passes with white text (4.54:1). Do not lighten."
       },
       "cta-hover": {
-        "$value": "{color.ea.cta.hover}",
+        "$value": "{color.ea.secondary.130}",
         "$type": "color"
       },
       "cta-active": {
-        "$value": "{color.ea.secondary.100}",
+        "$value": "{color.ea.secondary.140}",
         "$type": "color"
       },
       "on-cta": {
-        "$value": "{color.ea.primary.100}",
+        "$value": "{color.white}",
         "$type": "color"
       },
       "action-secondary": {
@@ -629,11 +649,11 @@
         "$type": "color"
       },
       "subtle-secondary-hover": {
-        "$value": "{color.ea.primary.015}",
+        "$value": "{color.ea.alpha.ink-075}",
         "$type": "color"
       },
       "subtle-secondary-active": {
-        "$value": "{color.ea.primary.025}",
+        "$value": "{color.ea.alpha.ink-130}",
         "$type": "color"
       },
       "link": {
@@ -646,6 +666,42 @@
       },
       "link-active": {
         "$value": "{color.ea.secondary.160}",
+        "$type": "color"
+      },
+      "cta-text": {
+        "$value": "{color.ea.secondary.140}",
+        "$type": "color"
+      },
+      "cta-text-hover": {
+        "$value": "{color.ea.secondary.150}",
+        "$type": "color"
+      },
+      "cta-text-active": {
+        "$value": "{color.ea.secondary.160}",
+        "$type": "color"
+      },
+      "cta-subtle-hover": {
+        "$value": "{color.ea.alpha.green-075}",
+        "$type": "color"
+      },
+      "cta-subtle-active": {
+        "$value": "{color.ea.alpha.green-130}",
+        "$type": "color"
+      },
+      "subtle-primary-hover": {
+        "$value": "{color.ea.alpha.ink-075}",
+        "$type": "color"
+      },
+      "subtle-primary-active": {
+        "$value": "{color.ea.alpha.ink-130}",
+        "$type": "color"
+      },
+      "subtle-tertiary-hover": {
+        "$value": "{color.ea.alpha.purple-075}",
+        "$type": "color"
+      },
+      "subtle-tertiary-active": {
+        "$value": "{color.ea.alpha.purple-130}",
         "$type": "color"
       }
     }

@@ -290,108 +290,209 @@
       },
       "tertiary": {
         "005": {
-          "$value": "#f6f7f8",
+          "$value": "#f6f6fe",
           "$type": "color"
         },
         "010": {
-          "$value": "#eeeff2",
+          "$value": "#eeecfc",
           "$type": "color"
         },
         "015": {
-          "$value": "#e5e7eb",
+          "$value": "#e5e3fb",
           "$type": "color"
         },
         "020": {
-          "$value": "#dcdfe4",
+          "$value": "#dcdafa",
           "$type": "color"
         },
         "025": {
-          "$value": "#d4d7de",
+          "$value": "#d3d1f8",
           "$type": "color"
         },
         "030": {
-          "$value": "#cbcfd7",
+          "$value": "#cac8f7",
           "$type": "color"
         },
         "035": {
-          "$value": "#c2c7d0",
+          "$value": "#c2bef6",
           "$type": "color"
         },
         "040": {
-          "$value": "#b9bfca",
+          "$value": "#b9b5f5",
           "$type": "color"
         },
         "050": {
-          "$value": "#a8b0bc",
+          "$value": "#a8a2f2",
           "$type": "color"
         },
         "060": {
-          "$value": "#97a0af",
+          "$value": "#9690ef",
           "$type": "color"
         },
         "070": {
-          "$value": "#8590a2",
+          "$value": "#847eed",
           "$type": "color"
         },
         "080": {
-          "$value": "#748095",
+          "$value": "#736bea",
           "$type": "color"
         },
         "090": {
-          "$value": "#627087",
+          "$value": "#6258e8",
           "$type": "color"
         },
         "100": {
-          "$value": "#51607a",
+          "$value": "#5046e5",
           "$type": "color"
         },
         "110": {
-          "$value": "#49566e",
+          "$value": "#483fce",
           "$type": "color"
         },
         "120": {
-          "$value": "#414d62",
+          "$value": "#4038b7",
           "$type": "color"
         },
         "130": {
-          "$value": "#394355",
+          "$value": "#3831a0",
           "$type": "color"
         },
         "140": {
-          "$value": "#313a49",
+          "$value": "#302a89",
           "$type": "color"
         },
         "150": {
-          "$value": "#28303d",
+          "$value": "#282372",
           "$type": "color"
         },
         "160": {
-          "$value": "#202631",
+          "$value": "#201c5c",
           "$type": "color"
         },
         "170": {
-          "$value": "#181d25",
+          "$value": "#181545",
           "$type": "color"
         },
         "180": {
-          "$value": "#101318",
+          "$value": "#100e2e",
           "$type": "color"
         },
         "190": {
-          "$value": "#080a0c",
+          "$value": "#080717",
           "$type": "color"
         }
       },
-      "cta": {
-        "rest": {
-          "$value": "#00e07a",
+      "alpha": {
+        "green-075": {
+          "$value": "#00AA6013",
           "$type": "color",
-          "$description": "EnrollApp signal green: the call-to-action fill. Ink text only (8.6:1); never white text, never body text."
+          "$description": "Logo green at 7.5%: light-mode hover tint for green outline and ghost buttons (see-through, so it works on any background)."
         },
-        "hover": {
-          "$value": "#00c46b",
+        "green-130": {
+          "$value": "#00AA6021",
           "$type": "color",
-          "$description": "CTA hover, between signal green and logo green (ink text 6.5:1)."
+          "$description": "Logo green at 13%: light-mode pressed tint."
+        },
+        "green-100": {
+          "$value": "#00AA601A",
+          "$type": "color",
+          "$description": "Logo green at 10%: dark-mode hover tint."
+        },
+        "green-160": {
+          "$value": "#00AA6029",
+          "$type": "color",
+          "$description": "Logo green at 16%: dark-mode pressed tint."
+        },
+        "ink-075": {
+          "$value": "#0C264A13",
+          "$type": "color",
+          "$description": "Ink at 7.5%: light-mode hover tint for ink outline and ghost buttons."
+        },
+        "ink-130": {
+          "$value": "#0C264A21",
+          "$type": "color",
+          "$description": "Ink at 13%: light-mode pressed tint."
+        },
+        "ink-tint-100": {
+          "$value": "#E7E9ED1A",
+          "$type": "color",
+          "$description": "Light ink (primary 010) at 10%: dark-mode hover tint."
+        },
+        "ink-tint-160": {
+          "$value": "#E7E9ED29",
+          "$type": "color",
+          "$description": "Light ink at 16%: dark-mode pressed tint."
+        },
+        "purple-075": {
+          "$value": "#5046E513",
+          "$type": "color",
+          "$description": "Purple at 7.5%: light-mode hover tint for purple outline and ghost buttons."
+        },
+        "purple-130": {
+          "$value": "#5046E521",
+          "$type": "color",
+          "$description": "Purple at 13%: light-mode pressed tint."
+        },
+        "purple-100": {
+          "$value": "#5046E51A",
+          "$type": "color",
+          "$description": "Purple at 10%: dark-mode hover tint."
+        },
+        "purple-160": {
+          "$value": "#5046E529",
+          "$type": "color",
+          "$description": "Purple at 16%: dark-mode pressed tint."
+        },
+        "blue-tint-100": {
+          "$value": "#A9C6F01A",
+          "$type": "color",
+          "$description": "Light blue at 10%: dark-mode hover tint for ink outline and ghost buttons."
+        },
+        "blue-tint-160": {
+          "$value": "#A9C6F029",
+          "$type": "color",
+          "$description": "Light blue at 16%: dark-mode pressed tint."
+        }
+      },
+      "blue-dark": {
+        "fill": {
+          "$value": "#24487A",
+          "$type": "color",
+          "$description": "Dark-mode secondary button fill: a deep ink blue that stays blue on dark pages (white text 9.2:1)."
+        },
+        "fill-hover": {
+          "$value": "#2C5590",
+          "$type": "color"
+        },
+        "fill-active": {
+          "$value": "#1B3A66",
+          "$type": "color"
+        },
+        "control": {
+          "$value": "#9DBCF0",
+          "$type": "color",
+          "$description": "Dark-mode blue for checked boxes, toggles, selected tabs and progress (9.8:1 on the dark page; ink check marks 7.8:1)."
+        },
+        "control-hover": {
+          "$value": "#8DB4EA",
+          "$type": "color"
+        },
+        "control-active": {
+          "$value": "#7AA7E6",
+          "$type": "color"
+        },
+        "text": {
+          "$value": "#A9C6F0",
+          "$type": "color",
+          "$description": "Dark-mode ink-blue text for outline and ghost buttons and other primary text."
+        },
+        "text-hover": {
+          "$value": "#C3D7F5",
+          "$type": "color"
+        },
+        "text-active": {
+          "$value": "#D5E3F8",
+          "$type": "color"
         }
       }
     },

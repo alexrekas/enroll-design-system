@@ -198,6 +198,27 @@
       "$value": "{brand.light.cta-active}",
       "$type": "color"
     },
+    "cta-text": {
+      "$value": "{brand.light.cta-text}",
+      "$type": "color",
+      "$description": "Outline and ghost primary buttons: label and border. EA: green; other clients: their primary text color."
+    },
+    "cta-text-hover": {
+      "$value": "{brand.light.cta-text-hover}",
+      "$type": "color"
+    },
+    "cta-text-active": {
+      "$value": "{brand.light.cta-text-active}",
+      "$type": "color"
+    },
+    "cta-subtle-hover": {
+      "$value": "{brand.light.cta-subtle-hover}",
+      "$type": "color"
+    },
+    "cta-subtle-active": {
+      "$value": "{brand.light.cta-subtle-active}",
+      "$type": "color"
+    },
     "secondary": {
       "$value": "{brand.light.action-secondary}",
       "$type": "color"
@@ -256,11 +277,11 @@
       "$description": "Outline and Ghost primary button text (and outline border) on a selected surface, such as the table bulk-action bar. Brand text in light mode; body text in dark mode, where brand text on the deep brand selected tone drops below 4.5:1."
     },
     "primary-subtle-hover": {
-      "$value": "{brand.primary.015}",
+      "$value": "{brand.light.subtle-primary-hover}",
       "$type": "color"
     },
     "primary-subtle-active": {
-      "$value": "{brand.primary.025}",
+      "$value": "{brand.light.subtle-primary-active}",
       "$type": "color"
     },
     "secondary-text": {
@@ -296,11 +317,11 @@
       "$type": "color"
     },
     "tertiary-subtle-hover": {
-      "$value": "{brand.tertiary.015}",
+      "$value": "{brand.light.subtle-tertiary-hover}",
       "$type": "color"
     },
     "tertiary-subtle-active": {
-      "$value": "{brand.tertiary.025}",
+      "$value": "{brand.light.subtle-tertiary-active}",
       "$type": "color"
     },
     "destructive-text": {

@@ -651,17 +651,164 @@
   "source": "primitive"
  },
  {
-  "path": "color.ea.cta.rest",
-  "cssVar": "--vitae-color-ea-cta-rest",
+  "path": "color.ea.alpha.green-075",
+  "cssVar": "--vitae-color-ea-alpha-green-075",
   "type": "color",
-  "description": "EnrollApp signal green: the call-to-action fill. Ink text only (8.6:1); never white text, never body text.",
+  "description": "Logo green at 7.5%: light-mode hover tint for green outline and ghost buttons (see-through, so it works on any background).",
   "source": "primitive"
  },
  {
-  "path": "color.ea.cta.hover",
-  "cssVar": "--vitae-color-ea-cta-hover",
+  "path": "color.ea.alpha.green-130",
+  "cssVar": "--vitae-color-ea-alpha-green-130",
   "type": "color",
-  "description": "CTA hover, between signal green and logo green (ink text 6.5:1).",
+  "description": "Logo green at 13%: light-mode pressed tint.",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.alpha.green-100",
+  "cssVar": "--vitae-color-ea-alpha-green-100",
+  "type": "color",
+  "description": "Logo green at 10%: dark-mode hover tint.",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.alpha.green-160",
+  "cssVar": "--vitae-color-ea-alpha-green-160",
+  "type": "color",
+  "description": "Logo green at 16%: dark-mode pressed tint.",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.alpha.ink-075",
+  "cssVar": "--vitae-color-ea-alpha-ink-075",
+  "type": "color",
+  "description": "Ink at 7.5%: light-mode hover tint for ink outline and ghost buttons.",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.alpha.ink-130",
+  "cssVar": "--vitae-color-ea-alpha-ink-130",
+  "type": "color",
+  "description": "Ink at 13%: light-mode pressed tint.",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.alpha.ink-tint-100",
+  "cssVar": "--vitae-color-ea-alpha-ink-tint-100",
+  "type": "color",
+  "description": "Light ink (primary 010) at 10%: dark-mode hover tint.",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.alpha.ink-tint-160",
+  "cssVar": "--vitae-color-ea-alpha-ink-tint-160",
+  "type": "color",
+  "description": "Light ink at 16%: dark-mode pressed tint.",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.alpha.purple-075",
+  "cssVar": "--vitae-color-ea-alpha-purple-075",
+  "type": "color",
+  "description": "Purple at 7.5%: light-mode hover tint for purple outline and ghost buttons.",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.alpha.purple-130",
+  "cssVar": "--vitae-color-ea-alpha-purple-130",
+  "type": "color",
+  "description": "Purple at 13%: light-mode pressed tint.",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.alpha.purple-100",
+  "cssVar": "--vitae-color-ea-alpha-purple-100",
+  "type": "color",
+  "description": "Purple at 10%: dark-mode hover tint.",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.alpha.purple-160",
+  "cssVar": "--vitae-color-ea-alpha-purple-160",
+  "type": "color",
+  "description": "Purple at 16%: dark-mode pressed tint.",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.alpha.blue-tint-100",
+  "cssVar": "--vitae-color-ea-alpha-blue-tint-100",
+  "type": "color",
+  "description": "Light blue at 10%: dark-mode hover tint for ink outline and ghost buttons.",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.alpha.blue-tint-160",
+  "cssVar": "--vitae-color-ea-alpha-blue-tint-160",
+  "type": "color",
+  "description": "Light blue at 16%: dark-mode pressed tint.",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.blue-dark.fill",
+  "cssVar": "--vitae-color-ea-blue-dark-fill",
+  "type": "color",
+  "description": "Dark-mode secondary button fill: a deep ink blue that stays blue on dark pages (white text 9.2:1).",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.blue-dark.fill-hover",
+  "cssVar": "--vitae-color-ea-blue-dark-fill-hover",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.blue-dark.fill-active",
+  "cssVar": "--vitae-color-ea-blue-dark-fill-active",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.blue-dark.control",
+  "cssVar": "--vitae-color-ea-blue-dark-control",
+  "type": "color",
+  "description": "Dark-mode blue for checked boxes, toggles, selected tabs and progress (9.8:1 on the dark page; ink check marks 7.8:1).",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.blue-dark.control-hover",
+  "cssVar": "--vitae-color-ea-blue-dark-control-hover",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.blue-dark.control-active",
+  "cssVar": "--vitae-color-ea-blue-dark-control-active",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.blue-dark.text",
+  "cssVar": "--vitae-color-ea-blue-dark-text",
+  "type": "color",
+  "description": "Dark-mode ink-blue text for outline and ghost buttons and other primary text.",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.blue-dark.text-hover",
+  "cssVar": "--vitae-color-ea-blue-dark-text-hover",
+  "type": "color",
+  "description": "",
+  "source": "primitive"
+ },
+ {
+  "path": "color.ea.blue-dark.text-active",
+  "cssVar": "--vitae-color-ea-blue-dark-text-active",
+  "type": "color",
+  "description": "",
   "source": "primitive"
  },
  {
@@ -4298,6 +4445,41 @@
   "source": "brand"
  },
  {
+  "path": "brand.dark.cta-text",
+  "cssVar": "--vitae-brand-dark-cta-text",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.cta-text-hover",
+  "cssVar": "--vitae-brand-dark-cta-text-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.cta-text-active",
+  "cssVar": "--vitae-brand-dark-cta-text-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.cta-subtle-hover",
+  "cssVar": "--vitae-brand-dark-cta-subtle-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.dark.cta-subtle-active",
+  "cssVar": "--vitae-brand-dark-cta-subtle-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
   "path": "brand.font.family",
   "cssVar": "--vitae-brand-font-family",
   "type": "fontFamily",
@@ -4483,7 +4665,7 @@
   "path": "brand.light.cta",
   "cssVar": "--vitae-brand-light-cta",
   "type": "color",
-  "description": "Call-to-action fill: the solid primary button, one per page. EA uses signal green; other clients use their primary color.",
+  "description": "Call-to-action fill: the solid primary button. EA: green 120 (#00884D), the closest logo-green shade that passes with white text (4.54:1). Do not lighten.",
   "source": "brand"
  },
  {
@@ -4559,6 +4741,69 @@
  {
   "path": "brand.light.link-active",
   "cssVar": "--vitae-brand-light-link-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.cta-text",
+  "cssVar": "--vitae-brand-light-cta-text",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.cta-text-hover",
+  "cssVar": "--vitae-brand-light-cta-text-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.cta-text-active",
+  "cssVar": "--vitae-brand-light-cta-text-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.cta-subtle-hover",
+  "cssVar": "--vitae-brand-light-cta-subtle-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.cta-subtle-active",
+  "cssVar": "--vitae-brand-light-cta-subtle-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.subtle-primary-hover",
+  "cssVar": "--vitae-brand-light-subtle-primary-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.subtle-primary-active",
+  "cssVar": "--vitae-brand-light-subtle-primary-active",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.subtle-tertiary-hover",
+  "cssVar": "--vitae-brand-light-subtle-tertiary-hover",
+  "type": "color",
+  "description": "",
+  "source": "brand"
+ },
+ {
+  "path": "brand.light.subtle-tertiary-active",
+  "cssVar": "--vitae-brand-light-subtle-tertiary-active",
   "type": "color",
   "description": "",
   "source": "brand"
@@ -5077,6 +5322,41 @@
  {
   "path": "action.cta-active",
   "cssVar": "--vitae-action-cta-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.cta-text",
+  "cssVar": "--vitae-action-cta-text",
+  "type": "color",
+  "description": "Outline and ghost primary buttons: label and border. EA: green; other clients: their primary text color.",
+  "source": "semantic"
+ },
+ {
+  "path": "action.cta-text-hover",
+  "cssVar": "--vitae-action-cta-text-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.cta-text-active",
+  "cssVar": "--vitae-action-cta-text-active",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.cta-subtle-hover",
+  "cssVar": "--vitae-action-cta-subtle-hover",
+  "type": "color",
+  "description": "",
+  "source": "semantic"
+ },
+ {
+  "path": "action.cta-subtle-active",
+  "cssVar": "--vitae-action-cta-subtle-active",
   "type": "color",
   "description": "",
   "source": "semantic"

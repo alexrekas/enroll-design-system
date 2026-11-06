@@ -482,6 +482,26 @@
       "link-active": {
         "$value": "{brand.primary.020}",
         "$type": "color"
+      },
+      "cta-text": {
+        "$value": "{brand.dark.outline-primary-text}",
+        "$type": "color"
+      },
+      "cta-text-hover": {
+        "$value": "{brand.dark.outline-primary-text-hover}",
+        "$type": "color"
+      },
+      "cta-text-active": {
+        "$value": "{brand.dark.outline-primary-text-active}",
+        "$type": "color"
+      },
+      "cta-subtle-hover": {
+        "$value": "{brand.dark.subtle-primary-hover}",
+        "$type": "color"
+      },
+      "cta-subtle-active": {
+        "$value": "{brand.dark.subtle-primary-active}",
+        "$type": "color"
       }
     },
     "font": {
@@ -646,6 +666,42 @@
       },
       "link-active": {
         "$value": "{brand.primary.140}",
+        "$type": "color"
+      },
+      "cta-text": {
+        "$value": "{brand.light.outline-primary-text}",
+        "$type": "color"
+      },
+      "cta-text-hover": {
+        "$value": "{brand.light.outline-primary-text-hover}",
+        "$type": "color"
+      },
+      "cta-text-active": {
+        "$value": "{brand.light.outline-primary-text-active}",
+        "$type": "color"
+      },
+      "cta-subtle-hover": {
+        "$value": "{brand.primary.015}",
+        "$type": "color"
+      },
+      "cta-subtle-active": {
+        "$value": "{brand.primary.025}",
+        "$type": "color"
+      },
+      "subtle-primary-hover": {
+        "$value": "{brand.primary.015}",
+        "$type": "color"
+      },
+      "subtle-primary-active": {
+        "$value": "{brand.primary.025}",
+        "$type": "color"
+      },
+      "subtle-tertiary-hover": {
+        "$value": "{brand.tertiary.015}",
+        "$type": "color"
+      },
+      "subtle-tertiary-active": {
+        "$value": "{brand.tertiary.025}",
         "$type": "color"
       }
     }

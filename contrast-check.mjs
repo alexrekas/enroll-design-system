@@ -109,6 +109,9 @@ const V2 = [
     ...ACTIONS.flatMap((a) => ['', 'Hover', 'Active'].map((st) => [`Action${a}Text${st}`, bg, 4.5, 'outline/ghost label'])),
     ...['BorderFocus', 'BorderFocusRing', 'FieldBorder', 'BorderBrand', 'IconPrimary', 'IconSecondary', 'IconBrand'].map((fg) => [fg, bg, 3, 'non-text']),
   ]),
+  // Outline and ghost primary buttons use the CTA text role (EA green).
+  ...SURFACES.flatMap((bg) => ['', 'Hover', 'Active'].map((st) => [`ActionCtaText${st}`, bg, 4.5, 'CTA outline/ghost label'])),
+  ['ActionCtaTextHover', 'ActionCtaSubtleHover', 4.5, 'CTA outline/ghost hover'], ['ActionCtaTextActive', 'ActionCtaSubtleActive', 4.5, 'CTA outline/ghost pressed'],
   ...ACTIONS.flatMap((a) => [
     ...['', 'Hover', 'Active'].map((st) => [a === 'Destructive' ? 'TextOnDestructive' : `TextOn${a}`, `Action${a}${st}`, 4.5, 'solid button label']),
     [`Action${a}TextHover`, `Action${a}SubtleHover`, 4.5, 'outline/ghost hover'],
@@ -133,12 +136,16 @@ let v2checked = 0;
 for (const client of ['ea', 'dc', 'ma', 'me']) for (const mode of ['light', 'dark']) {
   const flat = JSON.parse(readFileSync(`dist/v2/docs/vitae.${client}.${mode}.json`, 'utf8'));
   const misses = [];
+  // See-through tints (#rrggbbaa, e.g. EA hover and pressed) are checked over every surface, keeping the worst case.
+  const blend = (c, under) => '#' + [1, 3, 5].map((i) => { const a = parseInt(c.slice(7, 9), 16) / 255; return Math.round(parseInt(c.slice(i, i + 2), 16) * a + parseInt(under.slice(i, i + 2), 16) * (1 - a)).toString(16).padStart(2, '0'); }).join('');
+  const unders = SURFACES.map((s) => flat[s]).filter((c) => /^#[0-9a-f]{6}$/i.test(c || ''));
   for (const [fg, bg, min, label, only] of V2) {
     if (only && only !== mode) continue;
     const f = flat[fg], b = flat[bg];
-    if (!/^#[0-9a-f]{6}$/i.test(f || '') || !/^#[0-9a-f]{6}$/i.test(b || '')) { misses.push(`  MISSING ${fg} on ${bg} (${label})`); failures++; continue; }
+    if (!/^#[0-9a-f]{6}([0-9a-f]{2})?$/i.test(f || '') || !/^#[0-9a-f]{6}([0-9a-f]{2})?$/i.test(b || '')) { misses.push(`  MISSING ${fg} on ${bg} (${label})`); failures++; continue; }
     v2checked++;
-    const r = ratio(f, b);
+    const bs = b.length === 9 ? unders.map((u) => blend(b, u)) : [b];
+    const r = Math.min(...bs.map((x) => ratio(f.length === 9 ? blend(f, x) : f, x)));
     if (r < min) { failures++; misses.push(`  FAIL ${label}: ${fg} on ${bg} ${r.toFixed(2)}:1 (min ${min}) ${f} on ${b}`); }
   }
   console.log(`\n=== Vitae 27 ${client.toUpperCase()} ${mode} === ${misses.length ? '' : `all pairs pass`}`);

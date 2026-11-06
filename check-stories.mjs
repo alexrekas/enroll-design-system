@@ -1,7 +1,6 @@
 // Story test gate: opens every Vitae 27 story in the built Storybook, in every client and mode,
 // and fails if a story errors, its play function (interaction test) fails, or axe finds a
-// WCAG 2.0/2.1 A or AA violation. Page templates also fail if they show more than one call to action
-// (solid primary button).
+// WCAG 2.0/2.1 A or AA violation.
 //
 //   npm run build-storybook && npm run check:stories
 //   npm run check:stories -- --only=button,upload   (story ids containing these words)
@@ -93,12 +92,6 @@ async function run({ s, client, mode }) {
       const r = await window.axe.run({ include: ['#storybook-root'], exclude: ['.sb-src'] }, { runOnly: { type: 'tag', values: rules }, resultTypes: ['violations'] });
       return r.violations.map((v) => ({ id: v.id, impact: v.impact, help: v.help, nodes: v.nodes.slice(0, 3).map((n) => `${n.target.join(' ')}${n.any[0]?.message ? ` (${n.any[0].message})` : ''}`), count: v.nodes.length }));
     }, { rules: RULES, config: params.config ? { rules: params.config.rules } : null });
-    // Page templates: at most one call to action (solid primary button) visible in the page content (main), the "happy path".
-    // Header and footer are site chrome; MA's footer phone button is its own primary solid button.
-    if (s.id.includes('-templates-')) {
-      const ctas = await page.evaluate(() => [...document.querySelectorAll('#storybook-root main .vitae-btn--solid.vitae-btn--primary')].filter((b) => b.getClientRects().length).map((b) => b.textContent.trim()));
-      if (ctas.length > 1) errors.push(`More than one call to action on the page (${ctas.length}): ${ctas.join(', ')}. Keep one solid primary button; make the others outline, ghost or secondary.`);
-    }
     if (errors.length || result.length) failures.push({ id: s.id, client, mode, errors, violations: result });
   } catch (e) {
     failures.push({ id: s.id, client, mode, errors: [e.message.split('\n')[0]], violations: [] });

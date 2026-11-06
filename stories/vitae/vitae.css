@@ -24,8 +24,9 @@
 .vitae-btn {
   --_c: var(--vitae-action-primary); --_ch: var(--vitae-action-primary-hover); --_ca: var(--vitae-action-primary-active);
   --_on: var(--vitae-text-on-primary);
-  --_t: var(--vitae-action-primary-text); --_th: var(--vitae-action-primary-text-hover); --_ta: var(--vitae-action-primary-text-active);
-  --_sh: var(--vitae-action-primary-subtle-hover); --_sa: var(--vitae-action-primary-subtle-active);
+  /* Outline and ghost primary use the CTA text role: EA green, the other clients' primary color. Hover and pressed tints are see-through in EA. */
+  --_t: var(--vitae-action-cta-text); --_th: var(--vitae-action-cta-text-hover); --_ta: var(--vitae-action-cta-text-active);
+  --_sh: var(--vitae-action-cta-subtle-hover); --_sa: var(--vitae-action-cta-subtle-active);
   display: inline-flex; align-items: center; justify-content: center; gap: var(--vitae-space-008);
   min-height: 44px; padding: 10px var(--vitae-space-016);
   border: var(--vitae-border-width-2) solid transparent; border-radius: var(--vitae-brand-radius-button);
@@ -36,8 +37,8 @@
 .vitae-btn--secondary { --_c: var(--vitae-action-secondary); --_ch: var(--vitae-action-secondary-hover); --_ca: var(--vitae-action-secondary-active); --_on: var(--vitae-text-on-secondary); --_t: var(--vitae-action-secondary-text); --_th: var(--vitae-action-secondary-text-hover); --_ta: var(--vitae-action-secondary-text-active); --_sh: var(--vitae-action-secondary-subtle-hover); --_sa: var(--vitae-action-secondary-subtle-active); }
 .vitae-btn--tertiary { --_c: var(--vitae-action-tertiary); --_ch: var(--vitae-action-tertiary-hover); --_ca: var(--vitae-action-tertiary-active); --_on: var(--vitae-text-on-tertiary); --_t: var(--vitae-action-tertiary-text); --_th: var(--vitae-action-tertiary-text-hover); --_ta: var(--vitae-action-tertiary-text-active); --_sh: var(--vitae-action-tertiary-subtle-hover); --_sa: var(--vitae-action-tertiary-subtle-active); }
 .vitae-btn--destructive { --_c: var(--vitae-action-destructive); --_ch: var(--vitae-action-destructive-hover); --_ca: var(--vitae-action-destructive-active); --_on: var(--vitae-text-on-destructive); --_t: var(--vitae-action-destructive-text); --_th: var(--vitae-action-destructive-text-hover); --_ta: var(--vitae-action-destructive-text-active); --_sh: var(--vitae-action-destructive-subtle-hover); --_sa: var(--vitae-action-destructive-subtle-active); }
-/* The solid primary button is the call to action (one per page): it uses the CTA role, which is EA's signal green
-   with ink text and equals the primary color for the other clients. Outline and ghost primary keep the primary color. */
+/* The solid primary button is the call to action (aim for one per page, two at most): it uses the CTA role, which is EA's green (#00884D)
+   with white text and equals the primary color for the other clients. */
 .vitae-btn--primary.vitae-btn--solid { --_c: var(--vitae-action-cta); --_ch: var(--vitae-action-cta-hover); --_ca: var(--vitae-action-cta-active); --_on: var(--vitae-text-on-cta); }
 .vitae-btn--solid { background: var(--_c); border-color: var(--_c); color: var(--_on); }
 .vitae-btn--solid:not(:disabled, [aria-disabled="true"]):hover, .vitae-btn--solid.is-hover { background: var(--_ch); border-color: var(--_ch); }

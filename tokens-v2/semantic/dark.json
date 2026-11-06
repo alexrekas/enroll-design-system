@@ -198,6 +198,27 @@
       "$value": "{brand.dark.cta-active}",
       "$type": "color"
     },
+    "cta-text": {
+      "$value": "{brand.dark.cta-text}",
+      "$type": "color",
+      "$description": "Outline and ghost primary buttons: label and border. EA: green; other clients: their primary text color."
+    },
+    "cta-text-hover": {
+      "$value": "{brand.dark.cta-text-hover}",
+      "$type": "color"
+    },
+    "cta-text-active": {
+      "$value": "{brand.dark.cta-text-active}",
+      "$type": "color"
+    },
+    "cta-subtle-hover": {
+      "$value": "{brand.dark.cta-subtle-hover}",
+      "$type": "color"
+    },
+    "cta-subtle-active": {
+      "$value": "{brand.dark.cta-subtle-active}",
+      "$type": "color"
+    },
     "secondary": {
       "$value": "{brand.dark.action-secondary}",
       "$type": "color"
