@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   build-and-check:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # pinned: ubuntu-latest moved to 26.04, which Playwright 1.56 cannot install browsers on; visual baselines are made on 24.04
     timeout-minutes: 45 # a normal run takes about 15; stop a stuck run instead of letting it hang
     permissions:
       contents: write # only used to commit new visual baselines when that box is ticked
@@ -74,7 +74,7 @@ jobs:
 
   rails-demo:
     # Installs the real Rails, ViewComponent and Lookbook gems and renders every component preview.
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # pinned: ubuntu-latest moved to 26.04, which Playwright 1.56 cannot install browsers on; visual baselines are made on 24.04
     timeout-minutes: 20
     defaults:
       run:
@@ -94,7 +94,7 @@ jobs:
     # Publishes the design library to GitHub Pages on pushes to main, or when run by hand (Actions → Design System CI → Run workflow)
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     needs: build-and-check
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # pinned: ubuntu-latest moved to 26.04, which Playwright 1.56 cannot install browsers on; visual baselines are made on 24.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
